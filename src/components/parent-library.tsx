@@ -40,6 +40,7 @@ export function ParentLibrary() {
   }
 
   async function loadLibrary() {
+    setErrors([]);
     const response = await fetch("/api/library", { headers: { "x-studycraft-parent-passphrase": passphrase } });
     const result = await response.json();
     if (response.ok) setLibrary(result.chapters);

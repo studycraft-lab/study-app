@@ -34,6 +34,14 @@ describe("StudyExperience", () => {
     expect(await screen.findByText(/needs work/i)).toBeInTheDocument();
     expect(screen.getByRole("status")).toHaveTextContent("Expected: Early Vedic");
     expect(screen.getByText(/Page 49/i)).toBeInTheDocument();
-    await waitFor(() => expect(screen.getByLabelText(/question 1: incorrect/i)).toBeInTheDocument());
+    const reviewFirst = await screen.findByRole("button", { name: /question 1: incorrect.*review answer/i });
+    fireEvent.click(screen.getByRole("button", { name: /next question/i }));
+    expect(await screen.findByText("Question 2")).toBeInTheDocument();
+
+    fireEvent.click(reviewFirst);
+    expect(await screen.findByText("Which period?")).toBeInTheDocument();
+    expect(screen.getByRole("status")).toHaveTextContent("Expected: Early Vedic");
+    fireEvent.click(screen.getByRole("button", { name: /back to current question/i }));
+    await waitFor(() => expect(screen.getByText("Question 2")).toBeInTheDocument());
   });
 });

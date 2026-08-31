@@ -27,10 +27,16 @@ export function StudyExperience() {
   const [skippedOnce, setSkippedOnce] = useState<string[]>([]);
   const [response, setResponse] = useState<unknown>("");
   const [feedback, setFeedback] = useState<Feedback | null>(null);
+  const [responses, setResponses] = useState<Record<string, unknown>>({});
+  const [feedbackByQuestion, setFeedbackByQuestion] = useState<Record<string, Feedback>>({});
+  const [reviewingId, setReviewingId] = useState<string | null>(null);
+  const [reviewOrigin, setReviewOrigin] = useState<"session" | "summary">("session");
   const [error, setError] = useState("");
   const [busy, setBusy] = useState(false);
 
-  const current = questions.find((question) => question.id === queue[0]);
+  const current = questions.find((question) => question.id === (reviewingId ?? queue[0]));
+  const shownResponse = reviewingId ? responses[reviewingId] : response;
+  const shownFeedback = reviewingId ? feedbackByQuestion[reviewingId] : feedback;
 
   async function loadLibrary() {
     const result = await fetch("/api/study/library", { cache: "no-store" });
@@ -70,7 +76,7 @@ export function StudyExperience() {
     const loaded = body.questions as Question[];
     setQuestions(loaded); setQueue(loaded.map((question) => question.id));
     setStatuses(Object.fromEntries(loaded.map((question) => [question.id, "pending"])));
-    setSkippedOnce([]); setFeedback(null); setResponse(""); setPhase("session"); setBusy(false);
+    setSkippedOnce([]); setFeedback(null); setResponse(""); setResponses({}); setFeedbackByQuestion({}); setReviewingId(null); setPhase("session"); setBusy(false);
   }
 
   function advance(nextQueue: string[]) {
@@ -87,6 +93,8 @@ export function StudyExperience() {
     else {
       const checked = body as Feedback;
       setFeedback(checked);
+      setResponses((existing) => ({ ...existing, [current.id]: response }));
+      setFeedbackByQuestion((existing) => ({ ...existing, [current.id]: checked }));
       setStatuses((existing) => ({ ...existing, [current.id]: checked.correct ? "correct" : "incorrect" }));
     }
     setBusy(false);
@@ -106,6 +114,18 @@ export function StudyExperience() {
     setQueue(mistakes); setFeedback(null); setResponse(""); setPhase("session");
   }
 
+  function openReview(questionId: string) {
+    if (!feedbackByQuestion[questionId]) return;
+    setReviewOrigin(phase === "summary" ? "summary" : "session");
+    setReviewingId(questionId);
+    setPhase("session");
+  }
+
+  function closeReview() {
+    setReviewingId(null);
+    setPhase(reviewOrigin);
+  }
+
   return <main className="study-shell">
     <header className="study-header"><Link className="brand" href="/"><span className="brand-mark">S</span><span>StudyCraft</span></Link><span className="foundation-badge">Child preview</span></header>
 
@@ -116,14 +136,14 @@ export function StudyExperience() {
     {phase === "library" && <section className="chapter-picker"><p className="eyebrow">Choose today’s practice</p><h1>What would you like to study?</h1>{chapters.length === 0 ? <div className="empty-study"><p>No chapters are ready yet.</p><Link href="/parent/library">Import a question bank</Link></div> : <div className="chapter-grid">{chapters.map((chapter) => <button key={chapter.id} onClick={() => start(chapter)} disabled={busy} aria-label={`Study ${chapter.chapterTitle}`}><span>{chapter.board} · Grade {chapter.grade}</span><strong>{chapter.subject}</strong><h2>{chapter.chapterNumber ? `${chapter.chapterNumber}. ` : ""}{chapter.chapterTitle}</h2><small>{Math.min(5, chapter.questionCount)} question practice →</small></button>)}</div>}{error && <p className="notice notice-error">{error}</p>}</section>}
 
     {phase === "session" && current && <section className="quiz-stage">
-      <div className="progress-rail" aria-label="Question progress">{questions.map((question, index) => { const status = statuses[question.id] ?? "pending"; const active = question.id === current.id; return <span key={question.id} className={`progress-step is-${status}${active ? " is-current" : ""}`} aria-label={`Question ${index + 1}: ${status}${active ? ", current" : ""}`}>{status === "correct" ? "✓" : status === "incorrect" ? "×" : status === "skipped" ? "↻" : index + 1}</span>; })}</div>
+      <div className="progress-rail" aria-label="Question progress">{questions.map((question, index) => { const status = statuses[question.id] ?? "pending"; const active = question.id === current.id; const label = `Question ${index + 1}: ${status}${active ? ", current" : ""}`; const symbol = status === "correct" ? "✓" : status === "incorrect" ? "×" : status === "skipped" ? "↻" : index + 1; return feedbackByQuestion[question.id] ? <button type="button" key={question.id} className={`progress-step is-${status}${active ? " is-current" : ""}`} aria-label={`${label}; review answer`} onClick={() => openReview(question.id)}>{symbol}</button> : <span key={question.id} className={`progress-step is-${status}${active ? " is-current" : ""}`} aria-label={label}>{symbol}</span>; })}</div>
       <article className="question-card"><div className="question-meta"><span>{current.type.replaceAll("_", " ")}</span><span>{current.marks} {current.marks === 1 ? "mark" : "marks"}</span></div><h1>{current.prompt}</h1>
-        <QuestionInput question={current} value={response} onChange={setResponse} disabled={Boolean(feedback)} />
-        {!feedback ? <div className="question-actions"><button onClick={checkAnswer} disabled={!hasResponse(current, response) || busy}>{busy ? "Checking…" : "Check answer"}</button><button className="button-quiet" onClick={skip}>Skip for now</button></div> : <div className={`answer-feedback ${feedback.correct ? "is-correct" : "is-wrong"}`} role="status"><h2>{feedback.correct ? "✓ Correct" : "× Needs work"}</h2>{!feedback.correct && <p><strong>Expected:</strong> {feedback.expectedAnswer}</p>}<p>{feedback.explanation}</p>{feedback.sourcePages.length > 0 && <p className="source-cite">Textbook {feedback.sourcePages.map((page) => `Page ${page}`).join(", ")}</p>}<button onClick={() => advance(queue.slice(1))}>{queue.length === 1 ? "See results" : "Next question"}</button></div>}
+        <QuestionInput question={current} value={shownResponse} onChange={setResponse} disabled={Boolean(shownFeedback) || Boolean(reviewingId)} />
+        {!shownFeedback ? <div className="question-actions"><button onClick={checkAnswer} disabled={!hasResponse(current, response) || busy}>{busy ? "Checking…" : "Check answer"}</button><button className="button-quiet" onClick={skip}>Skip for now</button></div> : <div className={`answer-feedback ${shownFeedback.correct ? "is-correct" : "is-wrong"}`} role="status"><h2>{shownFeedback.correct ? "✓ Correct" : "× Needs work"}</h2>{!shownFeedback.correct && <p><strong>Expected:</strong> {shownFeedback.expectedAnswer}</p>}<p>{shownFeedback.explanation}</p>{shownFeedback.sourcePages.length > 0 && <p className="source-cite">Textbook {shownFeedback.sourcePages.map((page) => `Page ${page}`).join(", ")}</p>}{reviewingId ? <button onClick={closeReview}>{reviewOrigin === "summary" ? "Back to results" : "Back to current question"}</button> : <button onClick={() => advance(queue.slice(1))}>{queue.length === 1 ? "See results" : "Next question"}</button>}</div>}
       </article>
     </section>}
 
-    {phase === "summary" && <section className="summary-card"><p className="eyebrow">Session complete</p><h1>Nice work showing up.</h1><div className="summary-counts"><div><strong>{Object.values(statuses).filter((value) => value === "correct").length}</strong><span>Correct</span></div><div><strong>{Object.values(statuses).filter((value) => value === "incorrect").length}</strong><span>Needs work</span></div><div><strong>{Object.values(statuses).filter((value) => value === "skipped").length}</strong><span>Skipped</span></div></div><div className="question-actions">{Object.values(statuses).includes("incorrect") && <button onClick={reviewMistakes}>Review mistakes</button>}<button className="button-secondary" onClick={() => setPhase("library")}>Choose another chapter</button></div></section>}
+    {phase === "summary" && <section className="summary-card"><p className="eyebrow">Session complete</p><h1>Nice work showing up.</h1><div className="summary-counts"><div><strong>{Object.values(statuses).filter((value) => value === "correct").length}</strong><span>Correct</span></div><div><strong>{Object.values(statuses).filter((value) => value === "incorrect").length}</strong><span>Needs work</span></div><div><strong>{Object.values(statuses).filter((value) => value === "skipped").length}</strong><span>Skipped</span></div></div><div className="answer-review"><h2>Review your answers</h2><div className="progress-rail">{questions.map((question, index) => feedbackByQuestion[question.id] && <button type="button" key={question.id} className={`progress-step is-${statuses[question.id]}`} aria-label={`Review question ${index + 1}: ${statuses[question.id]}`} onClick={() => openReview(question.id)}>{statuses[question.id] === "correct" ? "✓" : "×"}</button>)}</div></div><div className="question-actions">{Object.values(statuses).includes("incorrect") && <button onClick={reviewMistakes}>Review mistakes</button>}<button className="button-secondary" onClick={() => setPhase("library")}>Choose another chapter</button></div></section>}
   </main>;
 }
 

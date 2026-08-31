@@ -1,4 +1,5 @@
 import { ConnectionStatus } from "@/components/connection-status";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
           </span>
           <span>StudyCraft</span>
         </a>
-        <span className="foundation-badge">Foundation preview</span>
+        <Link className="foundation-badge" href="/parent/library">Parent library</Link>
       </nav>
 
       <section className="hero" id="top">

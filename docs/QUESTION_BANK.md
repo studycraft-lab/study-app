@@ -13,8 +13,11 @@ The question bank is the stable boundary between content ingestion and the study
     "id": "early-vedic-civilization-v1",
     "version": 1,
     "title": "The Early Vedic Civilization",
+    "board": "ICSE",
     "subject": "History",
     "grade": 6,
+    "bookTitle": "History and Civics",
+    "chapterNumber": 5,
     "status": "draft"
   },
   "sources": [],

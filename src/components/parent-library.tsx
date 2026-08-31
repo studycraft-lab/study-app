@@ -61,7 +61,7 @@ export function ParentLibrary() {
     <main className="parent-shell">
       <header className="parent-header">
         <Link className="brand" href="/"><span className="brand-mark">S</span><span>StudyCraft</span></Link>
-        <span className="foundation-badge">Parent preview</span>
+        <Link className="foundation-badge" href="/study">Open child preview</Link>
       </header>
 
       <section className="parent-intro">

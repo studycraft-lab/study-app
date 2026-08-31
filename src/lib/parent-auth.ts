@@ -5,8 +5,11 @@ import { createHash, timingSafeEqual } from "node:crypto";
 const HEADER_NAME = "x-studycraft-parent-passphrase";
 
 export function isParentAuthorized(request: Request): boolean {
+  return isParentPassphrase(request.headers.get(HEADER_NAME));
+}
+
+export function isParentPassphrase(provided: string | null): boolean {
   const expected = process.env.PARENT_IMPORT_PASSPHRASE;
-  const provided = request.headers.get(HEADER_NAME);
 
   if (!expected || !provided) return false;
 

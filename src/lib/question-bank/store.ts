@@ -42,3 +42,9 @@ export async function listLibrary() {
     importedAt: row.imported_at,
   }));
 }
+
+export async function getQuestionBank(id: string): Promise<Record<string, unknown>> {
+  const { data, error } = await adminClient().from("question_banks").select("payload").eq("id", id).single();
+  if (error || typeof data?.payload !== "object" || data.payload === null) throw new Error("Question bank is unavailable.");
+  return data.payload as Record<string, unknown>;
+}

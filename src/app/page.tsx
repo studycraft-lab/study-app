@@ -11,7 +11,7 @@ export default function Home() {
           </span>
           <span>StudyCraft</span>
         </a>
-        <Link className="foundation-badge" href="/parent/library">Parent library</Link>
+        <div className="nav-actions"><Link className="foundation-badge" href="/study">Start studying</Link><Link className="foundation-badge" href="/parent/library">Parent library</Link></div>
       </nav>
 
       <section className="hero" id="top">

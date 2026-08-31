@@ -11,6 +11,7 @@ The question bank is the stable boundary between content ingestion and the study
   "schemaVersion": "0.1.0",
   "bank": {
     "id": "early-vedic-civilization-v1",
+    "version": 1,
     "title": "The Early Vedic Civilization",
     "subject": "History",
     "grade": 6,
@@ -50,6 +51,7 @@ Coordinates are normalized from 0 to 1 so they survive image resizing.
 ```json
 {
   "id": "q-001",
+  "version": 1,
   "type": "multi_point",
   "status": "active",
   "topicIds": ["political-organization"],
@@ -132,5 +134,4 @@ An import warns when:
 
 ## Scope and lifecycle
 
-Questions are not deleted merely because content is out of syllabus. Applicability is stored separately so a question may be active generally but excluded from one exam. Parent edits create a new question version; attempts continue to reference the exact version shown to the child.
-
+Questions are not deleted merely because content is out of syllabus. Applicability is stored separately so a question may be active generally but excluded from one exam. Parent edits retain the question `id` and increment its integer `version`; attempts store both values and therefore continue to reference the exact version shown to the child. A newly generated bank also increments `bank.version`.

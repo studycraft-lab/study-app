@@ -2,6 +2,7 @@
   "schemaVersion": "0.1.0",
   "bank": {
     "id": "early-vedic-civilization-v1",
+    "version": 1,
     "title": "The Early Vedic Civilization",
     "subject": "History",
     "grade": 6,
@@ -29,6 +30,7 @@
   "questions": [
     {
       "id": "q-001",
+      "version": 1,
       "type": "fill_blank",
       "status": "active",
       "topicIds": ["settlement"],
@@ -45,6 +47,7 @@
     },
     {
       "id": "q-002",
+      "version": 1,
       "type": "multiple_select",
       "status": "active",
       "topicIds": ["vedic-literature"],
@@ -61,6 +64,7 @@
     },
     {
       "id": "q-003",
+      "version": 1,
       "type": "matching",
       "status": "active",
       "topicIds": ["political-organization"],
@@ -80,6 +84,7 @@
     },
     {
       "id": "q-004",
+      "version": 1,
       "type": "true_false_correct",
       "status": "active",
       "topicIds": ["social-life"],
@@ -96,6 +101,7 @@
     },
     {
       "id": "q-005",
+      "version": 1,
       "type": "brief_answer",
       "status": "active",
       "topicIds": ["political-organization"],
@@ -112,6 +118,7 @@
     },
     {
       "id": "q-006",
+      "version": 1,
       "type": "multi_point",
       "status": "active",
       "topicIds": ["political-organization"],
@@ -128,6 +135,7 @@
     },
     {
       "id": "q-007",
+      "version": 1,
       "type": "multi_point",
       "status": "active",
       "topicIds": ["position-of-women"],
@@ -144,6 +152,7 @@
     },
     {
       "id": "q-008",
+      "version": 1,
       "type": "source_group",
       "status": "active",
       "topicIds": ["position-of-women"],
@@ -166,6 +175,7 @@
     },
     {
       "id": "q-009",
+      "version": 1,
       "type": "single_choice",
       "status": "active",
       "topicIds": ["settlement"],
@@ -182,6 +192,7 @@
     },
     {
       "id": "q-010",
+      "version": 1,
       "type": "compare",
       "status": "active",
       "topicIds": ["settlement"],
@@ -198,6 +209,7 @@
     },
     {
       "id": "q-011",
+      "version": 1,
       "type": "map_work",
       "status": "active",
       "topicIds": ["settlement"],
@@ -214,6 +226,7 @@
     },
     {
       "id": "q-012",
+      "version": 1,
       "type": "source_group",
       "status": "active",
       "topicIds": ["religion"],

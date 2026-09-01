@@ -8,7 +8,7 @@
     "status": "reviewed",
     "subject": "History",
     "title": "The Early Vedic Civilization",
-    "version": 1
+    "version": 2
   },
   "questions": [
     {
@@ -59,7 +59,7 @@
         "aryan-origins-settlement"
       ],
       "type": "fill_blank",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -110,7 +110,7 @@
         "vedic-literature"
       ],
       "type": "fill_blank",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -161,7 +161,7 @@
         "political-organization"
       ],
       "type": "fill_blank",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -211,7 +211,7 @@
         "religion"
       ],
       "type": "fill_blank",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -262,7 +262,7 @@
         "social-classification"
       ],
       "type": "fill_blank",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -383,7 +383,7 @@
         "family-and-women"
       ],
       "type": "matching",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -442,7 +442,7 @@
         "aryan-origins-settlement"
       ],
       "type": "single_choice",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -501,7 +501,7 @@
         "political-organization"
       ],
       "type": "single_choice",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -560,7 +560,7 @@
         "political-organization"
       ],
       "type": "single_choice",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -619,7 +619,7 @@
         "religion"
       ],
       "type": "single_choice",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -678,7 +678,7 @@
         "social-classification"
       ],
       "type": "single_choice",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -728,7 +728,7 @@
         "religion"
       ],
       "type": "one_word",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -778,7 +778,7 @@
         "religion"
       ],
       "type": "one_word",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -828,7 +828,7 @@
         "religion"
       ],
       "type": "one_word",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -879,7 +879,7 @@
         "social-classification"
       ],
       "type": "one_word",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -939,7 +939,7 @@
         "food-dress-recreation"
       ],
       "type": "true_false_correct",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -992,7 +992,7 @@
         "food-dress-recreation"
       ],
       "type": "true_false_correct",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -1052,7 +1052,7 @@
         "food-dress-recreation"
       ],
       "type": "true_false_correct",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -1105,7 +1105,7 @@
         "food-dress-recreation"
       ],
       "type": "true_false_correct",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -1158,7 +1158,7 @@
         "religion"
       ],
       "type": "true_false_correct",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -1214,7 +1214,7 @@
         "aryan-origins-settlement"
       ],
       "type": "brief_answer",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -1270,7 +1270,7 @@
         "aryan-origins-settlement"
       ],
       "type": "brief_answer",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -1326,7 +1326,7 @@
         "vedic-literature"
       ],
       "type": "brief_answer",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -1388,7 +1388,7 @@
         "political-organization"
       ],
       "type": "brief_answer",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -1450,7 +1450,7 @@
         "family-and-women"
       ],
       "type": "brief_answer",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -1512,7 +1512,7 @@
         "social-classification"
       ],
       "type": "brief_answer",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -1586,7 +1586,7 @@
         "aryan-origins-settlement"
       ],
       "type": "compare",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -1654,7 +1654,7 @@
         "vedic-literature"
       ],
       "type": "multi_point",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -1722,7 +1722,7 @@
         "religion"
       ],
       "type": "multi_point",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -1812,7 +1812,7 @@
         "early-later-periods"
       ],
       "type": "multi_point",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -1892,7 +1892,7 @@
         "vedic-literature"
       ],
       "type": "multi_point",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -1972,7 +1972,7 @@
         "political-organization"
       ],
       "type": "multi_point",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -2052,7 +2052,7 @@
         "family-and-women"
       ],
       "type": "multi_point",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -2120,7 +2120,7 @@
         "food-dress-recreation"
       ],
       "type": "multi_point",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -2206,7 +2206,7 @@
         "religion"
       ],
       "type": "multi_point",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -2280,7 +2280,7 @@
         "social-classification"
       ],
       "type": "multi_point",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -2360,7 +2360,7 @@
         "economic-life"
       ],
       "type": "multi_point",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -2556,7 +2556,7 @@
         "religion"
       ],
       "type": "source_group",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -2691,7 +2691,7 @@
         "religion"
       ],
       "type": "source_group",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -2747,7 +2747,7 @@
         "aryan-origins-settlement"
       ],
       "type": "brief_answer",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {

@@ -23,10 +23,10 @@ Open a Codex task in this repository, attach the chapter images or PDF (or provi
 For the current Early Vedic deliverable, use the review-only prompt. Its committed artifacts remain:
 
 - [`samples/early-vedic-chapter-manifest.json`](../samples/early-vedic-chapter-manifest.json)
-- [`samples/early-vedic-question-bank.json`](../samples/early-vedic-question-bank.json), with `bank.version` kept at `1`
+- [`samples/early-vedic-question-bank.json`](../samples/early-vedic-question-bank.json), with `bank.version` kept at `2`
 - [`samples/early-vedic-question-bank.review.json`](../samples/early-vedic-question-bank.review.json)
 
-Do not use the expansion prompt until a new bank version is intentionally requested.
+Do not use the expansion prompt again until a version beyond `2` is intentionally requested.
 
 Run the deterministic gates with:
 

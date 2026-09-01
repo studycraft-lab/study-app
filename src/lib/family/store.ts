@@ -116,6 +116,27 @@ export async function authenticateChild(id: string, pin: string): Promise<ChildP
   return child(data);
 }
 
+export async function authenticateChildByName(displayName: string, pin: string): Promise<ChildProfile | null> {
+  const family = await ensureFamily();
+  const client = adminClient();
+  const { data, error } = await client.from("child_profiles")
+    .select("id,display_name,board,grade,active,pin_salt,pin_hash,failed_pin_attempts,pin_locked_until")
+    .eq("family_id", family.id).eq("active", true).ilike("display_name", displayName.trim()).limit(1).maybeSingle();
+  if (error) throw new Error(error.message);
+  if (!data) return null;
+  if (data.pin_locked_until && new Date(data.pin_locked_until).getTime() > Date.now()) throw new Error("Too many attempts. Try again in a few minutes.");
+
+  if (!verifyPin(pin, data.pin_salt, data.pin_hash)) {
+    const attempts = Number(data.failed_pin_attempts) + 1;
+    const lockedUntil = attempts >= MAX_FAILED_ATTEMPTS ? new Date(Date.now() + LOCK_MINUTES * 60_000).toISOString() : null;
+    await client.from("child_profiles").update({ failed_pin_attempts: attempts >= MAX_FAILED_ATTEMPTS ? 0 : attempts, pin_locked_until: lockedUntil }).eq("id", data.id);
+    return null;
+  }
+
+  await client.from("child_profiles").update({ failed_pin_attempts: 0, pin_locked_until: null }).eq("id", data.id);
+  return child(data);
+}
+
 export async function getActiveChild(id: string): Promise<(ChildProfile & { familyId: string }) | null> {
   const { data, error } = await adminClient().from("child_profiles")
     .select("id,family_id,display_name,board,grade,active").eq("id", id).eq("active", true).maybeSingle();

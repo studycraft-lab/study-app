@@ -1,7 +1,8 @@
 import { childFromRequest } from "@/lib/family/request";
 import { recordStudyAttempt } from "@/lib/learning/store";
 import { getQuestionBankForChild } from "@/lib/question-bank/store";
-import { gradeQuestion } from "@/lib/study/session";
+import { GradingUnavailableError } from "@/lib/ai/openrouter";
+import { gradeSubmittedQuestion } from "@/lib/study/grading";
 
 export async function POST(request: Request) {
   try {
@@ -12,10 +13,10 @@ export async function POST(request: Request) {
       return Response.json({ error: "Answer request is incomplete." }, { status: 400 });
     }
     const bank = await getQuestionBankForChild(body.bankId, { familyId: child.familyId, board: child.board, grade: child.grade });
-    const feedback = gradeQuestion(bank, body.questionId, body.response);
+    const feedback = await gradeSubmittedQuestion(bank, body.questionId, body.response);
     const attemptId = await recordStudyAttempt({ sessionId: body.sessionId, child, bankId: body.bankId, bank, questionId: body.questionId, response: body.response, feedback });
     return Response.json({ ...feedback, attemptId });
   } catch (error) {
-    return Response.json({ error: error instanceof Error ? error.message : "Answer could not be checked." }, { status: 500 });
+    return Response.json({ error: error instanceof Error ? error.message : "Answer could not be checked." }, { status: error instanceof GradingUnavailableError ? 503 : 500 });
   }
 }

@@ -1,6 +1,6 @@
 import { scoreObjective } from "./score-objective";
 
-const TYPE_ORDER = ["single_choice", "multiple_select", "fill_blank", "true_false_correct", "matching"] as const;
+const TYPE_ORDER = ["single_choice", "multiple_select", "fill_blank", "true_false_correct", "matching", "one_word", "brief_answer", "multi_point", "compare"] as const;
 const TYPE_SET = new Set<string>(TYPE_ORDER);
 
 type RecordValue = Record<string, unknown>;
@@ -131,7 +131,7 @@ function readableExpected(question: RecordValue, fallback: string): string {
   const answer = record(question.answer);
   if (question.type === "single_choice") return optionText(question, answer.correctOptionId);
   if (question.type === "multiple_select") return (Array.isArray(answer.correctOptionIds) ? answer.correctOptionIds : []).map((id) => optionText(question, id)).join(", ");
-  if (question.type === "fill_blank") return (Array.isArray(answer.accepted) ? answer.accepted : []).map(String).join(" / ");
+  if (question.type === "fill_blank" || question.type === "one_word") return (Array.isArray(answer.accepted) ? answer.accepted : []).map(String).join(" / ");
   if (question.type === "true_false_correct") return answer.value === false ? `False — ${String(answer.correction ?? "")}` : "True";
   if (question.type === "matching") {
     const response = record(question.response);

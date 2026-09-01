@@ -173,6 +173,7 @@ export async function childLearningHistory(child: ChildContext) {
       accuracy: possibleMarks ? Math.round(earnedMarks / possibleMarks * 100) : 0,
       mastery: masteryPoints.length ? Math.round(masteryPoints.reduce<number>((sum, value) => sum + value, 0) / masteryPoints.length * 100) : 0,
       dueReview: dueCount ?? 0,
+      gradingReview: allAttempts.filter((attempt) => record(attempt.feedback).reviewRequired === true).length,
     },
     topics,
     sessions: (sessions ?? []).map((session) => ({

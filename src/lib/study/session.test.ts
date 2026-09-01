@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { gradeQuestion, prepareReviewSession, prepareSession } from "./session";
+import { gradeQuestion, prepareReviewSession, prepareSession, selectableQuestionIds } from "./session";
 
 const bank = {
   sources: [{ id: "p1", pageNumber: 45, regions: [] }],
@@ -26,6 +26,13 @@ describe("study session DTO", () => {
   it("returns readable feedback and the cited page only after grading", () => {
     const feedback = gradeQuestion(bank, "one", "b");
     expect(feedback).toMatchObject({ correct: false, expectedAnswer: "Early Vedic", sourcePages: [45] });
+  });
+
+  it("makes supported free-text questions available without exposing their rubrics", () => {
+    expect(selectableQuestionIds(bank)).toContain("subjective");
+    const question = prepareReviewSession(bank, ["subjective"], "seed")[0];
+    expect(question).toMatchObject({ type: "brief_answer", response: {} });
+    expect(JSON.stringify(question)).not.toContain("ideal");
   });
 
   it("varies option order between sessions and preserves it for the same session seed", () => {

@@ -100,4 +100,23 @@ describe("StudyExperience", () => {
     fireEvent.click(screen.getByRole("button", { name: /resume session/i }));
     expect(await screen.findByText("Which period?")).toBeInTheDocument();
   });
+
+  it("accepts a free-text answer and explains covered and missing rubric points", async () => {
+    const subjective = [{ id: "essay", type: "multi_point", prompt: "Why was the rajan not absolute?", marks: 2, response: { recommendedPoints: 4 } }];
+    vi.spyOn(globalThis, "fetch").mockImplementation(async (input) => {
+      const url = String(input);
+      if (url === "/api/study/library") return new Response(JSON.stringify({ child: { id: "child", displayName: "Asha", grade: 6, board: "ICSE" }, chapters: [{ id: "bank", subject: "History", chapterTitle: "Early Vedic", grade: 6, board: "ICSE", questionCount: 10 }] }));
+      if (url === "/api/study/history") return new Response(JSON.stringify({ summary: { completedSessions: 0, attempts: 0, uniqueQuestions: 0, accuracy: 0, mastery: 0, dueReview: 0 }, topics: [], sessions: [] }));
+      if (url.startsWith("/api/study/questions")) return new Response(JSON.stringify({ questions: subjective, presentationSeed: "seed" }));
+      if (url === "/api/study/sessions") return new Response(JSON.stringify({ sessionId: "session" }), { status: 201 });
+      return new Response(JSON.stringify({ correct: false, earnedMarks: 1, expectedAnswer: "The councils controlled him.", explanation: "You identified one council.", coveredPoints: ["sabha advised the rajan"], partialPoints: [], missingPoints: ["samiti allowed tribal opinions"], sourcePages: [47], attemptId: "attempt" }));
+    });
+    render(<StudyExperience />);
+    fireEvent.click(await screen.findByRole("button", { name: /early vedic/i }));
+    fireEvent.change(await screen.findByLabelText("Your answer"), { target: { value: "The sabha advised him." } });
+    fireEvent.click(screen.getByRole("button", { name: /submit answer/i }));
+    expect(await screen.findByText(/partly correct — 1\/2 marks/i)).toBeInTheDocument();
+    expect(screen.getByText("sabha advised the rajan")).toBeInTheDocument();
+    expect(screen.getByText("samiti allowed tribal opinions")).toBeInTheDocument();
+  });
 });

@@ -14,6 +14,11 @@ describe("scoreObjective", () => {
     expect(result).toMatchObject({ correct: true, earnedMarks: 1 });
   });
 
+  it("accepts spacing and punctuation variants without AI", () => {
+    expect(scoreObjective({ type: "fill_blank", answer: { accepted: ["Sapta Sindhu"] }, marks: 1 }, "Saptasindhu")).toMatchObject({ correct: true, earnedMarks: 1 });
+    expect(scoreObjective({ type: "one_word", answer: { accepted: ["Indo-Aryans"] }, marks: 1 }, "indo aryans")).toMatchObject({ correct: true, earnedMarks: 1 });
+  });
+
   it("requires a false statement to be corrected", () => {
     const question = {
       type: "true_false_correct",

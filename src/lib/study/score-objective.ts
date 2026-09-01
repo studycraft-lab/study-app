@@ -17,7 +17,11 @@ function record(value: unknown): Record<string, unknown> {
 }
 
 function normalize(value: unknown): string {
-  return String(value ?? "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+  return String(value ?? "").normalize("NFKC").toLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ").trim();
+}
+
+function compact(value: unknown): string {
+  return normalize(value).replace(/\s+/g, "");
 }
 
 function sameSet(left: unknown, right: unknown): boolean {
@@ -50,10 +54,11 @@ export function scoreObjective(question: ObjectiveQuestion, response: unknown): 
       expectedAnswer = Array.isArray(answer.correctOptionIds) ? answer.correctOptionIds.join(", ") : "";
       correct = sameSet(response, answer.correctOptionIds);
       break;
-    case "fill_blank": {
+    case "fill_blank":
+    case "one_word": {
       const accepted = Array.isArray(answer.accepted) ? answer.accepted : [];
       expectedAnswer = accepted.map(String).join(" / ");
-      correct = accepted.some((value) => normalize(value) === normalize(response));
+      correct = accepted.some((value) => normalize(value) === normalize(response) || compact(value) === compact(response));
       break;
     }
     case "true_false_correct": {

@@ -178,6 +178,8 @@ An import warns when:
 
 Questions are not deleted merely because content is out of syllabus. Applicability is stored separately so a question may be active generally but excluded from one exam. Parent edits retain the question `id` and increment its integer `version`; attempts store both values and therefore continue to reference the exact version shown to the child. A newly generated bank also increments `bank.version`.
 
+There is one guarded replacement path for correcting a prototype import: when the stored bank is still `draft` and has no study sessions, attempts or review items, importing different content with the same bank ID and version replaces that row in place. This lets an incomplete draft such as a 12-question prototype be superseded by its reviewed v1 bank without leaving duplicate chapter entries. Once a bank is non-draft or has study history, it is immutable and changed content must increment `bank.version`.
+
 ## Stable import command
 
 After the bank and its review are accepted, start the application with its normal Supabase configuration and import through the existing authenticated API:

@@ -52,7 +52,14 @@ export function ParentLibrary() {
     setBusy(true); setErrors([]);
     const response = await fetch("/api/question-banks/import", { method: "POST", headers, body: JSON.stringify({ bank, metadata: preview }) });
     const result = await response.json();
-    if (response.ok) { setMessage(result.created ? "Chapter imported." : "This bank was already imported; nothing was duplicated."); await loadLibrary(); }
+    if (response.ok) {
+      setMessage(result.created
+        ? "Chapter imported."
+        : result.replaced
+          ? "Chapter bank replaced with the latest content."
+          : "This bank was already imported; nothing was duplicated.");
+      await loadLibrary();
+    }
     else setErrors(result.errors ?? [result.error ?? "Import failed."]);
     setBusy(false);
   }

@@ -40,4 +40,17 @@ describe("POST /api/question-banks/import", () => {
     expect(importQuestionBank).toHaveBeenCalledOnce();
     await expect(response.json()).resolves.toMatchObject({ imported: true, created: true });
   });
+
+  it("reports when an unattempted draft bank was replaced", async () => {
+    process.env.PARENT_IMPORT_PASSPHRASE = "secret";
+    importQuestionBank.mockResolvedValue({ id: "bank-row", created: false, replaced: true });
+    const response = await POST(new Request("http://localhost/api/question-banks/import", {
+      method: "POST",
+      headers: { "content-type": "application/json", "x-studycraft-parent-passphrase": "secret" },
+      body: JSON.stringify({ bank, metadata: { board: "ICSE", grade: 6, subject: "History", chapterNumber: 5, chapterTitle: "The Early Vedic Civilization" } }),
+    }));
+
+    expect(response.status).toBe(200);
+    await expect(response.json()).resolves.toMatchObject({ imported: true, created: false, replaced: true });
+  });
 });

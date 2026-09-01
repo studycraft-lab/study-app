@@ -6,6 +6,7 @@ import type { BankMetadata, ValidatedQuestionBank } from "./validate";
 import { adminClient } from "@/lib/supabase/admin";
 
 export type LibraryFilter = { familyId: string; board?: string; grade?: number };
+export type ImportQuestionBankResult = { id: string; created: boolean; replaced: boolean };
 
 export async function importQuestionBank(bank: ValidatedQuestionBank, metadata: BankMetadata) {
   const contentHash = createHash("sha256").update(JSON.stringify(bank)).digest("hex");
@@ -15,7 +16,7 @@ export async function importQuestionBank(bank: ValidatedQuestionBank, metadata: 
     p_content_hash: contentHash,
   });
   if (error) throw new Error(error.message);
-  return data as { id: string; created: boolean };
+  return data as ImportQuestionBankResult;
 }
 
 export async function listLibrary(filter?: LibraryFilter) {

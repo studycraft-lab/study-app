@@ -30,4 +30,26 @@ describe("ParentLibrary", () => {
     fireEvent.click(screen.getByRole("button", { name: /refresh library/i }));
     await waitFor(() => expect(screen.queryByText(/permission denied/i)).not.toBeInTheDocument());
   });
+
+  it("confirms that a newer payload replaced an unattempted draft bank", async () => {
+    const preview = {
+      board: "ICSE", grade: 6, subject: "History", bookTitle: "History and Civics",
+      chapterNumber: 5, chapterTitle: "The Early Vedic Civilization", questionCount: 40, sourceCount: 9,
+    };
+    vi.spyOn(globalThis, "fetch")
+      .mockResolvedValueOnce(new Response(JSON.stringify({ valid: true, preview }), { status: 200 }))
+      .mockResolvedValueOnce(new Response(JSON.stringify({ imported: true, created: false, replaced: true, id: "bank-row" }), { status: 200 }))
+      .mockResolvedValueOnce(new Response(JSON.stringify({ chapters: [{ ...preview, id: "bank-row", bankVersion: 1 }] }), { status: 200 }));
+    render(<ParentLibrary />);
+    fireEvent.change(screen.getByLabelText(/parent passphrase/i), { target: { value: "secret" } });
+    fireEvent.change(screen.getByLabelText(/question-bank json/i), {
+      target: { files: [new File([JSON.stringify({ bank: { id: "early-vedic-civilization-v1" } })], "early-vedic.json", { type: "application/json" })] },
+    });
+
+    fireEvent.click(screen.getByRole("button", { name: /validate json/i }));
+    fireEvent.click(await screen.findByRole("button", { name: /confirm and import/i }));
+
+    expect(await screen.findByText(/replaced with the latest content/i)).toBeInTheDocument();
+    expect(await screen.findByText(/40 questions · bank v1/i)).toBeInTheDocument();
+  });
 });

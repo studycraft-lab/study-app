@@ -46,6 +46,20 @@ function shuffled<T>(values: T[], seed: string): T[] {
   return result;
 }
 
+function derangedOptions(values: RecordValue[], forbiddenIds: unknown[], seed: string): RecordValue[] {
+  if (values.length < 2 || forbiddenIds.length !== values.length) return shuffled(values, seed);
+  const candidates = shuffled(values, seed);
+  function arrange(position: number, remaining: RecordValue[]): RecordValue[] | undefined {
+    if (position === forbiddenIds.length) return [];
+    for (let index = 0; index < remaining.length; index += 1) {
+      if (remaining[index].id === forbiddenIds[position]) continue;
+      const tail = arrange(position + 1, [...remaining.slice(0, index), ...remaining.slice(index + 1)]);
+      if (tail) return [remaining[index], ...tail];
+    }
+  }
+  return arrange(0, candidates) ?? candidates;
+}
+
 function presentedResponse(question: RecordValue, presentationSeed?: string): RecordValue {
   const response = record(question.response);
   if (!presentationSeed) return response;
@@ -53,7 +67,10 @@ function presentedResponse(question: RecordValue, presentationSeed?: string): Re
     return { ...response, options: shuffled(records(response.options), `${presentationSeed}:${String(question.id)}:options`) };
   }
   if (question.type === "matching") {
-    return { ...response, right: shuffled(records(response.right), `${presentationSeed}:${String(question.id)}:right`) };
+    const pairs = records(record(question.answer).pairs);
+    const expectedByLeft = new Map(pairs.map((pair) => [pair.leftId, pair.rightId]));
+    const expectedOrder = records(response.left).map((left) => expectedByLeft.get(left.id));
+    return { ...response, right: derangedOptions(records(response.right), expectedOrder, `${presentationSeed}:${String(question.id)}:right`) };
   }
   return response;
 }

@@ -36,4 +36,15 @@ describe("study session DTO", () => {
     expect(resumed).toEqual(first);
     expect(next).not.toEqual(first);
   });
+
+  it("never presents matching choices in the same order as their corresponding rows", () => {
+    const matchingBank = { questions: [{ id: "match", type: "matching", status: "active", prompt: "Match", marks: 4, response: {
+      left: ["a", "b", "c", "d"].map((id) => ({ id, text: id })),
+      right: ["1", "2", "3", "4"].map((id) => ({ id, text: id })),
+    }, answer: { pairs: ["a", "b", "c", "d"].map((leftId, index) => ({ leftId, rightId: String(index + 1) })) } }] };
+    for (let index = 0; index < 100; index += 1) {
+      const right = prepareReviewSession(matchingBank, ["match"], `session-${index}`)[0].response.right as Array<{ id: string }>;
+      expect(right.map((item) => item.id)).not.toEqual(["1", "2", "3", "4"]);
+    }
+  });
 });

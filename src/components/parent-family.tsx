@@ -15,6 +15,7 @@ export function ParentFamily() {
   const [draft, setDraft] = useState({ displayName: "", board: "ICSE", grade: 6, pin: "" });
   const [error, setError] = useState("");
   const [message, setMessage] = useState("");
+  const [confirmDelete, setConfirmDelete] = useState("");
   const [busy, setBusy] = useState(false);
   const headers = { "content-type": "application/json" };
   const load = useCallback(async () => {
@@ -42,6 +43,15 @@ export function ParentFamily() {
     setBusy(false);
   }
 
+  async function deleteSession(childId: string, sessionId: string) {
+    setBusy(true); setError(""); setMessage("");
+    const response = await fetch("/api/parent/progress/session", { method: "DELETE", headers, body: JSON.stringify({ childId, sessionId }) });
+    const body = await response.json();
+    if (response.ok) { setConfirmDelete(""); await load(); setMessage("Session deleted. Progress has been recalculated."); }
+    else setError(body.error ?? "Could not delete this session.");
+    setBusy(false);
+  }
+
   return <main className="parent-shell">
     <AppHeader role="parent" />
     <section className="parent-intro"><p className="eyebrow">Parent workspace</p><h1>Family profiles</h1><p>Add each child once. Their board and grade determine which family chapters appear when they study.</p></section>
@@ -50,7 +60,7 @@ export function ParentFamily() {
       <section className="family-summary"><div><span>Family</span><strong>{workspace.family.name}</strong></div><div><span>Owner-parent</span><strong>{workspace.parent.displayName}</strong></div><div><span>Children</span><strong>{workspace.children.length}</strong></div></section>
       <section className="import-card"><h2>Add a child</h2><form className="profile-form" onSubmit={addChild}><label>Name<input value={draft.displayName} onChange={(event) => setDraft({ ...draft, displayName: event.target.value })} /></label><label>Board<input value={draft.board} onChange={(event) => setDraft({ ...draft, board: event.target.value })} /></label><label>Grade<input type="number" min="1" max="12" value={draft.grade} onChange={(event) => setDraft({ ...draft, grade: Number(event.target.value) })} /></label><label>PIN (4–8 digits)<input type="password" inputMode="numeric" value={draft.pin} onChange={(event) => setDraft({ ...draft, pin: event.target.value })} /></label><button disabled={busy}>Add child</button></form>{error && <p className="notice notice-error" role="alert">{error}</p>}{message && <p className="notice">{message}</p>}</section>
       <section className="library-section"><h2>Children</h2>{workspace.children.length === 0 ? <p className="empty-state">No child profiles yet.</p> : <div className="child-admin-grid">{workspace.children.map((item) => <ChildEditor key={item.id} child={item} onSaved={load} />)}</div>}</section>
-      {progress.length > 0 && <section className="library-section"><h2>Learning activity</h2><div className="parent-progress-grid">{progress.map(({ child: item, history: { summary, sessions } }) => <article key={item.id} className="parent-progress-card"><header><div><h3>{item.displayName}</h3><span>{item.board} · Grade {item.grade}</span></div><strong>{summary.accuracy}% accuracy</strong></header><div className="parent-progress-stats"><span><strong>{summary.completedSessions}</strong> sessions</span><span><strong>{summary.mastery}%</strong> mastery</span><span><strong>{summary.dueReview}</strong> due</span></div>{sessions.length > 0 ? <div className="parent-session-list">{sessions.slice(0, 3).map((session) => { const earned = session.attempts.reduce((sum, attempt) => sum + attempt.earned_marks, 0); const total = session.attempts.reduce((sum, attempt) => sum + attempt.max_marks, 0); return <div key={session.id}><span>{new Date(session.startedAt).toLocaleDateString()}</span><strong>{earned}/{total || 0} marks</strong><small>{session.status === "completed" ? "Completed" : "Not finished"}</small></div>; })}</div> : <p className="empty-state">No study sessions yet.</p>}</article>)}</div></section>}
+      {progress.length > 0 && <section className="library-section"><h2>Learning activity</h2><div className="parent-progress-grid">{progress.map(({ child: item, history: { summary, sessions } }) => <article key={item.id} className="parent-progress-card"><header><div><h3>{item.displayName}</h3><span>{item.board} · Grade {item.grade}</span></div><strong>{summary.accuracy}% accuracy</strong></header><div className="parent-progress-stats"><span><strong>{summary.completedSessions}</strong> sessions</span><span><strong>{summary.mastery}%</strong> mastery</span><span><strong>{summary.dueReview}</strong> due</span></div>{sessions.length > 0 ? <div className="parent-session-list">{sessions.map((session) => { const earned = session.attempts.reduce((sum, attempt) => sum + attempt.earned_marks, 0); const total = session.attempts.reduce((sum, attempt) => sum + attempt.max_marks, 0); const confirming = confirmDelete === session.id; return <div key={session.id}><span>{new Date(session.startedAt).toLocaleDateString()}</span><strong>{earned}/{total || 0} marks</strong><small>{session.status === "completed" ? "Completed" : "Not finished"} · {session.attempts.length} answered</small><div className="session-delete">{confirming ? <><span>This permanently removes the session and its answers.</span><button className="button-danger" disabled={busy} onClick={() => deleteSession(item.id, session.id)}>Delete permanently</button><button className="button-quiet" disabled={busy} onClick={() => setConfirmDelete("")}>Cancel</button></> : <button className="button-quiet" onClick={() => setConfirmDelete(session.id)}>Delete session</button>}</div></div>; })}</div> : <p className="empty-state">No study sessions yet.</p>}</article>)}</div></section>}
     </>}
   </main>;
 }

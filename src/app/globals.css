@@ -559,8 +559,11 @@ button:disabled { cursor: not-allowed; opacity: .45; }
 .parent-progress-stats span { display: grid; font-size: .78rem; color: var(--muted); }
 .parent-progress-stats strong { color: var(--ink); font-size: 1.15rem; }
 .parent-session-list { display: grid; gap: .55rem; }
-.parent-session-list > div { display: grid; grid-template-columns: 1fr auto; gap: .15rem 1rem; }
+.parent-session-list > div { display: grid; grid-template-columns: 1fr auto; gap: .15rem 1rem; padding-bottom: .55rem; border-bottom: 1px solid var(--line); }
 .parent-session-list small { grid-column: 1 / -1; }
+.session-delete { grid-column: 1 / -1; display: flex; align-items: center; flex-wrap: wrap; gap: .45rem; }
+.session-delete > span { flex-basis: 100%; color: #7c2d12; font-size: .82rem; }
+.button-danger { background: #b42318; color: white; }
 .topic-progress { margin: 1rem 0 1.5rem; padding: 1rem; border: 1px solid var(--line); border-radius: 16px; background: white; }
 .topic-progress h2 { margin-top: 0; }
 .topic-progress > div { display: grid; grid-template-columns: 1fr auto auto; gap: 1rem; padding: .55rem 0; border-top: 1px solid var(--line); text-transform: capitalize; }

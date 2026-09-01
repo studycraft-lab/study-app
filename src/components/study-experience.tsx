@@ -134,14 +134,9 @@ export function StudyExperience() {
     setBusy(false);
   }
 
-  async function reviewMistakes() {
-    const mistakes = questions.filter((question) => statuses[question.id] === "incorrect").map((question) => question.id);
-    if (!mistakes.length) return;
-    setBusy(true); setError("");
-    const result = await fetch("/api/study/sessions", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ bankId, totalQuestions: mistakes.length }) });
-    const body = await result.json();
-    if (!result.ok) { setError(body.error ?? "Could not start mistake review."); setBusy(false); return; }
-    setSessionId(body.sessionId); setQueue(mistakes); setStatuses(Object.fromEntries(mistakes.map((id) => [id, "pending"]))); setFeedback(null); setResponse(""); setResponses({}); setFeedbackByQuestion({}); setFeedbackOpen({}); setReportNotes({}); setReportedQuestions({}); setReviewingId(null); setPhase("session"); setBusy(false);
+  function reviewMistakes() {
+    const firstMistake = questions.find((question) => statuses[question.id] === "incorrect");
+    if (firstMistake) openReview(firstMistake.id);
   }
 
   function openReview(questionId: string) {

@@ -48,4 +48,40 @@ describe("StudyExperience", () => {
     fireEvent.click(screen.getByRole("button", { name: /back to current question/i }));
     await waitFor(() => expect(screen.getByText("Question 2")).toBeInTheDocument());
   });
+
+  it("reviews mistakes without creating a one-question session", async () => {
+    const fetchMock = vi.spyOn(globalThis, "fetch").mockImplementation(async (input, init) => {
+      const url = String(input);
+      if (url === "/api/study/library") return new Response(JSON.stringify({ child: { id: "child", displayName: "Asha", grade: 6, board: "ICSE" }, chapters: [{ id: "bank", subject: "History", chapterTitle: "Early Vedic", grade: 6, board: "ICSE", questionCount: 5 }] }));
+      if (url === "/api/study/history") return new Response(JSON.stringify({ summary: { completedSessions: 0, attempts: 0, uniqueQuestions: 0, accuracy: 0, mastery: 0, dueReview: 0 }, topics: [], sessions: [] }));
+      if (url.startsWith("/api/study/questions")) return new Response(JSON.stringify({ questions }));
+      if (url === "/api/study/sessions" && init?.method === "POST") return new Response(JSON.stringify({ sessionId: "session" }), { status: 201 });
+      if (url === "/api/study/sessions" && init?.method === "PATCH") return new Response(JSON.stringify({ completed: true }));
+      if (url === "/api/study/answer") {
+        const body = JSON.parse(String(init?.body));
+        const correct = body.questionId !== "q1";
+        return new Response(JSON.stringify({ correct, earnedMarks: correct ? 1 : 0, expectedAnswer: correct ? "Answer" : "Early Vedic", explanation: correct ? "Correct." : "The timeline shows the Early Vedic period.", sourcePages: [49], attemptId: `attempt-${body.questionId}` }));
+      }
+      throw new Error(`Unexpected request: ${url}`);
+    });
+
+    render(<StudyExperience />);
+    fireEvent.click(await screen.findByRole("button", { name: /early vedic/i }));
+    fireEvent.click(await screen.findByLabelText("Later Vedic"));
+    fireEvent.click(screen.getByRole("button", { name: /check answer/i }));
+    await screen.findByText(/needs work/i);
+    fireEvent.click(screen.getByRole("button", { name: /next question/i }));
+
+    for (let index = 2; index <= 5; index += 1) {
+      fireEvent.change(await screen.findByLabelText("Your answer"), { target: { value: "Answer" } });
+      fireEvent.click(screen.getByRole("button", { name: /check answer/i }));
+      await screen.findByText("✓ Correct");
+      fireEvent.click(screen.getByRole("button", { name: index === 5 ? /see results/i : /next question/i }));
+    }
+
+    fireEvent.click(await screen.findByRole("button", { name: /review mistakes/i }));
+    expect(await screen.findByText("Which period?")).toBeInTheDocument();
+    expect(screen.getByRole("status")).toHaveTextContent("Expected: Early Vedic");
+    expect(fetchMock.mock.calls.filter(([url, request]) => String(url) === "/api/study/sessions" && request?.method === "POST")).toHaveLength(1);
+  });
 });

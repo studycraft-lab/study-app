@@ -39,6 +39,13 @@ export async function completeStudySession(sessionId: string, childId: string) {
   if (error) throw new Error(error.message);
 }
 
+export async function purgeStudySession(sessionId: string, childId: string) {
+  const { data, error } = await adminClient().rpc("purge_study_session", { p_session_id: sessionId, p_child_id: childId });
+  if (error) throw new Error(error.message);
+  const result = Array.isArray(data) ? data[0] : data;
+  return { sessionId, deletedAttempts: Number(result?.deleted_attempts ?? 0) };
+}
+
 async function sessionBelongsToChild(sessionId: string, childId: string, bankId: string) {
   const { data, error } = await adminClient().from("study_sessions").select("id").eq("id", sessionId).eq("child_id", childId).eq("question_bank_id", bankId).maybeSingle();
   if (error || !data) throw new Error("Study session is unavailable.");

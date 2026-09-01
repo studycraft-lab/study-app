@@ -53,4 +53,60 @@ describe("POST /api/question-banks/import", () => {
     expect(response.status).toBe(200);
     await expect(response.json()).resolves.toMatchObject({ imported: true, created: false, replaced: true });
   });
+
+  it("automatically advances the bank version when a reviewed version already exists", async () => {
+    process.env.PARENT_IMPORT_PASSPHRASE = "secret";
+    importQuestionBank
+      .mockRejectedValueOnce(new Error("A non-draft bank cannot be replaced. Increase the bank version."))
+      .mockResolvedValueOnce({ id: "bank-row-v2", created: true, replaced: false });
+
+    const response = await POST(new Request("http://localhost/api/question-banks/import", {
+      method: "POST",
+      headers: { "content-type": "application/json", "x-studycraft-parent-passphrase": "secret" },
+      body: JSON.stringify({ bank, metadata: { board: "ICSE", grade: 6, subject: "History", chapterNumber: 5, chapterTitle: "The Early Vedic Civilization" } }),
+    }));
+
+    expect(response.status).toBe(201);
+    expect(importQuestionBank).toHaveBeenCalledTimes(2);
+    expect(importQuestionBank.mock.calls[1]?.[0]).toMatchObject({ bank: { id: "vedic-v1", version: 2 } });
+    await expect(response.json()).resolves.toMatchObject({
+      imported: true,
+      created: true,
+      requestedVersion: 1,
+      importedVersion: 2,
+      versionAdjusted: true,
+    });
+  });
+
+  it("keeps advancing through consecutive occupied versions", async () => {
+    process.env.PARENT_IMPORT_PASSPHRASE = "secret";
+    importQuestionBank
+      .mockRejectedValueOnce(new Error("A non-draft bank cannot be replaced. Increase the bank version."))
+      .mockRejectedValueOnce(new Error("A bank with study history cannot be replaced. Increase the bank version."))
+      .mockResolvedValueOnce({ id: "bank-row-v3", created: true, replaced: false });
+
+    const response = await POST(new Request("http://localhost/api/question-banks/import", {
+      method: "POST",
+      headers: { "content-type": "application/json", "x-studycraft-parent-passphrase": "secret" },
+      body: JSON.stringify({ bank, metadata: { board: "ICSE", grade: 6, subject: "History", chapterNumber: 5, chapterTitle: "The Early Vedic Civilization" } }),
+    }));
+
+    expect(importQuestionBank.mock.calls.map(([payload]) => payload.bank.version)).toEqual([1, 2, 3]);
+    await expect(response.json()).resolves.toMatchObject({ importedVersion: 3, versionAdjusted: true });
+  });
+
+  it("does not hide unrelated import failures", async () => {
+    process.env.PARENT_IMPORT_PASSPHRASE = "secret";
+    importQuestionBank.mockRejectedValueOnce(new Error("Database connection failed."));
+
+    const response = await POST(new Request("http://localhost/api/question-banks/import", {
+      method: "POST",
+      headers: { "content-type": "application/json", "x-studycraft-parent-passphrase": "secret" },
+      body: JSON.stringify({ bank, metadata: { board: "ICSE", grade: 6, subject: "History", chapterNumber: 5, chapterTitle: "The Early Vedic Civilization" } }),
+    }));
+
+    expect(response.status).toBe(500);
+    expect(importQuestionBank).toHaveBeenCalledOnce();
+    await expect(response.json()).resolves.toMatchObject({ imported: false, error: "Database connection failed." });
+  });
 });

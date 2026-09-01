@@ -56,4 +56,4 @@ Import through the existing application API, which delegates to the shared quest
 STUDYCRAFT_PARENT_PASSPHRASE='…' npm run chapter:import -- path/to/question-bank.json
 ```
 
-The import command must re-run structural validation and grounding checks before transmitting the JSON. Do not upload source images through this command; private source-asset ingestion is a separate application capability.
+The import command must re-run structural validation and grounding checks before transmitting the JSON. Authors increment `bank.version` for intentional releases; if that version is already occupied by immutable content, the application automatically advances to the first compatible version and reports the effective imported version. Do not upload source images through this command; private source-asset ingestion is a separate application capability.

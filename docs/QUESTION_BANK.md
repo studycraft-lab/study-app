@@ -23,10 +23,10 @@ Open a Codex task in this repository, attach the chapter images or PDF (or provi
 For the current Early Vedic deliverable, use the review-only prompt. Its committed artifacts remain:
 
 - [`samples/early-vedic-chapter-manifest.json`](../samples/early-vedic-chapter-manifest.json)
-- [`samples/early-vedic-question-bank.json`](../samples/early-vedic-question-bank.json), with `bank.version` kept at `2`
+- [`samples/early-vedic-question-bank.json`](../samples/early-vedic-question-bank.json), with `bank.version` kept at `3`
 - [`samples/early-vedic-question-bank.review.json`](../samples/early-vedic-question-bank.review.json)
 
-Do not use the expansion prompt again until a version beyond `2` is intentionally requested.
+Do not use the expansion prompt again until a version beyond `3` is intentionally requested.
 
 Run the deterministic gates with:
 
@@ -178,7 +178,9 @@ An import warns when:
 
 Questions are not deleted merely because content is out of syllabus. Applicability is stored separately so a question may be active generally but excluded from one exam. Parent edits retain the question `id` and increment its integer `version`; attempts store both values and therefore continue to reference the exact version shown to the child. A newly generated bank also increments `bank.version`.
 
-There is one guarded replacement path for correcting a prototype import: when the stored bank is still `draft` and has no study sessions, attempts or review items, importing different content with the same bank ID and version replaces that row in place. This lets an incomplete draft such as a 12-question prototype be superseded by its reviewed v1 bank without leaving duplicate chapter entries. Once a bank is non-draft or has study history, it is immutable and changed content must increment `bank.version`.
+There is one guarded replacement path for correcting a prototype import: when the stored bank is still `draft` and has no study sessions, attempts or review items, importing different content with the same bank ID and version replaces that row in place. This lets an incomplete draft such as a 12-question prototype be superseded by its reviewed v1 bank without leaving duplicate chapter entries. Once a bank is non-draft or has study history, it is immutable and changed content needs a higher `bank.version`.
+
+Authors should still increment `bank.version` for an intentional new release. As a safety net, the shared import route automatically advances through occupied immutable versions and imports at the first compatible version; consecutive collisions are handled without asking the parent to edit JSON. The response reports `requestedVersion`, `importedVersion`, and `versionAdjusted`, and an identical bank already stored at an advanced version remains idempotent rather than being duplicated.
 
 ## Stable import command
 
@@ -188,4 +190,4 @@ After the bank and its review are accepted, start the application with its norma
 STUDYCRAFT_PARENT_PASSPHRASE='…' npm run chapter:import -- path/to/question-bank.json
 ```
 
-The command validates and reviews the bank again before calling the application’s shared import route. It does not store credentials or source images in the repository.
+The command validates and reviews the bank again before calling the application’s shared import route. Its JSON result shows the effective imported version, including any automatic version advance. It does not store credentials or source images in the repository.

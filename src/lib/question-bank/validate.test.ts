@@ -10,7 +10,7 @@ describe("validateQuestionBank", () => {
     expect(result.valid).toBe(true);
     expect(result.errors).toEqual([]);
     expect(result.preview).toMatchObject({ questionCount: 79, sourceCount: 9, topicCount: 10 });
-    expect(earlyVedicBank.bank.version).toBe(2);
+    expect(earlyVedicBank.bank.version).toBe(3);
     expect(earlyVedicBank.questions.find(({ id }) => id === "q-001")?.version).toBe(2);
     expect(earlyVedicBank.questions.find(({ id }) => id === "q-041")?.version).toBe(1);
   });

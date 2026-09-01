@@ -57,6 +57,30 @@ describe("ParentLibrary", () => {
     expect(await screen.findByText(/40 questions · bank v1/i)).toBeInTheDocument();
   });
 
+  it("explains when an occupied bank version was advanced automatically", async () => {
+    const preview = {
+      board: "ICSE", grade: 6, subject: "History", bookTitle: "History and Civics",
+      chapterNumber: 5, chapterTitle: "The Early Vedic Civilization", questionCount: 79, sourceCount: 9,
+    };
+    vi.spyOn(globalThis, "fetch").mockImplementation(async (input) => {
+      const url = String(input);
+      if (url === "/api/question-banks/validate") return new Response(JSON.stringify({ valid: true, preview }));
+      if (url === "/api/question-banks/import") return new Response(JSON.stringify({ imported: true, created: true, id: "bank-row-v3", requestedVersion: 2, importedVersion: 3, versionAdjusted: true }), { status: 201 });
+      if (url === "/api/parent/question-reports") return new Response(JSON.stringify({ reports: [] }));
+      return new Response(JSON.stringify({ chapters: [{ ...preview, id: "bank-row-v3", bankVersion: 3 }] }));
+    });
+    render(<ParentLibrary />);
+    fireEvent.change(screen.getByLabelText(/question-bank json/i), {
+      target: { files: [new File([JSON.stringify({ bank: { id: "early-vedic-civilization-v1" } })], "early-vedic.json", { type: "application/json" })] },
+    });
+
+    fireEvent.click(screen.getByRole("button", { name: /validate json/i }));
+    fireEvent.click(await screen.findByRole("button", { name: /confirm and import/i }));
+
+    expect(await screen.findByText(/imported as bank v3/i)).toBeInTheDocument();
+    expect(await screen.findByText(/79 questions · bank v3/i)).toBeInTheDocument();
+  });
+
   it("shows grouped report context and only disable or dismiss actions", async () => {
     const report = {
       id: "report", status: "open", bankVersion: 1, questionId: "q4", questionVersion: 1,

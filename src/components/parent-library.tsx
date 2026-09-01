@@ -84,8 +84,10 @@ export function ParentLibrary() {
     const response = await fetch("/api/question-banks/import", { method: "POST", headers, body: JSON.stringify({ bank, metadata: preview }) });
     const result = await response.json();
     if (response.ok) {
-      setMessage(result.created
-        ? "Chapter imported."
+      setMessage(result.versionAdjusted
+        ? `Chapter imported as bank v${result.importedVersion}; the requested version was already in use.`
+        : result.created
+          ? "Chapter imported."
         : result.replaced
           ? "Chapter bank replaced with the latest content."
           : "This bank was already imported; nothing was duplicated.");

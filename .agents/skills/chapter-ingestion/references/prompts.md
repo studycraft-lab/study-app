@@ -18,12 +18,12 @@ Generate broad and deep coverage without padding the bank with superficial parap
 Create the chapter manifest, version-1 question bank and separate grounding-review record. Run manifest validation, source-hash verification, bank validation, deterministic review and manual source-by-source review. Normalize the accepted bank and commit only the chapter-ingestion artifacts and any necessary contract changes. Do not import the bank or upload source images unless I explicitly request those external actions.
 ```
 
-## Review the existing Early Vedic version 2
+## Review the existing Early Vedic version 3
 
-Use this when the goal is to verify or make narrowly justified corrections without creating version 2:
+Use this when the goal is to verify or make narrowly justified corrections without creating version 4:
 
 ```text
-$chapter-ingestion Review the existing Early Vedic Civilization version-2 artifacts:
+$chapter-ingestion Review the existing Early Vedic Civilization version-3 artifacts:
 
 - samples/early-vedic-chapter-manifest.json
 - samples/early-vedic-question-bank.json
@@ -31,7 +31,7 @@ $chapter-ingestion Review the existing Early Vedic Civilization version-2 artifa
 
 Use the source images in /Users/aquaraga/Desktop/raw-study-material/grade-6/history/early-vedic. Verify source hashes, schema conformance, every citation, deterministic answer, distractor, rubric point, hint, explanation, topic assignment and coverage claim against pages 45–53.
 
-Keep bank.version at 2. Preserve existing question IDs and versions. Make only corrections required for factual grounding, schema validity, scoring correctness or clear coverage defects; do not begin a version-3 expansion. Re-run every chapter-ingestion validation and review gate. Update the review record if findings change, and commit only the files changed by this review. Do not import the bank or upload source images.
+Keep bank.version at 3. Preserve existing question IDs and versions. Make only corrections required for factual grounding, schema validity, scoring correctness or clear coverage defects; do not begin a version-4 expansion. Re-run every chapter-ingestion validation and review gate. Update the review record if findings change, and commit only the files changed by this review. Do not import the bank or upload source images.
 ```
 
 ## Expand a reviewed bank later

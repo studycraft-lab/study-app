@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { AppHeader } from "./app-header";
 
 type Attempt = { id: string; question_prompt: string; correct: boolean; earned_marks: number; max_marks: number };
-type Session = { id: string; status: string; startedAt: string; totalQuestions: number; attempts: Attempt[] };
+type Session = { id: string; status: string; resumable?: boolean; startedAt: string; totalQuestions: number; attempts: Attempt[] };
 type History = { summary: { completedSessions: number; rewards?: { stars: number } }; sessions: Session[] };
 
 export function ChildDashboard() {
@@ -21,7 +21,9 @@ export function ChildDashboard() {
       <section className="dashboard-section"><div className="section-heading"><h2>Recent scores</h2></div>{history.sessions.length === 0 ? <div className="empty-state"><p>No scores yet.</p><Link href="/study">Start your first chapter</Link></div> : <div className="dashboard-sessions">{history.sessions.map((session) => {
         const earned = session.attempts.reduce((sum, attempt) => sum + attempt.earned_marks, 0);
         const total = session.attempts.reduce((sum, attempt) => sum + attempt.max_marks, 0);
-        return <Link className="dashboard-session" href={`/study/history/${session.id}`} key={session.id}><span>{new Date(session.startedAt).toLocaleDateString()}</span><strong>{earned}/{total || 0} marks</strong><small>{session.attempts.length}/{session.totalQuestions} answered · {session.status === "completed" ? "Completed" : "Continue"}</small><b>›</b></Link>;
+        const completed = session.status === "completed";
+        const canResume = !completed && session.resumable;
+        return <Link className="dashboard-session" href={canResume ? `/study?resume=${encodeURIComponent(session.id)}` : `/study/history/${session.id}`} key={session.id}><span>{new Date(session.startedAt).toLocaleDateString()}</span><strong>{earned}/{total || 0} marks</strong><small>{session.attempts.length}/{session.totalQuestions} answered · {completed ? "Completed" : canResume ? "Resume session" : "Not finished"}</small><b>›</b></Link>;
       })}</div>}</section>
       <p className="dashboard-note">Stars reward correct answers and steady practice. They are private to you.</p>
     </>}

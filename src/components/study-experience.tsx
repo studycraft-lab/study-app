@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { AppHeader } from "./app-header";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 
 type Chapter = { id: string; board: string; grade: number; subject: string; chapterNumber?: number | null; chapterTitle: string; questionCount: number; correctEver?: number; coveragePercent?: number; fullCoverage?: boolean };
 type Child = { id: string; displayName: string; board: string; grade: number };
@@ -37,6 +37,7 @@ function resultStatus(result: { correct: boolean; earnedMarks?: number; earned_m
 
 export function StudyExperience() {
   const router = useRouter();
+  const requestedSessionId = useSearchParams().get("resume");
   const [phase, setPhase] = useState<"loading" | "library" | "session" | "summary" | "history">("loading");
   const [child, setChild] = useState<Child | null>(null);
   const [chapters, setChapters] = useState<Chapter[]>([]);
@@ -75,10 +76,11 @@ export function StudyExperience() {
       const body = await result.json();
       if (!active) return;
       if (!result.ok) { setError(body.error ?? "Library unavailable."); return; }
-      setChild(body.child ?? null); setChapters(body.chapters ?? []); setPhase("library"); void loadHistory();
+      setChild(body.child ?? null); setChapters(body.chapters ?? []); void loadHistory();
+      if (requestedSessionId) void resume(requestedSessionId); else setPhase("library");
     });
     return () => { active = false; };
-  }, [router]);
+  }, [requestedSessionId, router]);
 
   async function start(chapter: Chapter) {
     setBusy(true); setError(""); setBankId(chapter.id);
@@ -96,16 +98,17 @@ export function StudyExperience() {
   }
 
 
-  async function resume(session: HistorySession) {
+  async function resume(session: HistorySession | string) {
+    const resumableId = typeof session === "string" ? session : session.id;
     setBusy(true); setError("");
-    const result = await fetch(`/api/study/sessions?sessionId=${encodeURIComponent(session.id)}`, { cache: "no-store" });
+    const result = await fetch(`/api/study/sessions?sessionId=${encodeURIComponent(resumableId)}`, { cache: "no-store" });
     const body = await result.json();
-    if (!result.ok) { setError(body.error ?? "Could not resume this session."); setBusy(false); return; }
+    if (!result.ok) { setError(body.error ?? "Could not resume this session."); setPhase("library"); setBusy(false); return; }
     const loaded = body.questions as Question[];
     const attempts = (body.attempts ?? []) as Array<{ id: string; question_id: string; response: unknown; correct: boolean; earned_marks: number; feedback: Omit<Feedback, "attemptId"> }>;
     const latest = new Map(attempts.map((attempt) => [attempt.question_id, attempt]));
     const remaining = loaded.filter((question) => !latest.has(question.id)).map((question) => question.id);
-    setBankId(body.bankId); setSessionId(session.id); setQuestions(loaded); setQueue(remaining);
+    setBankId(body.bankId); setSessionId(resumableId); setQuestions(loaded); setQueue(remaining);
     setStatuses(Object.fromEntries(loaded.map((question) => { const attempt = latest.get(question.id); return [question.id, attempt ? resultStatus({ ...attempt, reviewRequired: attempt.feedback.reviewRequired }) : "pending"]; })));
     setResponses(Object.fromEntries(attempts.map((attempt) => [attempt.question_id, attempt.response])));
     setFeedbackByQuestion(Object.fromEntries(attempts.map((attempt) => [attempt.question_id, { ...attempt.feedback, attemptId: attempt.id }])));

@@ -9,7 +9,7 @@ const questions = [
 ];
 
 describe("StudyExperience", () => {
-  afterEach(() => { cleanup(); vi.restoreAllMocks(); });
+  afterEach(() => { cleanup(); vi.restoreAllMocks(); window.history.replaceState({}, "", "/"); });
 
   it("uses an existing child session and gives immediate cited feedback", async () => {
     vi.spyOn(globalThis, "fetch").mockImplementation(async (input) => {
@@ -98,6 +98,21 @@ describe("StudyExperience", () => {
     expect(await screen.findByText("1/3 marks")).toBeInTheDocument();
     expect(screen.getByText(/2 of 5 answered/)).toBeInTheDocument();
     fireEvent.click(screen.getByRole("button", { name: /resume session/i }));
+    expect(await screen.findByText("Which period?")).toBeInTheDocument();
+  });
+
+  it("resumes a session opened from the child dashboard", async () => {
+    window.history.replaceState({}, "", "/study?resume=unfinished");
+    vi.spyOn(globalThis, "fetch").mockImplementation(async (input) => {
+      const url = String(input);
+      if (url === "/api/study/library") return new Response(JSON.stringify({ child: { id: "child", displayName: "Asha", grade: 6, board: "ICSE" }, chapters: [] }));
+      if (url === "/api/study/history") return new Response(JSON.stringify({ summary: { completedSessions: 0 }, topics: [], sessions: [] }));
+      if (url === "/api/study/sessions?sessionId=unfinished") return new Response(JSON.stringify({ bankId: "bank", questions, attempts: [] }));
+      throw new Error(`Unexpected request: ${url}`);
+    });
+
+    render(<StudyExperience />);
+
     expect(await screen.findByText("Which period?")).toBeInTheDocument();
   });
 

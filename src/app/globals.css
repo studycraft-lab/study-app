@@ -456,11 +456,23 @@ button:disabled { cursor: not-allowed; opacity: .45; }
 .history-card > h1 { font-size: clamp(2.4rem,6vw,4.5rem); }
 .history-attempts { display: grid; gap: 14px; margin-top: 30px; }
 .history-attempts article { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 22px; }
+.history-attempts article.attempt-correct { border-left: 5px solid #4c9a75; }
+.history-attempts article.attempt-partial { border-left: 5px solid var(--sun); }
+.history-attempts article.attempt-wrong { border-left: 5px solid var(--coral); }
+.history-attempts article > header { align-items: center; display: flex; justify-content: space-between; }
+.history-attempts article > header span { color: var(--muted); font-size: .76rem; font-weight: 850; text-transform: uppercase; }
+.history-attempts article > header strong { font-size: .82rem; }
 .history-attempts article > span { font-size: .76rem; font-weight: 850; text-transform: uppercase; }
 .history-attempts article > span.is-correct { color: #17613f; }
 .history-attempts article > span.is-wrong { color: #9d3520; }
 .history-attempts h2 { font-size: 1.15rem; margin: 10px 0; }
 .history-attempts p, .history-attempts small { color: var(--muted); }
+.history-attempts h3 { font-size: 1.15rem; margin: 18px 0; }
+.review-answers { display: grid; gap: 10px; margin: 0; }
+.review-answers div { background: var(--paper); border-radius: 12px; padding: 12px 14px; }
+.review-answers dt { color: var(--muted); font-size: .72rem; font-weight: 800; text-transform: uppercase; }
+.review-answers dd { line-height: 1.45; margin: 5px 0 0; }
+.review-explanation { border-top: 1px solid var(--line); line-height: 1.5; margin: 16px 0 0; padding-top: 14px; }
 
 @media (max-width: 650px) {
   .study-shell { padding-inline: 18px; }

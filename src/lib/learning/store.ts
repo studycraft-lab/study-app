@@ -88,6 +88,24 @@ export async function resumableStudySession(sessionId: string, childId: string) 
   return { bankId: String(session.question_bank_id), questionIds: session.question_ids.map(String), presentationSeed: typeof session.presentation_seed === "string" ? session.presentation_seed : undefined, attempts: attempts ?? [] };
 }
 
+export async function studySessionReview(sessionId: string, childId: string) {
+  const client = adminClient();
+  const { data: session, error: sessionError } = await client.from("study_sessions")
+    .select("id,question_bank_id,status,started_at,total_questions,question_ids,presentation_seed")
+    .eq("id", sessionId).eq("child_id", childId).maybeSingle();
+  if (sessionError || !session || !Array.isArray(session.question_ids)) throw new Error("This session is unavailable.");
+  const { data: attempts, error: attemptError } = await client.from("study_attempts")
+    .select("id,question_id,response,correct,earned_marks,max_marks,feedback,attempted_at")
+    .eq("session_id", sessionId).eq("child_id", childId).order("attempted_at");
+  if (attemptError) throw new Error(attemptError.message);
+  return {
+    id: String(session.id), bankId: String(session.question_bank_id), status: String(session.status), startedAt: String(session.started_at),
+    totalQuestions: Number(session.total_questions), questionIds: session.question_ids.map(String),
+    presentationSeed: typeof session.presentation_seed === "string" ? session.presentation_seed : undefined,
+    attempts: attempts ?? [],
+  };
+}
+
 export async function completeStudySession(sessionId: string, childId: string) {
   const { error } = await adminClient().from("study_sessions").update({ status: "completed", completed_at: new Date().toISOString() })
     .eq("id", sessionId).eq("child_id", childId).eq("status", "in_progress");

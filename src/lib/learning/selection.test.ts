@@ -3,6 +3,15 @@ import { describe, expect, it } from "vitest";
 import { selectQuestionIds } from "./selection";
 
 describe("selectQuestionIds", () => {
+  it("builds a ten-question exercise with seven objective and three subjective questions", () => {
+    const ids = Array.from({ length: 7 }, (_, index) => `o${index + 1}`).concat(Array.from({ length: 4 }, (_, index) => `s${index + 1}`));
+    const types = Object.fromEntries(ids.map((id) => [id, id.startsWith("s") ? "brief_answer" : "single_choice"]));
+    const selected = selectQuestionIds(ids, [], 10, () => 0, types);
+    expect(selected).toHaveLength(10);
+    expect(selected.filter((id) => id.startsWith("s"))).toHaveLength(3);
+    expect(selected.filter((id) => id.startsWith("o"))).toHaveLength(7);
+  });
+
   it("mixes at most two weak questions with unseen questions when available", () => {
     const selected = selectQuestionIds(
       ["w1", "w2", "w3", "n1", "n2", "n3", "r1", "r2"],

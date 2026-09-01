@@ -11,7 +11,11 @@ export async function GET(request: Request) {
     const child = await childFromRequest(request);
     if (!child) return Response.json({ error: "Choose your profile to continue." }, { status: 401 });
     const bank = await getQuestionBankForChild(bankId, { familyId: child.familyId, board: child.board, grade: child.grade });
-    const selectedIds = selectQuestionIds(selectableQuestionIds(bank), await questionSelectionHistory(child.id, bankId));
+    const candidateIds = selectableQuestionIds(bank);
+    const questionTypes = Object.fromEntries((Array.isArray(bank.questions) ? bank.questions : [])
+      .filter((question: unknown) => question && typeof question === "object" && "id" in question && "type" in question)
+      .map((question: { id: unknown; type: unknown }) => [String(question.id), String(question.type)]));
+    const selectedIds = selectQuestionIds(candidateIds, await questionSelectionHistory(child.id, bankId), 10, Math.random, questionTypes);
     const presentationSeed = crypto.randomUUID();
     return Response.json({ questions: prepareReviewSession(bank, selectedIds, presentationSeed), presentationSeed });
   } catch (error) {

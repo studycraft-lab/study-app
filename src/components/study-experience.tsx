@@ -86,7 +86,7 @@ export function StudyExperience() {
     setBusy(true); setError(""); setBankId(chapter.id);
     const result = await fetch(`/api/study/questions?bankId=${encodeURIComponent(chapter.id)}`);
     const body = await result.json();
-    if (!result.ok || !body.questions?.length) { setError(body.error ?? "This chapter needs five objective questions first."); setBusy(false); return; }
+    if (!result.ok || !body.questions?.length) { setError(body.error ?? "This chapter needs questions before you can start."); setBusy(false); return; }
     const loaded = body.questions as Question[];
     const sessionResult = await fetch("/api/study/sessions", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ bankId: chapter.id, questionIds: loaded.map((question) => question.id), presentationSeed: body.presentationSeed }) });
     const sessionBody = await sessionResult.json();
@@ -177,7 +177,7 @@ export function StudyExperience() {
 
     {phase === "library" && <section className="chapter-picker">
       <p className="eyebrow">Study</p><h1>What would you like to study?</h1>
-      {chapters.length === 0 ? <div className="empty-study"><p>No chapters are ready yet.</p><Link href="/parent/library">Import a question bank</Link></div> : <div className="chapter-grid">{chapters.map((chapter) => <button key={chapter.id} onClick={() => start(chapter)} disabled={busy} aria-label={`Study ${chapter.chapterTitle}`}><span>{chapter.board} · Grade {chapter.grade}</span><strong>{chapter.subject}</strong><h2>{chapter.chapterNumber ? `${chapter.chapterNumber}. ` : ""}{chapter.chapterTitle}</h2><small>{chapter.correctEver ?? 0}/{chapter.questionCount} covered · {Math.min(5, chapter.questionCount)} questions</small>{chapter.fullCoverage && <em className="coverage-badge">✓ Full coverage</em>}</button>)}</div>}
+      {chapters.length === 0 ? <div className="empty-study"><p>No chapters are ready yet.</p><Link href="/parent/library">Import a question bank</Link></div> : <div className="chapter-grid">{chapters.map((chapter) => <button key={chapter.id} onClick={() => start(chapter)} disabled={busy} aria-label={`Study ${chapter.chapterTitle}`}><span>{chapter.board} · Grade {chapter.grade}</span><strong>{chapter.subject}</strong><h2>{chapter.chapterNumber ? `${chapter.chapterNumber}. ` : ""}{chapter.chapterTitle}</h2><small>{chapter.correctEver ?? 0}/{chapter.questionCount} covered · 10-question exercise</small>{chapter.fullCoverage && <em className="coverage-badge">✓ Full coverage</em>}</button>)}</div>}
       {history && history.sessions.some((item) => item.resumable) && <div className="recent-sessions"><h2>Continue studying</h2>{history.sessions.filter((item) => item.resumable).slice(0, 3).map((item) => { const marks = sessionMarks(item); return <article key={item.id} className="recent-session-row"><span>{new Date(item.startedAt).toLocaleDateString()}</span><strong>{marks.earned}/{marks.possible || 0} marks</strong><small>{item.attempts.length} of {item.totalQuestions} answered · Unfinished</small><div><button onClick={() => resume(item)} disabled={busy}>Resume session</button></div></article>; })}</div>}
       {error && <p className="notice notice-error">{error}</p>}
     </section>}

@@ -165,25 +165,18 @@ export async function disableReportedQuestion(input: { reportId: string; familyI
   payload.bank = bankMetadata;
 
   const validation = validateQuestionBank(payload);
-  if (!validation.valid || !validation.value || !validation.preview) throw new Error(validation.errors.join(" ") || "The corrected question is invalid.");
+  if (!validation.valid || !validation.value) throw new Error(validation.errors.join(" ") || "The disabled question bank is invalid.");
   const contentHash = createHash("sha256").update(JSON.stringify(validation.value)).digest("hex");
-  const preview = validation.preview;
-  const { data: imported, error: importError } = await client.rpc("import_question_bank", {
+  const { data: result, error: disableError } = await client.rpc("disable_reported_question", {
+    p_report_id: report.id,
+    p_family_id: input.familyId,
+    p_resolver_name: input.resolverName,
+    p_resolution_note: input.note?.trim() ?? "",
     p_payload: validation.value,
-    p_metadata: { board: preview.board, grade: preview.grade, subject: preview.subject, bookTitle: preview.bookTitle, chapterNumber: preview.chapterNumber, chapterTitle: preview.chapterTitle },
     p_content_hash: contentHash,
   });
-  if (importError) throw new Error(importError.message);
-  const newBankId = String(record(imported).id ?? "");
-  if (!newBankId) throw new Error("The corrected bank could not be created.");
-
-  const [bankUpdate, reviewDelete, latestReviewDelete, reportUpdate] = await Promise.all([
-    client.from("question_banks").update({ status: "superseded" }).eq("id", latestBank.id),
-    client.from("review_items").delete().eq("question_bank_id", report.question_bank_id).eq("question_id", report.question_id),
-    client.from("review_items").delete().eq("question_bank_id", latestBank.id).eq("question_id", report.question_id),
-    resolveGroup({ reportId: report.id, familyId: input.familyId, resolverName: input.resolverName, status: "disabled", note: input.note, replacementBankId: newBankId, replacementSnapshot: replacement }).then(() => ({ error: null as null | { message: string } })).catch((error: Error) => ({ error: { message: error.message } })),
-  ]);
-  const updateError = bankUpdate.error ?? reviewDelete.error ?? latestReviewDelete.error ?? reportUpdate.error;
-  if (updateError) throw new Error(updateError.message);
-  return { bankId: newBankId, bankVersion: Number(bankMetadata.version) };
+  if (disableError) throw new Error(disableError.message);
+  const output = record(result);
+  if (!output.bankId) throw new Error("The disabled bank could not be created.");
+  return { bankId: String(output.bankId), bankVersion: Number(output.bankVersion) };
 }

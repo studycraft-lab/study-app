@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { gradeQuestion, prepareSession } from "./session";
+import { gradeQuestion, prepareReviewSession, prepareSession } from "./session";
 
 const bank = {
   sources: [{ id: "p1", pageNumber: 45, regions: [] }],
@@ -26,5 +26,14 @@ describe("study session DTO", () => {
   it("returns readable feedback and the cited page only after grading", () => {
     const feedback = gradeQuestion(bank, "one", "b");
     expect(feedback).toMatchObject({ correct: false, expectedAnswer: "Early Vedic", sourcePages: [45] });
+  });
+
+  it("varies option order between sessions and preserves it for the same session seed", () => {
+    const optionBank = { questions: [{ id: "choice", type: "single_choice", status: "active", prompt: "Choose", marks: 1, response: { options: ["a", "b", "c", "d", "e"].map((id) => ({ id, text: id })) } }] };
+    const first = prepareReviewSession(optionBank, ["choice"], "first-session")[0].response.options;
+    const resumed = prepareReviewSession(optionBank, ["choice"], "first-session")[0].response.options;
+    const next = prepareReviewSession(optionBank, ["choice"], "next-session")[0].response.options;
+    expect(resumed).toEqual(first);
+    expect(next).not.toEqual(first);
   });
 });

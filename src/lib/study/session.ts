@@ -21,6 +21,43 @@ export type StudyQuestion = {
   response: RecordValue;
 };
 
+function seededNumber(seed: string): () => number {
+  let state = 2166136261;
+  for (const character of seed) {
+    state ^= character.charCodeAt(0);
+    state = Math.imul(state, 16777619);
+  }
+  return () => {
+    state += 0x6d2b79f5;
+    let value = state;
+    value = Math.imul(value ^ value >>> 15, value | 1);
+    value ^= value + Math.imul(value ^ value >>> 7, value | 61);
+    return ((value ^ value >>> 14) >>> 0) / 4294967296;
+  };
+}
+
+function shuffled<T>(values: T[], seed: string): T[] {
+  const result = [...values];
+  const random = seededNumber(seed);
+  for (let index = result.length - 1; index > 0; index -= 1) {
+    const target = Math.floor(random() * (index + 1));
+    [result[index], result[target]] = [result[target], result[index]];
+  }
+  return result;
+}
+
+function presentedResponse(question: RecordValue, presentationSeed?: string): RecordValue {
+  const response = record(question.response);
+  if (!presentationSeed) return response;
+  if (question.type === "single_choice" || question.type === "multiple_select") {
+    return { ...response, options: shuffled(records(response.options), `${presentationSeed}:${String(question.id)}:options`) };
+  }
+  if (question.type === "matching") {
+    return { ...response, right: shuffled(records(response.right), `${presentationSeed}:${String(question.id)}:right`) };
+  }
+  return response;
+}
+
 export function selectableQuestionIds(bankValue: unknown): string[] {
   const bank = record(bankValue);
   return records(bank.questions)
@@ -52,7 +89,7 @@ export function prepareSession(bankValue: unknown): StudyQuestion[] {
   }));
 }
 
-export function prepareReviewSession(bankValue: unknown, questionIds: string[]): StudyQuestion[] {
+export function prepareReviewSession(bankValue: unknown, questionIds: string[], presentationSeed?: string): StudyQuestion[] {
   const bank = record(bankValue);
   const byId = new Map(records(bank.questions).map((question) => [String(question.id), question]));
   return questionIds
@@ -64,7 +101,7 @@ export function prepareReviewSession(bankValue: unknown, questionIds: string[]):
       type: String(question.type),
       prompt: String(question.prompt ?? ""),
       marks: typeof question.marks === "number" ? question.marks : 0,
-      response: record(question.response),
+      response: presentedResponse(question, presentationSeed),
     }));
 }
 

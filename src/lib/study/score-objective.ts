@@ -38,6 +38,7 @@ export function scoreObjective(question: ObjectiveQuestion, response: unknown): 
   const answer = record(question.answer);
   const marks = typeof question.marks === "number" ? question.marks : 0;
   let correct = false;
+  let earnedMarks = 0;
   let expectedAnswer = "";
 
   switch (question.type) {
@@ -58,7 +59,9 @@ export function scoreObjective(question: ObjectiveQuestion, response: unknown): 
     case "true_false_correct": {
       const given = record(response);
       expectedAnswer = answer.value === false ? `False — ${String(answer.correction ?? "")}` : "True";
-      correct = given.value === answer.value && (answer.value === true || correctionMatches(given.correction, answer.correction));
+      const truthChoiceCorrect = given.value === answer.value;
+      correct = truthChoiceCorrect && (answer.value === true || correctionMatches(given.correction, answer.correction));
+      if (truthChoiceCorrect && !correct) earnedMarks = marks / 2;
       break;
     }
     case "matching": {
@@ -70,5 +73,5 @@ export function scoreObjective(question: ObjectiveQuestion, response: unknown): 
     }
   }
 
-  return { correct, earnedMarks: correct ? marks : 0, expectedAnswer };
+  return { correct, earnedMarks: correct ? marks : earnedMarks, expectedAnswer };
 }

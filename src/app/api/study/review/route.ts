@@ -10,7 +10,8 @@ export async function GET(request: Request) {
     const due = await dueReviewQuestionIds(child.id);
     if (!due) return Response.json({ questions: [] });
     const bank = await getQuestionBankForChild(due.bankId, { familyId: child.familyId, board: child.board, grade: child.grade });
-    return Response.json({ bankId: due.bankId, questions: prepareReviewSession(bank, due.questionIds) });
+    const presentationSeed = crypto.randomUUID();
+    return Response.json({ bankId: due.bankId, questions: prepareReviewSession(bank, due.questionIds, presentationSeed), presentationSeed });
   } catch (error) {
     return Response.json({ error: error instanceof Error ? error.message : "Review is unavailable." }, { status: 500 });
   }

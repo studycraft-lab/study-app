@@ -12,7 +12,8 @@ export async function GET(request: Request) {
     if (!child) return Response.json({ error: "Choose your profile to continue." }, { status: 401 });
     const bank = await getQuestionBankForChild(bankId, { familyId: child.familyId, board: child.board, grade: child.grade });
     const selectedIds = selectQuestionIds(selectableQuestionIds(bank), await questionSelectionHistory(child.id, bankId));
-    return Response.json({ questions: prepareReviewSession(bank, selectedIds) });
+    const presentationSeed = crypto.randomUUID();
+    return Response.json({ questions: prepareReviewSession(bank, selectedIds, presentationSeed), presentationSeed });
   } catch (error) {
     return Response.json({ error: error instanceof Error ? error.message : "Questions unavailable." }, { status: 500 });
   }

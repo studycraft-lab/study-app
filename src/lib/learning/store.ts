@@ -26,9 +26,9 @@ function question(bank: RecordValue, questionId: string) {
   return value;
 }
 
-export async function createStudySession(input: { child: ChildContext; bankId: string; bank: RecordValue; questionIds: string[] }) {
+export async function createStudySession(input: { child: ChildContext; bankId: string; bank: RecordValue; questionIds: string[]; presentationSeed: string }) {
   const { data, error } = await adminClient().from("study_sessions").insert({
-    child_id: input.child.id, question_bank_id: input.bankId, bank_version: bankVersion(input.bank), total_questions: input.questionIds.length, question_ids: input.questionIds,
+    child_id: input.child.id, question_bank_id: input.bankId, bank_version: bankVersion(input.bank), total_questions: input.questionIds.length, question_ids: input.questionIds, presentation_seed: input.presentationSeed,
   }).select("id").single();
   if (error || !data) throw new Error(error?.message ?? "Study session could not be started.");
   return String(data.id);
@@ -78,14 +78,14 @@ export async function chapterCoverage(childId: string, bankIds: string[]) {
 export async function resumableStudySession(sessionId: string, childId: string) {
   const client = adminClient();
   const { data: session, error: sessionError } = await client.from("study_sessions")
-    .select("id,question_bank_id,status,total_questions,question_ids")
+    .select("id,question_bank_id,status,total_questions,question_ids,presentation_seed")
     .eq("id", sessionId).eq("child_id", childId).maybeSingle();
   if (sessionError || !session || session.status !== "in_progress" || !Array.isArray(session.question_ids)) throw new Error("This unfinished session cannot be resumed.");
   const { data: attempts, error: attemptError } = await client.from("study_attempts")
     .select("id,question_id,response,correct,earned_marks,max_marks,feedback,attempted_at")
     .eq("session_id", sessionId).eq("child_id", childId).order("attempted_at");
   if (attemptError) throw new Error(attemptError.message);
-  return { bankId: String(session.question_bank_id), questionIds: session.question_ids.map(String), attempts: attempts ?? [] };
+  return { bankId: String(session.question_bank_id), questionIds: session.question_ids.map(String), presentationSeed: typeof session.presentation_seed === "string" ? session.presentation_seed : undefined, attempts: attempts ?? [] };
 }
 
 export async function completeStudySession(sessionId: string, childId: string) {

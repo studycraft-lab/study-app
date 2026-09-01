@@ -17,14 +17,14 @@ describe("study sessions", () => {
     mocks.childFromRequest.mockResolvedValue({ id: "child", familyId: "family", board: "ICSE", grade: 6 });
     mocks.getQuestionBankForChild.mockResolvedValue(bank);
     mocks.createStudySession.mockResolvedValue("session");
-    const response = await POST(new Request("http://localhost/api/study/sessions", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ bankId: "bank", questionIds: ["q1"] }) }));
+    const response = await POST(new Request("http://localhost/api/study/sessions", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ bankId: "bank", questionIds: ["q1"], presentationSeed: "seed" }) }));
     expect(response.status).toBe(201);
-    expect(mocks.createStudySession).toHaveBeenCalledWith(expect.objectContaining({ questionIds: ["q1"] }));
+    expect(mocks.createStudySession).toHaveBeenCalledWith(expect.objectContaining({ questionIds: ["q1"], presentationSeed: "seed" }));
   });
 
   it("returns stored questions and attempts for resume", async () => {
     mocks.childFromRequest.mockResolvedValue({ id: "child", familyId: "family", board: "ICSE", grade: 6 });
-    mocks.resumableStudySession.mockResolvedValue({ bankId: "bank", questionIds: ["q1"], attempts: [{ question_id: "q1" }] });
+    mocks.resumableStudySession.mockResolvedValue({ bankId: "bank", questionIds: ["q1"], presentationSeed: "seed", attempts: [{ question_id: "q1" }] });
     mocks.getQuestionBankForChild.mockResolvedValue(bank);
     const response = await GET(new Request("http://localhost/api/study/sessions?sessionId=session"));
     await expect(response.json()).resolves.toMatchObject({ bankId: "bank", questions: [{ id: "q1" }], attempts: [{ question_id: "q1" }] });

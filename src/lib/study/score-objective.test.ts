@@ -24,6 +24,18 @@ describe("scoreObjective", () => {
     expect(scoreObjective(question, { value: false, correction: "Aryans wore two garments." }).correct).toBe(true);
   });
 
+  it("awards half marks when the truth choice is correct but its correction is missing", () => {
+    const question = {
+      type: "true_false_correct",
+      answer: { value: false, correction: "The dress of the Aryans consisted of two garments." },
+      marks: 2,
+    };
+    expect(scoreObjective(question, { value: false, correction: "" })).toMatchObject({
+      correct: false,
+      earnedMarks: 1,
+    });
+  });
+
   it("scores every matching pair", () => {
     const question = { type: "matching", answer: { pairs: [{ leftId: "jana", rightId: "tribe" }, { leftId: "gramani", rightId: "village" }] }, marks: 2 };
     expect(scoreObjective(question, { jana: "tribe", gramani: "village" }).correct).toBe(true);

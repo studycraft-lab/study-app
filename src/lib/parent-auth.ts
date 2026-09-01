@@ -1,11 +1,12 @@
 import "server-only";
 
 import { createHash, timingSafeEqual } from "node:crypto";
+import { hasParentSession } from "./parent-session";
 
 const HEADER_NAME = "x-studycraft-parent-passphrase";
 
 export function isParentAuthorized(request: Request): boolean {
-  return isParentPassphrase(request.headers.get(HEADER_NAME));
+  return hasParentSession(request) || isParentPassphrase(request.headers.get(HEADER_NAME));
 }
 
 export function isParentPassphrase(provided: string | null): boolean {

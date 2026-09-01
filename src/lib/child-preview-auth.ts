@@ -16,6 +16,11 @@ export function childPreviewCookie(): string {
   return `${COOKIE_NAME}=${value}; Path=/; Max-Age=28800; HttpOnly; SameSite=Lax${secure}`;
 }
 
+export function clearChildPreviewCookie(): string {
+  const secure = process.env.NODE_ENV === "production" ? "; Secure" : "";
+  return `${COOKIE_NAME}=; Path=/; Max-Age=0; HttpOnly; SameSite=Lax${secure}`;
+}
+
 export function isChildPreviewAuthorized(request: Request): boolean {
   const expected = token();
   const cookie = request.headers.get("cookie") ?? "";

@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
-import Link from "next/link";
+import { useCallback, useEffect, useState } from "react";
+import { AppHeader } from "./app-header";
+import { useRouter } from "next/navigation";
 
 type Preview = {
   board: string; grade: number; subject: string; bookTitle: string | null;
@@ -29,7 +30,7 @@ function answerSummary(question: Record<string, unknown>) {
 }
 
 export function ParentLibrary() {
-  const [passphrase, setPassphrase] = useState("");
+  const router = useRouter();
   const [file, setFile] = useState<File | null>(null);
   const [bank, setBank] = useState<unknown>(null);
   const [preview, setPreview] = useState<Preview | null>(null);
@@ -39,7 +40,7 @@ export function ParentLibrary() {
   const [reports, setReports] = useState<{ open: QuestionReport[]; resolved: QuestionReport[] }>({ open: [], resolved: [] });
   const [busy, setBusy] = useState(false);
 
-  const headers = { "content-type": "application/json", "x-studycraft-parent-passphrase": passphrase };
+  const headers = { "content-type": "application/json" };
 
   async function validate() {
     if (!file) return;
@@ -59,12 +60,11 @@ export function ParentLibrary() {
     setPreview((current) => current ? { ...current, [key]: value } : current);
   }
 
-  async function loadLibrary() {
+  const loadLibrary = useCallback(async () => {
     setErrors([]);
-    const authHeaders = { "x-studycraft-parent-passphrase": passphrase };
     const [response, reportResponse] = await Promise.all([
-      fetch("/api/library", { headers: authHeaders }),
-      fetch("/api/parent/question-reports", { headers: authHeaders }),
+      fetch("/api/library"),
+      fetch("/api/parent/question-reports"),
     ]);
     const result = await response.json();
     if (response.ok) {
@@ -73,8 +73,10 @@ export function ParentLibrary() {
         const reportResult = (await reportResponse.json()).reports;
         setReports(Array.isArray(reportResult) ? { open: reportResult, resolved: [] } : reportResult ?? { open: [], resolved: [] });
       }
-    } else setErrors([result.error ?? "Could not load the library."]);
-  }
+    } else if (response.status === 401) router.push("/login?role=parent");
+    else setErrors([result.error ?? "Could not load the library."]);
+  }, [router]);
+  useEffect(() => { void Promise.resolve().then(loadLibrary); }, [loadLibrary]);
 
   async function importBank() {
     if (!bank || !preview) return;
@@ -95,10 +97,7 @@ export function ParentLibrary() {
 
   return (
     <main className="parent-shell">
-      <header className="parent-header">
-        <Link className="brand" href="/"><span className="brand-mark">S</span><span>StudyCraft</span></Link>
-        <nav className="parent-links"><Link href="/parent/family">Manage children</Link><Link href="/study">Child study</Link></nav>
-      </header>
+      <AppHeader role="parent" />
 
       <section className="parent-intro">
         <p className="eyebrow">Parent workspace</p>
@@ -108,11 +107,10 @@ export function ParentLibrary() {
 
       <section className="import-card">
         <h2>Import a prepared chapter</h2>
-        <label>Parent passphrase<input type="password" value={passphrase} onChange={(event) => setPassphrase(event.target.value)} /></label>
         <label>Question-bank JSON<input type="file" accept="application/json,.json" onChange={(event) => { setFile(event.target.files?.[0] ?? null); setPreview(null); setBank(null); }} /></label>
         <div className="button-row">
-          <button onClick={validate} disabled={!file || !passphrase || busy}>{busy ? "Working…" : "Validate JSON"}</button>
-          <button className="button-secondary" onClick={loadLibrary} disabled={!passphrase || busy}>Refresh library</button>
+          <button onClick={validate} disabled={!file || busy}>{busy ? "Working…" : "Validate JSON"}</button>
+          <button className="button-secondary" onClick={loadLibrary} disabled={busy}>Refresh library</button>
         </div>
 
         {errors.length > 0 && <div className="notice notice-error" role="alert"><strong>Please fix:</strong><ul>{errors.map((error) => <li key={error}>{error}</li>)}</ul></div>}
@@ -132,7 +130,7 @@ export function ParentLibrary() {
 
       <section className="library-section">
         <div className="section-heading"><div><p className="eyebrow">Question quality</p><h2>Needs parent review</h2></div>{reports.open.length > 0 && <strong>{reports.open.length} flagged {reports.open.length === 1 ? "question" : "questions"}</strong>}</div>
-        {reports.open.length === 0 ? <p className="empty-state">Refresh the library to see questions children have flagged.</p> : <div className="question-report-grid">{reports.open.map((report) => <QuestionReportEditor key={report.id} report={report} passphrase={passphrase} onSaved={loadLibrary} />)}</div>}
+        {reports.open.length === 0 ? <p className="empty-state">No questions currently need review.</p> : <div className="question-report-grid">{reports.open.map((report) => <QuestionReportEditor key={report.id} report={report} onSaved={loadLibrary} />)}</div>}
         {reports.resolved.length > 0 && <div className="resolved-reports"><h3>Recently resolved</h3>{reports.resolved.slice(0, 10).map((report) => <article key={`${report.id}-${report.status}`}><span className={`report-status is-${report.status}`}>{report.status}</span><div><strong>{String(report.questionSnapshot.prompt ?? report.questionId)}</strong><small>{report.chapter.subject} · {report.chapter.title} · resolved by {report.resolution?.resolverName ?? "Parent"}</small></div><time>{report.resolution?.resolvedAt ? new Date(report.resolution.resolvedAt).toLocaleDateString() : ""}</time></article>)}</div>}
       </section>
 
@@ -145,7 +143,7 @@ export function ParentLibrary() {
   );
 }
 
-function QuestionReportEditor({ report, passphrase, onSaved }: { report: QuestionReport; passphrase: string; onSaved: () => Promise<void> }) {
+function QuestionReportEditor({ report, onSaved }: { report: QuestionReport; onSaved: () => Promise<void> }) {
   const original = report.questionSnapshot;
   const expectedAnswer = answerSummary(original);
   const [note, setNote] = useState("");
@@ -153,7 +151,7 @@ function QuestionReportEditor({ report, passphrase, onSaved }: { report: Questio
   const [error, setError] = useState("");
   const request = async (action: "disable" | "dismiss") => {
     setBusy(true); setError("");
-    const response = await fetch("/api/parent/question-reports", { method: "PATCH", headers: { "content-type": "application/json", "x-studycraft-parent-passphrase": passphrase }, body: JSON.stringify({ reportId: report.id, action, note }) });
+    const response = await fetch("/api/parent/question-reports", { method: "PATCH", headers: { "content-type": "application/json" }, body: JSON.stringify({ reportId: report.id, action, note }) });
     const body = await response.json();
     if (!response.ok) setError(body.error ?? "Could not update this report."); else await onSaved();
     setBusy(false);

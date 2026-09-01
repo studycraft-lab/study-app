@@ -9,12 +9,14 @@ describe("ParentLibrary", () => {
     vi.restoreAllMocks();
   });
 
-  it("explains the Codex-to-JSON MVP flow and accepts a prepared bank", () => {
+  it("explains the Codex-to-JSON MVP flow without repeated parent authentication", () => {
+    vi.spyOn(globalThis, "fetch").mockImplementation(async (input) => String(input) === "/api/parent/question-reports" ? new Response(JSON.stringify({ reports: [] })) : new Response(JSON.stringify({ chapters: [] })));
     render(<ParentLibrary />);
     expect(screen.getByRole("heading", { name: /content library/i })).toBeInTheDocument();
     expect(screen.getByLabelText(/question-bank json/i)).toBeInTheDocument();
     expect(screen.getByText(/Codex/i)).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /validate/i })).toBeDisabled();
+    expect(screen.queryByLabelText(/parent passphrase/i)).not.toBeInTheDocument();
   });
 
   it("clears an earlier library error after a successful retry", async () => {
@@ -25,9 +27,6 @@ describe("ParentLibrary", () => {
       return new Response(JSON.stringify({ chapters: [] }));
     });
     render(<ParentLibrary />);
-    fireEvent.change(screen.getByLabelText(/parent passphrase/i), { target: { value: "secret" } });
-
-    fireEvent.click(screen.getByRole("button", { name: /refresh library/i }));
     expect(await screen.findByText(/permission denied/i)).toBeInTheDocument();
 
     fireEvent.click(screen.getByRole("button", { name: /refresh library/i }));
@@ -47,7 +46,6 @@ describe("ParentLibrary", () => {
       return new Response(JSON.stringify({ chapters: [{ ...preview, id: "bank-row", bankVersion: 1 }] }));
     });
     render(<ParentLibrary />);
-    fireEvent.change(screen.getByLabelText(/parent passphrase/i), { target: { value: "secret" } });
     fireEvent.change(screen.getByLabelText(/question-bank json/i), {
       target: { files: [new File([JSON.stringify({ bank: { id: "early-vedic-civilization-v1" } })], "early-vedic.json", { type: "application/json" })] },
     });
@@ -78,9 +76,6 @@ describe("ParentLibrary", () => {
       return new Response(JSON.stringify({ chapters: [] }));
     });
     render(<ParentLibrary />);
-    fireEvent.change(screen.getByLabelText(/parent passphrase/i), { target: { value: "secret" } });
-    fireEvent.click(screen.getByRole("button", { name: /refresh library/i }));
-
     expect(await screen.findByText(/2 reports grouped/i)).toBeInTheDocument();
     expect(screen.getByText(/reported before answering/i)).toBeInTheDocument();
     expect(screen.getByText(/the wording is confusing/i)).toBeInTheDocument();

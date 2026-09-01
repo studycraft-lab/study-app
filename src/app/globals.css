@@ -513,3 +513,7 @@ button:disabled { cursor: not-allowed; opacity: .45; }
 .parent-session-list { display: grid; gap: .55rem; }
 .parent-session-list > div { display: grid; grid-template-columns: 1fr auto; gap: .15rem 1rem; }
 .parent-session-list small { grid-column: 1 / -1; }
+.topic-progress { margin: 1rem 0 1.5rem; padding: 1rem; border: 1px solid var(--line); border-radius: 16px; background: white; }
+.topic-progress h2 { margin-top: 0; }
+.topic-progress > div { display: grid; grid-template-columns: 1fr auto auto; gap: 1rem; padding: .55rem 0; border-top: 1px solid var(--line); text-transform: capitalize; }
+.topic-progress small { color: var(--muted); }

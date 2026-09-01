@@ -80,9 +80,7 @@ export async function rateStudyAttempt(input: { attemptId: string; childId: stri
   const { data, error } = await client.from("study_attempts").update({ self_rating: input.rating }).eq("id", input.attemptId).eq("child_id", input.childId)
     .select("id,question_bank_id,bank_version,question_id,question_version,correct").single();
   if (error || !data) throw new Error("Attempt is unavailable.");
-  if (!data.correct || input.rating === "down") {
-    await upsertReview({ childId: input.childId, bankId: data.question_bank_id, bankVersion: data.bank_version, questionId: data.question_id, questionVersion: data.question_version, attemptId: data.id, correct: Boolean(data.correct), rating: input.rating });
-  }
+  await upsertReview({ childId: input.childId, bankId: data.question_bank_id, bankVersion: data.bank_version, questionId: data.question_id, questionVersion: data.question_version, attemptId: data.id, correct: Boolean(data.correct), rating: input.rating });
 }
 
 export async function childLearningHistory(child: ChildContext) {
@@ -99,6 +97,18 @@ export async function childLearningHistory(child: ChildContext) {
   const latest = [...latestByQuestion.values()];
   const correct = allAttempts.filter((attempt) => attempt.correct).length;
   const masteryPoints = latest.map((attempt) => !attempt.correct ? 0 : attempt.self_rating === "down" ? .55 : attempt.self_rating === "up" ? 1 : .8);
+  const topicIds = [...new Set(allAttempts.flatMap((attempt) => attempt.topic_ids ?? []))];
+  const topics = topicIds.map((topicId) => {
+    const topicAttempts = allAttempts.filter((attempt) => attempt.topic_ids?.includes(topicId));
+    const topicLatest = latest.filter((attempt) => attempt.topic_ids?.includes(topicId));
+    const topicMastery = topicLatest.map((attempt) => !attempt.correct ? 0 : attempt.self_rating === "down" ? .55 : attempt.self_rating === "up" ? 1 : .8);
+    return {
+      topicId,
+      attempts: topicAttempts.length,
+      accuracy: Math.round(topicAttempts.filter((attempt) => attempt.correct).length / topicAttempts.length * 100),
+      mastery: Math.round(topicMastery.reduce<number>((sum, value) => sum + value, 0) / topicMastery.length * 100),
+    };
+  });
   return {
     summary: {
       completedSessions: (sessions ?? []).filter((session) => session.status === "completed").length,
@@ -108,6 +118,7 @@ export async function childLearningHistory(child: ChildContext) {
       mastery: masteryPoints.length ? Math.round(masteryPoints.reduce<number>((sum, value) => sum + value, 0) / masteryPoints.length * 100) : 0,
       dueReview: dueCount ?? 0,
     },
+    topics,
     sessions: (sessions ?? []).map((session) => ({
       id: session.id, bankId: session.question_bank_id, status: session.status, startedAt: session.started_at, completedAt: session.completed_at,
       attempts: allAttempts.filter((attempt) => attempt.session_id === session.id).reverse(),

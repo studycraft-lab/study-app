@@ -22,7 +22,7 @@ describe("StudyExperience", () => {
       if (url === "/api/child/profiles") return new Response(JSON.stringify({ children: [{ id: "child", displayName: "Asha", grade: 6, board: "ICSE" }] }));
       if (url === "/api/child/login") return new Response(JSON.stringify({ child: { id: "child", displayName: "Asha", grade: 6, board: "ICSE" } }));
       if (url === "/api/study/library") return new Response(JSON.stringify({ child: { id: "child", displayName: "Asha", grade: 6, board: "ICSE" }, chapters: [{ id: "bank", subject: "History", chapterTitle: "Early Vedic", grade: 6, board: "ICSE", questionCount: 10 }] }));
-      if (url === "/api/study/history") return new Response(JSON.stringify({ summary: { completedSessions: 0, attempts: 0, uniqueQuestions: 0, accuracy: 0, mastery: 0, dueReview: 0 }, sessions: [] }));
+      if (url === "/api/study/history") return new Response(JSON.stringify({ summary: { completedSessions: 0, attempts: 0, uniqueQuestions: 0, accuracy: 0, mastery: 0, dueReview: 0 }, topics: [], sessions: [] }));
       if (url.startsWith("/api/study/questions")) return new Response(JSON.stringify({ questions }));
       if (url === "/api/study/sessions") return new Response(JSON.stringify({ sessionId: "session" }), { status: 201 });
       if (url === "/api/study/attempts/rating") return new Response(JSON.stringify({ saved: true }));

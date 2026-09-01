@@ -24,7 +24,16 @@
       "width": 1180,
       "height": 1574,
       "pages": [
-        { "id": "page-45", "pageNumber": 45, "bounds": { "x": 0, "y": 0, "width": 1, "height": 1 } }
+        {
+          "id": "page-45",
+          "pageNumber": 45,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        }
       ]
     },
     {
@@ -34,8 +43,26 @@
       "width": 2326,
       "height": 1552,
       "pages": [
-        { "id": "page-46", "pageNumber": 46, "bounds": { "x": 0, "y": 0, "width": 0.5, "height": 1 } },
-        { "id": "page-47", "pageNumber": 47, "bounds": { "x": 0.5, "y": 0, "width": 0.5, "height": 1 } }
+        {
+          "id": "page-46",
+          "pageNumber": 46,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0.5,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-47",
+          "pageNumber": 47,
+          "bounds": {
+            "x": 0.5,
+            "y": 0,
+            "width": 0.5,
+            "height": 1
+          }
+        }
       ]
     },
     {
@@ -45,8 +72,26 @@
       "width": 2338,
       "height": 1568,
       "pages": [
-        { "id": "page-48", "pageNumber": 48, "bounds": { "x": 0, "y": 0, "width": 0.5, "height": 1 } },
-        { "id": "page-49", "pageNumber": 49, "bounds": { "x": 0.5, "y": 0, "width": 0.5, "height": 1 } }
+        {
+          "id": "page-48",
+          "pageNumber": 48,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0.5,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-49",
+          "pageNumber": 49,
+          "bounds": {
+            "x": 0.5,
+            "y": 0,
+            "width": 0.5,
+            "height": 1
+          }
+        }
       ]
     },
     {
@@ -56,8 +101,26 @@
       "width": 2336,
       "height": 1574,
       "pages": [
-        { "id": "page-50", "pageNumber": 50, "bounds": { "x": 0, "y": 0, "width": 0.5, "height": 1 } },
-        { "id": "page-51", "pageNumber": 51, "bounds": { "x": 0.5, "y": 0, "width": 0.5, "height": 1 } }
+        {
+          "id": "page-50",
+          "pageNumber": 50,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0.5,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-51",
+          "pageNumber": 51,
+          "bounds": {
+            "x": 0.5,
+            "y": 0,
+            "width": 0.5,
+            "height": 1
+          }
+        }
       ]
     },
     {
@@ -67,16 +130,34 @@
       "width": 2346,
       "height": 1584,
       "pages": [
-        { "id": "page-52", "pageNumber": 52, "bounds": { "x": 0, "y": 0, "width": 0.5, "height": 1 } },
-        { "id": "page-53", "pageNumber": 53, "bounds": { "x": 0.5, "y": 0, "width": 0.5, "height": 1 } }
+        {
+          "id": "page-52",
+          "pageNumber": 52,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0.5,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-53",
+          "pageNumber": 53,
+          "bounds": {
+            "x": 0.5,
+            "y": 0,
+            "width": 0.5,
+            "height": 1
+          }
+        }
       ]
     }
   ],
   "learningOutcomes": [
-    "Define the term ‘Vedic’ and list the various literature related to it.",
-    "Summarize the life of the Early Vedic people.",
-    "Identify and value the liberal outlook of the early nomadic Aryans in the Early Vedic period with reference to the position of women in society.",
-    "Explain the classification of society in the Early Vedic period.",
-    "Analyse and appreciate the rich cultural heritage of India in terms of values, beliefs and traditions."
+    "defines the term ‘Vedic’ and lists the various literature related to it.",
+    "summarizes the life of the Early Vedic people.",
+    "identifies and values the liberal outlook of the early nomadic Aryans in the Early Vedic period with reference to the position of women in society.",
+    "explains the classification of society in the Early Vedic period.",
+    "analyses and appreciates the rich cultural heritage of India in terms of values, beliefs and traditions."
   ]
 }

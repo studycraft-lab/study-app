@@ -2,8 +2,8 @@
   "reviewVersion": "0.1.0",
   "bankId": "early-vedic-civilization-v1",
   "bankVersion": 1,
-  "reviewedAt": "2026-09-01T08:30:00+05:30",
-  "reviewerMethod": "Codex source-by-source review using the repository-local chapter-ingestion skill, after deterministic schema and grounding checks",
+  "reviewedAt": "2026-09-01T17:30:00+05:30",
+  "reviewerMethod": "Codex atomic coverage inventory and source-by-source review using the repository-local chapter-ingestion skill after deterministic schema, source-hash, reference and rubric checks",
   "inputs": {
     "manifest": "samples/early-vedic-chapter-manifest.json",
     "bank": "samples/early-vedic-question-bank.json",
@@ -16,60 +16,289 @@
     "questionBankSchema": "pass",
     "deterministicGroundingReview": "pass",
     "manualGroundingReview": "pass",
-    "rubricBalanceReview": "pass"
+    "rubricBalanceReview": "pass",
+    "conciseFalseCorrectionReview": "pass"
   },
   "coverage": {
-    "questionCount": 40,
+    "questionCount": 79,
     "topics": {
-      "settlement": 9,
-      "vedic-literature": 5,
-      "political-organization": 6,
-      "position-of-women": 4,
-      "social-life": 5,
-      "food-dress-recreation": 4,
-      "religion": 5,
-      "class-system": 2,
-      "economic-life": 5
+      "aryan-origins-settlement": 10,
+      "cultural-heritage": 5,
+      "early-later-periods": 6,
+      "economic-life": 7,
+      "family-and-women": 11,
+      "food-dress-recreation": 10,
+      "political-organization": 12,
+      "religion": 14,
+      "social-classification": 9,
+      "vedic-literature": 10
     },
     "types": {
-      "single_choice": 5,
-      "multiple_select": 4,
-      "fill_blank": 3,
-      "true_false_correct": 3,
+      "brief_answer": 12,
+      "compare": 5,
+      "fill_blank": 5,
       "matching": 5,
-      "one_word": 2,
-      "brief_answer": 6,
-      "multi_point": 4,
-      "compare": 3,
-      "source_group": 4,
-      "map_work": 1
+      "multi_point": 27,
+      "multiple_select": 6,
+      "one_word": 4,
+      "single_choice": 5,
+      "source_group": 5,
+      "true_false_correct": 5
     },
-    "difficulties": { "1": 18, "2": 12, "3": 10 },
+    "difficulties": {
+      "1": 37,
+      "2": 36,
+      "3": 6
+    },
+    "pages": {
+      "page-45": 11,
+      "page-46": 14,
+      "page-47": 19,
+      "page-48": 25,
+      "page-49": 18,
+      "page-50": 1,
+      "page-51": 13,
+      "page-52": 26,
+      "page-53": 1
+    },
     "learningOutcomes": {
-      "define-vedic-and-literature": ["q-002", "q-016", "q-017", "q-018", "q-038"],
-      "summarize-early-vedic-life": ["q-022", "q-024", "q-026", "q-028", "q-034", "q-037", "q-040"],
-      "value-position-of-women": ["q-007", "q-008", "q-023", "q-040"],
-      "explain-classification": ["q-030", "q-031", "q-040"],
-      "analyse-cultural-heritage": ["q-012", "q-027", "q-028", "q-029", "q-040"]
-    }
+      "define-vedic-and-literature": [
+        "q-002",
+        "q-023",
+        "q-028",
+        "q-031",
+        "q-044",
+        "q-045",
+        "q-046",
+        "q-047",
+        "q-048",
+        "q-079"
+      ],
+      "summarize-early-vedic-life": [
+        "q-021",
+        "q-030",
+        "q-033",
+        "q-034",
+        "q-035",
+        "q-036",
+        "q-037",
+        "q-040",
+        "q-049",
+        "q-053",
+        "q-056",
+        "q-058",
+        "q-067",
+        "q-076"
+      ],
+      "value-position-of-women": [
+        "q-025",
+        "q-033",
+        "q-038",
+        "q-054",
+        "q-055",
+        "q-074",
+        "q-077"
+      ],
+      "explain-classification": [
+        "q-005",
+        "q-015",
+        "q-026",
+        "q-036",
+        "q-064",
+        "q-065",
+        "q-066"
+      ],
+      "appreciate-cultural-heritage": [
+        "q-029",
+        "q-035",
+        "q-038",
+        "q-039",
+        "q-048",
+        "q-055",
+        "q-061",
+        "q-062",
+        "q-063",
+        "q-072",
+        "q-073",
+        "q-076",
+        "q-079"
+      ]
+    },
+    "bookExercises": {
+      "A-fill-in-the-blanks": [
+        "q-001",
+        "q-002",
+        "q-003",
+        "q-004",
+        "q-005"
+      ],
+      "B-match-the-following": [
+        "q-006"
+      ],
+      "C-choose-the-correct-answer": [
+        "q-007",
+        "q-008",
+        "q-009",
+        "q-010",
+        "q-011"
+      ],
+      "D-one-word": [
+        "q-012",
+        "q-013",
+        "q-014",
+        "q-015"
+      ],
+      "E-true-false-and-correct": [
+        "q-016",
+        "q-017",
+        "q-018",
+        "q-019",
+        "q-020"
+      ],
+      "F-one-or-two-words-or-sentences": [
+        "q-021",
+        "q-022",
+        "q-023",
+        "q-024",
+        "q-025",
+        "q-026",
+        "q-027"
+      ],
+      "G-give-reasons": [
+        "q-028",
+        "q-029"
+      ],
+      "H-answer-briefly": [
+        "q-030",
+        "q-031",
+        "q-032",
+        "q-033",
+        "q-034",
+        "q-035",
+        "q-036",
+        "q-037"
+      ],
+      "I-source-based-questions": [
+        "q-038",
+        "q-039"
+      ]
+    },
+    "excludedByRequest": [
+      {
+        "source": "page-53",
+        "item": "J. Map work",
+        "reason": "Map work explicitly excluded by the parent."
+      },
+      {
+        "source": "page-53",
+        "item": "Do and Learn",
+        "reason": "Imagination, debate, project, presentation and classroom activities explicitly excluded as non-test question-bank material."
+      }
+    ]
+  },
+  "atomicCoverageInventory": {
+    "origins-and-settlement": [
+      "Harappan chronology",
+      "Central Asian origin",
+      "migration causes",
+      "dasas and dasyus",
+      "Sapta Sindhu",
+      "Brahmavarta",
+      "Early and Later Vedic chronology",
+      "Gangetic movement",
+      "Aryavarta"
+    ],
+    "literature-and-language": [
+      "meaning of Veda",
+      "four Vedas",
+      "oral transmission",
+      "Rig Veda as source",
+      "Brahmanas",
+      "Upanishads",
+      "Puranas",
+      "epics",
+      "Sanskrit"
+    ],
+    "politics-family-women": [
+      "jana-grama-family hierarchy",
+      "rajan",
+      "gramani",
+      "grihapati",
+      "purohita",
+      "senani",
+      "sabha",
+      "samiti",
+      "joint family",
+      "education",
+      "assemblies",
+      "religion",
+      "swayamvara",
+      "child marriage",
+      "widow remarriage",
+      "Gargi"
+    ],
+    "daily-life-and-religion": [
+      "staple and occasional food",
+      "drinks",
+      "recreation",
+      "two garments",
+      "ornaments",
+      "Supreme Being",
+      "nature deities",
+      "deity roles",
+      "open-air worship",
+      "hymns",
+      "offerings",
+      "yagnas",
+      "Agni hymn"
+    ],
+    "class-and-economy": [
+      "origin of varnas",
+      "four occupational roles",
+      "flexibility",
+      "nomadic-to-settled change",
+      "cow as wealth",
+      "agriculture",
+      "plough and seasons",
+      "craftspeople",
+      "copper and bronze",
+      "self-sufficient villages",
+      "Ayurveda"
+    ]
+  },
+  "issue23ConciseCorrectionReview": {
+    "status": "satisfied-with-current-contract",
+    "questionIds": [
+      "q-016",
+      "q-018"
+    ],
+    "method": "Each false printed statement stores the smallest source-grounded sufficient replacement sentence in answer.correction. The richer textbook detail remains in explanation and rubric context, allowing concise correct responses to receive full credit under the current scorer.",
+    "futureContractNote": "Issue #23 proposes multiple accepted corrections or explicit wrong-term/replacement pairs. This v1 keeps a minimal canonical correction as the primary answer and remains compatible with that future enhancement."
   },
   "sourceAssetReadiness": {
     "status": "not-uploaded",
     "requiredBeforeVisualQuestionsAreEnabled": [
-      "page-45/settlement-map",
-      "page-47/political-structure",
       "page-52/swayamvara-source",
       "page-52/agni-hymn",
-      "page-49/vedic-timeline"
+      "page-49/vedic-timeline",
+      "page-47/political-structure",
+      "page-46/vedic-literature-diagram"
     ],
-    "affectedQuestionIds": ["q-008", "q-011", "q-012", "q-021", "q-035"],
-    "note": "The current child session does not serve these interaction types. Upload private cropped assets and a base outline map before enabling them."
+    "affectedQuestionIds": [
+      "q-038",
+      "q-039",
+      "q-075",
+      "q-078",
+      "q-079"
+    ],
+    "note": "The current child session does not serve source_group questions. Upload private cropped assets before enabling these items."
   },
   "blockingFindings": [],
   "advisoryNotes": [
     "Full copyrighted chapter screenshots remain local and are intentionally excluded from Git.",
-    "The map-work base map is still an interaction dependency and is not part of this content-only story.",
-    "No examination pattern was inferred because no sample paper was supplied."
+    "Every assessable printed exercise from A through I is represented; J map work and Do and Learn activities are intentionally excluded by the parent's scope.",
+    "No examination pattern was inferred because no sample paper was supplied.",
+    "Issue #23 remains a future scoring-contract enhancement; this bank uses concise canonical corrections today."
   ],
   "decision": "accept"
 }

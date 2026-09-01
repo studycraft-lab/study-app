@@ -9,26 +9,30 @@ describe("validateQuestionBank", () => {
 
     expect(result.valid).toBe(true);
     expect(result.errors).toEqual([]);
-    expect(result.preview).toMatchObject({ questionCount: 40, sourceCount: 9, topicCount: 9 });
+    expect(result.preview).toMatchObject({ questionCount: 79, sourceCount: 9, topicCount: 10 });
   });
 
   it("rejects a rubric whose attainable score differs from the marks", () => {
     const bank = structuredClone(earlyVedicBank);
-    bank.questions[3].marks = 3;
+    const questionIndex = bank.questions.findIndex(({ id }) => id === "q-024");
+    expect(questionIndex).toBeGreaterThanOrEqual(0);
+    bank.questions[questionIndex].marks = 3;
 
     const result = validateQuestionBank(bank);
 
     expect(result.valid).toBe(false);
-    expect(result.errors).toContain("questions[3].marks is 3, but its rubric can award 2.");
+    expect(result.errors).toContain(`questions[${questionIndex}].marks is 3, but its rubric can award 2.`);
   });
 
   it("requires scored claims to cite rubric support", () => {
     const bank = structuredClone(earlyVedicBank);
-    bank.questions[0].sourceRefs[0].supports = ["prompt", "answer"];
+    const questionIndex = bank.questions.findIndex(({ id }) => id === "q-040");
+    expect(questionIndex).toBeGreaterThanOrEqual(0);
+    bank.questions[questionIndex].sourceRefs[0].supports = ["prompt", "answer"];
 
     const result = validateQuestionBank(bank);
 
     expect(result.valid).toBe(false);
-    expect(result.errors).toContain("questions[0] has no source reference supporting its rubric.");
+    expect(result.errors).toContain(`questions[${questionIndex}] has no source reference supporting its rubric.`);
   });
 });

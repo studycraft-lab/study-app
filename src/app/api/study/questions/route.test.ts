@@ -1,9 +1,10 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
 
 vi.mock("server-only", () => ({}));
-const { childFromRequest, getQuestionBankForChild } = vi.hoisted(() => ({ childFromRequest: vi.fn(), getQuestionBankForChild: vi.fn() }));
+const { childFromRequest, getQuestionBankForChild, questionSelectionHistory } = vi.hoisted(() => ({ childFromRequest: vi.fn(), getQuestionBankForChild: vi.fn(), questionSelectionHistory: vi.fn() }));
 vi.mock("@/lib/family/request", () => ({ childFromRequest }));
 vi.mock("@/lib/question-bank/store", () => ({ getQuestionBankForChild }));
+vi.mock("@/lib/learning/store", () => ({ questionSelectionHistory }));
 
 import { GET } from "./route";
 
@@ -12,6 +13,7 @@ describe("GET /api/study/questions", () => {
 
   it("returns a five-question DTO without answers", async () => {
     childFromRequest.mockResolvedValue({ id: "child", familyId: "family", board: "ICSE", grade: 6 });
+    questionSelectionHistory.mockResolvedValue([]);
     getQuestionBankForChild.mockResolvedValue({ sources: [], questions: [{ id: "q", type: "single_choice", status: "active", prompt: "Choose", marks: 1, response: { options: [] }, answer: { correctOptionId: "a" } }] });
     const response = await GET(new Request("http://localhost/api/study/questions?bankId=bank"));
     expect(response.status).toBe(200);

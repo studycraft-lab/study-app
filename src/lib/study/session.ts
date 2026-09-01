@@ -21,6 +21,13 @@ export type StudyQuestion = {
   response: RecordValue;
 };
 
+export function selectableQuestionIds(bankValue: unknown): string[] {
+  const bank = record(bankValue);
+  return records(bank.questions)
+    .filter((question) => typeof question.id === "string" && TYPE_SET.has(String(question.type)) && question.status !== "disabled")
+    .map((question) => String(question.id));
+}
+
 export function prepareSession(bankValue: unknown): StudyQuestion[] {
   const bank = record(bankValue);
   const candidates = records(bank.questions).filter((question) =>
@@ -46,10 +53,12 @@ export function prepareSession(bankValue: unknown): StudyQuestion[] {
 }
 
 export function prepareReviewSession(bankValue: unknown, questionIds: string[]): StudyQuestion[] {
-  const selected = new Set(questionIds);
   const bank = record(bankValue);
-  return records(bank.questions)
-    .filter((question) => selected.has(String(question.id)) && TYPE_SET.has(String(question.type)) && question.status !== "disabled")
+  const byId = new Map(records(bank.questions).map((question) => [String(question.id), question]));
+  return questionIds
+    .map((id) => byId.get(id))
+    .filter((question): question is RecordValue => question !== undefined)
+    .filter((question) => TYPE_SET.has(String(question.type)) && question.status !== "disabled")
     .map((question) => ({
       id: String(question.id),
       type: String(question.type),

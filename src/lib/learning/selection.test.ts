@@ -1,0 +1,40 @@
+import { describe, expect, it } from "vitest";
+
+import { selectQuestionIds } from "./selection";
+
+describe("selectQuestionIds", () => {
+  it("mixes at most two weak questions with unseen questions when available", () => {
+    const selected = selectQuestionIds(
+      ["w1", "w2", "w3", "n1", "n2", "n3", "r1", "r2"],
+      [
+        { questionId: "w1", attempted: true, latestCorrect: false, due: false },
+        { questionId: "w2", attempted: true, latestCorrect: false, due: true },
+        { questionId: "w3", attempted: true, latestCorrect: false, due: false },
+        { questionId: "r1", attempted: true, latestCorrect: true, due: false },
+        { questionId: "r2", attempted: true, latestCorrect: true, due: false },
+      ],
+      5,
+      () => 0,
+    );
+
+    expect(selected).toHaveLength(5);
+    expect(selected.filter((id) => id.startsWith("w"))).toHaveLength(2);
+    expect(selected).toEqual(expect.arrayContaining(["n1", "n2", "n3"]));
+  });
+
+  it("fills the session from weak and reinforcement questions after full coverage", () => {
+    const selected = selectQuestionIds(
+      ["w1", "w2", "r1", "r2", "r3", "r4"],
+      [
+        { questionId: "w1", attempted: true, latestCorrect: false, due: false },
+        { questionId: "w2", attempted: true, latestCorrect: true, due: true },
+        ...["r1", "r2", "r3", "r4"].map((questionId) => ({ questionId, attempted: true, latestCorrect: true, due: false })),
+      ],
+      5,
+      () => 0,
+    );
+
+    expect(selected).toHaveLength(5);
+    expect(selected).toEqual(expect.arrayContaining(["w1", "w2"]));
+  });
+});

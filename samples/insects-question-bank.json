@@ -1,0 +1,5722 @@
+{
+  "bank": {
+    "board": "School Curriculum",
+    "bookTitle": "Science",
+    "chapterNumber": 4,
+    "grade": 3,
+    "id": "insects-v1",
+    "status": "reviewed",
+    "subject": "Science",
+    "title": "Insects",
+    "version": 1
+  },
+  "questions": [
+    {
+      "answer": {
+        "accepted": [
+          "six",
+          "6"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "Insects have six legs.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Give only the required name or term.",
+      "id": "q-001",
+      "marks": 1,
+      "prompt": "How many legs does an insect have?",
+      "response": {
+        "maxWords": 3
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-48",
+          "regionId": "butterfly-life-cycle",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-47",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "body-parts"
+      ],
+      "type": "one_word",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "three",
+          "3"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "The three parts are head, thorax and abdomen.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Give only the required name or term.",
+      "id": "q-002",
+      "marks": 1,
+      "prompt": "Into how many main parts is an insect's body divided?",
+      "response": {
+        "maxWords": 3
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-48",
+          "regionId": "butterfly-life-cycle",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-47",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "body-parts"
+      ],
+      "type": "one_word",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "thorax",
+          "the thorax"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "Three pairs of legs are attached to the thorax.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Give only the required name or term.",
+      "id": "q-003",
+      "marks": 1,
+      "prompt": "To which body part are an insect's legs attached?",
+      "response": {
+        "maxWords": 3
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-48",
+          "regionId": "butterfly-life-cycle",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-47",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "body-parts"
+      ],
+      "type": "one_word",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "head",
+          "the head"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "The head bears the antennae.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Give only the required name or term.",
+      "id": "q-004",
+      "marks": 1,
+      "prompt": "On which body part are an insect's antennae located?",
+      "response": {
+        "maxWords": 3
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-48",
+          "regionId": "butterfly-life-cycle",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-47",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "body-parts"
+      ],
+      "type": "one_word",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "butterfly",
+          "a butterfly"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "The butterfly shown in the life cycle has colourful wings.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Give only the required name or term.",
+      "id": "q-005",
+      "marks": 1,
+      "prompt": "Which insect is known for colourful wings?",
+      "response": {
+        "maxWords": 3
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-48",
+          "regionId": "butterfly-life-cycle",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-48",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "common-insects"
+      ],
+      "type": "one_word",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "four",
+          "4"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "A butterfly passes through four stages.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the exact word from the chapter.",
+      "id": "q-006",
+      "marks": 1,
+      "prompt": "The life cycle of a butterfly has ____ stages.",
+      "response": {
+        "blankCount": 1
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-51",
+          "regionId": "harmful-and-prevention",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-48",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "butterfly-life-cycle"
+      ],
+      "type": "fill_blank",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "honeybees",
+          "honey bees"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "Honeybees, ants and termites live in groups.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the exact word from the chapter.",
+      "id": "q-007",
+      "marks": 1,
+      "prompt": "Ants, ____ and termites are social insects.",
+      "response": {
+        "blankCount": 1
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-51",
+          "regionId": "harmful-and-prevention",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-49",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "social-insects"
+      ],
+      "type": "fill_blank",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "eggs"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "Most insects reproduce by laying eggs.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the exact word from the chapter.",
+      "id": "q-008",
+      "marks": 1,
+      "prompt": "Most insects reproduce by laying ____.",
+      "response": {
+        "blankCount": 1
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-51",
+          "regionId": "harmful-and-prevention",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-52",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "butterfly-life-cycle"
+      ],
+      "type": "fill_blank",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "mulberry"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "Silk moths feed on mulberry leaves.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the exact word from the chapter.",
+      "id": "q-009",
+      "marks": 1,
+      "prompt": "A silk moth eats ____ leaves.",
+      "response": {
+        "blankCount": 1
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-51",
+          "regionId": "harmful-and-prevention",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-50",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "useful-insects"
+      ],
+      "type": "fill_blank",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "mosquitoes"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "Dragonflies help by eating mosquitoes.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the exact word from the chapter.",
+      "id": "q-010",
+      "marks": 1,
+      "prompt": "Dragonflies eat ____.",
+      "response": {
+        "blankCount": 1
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-51",
+          "regionId": "harmful-and-prevention",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-50",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "useful-insects"
+      ],
+      "type": "fill_blank",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "leaves"
+      },
+      "difficulty": 1,
+      "explanation": "The butterfly lays eggs on leaves.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose the option supported by the chapter.",
+      "id": "q-011",
+      "marks": 1,
+      "prompt": "Where does a butterfly lay its eggs?",
+      "response": {
+        "options": [
+          {
+            "id": "leaves",
+            "text": "On leaves"
+          },
+          {
+            "id": "soil",
+            "text": "In soil"
+          },
+          {
+            "id": "nest",
+            "text": "In a nest"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-53",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-48",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "butterfly-life-cycle"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "pupa"
+      },
+      "difficulty": 1,
+      "explanation": "The inactive stage inside the protective layer is the pupa.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose the option supported by the chapter.",
+      "id": "q-012",
+      "marks": 1,
+      "prompt": "A caterpillar forms a protective case around itself and becomes a ____.",
+      "response": {
+        "options": [
+          {
+            "id": "pupa",
+            "text": "Pupa"
+          },
+          {
+            "id": "egg",
+            "text": "Egg"
+          },
+          {
+            "id": "adult",
+            "text": "Adult butterfly"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-53",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-48",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "butterfly-life-cycle"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "housefly"
+      },
+      "difficulty": 1,
+      "explanation": "Houseflies can contaminate food with germs.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose the option supported by the chapter.",
+      "id": "q-013",
+      "marks": 1,
+      "prompt": "Which of these is a harmful insect?",
+      "response": {
+        "options": [
+          {
+            "id": "housefly",
+            "text": "Housefly"
+          },
+          {
+            "id": "dragonfly",
+            "text": "Dragonfly"
+          },
+          {
+            "id": "dung-beetle",
+            "text": "Dung beetle"
+          },
+          {
+            "id": "lacewing",
+            "text": "Lacewing"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-53",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-50",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "harmful-insects"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "thorax-spiracles"
+      },
+      "difficulty": 1,
+      "explanation": "The thorax bears wings and legs, while spiracles occur on the abdomen.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose the option supported by the chapter.",
+      "id": "q-014",
+      "marks": 1,
+      "prompt": "Choose the correct words: Wings and legs are attached to P, and breathing holes Q are on the abdomen.",
+      "response": {
+        "options": [
+          {
+            "id": "thorax-spiracles",
+            "text": "P - thorax; Q - spiracles"
+          },
+          {
+            "id": "head-stingers",
+            "text": "P - head; Q - stingers"
+          },
+          {
+            "id": "abdomen-antennae",
+            "text": "P - abdomen; Q - antennae"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-53",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-47",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "body-parts"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "one-three"
+      },
+      "difficulty": 1,
+      "explanation": "Both insects named by Students 1 and 3 are useful.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose the option supported by the chapter.",
+      "id": "q-015",
+      "marks": 1,
+      "prompt": "Which students named only useful insects? Student 1: bees and dragonflies; Student 2: houseflies and dung beetles; Student 3: silk moths and lacewings; Student 4: cockroaches and bed bugs.",
+      "response": {
+        "options": [
+          {
+            "id": "one-three",
+            "text": "Students 1 and 3"
+          },
+          {
+            "id": "one-two",
+            "text": "Students 1 and 2"
+          },
+          {
+            "id": "two-four",
+            "text": "Students 2 and 4"
+          },
+          {
+            "id": "three-four",
+            "text": "Students 3 and 4"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-53",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-50",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "useful-insects"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Any two of bees, honeybees, dragonflies, lacewings, silk moths and dung beetles."
+      },
+      "difficulty": 1,
+      "explanation": "Only two correct examples are required.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Write no more than two short points.",
+      "id": "q-016",
+      "marks": 2,
+      "prompt": "Give two examples of useful insects.",
+      "response": {
+        "recommendedPoints": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "names one useful insect",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "names a second useful insect",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-53",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-50",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "useful-insects"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Any two of honeybees, ants and termites."
+      },
+      "difficulty": 1,
+      "explanation": "These insects live and work in groups.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Write no more than two short points.",
+      "id": "q-017",
+      "marks": 2,
+      "prompt": "Give two examples of social insects.",
+      "response": {
+        "recommendedPoints": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "names one social insect",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "names a second social insect",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-53",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-49",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "social-insects"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Any two of mosquitoes, bed bugs and lice."
+      },
+      "difficulty": 1,
+      "explanation": "The chapter names mosquitoes, bed bugs and lice.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Write no more than two short points.",
+      "id": "q-018",
+      "marks": 2,
+      "prompt": "Give two examples of insects that feed on human blood.",
+      "response": {
+        "recommendedPoints": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "names one blood-sucking insect",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "names a second blood-sucking insect",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-53",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-51",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "harmful-insects"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Insects are tiny animals with six legs, and their bodies have three main parts: head, thorax and abdomen."
+      },
+      "difficulty": 1,
+      "explanation": "Two short features form a complete Grade 3 answer.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Write no more than two short points.",
+      "id": "q-019",
+      "marks": 2,
+      "prompt": "Give two features of insects.",
+      "response": {
+        "recommendedPoints": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "insects have six legs",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "body has head, thorax and abdomen",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-53",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-47",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "body-parts"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "A cocoon is a protective covering around the larva or pupa of some insects."
+      },
+      "difficulty": 1,
+      "explanation": "The cocoon protects the inactive stage.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer in one or two short sentences.",
+      "id": "q-020",
+      "marks": 1,
+      "prompt": "What is a cocoon?",
+      "response": {
+        "recommendedSentences": 1
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "protective covering around the larva or pupa",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-53",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-48",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "butterfly-life-cycle"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "first",
+            "rightId": "egg"
+          },
+          {
+            "leftId": "second",
+            "rightId": "caterpillar"
+          },
+          {
+            "leftId": "third",
+            "rightId": "pupa"
+          },
+          {
+            "leftId": "fourth",
+            "rightId": "adult"
+          }
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "The four stages are egg, caterpillar, pupa and adult.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Match each item with its correct description.",
+      "id": "q-021",
+      "marks": 4,
+      "prompt": "Arrange the butterfly life cycle by matching each position with its stage.",
+      "response": {
+        "left": [
+          {
+            "id": "first",
+            "text": "First"
+          },
+          {
+            "id": "second",
+            "text": "Second"
+          },
+          {
+            "id": "third",
+            "text": "Third"
+          },
+          {
+            "id": "fourth",
+            "text": "Fourth"
+          }
+        ],
+        "right": [
+          {
+            "id": "adult",
+            "text": "Adult butterfly"
+          },
+          {
+            "id": "pupa",
+            "text": "Pupa"
+          },
+          {
+            "id": "caterpillar",
+            "text": "Caterpillar or larva"
+          },
+          {
+            "id": "egg",
+            "text": "Egg"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-53",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-48",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "butterfly-life-cycle"
+      ],
+      "type": "matching",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Any two chapter-supported steps, such as keeping the house dry and clean, preventing stagnant water, covering food and drinking water, using pest control or cleaning hair and body."
+      },
+      "difficulty": 1,
+      "explanation": "Only two suitable steps are needed.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Write no more than two short points.",
+      "id": "q-022",
+      "marks": 2,
+      "prompt": "List any two ways to keep harmful insects away.",
+      "response": {
+        "recommendedPoints": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "states one correct prevention step",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "states a second correct prevention step",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-53",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-51",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "insect-prevention"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1,
+      "explanation": "Termites are social insects that live in colonies.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "If false, replace only the incorrect idea.",
+      "id": "q-023",
+      "marks": 1,
+      "prompt": "Termites live in colonies. State true or false.",
+      "response": {
+        "requiresCorrectionWhenFalse": true
+      },
+      "rubric": {
+        "points": [
+          {
+            "concept": "identifies the statement as true",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-54",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-49",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "social-insects"
+      ],
+      "type": "true_false_correct",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correction": "A caterpillar feeds on leaves.",
+        "value": false
+      },
+      "difficulty": 1,
+      "explanation": "The concise correction states its chapter-given food.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "If false, replace only the incorrect idea.",
+      "id": "q-024",
+      "marks": 2,
+      "prompt": "A caterpillar feeds on both small insects and leaves. State true or false and correct the statement if needed.",
+      "response": {
+        "requiresCorrectionWhenFalse": true
+      },
+      "rubric": {
+        "points": [
+          {
+            "concept": "identifies the statement as false",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "gives the concise correction: A caterpillar feeds on leaves.",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-54",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-48",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "butterfly-life-cycle"
+      ],
+      "type": "true_false_correct",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correction": "The abdomen is the largest part of an insect's body.",
+        "value": false
+      },
+      "difficulty": 1,
+      "explanation": "The abdomen lies behind the thorax and is the largest part.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "If false, replace only the incorrect idea.",
+      "id": "q-025",
+      "marks": 2,
+      "prompt": "The thorax is the largest part of an insect's body. State true or false and correct the statement if needed.",
+      "response": {
+        "requiresCorrectionWhenFalse": true
+      },
+      "rubric": {
+        "points": [
+          {
+            "concept": "identifies the statement as false",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "gives the concise correction: The abdomen is the largest part of an insect's body.",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-54",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-47",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "body-parts"
+      ],
+      "type": "true_false_correct",
+      "version": 1
+    },
+    {
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1,
+      "explanation": "Silk moths produce silk from saliva.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "If false, replace only the incorrect idea.",
+      "id": "q-026",
+      "marks": 1,
+      "prompt": "A silk moth produces silk with the help of its saliva. State true or false.",
+      "response": {
+        "requiresCorrectionWhenFalse": true
+      },
+      "rubric": {
+        "points": [
+          {
+            "concept": "identifies the statement as true",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-54",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-50",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "useful-insects"
+      ],
+      "type": "true_false_correct",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correction": "Bed bugs are blood-sucking insects found in gaps in beds and mattresses.",
+        "value": false
+      },
+      "difficulty": 1,
+      "explanation": "Lice live on the scalp; bed bugs hide in beds and mattresses.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "If false, replace only the incorrect idea.",
+      "id": "q-027",
+      "marks": 2,
+      "prompt": "Lice are blood-sucking insects found in gaps in beds and mattresses. State true or false and correct the statement if needed.",
+      "response": {
+        "requiresCorrectionWhenFalse": true
+      },
+      "rubric": {
+        "points": [
+          {
+            "concept": "identifies the statement as false",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "gives the concise correction: Bed bugs are blood-sucking insects found in gaps in beds and mattresses.",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-54",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-51",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "harmful-insects"
+      ],
+      "type": "true_false_correct",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correction": "Silk moths feed on mulberry leaves to form cocoons.",
+        "value": false
+      },
+      "difficulty": 1,
+      "explanation": "Mulberry is the correct leaf named in the chapter.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "If false, replace only the incorrect idea.",
+      "id": "q-028",
+      "marks": 2,
+      "prompt": "Silk moths feed on neem leaves to form cocoons. State true or false and correct the statement if needed.",
+      "response": {
+        "requiresCorrectionWhenFalse": true
+      },
+      "rubric": {
+        "points": [
+          {
+            "concept": "identifies the statement as false",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "gives the concise correction: Silk moths feed on mulberry leaves to form cocoons.",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-54",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-50",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "useful-insects"
+      ],
+      "type": "true_false_correct",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correction": "Each butterfly egg hatches into a caterpillar or larva.",
+        "value": false
+      },
+      "difficulty": 1,
+      "explanation": "The caterpillar comes before the pupa.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "If false, replace only the incorrect idea.",
+      "id": "q-029",
+      "marks": 2,
+      "prompt": "Each butterfly egg hatches into a pupa. State true or false and correct the statement if needed.",
+      "response": {
+        "requiresCorrectionWhenFalse": true
+      },
+      "rubric": {
+        "points": [
+          {
+            "concept": "identifies the statement as false",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "gives the concise correction: Each butterfly egg hatches into a caterpillar or larva.",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-54",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-48",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "butterfly-life-cycle"
+      ],
+      "type": "true_false_correct",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correction": "Worker ants gather food and protect their anthill.",
+        "value": false
+      },
+      "difficulty": 1,
+      "explanation": "Worker ants protect the anthill, not a beehive.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "If false, replace only the incorrect idea.",
+      "id": "q-030",
+      "marks": 2,
+      "prompt": "Worker ants gather food and protect beehives. State true or false and correct the statement if needed.",
+      "response": {
+        "requiresCorrectionWhenFalse": true
+      },
+      "rubric": {
+        "points": [
+          {
+            "concept": "identifies the statement as false",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "gives the concise correction: Worker ants gather food and protect their anthill.",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-54",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-49",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "social-insects"
+      ],
+      "type": "true_false_correct",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correction": "Dragonflies eat mosquitoes and help control mosquito-borne diseases.",
+        "value": false
+      },
+      "difficulty": 1,
+      "explanation": "Dung beetles clean animal waste; dragonflies eat mosquitoes.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "If false, replace only the incorrect idea.",
+      "id": "q-031",
+      "marks": 2,
+      "prompt": "Dung beetles eat mosquitoes and help control mosquito-borne diseases. State true or false and correct the statement if needed.",
+      "response": {
+        "requiresCorrectionWhenFalse": true
+      },
+      "rubric": {
+        "points": [
+          {
+            "concept": "identifies the statement as false",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "gives the concise correction: Dragonflies eat mosquitoes and help control mosquito-borne diseases.",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-54",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-50",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "useful-insects"
+      ],
+      "type": "true_false_correct",
+      "version": 1
+    },
+    {
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "dragonfly",
+            "rightId": "mosquito"
+          },
+          {
+            "leftId": "honeybee",
+            "rightId": "honey"
+          },
+          {
+            "leftId": "silk-moth",
+            "rightId": "silk"
+          },
+          {
+            "leftId": "termite",
+            "rightId": "wood"
+          },
+          {
+            "leftId": "butterfly",
+            "rightId": "flower"
+          }
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "The matches reproduce the meanings of the picture exercise in self-contained text.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Match each item with its correct description.",
+      "id": "q-032",
+      "marks": 5,
+      "prompt": "Match each insect with the related object or food.",
+      "response": {
+        "left": [
+          {
+            "id": "dragonfly",
+            "text": "Dragonfly"
+          },
+          {
+            "id": "honeybee",
+            "text": "Honeybee"
+          },
+          {
+            "id": "silk-moth",
+            "text": "Silk moth"
+          },
+          {
+            "id": "termite",
+            "text": "Termite"
+          },
+          {
+            "id": "butterfly",
+            "text": "Butterfly"
+          }
+        ],
+        "right": [
+          {
+            "id": "flower",
+            "text": "Flower"
+          },
+          {
+            "id": "wood",
+            "text": "Wooden bed"
+          },
+          {
+            "id": "silk",
+            "text": "Silk cloth"
+          },
+          {
+            "id": "honey",
+            "text": "Honey"
+          },
+          {
+            "id": "mosquito",
+            "text": "Mosquito"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-54",
+          "regionId": "exercises",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "useful-insects",
+        "harmful-insects"
+      ],
+      "type": "matching",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "termite",
+          "termites"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "Termites live in colonies and mainly feed on wood.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Give only the required name or term.",
+      "id": "q-033",
+      "marks": 1,
+      "prompt": "Name the insect that lives in colonies and feeds on wood.",
+      "response": {
+        "maxWords": 3
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-54",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-49",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "social-insects"
+      ],
+      "type": "one_word",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "grasshopper",
+          "grasshoppers"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "The chapter's fact box names grasshoppers.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Give only the required name or term.",
+      "id": "q-034",
+      "marks": 1,
+      "prompt": "Name the insect described as an important source of protein in the chapter.",
+      "response": {
+        "maxWords": 3
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-54",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-49",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "common-insects"
+      ],
+      "type": "one_word",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "dung beetle",
+          "dung beetles"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "Dung beetles help clean animal waste.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Give only the required name or term.",
+      "id": "q-035",
+      "marks": 1,
+      "prompt": "Name the insect that feeds on animal waste and cleans the environment.",
+      "response": {
+        "maxWords": 3
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-55",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-50",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "useful-insects"
+      ],
+      "type": "one_word",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "cockroach",
+          "cockroaches"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "Cockroaches are found near food in kitchens.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Give only the required name or term.",
+      "id": "q-036",
+      "marks": 1,
+      "prompt": "Name the insect found in kitchen corners that carries bacteria and contaminates food.",
+      "response": {
+        "maxWords": 3
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-55",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-51",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "harmful-insects"
+      ],
+      "type": "one_word",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "lacewing",
+          "lacewings"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "Lacewing eggs are used against pests.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Give only the required name or term.",
+      "id": "q-037",
+      "marks": 1,
+      "prompt": "Name the insect whose eggs are used to check and kill pests in gardens and fields.",
+      "response": {
+        "maxWords": 3
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-55",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-50",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "useful-insects"
+      ],
+      "type": "one_word",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "A clean, dry home keeps harmful insects away and reduces the spread of disease-causing germs."
+      },
+      "difficulty": 1,
+      "explanation": "Clean surroundings remove conditions in which harmful insects thrive.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer in one or two short sentences.",
+      "id": "q-038",
+      "marks": 2,
+      "prompt": "Why should we keep our home and surroundings clean?",
+      "response": {
+        "recommendedSentences": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "keeps harmful insects away",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "reduces disease-causing germs",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-55",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-51",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "insect-prevention"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Houseflies may put germs on uncovered food, and eating contaminated food can cause disease."
+      },
+      "difficulty": 1,
+      "explanation": "The answer follows the housefly example in the chapter.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer in one or two short sentences.",
+      "id": "q-039",
+      "marks": 2,
+      "prompt": "Why should we not eat dirty or uncovered food?",
+      "response": {
+        "recommendedSentences": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "flies can place germs on food",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "contaminated food can cause disease",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-55",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-51",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "insect-prevention"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "metamorphosis"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "The process is called metamorphosis.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Give only the required name or term.",
+      "id": "q-040",
+      "marks": 1,
+      "prompt": "What is the process of changing from a young form to an adult form called?",
+      "response": {
+        "maxWords": 3
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-55",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-48",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "butterfly-life-cycle"
+      ],
+      "type": "one_word",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "cocoon",
+          "a cocoon"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "The caterpillar forms a cocoon around the pupa.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Give only the required name or term.",
+      "id": "q-041",
+      "marks": 1,
+      "prompt": "What is the protective layer around a caterpillar called?",
+      "response": {
+        "maxWords": 3
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-55",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-48",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "butterfly-life-cycle"
+      ],
+      "type": "one_word",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "pupa"
+      },
+      "difficulty": 1,
+      "explanation": "A grasshopper has egg, nymph and adult stages, so it has no pupa stage.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose the option supported by the chapter.",
+      "id": "q-042",
+      "marks": 1,
+      "prompt": "Which butterfly stage is missing from the life cycle of a grasshopper?",
+      "response": {
+        "options": [
+          {
+            "id": "pupa",
+            "text": "Pupa"
+          },
+          {
+            "id": "egg",
+            "text": "Egg"
+          },
+          {
+            "id": "adult",
+            "text": "Adult"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-55",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-48",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "other-life-cycles"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "three"
+      },
+      "difficulty": 1,
+      "explanation": "A cockroach has egg, nymph and adult stages.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose the option supported by the chapter.",
+      "id": "q-043",
+      "marks": 1,
+      "prompt": "How many stages are there in a cockroach's life cycle?",
+      "response": {
+        "options": [
+          {
+            "id": "three",
+            "text": "Three"
+          },
+          {
+            "id": "four",
+            "text": "Four"
+          },
+          {
+            "id": "five",
+            "text": "Five"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-55",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-48",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "other-life-cycles"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "both-correct"
+      },
+      "difficulty": 2,
+      "explanation": "They are called social insects because they live and work in groups.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose the option supported by the chapter.",
+      "id": "q-044",
+      "marks": 1,
+      "prompt": "Assertion: Honeybees, ants and termites are social insects. Reason: They live in groups. Choose the correct option.",
+      "response": {
+        "options": [
+          {
+            "id": "both-correct",
+            "text": "Both assertion and reason are correct."
+          },
+          {
+            "id": "both-wrong",
+            "text": "Both assertion and reason are incorrect."
+          },
+          {
+            "id": "assertion-only",
+            "text": "Only the assertion is correct."
+          },
+          {
+            "id": "reason-only",
+            "text": "Only the reason is correct."
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-55",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-49",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "social-insects"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "head",
+            "rightId": "antennae-eyes"
+          },
+          {
+            "leftId": "thorax",
+            "rightId": "legs-wings"
+          },
+          {
+            "leftId": "abdomen",
+            "rightId": "spiracles"
+          }
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "This text version covers the body-label activity without requiring a runtime image.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Match each item with its correct description.",
+      "id": "q-045",
+      "marks": 3,
+      "prompt": "Match each insect body part with what is found on it.",
+      "response": {
+        "left": [
+          {
+            "id": "head",
+            "text": "Head"
+          },
+          {
+            "id": "thorax",
+            "text": "Thorax"
+          },
+          {
+            "id": "abdomen",
+            "text": "Abdomen"
+          }
+        ],
+        "right": [
+          {
+            "id": "spiracles",
+            "text": "Spiracles and sometimes a stinger"
+          },
+          {
+            "id": "legs-wings",
+            "text": "Three pairs of legs and one or two pairs of wings"
+          },
+          {
+            "id": "antennae-eyes",
+            "text": "Eyes, antennae and mouth"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-56",
+          "regionId": "activities",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-47",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "body-parts"
+      ],
+      "type": "matching",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "six-legs"
+      },
+      "difficulty": 1,
+      "explanation": "The chapter defines insects as tiny animals with six legs.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose the option supported by the chapter.",
+      "id": "q-046",
+      "marks": 1,
+      "prompt": "Which statement correctly describes insects?",
+      "response": {
+        "options": [
+          {
+            "id": "six-legs",
+            "text": "They are tiny animals with six legs."
+          },
+          {
+            "id": "eight-legs",
+            "text": "They are tiny animals with eight legs."
+          },
+          {
+            "id": "no-legs",
+            "text": "They have no legs."
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-47",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "common-insects"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "largest"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "The chapter says insects form the largest animal group.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the exact word from the chapter.",
+      "id": "q-047",
+      "marks": 1,
+      "prompt": "Insects form the ____ group of animals on Earth.",
+      "response": {
+        "blankCount": 1
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-47",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "common-insects"
+      ],
+      "type": "fill_blank",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionIds": [
+          "cockroach",
+          "ant",
+          "mosquito",
+          "housefly",
+          "termite"
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "Butterflies are listed among insects found outside homes.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Select every correct option and no incorrect option.",
+      "id": "q-048",
+      "marks": 5,
+      "prompt": "Which insects are commonly found inside homes?",
+      "response": {
+        "options": [
+          {
+            "id": "cockroach",
+            "text": "Cockroach"
+          },
+          {
+            "id": "ant",
+            "text": "Ant"
+          },
+          {
+            "id": "mosquito",
+            "text": "Mosquito"
+          },
+          {
+            "id": "housefly",
+            "text": "Housefly"
+          },
+          {
+            "id": "termite",
+            "text": "Termite"
+          },
+          {
+            "id": "butterfly",
+            "text": "Butterfly"
+          }
+        ]
+      },
+      "rubric": {
+        "partialCredit": false
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-47",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "common-insects"
+      ],
+      "type": "multiple_select",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionIds": [
+          "butterfly",
+          "moth",
+          "bee",
+          "wasp",
+          "ladybird",
+          "grasshopper",
+          "beetle"
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "Cockroaches are listed among insects found inside homes.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Select every correct option and no incorrect option.",
+      "id": "q-049",
+      "marks": 7,
+      "prompt": "Which insects are listed as commonly found outside homes?",
+      "response": {
+        "options": [
+          {
+            "id": "butterfly",
+            "text": "Butterfly"
+          },
+          {
+            "id": "moth",
+            "text": "Moth"
+          },
+          {
+            "id": "bee",
+            "text": "Bee"
+          },
+          {
+            "id": "wasp",
+            "text": "Wasp"
+          },
+          {
+            "id": "ladybird",
+            "text": "Lady bird"
+          },
+          {
+            "id": "grasshopper",
+            "text": "Grasshopper"
+          },
+          {
+            "id": "beetle",
+            "text": "Beetle"
+          },
+          {
+            "id": "cockroach",
+            "text": "Cockroach"
+          }
+        ]
+      },
+      "rubric": {
+        "partialCredit": false
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-47",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "common-insects"
+      ],
+      "type": "multiple_select",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionIds": [
+          "creep",
+          "crawl",
+          "fly"
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "Some creep or crawl, and most have wings to fly.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Select every correct option and no incorrect option.",
+      "id": "q-050",
+      "marks": 3,
+      "prompt": "How do insects move according to the chapter?",
+      "response": {
+        "options": [
+          {
+            "id": "creep",
+            "text": "Creep"
+          },
+          {
+            "id": "crawl",
+            "text": "Crawl"
+          },
+          {
+            "id": "fly",
+            "text": "Fly"
+          },
+          {
+            "id": "gallop",
+            "text": "Gallop like a horse"
+          }
+        ]
+      },
+      "rubric": {
+        "partialCredit": false
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-47",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "common-insects"
+      ],
+      "type": "multiple_select",
+      "version": 1
+    },
+    {
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "head",
+            "rightId": "front"
+          },
+          {
+            "leftId": "thorax",
+            "rightId": "middle"
+          },
+          {
+            "leftId": "abdomen",
+            "rightId": "back-largest"
+          }
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "Head, thorax and abdomen occur in order from front to back.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Match each item with its correct description.",
+      "id": "q-051",
+      "marks": 3,
+      "prompt": "Match each main body part with its position.",
+      "response": {
+        "left": [
+          {
+            "id": "head",
+            "text": "Head"
+          },
+          {
+            "id": "thorax",
+            "text": "Thorax"
+          },
+          {
+            "id": "abdomen",
+            "text": "Abdomen"
+          }
+        ],
+        "right": [
+          {
+            "id": "back-largest",
+            "text": "Largest part behind the thorax"
+          },
+          {
+            "id": "middle",
+            "text": "Middle part"
+          },
+          {
+            "id": "front",
+            "text": "Front part"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-47",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "body-parts"
+      ],
+      "type": "matching",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionIds": [
+          "eyes",
+          "antennae",
+          "mouth"
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "Spiracles occur on the abdomen.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Select every correct option and no incorrect option.",
+      "id": "q-052",
+      "marks": 3,
+      "prompt": "Which structures are found on an insect's head?",
+      "response": {
+        "options": [
+          {
+            "id": "eyes",
+            "text": "A pair of eyes"
+          },
+          {
+            "id": "antennae",
+            "text": "A pair of antennae"
+          },
+          {
+            "id": "mouth",
+            "text": "A mouth"
+          },
+          {
+            "id": "spiracles",
+            "text": "Spiracles"
+          }
+        ]
+      },
+      "rubric": {
+        "partialCredit": false
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-47",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "body-parts"
+      ],
+      "type": "multiple_select",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Antennae help an insect feel and smell."
+      },
+      "difficulty": 1,
+      "explanation": "Only the two functions named in the chapter are required.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Write no more than two short points.",
+      "id": "q-053",
+      "marks": 2,
+      "prompt": "What are the two uses of an insect's antennae?",
+      "response": {
+        "recommendedPoints": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "help it feel",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "help it smell",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-47",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "body-parts"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "three",
+          "3"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "Three pairs equal six legs.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the exact word from the chapter.",
+      "id": "q-054",
+      "marks": 1,
+      "prompt": "An insect has ____ pairs of legs attached to its thorax.",
+      "response": {
+        "blankCount": 1
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-47",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "body-parts"
+      ],
+      "type": "fill_blank",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "one-two"
+      },
+      "difficulty": 1,
+      "explanation": "The thorax may bear one or two pairs of wings.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose the option supported by the chapter.",
+      "id": "q-055",
+      "marks": 1,
+      "prompt": "How many pairs of wings may the thorax bear?",
+      "response": {
+        "options": [
+          {
+            "id": "one-two",
+            "text": "One or two pairs"
+          },
+          {
+            "id": "three",
+            "text": "Three pairs"
+          },
+          {
+            "id": "none-always",
+            "text": "It never bears wings"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-47",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "body-parts"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "abdomen"
+      },
+      "difficulty": 1,
+      "explanation": "The abdomen is the largest body part.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose the option supported by the chapter.",
+      "id": "q-056",
+      "marks": 1,
+      "prompt": "Which is the largest part of an insect's body?",
+      "response": {
+        "options": [
+          {
+            "id": "abdomen",
+            "text": "Abdomen"
+          },
+          {
+            "id": "head",
+            "text": "Head"
+          },
+          {
+            "id": "thorax",
+            "text": "Thorax"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-47",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "body-parts"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "spiracles"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "Insects breathe through spiracles.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Give only the required name or term.",
+      "id": "q-057",
+      "marks": 1,
+      "prompt": "What are the small breathing holes on an insect's abdomen called?",
+      "response": {
+        "maxWords": 3
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-47",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "body-parts"
+      ],
+      "type": "one_word",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "stinger",
+          "a stinger"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "The keyword definition names a stinger.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Give only the required name or term.",
+      "id": "q-058",
+      "marks": 1,
+      "prompt": "What is the sharp body part used by some insects to puncture skin called?",
+      "response": {
+        "maxWords": 3
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-52",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "insect-vocabulary"
+      ],
+      "type": "one_word",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": {
+          "Abdomen": "It is the largest rear part and has spiracles used for breathing.",
+          "Thorax": "It is the middle part and bears the legs and wings."
+        }
+      },
+      "difficulty": 2,
+      "explanation": "One short fact about each part earns full credit.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Write one short point for each side.",
+      "id": "q-059",
+      "marks": 2,
+      "prompt": "Write one fact about the thorax and one fact about the abdomen.",
+      "response": {
+        "dimensions": [
+          "thorax",
+          "abdomen"
+        ]
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "one correct thorax fact",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "one correct abdomen fact",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-47",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "body-parts"
+      ],
+      "type": "compare",
+      "version": 1
+    },
+    {
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1,
+      "explanation": "Butterfly eggs are laid on leaves.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "If false, replace only the incorrect idea.",
+      "id": "q-060",
+      "marks": 1,
+      "prompt": "A butterfly lays its eggs on leaves. State true or false.",
+      "response": {
+        "requiresCorrectionWhenFalse": true
+      },
+      "rubric": {
+        "points": [
+          {
+            "concept": "identifies the statement as true",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-48",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "butterfly-life-cycle"
+      ],
+      "type": "true_false_correct",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "larva"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "A caterpillar is the larva stage.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Give only the required name or term.",
+      "id": "q-061",
+      "marks": 1,
+      "prompt": "What is another name for the caterpillar stage?",
+      "response": {
+        "maxWords": 3
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-48",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "butterfly-life-cycle"
+      ],
+      "type": "one_word",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "leaves",
+          "leaves for food"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "The caterpillar feeds on leaves.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Give only the required name or term.",
+      "id": "q-062",
+      "marks": 1,
+      "prompt": "What does a caterpillar eat?",
+      "response": {
+        "maxWords": 3
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-48",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "butterfly-life-cycle"
+      ],
+      "type": "one_word",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "sheds-skin"
+      },
+      "difficulty": 1,
+      "explanation": "The diagram states that a growing caterpillar sheds its skin many times.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose the option supported by the chapter.",
+      "id": "q-063",
+      "marks": 1,
+      "prompt": "What does a growing caterpillar do many times?",
+      "response": {
+        "options": [
+          {
+            "id": "sheds-skin",
+            "text": "Sheds its skin"
+          },
+          {
+            "id": "lays-eggs",
+            "text": "Lays eggs"
+          },
+          {
+            "id": "makes-honey",
+            "text": "Makes honey"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-48",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "butterfly-life-cycle"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "pupa"
+      },
+      "difficulty": 1,
+      "explanation": "The inactive stage is called the pupa.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose the option supported by the chapter.",
+      "id": "q-064",
+      "marks": 1,
+      "prompt": "Which stage is inactive and covered by a protective layer?",
+      "response": {
+        "options": [
+          {
+            "id": "pupa",
+            "text": "Pupa"
+          },
+          {
+            "id": "egg",
+            "text": "Egg"
+          },
+          {
+            "id": "adult",
+            "text": "Adult"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-48",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "butterfly-life-cycle"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "butterfly-emerges"
+      },
+      "difficulty": 1,
+      "explanation": "The adult butterfly comes out of the cocoon.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose the option supported by the chapter.",
+      "id": "q-065",
+      "marks": 1,
+      "prompt": "What happens after the cocoon breaks?",
+      "response": {
+        "options": [
+          {
+            "id": "butterfly-emerges",
+            "text": "A butterfly comes out."
+          },
+          {
+            "id": "egg-forms",
+            "text": "An egg forms."
+          },
+          {
+            "id": "nymph-emerges",
+            "text": "A nymph comes out."
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-48",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "butterfly-life-cycle"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "metamorphosis"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "This is the keyword definition of metamorphosis.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Give only the required name or term.",
+      "id": "q-066",
+      "marks": 1,
+      "prompt": "Name the process of changing from a young form into an adult through different forms.",
+      "response": {
+        "maxWords": 3
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-52",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "insect-vocabulary"
+      ],
+      "type": "one_word",
+      "version": 1
+    },
+    {
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "first",
+            "rightId": "egg"
+          },
+          {
+            "leftId": "second",
+            "rightId": "nymph"
+          },
+          {
+            "leftId": "third",
+            "rightId": "adult"
+          }
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "Grasshoppers and cockroaches have egg, nymph and adult stages.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Match each item with its correct description.",
+      "id": "q-067",
+      "marks": 3,
+      "prompt": "Match each position in a cockroach or grasshopper life cycle with its stage.",
+      "response": {
+        "left": [
+          {
+            "id": "first",
+            "text": "First"
+          },
+          {
+            "id": "second",
+            "text": "Second"
+          },
+          {
+            "id": "third",
+            "text": "Third"
+          }
+        ],
+        "right": [
+          {
+            "id": "adult",
+            "text": "Adult"
+          },
+          {
+            "id": "nymph",
+            "text": "Nymph"
+          },
+          {
+            "id": "egg",
+            "text": "Egg"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-48",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "other-life-cycles"
+      ],
+      "type": "matching",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionIds": [
+          "looks-adult",
+          "smaller",
+          "no-wings"
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "The nymph resembles an adult but is smaller and wingless.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Select every correct option and no incorrect option.",
+      "id": "q-068",
+      "marks": 3,
+      "prompt": "Which statements describe a baby cockroach or nymph?",
+      "response": {
+        "options": [
+          {
+            "id": "looks-adult",
+            "text": "It looks like an adult cockroach."
+          },
+          {
+            "id": "smaller",
+            "text": "It is smaller than an adult."
+          },
+          {
+            "id": "no-wings",
+            "text": "It has no wings."
+          },
+          {
+            "id": "four-wings",
+            "text": "It has four wings."
+          }
+        ]
+      },
+      "rubric": {
+        "partialCredit": false
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-48",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "other-life-cycles"
+      ],
+      "type": "multiple_select",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "moulting",
+          "molting"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "The chapter defines moulting as shedding skin.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Give only the required name or term.",
+      "id": "q-069",
+      "marks": 1,
+      "prompt": "What is the process of shedding skin called?",
+      "response": {
+        "maxWords": 3
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-49",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "insect-vocabulary"
+      ],
+      "type": "one_word",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Social insects are insects, such as honeybees, ants and termites, that live and work together in groups."
+      },
+      "difficulty": 1,
+      "explanation": "The answer needs only the group-living and cooperation ideas.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer in one or two short sentences.",
+      "id": "q-070",
+      "marks": 2,
+      "prompt": "What are social insects?",
+      "response": {
+        "recommendedSentences": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "live in groups",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "work together",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-49",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "social-insects"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionIds": [
+          "cooperate",
+          "reproduce",
+          "work"
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "The chapter lists cooperation, reproduction and working together.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Select every correct option and no incorrect option.",
+      "id": "q-071",
+      "marks": 3,
+      "prompt": "Which features are observed in social insects?",
+      "response": {
+        "options": [
+          {
+            "id": "cooperate",
+            "text": "They cooperate with their group."
+          },
+          {
+            "id": "reproduce",
+            "text": "They reproduce more insects."
+          },
+          {
+            "id": "work",
+            "text": "They work together."
+          },
+          {
+            "id": "always-alone",
+            "text": "They always live alone."
+          }
+        ]
+      },
+      "rubric": {
+        "partialCredit": false
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-49",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "social-insects"
+      ],
+      "type": "multiple_select",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "beehive",
+          "bee hive",
+          "hive"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "Honeybees build beehives in tall trees.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Give only the required name or term.",
+      "id": "q-072",
+      "marks": 1,
+      "prompt": "What is a honeybee's home called?",
+      "response": {
+        "maxWords": 3
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-49",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "social-insects"
+      ],
+      "type": "one_word",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "queen bee",
+          "queen"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "The queen bee lays eggs.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Give only the required name or term.",
+      "id": "q-073",
+      "marks": 1,
+      "prompt": "Which bee lays eggs in the hive?",
+      "response": {
+        "maxWords": 3
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-49",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "social-insects"
+      ],
+      "type": "one_word",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Worker bees make the honeycomb and collect nectar from flowers."
+      },
+      "difficulty": 1,
+      "explanation": "Two jobs are required.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Write no more than two short points.",
+      "id": "q-074",
+      "marks": 2,
+      "prompt": "State two jobs done by worker bees.",
+      "response": {
+        "recommendedPoints": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "make the honeycomb",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "collect nectar",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-49",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "social-insects"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "collect",
+            "rightId": "nectar"
+          },
+          {
+            "leftId": "produce",
+            "rightId": "honey"
+          },
+          {
+            "leftId": "store",
+            "rightId": "hive"
+          }
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "Honeybees collect nectar, make honey and store it in the hive.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Match each item with its correct description.",
+      "id": "q-075",
+      "marks": 3,
+      "prompt": "Match each step in honey production with what happens.",
+      "response": {
+        "left": [
+          {
+            "id": "collect",
+            "text": "Worker bees"
+          },
+          {
+            "id": "produce",
+            "text": "Nectar"
+          },
+          {
+            "id": "store",
+            "text": "Honey"
+          }
+        ],
+        "right": [
+          {
+            "id": "hive",
+            "text": "Is stored in the hive as food"
+          },
+          {
+            "id": "honey",
+            "text": "Is changed into honey"
+          },
+          {
+            "id": "nectar",
+            "text": "Collect nectar from flowers"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-49",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-50",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "social-insects",
+        "useful-insects"
+      ],
+      "type": "matching",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "anthill",
+          "an anthill"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "Ants live in an anthill.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Give only the required name or term.",
+      "id": "q-076",
+      "marks": 1,
+      "prompt": "What is an ant's home called?",
+      "response": {
+        "maxWords": 3
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-49",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "social-insects"
+      ],
+      "type": "one_word",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Worker ants gather food and protect their anthill."
+      },
+      "difficulty": 1,
+      "explanation": "Only the two jobs in the chapter are required.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Write no more than two short points.",
+      "id": "q-077",
+      "marks": 2,
+      "prompt": "State two jobs done by worker ants.",
+      "response": {
+        "recommendedPoints": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "gather food",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "protect the anthill",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-49",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "social-insects"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "It shows their togetherness and cooperation."
+      },
+      "difficulty": 1,
+      "explanation": "The chapter uses this observation to show social behaviour.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer in one or two short sentences.",
+      "id": "q-078",
+      "marks": 2,
+      "prompt": "What does a line of ants moving towards sweets show?",
+      "response": {
+        "recommendedSentences": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "togetherness",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "cooperation",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-49",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "social-insects"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": {
+          "Harmful": "They damage wooden furniture in homes.",
+          "Useful": "They clean forests by eating dead and decaying trees."
+        }
+      },
+      "difficulty": 2,
+      "explanation": "One benefit and one harm give a complete answer.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Write one short point for each side.",
+      "id": "q-079",
+      "marks": 2,
+      "prompt": "State one useful and one harmful effect of termites.",
+      "response": {
+        "dimensions": [
+          "useful",
+          "harmful"
+        ]
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "useful effect in forests",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "harmful effect on furniture",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-49",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-50",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "social-insects",
+        "harmful-insects"
+      ],
+      "type": "compare",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionIds": [
+          "colonies",
+          "wood",
+          "damp"
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "Nectar collection is a honeybee activity.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Select every correct option and no incorrect option.",
+      "id": "q-080",
+      "marks": 3,
+      "prompt": "Which statements about termites are correct?",
+      "response": {
+        "options": [
+          {
+            "id": "colonies",
+            "text": "They live in colonies."
+          },
+          {
+            "id": "wood",
+            "text": "They mainly feed on wood."
+          },
+          {
+            "id": "damp",
+            "text": "They may live in damp furniture and fallen trees."
+          },
+          {
+            "id": "nectar",
+            "text": "They collect nectar to make honey."
+          }
+        ]
+      },
+      "rubric": {
+        "partialCredit": false
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-49",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "social-insects"
+      ],
+      "type": "multiple_select",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionIds": [
+          "bee",
+          "dragonfly",
+          "lacewing",
+          "silk-moth",
+          "dung-beetle"
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "Bed bugs are listed as harmful.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Select every correct option and no incorrect option.",
+      "id": "q-081",
+      "marks": 5,
+      "prompt": "Which insects are listed as useful?",
+      "response": {
+        "options": [
+          {
+            "id": "bee",
+            "text": "Bee or honeybee"
+          },
+          {
+            "id": "dragonfly",
+            "text": "Dragonfly"
+          },
+          {
+            "id": "lacewing",
+            "text": "Lacewing"
+          },
+          {
+            "id": "silk-moth",
+            "text": "Silk moth"
+          },
+          {
+            "id": "dung-beetle",
+            "text": "Dung beetle"
+          },
+          {
+            "id": "bed-bug",
+            "text": "Bed bug"
+          }
+        ]
+      },
+      "rubric": {
+        "partialCredit": false
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-50",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "useful-insects"
+      ],
+      "type": "multiple_select",
+      "version": 1
+    },
+    {
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "honeybee",
+            "rightId": "honey"
+          },
+          {
+            "leftId": "dragonfly",
+            "rightId": "mosquito-control"
+          },
+          {
+            "leftId": "lacewing",
+            "rightId": "pest-control"
+          },
+          {
+            "leftId": "silk-moth",
+            "rightId": "silk"
+          },
+          {
+            "leftId": "dung-beetle",
+            "rightId": "clean"
+          }
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "Each benefit is directly described in the useful-insects section.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Match each item with its correct description.",
+      "id": "q-082",
+      "marks": 5,
+      "prompt": "Match each useful insect with its benefit.",
+      "response": {
+        "left": [
+          {
+            "id": "honeybee",
+            "text": "Honeybee"
+          },
+          {
+            "id": "dragonfly",
+            "text": "Dragonfly"
+          },
+          {
+            "id": "lacewing",
+            "text": "Lacewing"
+          },
+          {
+            "id": "silk-moth",
+            "text": "Silk moth"
+          },
+          {
+            "id": "dung-beetle",
+            "text": "Dung beetle"
+          }
+        ],
+        "right": [
+          {
+            "id": "clean",
+            "text": "Feeds on animal waste and cleans the environment"
+          },
+          {
+            "id": "silk",
+            "text": "Produces silk"
+          },
+          {
+            "id": "pest-control",
+            "text": "Its eggs help check pests"
+          },
+          {
+            "id": "mosquito-control",
+            "text": "Eats mosquitoes"
+          },
+          {
+            "id": "honey",
+            "text": "Makes honey from nectar"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-50",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "useful-insects"
+      ],
+      "type": "matching",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionIds": [
+          "cockroach",
+          "housefly",
+          "mosquito",
+          "lice",
+          "bed-bug"
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "Dragonflies are useful mosquito-eaters.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Select every correct option and no incorrect option.",
+      "id": "q-083",
+      "marks": 5,
+      "prompt": "Which insects are listed as harmful?",
+      "response": {
+        "options": [
+          {
+            "id": "cockroach",
+            "text": "Cockroach"
+          },
+          {
+            "id": "housefly",
+            "text": "Housefly"
+          },
+          {
+            "id": "mosquito",
+            "text": "Mosquito"
+          },
+          {
+            "id": "lice",
+            "text": "Lice"
+          },
+          {
+            "id": "bed-bug",
+            "text": "Bed bug"
+          },
+          {
+            "id": "dragonfly",
+            "text": "Dragonfly"
+          }
+        ]
+      },
+      "rubric": {
+        "partialCredit": false
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-50",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-51",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "harmful-insects"
+      ],
+      "type": "multiple_select",
+      "version": 1
+    },
+    {
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "mosquito",
+            "rightId": "blood-disease"
+          },
+          {
+            "leftId": "housefly",
+            "rightId": "germs-food"
+          },
+          {
+            "leftId": "bed-bug",
+            "rightId": "bed-gaps"
+          },
+          {
+            "leftId": "cockroach",
+            "rightId": "kitchen"
+          },
+          {
+            "leftId": "lice",
+            "rightId": "scalp"
+          }
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "The chapter gives a different harmful effect or location for each insect.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Match each item with its correct description.",
+      "id": "q-084",
+      "marks": 5,
+      "prompt": "Match each harmful insect with its effect or location.",
+      "response": {
+        "left": [
+          {
+            "id": "mosquito",
+            "text": "Mosquito"
+          },
+          {
+            "id": "housefly",
+            "text": "Housefly"
+          },
+          {
+            "id": "bed-bug",
+            "text": "Bed bug"
+          },
+          {
+            "id": "cockroach",
+            "text": "Cockroach"
+          },
+          {
+            "id": "lice",
+            "text": "Lice"
+          }
+        ],
+        "right": [
+          {
+            "id": "scalp",
+            "text": "Lives on the scalp and causes itching"
+          },
+          {
+            "id": "kitchen",
+            "text": "Contaminates food in kitchens"
+          },
+          {
+            "id": "bed-gaps",
+            "text": "Lives in gaps in beds and mattresses"
+          },
+          {
+            "id": "germs-food",
+            "text": "Carries germs from dirt to food"
+          },
+          {
+            "id": "blood-disease",
+            "text": "Sucks blood and spreads diseases"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-51",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "harmful-insects"
+      ],
+      "type": "matching",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionIds": [
+          "clean",
+          "water",
+          "cover",
+          "roadside",
+          "pest",
+          "hair"
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "Leaving food uncovered attracts contamination rather than preventing it.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Select every correct option and no incorrect option.",
+      "id": "q-085",
+      "marks": 6,
+      "prompt": "Which steps help keep harmful insects away?",
+      "response": {
+        "options": [
+          {
+            "id": "clean",
+            "text": "Keep the house and surroundings dry and clean."
+          },
+          {
+            "id": "water",
+            "text": "Do not allow water to collect outside."
+          },
+          {
+            "id": "cover",
+            "text": "Keep food and drinking water covered."
+          },
+          {
+            "id": "roadside",
+            "text": "Avoid food from roadside stalls."
+          },
+          {
+            "id": "pest",
+            "text": "Use pest control when needed."
+          },
+          {
+            "id": "hair",
+            "text": "Keep hair and body clean."
+          },
+          {
+            "id": "uncovered",
+            "text": "Leave food uncovered."
+          }
+        ]
+      },
+      "rubric": {
+        "partialCredit": false
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-51",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "insect-prevention"
+      ],
+      "type": "multiple_select",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "They can be used to control mosquitoes and cockroaches."
+      },
+      "difficulty": 1,
+      "explanation": "The chapter names these two insects.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer in one or two short sentences.",
+      "id": "q-086",
+      "marks": 2,
+      "prompt": "How can natural insect repellents help?",
+      "response": {
+        "recommendedSentences": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "control mosquitoes",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "control cockroaches",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-51",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "insect-prevention"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionIds": [
+          "queen",
+          "female-workers",
+          "males"
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "The fact box lists the queen, female workers and males.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Select every correct option and no incorrect option.",
+      "id": "q-087",
+      "marks": 3,
+      "prompt": "Which kinds of ants are found in an ant colony?",
+      "response": {
+        "options": [
+          {
+            "id": "queen",
+            "text": "Queen"
+          },
+          {
+            "id": "female-workers",
+            "text": "Female workers"
+          },
+          {
+            "id": "males",
+            "text": "Males"
+          },
+          {
+            "id": "king",
+            "text": "King ant"
+          }
+        ]
+      },
+      "rubric": {
+        "partialCredit": false
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-51",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "social-insects"
+      ],
+      "type": "multiple_select",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "twenty"
+      },
+      "difficulty": 1,
+      "explanation": "The chapter's fact box states twenty times its body weight.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose the option supported by the chapter.",
+      "id": "q-088",
+      "marks": 1,
+      "prompt": "How much weight can an ant lift according to the chapter?",
+      "response": {
+        "options": [
+          {
+            "id": "twenty",
+            "text": "Twenty times its own body weight"
+          },
+          {
+            "id": "twice",
+            "text": "Twice its own body weight"
+          },
+          {
+            "id": "hundred",
+            "text": "One hundred times its own body weight"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-51",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "social-insects"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionIds": [
+          "protein",
+          "ears",
+          "jump"
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "The fact box gives the first three statements.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Select every correct option and no incorrect option.",
+      "id": "q-089",
+      "marks": 3,
+      "prompt": "Which facts about grasshoppers are stated in the chapter?",
+      "response": {
+        "options": [
+          {
+            "id": "protein",
+            "text": "They are an important source of protein."
+          },
+          {
+            "id": "ears",
+            "text": "They have ears on their bellies."
+          },
+          {
+            "id": "jump",
+            "text": "Their hind legs help them jump."
+          },
+          {
+            "id": "honey",
+            "text": "They make honey."
+          }
+        ]
+      },
+      "rubric": {
+        "partialCredit": false
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-49",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "common-insects"
+      ],
+      "type": "multiple_select",
+      "version": 1
+    },
+    {
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "stinger",
+            "rightId": "puncture"
+          },
+          {
+            "leftId": "spiracles",
+            "rightId": "breathing-holes"
+          },
+          {
+            "leftId": "crawl",
+            "rightId": "ground"
+          },
+          {
+            "leftId": "larva",
+            "rightId": "young"
+          },
+          {
+            "leftId": "pupa",
+            "rightId": "inactive"
+          },
+          {
+            "leftId": "cocoon",
+            "rightId": "cover"
+          },
+          {
+            "leftId": "metamorphosis",
+            "rightId": "change"
+          }
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "These are the chapter's keyword definitions.",
+      "generation": {
+        "generatedAt": "2026-09-01T23:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Match each item with its correct description.",
+      "id": "q-090",
+      "marks": 7,
+      "prompt": "Match each keyword with its meaning.",
+      "response": {
+        "left": [
+          {
+            "id": "stinger",
+            "text": "Stinger"
+          },
+          {
+            "id": "spiracles",
+            "text": "Spiracles"
+          },
+          {
+            "id": "crawl",
+            "text": "Crawl"
+          },
+          {
+            "id": "larva",
+            "text": "Larva"
+          },
+          {
+            "id": "pupa",
+            "text": "Pupa"
+          },
+          {
+            "id": "cocoon",
+            "text": "Cocoon"
+          },
+          {
+            "id": "metamorphosis",
+            "text": "Metamorphosis"
+          }
+        ],
+        "right": [
+          {
+            "id": "change",
+            "text": "Change from young to adult through different forms"
+          },
+          {
+            "id": "cover",
+            "text": "Protective covering around the larva or pupa"
+          },
+          {
+            "id": "inactive",
+            "text": "Inactive stage between larva and adult"
+          },
+          {
+            "id": "young",
+            "text": "Immature young form of an insect"
+          },
+          {
+            "id": "ground",
+            "text": "Move on legs with the body close to the ground"
+          },
+          {
+            "id": "breathing-holes",
+            "text": "Tiny breathing holes on the abdomen"
+          },
+          {
+            "id": "puncture",
+            "text": "Sharp part used to puncture skin"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-52",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "insect-vocabulary"
+      ],
+      "type": "matching",
+      "version": 1
+    }
+  ],
+  "schemaVersion": "0.1.0",
+  "sources": [
+    {
+      "assetRef": "manifest://insects/page-46",
+      "extractionConfidence": 0.99,
+      "id": "page-46",
+      "pageNumber": 46,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.45,
+            "width": 0.84,
+            "x": 0.08,
+            "y": 0.47
+          },
+          "id": "learning-outcomes",
+          "kind": "passage"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://insects/page-47",
+      "extractionConfidence": 0.99,
+      "id": "page-47",
+      "pageNumber": 47,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.9,
+            "width": 0.94,
+            "x": 0.03,
+            "y": 0.05
+          },
+          "id": "common-and-body-parts",
+          "kind": "diagram"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://insects/page-48",
+      "extractionConfidence": 0.99,
+      "id": "page-48",
+      "pageNumber": 48,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.91,
+            "width": 0.94,
+            "x": 0.03,
+            "y": 0.04
+          },
+          "id": "butterfly-life-cycle",
+          "kind": "diagram"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://insects/page-49",
+      "extractionConfidence": 0.99,
+      "id": "page-49",
+      "pageNumber": 49,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.92,
+            "width": 0.94,
+            "x": 0.03,
+            "y": 0.03
+          },
+          "id": "social-insects",
+          "kind": "passage"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://insects/page-50",
+      "extractionConfidence": 0.99,
+      "id": "page-50",
+      "pageNumber": 50,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.92,
+            "width": 0.94,
+            "x": 0.03,
+            "y": 0.03
+          },
+          "id": "useful-and-harmful",
+          "kind": "passage"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://insects/page-51",
+      "extractionConfidence": 0.99,
+      "id": "page-51",
+      "pageNumber": 51,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.92,
+            "width": 0.94,
+            "x": 0.03,
+            "y": 0.03
+          },
+          "id": "harmful-and-prevention",
+          "kind": "passage"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://insects/page-52",
+      "extractionConfidence": 0.99,
+      "id": "page-52",
+      "pageNumber": 52,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.92,
+            "width": 0.94,
+            "x": 0.03,
+            "y": 0.03
+          },
+          "id": "keywords-and-revision",
+          "kind": "passage"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://insects/page-53",
+      "extractionConfidence": 0.99,
+      "id": "page-53",
+      "pageNumber": 53,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.92,
+            "width": 0.94,
+            "x": 0.03,
+            "y": 0.03
+          },
+          "id": "exercises",
+          "kind": "exercise"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://insects/page-54",
+      "extractionConfidence": 0.99,
+      "id": "page-54",
+      "pageNumber": 54,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.92,
+            "width": 0.94,
+            "x": 0.03,
+            "y": 0.03
+          },
+          "id": "exercises",
+          "kind": "exercise"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://insects/page-55",
+      "extractionConfidence": 0.99,
+      "id": "page-55",
+      "pageNumber": 55,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.92,
+            "width": 0.94,
+            "x": 0.03,
+            "y": 0.03
+          },
+          "id": "exercises",
+          "kind": "exercise"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://insects/page-56",
+      "extractionConfidence": 0.99,
+      "id": "page-56",
+      "pageNumber": 56,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.92,
+            "width": 0.94,
+            "x": 0.03,
+            "y": 0.03
+          },
+          "id": "activities",
+          "kind": "exercise"
+        }
+      ],
+      "reviewRequired": false
+    }
+  ],
+  "topics": [
+    {
+      "id": "body-parts",
+      "learningOutcomeIds": [
+        "identify-body-parts"
+      ],
+      "title": "Body parts of an insect"
+    },
+    {
+      "id": "butterfly-life-cycle",
+      "learningOutcomeIds": [
+        "explain-butterfly-life-cycle"
+      ],
+      "title": "Life cycle of a butterfly"
+    },
+    {
+      "id": "common-insects",
+      "learningOutcomeIds": [
+        "name-common-insects",
+        "identify-home-insects"
+      ],
+      "title": "Common insects and where they are found"
+    },
+    {
+      "id": "harmful-insects",
+      "learningOutcomeIds": [
+        "discuss-harmful-insects"
+      ],
+      "title": "Harmful insects"
+    },
+    {
+      "id": "insect-prevention",
+      "learningOutcomeIds": [
+        "suggest-prevention"
+      ],
+      "title": "Ways to keep harmful insects away"
+    },
+    {
+      "id": "insect-vocabulary",
+      "learningOutcomeIds": [
+        "identify-body-parts",
+        "explain-butterfly-life-cycle"
+      ],
+      "title": "Important insect vocabulary"
+    },
+    {
+      "id": "other-life-cycles",
+      "learningOutcomeIds": [
+        "explain-butterfly-life-cycle"
+      ],
+      "title": "Life cycles of grasshoppers and cockroaches"
+    },
+    {
+      "id": "social-insects",
+      "learningOutcomeIds": [
+        "discuss-social-insects"
+      ],
+      "title": "Social insects"
+    },
+    {
+      "id": "useful-insects",
+      "learningOutcomeIds": [
+        "learn-useful-insects"
+      ],
+      "title": "Useful insects"
+    }
+  ]
+}

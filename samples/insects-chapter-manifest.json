@@ -1,0 +1,150 @@
+{
+  "manifestVersion": "0.1.0",
+  "chapter": {
+    "id": "insects",
+    "board": "School Curriculum",
+    "grade": 3,
+    "subject": "Science",
+    "bookTitle": "Science",
+    "chapterNumber": 4,
+    "title": "Insects"
+  },
+  "sourcePolicy": {
+    "originals": "local-only",
+    "repositoryCopies": false,
+    "applicationStorage": "not-uploaded",
+    "runtimeStrategy": "none",
+    "notes": "Keep the copyrighted source PDF outside Git. Picture-based exercises were converted to self-contained text questions, so runtime source images are not required."
+  },
+  "assets": [
+    {
+      "id": "source-01",
+      "fileName": "Insects.pdf",
+      "sha256": "a3ee0e30368819d8b482c4791613e16a97949530bf014b63b71a6387255900a6",
+      "width": 2447,
+      "height": 3239,
+      "pages": [
+        {
+          "id": "page-46",
+          "pageNumber": 46,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-47",
+          "pageNumber": 47,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-48",
+          "pageNumber": 48,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-49",
+          "pageNumber": 49,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-50",
+          "pageNumber": 50,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-51",
+          "pageNumber": 51,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-52",
+          "pageNumber": 52,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-53",
+          "pageNumber": 53,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-54",
+          "pageNumber": 54,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-55",
+          "pageNumber": 55,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-56",
+          "pageNumber": 56,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        }
+      ]
+    }
+  ],
+  "learningOutcomes": [
+    "name some common insects seen in the surroundings;",
+    "identify some insects seen at home;",
+    "draw pictures and label main parts of insects;",
+    "explain the life cycle of butterfly in their own words;",
+    "discuss some social insects - honeybee, ants and termites;",
+    "learn about the useful insects such as bees, dragon fly, lacewing, silk moth and dung beetle;",
+    "discuss harmful effects of some insects (mosquitoes, housefly, bed bug, cockroach, etc.);",
+    "suggest remedies to prevent harmful effects of insects on human beings."
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "reviewVersion": "0.1.0",
+  "bankId": "insects-v1",
+  "bankVersion": 1,
+  "reviewedAt": "2026-09-01T23:45:00+05:30",
+  "reviewerMethod": "Codex page-by-page visual and Grade 3 answer-length review using the repository-local chapter-ingestion and PDF skills, followed by deterministic schema, source-hash, reference and rubric checks",
+  "inputs": {
+    "manifest": "samples/insects-chapter-manifest.json",
+    "bank": "samples/insects-question-bank.json",
+    "sourceAssetCount": 1,
+    "pageRange": "46-56"
+  },
+  "gates": {
+    "manifestSchema": "pass",
+    "sourceHashes": "pass",
+    "questionBankSchema": "pass",
+    "deterministicGroundingReview": "pass",
+    "manualGroundingReview": "pass",
+    "rubricBalanceReview": "pass",
+    "conciseFalseCorrectionReview": "pass",
+    "gradeAppropriatenessReview": "pass"
+  },
+  "coverage": {
+    "questionCount": 90,
+    "topics": {
+      "body-parts": 16,
+      "common-insects": 8,
+      "butterfly-life-cycle": 16,
+      "social-insects": 19,
+      "useful-insects": 13,
+      "harmful-insects": 8,
+      "insect-prevention": 5,
+      "other-life-cycles": 4,
+      "insect-vocabulary": 4
+    },
+    "types": {
+      "one_word": 21,
+      "fill_blank": 7,
+      "single_choice": 15,
+      "multi_point": 8,
+      "brief_answer": 6,
+      "matching": 9,
+      "true_false_correct": 10,
+      "multiple_select": 12,
+      "compare": 2
+    },
+    "difficulties": {
+      "1": 87,
+      "2": 3
+    },
+    "pages": {
+      "page-48": 24,
+      "page-47": 21,
+      "page-51": 17,
+      "page-49": 20,
+      "page-52": 4,
+      "page-50": 15,
+      "page-53": 12,
+      "page-54": 12,
+      "page-55": 10,
+      "page-56": 1
+    },
+    "bookExercises": {
+      "page-48-recall": [
+        "q-001",
+        "q-002",
+        "q-003",
+        "q-004",
+        "q-005"
+      ],
+      "page-51-fill-blanks": [
+        "q-006",
+        "q-007",
+        "q-008",
+        "q-009",
+        "q-010"
+      ],
+      "A-objective-visible-items": [
+        "q-011",
+        "q-012",
+        "q-013",
+        "q-014",
+        "q-015"
+      ],
+      "B-give-examples": [
+        "q-016",
+        "q-017",
+        "q-018"
+      ],
+      "C-short-answers": [
+        "q-019",
+        "q-020",
+        "q-021",
+        "q-022"
+      ],
+      "D-true-false": [
+        "q-023",
+        "q-024",
+        "q-025",
+        "q-026"
+      ],
+      "E-correct-statements": [
+        "q-027",
+        "q-028",
+        "q-029",
+        "q-030",
+        "q-031"
+      ],
+      "F-match": [
+        "q-032"
+      ],
+      "G-identify": [
+        "q-033",
+        "q-034",
+        "q-035",
+        "q-036",
+        "q-037"
+      ],
+      "H-give-reasons": [
+        "q-038",
+        "q-039"
+      ],
+      "I-case-study": [
+        "q-040",
+        "q-041",
+        "q-042",
+        "q-043"
+      ],
+      "J-assertion-reason": [
+        "q-044"
+      ],
+      "K-body-label-converted": [
+        "q-045"
+      ]
+    },
+    "excludedByScope": [
+      {
+        "source": "page-48",
+        "item": "Make an insect-picture collage",
+        "reason": "Physical classroom project, not a question-bank item."
+      },
+      {
+        "source": "page-50",
+        "item": "Observe and list crawling and flying insects",
+        "reason": "Outdoor observation activity; the underlying movement concepts are assessed objectively."
+      },
+      {
+        "source": "page-51",
+        "item": "Internet research on ants and bees",
+        "reason": "Research activity requiring external sources."
+      },
+      {
+        "source": "page-56",
+        "item": "Make a butterfly mask and write a story",
+        "reason": "Art and language activities, not chapter knowledge questions."
+      },
+      {
+        "source": "page-56",
+        "item": "Research health benefits of honey",
+        "reason": "The benefits are not supplied in the chapter and would require external facts."
+      }
+    ]
+  },
+  "atomicCoverageInventory": {
+    "common-and-body": [
+      "six legs",
+      "largest animal group",
+      "home insects",
+      "outside insects",
+      "movement",
+      "head",
+      "thorax",
+      "abdomen",
+      "eyes",
+      "antennae",
+      "mouth",
+      "legs",
+      "wings",
+      "stinger",
+      "spiracles"
+    ],
+    "life-cycles": [
+      "butterfly eggs on leaves",
+      "caterpillar or larva",
+      "feeding and skin shedding",
+      "pupa",
+      "cocoon",
+      "adult emergence",
+      "metamorphosis",
+      "grasshopper and cockroach egg-nymph-adult",
+      "moulting"
+    ],
+    "social-insects": [
+      "definition and features",
+      "honeybee roles and honey",
+      "ants and anthills",
+      "worker ants",
+      "ant cooperation",
+      "termite colonies",
+      "termite benefit and harm",
+      "ant fact box",
+      "grasshopper fact box"
+    ],
+    "useful-insects": [
+      "honeybees",
+      "dragonflies",
+      "lacewings",
+      "silk moths",
+      "dung beetles"
+    ],
+    "harmful-and-prevention": [
+      "termites",
+      "mosquitoes",
+      "houseflies",
+      "bed bugs",
+      "cockroaches",
+      "lice",
+      "clean dry surroundings",
+      "stagnant water",
+      "covered food and water",
+      "roadside food",
+      "pest control",
+      "hygiene",
+      "natural repellents"
+    ]
+  },
+  "gradeThreeCalibration": {
+    "status": "pass",
+    "rule": "Every brief-answer, multi-point and comparison item has no more than two independently scored points and recommends at most two sentences or points."
+  },
+  "conciseCorrectionReview": {
+    "status": "pass",
+    "questionIds": [
+      "q-024",
+      "q-025",
+      "q-027",
+      "q-028",
+      "q-029",
+      "q-030",
+      "q-031"
+    ],
+    "method": "Each false statement stores a minimal source-grounded correction; additional context is kept in the explanation."
+  },
+  "sourceAssetReadiness": {
+    "status": "not-required",
+    "affectedQuestionIds": [],
+    "note": "All active questions are self-contained text and do not require the source PDF during study sessions."
+  },
+  "blockingFindings": [],
+  "advisoryNotes": [
+    "Board and book title were not visible in the supplied pages; neutral metadata 'School Curriculum' and 'Science' was used.",
+    "The copyrighted source PDF remains local and is intentionally excluded from Git.",
+    "Exercise A items 1 and 2 are not visible in the supplied PDF; their underlying chapter concepts are covered by added objective questions, but their exact wording was not invented.",
+    "The drawing and picture-matching exercises were converted into self-contained ordering and text-matching questions.",
+    "No examination pattern was inferred because no sample paper was supplied."
+  ],
+  "decision": "accept"
+}

@@ -7,6 +7,7 @@ type RecordValue = Record<string, unknown>;
 type Classifier = (input: RubricClassificationInput) => ReturnType<typeof classifyRubric>;
 
 const SUBJECTIVE_TYPES = new Set(["brief_answer", "multi_point", "compare"]);
+const FUZZY_FALLBACK_TYPES = new Set(["fill_blank", "one_word", "true_false_correct"]);
 
 function record(value: unknown): RecordValue {
   return typeof value === "object" && value !== null && !Array.isArray(value) ? value as RecordValue : {};
@@ -24,7 +25,43 @@ export async function gradeSubmittedQuestion(bankValue: unknown, questionId: str
   const bank = record(bankValue);
   const question = records(bank.questions).find((candidate) => candidate.id === questionId);
   if (!question) throw new Error("Question is unavailable.");
-  if (!SUBJECTIVE_TYPES.has(String(question.type))) return gradeQuestion(bankValue, questionId, response);
+  const type = String(question.type);
+  if (!SUBJECTIVE_TYPES.has(type)) {
+    const objective = gradeQuestion(bankValue, questionId, response);
+    if (!FUZZY_FALLBACK_TYPES.has(type)) return objective;
+    const answer = record(question.answer);
+    const given = record(response);
+    const childAnswer = type === "true_false_correct" ? String(given.correction ?? "").trim() : String(response ?? "").trim();
+    const eligibleCorrection = type !== "true_false_correct" || (answer.value === false && given.value === false);
+    if ((objective.correct && type !== "true_false_correct") || !childAnswer || !eligibleCorrection) return objective;
+    const expected = type === "true_false_correct" ? String(answer.correction ?? "") : (Array.isArray(answer.accepted) ? answer.accepted.map(String).join(" / ") : objective.expectedAnswer);
+    const classification = await classifier({
+      question: String(question.prompt ?? ""),
+      childAnswer,
+      groundedEvidence: JSON.stringify({
+        acceptedAnswer: expected,
+        gradingPolicy: "Accept a semantically equivalent answer. Allow different word order, punctuation, phrasing, and minor spelling variation, but require every essential fact and reject contradictions or extra incorrect facts.",
+        textbookPages: objective.sourcePages,
+      }),
+      points: [{ id: "answer", concept: `The answer is semantically equivalent to: ${expected}` }],
+      checkSpelling: false,
+      checkGrammar: false,
+    });
+    const judgement = classification.points.find((point) => point.id === "answer")!;
+    const correct = judgement.coverage === "covered";
+    const earnedMarks = correct ? Number(question.marks ?? 0) : objective.earnedMarks;
+    const reviewRequired = classification.confidence < 0.7;
+    return {
+      ...objective,
+      correct,
+      earnedMarks,
+      explanation: classification.feedback,
+      verdict: reviewRequired ? "review" : correct ? "correct" : earnedMarks > 0 ? "partial" : "incorrect",
+      reviewRequired,
+      confidence: classification.confidence,
+      gradingMeta: classification.meta,
+    };
+  }
   const childAnswer = String(response ?? "").trim();
   if (!childAnswer) throw new Error("Write an answer before submitting.");
   const rubric = record(question.rubric);

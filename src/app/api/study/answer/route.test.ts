@@ -16,6 +16,7 @@ describe("POST /api/study/answer", () => {
   it("grades on the server and returns cited feedback", async () => {
     childFromRequest.mockResolvedValue({ id: "child", familyId: "family", board: "ICSE", grade: 6 });
     getQuestionBankForChild.mockResolvedValue({ sources: [{ id: "p", pageNumber: 45 }], questions: [{ id: "q", type: "fill_blank", prompt: "Seven rivers", marks: 1, answer: { accepted: ["Sapta Sindhu"] }, sourceRefs: [{ pageId: "p" }] }] });
+    classifyRubric.mockResolvedValue({ points: [{ id: "answer", coverage: "missing", confidence: 0.98 }], feedback: "That is a different answer.", confidence: 0.98, spellingErrors: [], grammarErrors: [], meta: { provider: "openrouter", model: "test", promptTokens: 5, completionTokens: 3, totalTokens: 8, cost: 0.001, latencyMs: 10 } });
     recordStudyAttempt.mockResolvedValue("attempt");
     const response = await POST(new Request("http://localhost/api/study/answer", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ sessionId: "session", bankId: "bank", questionId: "q", response: "wrong" }) }));
     expect(response.status).toBe(200);

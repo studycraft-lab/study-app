@@ -29,7 +29,7 @@ export async function listLibrary(filter?: LibraryFilter) {
   if (filter?.grade) query = query.eq("grade", filter.grade);
   const { data, error } = await query;
   if (error) throw new Error(error.message);
-  return (data ?? []).map((row) => ({
+  const rows = (data ?? []).map((row) => ({
     id: row.id,
     board: row.board,
     grade: row.grade,
@@ -41,6 +41,13 @@ export async function listLibrary(filter?: LibraryFilter) {
     questionCount: row.question_count,
     importedAt: row.imported_at,
   }));
+  const seen = new Set<string>();
+  return rows.filter((row) => {
+    const key = [row.board.toLowerCase(), row.grade, row.subject.toLowerCase(), row.chapterNumber ?? "", row.chapterTitle.toLowerCase()].join("|");
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
 }
 
 export async function getQuestionBank(id: string): Promise<Record<string, unknown>> {

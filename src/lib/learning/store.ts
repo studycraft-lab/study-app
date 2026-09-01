@@ -2,7 +2,6 @@ import "server-only";
 
 import { adminClient } from "@/lib/supabase/admin";
 import type { ChildProfile } from "@/lib/family/store";
-import type { SelfRating } from "./schedule";
 import { reviewSchedule } from "./schedule";
 
 type ChildContext = ChildProfile & { familyId: string };
@@ -45,11 +44,11 @@ async function sessionBelongsToChild(sessionId: string, childId: string, bankId:
   if (error || !data) throw new Error("Study session is unavailable.");
 }
 
-async function upsertReview(input: { childId: string; bankId: string; bankVersion: number; questionId: string; questionVersion: number; attemptId: string; correct: boolean; rating?: SelfRating | null }) {
+async function upsertReview(input: { childId: string; bankId: string; bankVersion: number; questionId: string; questionVersion: number; attemptId: string; correct: boolean }) {
   const client = adminClient();
   const { data: existing } = await client.from("review_items").select("repetitions").eq("child_id", input.childId).eq("question_bank_id", input.bankId)
     .eq("bank_version", input.bankVersion).eq("question_id", input.questionId).eq("question_version", input.questionVersion).maybeSingle();
-  const schedule = reviewSchedule({ correct: input.correct, rating: input.rating, repetitions: Number(existing?.repetitions ?? 0) });
+  const schedule = reviewSchedule({ correct: input.correct, repetitions: Number(existing?.repetitions ?? 0) });
   const { error } = await client.from("review_items").upsert({
     child_id: input.childId, question_bank_id: input.bankId, bank_version: input.bankVersion,
     question_id: input.questionId, question_version: input.questionVersion,
@@ -71,16 +70,8 @@ export async function recordStudyAttempt(input: { sessionId: string; child: Chil
   }).select("id").single();
   if (error || !data) throw new Error(error?.message ?? "Attempt could not be saved.");
   const attemptId = String(data.id);
-  if (!input.feedback.correct) await upsertReview({ childId: input.child.id, bankId: input.bankId, bankVersion: version, questionId: input.questionId, questionVersion: Number(item.version || 1), attemptId, correct: false });
+  await upsertReview({ childId: input.child.id, bankId: input.bankId, bankVersion: version, questionId: input.questionId, questionVersion: Number(item.version || 1), attemptId, correct: Boolean(input.feedback.correct) });
   return attemptId;
-}
-
-export async function rateStudyAttempt(input: { attemptId: string; childId: string; rating: SelfRating }) {
-  const client = adminClient();
-  const { data, error } = await client.from("study_attempts").update({ self_rating: input.rating }).eq("id", input.attemptId).eq("child_id", input.childId)
-    .select("id,question_bank_id,bank_version,question_id,question_version,correct").single();
-  if (error || !data) throw new Error("Attempt is unavailable.");
-  await upsertReview({ childId: input.childId, bankId: data.question_bank_id, bankVersion: data.bank_version, questionId: data.question_id, questionVersion: data.question_version, attemptId: data.id, correct: Boolean(data.correct), rating: input.rating });
 }
 
 export async function childLearningHistory(child: ChildContext) {
@@ -96,12 +87,12 @@ export async function childLearningHistory(child: ChildContext) {
   allAttempts.forEach((attempt) => { const key = `${attempt.question_bank_id}:${attempt.question_id}`; if (!latestByQuestion.has(key)) latestByQuestion.set(key, attempt); });
   const latest = [...latestByQuestion.values()];
   const correct = allAttempts.filter((attempt) => attempt.correct).length;
-  const masteryPoints = latest.map((attempt) => !attempt.correct ? 0 : attempt.self_rating === "down" ? .55 : attempt.self_rating === "up" ? 1 : .8);
+  const masteryPoints = latest.map((attempt) => attempt.correct ? 1 : 0);
   const topicIds = [...new Set(allAttempts.flatMap((attempt) => attempt.topic_ids ?? []))];
   const topics = topicIds.map((topicId) => {
     const topicAttempts = allAttempts.filter((attempt) => attempt.topic_ids?.includes(topicId));
     const topicLatest = latest.filter((attempt) => attempt.topic_ids?.includes(topicId));
-    const topicMastery = topicLatest.map((attempt) => !attempt.correct ? 0 : attempt.self_rating === "down" ? .55 : attempt.self_rating === "up" ? 1 : .8);
+    const topicMastery = topicLatest.map((attempt) => attempt.correct ? 1 : 0);
     return {
       topicId,
       attempts: topicAttempts.length,

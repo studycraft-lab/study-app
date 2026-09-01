@@ -8,6 +8,7 @@ type Preview = {
   chapterNumber: number | null; chapterTitle: string; questionCount: number; sourceCount: number;
 };
 type LibraryItem = Preview & { id: string; bankVersion: number };
+type QuestionReport = { id: string; reporter_name: string; bank_version: number; question_id: string; question_version: number; question_snapshot: Record<string, unknown>; note: string | null; created_at: string };
 
 export function ParentLibrary() {
   const [passphrase, setPassphrase] = useState("");
@@ -17,6 +18,7 @@ export function ParentLibrary() {
   const [errors, setErrors] = useState<string[]>([]);
   const [message, setMessage] = useState("");
   const [library, setLibrary] = useState<LibraryItem[]>([]);
+  const [reports, setReports] = useState<QuestionReport[]>([]);
   const [busy, setBusy] = useState(false);
 
   const headers = { "content-type": "application/json", "x-studycraft-parent-passphrase": passphrase };
@@ -41,10 +43,16 @@ export function ParentLibrary() {
 
   async function loadLibrary() {
     setErrors([]);
-    const response = await fetch("/api/library", { headers: { "x-studycraft-parent-passphrase": passphrase } });
+    const authHeaders = { "x-studycraft-parent-passphrase": passphrase };
+    const [response, reportResponse] = await Promise.all([
+      fetch("/api/library", { headers: authHeaders }),
+      fetch("/api/parent/question-reports", { headers: authHeaders }),
+    ]);
     const result = await response.json();
-    if (response.ok) setLibrary(result.chapters);
-    else setErrors([result.error ?? "Could not load the library."]);
+    if (response.ok) {
+      setLibrary(result.chapters);
+      if (reportResponse.ok) setReports((await reportResponse.json()).reports ?? []);
+    } else setErrors([result.error ?? "Could not load the library."]);
   }
 
   async function importBank() {
@@ -102,10 +110,32 @@ export function ParentLibrary() {
       </section>
 
       <section className="library-section">
+        <h2>Questions reported by children</h2>
+        {reports.length === 0 ? <p className="empty-state">Refresh the library to see questions children have flagged.</p> : <div className="question-report-grid">{reports.map((report) => <QuestionReportEditor key={report.id} report={report} passphrase={passphrase} onSaved={loadLibrary} />)}</div>}
+      </section>
+
+      <section className="library-section">
         <h2>Imported chapters</h2>
         {library.length === 0 ? <p className="empty-state">Enter the passphrase and refresh to see the family library.</p> :
           <div className="library-grid">{library.map((item) => <article key={item.id}><span>{item.board} · Grade {item.grade} · {item.subject}</span><h3>{item.chapterNumber ? `${item.chapterNumber}. ` : ""}{item.chapterTitle}</h3><p>{item.questionCount} questions · bank v{item.bankVersion}</p></article>)}</div>}
       </section>
     </main>
   );
+}
+
+function QuestionReportEditor({ report, passphrase, onSaved }: { report: QuestionReport; passphrase: string; onSaved: () => Promise<void> }) {
+  const [questionJson, setQuestionJson] = useState(JSON.stringify(report.question_snapshot, null, 2));
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useState("");
+  const request = async (action: "patch" | "dismiss") => {
+    setBusy(true); setError("");
+    try {
+      const question = action === "patch" ? JSON.parse(questionJson) : undefined;
+      const response = await fetch("/api/parent/question-reports", { method: "PATCH", headers: { "content-type": "application/json", "x-studycraft-parent-passphrase": passphrase }, body: JSON.stringify({ reportId: report.id, action, question }) });
+      const body = await response.json();
+      if (!response.ok) setError(body.error ?? "Could not update this report."); else await onSaved();
+    } catch { setError("The corrected question must be valid JSON."); }
+    setBusy(false);
+  };
+  return <article className="question-report-card"><header><div><span>Reported by {report.reporter_name}</span><h3>{String(report.question_snapshot.prompt ?? report.question_id)}</h3></div><small>Bank v{report.bank_version} · Question v{report.question_version}</small></header>{report.note && <p>{report.note}</p>}<label>Corrected question JSON<textarea rows={12} value={questionJson} onChange={(event) => setQuestionJson(event.target.value)} /></label>{error && <p className="notice notice-error">{error}</p>}<div className="button-row"><button disabled={busy} onClick={() => request("patch")}>Save corrected version</button><button disabled={busy} className="button-secondary" onClick={() => request("dismiss")}>Dismiss report</button></div></article>;
 }

@@ -25,7 +25,7 @@ describe("StudyExperience", () => {
       if (url === "/api/study/history") return new Response(JSON.stringify({ summary: { completedSessions: 0, attempts: 0, uniqueQuestions: 0, accuracy: 0, mastery: 0, dueReview: 0 }, topics: [], sessions: [] }));
       if (url.startsWith("/api/study/questions")) return new Response(JSON.stringify({ questions }));
       if (url === "/api/study/sessions") return new Response(JSON.stringify({ sessionId: "session" }), { status: 201 });
-      if (url === "/api/study/attempts/rating") return new Response(JSON.stringify({ saved: true }));
+      if (url === "/api/study/question-reports") return new Response(JSON.stringify({ reportId: "report" }), { status: 201 });
       return new Response(JSON.stringify({ correct: false, earnedMarks: 0, expectedAnswer: "Early Vedic", explanation: "The timeline shows the Early Vedic period.", sourcePages: [49], attemptId: "attempt" }));
     });
     render(<StudyExperience />);
@@ -44,7 +44,8 @@ describe("StudyExperience", () => {
     expect(await screen.findByText(/needs work/i)).toBeInTheDocument();
     expect(screen.getByRole("status")).toHaveTextContent("Expected: Early Vedic");
     expect(screen.getByText(/Page 49/i)).toBeInTheDocument();
-    fireEvent.click(screen.getByRole("button", { name: /needs practice/i }));
+    fireEvent.click(screen.getByRole("button", { name: /report a problem/i }));
+    expect(await screen.findByText(/sent to your parent/i)).toBeInTheDocument();
     const reviewFirst = await screen.findByRole("button", { name: /question 1: incorrect.*review answer/i });
     fireEvent.click(screen.getByRole("button", { name: /next question/i }));
     expect(await screen.findByText("Question 2")).toBeInTheDocument();

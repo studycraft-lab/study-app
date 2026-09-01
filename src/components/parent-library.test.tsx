@@ -18,9 +18,12 @@ describe("ParentLibrary", () => {
   });
 
   it("clears an earlier library error after a successful retry", async () => {
-    vi.spyOn(globalThis, "fetch")
-      .mockResolvedValueOnce(new Response(JSON.stringify({ error: "permission denied for view library_chapters" }), { status: 500 }))
-      .mockResolvedValueOnce(new Response(JSON.stringify({ chapters: [] }), { status: 200 }));
+    let libraryCalls = 0;
+    vi.spyOn(globalThis, "fetch").mockImplementation(async (input) => {
+      if (String(input) === "/api/parent/question-reports") return new Response(JSON.stringify({ reports: [] }));
+      if (libraryCalls++ === 0) return new Response(JSON.stringify({ error: "permission denied for view library_chapters" }), { status: 500 });
+      return new Response(JSON.stringify({ chapters: [] }));
+    });
     render(<ParentLibrary />);
     fireEvent.change(screen.getByLabelText(/parent passphrase/i), { target: { value: "secret" } });
 
@@ -36,10 +39,13 @@ describe("ParentLibrary", () => {
       board: "ICSE", grade: 6, subject: "History", bookTitle: "History and Civics",
       chapterNumber: 5, chapterTitle: "The Early Vedic Civilization", questionCount: 40, sourceCount: 9,
     };
-    vi.spyOn(globalThis, "fetch")
-      .mockResolvedValueOnce(new Response(JSON.stringify({ valid: true, preview }), { status: 200 }))
-      .mockResolvedValueOnce(new Response(JSON.stringify({ imported: true, created: false, replaced: true, id: "bank-row" }), { status: 200 }))
-      .mockResolvedValueOnce(new Response(JSON.stringify({ chapters: [{ ...preview, id: "bank-row", bankVersion: 1 }] }), { status: 200 }));
+    vi.spyOn(globalThis, "fetch").mockImplementation(async (input) => {
+      const url = String(input);
+      if (url === "/api/question-banks/validate") return new Response(JSON.stringify({ valid: true, preview }));
+      if (url === "/api/question-banks/import") return new Response(JSON.stringify({ imported: true, created: false, replaced: true, id: "bank-row" }));
+      if (url === "/api/parent/question-reports") return new Response(JSON.stringify({ reports: [] }));
+      return new Response(JSON.stringify({ chapters: [{ ...preview, id: "bank-row", bankVersion: 1 }] }));
+    });
     render(<ParentLibrary />);
     fireEvent.change(screen.getByLabelText(/parent passphrase/i), { target: { value: "secret" } });
     fireEvent.change(screen.getByLabelText(/question-bank json/i), {

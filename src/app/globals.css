@@ -385,6 +385,13 @@ button:disabled { cursor: not-allowed; opacity: .45; }
 .confidence-rating button { background: rgba(255,255,255,.72); border: 2px solid transparent; color: var(--ink); display: flex; gap: 6px; }
 .confidence-rating button.is-selected { border-color: var(--pine); }
 .confidence-rating button small { align-self: center; }
+.confidence-rating em { color: var(--pine); flex-basis: 100%; font-size: .8rem; font-style: normal; font-weight: 800; }
+.question-report-grid { display: grid; gap: 1rem; }
+.question-report-card { background: white; border: 1px solid var(--line); border-radius: 18px; padding: 1.2rem; }
+.question-report-card header { display: flex; justify-content: space-between; gap: 1rem; }
+.question-report-card h3 { margin: .35rem 0 1rem; }
+.question-report-card header span, .question-report-card header small { color: var(--muted); }
+.question-report-card textarea { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .78rem; line-height: 1.45; }
 .source-cite { color: var(--muted); font-size: .8rem; font-weight: 800; text-transform: uppercase; }
 .summary-counts { display: grid; gap: 12px; grid-template-columns: repeat(3,1fr); margin: 34px 0; }
 .summary-counts div { background: white; border: 1px solid var(--line); border-radius: 16px; display: grid; padding: 20px; text-align: center; }

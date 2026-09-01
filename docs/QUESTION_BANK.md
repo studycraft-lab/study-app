@@ -16,6 +16,18 @@ Use the repository-local `$chapter-ingestion` skill for textbook images or PDFs.
 
 The manifest records source filenames, page/spread bounds, dimensions and SHA-256 hashes without committing copyrighted textbook images or machine-specific absolute paths. The end-of-chapter exercises guide useful question patterns but do not define the full bank.
 
+### Invoking the skill
+
+Open a Codex task in this repository, attach the chapter images or PDF (or provide an accessible source-directory path), and begin the request with `$chapter-ingestion`. Copy-ready prompts for first-version generation, review-only work and later expansion are maintained in [the skill’s prompt reference](../.agents/skills/chapter-ingestion/references/prompts.md).
+
+For the current Early Vedic deliverable, use the review-only prompt. Its committed artifacts remain:
+
+- [`samples/early-vedic-chapter-manifest.json`](../samples/early-vedic-chapter-manifest.json)
+- [`samples/early-vedic-question-bank.json`](../samples/early-vedic-question-bank.json), with `bank.version` kept at `1`
+- [`samples/early-vedic-question-bank.review.json`](../samples/early-vedic-question-bank.review.json)
+
+Do not use the expansion prompt until a new bank version is intentionally requested.
+
 Run the deterministic gates with:
 
 ```bash

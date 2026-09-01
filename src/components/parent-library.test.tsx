@@ -36,7 +36,7 @@ describe("ParentLibrary", () => {
   it("confirms that a newer payload replaced an unattempted draft bank", async () => {
     const preview = {
       board: "ICSE", grade: 6, subject: "History", bookTitle: "History and Civics",
-      chapterNumber: 5, chapterTitle: "The Early Vedic Civilization", questionCount: 40, sourceCount: 9,
+      chapterNumber: 5, chapterTitle: "The Early Vedic Civilization", bankVersion: 1, questionCount: 40, sourceCount: 9,
     };
     vi.spyOn(globalThis, "fetch").mockImplementation(async (input) => {
       const url = String(input);
@@ -51,7 +51,9 @@ describe("ParentLibrary", () => {
     });
 
     fireEvent.click(screen.getByRole("button", { name: /validate json/i }));
-    fireEvent.click(await screen.findByRole("button", { name: /confirm and import/i }));
+    const importButton = await screen.findByRole("button", { name: /confirm and import/i });
+    expect(screen.getByText("Bank v1 · 40 questions · 9 cited pages")).toBeInTheDocument();
+    fireEvent.click(importButton);
 
     expect(await screen.findByText(/replaced with the latest content/i)).toBeInTheDocument();
     expect(await screen.findByText(/40 questions · bank v1/i)).toBeInTheDocument();
@@ -60,7 +62,7 @@ describe("ParentLibrary", () => {
   it("explains when an occupied bank version was advanced automatically", async () => {
     const preview = {
       board: "ICSE", grade: 6, subject: "History", bookTitle: "History and Civics",
-      chapterNumber: 5, chapterTitle: "The Early Vedic Civilization", questionCount: 79, sourceCount: 9,
+      chapterNumber: 5, chapterTitle: "The Early Vedic Civilization", bankVersion: 2, questionCount: 79, sourceCount: 9,
     };
     vi.spyOn(globalThis, "fetch").mockImplementation(async (input) => {
       const url = String(input);
@@ -75,7 +77,9 @@ describe("ParentLibrary", () => {
     });
 
     fireEvent.click(screen.getByRole("button", { name: /validate json/i }));
-    fireEvent.click(await screen.findByRole("button", { name: /confirm and import/i }));
+    const importButton = await screen.findByRole("button", { name: /confirm and import/i });
+    expect(screen.getByText("Bank v2 · 79 questions · 9 cited pages")).toBeInTheDocument();
+    fireEvent.click(importButton);
 
     expect(await screen.findByText(/imported as bank v3/i)).toBeInTheDocument();
     expect(await screen.findByText(/79 questions · bank v3/i)).toBeInTheDocument();

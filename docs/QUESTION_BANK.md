@@ -180,7 +180,7 @@ Questions are not deleted merely because content is out of syllabus. Applicabili
 
 There is one guarded replacement path for correcting a prototype import: when the stored bank is still `draft` and has no study sessions, attempts or review items, importing different content with the same bank ID and version replaces that row in place. This lets an incomplete draft such as a 12-question prototype be superseded by its reviewed v1 bank without leaving duplicate chapter entries. Once a bank is non-draft or has study history, it is immutable and changed content needs a higher `bank.version`.
 
-Authors should still increment `bank.version` for an intentional new release. As a safety net, the shared import route automatically advances through occupied immutable versions and imports at the first compatible version; consecutive collisions are handled without asking the parent to edit JSON. The response reports `requestedVersion`, `importedVersion`, and `versionAdjusted`, and an identical bank already stored at an advanced version remains idempotent rather than being duplicated.
+Authors should still increment `bank.version` for an intentional new release. The parent upload preview displays the selected bank version and question count before import. As a safety net, the shared import route automatically advances through occupied immutable versions and imports at the first compatible version; consecutive collisions are handled without asking the parent to edit JSON. The response reports `requestedVersion`, `importedVersion`, and `versionAdjusted`, and an identical bank already stored at an advanced version remains idempotent rather than being duplicated.
 
 ## Stable import command
 

@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 
 type Preview = {
   board: string; grade: number; subject: string; bookTitle: string | null;
-  chapterNumber: number | null; chapterTitle: string; questionCount: number; sourceCount: number;
+  chapterNumber: number | null; chapterTitle: string; bankVersion: number; questionCount: number; sourceCount: number;
 };
 type LibraryItem = Preview & { id: string; bankVersion: number };
 type ReportAttempt = { reportId: string; reporterName: string; note: string | null; response?: unknown; correct?: boolean; earnedMarks?: number; maxMarks?: number; feedback?: Record<string, unknown>; attemptedAt?: string };
@@ -125,7 +125,7 @@ export function ParentLibrary() {
           <label>Book (optional)<input value={preview.bookTitle ?? ""} onChange={(event) => update("bookTitle", event.target.value || null)} /></label>
           <label>Chapter number<input type="number" min="1" value={preview.chapterNumber ?? ""} onChange={(event) => update("chapterNumber", event.target.value ? Number(event.target.value) : null)} /></label>
           <label>Chapter title<input value={preview.chapterTitle} onChange={(event) => update("chapterTitle", event.target.value)} /></label>
-          <p className="metadata-summary">{preview.questionCount} questions · {preview.sourceCount} cited pages</p>
+          <p className="metadata-summary">Bank v{preview.bankVersion} · {preview.questionCount} questions · {preview.sourceCount} cited pages</p>
           <button onClick={importBank} disabled={busy}>Confirm and import</button>
         </div>}
       </section>

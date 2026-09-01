@@ -1,16 +1,11 @@
 import "server-only";
 
 import { createHash } from "node:crypto";
-import { createClient } from "@supabase/supabase-js";
 
 import type { BankMetadata, ValidatedQuestionBank } from "./validate";
+import { adminClient } from "@/lib/supabase/admin";
 
-function adminClient() {
-  const url = process.env.SUPABASE_URL;
-  const key = process.env.SUPABASE_SECRET_KEY;
-  if (!url || !key) throw new Error("Supabase import is not configured.");
-  return createClient(url, key, { auth: { autoRefreshToken: false, persistSession: false } });
-}
+export type LibraryFilter = { familyId: string; board?: string; grade?: number };
 
 export async function importQuestionBank(bank: ValidatedQuestionBank, metadata: BankMetadata) {
   const contentHash = createHash("sha256").update(JSON.stringify(bank)).digest("hex");
@@ -23,11 +18,15 @@ export async function importQuestionBank(bank: ValidatedQuestionBank, metadata: 
   return data as { id: string; created: boolean };
 }
 
-export async function listLibrary() {
-  const { data, error } = await adminClient()
+export async function listLibrary(filter?: LibraryFilter) {
+  let query = adminClient()
     .from("library_chapters")
     .select("id,board,grade,subject,book_title,chapter_number,chapter_title,bank_version,question_count,imported_at")
     .order("imported_at", { ascending: false });
+  if (filter) query = query.eq("family_id", filter.familyId);
+  if (filter?.board) query = query.ilike("board", filter.board);
+  if (filter?.grade) query = query.eq("grade", filter.grade);
+  const { data, error } = await query;
   if (error) throw new Error(error.message);
   return (data ?? []).map((row) => ({
     id: row.id,
@@ -47,4 +46,11 @@ export async function getQuestionBank(id: string): Promise<Record<string, unknow
   const { data, error } = await adminClient().from("question_banks").select("payload").eq("id", id).single();
   if (error || typeof data?.payload !== "object" || data.payload === null) throw new Error("Question bank is unavailable.");
   return data.payload as Record<string, unknown>;
+}
+
+export async function getQuestionBankForChild(id: string, filter: LibraryFilter): Promise<Record<string, unknown>> {
+  const { data: visible, error: visibleError } = await adminClient().from("library_chapters").select("id")
+    .eq("id", id).eq("family_id", filter.familyId).ilike("board", filter.board ?? "").eq("grade", filter.grade ?? 0).maybeSingle();
+  if (visibleError || !visible) throw new Error("Question bank is unavailable for this child.");
+  return getQuestionBank(id);
 }

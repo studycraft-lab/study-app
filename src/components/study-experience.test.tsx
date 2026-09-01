@@ -13,19 +13,26 @@ describe("StudyExperience", () => {
 
   it("unlocks, selects a chapter, and gives immediate cited feedback", async () => {
     let libraryCalls = 0;
+    let profileCalls = 0;
     vi.spyOn(globalThis, "fetch").mockImplementation(async (input) => {
       const url = String(input);
       if (url === "/api/study/library" && libraryCalls++ === 0) return new Response(JSON.stringify({ error: "locked" }), { status: 401 });
+      if (url === "/api/child/profiles" && profileCalls++ === 0) return new Response(JSON.stringify({ error: "locked" }), { status: 401 });
       if (url === "/api/child-preview/unlock") return new Response(JSON.stringify({ unlocked: true }));
-      if (url === "/api/study/library") return new Response(JSON.stringify({ chapters: [{ id: "bank", subject: "History", chapterTitle: "Early Vedic", grade: 6, board: "ICSE", questionCount: 10 }] }));
+      if (url === "/api/child/profiles") return new Response(JSON.stringify({ children: [{ id: "child", displayName: "Asha", grade: 6, board: "ICSE" }] }));
+      if (url === "/api/child/login") return new Response(JSON.stringify({ child: { id: "child", displayName: "Asha", grade: 6, board: "ICSE" } }));
+      if (url === "/api/study/library") return new Response(JSON.stringify({ child: { id: "child", displayName: "Asha", grade: 6, board: "ICSE" }, chapters: [{ id: "bank", subject: "History", chapterTitle: "Early Vedic", grade: 6, board: "ICSE", questionCount: 10 }] }));
       if (url.startsWith("/api/study/questions")) return new Response(JSON.stringify({ questions }));
       return new Response(JSON.stringify({ correct: false, expectedAnswer: "Early Vedic", explanation: "The timeline shows the Early Vedic period.", sourcePages: [49] }));
     });
     render(<StudyExperience />);
 
-    expect(await screen.findByRole("heading", { name: /unlock child preview/i })).toBeInTheDocument();
+    expect(await screen.findByRole("heading", { name: /unlock this device/i })).toBeInTheDocument();
     fireEvent.change(screen.getByLabelText(/parent passphrase/i), { target: { value: "secret" } });
     fireEvent.click(screen.getByRole("button", { name: /unlock/i }));
+    fireEvent.click(await screen.findByRole("button", { name: /asha/i }));
+    fireEvent.change(screen.getByLabelText(/asha.*pin/i), { target: { value: "1234" } });
+    fireEvent.click(screen.getByRole("button", { name: /start studying/i }));
     fireEvent.click(await screen.findByRole("button", { name: /early vedic/i }));
     expect(await screen.findByText("Which period?")).toBeInTheDocument();
 

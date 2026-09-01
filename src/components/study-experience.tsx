@@ -4,6 +4,7 @@ import Link from "next/link";
 import { FormEvent, useEffect, useState } from "react";
 
 type Chapter = { id: string; board: string; grade: number; subject: string; chapterNumber?: number | null; chapterTitle: string; questionCount: number };
+type Child = { id: string; displayName: string; board: string; grade: number };
 type Option = { id: string; text: string };
 type Question = { id: string; type: string; prompt: string; marks: number; response: { options?: Option[]; left?: Option[]; right?: Option[]; requiresCorrectionWhenFalse?: boolean } };
 type Feedback = { correct: boolean; expectedAnswer: string; explanation: string; sourcePages: number[] };
@@ -17,8 +18,12 @@ function hasResponse(question: Question, response: unknown): boolean {
 }
 
 export function StudyExperience() {
-  const [phase, setPhase] = useState<"loading" | "unlock" | "library" | "session" | "summary">("loading");
+  const [phase, setPhase] = useState<"loading" | "unlock" | "profiles" | "library" | "session" | "summary">("loading");
   const [passphrase, setPassphrase] = useState("");
+  const [children, setChildren] = useState<Child[]>([]);
+  const [selectedChild, setSelectedChild] = useState<Child | null>(null);
+  const [child, setChild] = useState<Child | null>(null);
+  const [pin, setPin] = useState("");
   const [chapters, setChapters] = useState<Chapter[]>([]);
   const [bankId, setBankId] = useState("");
   const [questions, setQuestions] = useState<Question[]>([]);
@@ -40,21 +45,29 @@ export function StudyExperience() {
 
   async function loadLibrary() {
     const result = await fetch("/api/study/library", { cache: "no-store" });
-    if (result.status === 401) { setPhase("unlock"); return; }
+    if (result.status === 401) { await loadProfiles(); return; }
     const body = await result.json();
     if (!result.ok) { setError(body.error ?? "Library unavailable."); setPhase("unlock"); return; }
-    setChapters(body.chapters ?? []); setPhase("library"); setError("");
+    setChild(body.child ?? null); setChapters(body.chapters ?? []); setPhase("library"); setError("");
+  }
+
+  async function loadProfiles() {
+    const result = await fetch("/api/child/profiles", { cache: "no-store" });
+    if (result.status === 401) { setPhase("unlock"); return; }
+    const body = await result.json();
+    if (!result.ok) { setError(body.error ?? "Profiles unavailable."); setPhase("unlock"); return; }
+    setChildren(body.children ?? []); setSelectedChild(null); setPin(""); setPhase("profiles"); setError("");
   }
 
   useEffect(() => {
     let active = true;
     void fetch("/api/study/library", { cache: "no-store" }).then(async (result) => {
       if (!active) return;
-      if (result.status === 401) { setPhase("unlock"); return; }
+      if (result.status === 401) { await loadProfiles(); return; }
       const body = await result.json();
       if (!active) return;
       if (!result.ok) { setError(body.error ?? "Library unavailable."); setPhase("unlock"); return; }
-      setChapters(body.chapters ?? []); setPhase("library");
+      setChild(body.child ?? null); setChapters(body.chapters ?? []); setPhase("library");
     });
     return () => { active = false; };
   }, []);
@@ -64,8 +77,22 @@ export function StudyExperience() {
     const result = await fetch("/api/child-preview/unlock", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ passphrase }) });
     const body = await result.json();
     if (!result.ok) setError(body.error ?? "Could not unlock child preview.");
-    else await loadLibrary();
+    else await loadProfiles();
     setBusy(false);
+  }
+
+  async function childLogin(event: FormEvent) {
+    event.preventDefault(); if (!selectedChild) return;
+    setBusy(true); setError("");
+    const result = await fetch("/api/child/login", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ childId: selectedChild.id, pin }) });
+    const body = await result.json();
+    if (!result.ok) setError(body.error ?? "Could not sign in."); else { setChild(body.child); await loadLibrary(); }
+    setBusy(false);
+  }
+
+  async function switchChild() {
+    await fetch("/api/child/logout", { method: "POST" });
+    setChild(null); setChapters([]); setQuestions([]); setError(""); await loadProfiles();
   }
 
   async function start(chapter: Chapter) {
@@ -127,11 +154,13 @@ export function StudyExperience() {
   }
 
   return <main className="study-shell">
-    <header className="study-header"><Link className="brand" href="/"><span className="brand-mark">S</span><span>StudyCraft</span></Link><span className="foundation-badge">Child preview</span></header>
+    <header className="study-header"><Link className="brand" href="/"><span className="brand-mark">S</span><span>StudyCraft</span></Link>{child ? <button className="child-switcher" onClick={switchChild}>Studying as {child.displayName} · Switch</button> : <span className="foundation-badge">Family study</span>}</header>
 
     {phase === "loading" && <p className="study-loading">Opening your study space…</p>}
 
-    {phase === "unlock" && <section className="unlock-card"><p className="eyebrow">Parent step</p><h1>Unlock child preview</h1><p>For this MVP, a parent unlocks the study space once. Child PINs arrive in the profile story.</p><form onSubmit={unlock}><label>Parent passphrase<input type="password" value={passphrase} onChange={(event) => setPassphrase(event.target.value)} /></label><button disabled={!passphrase || busy}>{busy ? "Unlocking…" : "Unlock child preview"}</button></form>{error && <p className="notice notice-error" role="alert">{error}</p>}</section>}
+    {phase === "unlock" && <section className="unlock-card"><p className="eyebrow">Parent step</p><h1>Unlock this device</h1><p>A parent does this once on a family device. After that, each child enters with their own PIN.</p><form onSubmit={unlock}><label>Parent passphrase<input type="password" value={passphrase} onChange={(event) => setPassphrase(event.target.value)} /></label><button disabled={!passphrase || busy}>{busy ? "Unlocking…" : "Unlock family study"}</button></form>{error && <p className="notice notice-error" role="alert">{error}</p>}</section>}
+
+    {phase === "profiles" && <section className="profile-picker"><p className="eyebrow">Welcome back</p><h1>Who is studying?</h1>{children.length === 0 ? <div className="empty-study"><p>A parent needs to add a child profile first.</p><Link href="/parent/family">Manage child profiles</Link></div> : <div className="profile-choice-grid">{children.map((item) => <button key={item.id} className={selectedChild?.id === item.id ? "is-selected" : ""} onClick={() => { setSelectedChild(item); setPin(""); setError(""); }}><span className="profile-avatar">{item.displayName.slice(0, 1).toUpperCase()}</span><strong>{item.displayName}</strong><small>{item.board} · Grade {item.grade}</small></button>)}</div>}{selectedChild && <form className="pin-form" onSubmit={childLogin}><label>{selectedChild.displayName}’s PIN<input autoFocus type="password" inputMode="numeric" value={pin} onChange={(event) => setPin(event.target.value)} /></label><button disabled={!/^\d{4,8}$/.test(pin) || busy}>{busy ? "Opening…" : "Start studying"}</button></form>}{error && <p className="notice notice-error" role="alert">{error}</p>}</section>}
 
     {phase === "library" && <section className="chapter-picker"><p className="eyebrow">Choose today’s practice</p><h1>What would you like to study?</h1>{chapters.length === 0 ? <div className="empty-study"><p>No chapters are ready yet.</p><Link href="/parent/library">Import a question bank</Link></div> : <div className="chapter-grid">{chapters.map((chapter) => <button key={chapter.id} onClick={() => start(chapter)} disabled={busy} aria-label={`Study ${chapter.chapterTitle}`}><span>{chapter.board} · Grade {chapter.grade}</span><strong>{chapter.subject}</strong><h2>{chapter.chapterNumber ? `${chapter.chapterNumber}. ` : ""}{chapter.chapterTitle}</h2><small>{Math.min(5, chapter.questionCount)} question practice →</small></button>)}</div>}{error && <p className="notice notice-error">{error}</p>}</section>}
 

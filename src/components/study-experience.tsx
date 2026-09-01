@@ -35,13 +35,6 @@ function resultStatus(result: { correct: boolean; earnedMarks?: number; earned_m
   return Number(result.earnedMarks ?? result.earned_marks ?? 0) > 0 ? "partial" : "incorrect";
 }
 
-const METRIC_HELP: Record<string, string> = {
-  covered: "Different questions you have answered at least once.",
-  accuracy: "Marks earned across all attempts, shown as a percentage.",
-  mastery: "The latest score for each attempted question. Later review shows whether learning lasts.",
-  due: "Questions scheduled for spaced practice today because they were missed earlier or need reinforcement.",
-};
-
 export function StudyExperience() {
   const router = useRouter();
   const [phase, setPhase] = useState<"loading" | "library" | "session" | "summary" | "history">("loading");
@@ -60,12 +53,10 @@ export function StudyExperience() {
   const [reportNotes, setReportNotes] = useState<Record<string, string>>({});
   const [reportedQuestions, setReportedQuestions] = useState<Record<string, boolean>>({});
   const [history, setHistory] = useState<History | null>(null);
-  const [historySession, setHistorySession] = useState<HistorySession | null>(null);
   const [reviewingId, setReviewingId] = useState<string | null>(null);
   const [reviewOrigin, setReviewOrigin] = useState<"session" | "summary">("session");
   const [error, setError] = useState("");
   const [busy, setBusy] = useState(false);
-  const [metricHelp, setMetricHelp] = useState("");
 
   const current = questions.find((question) => question.id === (reviewingId ?? queue[0]));
   const shownResponse = reviewingId ? responses[reviewingId] : response;
@@ -104,18 +95,6 @@ export function StudyExperience() {
     setFeedback(null); setResponse(""); setResponses({}); setFeedbackByQuestion({}); setFeedbackOpen({}); setReportNotes({}); setReportedQuestions({}); setReviewingId(null); setPhase("session"); setBusy(false);
   }
 
-  async function startDueReview() {
-    setBusy(true); setError("");
-    const result = await fetch("/api/study/review", { cache: "no-store" });
-    const body = await result.json();
-    if (!result.ok || !body.questions?.length) { setError(body.error ?? "Nothing is due for review yet."); setBusy(false); return; }
-    const loaded = body.questions as Question[];
-    const sessionResult = await fetch("/api/study/sessions", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ bankId: body.bankId, questionIds: loaded.map((question) => question.id), presentationSeed: body.presentationSeed }) });
-    const sessionBody = await sessionResult.json();
-    if (!sessionResult.ok) { setError(sessionBody.error ?? "Could not start review."); setBusy(false); return; }
-    setBankId(body.bankId); setSessionId(sessionBody.sessionId); setQuestions(loaded); setQueue(loaded.map((item) => item.id));
-    setStatuses(Object.fromEntries(loaded.map((item) => [item.id, "pending"]))); setFeedback(null); setResponse(""); setResponses({}); setFeedbackByQuestion({}); setFeedbackOpen({}); setReportNotes({}); setReportedQuestions({}); setReviewingId(null); setPhase("session"); setBusy(false);
-  }
 
   async function resume(session: HistorySession) {
     setBusy(true); setError("");
@@ -194,20 +173,9 @@ export function StudyExperience() {
     {phase === "loading" && <p className="study-loading">Opening your study space…</p>}
 
     {phase === "library" && <section className="chapter-picker">
-      <p className="eyebrow">Choose today’s practice</p><h1>What would you like to study?</h1>
-      {history && <>
-        <div className="learning-snapshot">
-          <div><strong>{history.summary.uniqueQuestions}</strong><span>Questions covered <button className="metric-info" aria-label="About questions covered" onClick={() => setMetricHelp("covered")}>i</button></span></div>
-          <div><strong>{history.summary.accuracy}%</strong><span>Accuracy <button className="metric-info" aria-label="About accuracy" onClick={() => setMetricHelp("accuracy")}>i</button></span></div>
-          <div><strong>{history.summary.mastery}%</strong><span>Mastery <button className="metric-info" aria-label="About mastery" onClick={() => setMetricHelp("mastery")}>i</button></span></div>
-          <div><strong>{history.summary.dueReview}</strong><span>Due for review <button className="metric-info" aria-label="About due review" onClick={() => setMetricHelp("due")}>i</button></span></div>
-          <button onClick={startDueReview} disabled={busy || history.summary.dueReview === 0}>Practice due questions</button>
-        </div>
-        {metricHelp && <p className="metric-explanation" role="status">{METRIC_HELP[metricHelp]}</p>}
-        {history.topics.length > 0 && <div className="topic-progress"><h2>Mastery by topic</h2>{history.topics.slice(0, 6).map((topic) => <div key={topic.topicId}><span>{topic.topicId.replaceAll("-", " ")}</span><strong>{topic.mastery}% mastery</strong><small>{topic.accuracy}% accuracy</small></div>)}</div>}
-      </>}
+      <p className="eyebrow">Study</p><h1>What would you like to study?</h1>
       {chapters.length === 0 ? <div className="empty-study"><p>No chapters are ready yet.</p><Link href="/parent/library">Import a question bank</Link></div> : <div className="chapter-grid">{chapters.map((chapter) => <button key={chapter.id} onClick={() => start(chapter)} disabled={busy} aria-label={`Study ${chapter.chapterTitle}`}><span>{chapter.board} · Grade {chapter.grade}</span><strong>{chapter.subject}</strong><h2>{chapter.chapterNumber ? `${chapter.chapterNumber}. ` : ""}{chapter.chapterTitle}</h2><small>{chapter.correctEver ?? 0}/{chapter.questionCount} covered · {Math.min(5, chapter.questionCount)} questions</small>{chapter.fullCoverage && <em className="coverage-badge">✓ Full coverage</em>}</button>)}</div>}
-      {history && history.sessions.length > 0 && <div className="recent-sessions"><h2>Recent work</h2>{history.sessions.slice(0, 5).map((item) => { const marks = sessionMarks(item); return <article key={item.id} className="recent-session-row"><span>{new Date(item.startedAt).toLocaleDateString()}</span><strong>{marks.earned}/{marks.possible || 0} marks</strong><small>{item.attempts.length} of {item.totalQuestions} answered · {item.status === "completed" ? "Completed" : "Not finished"}</small><div>{item.resumable && <button onClick={() => resume(item)} disabled={busy}>Resume session</button>}<button className="button-quiet" onClick={() => { setHistorySession(item); setPhase("history"); }}>View details</button></div></article>; })}</div>}
+      {history && history.sessions.some((item) => item.resumable) && <div className="recent-sessions"><h2>Continue studying</h2>{history.sessions.filter((item) => item.resumable).slice(0, 3).map((item) => { const marks = sessionMarks(item); return <article key={item.id} className="recent-session-row"><span>{new Date(item.startedAt).toLocaleDateString()}</span><strong>{marks.earned}/{marks.possible || 0} marks</strong><small>{item.attempts.length} of {item.totalQuestions} answered · Unfinished</small><div><button onClick={() => resume(item)} disabled={busy}>Resume session</button></div></article>; })}</div>}
       {error && <p className="notice notice-error">{error}</p>}
     </section>}
 
@@ -222,7 +190,6 @@ export function StudyExperience() {
 
     {phase === "summary" && <section className="summary-card"><p className="eyebrow">Session complete</p><h1>Nice work showing up.</h1><div className="summary-counts"><div><strong>{Object.values(statuses).filter((value) => value === "correct").length}</strong><span>Correct</span></div><div><strong>{Object.values(statuses).filter((value) => value === "partial").length}</strong><span>Partly correct</span></div><div><strong>{Object.values(statuses).filter((value) => value === "review").length}</strong><span>Needs review</span></div><div><strong>{Object.values(statuses).filter((value) => value === "incorrect").length}</strong><span>Incorrect</span></div></div><div className="answer-review"><h2>Review your answers</h2><div className="progress-rail">{questions.map((question, index) => feedbackByQuestion[question.id] && <button type="button" key={question.id} className={`progress-step is-${statuses[question.id]}`} aria-label={`Review question ${index + 1}: ${statuses[question.id]}`} onClick={() => openReview(question.id)}>{statuses[question.id] === "correct" ? "✓" : statuses[question.id] === "partial" ? "½" : statuses[question.id] === "review" ? "?" : "×"}</button>)}</div></div><div className="question-actions">{(Object.values(statuses).includes("incorrect") || Object.values(statuses).includes("partial")) && <button onClick={reviewMistakes}>Review mistakes</button>}<button className="button-secondary" onClick={() => setPhase("library")}>Choose another chapter</button></div></section>}
 
-    {phase === "history" && historySession && <section className="history-card"><button className="button-quiet" onClick={() => setPhase("library")}>← Back to study</button><p className="eyebrow">{new Date(historySession.startedAt).toLocaleDateString()}</p><h1>{historySession.status === "completed" ? "Completed session" : "Unfinished session"}</h1><div className="history-attempts">{historySession.attempts.map((attempt, index) => <article key={attempt.id}><span className={attempt.feedback.reviewRequired ? "is-review" : attempt.correct ? "is-correct" : "is-wrong"}>{attempt.feedback.reviewRequired ? "?" : attempt.correct ? "✓" : "×"} Question {index + 1}</span><h2>{attempt.question_prompt}</h2><p>{attempt.feedback.explanation}</p><small>{attempt.earned_marks}/{attempt.max_marks} marks{attempt.feedback.reviewRequired ? " · Parent review needed" : ""}</small></article>)}</div></section>}
   </main>;
 }
 

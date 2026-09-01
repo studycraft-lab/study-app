@@ -1,3 +1,3 @@
-import { ParentSessionReview } from "@/components/parent-session-review";
+import { redirect } from "next/navigation";
 
-export default function ParentSessionReviewPage() { return <ParentSessionReview />; }
+export default function ParentSessionReviewPage() { redirect("/parent/family"); }

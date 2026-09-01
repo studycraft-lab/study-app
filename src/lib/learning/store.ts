@@ -165,6 +165,11 @@ export async function childLearningHistory(child: ChildContext) {
       mastery: Math.round(topicMastery.reduce<number>((sum, value) => sum + value, 0) / topicMastery.length * 100),
     };
   });
+  const studyDays = new Set(allAttempts.map((attempt) => new Date(attempt.attempted_at).toISOString().slice(0, 10)));
+  let streak = 0;
+  const cursor = new Date();
+  while (studyDays.has(cursor.toISOString().slice(0, 10))) { streak += 1; cursor.setUTCDate(cursor.getUTCDate() - 1); }
+  const points = Math.round(earnedMarks * 10 + allAttempts.length * 2);
   return {
     summary: {
       completedSessions: (sessions ?? []).filter((session) => session.status === "completed").length,
@@ -174,6 +179,7 @@ export async function childLearningHistory(child: ChildContext) {
       mastery: masteryPoints.length ? Math.round(masteryPoints.reduce<number>((sum, value) => sum + value, 0) / masteryPoints.length * 100) : 0,
       dueReview: dueCount ?? 0,
       gradingReview: allAttempts.filter((attempt) => record(attempt.feedback).reviewRequired === true).length,
+      rewards: { points, stars: Math.min(5, Math.floor(points / 50)), level: 1 + Math.floor(points / 100), streak },
     },
     topics,
     sessions: (sessions ?? []).map((session) => ({

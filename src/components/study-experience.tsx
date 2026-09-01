@@ -38,7 +38,9 @@ export function StudyExperience() {
   const [feedback, setFeedback] = useState<Feedback | null>(null);
   const [responses, setResponses] = useState<Record<string, unknown>>({});
   const [feedbackByQuestion, setFeedbackByQuestion] = useState<Record<string, Feedback>>({});
-  const [questionVotes, setQuestionVotes] = useState<Record<string, "good" | "reported">>({});
+  const [feedbackOpen, setFeedbackOpen] = useState<Record<string, boolean>>({});
+  const [reportNotes, setReportNotes] = useState<Record<string, string>>({});
+  const [reportedQuestions, setReportedQuestions] = useState<Record<string, boolean>>({});
   const [history, setHistory] = useState<History | null>(null);
   const [historySession, setHistorySession] = useState<HistorySession | null>(null);
   const [reviewingId, setReviewingId] = useState<string | null>(null);
@@ -119,7 +121,7 @@ export function StudyExperience() {
     setSessionId(sessionBody.sessionId);
     setQuestions(loaded); setQueue(loaded.map((question) => question.id));
     setStatuses(Object.fromEntries(loaded.map((question) => [question.id, "pending"])));
-    setSkippedOnce([]); setFeedback(null); setResponse(""); setResponses({}); setFeedbackByQuestion({}); setQuestionVotes({}); setReviewingId(null); setPhase("session"); setBusy(false);
+    setSkippedOnce([]); setFeedback(null); setResponse(""); setResponses({}); setFeedbackByQuestion({}); setFeedbackOpen({}); setReportNotes({}); setReportedQuestions({}); setReviewingId(null); setPhase("session"); setBusy(false);
   }
 
   async function startDueReview() {
@@ -132,7 +134,7 @@ export function StudyExperience() {
     const sessionBody = await sessionResult.json();
     if (!sessionResult.ok) { setError(sessionBody.error ?? "Could not start review."); setBusy(false); return; }
     setBankId(body.bankId); setSessionId(sessionBody.sessionId); setQuestions(loaded); setQueue(loaded.map((item) => item.id));
-    setStatuses(Object.fromEntries(loaded.map((item) => [item.id, "pending"]))); setSkippedOnce([]); setFeedback(null); setResponse(""); setResponses({}); setFeedbackByQuestion({}); setQuestionVotes({}); setReviewingId(null); setPhase("session"); setBusy(false);
+    setStatuses(Object.fromEntries(loaded.map((item) => [item.id, "pending"]))); setSkippedOnce([]); setFeedback(null); setResponse(""); setResponses({}); setFeedbackByQuestion({}); setFeedbackOpen({}); setReportNotes({}); setReportedQuestions({}); setReviewingId(null); setPhase("session"); setBusy(false);
   }
 
   function advance(nextQueue: string[]) {
@@ -156,12 +158,19 @@ export function StudyExperience() {
     setBusy(false);
   }
 
-  async function voteOnQuestion(vote: "good" | "reported") {
-    if (!current || !feedback?.attemptId) return;
-    setQuestionVotes((existing) => ({ ...existing, [current.id]: vote }));
-    if (vote === "good") return;
-    const result = await fetch("/api/study/question-reports", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ attemptId: feedback.attemptId }) });
-    if (!result.ok) { setQuestionVotes((existing) => { const next = { ...existing }; delete next[current.id]; return next; }); setError("Could not send this question to your parent."); }
+  async function reportCurrentQuestion() {
+    if (!current || reportedQuestions[current.id]) return;
+    setBusy(true); setError("");
+    const result = await fetch("/api/study/question-reports", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ bankId, questionId: current.id, attemptId: shownFeedback?.attemptId, note: reportNotes[current.id] ?? "" }),
+    });
+    if (result.ok) {
+      setReportedQuestions((existing) => ({ ...existing, [current.id]: true }));
+      setFeedbackOpen((existing) => ({ ...existing, [current.id]: false }));
+    } else setError("Could not send this question to your parent.");
+    setBusy(false);
   }
 
   function skip() {
@@ -179,7 +188,7 @@ export function StudyExperience() {
     const result = await fetch("/api/study/sessions", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ bankId, totalQuestions: mistakes.length }) });
     const body = await result.json();
     if (!result.ok) { setError(body.error ?? "Could not start mistake review."); setBusy(false); return; }
-    setSessionId(body.sessionId); setQueue(mistakes); setStatuses(Object.fromEntries(mistakes.map((id) => [id, "pending"]))); setFeedback(null); setResponse(""); setResponses({}); setFeedbackByQuestion({}); setQuestionVotes({}); setReviewingId(null); setPhase("session"); setBusy(false);
+    setSessionId(body.sessionId); setQueue(mistakes); setStatuses(Object.fromEntries(mistakes.map((id) => [id, "pending"]))); setFeedback(null); setResponse(""); setResponses({}); setFeedbackByQuestion({}); setFeedbackOpen({}); setReportNotes({}); setReportedQuestions({}); setReviewingId(null); setPhase("session"); setBusy(false);
   }
 
   function openReview(questionId: string) {
@@ -208,8 +217,9 @@ export function StudyExperience() {
     {phase === "session" && current && <section className="quiz-stage">
       <div className="progress-rail" aria-label="Question progress">{questions.map((question, index) => { const status = statuses[question.id] ?? "pending"; const active = question.id === current.id; const label = `Question ${index + 1}: ${status}${active ? ", current" : ""}`; const symbol = status === "correct" ? "✓" : status === "incorrect" ? "×" : status === "skipped" ? "↻" : index + 1; return feedbackByQuestion[question.id] ? <button type="button" key={question.id} className={`progress-step is-${status}${active ? " is-current" : ""}`} aria-label={`${label}; review answer`} onClick={() => openReview(question.id)}>{symbol}</button> : <span key={question.id} className={`progress-step is-${status}${active ? " is-current" : ""}`} aria-label={label}>{symbol}</span>; })}</div>
       <article className="question-card"><div className="question-meta"><span>{current.type.replaceAll("_", " ")}</span><span>{current.marks} {current.marks === 1 ? "mark" : "marks"}</span></div><h1>{current.prompt}</h1>
+        {!reviewingId && <div className="question-feedback"><button type="button" className="question-feedback-link" onClick={() => setFeedbackOpen((existing) => ({ ...existing, [current.id]: !existing[current.id] }))}>{reportedQuestions[current.id] ? "Feedback sent" : "Give feedback"}</button>{feedbackOpen[current.id] && !reportedQuestions[current.id] && <div className="question-feedback-panel"><label>What seems wrong? <span>(optional)</span><textarea rows={2} value={reportNotes[current.id] ?? ""} onChange={(event) => setReportNotes((existing) => ({ ...existing, [current.id]: event.target.value }))} placeholder="For example: the wording is confusing" /></label><div className="button-row"><button type="button" onClick={reportCurrentQuestion} disabled={busy}>{busy ? "Sending…" : "Report question"}</button><button type="button" className="button-quiet" onClick={() => setFeedbackOpen((existing) => ({ ...existing, [current.id]: false }))}>Cancel</button></div></div>}</div>}
         <QuestionInput question={current} value={shownResponse} onChange={setResponse} disabled={Boolean(shownFeedback) || Boolean(reviewingId)} />
-        {!shownFeedback ? <div className="question-actions"><button onClick={checkAnswer} disabled={!hasResponse(current, response) || busy}>{busy ? "Checking…" : "Check answer"}</button><button className="button-quiet" onClick={skip}>Skip for now</button></div> : <div className={`answer-feedback ${shownFeedback.correct ? "is-correct" : "is-wrong"}`} role="status"><h2>{shownFeedback.correct ? "✓ Correct" : "× Needs work"}</h2>{!shownFeedback.correct && <p><strong>Expected:</strong> {shownFeedback.expectedAnswer}</p>}<p>{shownFeedback.explanation}</p>{shownFeedback.sourcePages.length > 0 && <p className="source-cite">Textbook {shownFeedback.sourcePages.map((page) => `Page ${page}`).join(", ")}</p>}{!reviewingId && <div className="confidence-rating"><span>Is this question correct and clear?</span><button className={questionVotes[current.id] === "good" ? "is-selected" : ""} onClick={() => voteOnQuestion("good")} aria-label="Question looks good">👍 <small>Looks good</small></button><button className={questionVotes[current.id] === "reported" ? "is-selected" : ""} onClick={() => voteOnQuestion("reported")} aria-label="Report a problem with this question">👎 <small>Report problem</small></button>{questionVotes[current.id] === "reported" && <em>Sent to your parent for review.</em>}</div>}{reviewingId ? <button onClick={closeReview}>{reviewOrigin === "summary" ? "Back to results" : "Back to current question"}</button> : <button onClick={() => advance(queue.slice(1))}>{queue.length === 1 ? "See results" : "Next question"}</button>}</div>}
+        {!shownFeedback ? <div className="question-actions"><button onClick={checkAnswer} disabled={!hasResponse(current, response) || busy}>{busy ? "Checking…" : "Check answer"}</button><button className="button-quiet" onClick={skip}>Skip for now</button></div> : <div className={`answer-feedback ${shownFeedback.correct ? "is-correct" : "is-wrong"}`} role="status"><h2>{shownFeedback.correct ? "✓ Correct" : "× Needs work"}</h2>{!shownFeedback.correct && <p><strong>Expected:</strong> {shownFeedback.expectedAnswer}</p>}<p>{shownFeedback.explanation}</p>{shownFeedback.sourcePages.length > 0 && <p className="source-cite">Textbook {shownFeedback.sourcePages.map((page) => `Page ${page}`).join(", ")}</p>}{reviewingId ? <button onClick={closeReview}>{reviewOrigin === "summary" ? "Back to results" : "Back to current question"}</button> : <button onClick={() => advance(queue.slice(1))}>{queue.length === 1 ? "See results" : "Next question"}</button>}</div>}
       </article>
     </section>}
 

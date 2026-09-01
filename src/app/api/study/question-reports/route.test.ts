@@ -10,12 +10,12 @@ import { POST } from "./route";
 describe("POST /api/study/question-reports", () => {
   afterEach(() => vi.clearAllMocks());
 
-  it("stores a report against the signed-in child and attempt", async () => {
+  it("stores a report before the child answers", async () => {
     const child = { id: "child", familyId: "family", displayName: "Asha", board: "ICSE", grade: 6 };
     childFromRequest.mockResolvedValue(child);
     reportQuestion.mockResolvedValue("report");
-    const response = await POST(new Request("http://localhost", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ attemptId: "attempt" }) }));
+    const response = await POST(new Request("http://localhost", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ bankId: "bank", questionId: "question", note: "Confusing wording" }) }));
     expect(response.status).toBe(201);
-    expect(reportQuestion).toHaveBeenCalledWith({ child, attemptId: "attempt", note: undefined });
+    expect(reportQuestion).toHaveBeenCalledWith({ child, bankId: "bank", questionId: "question", attemptId: undefined, note: "Confusing wording" });
   });
 });

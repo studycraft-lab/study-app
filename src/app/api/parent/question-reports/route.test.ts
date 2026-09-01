@@ -1,7 +1,7 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
 
 vi.mock("server-only", () => ({}));
-const reports = vi.hoisted(() => ({ dismissQuestionReport: vi.fn(), listQuestionReports: vi.fn(), reviseReportedQuestion: vi.fn() }));
+const reports = vi.hoisted(() => ({ disableReportedQuestion: vi.fn(), dismissQuestionReport: vi.fn(), listQuestionReports: vi.fn() }));
 vi.mock("@/lib/question-bank/reports", () => reports);
 vi.mock("@/lib/family/store", () => ({ getFamilyWorkspace: vi.fn().mockResolvedValue({ family: { id: "family" }, parent: { displayName: "Parent" } }) }));
 
@@ -16,11 +16,11 @@ describe("parent question reports", () => {
     expect(response.status).toBe(401);
   });
 
-  it("creates a corrected bank version for an authorized patch", async () => {
+  it("creates a disabled bank version for an authorized patch", async () => {
     process.env.PARENT_IMPORT_PASSPHRASE = "secret";
-    reports.reviseReportedQuestion.mockResolvedValue({ bankId: "new-bank", bankVersion: 2 });
-    const response = await PATCH(new Request("http://localhost", { method: "PATCH", headers: { "content-type": "application/json", "x-studycraft-parent-passphrase": "secret" }, body: JSON.stringify({ reportId: "report", action: "correct", question: { prompt: "Corrected" } }) }));
+    reports.disableReportedQuestion.mockResolvedValue({ bankId: "new-bank", bankVersion: 2 });
+    const response = await PATCH(new Request("http://localhost", { method: "PATCH", headers: { "content-type": "application/json", "x-studycraft-parent-passphrase": "secret" }, body: JSON.stringify({ reportId: "report", action: "disable" }) }));
     expect(response.status).toBe(200);
-    expect(reports.reviseReportedQuestion).toHaveBeenCalledWith({ reportId: "report", familyId: "family", resolverName: "Parent", action: "correct", patchedQuestion: { prompt: "Corrected" }, note: undefined });
+    expect(reports.disableReportedQuestion).toHaveBeenCalledWith({ reportId: "report", familyId: "family", resolverName: "Parent", note: undefined });
   });
 });

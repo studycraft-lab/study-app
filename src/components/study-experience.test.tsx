@@ -39,13 +39,17 @@ describe("StudyExperience", () => {
     fireEvent.click(await screen.findByRole("button", { name: /early vedic/i }));
     expect(await screen.findByText("Which period?")).toBeInTheDocument();
 
+    fireEvent.click(screen.getByRole("button", { name: /give feedback/i }));
+    fireEvent.change(screen.getByLabelText(/what seems wrong/i), { target: { value: "The wording is confusing" } });
+    fireEvent.click(screen.getByRole("button", { name: /report question/i }));
+    expect(await screen.findByRole("button", { name: /feedback sent/i })).toBeInTheDocument();
+    expect(fetch).toHaveBeenCalledWith("/api/study/question-reports", expect.objectContaining({ body: expect.stringContaining('"questionId":"q1"') }));
+
     fireEvent.click(screen.getByLabelText("Later Vedic"));
     fireEvent.click(screen.getByRole("button", { name: /check answer/i }));
     expect(await screen.findByText(/needs work/i)).toBeInTheDocument();
     expect(screen.getByRole("status")).toHaveTextContent("Expected: Early Vedic");
     expect(screen.getByText(/Page 49/i)).toBeInTheDocument();
-    fireEvent.click(screen.getByRole("button", { name: /report a problem/i }));
-    expect(await screen.findByText(/sent to your parent/i)).toBeInTheDocument();
     const reviewFirst = await screen.findByRole("button", { name: /question 1: incorrect.*review answer/i });
     fireEvent.click(screen.getByRole("button", { name: /next question/i }));
     expect(await screen.findByText("Question 2")).toBeInTheDocument();

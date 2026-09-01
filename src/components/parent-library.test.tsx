@@ -59,13 +59,16 @@ describe("ParentLibrary", () => {
     expect(await screen.findByText(/40 questions · bank v1/i)).toBeInTheDocument();
   });
 
-  it("shows grouped report context and parent correction actions", async () => {
+  it("shows grouped report context and only disable or dismiss actions", async () => {
     const report = {
       id: "report", status: "open", bankVersion: 1, questionId: "q4", questionVersion: 1,
       questionSnapshot: { id: "q4", prompt: "The dress had three pieces.", explanation: "It had two.", answer: { value: false }, response: {}, rubric: {}, sourceRefs: [] },
       chapter: { title: "Early Vedic Civilization", subject: "History", grade: 6, board: "ICSE" },
-      reporters: ["Asha", "Arun"], reportCount: 2, createdAt: "2026-09-01T00:00:00Z", resolution: null,
-      attempts: [{ reportId: "one", reporterName: "Asha", note: null, response: "Two garments", correct: false, earnedMarks: 0, maxMarks: 2, feedback: { expectedAnswer: "False", explanation: "It had two garments.", sourcePages: [48] }, attemptedAt: "2026-09-01T00:00:00Z" }],
+      reporters: ["Asha", "Arun"], reportCount: 2, sourcePages: [48], createdAt: "2026-09-01T00:00:00Z", resolution: null,
+      attempts: [
+        { reportId: "one", reporterName: "Asha", note: "The wording is confusing" },
+        { reportId: "two", reporterName: "Arun", note: null, response: "Two garments", correct: false, earnedMarks: 0, maxMarks: 2, feedback: { expectedAnswer: "False", explanation: "It had two garments.", sourcePages: [48] }, attemptedAt: "2026-09-01T00:00:00Z" },
+      ],
     };
     const fetchMock = vi.spyOn(globalThis, "fetch").mockImplementation(async (input, init) => {
       if (String(input) === "/api/parent/question-reports") {
@@ -79,9 +82,13 @@ describe("ParentLibrary", () => {
     fireEvent.click(screen.getByRole("button", { name: /refresh library/i }));
 
     expect(await screen.findByText(/2 reports grouped/i)).toBeInTheDocument();
+    expect(screen.getByText(/reported before answering/i)).toBeInTheDocument();
+    expect(screen.getByText(/the wording is confusing/i)).toBeInTheDocument();
     expect(screen.getByText("Two garments")).toBeInTheDocument();
     expect(screen.getByText(/Textbook page 48/i)).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: /validate and publish correction/i })).toBeInTheDocument();
+    expect(screen.queryByText(/answer json/i)).not.toBeInTheDocument();
+    expect(screen.queryByRole("button", { name: /publish correction/i })).not.toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /dismiss as valid/i })).toBeInTheDocument();
     fireEvent.click(screen.getByRole("button", { name: /disable question/i }));
     await waitFor(() => expect(fetchMock).toHaveBeenCalledWith("/api/parent/question-reports", expect.objectContaining({ body: expect.stringContaining('"action":"disable"') })));
   });

@@ -3,6 +3,7 @@ import "server-only";
 import { createHash } from "node:crypto";
 
 import type { ChildProfile } from "@/lib/family/store";
+import { getQuestionBankForChild } from "./store";
 import { adminClient } from "@/lib/supabase/admin";
 import { validateQuestionBank } from "./validate";
 
@@ -17,25 +18,37 @@ function records(value: unknown): RecordValue[] {
   return Array.isArray(value) ? value.map(record) : [];
 }
 
-export async function reportQuestion(input: { child: ChildContext; attemptId: string; note?: string }) {
+export async function reportQuestion(input: { child: ChildContext; bankId: string; questionId: string; attemptId?: string; note?: string }) {
   const client = adminClient();
-  const { data: attempt, error: attemptError } = await client.from("study_attempts")
-    .select("id,question_bank_id,bank_version,question_id,question_version")
-    .eq("id", input.attemptId).eq("child_id", input.child.id).single();
-  if (attemptError || !attempt) throw new Error("That answer attempt is unavailable.");
-  const { data: bank, error: bankError } = await client.from("question_banks").select("payload").eq("id", attempt.question_bank_id).single();
-  if (bankError || !bank) throw new Error("The question bank is unavailable.");
-  const snapshot = records(record(bank.payload).questions).find((item) => item.id === attempt.question_id);
+  const payload = await getQuestionBankForChild(input.bankId, {
+    familyId: input.child.familyId,
+    board: input.child.board,
+    grade: input.child.grade,
+  });
+  const snapshot = records(payload.questions).find((item) => item.id === input.questionId);
   if (!snapshot) throw new Error("The reported question is unavailable.");
-  const { data, error } = await client.from("question_reports").upsert({
-    attempt_id: attempt.id,
+  const { data: bank, error: bankError } = await client.from("question_banks").select("version").eq("id", input.bankId).single();
+  if (bankError || !bank) throw new Error("The question bank is unavailable.");
+  if (input.attemptId) {
+    const { data: attempt, error: attemptError } = await client.from("study_attempts")
+      .select("id").eq("id", input.attemptId).eq("child_id", input.child.id)
+      .eq("question_bank_id", input.bankId).eq("question_id", input.questionId).single();
+    if (attemptError || !attempt) throw new Error("That answer attempt is unavailable.");
+  }
+  const questionVersion = Number(snapshot.version ?? 1);
+  const { data: existing } = await client.from("question_reports").select("id")
+    .eq("child_id", input.child.id).eq("question_bank_id", input.bankId)
+    .eq("question_id", input.questionId).eq("question_version", questionVersion)
+    .eq("status", "open").maybeSingle();
+  const values = {
+    attempt_id: input.attemptId ?? null,
     family_id: input.child.familyId,
     child_id: input.child.id,
     reporter_name: input.child.displayName,
-    question_bank_id: attempt.question_bank_id,
-    bank_version: attempt.bank_version,
-    question_id: attempt.question_id,
-    question_version: attempt.question_version,
+    question_bank_id: input.bankId,
+    bank_version: Number(bank.version),
+    question_id: input.questionId,
+    question_version: questionVersion,
     question_snapshot: snapshot,
     note: input.note?.trim() || null,
     status: "open",
@@ -44,7 +57,11 @@ export async function reportQuestion(input: { child: ChildContext; attemptId: st
     resolver_name: null,
     resolution_note: null,
     replacement_snapshot: null,
-  }, { onConflict: "attempt_id" }).select("id").single();
+  };
+  const query = existing
+    ? client.from("question_reports").update(values).eq("id", existing.id)
+    : client.from("question_reports").insert(values);
+  const { data, error } = await query.select("id").single();
   if (error || !data) throw new Error(error?.message ?? "The report could not be saved.");
   return String(data.id);
 }
@@ -56,7 +73,7 @@ export async function listQuestionReports(familyId: string) {
     .eq("family_id", familyId).order("created_at", { ascending: false }).limit(100);
   if (reportError) throw new Error(reportError.message);
   const rows = reportRows ?? [];
-  const attemptIds = rows.map((item) => item.attempt_id);
+  const attemptIds = rows.map((item) => item.attempt_id).filter((id): id is string => typeof id === "string");
   const bankIds = [...new Set(rows.map((item) => item.question_bank_id))];
   const [{ data: attemptRows, error: attemptError }, { data: bankRows, error: bankError }] = await Promise.all([
     attemptIds.length ? client.from("study_attempts").select("id,response,correct,earned_marks,max_marks,feedback,attempted_at").in("id", attemptIds) : Promise.resolve({ data: [], error: null }),
@@ -70,6 +87,9 @@ export async function listQuestionReports(familyId: string) {
     const key = [row.question_bank_id, row.question_id, row.question_version, row.status].join(":");
     const bank = bankById.get(row.question_bank_id) ?? {};
     const metadata = record(bank.bank);
+    const sourceIds = new Set(records(record(row.question_snapshot).sourceRefs).map((ref) => ref.pageId));
+    const sourcePages = records(bank.sources).filter((source) => sourceIds.has(source.id))
+      .map((source) => Number(source.pageNumber)).filter(Number.isFinite);
     const attempt = attemptById.get(row.attempt_id);
     const existing = groups.get(key) ?? {
       id: row.id,
@@ -79,6 +99,7 @@ export async function listQuestionReports(familyId: string) {
       questionId: row.question_id,
       questionVersion: row.question_version,
       questionSnapshot: row.question_snapshot,
+      sourcePages,
       chapter: { title: metadata.title ?? "Chapter", subject: metadata.subject ?? "Subject", grade: metadata.grade, board: metadata.board },
       reporters: [],
       attempts: [],
@@ -117,7 +138,7 @@ export async function dismissQuestionReport(input: { reportId: string; familyId:
   await resolveGroup({ ...input, status: "dismissed" });
 }
 
-export async function reviseReportedQuestion(input: { reportId: string; familyId: string; resolverName: string; action: "disable" | "correct"; patchedQuestion?: unknown; note?: string }) {
+export async function disableReportedQuestion(input: { reportId: string; familyId: string; resolverName: string; note?: string }) {
   const client = adminClient();
   const { data: report, error: reportError } = await client.from("question_reports")
     .select("id,question_bank_id,question_id,question_version").eq("id", input.reportId).eq("family_id", input.familyId).eq("status", "open").single();
@@ -135,9 +156,7 @@ export async function reviseReportedQuestion(input: { reportId: string; familyId
   const index = questions.findIndex((item) => item.id === report.question_id);
   if (index < 0) throw new Error("The reported question is unavailable.");
   const current = questions[index];
-  const replacement = input.action === "disable"
-    ? { ...current, status: "disabled", version: Number(current.version ?? report.question_version) + 1 }
-    : { ...record(input.patchedQuestion), id: report.question_id, status: "active", version: Number(current.version ?? report.question_version) + 1 };
+  const replacement = { ...current, status: "disabled", version: Number(current.version ?? report.question_version) + 1 };
   questions[index] = replacement;
   payload.questions = questions;
   const bankMetadata = record(payload.bank);
@@ -162,7 +181,7 @@ export async function reviseReportedQuestion(input: { reportId: string; familyId
     client.from("question_banks").update({ status: "superseded" }).eq("id", latestBank.id),
     client.from("review_items").delete().eq("question_bank_id", report.question_bank_id).eq("question_id", report.question_id),
     client.from("review_items").delete().eq("question_bank_id", latestBank.id).eq("question_id", report.question_id),
-    resolveGroup({ reportId: report.id, familyId: input.familyId, resolverName: input.resolverName, status: input.action === "disable" ? "disabled" : "corrected", note: input.note, replacementBankId: newBankId, replacementSnapshot: replacement }).then(() => ({ error: null as null | { message: string } })).catch((error: Error) => ({ error: { message: error.message } })),
+    resolveGroup({ reportId: report.id, familyId: input.familyId, resolverName: input.resolverName, status: "disabled", note: input.note, replacementBankId: newBankId, replacementSnapshot: replacement }).then(() => ({ error: null as null | { message: string } })).catch((error: Error) => ({ error: { message: error.message } })),
   ]);
   const updateError = bankUpdate.error ?? reviewDelete.error ?? latestReviewDelete.error ?? reportUpdate.error;
   if (updateError) throw new Error(updateError.message);

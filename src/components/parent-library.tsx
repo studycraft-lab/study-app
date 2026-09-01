@@ -8,13 +8,25 @@ type Preview = {
   chapterNumber: number | null; chapterTitle: string; questionCount: number; sourceCount: number;
 };
 type LibraryItem = Preview & { id: string; bankVersion: number };
-type ReportAttempt = { reportId: string; reporterName: string; note: string | null; response: unknown; correct: boolean; earnedMarks: number; maxMarks: number; feedback: Record<string, unknown>; attemptedAt: string };
+type ReportAttempt = { reportId: string; reporterName: string; note: string | null; response?: unknown; correct?: boolean; earnedMarks?: number; maxMarks?: number; feedback?: Record<string, unknown>; attemptedAt?: string };
 type QuestionReport = {
   id: string; status: "open" | "dismissed" | "disabled" | "corrected"; bankVersion: number; questionId: string; questionVersion: number;
   questionSnapshot: Record<string, unknown>; chapter: { title: string; subject: string; grade?: number; board?: string };
-  reporters: string[]; reportCount: number; attempts: ReportAttempt[]; createdAt: string;
+  reporters: string[]; reportCount: number; attempts: ReportAttempt[]; sourcePages: number[]; createdAt: string;
   resolution: null | { resolvedAt: string; resolverName: string; note: string | null; replacementBankId: string | null; replacementSnapshot: Record<string, unknown> | null };
 };
+
+function answerSummary(question: Record<string, unknown>) {
+  const answer = typeof question.answer === "object" && question.answer !== null ? question.answer as Record<string, unknown> : {};
+  const response = typeof question.response === "object" && question.response !== null ? question.response as Record<string, unknown> : {};
+  const options = Array.isArray(response.options) ? response.options as { id?: unknown; text?: unknown }[] : [];
+  const optionText = (id: unknown) => String(options.find((option) => option.id === id)?.text ?? id ?? "");
+  if (typeof answer.correctOptionId === "string") return optionText(answer.correctOptionId);
+  if (Array.isArray(answer.correctOptionIds)) return answer.correctOptionIds.map(optionText).join(", ");
+  if (Array.isArray(answer.accepted)) return answer.accepted.map(String).join(" / ");
+  if (typeof answer.value === "boolean") return answer.value ? "True" : `False${answer.correction ? ` — ${String(answer.correction)}` : ""}`;
+  return "";
+}
 
 export function ParentLibrary() {
   const [passphrase, setPassphrase] = useState("");
@@ -135,32 +147,20 @@ export function ParentLibrary() {
 
 function QuestionReportEditor({ report, passphrase, onSaved }: { report: QuestionReport; passphrase: string; onSaved: () => Promise<void> }) {
   const original = report.questionSnapshot;
-  const [prompt, setPrompt] = useState(String(original.prompt ?? ""));
-  const [explanation, setExplanation] = useState(String(original.explanation ?? ""));
-  const [answerJson, setAnswerJson] = useState(JSON.stringify(original.answer ?? {}, null, 2));
-  const [responseJson, setResponseJson] = useState(JSON.stringify(original.response ?? {}, null, 2));
-  const [rubricJson, setRubricJson] = useState(JSON.stringify(original.rubric ?? {}, null, 2));
-  const [sourceRefsJson, setSourceRefsJson] = useState(JSON.stringify(original.sourceRefs ?? [], null, 2));
-  const [questionJson, setQuestionJson] = useState(JSON.stringify(original, null, 2));
-  const [advanced, setAdvanced] = useState(false);
+  const expectedAnswer = answerSummary(original);
   const [note, setNote] = useState("");
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
-  const request = async (action: "correct" | "disable" | "dismiss") => {
+  const request = async (action: "disable" | "dismiss") => {
     setBusy(true); setError("");
-    try {
-      const question = action === "correct" ? advanced ? JSON.parse(questionJson) : {
-        ...original, prompt, explanation, answer: JSON.parse(answerJson), response: JSON.parse(responseJson),
-        rubric: JSON.parse(rubricJson), sourceRefs: JSON.parse(sourceRefsJson),
-      } : undefined;
-      const response = await fetch("/api/parent/question-reports", { method: "PATCH", headers: { "content-type": "application/json", "x-studycraft-parent-passphrase": passphrase }, body: JSON.stringify({ reportId: report.id, action, question, note }) });
-      const body = await response.json();
-      if (!response.ok) setError(body.error ?? "Could not update this report."); else await onSaved();
-    } catch { setError("One of the corrected fields contains invalid JSON."); }
+    const response = await fetch("/api/parent/question-reports", { method: "PATCH", headers: { "content-type": "application/json", "x-studycraft-parent-passphrase": passphrase }, body: JSON.stringify({ reportId: report.id, action, note }) });
+    const body = await response.json();
+    if (!response.ok) setError(body.error ?? "Could not update this report."); else await onSaved();
     setBusy(false);
   };
   return <article className="question-report-card"><header><div><span>{report.chapter.board} · Grade {report.chapter.grade} · {report.chapter.subject}</span><h3>{report.chapter.title}</h3></div><small>Bank v{report.bankVersion} · Question v{report.questionVersion}</small></header><div className="report-summary"><span>Flagged by <strong>{report.reporters.join(", ")}</strong></span>{report.reportCount > 1 && <span>{report.reportCount} reports grouped</span>}<time>{new Date(report.createdAt).toLocaleDateString()}</time></div><blockquote>{String(original.prompt ?? report.questionId)}</blockquote>
-    <div className="report-attempts">{report.attempts.map((attempt) => { const feedback = attempt.feedback ?? {}; const pages = Array.isArray(feedback.sourcePages) ? feedback.sourcePages : []; return <article key={attempt.reportId}><header><strong>{attempt.reporterName}</strong><span className={attempt.correct ? "is-correct" : "is-wrong"}>{attempt.correct ? "Marked correct" : "Marked incorrect"} · {attempt.earnedMarks}/{attempt.maxMarks}</span></header><p><b>Child answered:</b> {typeof attempt.response === "string" ? attempt.response : JSON.stringify(attempt.response)}</p><p><b>Expected:</b> {String(feedback.expectedAnswer ?? "Not recorded")}</p><p>{String(feedback.explanation ?? "")}</p>{pages.length > 0 && <small>Textbook {pages.map((page) => `page ${page}`).join(", ")}</small>}{attempt.note && <p><b>Child note:</b> {attempt.note}</p>}</article>; })}</div>
-    <div className="structured-question-editor"><h4>Correct the question</h4><label>Question prompt<textarea rows={3} value={prompt} onChange={(event) => setPrompt(event.target.value)} /></label><label>Explanation<textarea rows={3} value={explanation} onChange={(event) => setExplanation(event.target.value)} /></label><div className="structured-json-grid"><label>Answer JSON<textarea rows={7} value={answerJson} onChange={(event) => setAnswerJson(event.target.value)} /></label><label>Choices / response JSON<textarea rows={7} value={responseJson} onChange={(event) => setResponseJson(event.target.value)} /></label><label>Scoring rubric JSON<textarea rows={7} value={rubricJson} onChange={(event) => setRubricJson(event.target.value)} /></label><label>Source citations JSON<textarea rows={7} value={sourceRefsJson} onChange={(event) => setSourceRefsJson(event.target.value)} /></label></div><label className="active-toggle"><input type="checkbox" checked={advanced} onChange={(event) => setAdvanced(event.target.checked)} /> Advanced: edit the complete question JSON</label>{advanced && <label>Complete question JSON<textarea rows={14} value={questionJson} onChange={(event) => setQuestionJson(event.target.value)} /></label>}<label>Resolution note (optional)<input value={note} onChange={(event) => setNote(event.target.value)} placeholder="What was wrong or why was this dismissed?" /></label></div>
-    {error && <p className="notice notice-error">{error}</p>}<div className="button-row report-actions"><button disabled={busy} onClick={() => request("correct")}>Validate and publish correction</button><button disabled={busy} className="button-secondary" onClick={() => request("disable")}>Disable question</button><button disabled={busy} className="button-quiet" onClick={() => request("dismiss")}>Dismiss as valid</button></div></article>;
+    <div className="report-attempts">{report.attempts.map((attempt) => { const feedback = attempt.feedback ?? {}; return <article key={attempt.reportId}><header><strong>{attempt.reporterName}</strong>{typeof attempt.correct === "boolean" ? <span className={attempt.correct ? "is-correct" : "is-wrong"}>{attempt.correct ? "Marked correct" : "Marked incorrect"} · {attempt.earnedMarks}/{attempt.maxMarks}</span> : <span>Reported before answering</span>}</header>{attempt.response !== undefined && <p><b>Child answered:</b> {typeof attempt.response === "string" ? attempt.response : JSON.stringify(attempt.response)}</p>}{feedback.expectedAnswer !== undefined && <p><b>Expected:</b> {String(feedback.expectedAnswer)}</p>}{feedback.explanation !== undefined && <p>{String(feedback.explanation)}</p>}{attempt.note && <p><b>Child comment:</b> {attempt.note}</p>}</article>; })}</div>
+    {expectedAnswer && <p className="report-explanation"><b>Expected answer:</b> {expectedAnswer}</p>}{String(original.explanation ?? "") && <p className="report-explanation"><b>Question explanation:</b> {String(original.explanation)}</p>}{report.sourcePages.length > 0 && <p className="source-cite">Textbook {report.sourcePages.map((page) => `Page ${page}`).join(", ")}</p>}
+    <label className="resolution-note">Parent note (optional)<input value={note} onChange={(event) => setNote(event.target.value)} placeholder="Why are you disabling or dismissing this?" /></label>
+    {error && <p className="notice notice-error">{error}</p>}<div className="button-row report-actions"><button disabled={busy} onClick={() => request("disable")}>Disable question</button><button disabled={busy} className="button-quiet" onClick={() => request("dismiss")}>Dismiss as valid</button></div></article>;
 }

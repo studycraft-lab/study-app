@@ -1,5 +1,5 @@
 import { getFamilyWorkspace } from "@/lib/family/store";
-import { dismissQuestionReport, listQuestionReports, reviseReportedQuestion } from "@/lib/question-bank/reports";
+import { disableReportedQuestion, dismissQuestionReport, listQuestionReports } from "@/lib/question-bank/reports";
 import { isParentAuthorized, parentAuthConfigured } from "@/lib/parent-auth";
 
 function authorized(request: Request) {
@@ -28,9 +28,9 @@ export async function PATCH(request: Request) {
       await dismissQuestionReport({ reportId: body.reportId, familyId: workspace.family.id, resolverName: workspace.parent.displayName, note: typeof body.note === "string" ? body.note : undefined });
       return Response.json({ dismissed: true });
     }
-    if (body.action === "disable" || body.action === "correct") return Response.json({ revised: await reviseReportedQuestion({
+    if (body.action === "disable") return Response.json({ revised: await disableReportedQuestion({
       reportId: body.reportId, familyId: workspace.family.id, resolverName: workspace.parent.displayName,
-      action: body.action, patchedQuestion: body.question, note: typeof body.note === "string" ? body.note : undefined,
+      note: typeof body.note === "string" ? body.note : undefined,
     }) });
     return Response.json({ error: "Unknown report action." }, { status: 400 });
   } catch (error) {

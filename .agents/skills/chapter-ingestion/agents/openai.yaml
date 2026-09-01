@@ -1,0 +1,4 @@
+interface:
+  display_name: "Chapter Ingestion"
+  short_description: "Turn textbook chapters into grounded banks"
+  default_prompt: "Use $chapter-ingestion to convert the attached textbook chapter into a validated, source-grounded question bank."

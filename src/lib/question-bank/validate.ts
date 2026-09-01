@@ -1,3 +1,8 @@
+import Ajv, { type ErrorObject } from "ajv";
+import addFormats from "ajv-formats";
+
+import questionBankSchema from "../../../schemas/question-bank.schema.json";
+
 export type BankMetadata = {
   board: string;
   grade: number;
@@ -32,83 +37,161 @@ export type BankValidation = {
   value: ValidatedQuestionBank | null;
 };
 
+const ajv = new Ajv({ allErrors: true, strict: false });
+addFormats(ajv);
+const validateSchema = ajv.compile(questionBankSchema);
+
 function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null && !Array.isArray(value);
 }
 
-function requiredString(
-  record: Record<string, unknown>,
-  key: string,
-  path: string,
-  errors: string[],
-): string | null {
-  const value = record[key];
-  if (typeof value !== "string" || value.trim().length === 0) {
-    errors.push(`${path}.${key} must be a non-empty string.`);
-    return null;
-  }
-  return value.trim();
+function records(value: unknown): Array<Record<string, unknown>> {
+  return Array.isArray(value) ? value.filter(isRecord) : [];
 }
 
-function positiveInteger(
-  record: Record<string, unknown>,
-  key: string,
-  path: string,
-  errors: string[],
-): number | null {
-  const value = record[key];
-  if (!Number.isInteger(value) || Number(value) < 1) {
-    errors.push(`${path}.${key} must be a positive integer.`);
-    return null;
+function strings(value: unknown): string[] {
+  return Array.isArray(value) ? value.filter((item): item is string => typeof item === "string") : [];
+}
+
+function schemaError(error: ErrorObject): string {
+  const path = error.instancePath || "root";
+  if (error.keyword === "additionalProperties") {
+    return `${path} contains unsupported field ${String(error.params.additionalProperty)}.`;
   }
-  return Number(value);
+  return `${path} ${error.message ?? "does not match the question-bank schema"}.`;
+}
+
+function pointTotal(points: unknown): number | null {
+  const values = records(points).map((point) => point.weight);
+  if (values.length === 0 || values.some((weight) => typeof weight !== "number")) return null;
+  return values.reduce<number>((sum, weight) => sum + Number(weight), 0);
+}
+
+function attainableMarks(question: Record<string, unknown>): number | null {
+  const type = question.type;
+  const answer = isRecord(question.answer) ? question.answer : {};
+  const rubric = isRecord(question.rubric) ? question.rubric : {};
+
+  if (type === "matching") {
+    const pairCount = records(answer.pairs).length;
+    return typeof rubric.pointsPerPair === "number" ? pairCount * rubric.pointsPerPair : null;
+  }
+  if (type === "source_group") {
+    const totals = records(rubric.subrubrics).map((subrubric) => pointTotal(subrubric.points));
+    return totals.length > 0 && totals.every((total): total is number => total !== null)
+      ? totals.reduce((sum, total) => sum + total, 0)
+      : null;
+  }
+  if (["true_false_correct", "brief_answer", "multi_point", "compare", "map_work"].includes(String(type))) {
+    const total = pointTotal(rubric.points);
+    if (total === null) return null;
+    return typeof rubric.maximumPoints === "number" ? Math.min(total, rubric.maximumPoints) : total;
+  }
+  return typeof question.marks === "number" ? question.marks : null;
+}
+
+function duplicateIds(items: Array<Record<string, unknown>>, path: string, errors: string[]): Set<string> {
+  const seen = new Set<string>();
+  items.forEach((item, index) => {
+    const id = String(item.id ?? "");
+    if (seen.has(id)) errors.push(`Duplicate ${path} id ${id} at ${path}[${index}].`);
+    seen.add(id);
+  });
+  return seen;
+}
+
+function optionIds(question: Record<string, unknown>): Set<string> {
+  const response = isRecord(question.response) ? question.response : {};
+  return new Set(records(response.options).map((option) => String(option.id)));
+}
+
+function normalizedPrompt(prompt: unknown): string {
+  return String(prompt ?? "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
 }
 
 export function validateQuestionBank(input: unknown): BankValidation {
   const errors: string[] = [];
   const warnings: string[] = [];
 
-  if (!isRecord(input)) {
-    return { valid: false, errors: ["The uploaded file must contain a JSON object."], warnings, preview: null, value: null };
-  }
-
-  const schemaVersion = requiredString(input, "schemaVersion", "root", errors);
-  if (schemaVersion && schemaVersion !== "0.1.0") {
-    errors.push(`Unsupported schemaVersion ${schemaVersion}. Expected 0.1.0.`);
-  }
+  if (!validateSchema(input)) errors.push(...(validateSchema.errors ?? []).map(schemaError));
+  if (!isRecord(input)) return { valid: false, errors, warnings, preview: null, value: null };
 
   const bank = isRecord(input.bank) ? input.bank : null;
-  if (!bank) errors.push("root.bank must be an object.");
-  const sources = Array.isArray(input.sources) ? input.sources.filter(isRecord) : [];
-  const topics = Array.isArray(input.topics) ? input.topics.filter(isRecord) : [];
-  const questions = Array.isArray(input.questions) ? input.questions.filter(isRecord) : [];
-  if (!Array.isArray(input.sources)) errors.push("root.sources must be an array.");
-  if (!Array.isArray(input.topics)) errors.push("root.topics must be an array.");
-  if (!Array.isArray(input.questions)) errors.push("root.questions must be an array.");
-  if (questions.length === 0) errors.push("The bank must contain at least one question.");
+  const sources = records(input.sources);
+  const topics = records(input.topics);
+  const questions = records(input.questions);
+  const sourceIds = duplicateIds(sources, "source", errors);
+  const topicIds = duplicateIds(topics, "topic", errors);
+  duplicateIds(questions, "question", errors);
+
+  const sourceRegions = new Map<string, Set<string>>();
+  sources.forEach((source) => {
+    sourceRegions.set(String(source.id), new Set(records(source.regions).map((region) => String(region.id))));
+    if (typeof source.extractionConfidence === "number" && source.extractionConfidence < 0.85) {
+      warnings.push(`Source ${String(source.id)} has low extraction confidence.`);
+    }
+    if (source.reviewRequired === true) warnings.push(`Source ${String(source.id)} requires review.`);
+  });
+
+  const prompts = new Map<string, string>();
+  questions.forEach((question, index) => {
+    const path = `questions[${index}]`;
+    const id = String(question.id ?? path);
+    strings(question.topicIds).forEach((topicId) => {
+      if (!topicIds.has(topicId)) errors.push(`${path} cites missing topic ${topicId}.`);
+    });
+
+    const refs = records(question.sourceRefs);
+    refs.forEach((ref) => {
+      const pageId = String(ref.pageId ?? "");
+      if (!sourceIds.has(pageId)) errors.push(`${path} cites missing source page ${pageId || "(blank)"}.`);
+      if (typeof ref.regionId === "string" && !sourceRegions.get(pageId)?.has(ref.regionId)) {
+        errors.push(`${path} cites missing region ${ref.regionId} on ${pageId}.`);
+      }
+    });
+    const supported = new Set(refs.flatMap((ref) => strings(ref.supports)));
+    for (const claim of ["prompt", "answer", "rubric"]) {
+      if (!supported.has(claim)) errors.push(`${path} has no source reference supporting its ${claim}.`);
+    }
+
+    const attainable = attainableMarks(question);
+    if (typeof question.marks === "number" && attainable !== null && Math.abs(question.marks - attainable) > 0.0001) {
+      errors.push(`${path}.marks is ${question.marks}, but its rubric can award ${attainable}.`);
+    }
+
+    const options = optionIds(question);
+    const answer = isRecord(question.answer) ? question.answer : {};
+    if (question.type === "single_choice" && !options.has(String(answer.correctOptionId))) {
+      errors.push(`${path} has a correctOptionId that is not in response.options.`);
+    }
+    if (question.type === "multiple_select") {
+      strings(answer.correctOptionIds).forEach((optionId) => {
+        if (!options.has(optionId)) errors.push(`${path} has correct option ${optionId} missing from response.options.`);
+      });
+    }
+
+    const promptKey = normalizedPrompt(question.prompt);
+    const duplicate = prompts.get(promptKey);
+    if (duplicate) warnings.push(`${id} appears semantically duplicative of ${duplicate}.`);
+    else if (promptKey) prompts.set(promptKey, id);
+  });
 
   let preview: BankPreview | null = null;
-  if (bank && schemaVersion) {
-    const bankId = requiredString(bank, "id", "bank", errors);
-    const bankVersion = positiveInteger(bank, "version", "bank", errors);
-    const chapterTitle = requiredString(bank, "title", "bank", errors);
-    const subject = requiredString(bank, "subject", "bank", errors);
-    const grade = positiveInteger(bank, "grade", "bank", errors);
-    const board = typeof bank.board === "string" && bank.board.trim() ? bank.board.trim() : "ICSE";
-    const bookTitle = typeof bank.bookTitle === "string" && bank.bookTitle.trim() ? bank.bookTitle.trim() : null;
-    const chapterNumber = Number.isInteger(bank.chapterNumber) && Number(bank.chapterNumber) > 0 ? Number(bank.chapterNumber) : null;
-
-    if (bankId && bankVersion && chapterTitle && subject && grade) {
+  if (bank && typeof input.schemaVersion === "string") {
+    const grade = Number(bank.grade);
+    const chapterNumber = Number(bank.chapterNumber);
+    if (typeof bank.id === "string" && Number.isInteger(bank.version) && typeof bank.title === "string" &&
+        typeof bank.subject === "string" && Number.isInteger(grade)) {
       preview = {
-        bankId,
-        bankVersion,
-        schemaVersion,
-        board,
+        bankId: bank.id,
+        bankVersion: Number(bank.version),
+        schemaVersion: input.schemaVersion,
+        board: typeof bank.board === "string" ? bank.board : "ICSE",
         grade,
-        subject,
-        bookTitle,
-        chapterNumber,
-        chapterTitle,
+        subject: bank.subject,
+        bookTitle: typeof bank.bookTitle === "string" ? bank.bookTitle : null,
+        chapterNumber: Number.isInteger(chapterNumber) ? chapterNumber : null,
+        chapterTitle: bank.title,
         questionCount: questions.length,
         sourceCount: sources.length,
         topicCount: topics.length,
@@ -116,74 +199,12 @@ export function validateQuestionBank(input: unknown): BankValidation {
     }
   }
 
-  const sourceIds = new Set<string>();
-  const sourceRegions = new Map<string, Set<string>>();
-  sources.forEach((source, index) => {
-    const id = requiredString(source, "id", `sources[${index}]`, errors);
-    if (id) {
-      if (sourceIds.has(id)) errors.push(`Duplicate source id ${id}.`);
-      sourceIds.add(id);
-      const regions = new Set<string>();
-      if (Array.isArray(source.regions)) {
-        source.regions.filter(isRecord).forEach((region) => {
-          if (typeof region.id === "string") regions.add(region.id);
-        });
-      }
-      sourceRegions.set(id, regions);
-    }
-    if (!Number.isInteger(source.pageNumber)) errors.push(`sources[${index}].pageNumber must be an integer.`);
-    if (typeof source.extractionConfidence === "number" && source.extractionConfidence < 0.85) {
-      warnings.push(`Source ${id ?? index} has low extraction confidence.`);
-    }
-    if (source.reviewRequired === true) warnings.push(`Source ${id ?? index} requires review.`);
-  });
-
-  const topicIds = new Set<string>();
-  topics.forEach((topic, index) => {
-    const id = requiredString(topic, "id", `topics[${index}]`, errors);
-    requiredString(topic, "title", `topics[${index}]`, errors);
-    if (id) topicIds.add(id);
-  });
-
-  const questionIds = new Set<string>();
-  questions.forEach((question, index) => {
-    const path = `questions[${index}]`;
-    const id = requiredString(question, "id", path, errors);
-    requiredString(question, "type", path, errors);
-    requiredString(question, "prompt", path, errors);
-    positiveInteger(question, "version", path, errors);
-    if (id) {
-      if (questionIds.has(id)) errors.push(`Duplicate question id ${id}.`);
-      questionIds.add(id);
-    }
-    if (typeof question.marks !== "number" || question.marks <= 0) errors.push(`${path}.marks must be greater than zero.`);
-    if (!isRecord(question.answer)) errors.push(`${path}.answer must be an object.`);
-    if (!isRecord(question.rubric)) errors.push(`${path}.rubric must be an object.`);
-
-    const refs = Array.isArray(question.sourceRefs) ? question.sourceRefs.filter(isRecord) : [];
-    if (refs.length === 0) errors.push(`${path} must cite at least one source page.`);
-    refs.forEach((ref) => {
-      const pageId = typeof ref.pageId === "string" ? ref.pageId : "";
-      if (!sourceIds.has(pageId)) errors.push(`${path} cites missing source page ${pageId || "(blank)"}.`);
-      if (typeof ref.regionId === "string" && !sourceRegions.get(pageId)?.has(ref.regionId)) {
-        errors.push(`${path} cites missing region ${ref.regionId} on ${pageId}.`);
-      }
-    });
-
-    const referencedTopics = Array.isArray(question.topicIds) ? question.topicIds : [];
-    referencedTopics.forEach((topicId) => {
-      if (typeof topicId !== "string" || !topicIds.has(topicId)) errors.push(`${path} cites missing topic ${String(topicId)}.`);
-    });
-  });
-
-  const valid = errors.length === 0 && preview !== null;
+  const valid = errors.length === 0 && preview !== null && bank !== null;
   return {
     valid,
     errors,
     warnings,
     preview,
-    value: valid
-      ? { schemaVersion: schemaVersion!, bank: bank!, sources, topics, questions }
-      : null,
+    value: valid ? { schemaVersion: String(input.schemaVersion), bank, sources, topics, questions } : null,
   };
 }

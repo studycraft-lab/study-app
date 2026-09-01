@@ -9,13 +9,15 @@ import { POST } from "./route";
 
 const bank = {
   schemaVersion: "0.1.0",
-  bank: { id: "vedic-v1", version: 1, title: "Early Vedic", subject: "History", grade: 6 },
-  sources: [{ id: "p45", pageNumber: 45, regions: [] }],
+  bank: { id: "vedic-v1", version: 1, title: "Early Vedic", board: "ICSE", subject: "History", grade: 6, bookTitle: "History and Civics", chapterNumber: 5, status: "reviewed" },
+  sources: [{ id: "p45", pageNumber: 45, assetRef: "manifest://test/p45", extractionConfidence: 1, reviewRequired: false, regions: [] }],
   topics: [{ id: "settlement", title: "Settlement" }],
   questions: [{
-    id: "q1", version: 1, type: "fill_blank", prompt: "Seven rivers: ___",
-    marks: 1, topicIds: ["settlement"], sourceRefs: [{ pageId: "p45" }],
-    answer: { accepted: ["Sapta Sindhu"] }, rubric: { exact: true },
+    id: "q-001", version: 1, type: "fill_blank", status: "active", prompt: "Seven rivers: ___",
+    difficulty: 1, marks: 1, topicIds: ["settlement"], sourceRefs: [{ pageId: "p45", supports: ["prompt", "answer", "rubric"] }],
+    response: { blankCount: 1 }, answer: { accepted: ["Sapta Sindhu"] }, rubric: { exact: true },
+    hint: "Think of the seven rivers.", explanation: "The region was Sapta Sindhu.",
+    generation: { method: "codex-assisted", generatedAt: "2026-09-01T00:00:00+05:30", validationStatus: "verified" },
   }],
 };
 

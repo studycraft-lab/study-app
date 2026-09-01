@@ -1,0 +1,82 @@
+{
+  "manifestVersion": "0.1.0",
+  "chapter": {
+    "id": "early-vedic-civilization",
+    "board": "ICSE",
+    "grade": 6,
+    "subject": "History",
+    "bookTitle": "History and Civics",
+    "chapterNumber": 5,
+    "title": "The Early Vedic Civilization"
+  },
+  "sourcePolicy": {
+    "originals": "local-only",
+    "repositoryCopies": false,
+    "applicationStorage": "not-uploaded",
+    "runtimeStrategy": "required-regions",
+    "notes": "Keep the five copyrighted source screenshots outside Git. Before enabling visual questions, upload only the required map, diagram, timeline, illustration and passage regions to private application storage."
+  },
+  "assets": [
+    {
+      "id": "source-01",
+      "fileName": "Screenshot 2026-09-01 at 12.44.53 AM.png",
+      "sha256": "2e040b5a554971f7f5e4ec76b14d3d9fe1a7ef979f794c3d5f594a62de6cb97f",
+      "width": 1180,
+      "height": 1574,
+      "pages": [
+        { "id": "page-45", "pageNumber": 45, "bounds": { "x": 0, "y": 0, "width": 1, "height": 1 } }
+      ]
+    },
+    {
+      "id": "source-02",
+      "fileName": "Screenshot 2026-09-01 at 12.45.01 AM.png",
+      "sha256": "004fb14d004358fab6d50de314951a1a11b10c103c42887816a9024604abd272",
+      "width": 2326,
+      "height": 1552,
+      "pages": [
+        { "id": "page-46", "pageNumber": 46, "bounds": { "x": 0, "y": 0, "width": 0.5, "height": 1 } },
+        { "id": "page-47", "pageNumber": 47, "bounds": { "x": 0.5, "y": 0, "width": 0.5, "height": 1 } }
+      ]
+    },
+    {
+      "id": "source-03",
+      "fileName": "Screenshot 2026-09-01 at 12.45.27 AM.png",
+      "sha256": "11dcf47ad95a2e52dd35cbdc72e5ccf584bb69fa391e7d25332c18b6baea1477",
+      "width": 2338,
+      "height": 1568,
+      "pages": [
+        { "id": "page-48", "pageNumber": 48, "bounds": { "x": 0, "y": 0, "width": 0.5, "height": 1 } },
+        { "id": "page-49", "pageNumber": 49, "bounds": { "x": 0.5, "y": 0, "width": 0.5, "height": 1 } }
+      ]
+    },
+    {
+      "id": "source-04",
+      "fileName": "Screenshot 2026-09-01 at 12.45.40 AM.png",
+      "sha256": "f60cf140892edbb807c8b403ae7d3c5fe350c0d51c52e09c44b46d1f11455450",
+      "width": 2336,
+      "height": 1574,
+      "pages": [
+        { "id": "page-50", "pageNumber": 50, "bounds": { "x": 0, "y": 0, "width": 0.5, "height": 1 } },
+        { "id": "page-51", "pageNumber": 51, "bounds": { "x": 0.5, "y": 0, "width": 0.5, "height": 1 } }
+      ]
+    },
+    {
+      "id": "source-05",
+      "fileName": "Screenshot 2026-09-01 at 12.45.51 AM.png",
+      "sha256": "f5035a8abb3591ce2e800a315990d084623b5b12df65bd54a416ca70d99566ed",
+      "width": 2346,
+      "height": 1584,
+      "pages": [
+        { "id": "page-52", "pageNumber": 52, "bounds": { "x": 0, "y": 0, "width": 0.5, "height": 1 } },
+        { "id": "page-53", "pageNumber": 53, "bounds": { "x": 0.5, "y": 0, "width": 0.5, "height": 1 } }
+      ]
+    }
+  ],
+  "learningOutcomes": [
+    "Define the term ‘Vedic’ and list the various literature related to it.",
+    "Summarize the life of the Early Vedic people.",
+    "Identify and value the liberal outlook of the early nomadic Aryans in the Early Vedic period with reference to the position of women in society.",
+    "Explain the classification of society in the Early Vedic period.",
+    "Analyse and appreciate the rich cultural heritage of India in terms of values, beliefs and traditions."
+  ]
+}

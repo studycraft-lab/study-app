@@ -1,248 +1,2916 @@
 {
-  "schemaVersion": "0.1.0",
   "bank": {
-    "id": "early-vedic-civilization-v1",
-    "version": 1,
-    "title": "The Early Vedic Civilization",
     "board": "ICSE",
-    "subject": "History",
-    "grade": 6,
     "bookTitle": "History and Civics",
     "chapterNumber": 5,
-    "status": "draft"
+    "grade": 6,
+    "id": "early-vedic-civilization-v1",
+    "status": "reviewed",
+    "subject": "History",
+    "title": "The Early Vedic Civilization",
+    "version": 1
   },
-  "sources": [
-    { "id": "page-45", "pageNumber": 45, "assetRef": "pending://early-vedic/page-45.png", "extractionConfidence": 0.99, "reviewRequired": false, "regions": [{ "id": "settlement-map", "kind": "map" }] },
-    { "id": "page-46", "pageNumber": 46, "assetRef": "pending://early-vedic/page-46.png", "extractionConfidence": 0.99, "reviewRequired": false, "regions": [] },
-    { "id": "page-47", "pageNumber": 47, "assetRef": "pending://early-vedic/page-47.png", "extractionConfidence": 0.99, "reviewRequired": false, "regions": [{ "id": "political-structure", "kind": "diagram" }, { "id": "swayamvara-picture", "kind": "illustration" }] },
-    { "id": "page-48", "pageNumber": 48, "assetRef": "pending://early-vedic/page-48.png", "extractionConfidence": 0.99, "reviewRequired": false, "regions": [] },
-    { "id": "page-49", "pageNumber": 49, "assetRef": "pending://early-vedic/page-49.png", "extractionConfidence": 0.99, "reviewRequired": false, "regions": [{ "id": "vedic-timeline", "kind": "timeline" }] },
-    { "id": "page-50", "pageNumber": 50, "assetRef": "pending://early-vedic/page-50.png", "extractionConfidence": 0.99, "reviewRequired": false, "regions": [] },
-    { "id": "page-51", "pageNumber": 51, "assetRef": "pending://early-vedic/page-51.png", "extractionConfidence": 0.99, "reviewRequired": false, "regions": [] },
-    { "id": "page-52", "pageNumber": 52, "assetRef": "pending://early-vedic/page-52.png", "extractionConfidence": 0.99, "reviewRequired": false, "regions": [{ "id": "swayamvara-source", "kind": "illustration" }, { "id": "agni-hymn", "kind": "passage" }] },
-    { "id": "page-53", "pageNumber": 53, "assetRef": "pending://early-vedic/page-53.png", "extractionConfidence": 0.99, "reviewRequired": false, "regions": [] }
-  ],
-  "topics": [
-    { "id": "settlement", "title": "Aryan settlement" },
-    { "id": "vedic-literature", "title": "Vedic literature" },
-    { "id": "political-organization", "title": "Political organization" },
-    { "id": "position-of-women", "title": "Position of women" },
-    { "id": "social-life", "title": "Social life" },
-    { "id": "religion", "title": "Religion" }
-  ],
   "questions": [
     {
-      "id": "q-001",
-      "version": 1,
-      "type": "fill_blank",
-      "status": "active",
-      "topicIds": ["settlement"],
+      "answer": {
+        "accepted": [
+          "Sapta Sindhu"
+        ],
+        "caseSensitive": false
+      },
       "difficulty": 1,
+      "explanation": "The Indo-Aryans first settled in the Sapta Sindhu region.",
+      "generation": {
+        "generatedAt": "2026-09-01T01:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Its Sanskrit name means ‘the region of seven rivers’.",
+      "id": "q-001",
       "marks": 1,
       "prompt": "The region of seven rivers where the Aryans first settled was called ____.",
-      "sourceRefs": [{ "pageId": "page-45", "supports": ["prompt", "answer"] }],
-      "response": { "blankCount": 1 },
-      "answer": { "accepted": ["Sapta Sindhu"], "caseSensitive": false },
-      "rubric": { "exact": true, "spellingAffectsScore": true },
-      "hint": "Its Sanskrit name means ‘the region of seven rivers’.",
-      "explanation": "The Indo-Aryans first settled in the Sapta Sindhu region.",
-      "generation": { "method": "codex-assisted", "generatedAt": "2026-09-01T01:30:00+05:30", "validationStatus": "verified" }
-    },
-    {
-      "id": "q-002",
-      "version": 1,
-      "type": "multiple_select",
-      "status": "active",
-      "topicIds": ["vedic-literature"],
-      "difficulty": 1,
-      "marks": 2,
-      "prompt": "Select all four Vedas.",
-      "sourceRefs": [{ "pageId": "page-46", "supports": ["prompt", "answer"] }],
-      "response": { "options": [{ "id": "rig", "text": "Rig Veda" }, { "id": "sama", "text": "Sama Veda" }, { "id": "yajur", "text": "Yajur Veda" }, { "id": "atharva", "text": "Atharva Veda" }, { "id": "purana", "text": "The Puranas" }, { "id": "ramayana", "text": "The Ramayana" }] },
-      "answer": { "correctOptionIds": ["rig", "sama", "yajur", "atharva"] },
-      "rubric": { "partialCredit": "proportional-minus-errors", "minimumScore": 0 },
-      "hint": "The four names are grouped together in the Vedic Literature diagram.",
-      "explanation": "The four Vedas are the Rig, Sama, Yajur and Atharva Vedas.",
-      "generation": { "method": "codex-assisted", "generatedAt": "2026-09-01T01:30:00+05:30", "validationStatus": "verified" }
-    },
-    {
-      "id": "q-003",
-      "version": 1,
-      "type": "matching",
-      "status": "active",
-      "topicIds": ["political-organization"],
-      "difficulty": 1,
-      "marks": 3,
-      "prompt": "Match each Early Vedic unit or leader with its description.",
-      "sourceRefs": [{ "pageId": "page-47", "regionId": "political-structure", "supports": ["prompt", "answer"] }],
       "response": {
-        "left": [{ "id": "jana", "text": "Jana" }, { "id": "gramani", "text": "Gramani" }, { "id": "grihapati", "text": "Grihapati" }],
-        "right": [{ "id": "tribe", "text": "Tribe" }, { "id": "village-head", "text": "Headman of a village" }, { "id": "family-head", "text": "Head of a family" }]
+        "blankCount": 1
       },
-      "answer": { "pairs": [{ "leftId": "jana", "rightId": "tribe" }, { "leftId": "gramani", "rightId": "village-head" }, { "leftId": "grihapati", "rightId": "family-head" }] },
-      "rubric": { "pointsPerPair": 1 },
-      "hint": "Move from the largest political unit to the family.",
-      "explanation": "A jana was a tribe, a gramani headed a village, and a grihapati headed a family.",
-      "generation": { "method": "codex-assisted", "generatedAt": "2026-09-01T01:30:00+05:30", "validationStatus": "verified" }
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-45",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "settlement"
+      ],
+      "type": "fill_blank",
+      "version": 1
     },
     {
-      "id": "q-004",
-      "version": 1,
-      "type": "true_false_correct",
-      "status": "active",
-      "topicIds": ["social-life"],
-      "difficulty": 1,
-      "marks": 2,
-      "prompt": "The dress of the Aryans consisted of a three-piece garment. State true or false and correct the statement if needed.",
-      "sourceRefs": [{ "pageId": "page-48", "supports": ["prompt", "answer", "rubric"] }],
-      "response": { "requiresCorrectionWhenFalse": true },
-      "answer": { "value": false, "correction": "The dress of the Aryans consisted of two garments: a lower unstitched garment and an upper light shawl." },
-      "rubric": { "points": [{ "concept": "identifies the statement as false", "weight": 0.5 }, { "concept": "states that there were two garments", "weight": 0.5 }, { "concept": "describes the lower and upper garments", "weight": 1 }] },
-      "hint": "Look separately at the lower and upper garments.",
-      "explanation": "Their dress had two garments, not three.",
-      "generation": { "method": "codex-assisted", "generatedAt": "2026-09-01T01:30:00+05:30", "validationStatus": "verified" }
-    },
-    {
-      "id": "q-005",
-      "version": 1,
-      "type": "brief_answer",
-      "status": "active",
-      "topicIds": ["political-organization"],
-      "difficulty": 2,
-      "marks": 2,
-      "prompt": "What role did the sabha play in the political affairs of an Early Vedic tribe?",
-      "sourceRefs": [{ "pageId": "page-47", "supports": ["prompt", "answer", "rubric"] }],
-      "response": { "recommendedSentences": 1 },
-      "answer": { "ideal": "The sabha was a smaller assembly of important members that advised and guided the rajan." },
-      "rubric": { "points": [{ "id": "p1", "concept": "smaller assembly of important members", "weight": 1, "required": true }, { "id": "p2", "concept": "advised and guided the rajan", "weight": 1, "required": true }], "spellingAffectsScore": true, "grammarAffectsScore": false, "uncertainBelowConfidence": 0.7 },
-      "hint": "Mention both who belonged to it and what it did.",
-      "explanation": "The sabha was smaller than the samiti and served as an advisory body to the king.",
-      "generation": { "method": "codex-assisted", "generatedAt": "2026-09-01T01:30:00+05:30", "validationStatus": "verified" }
-    },
-    {
-      "id": "q-006",
-      "version": 1,
-      "type": "multi_point",
-      "status": "active",
-      "topicIds": ["political-organization"],
-      "difficulty": 3,
-      "marks": 2,
-      "prompt": "What features of the Early Vedic political system show that the rajan was not an absolute ruler?",
-      "sourceRefs": [{ "pageId": "page-47", "supports": ["prompt", "answer", "rubric"] }],
-      "response": { "recommendedSentences": 3 },
-      "answer": { "ideal": "The rajan ruled according to the wishes of the tribe. The sabha and samiti exercised control over him: members expressed opinions through the samiti, while the sabha advised and guided him." },
-      "rubric": { "points": [{ "id": "p1", "concept": "rajan ruled according to the wishes or consent of the tribe", "weight": 0.5, "required": true }, { "id": "p2", "concept": "sabha and samiti exercised control over the rajan", "weight": 0.5, "required": true }, { "id": "p3", "concept": "samiti allowed tribal members to give opinions", "weight": 0.5, "required": true }, { "id": "p4", "concept": "sabha advised and guided the rajan", "weight": 0.5, "required": true }], "spellingAffectsScore": true, "grammarAffectsScore": false, "uncertainBelowConfidence": 0.7 },
-      "hint": "Think about the two councils and the wishes of the tribe.",
-      "explanation": "Power was constrained by tribal consent and by the sabha and samiti.",
-      "generation": { "method": "codex-assisted", "generatedAt": "2026-09-01T01:30:00+05:30", "validationStatus": "verified" }
-    },
-    {
-      "id": "q-007",
-      "version": 1,
-      "type": "multi_point",
-      "status": "active",
-      "topicIds": ["position-of-women"],
-      "difficulty": 3,
-      "marks": 4,
-      "prompt": "Give four points showing that women held an important position in Early Vedic society.",
-      "sourceRefs": [{ "pageId": "page-47", "supports": ["prompt", "answer", "rubric"] }],
-      "response": { "recommendedPoints": 4 },
-      "answer": { "ideal": "Women received education and some composed Rig Vedic hymns. A wife had to be present at religious ceremonies. Women could choose husbands through swayamvara, there was no child marriage, widows could remarry, and women participated in assemblies." },
-      "rubric": { "points": [{ "id": "p1", "concept": "women received education or composed Rig Vedic hymns", "weight": 1, "required": false }, { "id": "p2", "concept": "wife's presence was required at religious ceremonies", "weight": 1, "required": false }, { "id": "p3", "concept": "women could choose husbands through swayamvara", "weight": 1, "required": false }, { "id": "p4", "concept": "there was no child marriage", "weight": 1, "required": false }, { "id": "p5", "concept": "widows could remarry", "weight": 1, "required": false }, { "id": "p6", "concept": "women took part in the sabha and samiti", "weight": 1, "required": false }], "maximumPoints": 4, "spellingAffectsScore": true, "grammarAffectsScore": false, "uncertainBelowConfidence": 0.7 },
-      "hint": "Consider education, religion, marriage and politics.",
-      "explanation": "Several educational, religious, marital and political rights indicate women's relatively important position.",
-      "generation": { "method": "codex-assisted", "generatedAt": "2026-09-01T01:30:00+05:30", "validationStatus": "verified" }
-    },
-    {
-      "id": "q-008",
-      "version": 1,
-      "type": "source_group",
-      "status": "active",
-      "topicIds": ["position-of-women"],
-      "difficulty": 2,
-      "marks": 4,
-      "prompt": "Study the picture and answer the questions.",
-      "sourceRefs": [{ "pageId": "page-52", "regionId": "swayamvara-source", "supports": ["prompt", "answer", "rubric"] }, { "pageId": "page-47", "supports": ["answer", "rubric"] }],
-      "response": {
-        "subquestions": [
-          { "id": "a", "prompt": "Name the ceremony.", "marks": 1 },
-          { "id": "b", "prompt": "What choice did this ceremony give a woman?", "marks": 1 },
-          { "id": "c", "prompt": "Give two other facts from the chapter that show the position of women in this period.", "marks": 2 }
+      "answer": {
+        "correctOptionIds": [
+          "rig",
+          "sama",
+          "yajur",
+          "atharva"
         ]
       },
-      "answer": { "subanswers": [{ "id": "a", "ideal": "Swayamvara." }, { "id": "b", "ideal": "It allowed a woman to choose her husband." }, { "id": "c", "ideal": "Any two supported facts, such as education, composing hymns, participation in ceremonies or assemblies, no child marriage, or widow remarriage." }] },
-      "rubric": { "subrubrics": [{ "id": "a", "points": [{ "concept": "swayamvara", "weight": 1 }] }, { "id": "b", "points": [{ "concept": "woman could choose her husband", "weight": 1 }] }, { "id": "c", "points": [{ "concept": "first valid supported fact", "weight": 1 }, { "concept": "second distinct valid supported fact", "weight": 1 }] }] },
-      "hint": "Use both the picture and the Position of Women section.",
-      "explanation": "The picture represents a swayamvara and must be interpreted using the chapter text.",
-      "generation": { "method": "codex-assisted", "generatedAt": "2026-09-01T01:30:00+05:30", "validationStatus": "verified" }
+      "difficulty": 1,
+      "explanation": "The four Vedas are the Rig, Sama, Yajur and Atharva Vedas.",
+      "generation": {
+        "generatedAt": "2026-09-01T01:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "The four names are grouped together in the Vedic Literature diagram.",
+      "id": "q-002",
+      "marks": 2,
+      "prompt": "Select all four Vedas.",
+      "response": {
+        "options": [
+          {
+            "id": "rig",
+            "text": "Rig Veda"
+          },
+          {
+            "id": "sama",
+            "text": "Sama Veda"
+          },
+          {
+            "id": "yajur",
+            "text": "Yajur Veda"
+          },
+          {
+            "id": "atharva",
+            "text": "Atharva Veda"
+          },
+          {
+            "id": "purana",
+            "text": "The Puranas"
+          },
+          {
+            "id": "ramayana",
+            "text": "The Ramayana"
+          }
+        ]
+      },
+      "rubric": {
+        "minimumScore": 0,
+        "partialCredit": "proportional-minus-errors"
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-46",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "vedic-literature"
+      ],
+      "type": "multiple_select",
+      "version": 1
     },
     {
-      "id": "q-009",
-      "version": 1,
-      "type": "single_choice",
-      "status": "active",
-      "topicIds": ["settlement"],
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "jana",
+            "rightId": "tribe"
+          },
+          {
+            "leftId": "gramani",
+            "rightId": "village-head"
+          },
+          {
+            "leftId": "grihapati",
+            "rightId": "family-head"
+          }
+        ]
+      },
       "difficulty": 1,
+      "explanation": "A jana was a tribe, a gramani headed a village, and a grihapati headed a family.",
+      "generation": {
+        "generatedAt": "2026-09-01T01:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Move from the largest political unit to the family.",
+      "id": "q-003",
+      "marks": 3,
+      "prompt": "Match each Early Vedic unit or leader with its description.",
+      "response": {
+        "left": [
+          {
+            "id": "jana",
+            "text": "Jana"
+          },
+          {
+            "id": "gramani",
+            "text": "Gramani"
+          },
+          {
+            "id": "grihapati",
+            "text": "Grihapati"
+          }
+        ],
+        "right": [
+          {
+            "id": "tribe",
+            "text": "Tribe"
+          },
+          {
+            "id": "village-head",
+            "text": "Headman of a village"
+          },
+          {
+            "id": "family-head",
+            "text": "Head of a family"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-47",
+          "regionId": "political-structure",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "political-organization"
+      ],
+      "type": "matching",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correction": "The dress of the Aryans consisted of two garments: a lower unstitched garment and an upper light shawl.",
+        "value": false
+      },
+      "difficulty": 1,
+      "explanation": "Their dress had two garments, not three.",
+      "generation": {
+        "generatedAt": "2026-09-01T01:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Look separately at the lower and upper garments.",
+      "id": "q-004",
+      "marks": 2,
+      "prompt": "The dress of the Aryans consisted of a three-piece garment. State true or false and correct the statement if needed.",
+      "response": {
+        "requiresCorrectionWhenFalse": true
+      },
+      "rubric": {
+        "points": [
+          {
+            "concept": "identifies the statement as false",
+            "weight": 0.5
+          },
+          {
+            "concept": "states that there were two garments",
+            "weight": 0.5
+          },
+          {
+            "concept": "describes the lower and upper garments",
+            "weight": 1
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-48",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "social-life"
+      ],
+      "type": "true_false_correct",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "The sabha was a smaller assembly of important members that advised and guided the rajan."
+      },
+      "difficulty": 2,
+      "explanation": "The sabha was smaller than the samiti and served as an advisory body to the king.",
+      "generation": {
+        "generatedAt": "2026-09-01T01:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Mention both who belonged to it and what it did.",
+      "id": "q-005",
+      "marks": 2,
+      "prompt": "What role did the sabha play in the political affairs of an Early Vedic tribe?",
+      "response": {
+        "recommendedSentences": 1
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "smaller assembly of important members",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "advised and guided the rajan",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": true,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-47",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "political-organization"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "The rajan ruled according to the wishes of the tribe. The sabha and samiti exercised control over him: members expressed opinions through the samiti, while the sabha advised and guided him."
+      },
+      "difficulty": 3,
+      "explanation": "Power was constrained by tribal consent and by the sabha and samiti.",
+      "generation": {
+        "generatedAt": "2026-09-01T01:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Think about the two councils and the wishes of the tribe.",
+      "id": "q-006",
+      "marks": 2,
+      "prompt": "What features of the Early Vedic political system show that the rajan was not an absolute ruler?",
+      "response": {
+        "recommendedSentences": 3
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "rajan ruled according to the wishes or consent of the tribe",
+            "id": "p1",
+            "required": true,
+            "weight": 0.5
+          },
+          {
+            "concept": "sabha and samiti exercised control over the rajan",
+            "id": "p2",
+            "required": true,
+            "weight": 0.5
+          },
+          {
+            "concept": "samiti allowed tribal members to give opinions",
+            "id": "p3",
+            "required": true,
+            "weight": 0.5
+          },
+          {
+            "concept": "sabha advised and guided the rajan",
+            "id": "p4",
+            "required": true,
+            "weight": 0.5
+          }
+        ],
+        "spellingAffectsScore": true,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-47",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "political-organization"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Women received education and some composed Rig Vedic hymns. A wife had to be present at religious ceremonies. Women could choose husbands through swayamvara, there was no child marriage, widows could remarry, and women participated in assemblies."
+      },
+      "difficulty": 3,
+      "explanation": "Several educational, religious, marital and political rights indicate women's relatively important position.",
+      "generation": {
+        "generatedAt": "2026-09-01T01:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Consider education, religion, marriage and politics.",
+      "id": "q-007",
+      "marks": 4,
+      "prompt": "Give four points showing that women held an important position in Early Vedic society.",
+      "response": {
+        "recommendedPoints": 4
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "maximumPoints": 4,
+        "points": [
+          {
+            "concept": "women received education or composed Rig Vedic hymns",
+            "id": "p1",
+            "required": false,
+            "weight": 1
+          },
+          {
+            "concept": "wife's presence was required at religious ceremonies",
+            "id": "p2",
+            "required": false,
+            "weight": 1
+          },
+          {
+            "concept": "women could choose husbands through swayamvara",
+            "id": "p3",
+            "required": false,
+            "weight": 1
+          },
+          {
+            "concept": "there was no child marriage",
+            "id": "p4",
+            "required": false,
+            "weight": 1
+          },
+          {
+            "concept": "widows could remarry",
+            "id": "p5",
+            "required": false,
+            "weight": 1
+          },
+          {
+            "concept": "women took part in the sabha and samiti",
+            "id": "p6",
+            "required": false,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": true,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-47",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "position-of-women"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "subanswers": [
+          {
+            "id": "a",
+            "ideal": "Swayamvara."
+          },
+          {
+            "id": "b",
+            "ideal": "It allowed a woman to choose her husband."
+          },
+          {
+            "id": "c",
+            "ideal": "Any two supported facts, such as education, composing hymns, participation in ceremonies or assemblies, no child marriage, or widow remarriage."
+          }
+        ]
+      },
+      "difficulty": 2,
+      "explanation": "The picture represents a swayamvara and must be interpreted using the chapter text.",
+      "generation": {
+        "generatedAt": "2026-09-01T01:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Use both the picture and the Position of Women section.",
+      "id": "q-008",
+      "marks": 4,
+      "prompt": "Study the picture and answer the questions.",
+      "response": {
+        "subquestions": [
+          {
+            "id": "a",
+            "marks": 1,
+            "prompt": "Name the ceremony."
+          },
+          {
+            "id": "b",
+            "marks": 1,
+            "prompt": "What choice did this ceremony give a woman?"
+          },
+          {
+            "id": "c",
+            "marks": 2,
+            "prompt": "Give two other facts from the chapter that show the position of women in this period."
+          }
+        ]
+      },
+      "rubric": {
+        "subrubrics": [
+          {
+            "id": "a",
+            "points": [
+              {
+                "concept": "swayamvara",
+                "weight": 1
+              }
+            ]
+          },
+          {
+            "id": "b",
+            "points": [
+              {
+                "concept": "woman could choose her husband",
+                "weight": 1
+              }
+            ]
+          },
+          {
+            "id": "c",
+            "points": [
+              {
+                "concept": "first valid supported fact",
+                "weight": 1
+              },
+              {
+                "concept": "second distinct valid supported fact",
+                "weight": 1
+              }
+            ]
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-52",
+          "regionId": "swayamvara-source",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        },
+        {
+          "pageId": "page-47",
+          "supports": [
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "position-of-women"
+      ],
+      "type": "source_group",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "early"
+      },
+      "difficulty": 1,
+      "explanation": "The Early Vedic period is shown from about 1500 BCE to 1000 BCE.",
+      "generation": {
+        "generatedAt": "2026-09-01T01:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Read the label above the 1500–1000 BCE interval.",
+      "id": "q-009",
       "marks": 1,
       "prompt": "According to the timeline, which period lasted from about 1500 BCE to 1000 BCE?",
-      "sourceRefs": [{ "pageId": "page-49", "regionId": "vedic-timeline", "supports": ["prompt", "answer"] }],
-      "response": { "options": [{ "id": "early", "text": "Early Vedic period" }, { "id": "later", "text": "Later Vedic period" }, { "id": "harappan", "text": "Harappan period" }] },
-      "answer": { "correctOptionId": "early" },
-      "rubric": { "exact": true },
-      "hint": "Read the label above the 1500–1000 BCE interval.",
-      "explanation": "The Early Vedic period is shown from about 1500 BCE to 1000 BCE.",
-      "generation": { "method": "codex-assisted", "generatedAt": "2026-09-01T01:30:00+05:30", "validationStatus": "verified" }
+      "response": {
+        "options": [
+          {
+            "id": "early",
+            "text": "Early Vedic period"
+          },
+          {
+            "id": "later",
+            "text": "Later Vedic period"
+          },
+          {
+            "id": "harappan",
+            "text": "Harappan period"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-49",
+          "regionId": "vedic-timeline",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "settlement"
+      ],
+      "type": "single_choice",
+      "version": 1
     },
     {
-      "id": "q-010",
-      "version": 1,
-      "type": "compare",
-      "status": "active",
-      "topicIds": ["settlement"],
+      "answer": {
+        "sides": {
+          "Early Vedic": {
+            "period": "1500–1000 BCE",
+            "region": "Sapta Sindhu",
+            "regional name": "Brahmavarta"
+          },
+          "Later Vedic": {
+            "period": "1000–500 BCE",
+            "region": "Gangetic Plains",
+            "regional name": "Aryavarta"
+          }
+        }
+      },
       "difficulty": 3,
+      "explanation": "The settlement shifted from Sapta Sindhu/Brahmavarta to the Gangetic Plains/Aryavarta over the two periods.",
+      "generation": {
+        "generatedAt": "2026-09-01T01:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Compare the pink and green regions on the map with the text above it.",
+      "id": "q-010",
       "marks": 4,
       "prompt": "Differentiate between the Early Vedic and Later Vedic settlements by period, region and regional name.",
-      "sourceRefs": [{ "pageId": "page-45", "supports": ["prompt", "answer", "rubric"] }, { "pageId": "page-46", "supports": ["answer", "rubric"] }],
-      "response": { "dimensions": ["period", "region", "regional name"] },
-      "answer": { "sides": { "Early Vedic": { "period": "1500–1000 BCE", "region": "Sapta Sindhu", "regional name": "Brahmavarta" }, "Later Vedic": { "period": "1000–500 BCE", "region": "Gangetic Plains", "regional name": "Aryavarta" } } },
-      "rubric": { "points": [{ "concept": "both time periods are correct", "weight": 1 }, { "concept": "Early Vedic settlement was in Sapta Sindhu", "weight": 1 }, { "concept": "Later Vedic settlement was in the Gangetic Plains", "weight": 1 }, { "concept": "Brahmavarta and Aryavarta are correctly associated", "weight": 1 }], "spellingAffectsScore": true, "grammarAffectsScore": false, "uncertainBelowConfidence": 0.7 },
-      "hint": "Compare the pink and green regions on the map with the text above it.",
-      "explanation": "The settlement shifted from Sapta Sindhu/Brahmavarta to the Gangetic Plains/Aryavarta over the two periods.",
-      "generation": { "method": "codex-assisted", "generatedAt": "2026-09-01T01:30:00+05:30", "validationStatus": "verified" }
+      "response": {
+        "dimensions": [
+          "period",
+          "region",
+          "regional name"
+        ]
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "both time periods are correct",
+            "weight": 1
+          },
+          {
+            "concept": "Early Vedic settlement was in Sapta Sindhu",
+            "weight": 1
+          },
+          {
+            "concept": "Later Vedic settlement was in the Gangetic Plains",
+            "weight": 1
+          },
+          {
+            "concept": "Brahmavarta and Aryavarta are correctly associated",
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": true,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-45",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        },
+        {
+          "pageId": "page-46",
+          "supports": [
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "settlement"
+      ],
+      "type": "compare",
+      "version": 1
     },
     {
-      "id": "q-011",
-      "version": 1,
-      "type": "map_work",
-      "status": "active",
-      "topicIds": ["settlement"],
+      "answer": {
+        "targets": [
+          {
+            "label": "Sapta Sindhu / Early Vedic",
+            "referenceRegion": "north-western subcontinent around the Indus and its tributaries"
+          },
+          {
+            "label": "Aryavarta / Later Vedic",
+            "referenceRegion": "Gangetic Plains extending eastward"
+          }
+        ]
+      },
       "difficulty": 3,
+      "explanation": "Early settlement centered on Sapta Sindhu; later settlement expanded into the Gangetic Plains called Aryavarta.",
+      "generation": {
+        "generatedAt": "2026-09-01T01:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "interaction-pending"
+      },
+      "hint": "Use the pink and green settlement areas shown on page 45.",
+      "id": "q-011",
       "marks": 4,
       "prompt": "On the outline map, mark and label the main Early Vedic and Later Vedic settlement regions.",
-      "sourceRefs": [{ "pageId": "page-45", "regionId": "settlement-map", "supports": ["prompt", "answer", "rubric"] }, { "pageId": "page-53", "supports": ["prompt"] }],
-      "response": { "interaction": "region-and-label", "baseMapRef": "pending://maps/indian-subcontinent-outline.svg" },
-      "answer": { "targets": [{ "label": "Sapta Sindhu / Early Vedic", "referenceRegion": "north-western subcontinent around the Indus and its tributaries" }, { "label": "Aryavarta / Later Vedic", "referenceRegion": "Gangetic Plains extending eastward" }] },
-      "rubric": { "points": [{ "concept": "Early Vedic area placed in the north-west", "weight": 1 }, { "concept": "Early Vedic area labelled Sapta Sindhu or Brahmavarta", "weight": 1 }, { "concept": "Later Vedic area placed in the Gangetic Plains", "weight": 1 }, { "concept": "Later Vedic area labelled Aryavarta", "weight": 1 }], "manualOrGeospatialValidation": true },
-      "hint": "Use the pink and green settlement areas shown on page 45.",
-      "explanation": "Early settlement centered on Sapta Sindhu; later settlement expanded into the Gangetic Plains called Aryavarta.",
-      "generation": { "method": "codex-assisted", "generatedAt": "2026-09-01T01:30:00+05:30", "validationStatus": "interaction-pending" }
+      "response": {
+        "baseMapRef": "pending://maps/indian-subcontinent-outline.svg",
+        "interaction": "region-and-label"
+      },
+      "rubric": {
+        "manualOrGeospatialValidation": true,
+        "points": [
+          {
+            "concept": "Early Vedic area placed in the north-west",
+            "weight": 1
+          },
+          {
+            "concept": "Early Vedic area labelled Sapta Sindhu or Brahmavarta",
+            "weight": 1
+          },
+          {
+            "concept": "Later Vedic area placed in the Gangetic Plains",
+            "weight": 1
+          },
+          {
+            "concept": "Later Vedic area labelled Aryavarta",
+            "weight": 1
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-45",
+          "regionId": "settlement-map",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        },
+        {
+          "pageId": "page-53",
+          "supports": [
+            "prompt"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "settlement"
+      ],
+      "type": "map_work",
+      "version": 1
     },
     {
-      "id": "q-012",
-      "version": 1,
-      "type": "source_group",
-      "status": "active",
-      "topicIds": ["religion"],
+      "answer": {
+        "subanswers": [
+          {
+            "id": "a",
+            "ideal": "Agni carries offerings to the gods and invites or brings the gods to the worshippers."
+          },
+          {
+            "id": "b",
+            "ideal": "Any two of wealth, fame, strong children or peaceful sacrifice."
+          }
+        ]
+      },
       "difficulty": 3,
+      "explanation": "The hymn presents Agni as the link carrying offerings and bringing divine blessings.",
+      "generation": {
+        "generatedAt": "2026-09-01T01:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Look for what Agni does and what he brings in return.",
+      "id": "q-012",
       "marks": 3,
       "prompt": "Read the hymn excerpt about Agni and answer the questions.",
-      "sourceRefs": [{ "pageId": "page-52", "regionId": "agni-hymn", "supports": ["prompt", "answer", "rubric"] }],
-      "response": { "subquestions": [{ "id": "a", "prompt": "What role does Agni play between humans and the gods?", "marks": 1 }, { "id": "b", "prompt": "Name two blessings that worshippers ask Agni to bring.", "marks": 2 }] },
-      "answer": { "subanswers": [{ "id": "a", "ideal": "Agni carries offerings to the gods and invites or brings the gods to the worshippers." }, { "id": "b", "ideal": "Any two of wealth, fame, strong children or peaceful sacrifice." }] },
-      "rubric": { "subrubrics": [{ "id": "a", "points": [{ "concept": "mediates by carrying offerings or bringing the gods", "weight": 1 }] }, { "id": "b", "points": [{ "concept": "first valid blessing", "weight": 1 }, { "concept": "second distinct valid blessing", "weight": 1 }] }] },
-      "hint": "Look for what Agni does and what he brings in return.",
-      "explanation": "The hymn presents Agni as the link carrying offerings and bringing divine blessings.",
-      "generation": { "method": "codex-assisted", "generatedAt": "2026-09-01T01:30:00+05:30", "validationStatus": "verified" }
+      "response": {
+        "subquestions": [
+          {
+            "id": "a",
+            "marks": 1,
+            "prompt": "What role does Agni play between humans and the gods?"
+          },
+          {
+            "id": "b",
+            "marks": 2,
+            "prompt": "Name two blessings that worshippers ask Agni to bring."
+          }
+        ]
+      },
+      "rubric": {
+        "subrubrics": [
+          {
+            "id": "a",
+            "points": [
+              {
+                "concept": "mediates by carrying offerings or bringing the gods",
+                "weight": 1
+              }
+            ]
+          },
+          {
+            "id": "b",
+            "points": [
+              {
+                "concept": "first valid blessing",
+                "weight": 1
+              },
+              {
+                "concept": "second distinct valid blessing",
+                "weight": 1
+              }
+            ]
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-52",
+          "regionId": "agni-hymn",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "religion"
+      ],
+      "type": "source_group",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "central-asia"
+      },
+      "difficulty": 1,
+      "explanation": "The chapter states that the Aryans lived in Central Asia before migrating to India.",
+      "generation": {
+        "generatedAt": "2026-09-01T08:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "The text describes the Aryans as nomadic people from a region north-west of India.",
+      "id": "q-013",
+      "marks": 1,
+      "prompt": "From which region did the Indo-Aryans described in the chapter migrate to India?",
+      "response": {
+        "options": [
+          {
+            "id": "central-asia",
+            "text": "Central Asia"
+          },
+          {
+            "id": "south-asia",
+            "text": "South Asia"
+          },
+          {
+            "id": "south-east-asia",
+            "text": "South-east Asia"
+          },
+          {
+            "id": "west-asia",
+            "text": "West Asia"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-45",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "settlement"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "Brahmavarta"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "The Early Vedic settlement region was named Brahmavarta, the land of the gods.",
+      "generation": {
+        "generatedAt": "2026-09-01T08:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Do not confuse this Early Vedic name with Aryavarta.",
+      "id": "q-014",
+      "marks": 1,
+      "prompt": "The Aryans called the Sapta Sindhu region ____, meaning ‘the land of the gods’.",
+      "response": {
+        "blankCount": 1
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-45",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "settlement"
+      ],
+      "type": "fill_blank",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "Aryavarta"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "The Aryans named the Gangetic region Aryavarta during the Later Vedic period.",
+      "generation": {
+        "generatedAt": "2026-09-01T08:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Its name means ‘the land of the Aryans’.",
+      "id": "q-015",
+      "marks": 1,
+      "prompt": "The Gangetic region settled during the Later Vedic period was called ____.",
+      "response": {
+        "blankCount": 1
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-46",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "settlement"
+      ],
+      "type": "fill_blank",
+      "version": 1
+    },
+    {
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "vedas",
+            "rightId": "four"
+          },
+          {
+            "leftId": "epics",
+            "rightId": "two"
+          },
+          {
+            "leftId": "vedic-literature",
+            "rightId": "collection"
+          },
+          {
+            "leftId": "rig-veda",
+            "rightId": "source"
+          }
+        ]
+      },
+      "difficulty": 2,
+      "explanation": "The chapter names the four Vedas, the two epics, the full collection called Vedic literature, and the Rig Veda as the Early Vedic period’s main source.",
+      "generation": {
+        "generatedAt": "2026-09-01T08:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Use both the diagram and the surrounding text on page 46.",
+      "id": "q-016",
+      "marks": 4,
+      "prompt": "Match each term about Vedic literature with the chapter-supported description.",
+      "response": {
+        "left": [
+          {
+            "id": "vedas",
+            "text": "The Vedas"
+          },
+          {
+            "id": "epics",
+            "text": "The epics"
+          },
+          {
+            "id": "vedic-literature",
+            "text": "Vedic literature"
+          },
+          {
+            "id": "rig-veda",
+            "text": "Rig Veda"
+          }
+        ],
+        "right": [
+          {
+            "id": "four",
+            "text": "Rig, Sama, Yajur and Atharva"
+          },
+          {
+            "id": "two",
+            "text": "The Ramayana and the Mahabharata"
+          },
+          {
+            "id": "collection",
+            "text": "The Vedas, Brahmanas, Upanishads, Puranas and epics"
+          },
+          {
+            "id": "source",
+            "text": "Main source for the Early Vedic period"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-46",
+          "regionId": "vedic-literature-diagram",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "vedic-literature"
+      ],
+      "type": "matching",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "The Vedas were composed verbally and orally handed down from generation to generation for centuries before being recorded in books."
+      },
+      "difficulty": 2,
+      "explanation": "Oral transmission preserved the Vedas for centuries before manuscripts were produced.",
+      "generation": {
+        "generatedAt": "2026-09-01T08:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Mention both the oral stage and the later written stage.",
+      "id": "q-017",
+      "marks": 2,
+      "prompt": "How did the Vedas come down from one generation to another before they were written as books?",
+      "response": {
+        "recommendedSentences": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "composed or preserved verbally",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "orally passed through generations before being written",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-46",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "vedic-literature"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "rig"
+      },
+      "difficulty": 1,
+      "explanation": "The chapter says the period is mainly known through the Rig Veda and is therefore also called the Rig Vedic period.",
+      "generation": {
+        "generatedAt": "2026-09-01T08:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "The Early Vedic period is also named after this Veda.",
+      "id": "q-018",
+      "marks": 1,
+      "prompt": "Which Veda is the main historical source for the Early Vedic period?",
+      "response": {
+        "options": [
+          {
+            "id": "rig",
+            "text": "Rig Veda"
+          },
+          {
+            "id": "sama",
+            "text": "Sama Veda"
+          },
+          {
+            "id": "yajur",
+            "text": "Yajur Veda"
+          },
+          {
+            "id": "atharva",
+            "text": "Atharva Veda"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-46",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "vedic-literature"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "rajan",
+            "rightId": "chief"
+          },
+          {
+            "leftId": "purohita",
+            "rightId": "priest"
+          },
+          {
+            "leftId": "senani",
+            "rightId": "commander"
+          }
+        ]
+      },
+      "difficulty": 2,
+      "explanation": "The rajan led the tribe, the purohita performed ceremonies and advised him, and the senani commanded the warriors.",
+      "generation": {
+        "generatedAt": "2026-09-01T08:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Separate political, religious and military duties.",
+      "id": "q-019",
+      "marks": 3,
+      "prompt": "Match each Early Vedic official with the official’s function.",
+      "response": {
+        "left": [
+          {
+            "id": "rajan",
+            "text": "Rajan"
+          },
+          {
+            "id": "purohita",
+            "text": "Purohita"
+          },
+          {
+            "id": "senani",
+            "text": "Senani"
+          }
+        ],
+        "right": [
+          {
+            "id": "chief",
+            "text": "Chieftain and protector of the tribe"
+          },
+          {
+            "id": "priest",
+            "text": "Priest and adviser to the king"
+          },
+          {
+            "id": "commander",
+            "text": "Commander-in-chief during war"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-47",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "political-organization"
+      ],
+      "type": "matching",
+      "version": 1
+    },
+    {
+      "answer": {
+        "sides": {
+          "Sabha": {
+            "membership": "important members of the tribe",
+            "role": "advised and guided the king",
+            "size": "smaller"
+          },
+          "Samiti": {
+            "membership": "any member of the tribe",
+            "role": "gave opinions on important tribal matters",
+            "size": "large"
+          }
+        }
+      },
+      "difficulty": 3,
+      "explanation": "The smaller sabha advised the king, while the larger samiti allowed tribal members to express opinions.",
+      "generation": {
+        "generatedAt": "2026-09-01T08:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "For each council, state who joined and what it did.",
+      "id": "q-020",
+      "marks": 4,
+      "prompt": "Compare the sabha and the samiti by size, membership and role.",
+      "response": {
+        "dimensions": [
+          "size",
+          "membership",
+          "role"
+        ]
+      },
+      "rubric": {
+        "points": [
+          {
+            "concept": "sabha identified as the smaller assembly",
+            "weight": 1
+          },
+          {
+            "concept": "sabha membership and advisory role",
+            "weight": 1
+          },
+          {
+            "concept": "samiti identified as the large assembly",
+            "weight": 1
+          },
+          {
+            "concept": "samiti membership and opinion-giving role",
+            "weight": 1
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-47",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "political-organization"
+      ],
+      "type": "compare",
+      "version": 1
+    },
+    {
+      "answer": {
+        "subanswers": [
+          {
+            "id": "a",
+            "ideal": "The jana or tribe."
+          },
+          {
+            "id": "b",
+            "ideal": "The gramani."
+          },
+          {
+            "id": "c",
+            "ideal": "The grihapati."
+          }
+        ]
+      },
+      "difficulty": 2,
+      "explanation": "The diagram moves from jana to grama to family, led respectively by the rajan, gramani and grihapati.",
+      "generation": {
+        "generatedAt": "2026-09-01T08:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "interaction-pending"
+      },
+      "hint": "Read the hierarchy from the top down.",
+      "id": "q-021",
+      "marks": 3,
+      "prompt": "Study the diagram of Early Vedic political organization and answer the questions.",
+      "response": {
+        "subquestions": [
+          {
+            "id": "a",
+            "marks": 1,
+            "prompt": "What was the largest unit shown?"
+          },
+          {
+            "id": "b",
+            "marks": 1,
+            "prompt": "Who headed a grama?"
+          },
+          {
+            "id": "c",
+            "marks": 1,
+            "prompt": "Who headed a family?"
+          }
+        ]
+      },
+      "rubric": {
+        "subrubrics": [
+          {
+            "id": "a",
+            "points": [
+              {
+                "concept": "jana or tribe",
+                "weight": 1
+              }
+            ]
+          },
+          {
+            "id": "b",
+            "points": [
+              {
+                "concept": "gramani",
+                "weight": 1
+              }
+            ]
+          },
+          {
+            "id": "c",
+            "points": [
+              {
+                "concept": "grihapati",
+                "weight": 1
+              }
+            ]
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-47",
+          "regionId": "political-structure",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "political-organization",
+        "social-life"
+      ],
+      "type": "source_group",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Villages contained joint families. The eldest living male, called the grihapati, headed each family and his decision was final and binding."
+      },
+      "difficulty": 2,
+      "explanation": "Joint families were headed by the grihapati, whose decisions bound the family.",
+      "generation": {
+        "generatedAt": "2026-09-01T08:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Mention the type of family and its head.",
+      "id": "q-022",
+      "marks": 2,
+      "prompt": "Describe family life in an Early Vedic village.",
+      "response": {
+        "recommendedSentences": 2
+      },
+      "rubric": {
+        "points": [
+          {
+            "concept": "villages had joint families",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "eldest living male or grihapati headed the family and made binding decisions",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-47",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "social-life"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "monogamy"
+      },
+      "difficulty": 1,
+      "explanation": "The chapter states that monogamy was the usual practice.",
+      "generation": {
+        "generatedAt": "2026-09-01T08:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "The word means marriage to one person at a time.",
+      "id": "q-023",
+      "marks": 1,
+      "prompt": "What was the usual marriage practice in Early Vedic society?",
+      "response": {
+        "options": [
+          {
+            "id": "monogamy",
+            "text": "Monogamy"
+          },
+          {
+            "id": "child-marriage",
+            "text": "Child marriage"
+          },
+          {
+            "id": "no-marriage",
+            "text": "No marriage ceremonies"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-47",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "position-of-women",
+        "social-life"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionIds": [
+          "wheat",
+          "barley",
+          "fruits",
+          "vegetables"
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "Wheat, barley, fruits and vegetables formed the staple diet described in the chapter.",
+      "generation": {
+        "generatedAt": "2026-09-01T08:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose the two grains and the two plant-food groups named in the Food section.",
+      "id": "q-024",
+      "marks": 2,
+      "prompt": "Select all foods that formed part of the Aryans’ staple diet according to the chapter.",
+      "response": {
+        "options": [
+          {
+            "id": "wheat",
+            "text": "Wheat"
+          },
+          {
+            "id": "barley",
+            "text": "Barley"
+          },
+          {
+            "id": "maize",
+            "text": "Maize"
+          },
+          {
+            "id": "fruits",
+            "text": "Fruits"
+          },
+          {
+            "id": "vegetables",
+            "text": "Vegetables"
+          },
+          {
+            "id": "rice",
+            "text": "Rice"
+          }
+        ]
+      },
+      "rubric": {
+        "minimumScore": 0,
+        "partialCredit": "proportional-minus-errors"
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-48",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "food-dress-recreation"
+      ],
+      "type": "multiple_select",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correction": "Wheat, barley, fruits and vegetables formed the staple diet; meat was eaten only occasionally.",
+        "value": false
+      },
+      "difficulty": 1,
+      "explanation": "The diet was mainly grains, fruit and vegetables, while meat was occasional.",
+      "generation": {
+        "generatedAt": "2026-09-01T08:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Distinguish everyday staples from occasional food.",
+      "id": "q-025",
+      "marks": 2,
+      "prompt": "Meat was the staple food of the Aryans. State true or false and correct the statement if needed.",
+      "response": {
+        "requiresCorrectionWhenFalse": true
+      },
+      "rubric": {
+        "points": [
+          {
+            "concept": "identifies the statement as false",
+            "weight": 0.5
+          },
+          {
+            "concept": "names the plant-based staple foods",
+            "weight": 1
+          },
+          {
+            "concept": "states that meat was occasional",
+            "weight": 0.5
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-48",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "food-dress-recreation"
+      ],
+      "type": "true_false_correct",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionIds": [
+          "chariot",
+          "hunting",
+          "music",
+          "dice"
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "Chariot racing, hunting, music, dance, dice and board games are all listed as recreation.",
+      "generation": {
+        "generatedAt": "2026-09-01T08:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Include both outdoor and indoor activities.",
+      "id": "q-026",
+      "marks": 2,
+      "prompt": "Which activities are named as recreation among the Aryans?",
+      "response": {
+        "options": [
+          {
+            "id": "chariot",
+            "text": "Chariot racing"
+          },
+          {
+            "id": "hunting",
+            "text": "Hunting"
+          },
+          {
+            "id": "music",
+            "text": "Music and dance"
+          },
+          {
+            "id": "dice",
+            "text": "Dice and board games"
+          },
+          {
+            "id": "cricket",
+            "text": "Cricket"
+          }
+        ]
+      },
+      "rubric": {
+        "minimumScore": 0,
+        "partialCredit": "proportional-minus-errors"
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-48",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "food-dress-recreation"
+      ],
+      "type": "multiple_select",
+      "version": 1
+    },
+    {
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "indra",
+            "rightId": "rain"
+          },
+          {
+            "leftId": "agni",
+            "rightId": "fire"
+          },
+          {
+            "leftId": "varuna",
+            "rightId": "water"
+          },
+          {
+            "leftId": "vayu",
+            "rightId": "wind"
+          }
+        ]
+      },
+      "difficulty": 2,
+      "explanation": "Indra represented rain and thunder, Agni fire, Varuna water and Vayu wind.",
+      "generation": {
+        "generatedAt": "2026-09-01T08:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Each deity represented a different natural force.",
+      "id": "q-027",
+      "marks": 4,
+      "prompt": "Match each Vedic deity with the force of nature stated in the chapter.",
+      "response": {
+        "left": [
+          {
+            "id": "indra",
+            "text": "Indra"
+          },
+          {
+            "id": "agni",
+            "text": "Agni"
+          },
+          {
+            "id": "varuna",
+            "text": "Varuna"
+          },
+          {
+            "id": "vayu",
+            "text": "Vayu"
+          }
+        ],
+        "right": [
+          {
+            "id": "rain",
+            "text": "Rain and thunder"
+          },
+          {
+            "id": "fire",
+            "text": "Fire"
+          },
+          {
+            "id": "water",
+            "text": "Water"
+          },
+          {
+            "id": "wind",
+            "text": "Wind"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-48",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "religion"
+      ],
+      "type": "matching",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "They worshipped in the open air without temples or idols. They chanted hymns, made offerings such as grain, ghee and milk, and performed yagnas led by brahmanas with the family taking part."
+      },
+      "difficulty": 2,
+      "explanation": "Early worship centered on open-air hymns, offerings and family yagnas rather than temples or idols.",
+      "generation": {
+        "generatedAt": "2026-09-01T08:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Mention the place, the actions and who participated.",
+      "id": "q-028",
+      "marks": 3,
+      "prompt": "How did the Early Vedic people worship their gods?",
+      "response": {
+        "recommendedSentences": 3
+      },
+      "rubric": {
+        "points": [
+          {
+            "concept": "open-air worship without temples or idols",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "hymns and offerings of grain, ghee or milk",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "yagnas led by brahmanas with family participation",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-48",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "religion"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "Soma"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "Soma is identified as the god of plants.",
+      "generation": {
+        "generatedAt": "2026-09-01T08:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "The same name is also used for a drink mentioned in the chapter.",
+      "id": "q-029",
+      "marks": 1,
+      "prompt": "Name the god of plants in Early Vedic religion.",
+      "response": {},
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-48",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "religion"
+      ],
+      "type": "one_word",
+      "version": 1
+    },
+    {
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "brahmanas",
+            "rightId": "priests"
+          },
+          {
+            "leftId": "kshatriyas",
+            "rightId": "warriors"
+          },
+          {
+            "leftId": "vaishyas",
+            "rightId": "producers"
+          },
+          {
+            "leftId": "shudras",
+            "rightId": "labourers"
+          }
+        ]
+      },
+      "difficulty": 2,
+      "explanation": "The four varnas were associated with priestly, warrior, productive and labouring work.",
+      "generation": {
+        "generatedAt": "2026-09-01T08:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "The early division was based on occupation.",
+      "id": "q-030",
+      "marks": 4,
+      "prompt": "Match each Early Vedic varna with the work described in the chapter.",
+      "response": {
+        "left": [
+          {
+            "id": "brahmanas",
+            "text": "Brahmanas"
+          },
+          {
+            "id": "kshatriyas",
+            "text": "Kshatriyas"
+          },
+          {
+            "id": "vaishyas",
+            "text": "Vaishyas"
+          },
+          {
+            "id": "shudras",
+            "text": "Shudras"
+          }
+        ],
+        "right": [
+          {
+            "id": "priests",
+            "text": "Priests and scholars"
+          },
+          {
+            "id": "warriors",
+            "text": "Warriors"
+          },
+          {
+            "id": "producers",
+            "text": "Farmers, traders and craftspeople"
+          },
+          {
+            "id": "labourers",
+            "text": "Labourers doing service and menial work"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-48",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        },
+        {
+          "pageId": "page-49",
+          "supports": [
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "class-system"
+      ],
+      "type": "matching",
+      "version": 1
+    },
+    {
+      "answer": {
+        "sides": {
+          "Early Vedic": {
+            "basis": "occupation",
+            "flexibility": "a child could enter another varna",
+            "later change": "not fixed by birth"
+          },
+          "Later Vedic": {
+            "basis": "birth or caste",
+            "flexibility": "rigid",
+            "later change": "one could not change the caste of birth"
+          }
+        }
+      },
+      "difficulty": 3,
+      "explanation": "The early occupation-based system was flexible, but it became a rigid birth-based caste system later.",
+      "generation": {
+        "generatedAt": "2026-09-01T08:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Focus on occupation, birth and the possibility of changing groups.",
+      "id": "q-031",
+      "marks": 3,
+      "prompt": "Compare the class system in the Early Vedic and Later Vedic periods.",
+      "response": {
+        "dimensions": [
+          "basis",
+          "flexibility",
+          "later change"
+        ]
+      },
+      "rubric": {
+        "points": [
+          {
+            "concept": "Early Vedic division was occupation-based",
+            "weight": 1
+          },
+          {
+            "concept": "Early Vedic system was flexible and allowed change",
+            "weight": 1
+          },
+          {
+            "concept": "Later Vedic system became rigid and birth-based",
+            "weight": 1
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-49",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "class-system"
+      ],
+      "type": "compare",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "cow"
+      },
+      "difficulty": 1,
+      "explanation": "Cows were valuable, represented wealth and were given by kings to priests.",
+      "generation": {
+        "generatedAt": "2026-09-01T08:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Kings gifted this animal to priests.",
+      "id": "q-032",
+      "marks": 1,
+      "prompt": "Which animal was considered especially valuable and a mark of wealth in Early Vedic economic life?",
+      "response": {
+        "options": [
+          {
+            "id": "cow",
+            "text": "Cow"
+          },
+          {
+            "id": "horse",
+            "text": "Horse"
+          },
+          {
+            "id": "elephant",
+            "text": "Elephant"
+          },
+          {
+            "id": "camel",
+            "text": "Camel"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-49",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "economic-life"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionIds": [
+          "chariot-makers",
+          "weavers",
+          "leather-workers",
+          "potters",
+          "metalworkers"
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "The chapter names chariot-makers, weavers, leather-workers and potters, as well as metalworkers.",
+      "generation": {
+        "generatedAt": "2026-09-01T08:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose occupations that produced vehicles, cloth, leather goods and pottery.",
+      "id": "q-033",
+      "marks": 2,
+      "prompt": "Select the craftspeople explicitly mentioned in the Rig Veda section of the chapter.",
+      "response": {
+        "options": [
+          {
+            "id": "chariot-makers",
+            "text": "Chariot-makers"
+          },
+          {
+            "id": "weavers",
+            "text": "Weavers"
+          },
+          {
+            "id": "leather-workers",
+            "text": "Leather-workers"
+          },
+          {
+            "id": "potters",
+            "text": "Potters"
+          },
+          {
+            "id": "metalworkers",
+            "text": "Metalworkers"
+          },
+          {
+            "id": "printers",
+            "text": "Printers"
+          },
+          {
+            "id": "photographers",
+            "text": "Photographers"
+          }
+        ]
+      },
+      "rubric": {
+        "minimumScore": 0,
+        "partialCredit": "proportional-minus-errors"
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-49",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "economic-life"
+      ],
+      "type": "multiple_select",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "The Aryans moved from nomadic to settled life. Cattle, especially cows, were valuable and marked wealth. They knew agriculture and used a possibly wooden plough. Artisans included chariot-makers, weavers, leather-workers, potters and metalworkers, and villages were self-sufficient."
+      },
+      "difficulty": 3,
+      "explanation": "Economic life combined valuable cattle, growing agriculture, specialized crafts and increasingly settled, self-sufficient villages.",
+      "generation": {
+        "generatedAt": "2026-09-01T08:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose four distinct points about settlement, cattle, farming, crafts or villages.",
+      "id": "q-034",
+      "marks": 4,
+      "prompt": "Describe four features of Early Vedic economic life.",
+      "response": {
+        "recommendedPoints": 4
+      },
+      "rubric": {
+        "maximumPoints": 4,
+        "points": [
+          {
+            "concept": "movement from nomadic to settled life",
+            "id": "p1",
+            "required": false,
+            "weight": 1
+          },
+          {
+            "concept": "cows or cattle were valuable and marked wealth",
+            "id": "p2",
+            "required": false,
+            "weight": 1
+          },
+          {
+            "concept": "agriculture, plough or seasonal knowledge",
+            "id": "p3",
+            "required": false,
+            "weight": 1
+          },
+          {
+            "concept": "named artisans or crafts",
+            "id": "p4",
+            "required": false,
+            "weight": 1
+          },
+          {
+            "concept": "metalworking in copper and bronze",
+            "id": "p5",
+            "required": false,
+            "weight": 1
+          },
+          {
+            "concept": "villages were self-sufficient",
+            "id": "p6",
+            "required": false,
+            "weight": 1
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-49",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "economic-life"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "subanswers": [
+          {
+            "id": "a",
+            "ideal": "1500 BCE to 1000 BCE."
+          },
+          {
+            "id": "b",
+            "ideal": "1000 BCE to 500 BCE."
+          },
+          {
+            "id": "c",
+            "ideal": "The Early Vedic period."
+          }
+        ]
+      },
+      "difficulty": 2,
+      "explanation": "The timeline places the Early Vedic period at 1500–1000 BCE and the Later Vedic period at 1000–500 BCE.",
+      "generation": {
+        "generatedAt": "2026-09-01T08:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "interaction-pending"
+      },
+      "hint": "Read the two brackets and the Harappan marker on the timeline.",
+      "id": "q-035",
+      "marks": 3,
+      "prompt": "Study the chapter timeline and answer the questions.",
+      "response": {
+        "subquestions": [
+          {
+            "id": "a",
+            "marks": 1,
+            "prompt": "Give the dates of the Early Vedic period."
+          },
+          {
+            "id": "b",
+            "marks": 1,
+            "prompt": "Give the dates of the Later Vedic period."
+          },
+          {
+            "id": "c",
+            "marks": 1,
+            "prompt": "Which Vedic period began around the time the Harappan civilization reached stagnation?"
+          }
+        ]
+      },
+      "rubric": {
+        "subrubrics": [
+          {
+            "id": "a",
+            "points": [
+              {
+                "concept": "1500–1000 BCE",
+                "weight": 1
+              }
+            ]
+          },
+          {
+            "id": "b",
+            "points": [
+              {
+                "concept": "1000–500 BCE",
+                "weight": 1
+              }
+            ]
+          },
+          {
+            "id": "c",
+            "points": [
+              {
+                "concept": "Early Vedic period",
+                "weight": 1
+              }
+            ]
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-49",
+          "regionId": "vedic-timeline",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "settlement"
+      ],
+      "type": "source_group",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Nomadic Aryans from Central Asia migrated to India in waves and first settled in the Sapta Sindhu region, called Brahmavarta. The Early Vedic period there lasted about 1500–1000 BCE. They later moved into the Gangetic Plains, renamed Aryavarta, during the Later Vedic period of about 1000–500 BCE."
+      },
+      "difficulty": 3,
+      "explanation": "Settlement progressed from Central Asian migration to Sapta Sindhu/Brahmavarta and then east into the Gangetic Plains/Aryavarta.",
+      "generation": {
+        "generatedAt": "2026-09-01T08:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Organize the answer by origin, first settlement and later eastward movement.",
+      "id": "q-036",
+      "marks": 4,
+      "prompt": "Give an account of the main stages of Aryan settlement in India described in the chapter.",
+      "response": {
+        "recommendedSentences": 4
+      },
+      "rubric": {
+        "points": [
+          {
+            "concept": "migration from Central Asia in waves",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "first settlement in Sapta Sindhu or Brahmavarta",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Early Vedic period dated 1500–1000 BCE",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "later movement to Gangetic Plains or Aryavarta in 1000–500 BCE",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-45",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        },
+        {
+          "pageId": "page-46",
+          "supports": [
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "settlement"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "The lower garment was an unstitched cloth like a dhoti tied at the waist. The upper garment was a light shawl; a turban-like headgear was also worn."
+      },
+      "difficulty": 2,
+      "explanation": "Aryan dress used a lower unstitched waist cloth and an upper light shawl.",
+      "generation": {
+        "generatedAt": "2026-09-01T08:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Describe the lower and upper pieces separately.",
+      "id": "q-037",
+      "marks": 2,
+      "prompt": "Describe the two garments worn by the Aryans.",
+      "response": {
+        "recommendedSentences": 2
+      },
+      "rubric": {
+        "points": [
+          {
+            "concept": "lower unstitched dhoti-like cloth tied at waist",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "upper light shawl",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-48",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "food-dress-recreation"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "knowledge",
+          "wisdom"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "‘Veda’ means knowledge or wisdom.",
+      "generation": {
+        "generatedAt": "2026-09-01T08:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "The chapter gives two English equivalents.",
+      "id": "q-038",
+      "marks": 1,
+      "prompt": "What does the Sanskrit word ‘Veda’ mean?",
+      "response": {},
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-46",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "vedic-literature"
+      ],
+      "type": "one_word",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correction": "Early Vedic villages were self-sufficient and included a range of artisans and craftspeople.",
+        "value": false
+      },
+      "difficulty": 1,
+      "explanation": "The range of crafts helped villages remain self-sufficient.",
+      "generation": {
+        "generatedAt": "2026-09-01T08:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the final sentence of the Economic Life section.",
+      "id": "q-039",
+      "marks": 2,
+      "prompt": "Early Vedic villages depended entirely on distant towns for everyday goods. State true or false and correct the statement if needed.",
+      "response": {
+        "requiresCorrectionWhenFalse": true
+      },
+      "rubric": {
+        "points": [
+          {
+            "concept": "identifies the statement as false",
+            "weight": 0.5
+          },
+          {
+            "concept": "states that villages were self-sufficient",
+            "weight": 1
+          },
+          {
+            "concept": "links self-sufficiency to artisans or craftspeople",
+            "weight": 0.5
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-49",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "economic-life"
+      ],
+      "type": "true_false_correct",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "People lived in village-based joint families headed by a grihapati. Women were educated and had religious, marital and political participation. Nature gods were worshipped through open-air hymns, offerings and yagnas. The four varnas were initially occupation-based and flexible. Economic life valued cattle and included agriculture, crafts and self-sufficient villages."
+      },
+      "difficulty": 3,
+      "explanation": "A complete summary connects family organization, women’s position, religious practice, flexible occupational classes and a cattle-farming-craft economy.",
+      "generation": {
+        "generatedAt": "2026-09-01T08:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Use exactly one distinct fact from each of the five named areas.",
+      "id": "q-040",
+      "marks": 5,
+      "prompt": "Summarize five important features of life in Early Vedic society, using one point each about family, women, religion, class and economy.",
+      "response": {
+        "recommendedPoints": 5
+      },
+      "rubric": {
+        "points": [
+          {
+            "concept": "joint family or grihapati",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "one supported right or role of women",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "nature worship, hymns, offerings or yagnas",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "occupation-based flexible varna system",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "cattle, agriculture, crafts or self-sufficient villages",
+            "id": "p5",
+            "required": true,
+            "weight": 1
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-47",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric"
+          ]
+        },
+        {
+          "pageId": "page-48",
+          "supports": [
+            "answer",
+            "rubric"
+          ]
+        },
+        {
+          "pageId": "page-49",
+          "supports": [
+            "answer",
+            "rubric"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "religion",
+        "social-life",
+        "position-of-women",
+        "economic-life"
+      ],
+      "type": "multi_point",
+      "version": 1
+    }
+  ],
+  "schemaVersion": "0.1.0",
+  "sources": [
+    {
+      "assetRef": "manifest://early-vedic-civilization/page-45",
+      "extractionConfidence": 0.99,
+      "id": "page-45",
+      "pageNumber": 45,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.34,
+            "width": 0.78,
+            "x": 0.1,
+            "y": 0.6
+          },
+          "id": "settlement-map",
+          "kind": "map"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://early-vedic-civilization/page-46",
+      "extractionConfidence": 0.99,
+      "id": "page-46",
+      "pageNumber": 46,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.25,
+            "width": 0.47,
+            "x": 0.46,
+            "y": 0.53
+          },
+          "id": "vedic-literature-diagram",
+          "kind": "diagram"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://early-vedic-civilization/page-47",
+      "extractionConfidence": 0.99,
+      "id": "page-47",
+      "pageNumber": 47,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.28,
+            "width": 0.39,
+            "x": 0.55,
+            "y": 0.04
+          },
+          "id": "political-structure",
+          "kind": "diagram"
+        },
+        {
+          "bounds": {
+            "height": 0.3,
+            "width": 0.34,
+            "x": 0.59,
+            "y": 0.61
+          },
+          "id": "swayamvara-picture",
+          "kind": "illustration"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://early-vedic-civilization/page-48",
+      "extractionConfidence": 0.99,
+      "id": "page-48",
+      "pageNumber": 48,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.27,
+            "width": 0.31,
+            "x": 0.51,
+            "y": 0.27
+          },
+          "id": "yagna-picture",
+          "kind": "illustration"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://early-vedic-civilization/page-49",
+      "extractionConfidence": 0.99,
+      "id": "page-49",
+      "pageNumber": 49,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.25,
+            "width": 0.38,
+            "x": 0.02,
+            "y": 0.3
+          },
+          "id": "varna-picture",
+          "kind": "illustration"
+        },
+        {
+          "bounds": {
+            "height": 0.15,
+            "width": 0.92,
+            "x": 0.03,
+            "y": 0.79
+          },
+          "id": "vedic-timeline",
+          "kind": "timeline"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://early-vedic-civilization/page-50",
+      "extractionConfidence": 0.99,
+      "id": "page-50",
+      "pageNumber": 50,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.58,
+            "width": 0.89,
+            "x": 0.05,
+            "y": 0.19
+          },
+          "id": "chapter-summary",
+          "kind": "diagram"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://early-vedic-civilization/page-51",
+      "extractionConfidence": 0.99,
+      "id": "page-51",
+      "pageNumber": 51,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.56,
+            "width": 0.92,
+            "x": 0.04,
+            "y": 0.38
+          },
+          "id": "objective-exercises",
+          "kind": "exercise"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://early-vedic-civilization/page-52",
+      "extractionConfidence": 0.99,
+      "id": "page-52",
+      "pageNumber": 52,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.19,
+            "width": 0.27,
+            "x": 0.68,
+            "y": 0.78
+          },
+          "id": "agni-hymn",
+          "kind": "passage"
+        },
+        {
+          "bounds": {
+            "height": 0.17,
+            "width": 0.25,
+            "x": 0.69,
+            "y": 0.66
+          },
+          "id": "swayamvara-source",
+          "kind": "illustration"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://early-vedic-civilization/page-53",
+      "extractionConfidence": 0.99,
+      "id": "page-53",
+      "pageNumber": 53,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.08,
+            "width": 0.92,
+            "x": 0.04,
+            "y": 0.05
+          },
+          "id": "map-work",
+          "kind": "exercise"
+        }
+      ],
+      "reviewRequired": false
+    }
+  ],
+  "topics": [
+    {
+      "id": "class-system",
+      "title": "Class system"
+    },
+    {
+      "id": "economic-life",
+      "title": "Economic life"
+    },
+    {
+      "id": "food-dress-recreation",
+      "title": "Food, dress and recreation"
+    },
+    {
+      "id": "political-organization",
+      "title": "Political organization"
+    },
+    {
+      "id": "position-of-women",
+      "title": "Position of women"
+    },
+    {
+      "id": "religion",
+      "title": "Religion"
+    },
+    {
+      "id": "settlement",
+      "title": "Aryan settlement"
+    },
+    {
+      "id": "social-life",
+      "title": "Social life"
+    },
+    {
+      "id": "vedic-literature",
+      "title": "Vedic literature"
     }
   ]
 }

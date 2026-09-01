@@ -1,0 +1,75 @@
+{
+  "reviewVersion": "0.1.0",
+  "bankId": "early-vedic-civilization-v1",
+  "bankVersion": 1,
+  "reviewedAt": "2026-09-01T08:30:00+05:30",
+  "reviewerMethod": "Codex source-by-source review using the repository-local chapter-ingestion skill, after deterministic schema and grounding checks",
+  "inputs": {
+    "manifest": "samples/early-vedic-chapter-manifest.json",
+    "bank": "samples/early-vedic-question-bank.json",
+    "sourceAssetCount": 5,
+    "pageRange": "45–53"
+  },
+  "gates": {
+    "manifestSchema": "pass",
+    "sourceHashes": "pass",
+    "questionBankSchema": "pass",
+    "deterministicGroundingReview": "pass",
+    "manualGroundingReview": "pass",
+    "rubricBalanceReview": "pass"
+  },
+  "coverage": {
+    "questionCount": 40,
+    "topics": {
+      "settlement": 9,
+      "vedic-literature": 5,
+      "political-organization": 6,
+      "position-of-women": 4,
+      "social-life": 5,
+      "food-dress-recreation": 4,
+      "religion": 5,
+      "class-system": 2,
+      "economic-life": 5
+    },
+    "types": {
+      "single_choice": 5,
+      "multiple_select": 4,
+      "fill_blank": 3,
+      "true_false_correct": 3,
+      "matching": 5,
+      "one_word": 2,
+      "brief_answer": 6,
+      "multi_point": 4,
+      "compare": 3,
+      "source_group": 4,
+      "map_work": 1
+    },
+    "difficulties": { "1": 18, "2": 12, "3": 10 },
+    "learningOutcomes": {
+      "define-vedic-and-literature": ["q-002", "q-016", "q-017", "q-018", "q-038"],
+      "summarize-early-vedic-life": ["q-022", "q-024", "q-026", "q-028", "q-034", "q-037", "q-040"],
+      "value-position-of-women": ["q-007", "q-008", "q-023", "q-040"],
+      "explain-classification": ["q-030", "q-031", "q-040"],
+      "analyse-cultural-heritage": ["q-012", "q-027", "q-028", "q-029", "q-040"]
+    }
+  },
+  "sourceAssetReadiness": {
+    "status": "not-uploaded",
+    "requiredBeforeVisualQuestionsAreEnabled": [
+      "page-45/settlement-map",
+      "page-47/political-structure",
+      "page-52/swayamvara-source",
+      "page-52/agni-hymn",
+      "page-49/vedic-timeline"
+    ],
+    "affectedQuestionIds": ["q-008", "q-011", "q-012", "q-021", "q-035"],
+    "note": "The current child session does not serve these interaction types. Upload private cropped assets and a base outline map before enabling them."
+  },
+  "blockingFindings": [],
+  "advisoryNotes": [
+    "Full copyrighted chapter screenshots remain local and are intentionally excluded from Git.",
+    "The map-work base map is still an interaction dependency and is not part of this content-only story.",
+    "No examination pattern was inferred because no sample paper was supplied."
+  ],
+  "decision": "accept"
+}

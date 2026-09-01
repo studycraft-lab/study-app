@@ -4,6 +4,27 @@
 
 The question bank is the stable boundary between content ingestion and the study application. The family MVP imports Codex-generated JSON; later, automated ingestion must produce the same format.
 
+The canonical structural schema is [`schemas/question-bank.schema.json`](../schemas/question-bank.schema.json). The application validator adds cross-reference and attainable-score checks that JSON Schema cannot express by itself.
+
+## Codex chapter ingestion
+
+Use the repository-local `$chapter-ingestion` skill for textbook images or PDFs. A complete ingestion produces three versioned artifacts:
+
+- a source manifest conforming to [`schemas/chapter-manifest.schema.json`](../schemas/chapter-manifest.schema.json);
+- the question-bank JSON;
+- a separate grounding and quality review record.
+
+The manifest records source filenames, page/spread bounds, dimensions and SHA-256 hashes without committing copyrighted textbook images or machine-specific absolute paths. The end-of-chapter exercises guide useful question patterns but do not define the full bank.
+
+Run the deterministic gates with:
+
+```bash
+npm run chapter:manifest -- path/to/chapter-manifest.json
+npm run chapter:sources -- path/to/chapter-manifest.json --source-dir /local/source/directory
+npm run chapter:validate -- path/to/question-bank.json
+npm run chapter:review -- path/to/question-bank.json
+```
+
 ## Versioned envelope
 
 ```json
@@ -48,6 +69,12 @@ Each source identifies the stored page and may define reusable regions such as a
 ```
 
 Coordinates are normalized from 0 to 1 so they survive image resizing.
+
+### Source image policy
+
+Do not commit full copyrighted textbook pages to Git. During the Codex MVP, keep originals locally and use `manifest://<chapter>/<page>` as the stable grounding reference. The manifest’s filename and SHA-256 hash allow the exact attachment to be re-verified.
+
+Before a visual question is enabled for a child, upload the required map, diagram, timeline, illustration or passage crop to private application storage and add its `runtimeAssetRef`. Full-page private archival is optional; child delivery should use the smallest necessary crop. Local filesystem paths must never appear in imported bank JSON.
 
 ## Common question fields
 
@@ -138,3 +165,13 @@ An import warns when:
 ## Scope and lifecycle
 
 Questions are not deleted merely because content is out of syllabus. Applicability is stored separately so a question may be active generally but excluded from one exam. Parent edits retain the question `id` and increment its integer `version`; attempts store both values and therefore continue to reference the exact version shown to the child. A newly generated bank also increments `bank.version`.
+
+## Stable import command
+
+After the bank and its review are accepted, start the application with its normal Supabase configuration and import through the existing authenticated API:
+
+```bash
+STUDYCRAFT_PARENT_PASSPHRASE='…' npm run chapter:import -- path/to/question-bank.json
+```
+
+The command validates and reviews the bank again before calling the application’s shared import route. It does not store credentials or source images in the repository.

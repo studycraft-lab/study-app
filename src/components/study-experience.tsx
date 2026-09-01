@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { QUESTIONS_PER_EXERCISE } from "@/lib/study/config";
 import { useEffect, useState } from "react";
 import { AppHeader } from "./app-header";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -177,7 +178,7 @@ export function StudyExperience() {
 
     {phase === "library" && <section className="chapter-picker">
       <p className="eyebrow">Study</p><h1>What would you like to study?</h1>
-      {chapters.length === 0 ? <div className="empty-study"><p>No chapters are ready yet.</p><Link href="/parent/library">Import a question bank</Link></div> : <div className="chapter-grid">{chapters.map((chapter) => <button key={chapter.id} onClick={() => start(chapter)} disabled={busy} aria-label={`Study ${chapter.chapterTitle}`}><span>{chapter.board} · Grade {chapter.grade}</span><strong>{chapter.subject}</strong><h2>{chapter.chapterNumber ? `${chapter.chapterNumber}. ` : ""}{chapter.chapterTitle}</h2><small>{chapter.correctEver ?? 0}/{chapter.questionCount} covered · 10-question exercise</small>{chapter.fullCoverage && <em className="coverage-badge">✓ Full coverage</em>}</button>)}</div>}
+      {chapters.length === 0 ? <div className="empty-study"><p>No chapters are ready yet.</p><Link href="/parent/library">Import a question bank</Link></div> : <div className="chapter-grid">{chapters.map((chapter) => <button key={chapter.id} onClick={() => start(chapter)} disabled={busy} aria-label={`Study ${chapter.chapterTitle}`}><span>{chapter.board} · Grade {chapter.grade}</span><strong>{chapter.subject}</strong><h2>{chapter.chapterNumber ? `${chapter.chapterNumber}. ` : ""}{chapter.chapterTitle}</h2><small>{chapter.correctEver ?? 0}/{chapter.questionCount} covered · {Math.min(QUESTIONS_PER_EXERCISE, chapter.questionCount)}-question exercise</small>{chapter.fullCoverage && <em className="coverage-badge">✓ Full coverage</em>}</button>)}</div>}
       {history && history.sessions.some((item) => item.resumable) && <div className="recent-sessions"><h2>Continue studying</h2>{history.sessions.filter((item) => item.resumable).slice(0, 3).map((item) => { const marks = sessionMarks(item); return <article key={item.id} className="recent-session-row"><span>{new Date(item.startedAt).toLocaleDateString()}</span><strong>{marks.earned}/{marks.possible || 0} marks</strong><small>{item.attempts.length} of {item.totalQuestions} answered · Unfinished</small><div><button onClick={() => resume(item)} disabled={busy}>Resume session</button></div></article>; })}</div>}
       {error && <p className="notice notice-error">{error}</p>}
     </section>}

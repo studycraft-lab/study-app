@@ -12,6 +12,14 @@ describe("selectQuestionIds", () => {
     expect(selected.filter((id) => id.startsWith("o"))).toHaveLength(7);
   });
 
+  it("fills all ten places when one question category is undersupplied", () => {
+    const ids = Array.from({ length: 9 }, (_, index) => `o${index + 1}`).concat("s1");
+    const types = Object.fromEntries(ids.map((id) => [id, id.startsWith("s") ? "multi_point" : "fill_blank"]));
+    const selected = selectQuestionIds(ids, [], 10, () => 0, types);
+    expect(selected).toHaveLength(10);
+    expect(new Set(selected).size).toBe(10);
+  });
+
   it("mixes at most two weak questions with unseen questions when available", () => {
     const selected = selectQuestionIds(
       ["w1", "w2", "w3", "n1", "n2", "n3", "r1", "r2"],

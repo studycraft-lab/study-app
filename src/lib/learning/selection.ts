@@ -46,8 +46,8 @@ export function selectQuestionIds(
   const subjectiveIds = candidateIds.filter((id) => subjective.has(questionTypes[id]));
   const objectiveIds = candidateIds.filter((id) => !subjective.has(questionTypes[id]));
   const chosen = [
-    ...selectFromPool(objectiveIds, history, Math.min(7, objectiveIds.length), random),
-    ...selectFromPool(subjectiveIds, history, Math.min(3, subjectiveIds.length), random),
+    ...selectFromPool(objectiveIds, history, Math.min(OBJECTIVE_QUESTIONS_PER_EXERCISE, objectiveIds.length), random),
+    ...selectFromPool(subjectiveIds, history, Math.min(SUBJECTIVE_QUESTIONS_PER_EXERCISE, subjectiveIds.length), random),
   ];
   if (chosen.length < limit) {
     const remaining = candidateIds.filter((id) => !chosen.includes(id));
@@ -55,3 +55,4 @@ export function selectQuestionIds(
   }
   return chosen.slice(0, limit);
 }
+import { OBJECTIVE_QUESTIONS_PER_EXERCISE, SUBJECTIVE_QUESTIONS_PER_EXERCISE } from "@/lib/study/config";

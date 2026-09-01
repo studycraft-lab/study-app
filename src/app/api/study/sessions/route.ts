@@ -2,6 +2,7 @@ import { childFromRequest } from "@/lib/family/request";
 import { completeStudySession, createStudySession, resumableStudySession } from "@/lib/learning/store";
 import { getQuestionBankForChild } from "@/lib/question-bank/store";
 import { prepareReviewSession, selectableQuestionIds } from "@/lib/study/session";
+import { QUESTIONS_PER_EXERCISE } from "@/lib/study/config";
 
 export async function GET(request: Request) {
   try {
@@ -22,7 +23,7 @@ export async function POST(request: Request) {
     const child = await childFromRequest(request);
     if (!child) return Response.json({ error: "Choose your profile to continue." }, { status: 401 });
     const body = await request.json();
-    if (typeof body?.bankId !== "string" || typeof body?.presentationSeed !== "string" || body.presentationSeed.length < 1 || body.presentationSeed.length > 100 || !Array.isArray(body?.questionIds) || body.questionIds.length < 1 || body.questionIds.length > 5 || body.questionIds.some((id: unknown) => typeof id !== "string")) return Response.json({ error: "Session request is incomplete." }, { status: 400 });
+    if (typeof body?.bankId !== "string" || typeof body?.presentationSeed !== "string" || body.presentationSeed.length < 1 || body.presentationSeed.length > 100 || !Array.isArray(body?.questionIds) || body.questionIds.length < 1 || body.questionIds.length > QUESTIONS_PER_EXERCISE || body.questionIds.some((id: unknown) => typeof id !== "string")) return Response.json({ error: "Session request is incomplete." }, { status: 400 });
     const bank = await getQuestionBankForChild(body.bankId, { familyId: child.familyId, board: child.board, grade: child.grade });
     const available = new Set(selectableQuestionIds(bank));
     const questionIds = [...new Set(body.questionIds as string[])];

@@ -2,6 +2,7 @@ import { childFromRequest } from "@/lib/family/request";
 import { getQuestionBankForChild } from "@/lib/question-bank/store";
 import { questionSelectionHistory } from "@/lib/learning/store";
 import { selectQuestionIds } from "@/lib/learning/selection";
+import { QUESTIONS_PER_EXERCISE } from "@/lib/study/config";
 import { prepareReviewSession, selectableQuestionIds } from "@/lib/study/session";
 
 export async function GET(request: Request) {
@@ -15,7 +16,7 @@ export async function GET(request: Request) {
     const questionTypes = Object.fromEntries((Array.isArray(bank.questions) ? bank.questions : [])
       .filter((question: unknown) => question && typeof question === "object" && "id" in question && "type" in question)
       .map((question: { id: unknown; type: unknown }) => [String(question.id), String(question.type)]));
-    const selectedIds = selectQuestionIds(candidateIds, await questionSelectionHistory(child.id, bankId), 10, Math.random, questionTypes);
+    const selectedIds = selectQuestionIds(candidateIds, await questionSelectionHistory(child.id, bankId), QUESTIONS_PER_EXERCISE, Math.random, questionTypes);
     const presentationSeed = crypto.randomUUID();
     return Response.json({ questions: prepareReviewSession(bank, selectedIds, presentationSeed), presentationSeed });
   } catch (error) {

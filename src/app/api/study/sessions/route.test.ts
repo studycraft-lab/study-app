@@ -22,6 +22,36 @@ describe("study sessions", () => {
     expect(mocks.createStudySession).toHaveBeenCalledWith(expect.objectContaining({ questionIds: ["q1"], presentationSeed: "seed" }));
   });
 
+  it("accepts the ten-question exercise produced by the study selector", async () => {
+    const questionIds = Array.from({ length: 10 }, (_, index) => `q${index + 1}`);
+    mocks.childFromRequest.mockResolvedValue({ id: "child", familyId: "family", board: "ICSE", grade: 6 });
+    mocks.getQuestionBankForChild.mockResolvedValue({
+      bank: { version: 1 },
+      questions: questionIds.map((id) => ({ id, type: "fill_blank", status: "active", prompt: id, marks: 1, response: {} })),
+    });
+    mocks.createStudySession.mockResolvedValue("session");
+
+    const response = await POST(new Request("http://localhost/api/study/sessions", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ bankId: "bank", questionIds, presentationSeed: "seed" }),
+    }));
+
+    expect(response.status).toBe(201);
+    expect(mocks.createStudySession).toHaveBeenCalledWith(expect.objectContaining({ questionIds }));
+  });
+
+  it("rejects a session larger than the supported exercise size", async () => {
+    mocks.childFromRequest.mockResolvedValue({ id: "child", familyId: "family", board: "ICSE", grade: 6 });
+    const response = await POST(new Request("http://localhost/api/study/sessions", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ bankId: "bank", questionIds: Array.from({ length: 11 }, (_, index) => `q${index}`), presentationSeed: "seed" }),
+    }));
+    expect(response.status).toBe(400);
+    expect(mocks.createStudySession).not.toHaveBeenCalled();
+  });
+
   it("returns stored questions and attempts for resume", async () => {
     mocks.childFromRequest.mockResolvedValue({ id: "child", familyId: "family", board: "ICSE", grade: 6 });
     mocks.resumableStudySession.mockResolvedValue({ bankId: "bank", questionIds: ["q1"], presentationSeed: "seed", attempts: [{ question_id: "q1" }] });

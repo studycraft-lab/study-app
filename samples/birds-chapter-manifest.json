@@ -1,0 +1,168 @@
+{
+  "manifestVersion": "0.1.0",
+  "chapter": {
+    "id": "birds",
+    "board": "School Curriculum",
+    "grade": 3,
+    "subject": "Science",
+    "bookTitle": "Science",
+    "chapterNumber": 3,
+    "title": "Birds"
+  },
+  "sourcePolicy": {
+    "originals": "local-only",
+    "repositoryCopies": false,
+    "applicationStorage": "not-uploaded",
+    "runtimeStrategy": "none",
+    "notes": "Keep the copyrighted source PDF outside Git. This bank does not require source images at runtime; textbook picture-study concepts were rewritten as self-contained text questions."
+  },
+  "assets": [
+    {
+      "id": "source-01",
+      "fileName": "Birds.pdf",
+      "sha256": "a8f684b8fbbd41e43bf6ccd311b0414ba60110d62fca9d8361952d37f62386f8",
+      "width": 2428,
+      "height": 3239,
+      "pages": [
+        {
+          "id": "page-33",
+          "pageNumber": 33,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-34",
+          "pageNumber": 34,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-35",
+          "pageNumber": 35,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-36",
+          "pageNumber": 36,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-37",
+          "pageNumber": 37,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-38",
+          "pageNumber": 38,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-39",
+          "pageNumber": 39,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-40",
+          "pageNumber": 40,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-41",
+          "pageNumber": 41,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-42",
+          "pageNumber": 42,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-43",
+          "pageNumber": 43,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-44",
+          "pageNumber": 44,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-45",
+          "pageNumber": 45,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        }
+      ]
+    }
+  ],
+  "learningOutcomes": [
+    "recognise and name common birds seen in their surroundings.",
+    "identify different types of feathers, beaks, feet and claws.",
+    "discuss how birds fly and describe the food habits of some common birds.",
+    "identify the nests of some interesting birds and draw them.",
+    "make a bird bath using locally available material.",
+    "develop care, compassion and empathy towards animals and birds."
+  ]
+}

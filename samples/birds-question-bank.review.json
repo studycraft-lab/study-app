@@ -1,0 +1,244 @@
+{
+  "reviewVersion": "0.1.0",
+  "bankId": "birds-v1",
+  "bankVersion": 1,
+  "reviewedAt": "2026-09-01T22:00:00+05:30",
+  "reviewerMethod": "Codex page-by-page visual review using the repository-local chapter-ingestion and PDF skills, followed by deterministic schema, source-hash, reference and rubric checks",
+  "inputs": {
+    "manifest": "samples/birds-chapter-manifest.json",
+    "bank": "samples/birds-question-bank.json",
+    "sourceAssetCount": 1,
+    "pageRange": "33–45"
+  },
+  "gates": {
+    "manifestSchema": "pass",
+    "sourceHashes": "pass",
+    "questionBankSchema": "pass",
+    "deterministicGroundingReview": "pass",
+    "manualGroundingReview": "pass",
+    "rubricBalanceReview": "pass",
+    "conciseFalseCorrectionReview": "pass"
+  },
+  "coverage": {
+    "questionCount": 82,
+    "topics": {
+      "feet-and-claws": 19,
+      "feathers": 7,
+      "beaks-and-food": 13,
+      "nests-and-eggs": 17,
+      "common-birds-body": 10,
+      "care-and-bird-baths": 3,
+      "flight": 9,
+      "sounds-habitats-migration": 4,
+      "chapter-vocabulary": 1
+    },
+    "types": {
+      "single_choice": 14,
+      "multiple_select": 6,
+      "multi_point": 15,
+      "brief_answer": 9,
+      "matching": 10,
+      "true_false_correct": 9,
+      "one_word": 10,
+      "fill_blank": 5,
+      "compare": 4
+    },
+    "difficulties": {
+      "1": 61,
+      "2": 19,
+      "3": 2
+    },
+    "pages": {
+      "page-40": 3,
+      "page-37": 17,
+      "page-41": 13,
+      "page-34": 15,
+      "page-35": 10,
+      "page-36": 15,
+      "page-38": 19,
+      "page-39": 12,
+      "page-42": 14,
+      "page-43": 1,
+      "page-45": 1,
+      "page-44": 6
+    },
+    "bookExercises": {
+      "A-choose-the-correct-answer": [
+        "q-001",
+        "q-002",
+        "q-003",
+        "q-004",
+        "q-005",
+        "q-006",
+        "q-007"
+      ],
+      "B-give-examples": [
+        "q-008",
+        "q-009",
+        "q-010"
+      ],
+      "C-answer-the-following": [
+        "q-011",
+        "q-012",
+        "q-013",
+        "q-014",
+        "q-015"
+      ],
+      "D-complete-the-table": [
+        "q-016"
+      ],
+      "E-give-reasons": [
+        "q-017",
+        "q-018",
+        "q-019"
+      ],
+      "F-rewrite-false-statements": [
+        "q-020",
+        "q-021",
+        "q-022",
+        "q-023",
+        "q-024"
+      ],
+      "G-identify": [
+        "q-025",
+        "q-026",
+        "q-027",
+        "q-028",
+        "q-029"
+      ],
+      "H-match-nests": [
+        "q-030"
+      ],
+      "I-word-search-and-jumbles": [
+        "q-031"
+      ],
+      "J-case-study": [
+        "q-032",
+        "q-033",
+        "q-034",
+        "q-035"
+      ],
+      "K-assertion-reason": [
+        "q-036",
+        "q-037"
+      ]
+    },
+    "excludedByScope": [
+      {
+        "source": "page-45",
+        "item": "Art integration: label a bird and make a nest model",
+        "reason": "Hands-on art activities are not importable question-bank items."
+      },
+      {
+        "source": "page-39",
+        "item": "Make a bird bath activity",
+        "reason": "The physical activity is excluded, while its purpose and care concepts are assessed in text questions."
+      },
+      {
+        "source": "page-45",
+        "item": "Open-ended group life-skills activity",
+        "reason": "The unsupported causes-of-decline research prompt is excluded; chapter-grounded bird-care actions remain assessed."
+      }
+    ]
+  },
+  "atomicCoverageInventory": {
+    "bird-basics": [
+      "common birds",
+      "flightless birds",
+      "eyes",
+      "wings",
+      "beak",
+      "legs",
+      "tail",
+      "feather covering"
+    ],
+    "feathers": [
+      "body feathers",
+      "down feathers",
+      "flight feathers",
+      "flight",
+      "insulation",
+      "waterproofing"
+    ],
+    "beaks": [
+      "seed-crushing",
+      "water-filtering",
+      "flesh-tearing",
+      "nectar-sucking",
+      "nut-cracking",
+      "wood-chiselling",
+      "fish-catching"
+    ],
+    "feet-and-claws": [
+      "perching",
+      "flesh-eating talons",
+      "scratching",
+      "climbing",
+      "wading",
+      "swimming",
+      "parrot toe use"
+    ],
+    "flight": [
+      "boat-shaped body",
+      "tail steering",
+      "hollow bones",
+      "flight muscles",
+      "upstroke",
+      "downstroke"
+    ],
+    "food-and-nests": [
+      "grain",
+      "dead flesh",
+      "fish",
+      "nectar",
+      "nest purposes",
+      "nest locations",
+      "sparrow",
+      "tailor bird",
+      "woodpecker",
+      "weaver bird",
+      "eagle",
+      "cuckoo"
+    ],
+    "eggs-care-migration": [
+      "egg laying",
+      "warming",
+      "hatching",
+      "ostrich egg",
+      "bird bath",
+      "care actions",
+      "bird sounds",
+      "mimicry",
+      "migration reasons",
+      "Arctic tern",
+      "Siberian crane"
+    ]
+  },
+  "conciseCorrectionReview": {
+    "status": "pass",
+    "questionIds": [
+      "q-020",
+      "q-021",
+      "q-022",
+      "q-023",
+      "q-024",
+      "q-043",
+      "q-073",
+      "q-074"
+    ],
+    "method": "Every false statement stores the shortest source-grounded sufficient replacement in answer.correction; extra context is kept in explanation rather than required for full credit."
+  },
+  "sourceAssetReadiness": {
+    "status": "not-required",
+    "affectedQuestionIds": [],
+    "note": "All active questions are self-contained text. The source PDF stays local and is not needed during a child study session."
+  },
+  "blockingFindings": [],
+  "advisoryNotes": [
+    "Board and book title were not visible in the supplied chapter pages; neutral metadata 'School Curriculum' and 'Science' was used and can be changed in the import preview.",
+    "The copyrighted source PDF remains local and is intentionally excluded from Git.",
+    "All assessable printed exercises were included or converted into self-contained text equivalents; physical art and construction activities were excluded.",
+    "No examination pattern was inferred because no sample paper was supplied."
+  ],
+  "decision": "accept"
+}

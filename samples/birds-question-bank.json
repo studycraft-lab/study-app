@@ -1,0 +1,5646 @@
+{
+  "schemaVersion": "0.1.0",
+  "bank": {
+    "id": "birds-v1",
+    "version": 1,
+    "title": "Birds",
+    "board": "School Curriculum",
+    "subject": "Science",
+    "grade": 3,
+    "bookTitle": "Science",
+    "chapterNumber": 3,
+    "status": "reviewed"
+  },
+  "sources": [
+    {
+      "id": "page-33",
+      "pageNumber": 33,
+      "assetRef": "manifest://birds/page-33",
+      "extractionConfidence": 0.99,
+      "reviewRequired": false,
+      "regions": [
+        {
+          "id": "learning-outcomes",
+          "kind": "passage",
+          "bounds": {
+            "x": 0.07,
+            "y": 0.16,
+            "width": 0.86,
+            "height": 0.25
+          }
+        }
+      ]
+    },
+    {
+      "id": "page-34",
+      "pageNumber": 34,
+      "assetRef": "manifest://birds/page-34",
+      "extractionConfidence": 0.99,
+      "reviewRequired": false,
+      "regions": [
+        {
+          "id": "body-and-feathers",
+          "kind": "diagram",
+          "bounds": {
+            "x": 0.04,
+            "y": 0.08,
+            "width": 0.92,
+            "height": 0.84
+          }
+        }
+      ]
+    },
+    {
+      "id": "page-35",
+      "pageNumber": 35,
+      "assetRef": "manifest://birds/page-35",
+      "extractionConfidence": 0.99,
+      "reviewRequired": false,
+      "regions": [
+        {
+          "id": "beak-types",
+          "kind": "diagram",
+          "bounds": {
+            "x": 0.04,
+            "y": 0.04,
+            "width": 0.92,
+            "height": 0.91
+          }
+        }
+      ]
+    },
+    {
+      "id": "page-36",
+      "pageNumber": 36,
+      "assetRef": "manifest://birds/page-36",
+      "extractionConfidence": 0.99,
+      "reviewRequired": false,
+      "regions": [
+        {
+          "id": "feet-and-claws",
+          "kind": "diagram",
+          "bounds": {
+            "x": 0.04,
+            "y": 0.04,
+            "width": 0.92,
+            "height": 0.91
+          }
+        }
+      ]
+    },
+    {
+      "id": "page-37",
+      "pageNumber": 37,
+      "assetRef": "manifest://birds/page-37",
+      "extractionConfidence": 0.99,
+      "reviewRequired": false,
+      "regions": [
+        {
+          "id": "flight-and-feet",
+          "kind": "diagram",
+          "bounds": {
+            "x": 0.04,
+            "y": 0.04,
+            "width": 0.92,
+            "height": 0.91
+          }
+        }
+      ]
+    },
+    {
+      "id": "page-38",
+      "pageNumber": 38,
+      "assetRef": "manifest://birds/page-38",
+      "extractionConfidence": 0.99,
+      "reviewRequired": false,
+      "regions": [
+        {
+          "id": "food-and-nests",
+          "kind": "diagram",
+          "bounds": {
+            "x": 0.04,
+            "y": 0.04,
+            "width": 0.92,
+            "height": 0.91
+          }
+        }
+      ]
+    },
+    {
+      "id": "page-39",
+      "pageNumber": 39,
+      "assetRef": "manifest://birds/page-39",
+      "extractionConfidence": 0.99,
+      "reviewRequired": false,
+      "regions": [
+        {
+          "id": "care-eggs-migration",
+          "kind": "passage",
+          "bounds": {
+            "x": 0.04,
+            "y": 0.04,
+            "width": 0.92,
+            "height": 0.91
+          }
+        }
+      ]
+    },
+    {
+      "id": "page-40",
+      "pageNumber": 40,
+      "assetRef": "manifest://birds/page-40",
+      "extractionConfidence": 0.99,
+      "reviewRequired": false,
+      "regions": [
+        {
+          "id": "keywords",
+          "kind": "passage",
+          "bounds": {
+            "x": 0.04,
+            "y": 0.05,
+            "width": 0.92,
+            "height": 0.42
+          }
+        },
+        {
+          "id": "exercises",
+          "kind": "exercise",
+          "bounds": {
+            "x": 0.04,
+            "y": 0.48,
+            "width": 0.92,
+            "height": 0.47
+          }
+        }
+      ]
+    },
+    {
+      "id": "page-41",
+      "pageNumber": 41,
+      "assetRef": "manifest://birds/page-41",
+      "extractionConfidence": 0.99,
+      "reviewRequired": false,
+      "regions": [
+        {
+          "id": "exercises",
+          "kind": "exercise",
+          "bounds": {
+            "x": 0.04,
+            "y": 0.04,
+            "width": 0.92,
+            "height": 0.91
+          }
+        }
+      ]
+    },
+    {
+      "id": "page-42",
+      "pageNumber": 42,
+      "assetRef": "manifest://birds/page-42",
+      "extractionConfidence": 0.99,
+      "reviewRequired": false,
+      "regions": [
+        {
+          "id": "exercises",
+          "kind": "exercise",
+          "bounds": {
+            "x": 0.04,
+            "y": 0.04,
+            "width": 0.92,
+            "height": 0.91
+          }
+        }
+      ]
+    },
+    {
+      "id": "page-43",
+      "pageNumber": 43,
+      "assetRef": "manifest://birds/page-43",
+      "extractionConfidence": 0.99,
+      "reviewRequired": false,
+      "regions": [
+        {
+          "id": "exercises",
+          "kind": "exercise",
+          "bounds": {
+            "x": 0.04,
+            "y": 0.04,
+            "width": 0.92,
+            "height": 0.91
+          }
+        }
+      ]
+    },
+    {
+      "id": "page-44",
+      "pageNumber": 44,
+      "assetRef": "manifest://birds/page-44",
+      "extractionConfidence": 0.99,
+      "reviewRequired": false,
+      "regions": [
+        {
+          "id": "source-exercises",
+          "kind": "exercise",
+          "bounds": {
+            "x": 0.04,
+            "y": 0.04,
+            "width": 0.92,
+            "height": 0.91
+          }
+        }
+      ]
+    },
+    {
+      "id": "page-45",
+      "pageNumber": 45,
+      "assetRef": "manifest://birds/page-45",
+      "extractionConfidence": 0.99,
+      "reviewRequired": false,
+      "regions": [
+        {
+          "id": "revision-and-activities",
+          "kind": "exercise",
+          "bounds": {
+            "x": 0.04,
+            "y": 0.04,
+            "width": 0.92,
+            "height": 0.91
+          }
+        }
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "id": "common-birds-body",
+      "title": "Common birds and body parts",
+      "learningOutcomeIds": [
+        "recognise-common-birds"
+      ]
+    },
+    {
+      "id": "feathers",
+      "title": "Types and functions of feathers",
+      "learningOutcomeIds": [
+        "identify-feathers-beaks-feet"
+      ]
+    },
+    {
+      "id": "beaks-and-food",
+      "title": "Beaks and food habits",
+      "learningOutcomeIds": [
+        "identify-feathers-beaks-feet",
+        "discuss-flight-and-food"
+      ]
+    },
+    {
+      "id": "feet-and-claws",
+      "title": "Feet and claws",
+      "learningOutcomeIds": [
+        "identify-feathers-beaks-feet"
+      ]
+    },
+    {
+      "id": "flight",
+      "title": "How birds fly",
+      "learningOutcomeIds": [
+        "discuss-flight-and-food"
+      ]
+    },
+    {
+      "id": "nests-and-eggs",
+      "title": "Nests and eggs",
+      "learningOutcomeIds": [
+        "identify-nests"
+      ]
+    },
+    {
+      "id": "care-and-bird-baths",
+      "title": "Care for birds and bird baths",
+      "learningOutcomeIds": [
+        "make-bird-bath",
+        "develop-care"
+      ]
+    },
+    {
+      "id": "sounds-habitats-migration",
+      "title": "Sounds, habitats and migration",
+      "learningOutcomeIds": [
+        "recognise-common-birds",
+        "develop-care"
+      ]
+    },
+    {
+      "id": "chapter-vocabulary",
+      "title": "Chapter vocabulary and integrated revision",
+      "learningOutcomeIds": [
+        "recognise-common-birds",
+        "identify-feathers-beaks-feet",
+        "discuss-flight-and-food",
+        "identify-nests"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-001",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "topicIds": [
+        "feet-and-claws"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Which type of feet do swans have?",
+      "sourceRefs": [
+        {
+          "pageId": "page-40",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-37",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "talons",
+            "text": "Talons"
+          },
+          {
+            "id": "webbed",
+            "text": "Webbed feet"
+          },
+          {
+            "id": "climbing",
+            "text": "Climbing feet"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "webbed"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Choose the option that matches the chapter.",
+      "explanation": "Swans have webbed feet that help them swim.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-002",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "topicIds": [
+        "feet-and-claws"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Which bird can walk through mud in shallow water using long legs and spread-out toes?",
+      "sourceRefs": [
+        {
+          "pageId": "page-40",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-37",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "crane",
+            "text": "Crane"
+          },
+          {
+            "id": "parrot",
+            "text": "Parrot"
+          },
+          {
+            "id": "sparrow",
+            "text": "Sparrow"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "crane"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Choose the option that matches the chapter.",
+      "explanation": "A crane is a wading bird with long legs and spread-out toes.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-003",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "topicIds": [
+        "feathers"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Which feathers keep a bird warm?",
+      "sourceRefs": [
+        {
+          "pageId": "page-41",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-34",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "flight",
+            "text": "Flight feathers"
+          },
+          {
+            "id": "down",
+            "text": "Down feathers"
+          },
+          {
+            "id": "tail",
+            "text": "Tail feathers"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "down"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Choose the option that matches the chapter.",
+      "explanation": "Small, soft and fluffy down feathers keep a bird warm.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-004",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "topicIds": [
+        "beaks-and-food"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Which description best matches a pigeon's beak?",
+      "sourceRefs": [
+        {
+          "pageId": "page-41",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-35",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "short-strong",
+            "text": "Short and strong"
+          },
+          {
+            "id": "long-pointed",
+            "text": "Long and pointed"
+          },
+          {
+            "id": "sharp-hooked",
+            "text": "Sharp and hooked"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "short-strong"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Choose the option that matches the chapter.",
+      "explanation": "Pigeons use short, strong beaks to crush seeds and grains.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-005",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "topicIds": [
+        "feet-and-claws"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Which claws are found in flesh-eating birds such as eagles and vultures?",
+      "sourceRefs": [
+        {
+          "pageId": "page-41",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-36",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "talons",
+            "text": "Sharp, curved talons"
+          },
+          {
+            "id": "webs",
+            "text": "Webbed toes"
+          },
+          {
+            "id": "flat",
+            "text": "Flat claws"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "talons"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Choose the option that matches the chapter.",
+      "explanation": "Flesh-eating birds have sharp, curved claws called talons.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-006",
+      "version": 1,
+      "type": "multiple_select",
+      "status": "active",
+      "topicIds": [
+        "nests-and-eggs"
+      ],
+      "difficulty": 2,
+      "marks": 2,
+      "prompt": "Which statements about nest building are correct?",
+      "sourceRefs": [
+        {
+          "pageId": "page-41",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-38",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "tailor",
+            "text": "A tailor bird sews leaves together."
+          },
+          {
+            "id": "eagle",
+            "text": "An eagle gathers sticks for a shallow cup-like nest."
+          },
+          {
+            "id": "cuckoo",
+            "text": "A cuckoo always builds its own nest."
+          },
+          {
+            "id": "weaver-top",
+            "text": "A weaver bird's nest opens at the top."
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionIds": [
+          "tailor",
+          "eagle"
+        ]
+      },
+      "rubric": {
+        "partialCredit": false
+      },
+      "hint": "Select every correct option and no incorrect option.",
+      "explanation": "Tailor birds sew leaves, while eagles gather sticks. Cuckoos do not make nests, and a weaver bird's nest opens at the lower end.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-007",
+      "version": 1,
+      "type": "multiple_select",
+      "status": "active",
+      "topicIds": [
+        "nests-and-eggs"
+      ],
+      "difficulty": 2,
+      "marks": 3,
+      "prompt": "Why do birds build nests?",
+      "sourceRefs": [
+        {
+          "pageId": "page-41",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-38",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "lay",
+            "text": "To lay eggs"
+          },
+          {
+            "id": "protect",
+            "text": "To protect eggs from heat, cold and rain"
+          },
+          {
+            "id": "nourish",
+            "text": "To nourish young birds until they can fly independently"
+          },
+          {
+            "id": "daily-sleep",
+            "text": "Because every bird must sleep in a nest every night"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionIds": [
+          "lay",
+          "protect",
+          "nourish"
+        ]
+      },
+      "rubric": {
+        "partialCredit": false
+      },
+      "hint": "Select every correct option and no incorrect option.",
+      "explanation": "The chapter gives three main purposes: laying eggs, protecting eggs and nourishing the young.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-008",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "topicIds": [
+        "common-birds-body"
+      ],
+      "difficulty": 1,
+      "marks": 2,
+      "prompt": "Give two examples of birds that cannot fly.",
+      "sourceRefs": [
+        {
+          "pageId": "page-41",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-34",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedPoints": 2
+      },
+      "answer": {
+        "ideal": "Any two of penguin, ostrich and emu."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "names one correct flightless bird",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "names a second correct flightless bird",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "grammarAffectsScore": false,
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Organize the answer into separate factual points.",
+      "explanation": "The chapter names penguin, ostrich and emu as flightless birds.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-009",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "topicIds": [
+        "feathers"
+      ],
+      "difficulty": 1,
+      "marks": 2,
+      "prompt": "Give two types of feathers found on a bird's body.",
+      "sourceRefs": [
+        {
+          "pageId": "page-41",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-34",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedPoints": 2
+      },
+      "answer": {
+        "ideal": "Any two of body feathers, down feathers and flight feathers."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "names one feather type",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "names a second feather type",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "grammarAffectsScore": false,
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Organize the answer into separate factual points.",
+      "explanation": "The three types taught are body, down and flight feathers.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-010",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "topicIds": [
+        "beaks-and-food"
+      ],
+      "difficulty": 1,
+      "marks": 2,
+      "prompt": "Give two examples of grain-eating birds.",
+      "sourceRefs": [
+        {
+          "pageId": "page-41",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-38",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedPoints": 2
+      },
+      "answer": {
+        "ideal": "Sparrows and finches."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "sparrows",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "finches",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "grammarAffectsScore": false,
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Organize the answer into separate factual points.",
+      "explanation": "Sparrows and finches feed on grains.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-011",
+      "version": 1,
+      "type": "brief_answer",
+      "status": "active",
+      "topicIds": [
+        "nests-and-eggs"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Where do birds lay their eggs?",
+      "sourceRefs": [
+        {
+          "pageId": "page-41",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-38",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedSentences": 1
+      },
+      "answer": {
+        "ideal": "Birds lay their eggs in nests."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "in nests",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "grammarAffectsScore": false,
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Answer directly in one or two clear sentences.",
+      "explanation": "A nest shelters the eggs and young birds.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-012",
+      "version": 1,
+      "type": "brief_answer",
+      "status": "active",
+      "topicIds": [
+        "nests-and-eggs"
+      ],
+      "difficulty": 1,
+      "marks": 2,
+      "prompt": "How does a tailor bird make its nest?",
+      "sourceRefs": [
+        {
+          "pageId": "page-41",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-38",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedSentences": 2
+      },
+      "answer": {
+        "ideal": "It sews leaves together with its beak and uses soft materials such as cotton, grass, silk, wool or threads inside."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "sews leaves together with its beak",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "uses soft nesting materials",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "grammarAffectsScore": false,
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Answer directly in one or two clear sentences.",
+      "explanation": "The tailor bird stitches leaves and adds soft materials.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-013",
+      "version": 1,
+      "type": "brief_answer",
+      "status": "active",
+      "topicIds": [
+        "care-and-bird-baths"
+      ],
+      "difficulty": 1,
+      "marks": 2,
+      "prompt": "What is a bird bath?",
+      "sourceRefs": [
+        {
+          "pageId": "page-41",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-39",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedSentences": 2
+      },
+      "answer": {
+        "ideal": "A bird bath is an artificial puddle or shallow container of water kept in a garden or open area for birds."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "shallow container or artificial puddle",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "contains water for birds",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "grammarAffectsScore": false,
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Answer directly in one or two clear sentences.",
+      "explanation": "Bird baths provide accessible water in open areas.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-014",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "topicIds": [
+        "flight"
+      ],
+      "difficulty": 1,
+      "marks": 2,
+      "prompt": "Name two body features that help a bird fly.",
+      "sourceRefs": [
+        {
+          "pageId": "page-41",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-37",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedPoints": 2
+      },
+      "answer": {
+        "ideal": "Any two of wings, a boat-shaped body, a tail, hollow bones and strong flight muscles."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "names one correct flight feature",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "names a second correct flight feature",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "grammarAffectsScore": false,
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Organize the answer into separate factual points.",
+      "explanation": "Several body features work together in flight.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-015",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "topicIds": [
+        "common-birds-body"
+      ],
+      "difficulty": 1,
+      "marks": 2,
+      "prompt": "Name any two birds commonly seen around us.",
+      "sourceRefs": [
+        {
+          "pageId": "page-41",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-34",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedPoints": 2
+      },
+      "answer": {
+        "ideal": "Any two of crows, sparrows, pigeons, parrots and hens."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "names one common bird",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "names a second common bird",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "grammarAffectsScore": false,
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Organize the answer into separate factual points.",
+      "explanation": "The chapter lists crows, sparrows, pigeons, parrots and hens as common birds.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-016",
+      "version": 1,
+      "type": "matching",
+      "status": "active",
+      "topicIds": [
+        "feet-and-claws"
+      ],
+      "difficulty": 1,
+      "marks": 5,
+      "prompt": "Match each kind of bird foot with an example.",
+      "sourceRefs": [
+        {
+          "pageId": "page-42",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-36",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "left": [
+          {
+            "id": "perching",
+            "text": "Perching"
+          },
+          {
+            "id": "wading",
+            "text": "Wading"
+          },
+          {
+            "id": "swimming",
+            "text": "Swimming"
+          },
+          {
+            "id": "flesh-eating",
+            "text": "Flesh-eating"
+          },
+          {
+            "id": "climbing",
+            "text": "Climbing"
+          }
+        ],
+        "right": [
+          {
+            "id": "woodpecker",
+            "text": "Woodpecker"
+          },
+          {
+            "id": "eagle",
+            "text": "Eagle"
+          },
+          {
+            "id": "duck",
+            "text": "Duck"
+          },
+          {
+            "id": "crane",
+            "text": "Crane"
+          },
+          {
+            "id": "pigeon",
+            "text": "Pigeon"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "perching",
+            "rightId": "pigeon"
+          },
+          {
+            "leftId": "wading",
+            "rightId": "crane"
+          },
+          {
+            "leftId": "swimming",
+            "rightId": "duck"
+          },
+          {
+            "leftId": "flesh-eating",
+            "rightId": "eagle"
+          },
+          {
+            "leftId": "climbing",
+            "rightId": "woodpecker"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "hint": "Match each item with its defining feature or example.",
+      "explanation": "Pigeons perch, cranes wade, ducks swim, eagles seize prey and woodpeckers climb.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-017",
+      "version": 1,
+      "type": "brief_answer",
+      "status": "active",
+      "topicIds": [
+        "beaks-and-food"
+      ],
+      "difficulty": 1,
+      "marks": 2,
+      "prompt": "Why does a hummingbird have a long, pointed beak?",
+      "sourceRefs": [
+        {
+          "pageId": "page-42",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-35",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedSentences": 2
+      },
+      "answer": {
+        "ideal": "It uses its long, pointed beak to suck nectar from flowers."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "long pointed beak reaches flowers",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "sucks nectar",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "grammarAffectsScore": false,
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Answer directly in one or two clear sentences.",
+      "explanation": "A hummingbird's beak suits its nectar diet.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-018",
+      "version": 1,
+      "type": "brief_answer",
+      "status": "active",
+      "topicIds": [
+        "feet-and-claws"
+      ],
+      "difficulty": 1,
+      "marks": 2,
+      "prompt": "Why does an eagle have sharp, curved claws?",
+      "sourceRefs": [
+        {
+          "pageId": "page-42",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-36",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedSentences": 2
+      },
+      "answer": {
+        "ideal": "Its sharp, curved talons help it catch small animals and hold prey."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "claws are talons",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "catch or hold prey",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "grammarAffectsScore": false,
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Answer directly in one or two clear sentences.",
+      "explanation": "Talons are adapted for catching prey.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-019",
+      "version": 1,
+      "type": "brief_answer",
+      "status": "active",
+      "topicIds": [
+        "flight"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Why does a bird have a boat-shaped body?",
+      "sourceRefs": [
+        {
+          "pageId": "page-42",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-37",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedSentences": 1
+      },
+      "answer": {
+        "ideal": "Its boat-shaped body helps it move quickly through the air."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "moves quickly through air",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "grammarAffectsScore": false,
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Answer directly in one or two clear sentences.",
+      "explanation": "The streamlined, boat-like shape makes movement through air easier.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-020",
+      "version": 1,
+      "type": "true_false_correct",
+      "status": "active",
+      "topicIds": [
+        "flight"
+      ],
+      "difficulty": 1,
+      "marks": 2,
+      "prompt": "The wings help a bird change direction while flying. State true or false and correct the statement if needed.",
+      "sourceRefs": [
+        {
+          "pageId": "page-42",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-37",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "requiresCorrectionWhenFalse": true
+      },
+      "answer": {
+        "value": false,
+        "correction": "The tail helps a bird change direction while flying."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "identifies the statement as false",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "gives the concise correction: The tail helps a bird change direction while flying.",
+            "weight": 1,
+            "required": true
+          }
+        ]
+      },
+      "hint": "If it is false, replace only the incorrect idea with the correct one.",
+      "explanation": "The chapter assigns steering to the tail.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-021",
+      "version": 1,
+      "type": "true_false_correct",
+      "status": "active",
+      "topicIds": [
+        "feathers"
+      ],
+      "difficulty": 1,
+      "marks": 2,
+      "prompt": "Flight feathers are present only on a bird's body. State true or false and correct the statement if needed.",
+      "sourceRefs": [
+        {
+          "pageId": "page-42",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-34",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "requiresCorrectionWhenFalse": true
+      },
+      "answer": {
+        "value": false,
+        "correction": "Flight feathers are present on the wings and tail."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "identifies the statement as false",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "gives the concise correction: Flight feathers are present on the wings and tail.",
+            "weight": 1,
+            "required": true
+          }
+        ]
+      },
+      "hint": "If it is false, replace only the incorrect idea with the correct one.",
+      "explanation": "Long flight feathers occur on the wings and tail.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-022",
+      "version": 1,
+      "type": "true_false_correct",
+      "status": "active",
+      "topicIds": [
+        "beaks-and-food"
+      ],
+      "difficulty": 1,
+      "marks": 2,
+      "prompt": "A hummingbird has a short, hooked beak for tearing flesh. State true or false and correct the statement if needed.",
+      "sourceRefs": [
+        {
+          "pageId": "page-42",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-35",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "requiresCorrectionWhenFalse": true
+      },
+      "answer": {
+        "value": false,
+        "correction": "A hummingbird has a long, pointed beak for sucking nectar."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "identifies the statement as false",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "gives the concise correction: A hummingbird has a long, pointed beak for sucking nectar.",
+            "weight": 1,
+            "required": true
+          }
+        ]
+      },
+      "hint": "If it is false, replace only the incorrect idea with the correct one.",
+      "explanation": "The concise correction replaces both the wrong beak shape and food use.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-023",
+      "version": 1,
+      "type": "true_false_correct",
+      "status": "active",
+      "topicIds": [
+        "nests-and-eggs"
+      ],
+      "difficulty": 1,
+      "marks": 2,
+      "prompt": "Birds sit on their eggs to keep them cool. State true or false and correct the statement if needed.",
+      "sourceRefs": [
+        {
+          "pageId": "page-42",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-39",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "requiresCorrectionWhenFalse": true
+      },
+      "answer": {
+        "value": false,
+        "correction": "Birds sit on their eggs to keep them warm."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "identifies the statement as false",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "gives the concise correction: Birds sit on their eggs to keep them warm.",
+            "weight": 1,
+            "required": true
+          }
+        ]
+      },
+      "hint": "If it is false, replace only the incorrect idea with the correct one.",
+      "explanation": "Warmth helps the eggs develop until they hatch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-024",
+      "version": 1,
+      "type": "true_false_correct",
+      "status": "active",
+      "topicIds": [
+        "feet-and-claws"
+      ],
+      "difficulty": 1,
+      "marks": 2,
+      "prompt": "A sparrow can pass food to its mouth using its toes. State true or false and correct the statement if needed.",
+      "sourceRefs": [
+        {
+          "pageId": "page-42",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-37",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "requiresCorrectionWhenFalse": true
+      },
+      "answer": {
+        "value": false,
+        "correction": "A parrot can pass food to its mouth using its toes."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "identifies the statement as false",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "gives the concise correction: A parrot can pass food to its mouth using its toes.",
+            "weight": 1,
+            "required": true
+          }
+        ]
+      },
+      "hint": "If it is false, replace only the incorrect idea with the correct one.",
+      "explanation": "The parrot is named as one of the few birds able to do this.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-025",
+      "version": 1,
+      "type": "one_word",
+      "status": "active",
+      "topicIds": [
+        "nests-and-eggs"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Name the bird that weaves a hanging nest with an opening at the lower end.",
+      "sourceRefs": [
+        {
+          "pageId": "page-42",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-38",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "maxWords": 3
+      },
+      "answer": {
+        "accepted": [
+          "weaver bird",
+          "weaver"
+        ],
+        "caseSensitive": false
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "hint": "Give the precise name or term.",
+      "explanation": "The weaver bird makes a hanging woven nest.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-026",
+      "version": 1,
+      "type": "one_word",
+      "status": "active",
+      "topicIds": [
+        "common-birds-body"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Name the largest and fastest-running bird.",
+      "sourceRefs": [
+        {
+          "pageId": "page-42",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-38",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "maxWords": 3
+      },
+      "answer": {
+        "accepted": [
+          "ostrich"
+        ],
+        "caseSensitive": false
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "hint": "Give the precise name or term.",
+      "explanation": "The chapter identifies the ostrich as both the largest bird and the fastest runner.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-027",
+      "version": 1,
+      "type": "one_word",
+      "status": "active",
+      "topicIds": [
+        "feet-and-claws"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Name one flesh-eating bird with sharp talons.",
+      "sourceRefs": [
+        {
+          "pageId": "page-42",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-36",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "maxWords": 3
+      },
+      "answer": {
+        "accepted": [
+          "eagle",
+          "vulture",
+          "owl"
+        ],
+        "caseSensitive": false
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "hint": "Give the precise name or term.",
+      "explanation": "Eagles, vultures and owls have talons.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-028",
+      "version": 1,
+      "type": "one_word",
+      "status": "active",
+      "topicIds": [
+        "beaks-and-food"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Name one bird with a spear-shaped beak used to catch fish.",
+      "sourceRefs": [
+        {
+          "pageId": "page-42",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-35",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "maxWords": 3
+      },
+      "answer": {
+        "accepted": [
+          "kingfisher",
+          "crane"
+        ],
+        "caseSensitive": false
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "hint": "Give the precise name or term.",
+      "explanation": "Kingfishers and cranes have spear-shaped beaks.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-029",
+      "version": 1,
+      "type": "one_word",
+      "status": "active",
+      "topicIds": [
+        "nests-and-eggs"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Name one bird that makes a shallow cup-like nest of sticks high in a tree.",
+      "sourceRefs": [
+        {
+          "pageId": "page-42",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-38",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "maxWords": 3
+      },
+      "answer": {
+        "accepted": [
+          "eagle",
+          "vulture"
+        ],
+        "caseSensitive": false
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "hint": "Give the precise name or term.",
+      "explanation": "Eagles and vultures make such nests.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-030",
+      "version": 1,
+      "type": "matching",
+      "status": "active",
+      "topicIds": [
+        "nests-and-eggs"
+      ],
+      "difficulty": 1,
+      "marks": 5,
+      "prompt": "Match each bird with the way it makes or uses a nest.",
+      "sourceRefs": [
+        {
+          "pageId": "page-43",
+          "regionId": "exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-38",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "left": [
+          {
+            "id": "sparrow",
+            "text": "Sparrow"
+          },
+          {
+            "id": "tailor",
+            "text": "Tailor bird"
+          },
+          {
+            "id": "woodpecker",
+            "text": "Woodpecker"
+          },
+          {
+            "id": "weaver",
+            "text": "Weaver bird"
+          },
+          {
+            "id": "eagle",
+            "text": "Eagle"
+          }
+        ],
+        "right": [
+          {
+            "id": "shallow-sticks",
+            "text": "Builds a shallow cup of sticks high in a tree"
+          },
+          {
+            "id": "hanging",
+            "text": "Weaves a hanging nest with a lower opening"
+          },
+          {
+            "id": "tree-hole",
+            "text": "Makes a hole in a tree trunk"
+          },
+          {
+            "id": "sewn-leaves",
+            "text": "Sews leaves and lines them with soft material"
+          },
+          {
+            "id": "grass-cup",
+            "text": "Uses grass, twigs and threads in houses or trees"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "sparrow",
+            "rightId": "grass-cup"
+          },
+          {
+            "leftId": "tailor",
+            "rightId": "sewn-leaves"
+          },
+          {
+            "leftId": "woodpecker",
+            "rightId": "tree-hole"
+          },
+          {
+            "leftId": "weaver",
+            "rightId": "hanging"
+          },
+          {
+            "leftId": "eagle",
+            "rightId": "shallow-sticks"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "hint": "Match each item with its defining feature or example.",
+      "explanation": "Each bird uses a distinctive nesting method described in the chapter.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-031",
+      "version": 1,
+      "type": "matching",
+      "status": "active",
+      "topicIds": [
+        "common-birds-body"
+      ],
+      "difficulty": 1,
+      "marks": 6,
+      "prompt": "Unscramble each group of letters and match it with the correct bird name.",
+      "sourceRefs": [
+        {
+          "pageId": "page-45",
+          "regionId": "revision-and-activities",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-34",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-36",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-38",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-39",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "left": [
+          {
+            "id": "ckud",
+            "text": "CKUD"
+          },
+          {
+            "id": "wol",
+            "text": "WOL"
+          },
+          {
+            "id": "ukocco",
+            "text": "UKOCCO"
+          },
+          {
+            "id": "aleeg",
+            "text": "ALEEG"
+          },
+          {
+            "id": "rrasowp",
+            "text": "RRASOWP"
+          },
+          {
+            "id": "raropt",
+            "text": "RAROPT"
+          }
+        ],
+        "right": [
+          {
+            "id": "parrot",
+            "text": "Parrot"
+          },
+          {
+            "id": "sparrow",
+            "text": "Sparrow"
+          },
+          {
+            "id": "eagle",
+            "text": "Eagle"
+          },
+          {
+            "id": "cuckoo",
+            "text": "Cuckoo"
+          },
+          {
+            "id": "owl",
+            "text": "Owl"
+          },
+          {
+            "id": "duck",
+            "text": "Duck"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "ckud",
+            "rightId": "duck"
+          },
+          {
+            "leftId": "wol",
+            "rightId": "owl"
+          },
+          {
+            "leftId": "ukocco",
+            "rightId": "cuckoo"
+          },
+          {
+            "leftId": "aleeg",
+            "rightId": "eagle"
+          },
+          {
+            "leftId": "rrasowp",
+            "rightId": "sparrow"
+          },
+          {
+            "leftId": "raropt",
+            "rightId": "parrot"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "hint": "Match each item with its defining feature or example.",
+      "explanation": "The jumbled forms spell duck, owl, cuckoo, eagle, sparrow and parrot.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-032",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "topicIds": [
+        "feet-and-claws"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Which type of feet does a hen have for digging the ground for food?",
+      "sourceRefs": [
+        {
+          "pageId": "page-44",
+          "regionId": "source-exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-36",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "scratching",
+            "text": "Scratching feet"
+          },
+          {
+            "id": "webbed",
+            "text": "Webbed feet"
+          },
+          {
+            "id": "wading",
+            "text": "Wading feet"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "scratching"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Choose the option that matches the chapter.",
+      "explanation": "A hen uses sharp, hard claws to scratch and dig.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-033",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "topicIds": [
+        "feet-and-claws"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Which kind of bird is a woodpecker according to its feet?",
+      "sourceRefs": [
+        {
+          "pageId": "page-44",
+          "regionId": "source-exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-36",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "climbing",
+            "text": "Climbing bird"
+          },
+          {
+            "id": "swimming",
+            "text": "Swimming bird"
+          },
+          {
+            "id": "wading",
+            "text": "Wading bird"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "climbing"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Choose the option that matches the chapter.",
+      "explanation": "Two toes in front and two behind help a woodpecker climb.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-034",
+      "version": 1,
+      "type": "one_word",
+      "status": "active",
+      "topicIds": [
+        "feet-and-claws"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "What are the sharp, curved claws of an eagle called?",
+      "sourceRefs": [
+        {
+          "pageId": "page-44",
+          "regionId": "source-exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-36",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "maxWords": 3
+      },
+      "answer": {
+        "accepted": [
+          "talons"
+        ],
+        "caseSensitive": false
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "hint": "Give the precise name or term.",
+      "explanation": "Sharp, curved claws of flesh-eating birds are called talons.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-035",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "topicIds": [
+        "feet-and-claws"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "How are a pigeon's toes arranged for perching?",
+      "sourceRefs": [
+        {
+          "pageId": "page-44",
+          "regionId": "source-exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-36",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "three-one",
+            "text": "Three in front and one at the back"
+          },
+          {
+            "id": "two-two",
+            "text": "Two in front and two at the back"
+          },
+          {
+            "id": "all-front",
+            "text": "All toes in front"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "three-one"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Choose the option that matches the chapter.",
+      "explanation": "The perching arrangement helps a pigeon grip a branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-036",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "topicIds": [
+        "feet-and-claws"
+      ],
+      "difficulty": 2,
+      "marks": 1,
+      "prompt": "Assertion: A duck can swim easily. Reason: Its webbed feet push against the water. Choose the correct relationship.",
+      "sourceRefs": [
+        {
+          "pageId": "page-44",
+          "regionId": "source-exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-37",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "both-explains",
+            "text": "Both are correct, and the reason explains the assertion."
+          },
+          {
+            "id": "both-not-explain",
+            "text": "Both are correct, but the reason does not explain the assertion."
+          },
+          {
+            "id": "assertion-only",
+            "text": "Only the assertion is correct."
+          },
+          {
+            "id": "reason-only",
+            "text": "Only the reason is correct."
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "both-explains"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Choose the option that matches the chapter.",
+      "explanation": "Webbed feet are the adaptation that helps a duck swim.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-037",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "topicIds": [
+        "flight"
+      ],
+      "difficulty": 2,
+      "marks": 1,
+      "prompt": "Assertion: Birds can change direction while flying. Reason: Their tail helps them steer. Choose the correct relationship.",
+      "sourceRefs": [
+        {
+          "pageId": "page-44",
+          "regionId": "source-exercises",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-37",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "both-explains",
+            "text": "Both are correct, and the reason explains the assertion."
+          },
+          {
+            "id": "both-not-explain",
+            "text": "Both are correct, but the reason does not explain the assertion."
+          },
+          {
+            "id": "assertion-only",
+            "text": "Only the assertion is correct."
+          },
+          {
+            "id": "reason-only",
+            "text": "Only the reason is correct."
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "both-explains"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Choose the option that matches the chapter.",
+      "explanation": "A bird's tail changes its direction during flight.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-038",
+      "version": 1,
+      "type": "fill_blank",
+      "status": "active",
+      "topicIds": [
+        "common-birds-body"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "A bird's body is covered with ____.",
+      "sourceRefs": [
+        {
+          "pageId": "page-34",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "blankCount": 1
+      },
+      "answer": {
+        "accepted": [
+          "feathers"
+        ],
+        "caseSensitive": false
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "hint": "Recall the exact word or phrase used in the chapter.",
+      "explanation": "Feathers cover a bird's body.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-039",
+      "version": 1,
+      "type": "one_word",
+      "status": "active",
+      "topicIds": [
+        "feathers"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Which small, soft and fluffy feathers keep a bird warm?",
+      "sourceRefs": [
+        {
+          "pageId": "page-34",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "maxWords": 3
+      },
+      "answer": {
+        "accepted": [
+          "down feathers",
+          "down"
+        ],
+        "caseSensitive": false
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "hint": "Give the precise name or term.",
+      "explanation": "Down feathers provide warmth.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-040",
+      "version": 1,
+      "type": "fill_blank",
+      "status": "active",
+      "topicIds": [
+        "feathers"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Long feathers on the wings and tail that help a bird fly are called ____ feathers.",
+      "sourceRefs": [
+        {
+          "pageId": "page-34",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "blankCount": 1
+      },
+      "answer": {
+        "accepted": [
+          "flight"
+        ],
+        "caseSensitive": false
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "hint": "Recall the exact word or phrase used in the chapter.",
+      "explanation": "Flight feathers occur on the wings and tail.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-041",
+      "version": 1,
+      "type": "matching",
+      "status": "active",
+      "topicIds": [
+        "feathers"
+      ],
+      "difficulty": 1,
+      "marks": 3,
+      "prompt": "Match each feather type with its main description.",
+      "sourceRefs": [
+        {
+          "pageId": "page-34",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "left": [
+          {
+            "id": "body",
+            "text": "Body feathers"
+          },
+          {
+            "id": "down",
+            "text": "Down feathers"
+          },
+          {
+            "id": "flight",
+            "text": "Flight feathers"
+          }
+        ],
+        "right": [
+          {
+            "id": "fly",
+            "text": "Long feathers on the wings and tail that help in flight"
+          },
+          {
+            "id": "warm",
+            "text": "Small, soft and fluffy feathers that keep the bird warm"
+          },
+          {
+            "id": "cover",
+            "text": "Coloured feathers that cover the body"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "body",
+            "rightId": "cover"
+          },
+          {
+            "leftId": "down",
+            "rightId": "warm"
+          },
+          {
+            "leftId": "flight",
+            "rightId": "fly"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "hint": "Match each item with its defining feature or example.",
+      "explanation": "Body, down and flight feathers have different positions and functions.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-042",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "topicIds": [
+        "feathers"
+      ],
+      "difficulty": 2,
+      "marks": 3,
+      "prompt": "State three ways feathers help birds.",
+      "sourceRefs": [
+        {
+          "pageId": "page-34",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedPoints": 3
+      },
+      "answer": {
+        "ideal": "Feathers help birds fly, keep them warm by insulation and make their bodies waterproof."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "help in flight",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "provide insulation or warmth",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p3",
+            "concept": "make the body waterproof",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "grammarAffectsScore": false,
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Organize the answer into separate factual points.",
+      "explanation": "The chapter lists flight, insulation and waterproofing as three broad functions.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-043",
+      "version": 1,
+      "type": "true_false_correct",
+      "status": "active",
+      "topicIds": [
+        "beaks-and-food"
+      ],
+      "difficulty": 1,
+      "marks": 2,
+      "prompt": "Birds use teeth to chew their food. State true or false and correct the statement if needed.",
+      "sourceRefs": [
+        {
+          "pageId": "page-35",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "requiresCorrectionWhenFalse": true
+      },
+      "answer": {
+        "value": false,
+        "correction": "Birds have no teeth; they use their beaks to catch and eat food."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "identifies the statement as false",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "gives the concise correction: Birds have no teeth; they use their beaks to catch and eat food.",
+            "weight": 1,
+            "required": true
+          }
+        ]
+      },
+      "hint": "If it is false, replace only the incorrect idea with the correct one.",
+      "explanation": "Beaks, not teeth, are used to catch and eat food.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-044",
+      "version": 1,
+      "type": "matching",
+      "status": "active",
+      "topicIds": [
+        "beaks-and-food"
+      ],
+      "difficulty": 1,
+      "marks": 7,
+      "prompt": "Match each bird with its beak and feeding use.",
+      "sourceRefs": [
+        {
+          "pageId": "page-35",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "left": [
+          {
+            "id": "pigeon",
+            "text": "Pigeon"
+          },
+          {
+            "id": "duck",
+            "text": "Duck"
+          },
+          {
+            "id": "eagle",
+            "text": "Eagle"
+          },
+          {
+            "id": "hummingbird",
+            "text": "Hummingbird"
+          },
+          {
+            "id": "parrot",
+            "text": "Parrot"
+          },
+          {
+            "id": "woodpecker",
+            "text": "Woodpecker"
+          },
+          {
+            "id": "kingfisher",
+            "text": "Kingfisher"
+          }
+        ],
+        "right": [
+          {
+            "id": "fish",
+            "text": "Spear-shaped beak for catching fish"
+          },
+          {
+            "id": "chisel",
+            "text": "Strong, chisel-shaped beak for making holes and catching insects"
+          },
+          {
+            "id": "nuts",
+            "text": "Short, curved beak for cracking nuts and seeds"
+          },
+          {
+            "id": "nectar",
+            "text": "Long, pointed beak for sucking nectar"
+          },
+          {
+            "id": "tear",
+            "text": "Strong, sharp, hooked beak for tearing flesh"
+          },
+          {
+            "id": "filter",
+            "text": "Broad, flat beak with holes for filtering water"
+          },
+          {
+            "id": "seed",
+            "text": "Short, strong beak for crushing seeds and grains"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "pigeon",
+            "rightId": "seed"
+          },
+          {
+            "leftId": "duck",
+            "rightId": "filter"
+          },
+          {
+            "leftId": "eagle",
+            "rightId": "tear"
+          },
+          {
+            "leftId": "hummingbird",
+            "rightId": "nectar"
+          },
+          {
+            "leftId": "parrot",
+            "rightId": "nuts"
+          },
+          {
+            "leftId": "woodpecker",
+            "rightId": "chisel"
+          },
+          {
+            "leftId": "kingfisher",
+            "rightId": "fish"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "hint": "Match each item with its defining feature or example.",
+      "explanation": "A bird's beak is suited to the food it eats.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-045",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "topicIds": [
+        "beaks-and-food"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Which bird has a strong, pointed, chisel-shaped beak?",
+      "sourceRefs": [
+        {
+          "pageId": "page-35",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "woodpecker",
+            "text": "Woodpecker"
+          },
+          {
+            "id": "duck",
+            "text": "Duck"
+          },
+          {
+            "id": "hummingbird",
+            "text": "Hummingbird"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "woodpecker"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Choose the option that matches the chapter.",
+      "explanation": "A woodpecker uses its chisel-shaped beak to make holes and catch insects.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-046",
+      "version": 1,
+      "type": "compare",
+      "status": "active",
+      "topicIds": [
+        "beaks-and-food"
+      ],
+      "difficulty": 2,
+      "marks": 2,
+      "prompt": "Compare the beaks of a duck and an eagle by shape and use.",
+      "sourceRefs": [
+        {
+          "pageId": "page-35",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "dimensions": [
+          "shape",
+          "feeding use"
+        ]
+      },
+      "answer": {
+        "ideal": {
+          "Duck": "broad, flat beak with tiny holes that filters excess water",
+          "Eagle": "strong, sharp, hooked beak that tears flesh"
+        }
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "duck beak shape and filtering use",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "eagle beak shape and tearing use",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "grammarAffectsScore": false,
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "State both sides of the comparison clearly.",
+      "explanation": "The two beaks differ because the birds obtain different foods.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-047",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "topicIds": [
+        "beaks-and-food"
+      ],
+      "difficulty": 3,
+      "marks": 4,
+      "prompt": "Explain how the shape of a bird's beak is connected to its food. Give three examples.",
+      "sourceRefs": [
+        {
+          "pageId": "page-35",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedPoints": 4
+      },
+      "answer": {
+        "ideal": "Beaks differ according to food: seed-eaters such as pigeons crush grains with short strong beaks; eagles tear flesh with hooked beaks; hummingbirds suck nectar with long pointed beaks."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "states that beak type depends on food",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "gives a correct example with beak and use",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p3",
+            "concept": "gives a second correct example with beak and use",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p4",
+            "concept": "gives a third correct example with beak and use",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "grammarAffectsScore": false,
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Organize the answer into separate factual points.",
+      "explanation": "Each example must connect a beak shape to a feeding action.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-048",
+      "version": 1,
+      "type": "fill_blank",
+      "status": "active",
+      "topicIds": [
+        "feet-and-claws"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "The sharp, curved claws of flesh-eating birds are called ____.",
+      "sourceRefs": [
+        {
+          "pageId": "page-36",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "blankCount": 1
+      },
+      "answer": {
+        "accepted": [
+          "talons"
+        ],
+        "caseSensitive": false
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "hint": "Recall the exact word or phrase used in the chapter.",
+      "explanation": "Talons help eagles, vultures and owls catch prey.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-049",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "topicIds": [
+        "feet-and-claws"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Which toe arrangement helps a parrot climb trees?",
+      "sourceRefs": [
+        {
+          "pageId": "page-36",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "two-two",
+            "text": "Two toes in front and two at the back"
+          },
+          {
+            "id": "three-one",
+            "text": "Three toes in front and one at the back"
+          },
+          {
+            "id": "webbed",
+            "text": "Three front toes joined by a web"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "two-two"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Choose the option that matches the chapter.",
+      "explanation": "Parrots and woodpeckers have two toes in front and two behind for climbing.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-050",
+      "version": 1,
+      "type": "matching",
+      "status": "active",
+      "topicIds": [
+        "feet-and-claws"
+      ],
+      "difficulty": 1,
+      "marks": 5,
+      "prompt": "Match each foot type with its toe or claw arrangement.",
+      "sourceRefs": [
+        {
+          "pageId": "page-36",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-37",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "left": [
+          {
+            "id": "perching",
+            "text": "Perching"
+          },
+          {
+            "id": "climbing",
+            "text": "Climbing"
+          },
+          {
+            "id": "scratching",
+            "text": "Scratching"
+          },
+          {
+            "id": "wading",
+            "text": "Wading"
+          },
+          {
+            "id": "swimming",
+            "text": "Swimming"
+          }
+        ],
+        "right": [
+          {
+            "id": "webbed",
+            "text": "Three front toes joined by a web and one back toe"
+          },
+          {
+            "id": "spread",
+            "text": "Long legs with spread-out toes"
+          },
+          {
+            "id": "hard",
+            "text": "Three front toes, one back toe and sharp hard claws"
+          },
+          {
+            "id": "two-two",
+            "text": "Two toes in front and two behind"
+          },
+          {
+            "id": "three-one-grip",
+            "text": "Three toes in front and one behind to grip a branch"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "perching",
+            "rightId": "three-one-grip"
+          },
+          {
+            "leftId": "climbing",
+            "rightId": "two-two"
+          },
+          {
+            "leftId": "scratching",
+            "rightId": "hard"
+          },
+          {
+            "leftId": "wading",
+            "rightId": "spread"
+          },
+          {
+            "leftId": "swimming",
+            "rightId": "webbed"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "hint": "Match each item with its defining feature or example.",
+      "explanation": "The arrangement of toes and claws suits the bird's movement and feeding.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-051",
+      "version": 1,
+      "type": "brief_answer",
+      "status": "active",
+      "topicIds": [
+        "feet-and-claws"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "What special action can a parrot perform with its toes?",
+      "sourceRefs": [
+        {
+          "pageId": "page-37",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedSentences": 1
+      },
+      "answer": {
+        "ideal": "A parrot can pass food to its mouth using its toes."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "passes food to its mouth with its toes",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "grammarAffectsScore": false,
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Answer directly in one or two clear sentences.",
+      "explanation": "The chapter notes this unusual use of a parrot's toes.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-052",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "topicIds": [
+        "flight"
+      ],
+      "difficulty": 2,
+      "marks": 2,
+      "prompt": "Explain the upstroke and downstroke of a bird's wings.",
+      "sourceRefs": [
+        {
+          "pageId": "page-37",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedPoints": 2
+      },
+      "answer": {
+        "ideal": "In the upstroke the wings move upward and backward. In the downstroke they move downward and forward."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "upstroke is upward and backward",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "downstroke is downward and forward",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "grammarAffectsScore": false,
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Organize the answer into separate factual points.",
+      "explanation": "The two strokes describe opposite wing movements.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-053",
+      "version": 1,
+      "type": "fill_blank",
+      "status": "active",
+      "topicIds": [
+        "flight"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "A bird's ____ bones keep its body light for flight.",
+      "sourceRefs": [
+        {
+          "pageId": "page-37",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "blankCount": 1
+      },
+      "answer": {
+        "accepted": [
+          "hollow"
+        ],
+        "caseSensitive": false
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "hint": "Recall the exact word or phrase used in the chapter.",
+      "explanation": "Hollow bones reduce body weight.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-054",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "topicIds": [
+        "flight"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Which body part helps a bird change direction in the air?",
+      "sourceRefs": [
+        {
+          "pageId": "page-37",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "tail",
+            "text": "Tail"
+          },
+          {
+            "id": "beak",
+            "text": "Beak"
+          },
+          {
+            "id": "claws",
+            "text": "Claws"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "tail"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Choose the option that matches the chapter.",
+      "explanation": "The tail acts as a steering structure.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-055",
+      "version": 1,
+      "type": "multiple_select",
+      "status": "active",
+      "topicIds": [
+        "flight"
+      ],
+      "difficulty": 2,
+      "marks": 5,
+      "prompt": "Which features help a bird fly?",
+      "sourceRefs": [
+        {
+          "pageId": "page-37",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "wings",
+            "text": "Wings"
+          },
+          {
+            "id": "boat",
+            "text": "Boat-shaped body"
+          },
+          {
+            "id": "tail",
+            "text": "Tail"
+          },
+          {
+            "id": "hollow",
+            "text": "Hollow bones"
+          },
+          {
+            "id": "muscles",
+            "text": "Strong flight muscles"
+          },
+          {
+            "id": "teeth",
+            "text": "Heavy teeth"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionIds": [
+          "wings",
+          "boat",
+          "tail",
+          "hollow",
+          "muscles"
+        ]
+      },
+      "rubric": {
+        "partialCredit": false
+      },
+      "hint": "Select every correct option and no incorrect option.",
+      "explanation": "Wings, body shape, tail, hollow bones and flight muscles all contribute to flight.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-056",
+      "version": 1,
+      "type": "matching",
+      "status": "active",
+      "topicIds": [
+        "beaks-and-food"
+      ],
+      "difficulty": 1,
+      "marks": 4,
+      "prompt": "Match each bird with a food named in the chapter.",
+      "sourceRefs": [
+        {
+          "pageId": "page-38",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "left": [
+          {
+            "id": "sparrow",
+            "text": "Sparrow"
+          },
+          {
+            "id": "vulture",
+            "text": "Vulture"
+          },
+          {
+            "id": "kingfisher",
+            "text": "Kingfisher"
+          },
+          {
+            "id": "hummingbird",
+            "text": "Hummingbird"
+          }
+        ],
+        "right": [
+          {
+            "id": "nectar",
+            "text": "Nectar"
+          },
+          {
+            "id": "fish",
+            "text": "Fish"
+          },
+          {
+            "id": "dead-flesh",
+            "text": "Flesh of dead animals"
+          },
+          {
+            "id": "grains",
+            "text": "Grains"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "sparrow",
+            "rightId": "grains"
+          },
+          {
+            "leftId": "vulture",
+            "rightId": "dead-flesh"
+          },
+          {
+            "leftId": "kingfisher",
+            "rightId": "fish"
+          },
+          {
+            "leftId": "hummingbird",
+            "rightId": "nectar"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "hint": "Match each item with its defining feature or example.",
+      "explanation": "Different birds have different food habits.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-057",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "topicIds": [
+        "beaks-and-food"
+      ],
+      "difficulty": 2,
+      "marks": 4,
+      "prompt": "Describe the food habits of four birds from the chapter.",
+      "sourceRefs": [
+        {
+          "pageId": "page-38",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedPoints": 4
+      },
+      "answer": {
+        "ideal": "Sparrows or finches eat grains; vultures or eagles eat flesh of dead animals; penguins or kingfishers eat fish; hummingbirds drink nectar."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "grain-eater with food",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "flesh-eater with food",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p3",
+            "concept": "fish-eater with food",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p4",
+            "concept": "nectar-feeder with food",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "grammarAffectsScore": false,
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Organize the answer into separate factual points.",
+      "explanation": "Name the bird and its food in each point.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-058",
+      "version": 1,
+      "type": "one_word",
+      "status": "active",
+      "topicIds": [
+        "nests-and-eggs"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "What is the shelter built or used by a bird called?",
+      "sourceRefs": [
+        {
+          "pageId": "page-38",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "maxWords": 3
+      },
+      "answer": {
+        "accepted": [
+          "nest",
+          "a nest"
+        ],
+        "caseSensitive": false
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "hint": "Give the precise name or term.",
+      "explanation": "A bird's shelter is called a nest.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-059",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "topicIds": [
+        "nests-and-eggs"
+      ],
+      "difficulty": 2,
+      "marks": 3,
+      "prompt": "Explain the three main purposes of a nest.",
+      "sourceRefs": [
+        {
+          "pageId": "page-38",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedPoints": 3
+      },
+      "answer": {
+        "ideal": "A nest gives birds a place to lay eggs, protects the eggs from heat, cold and rain, and shelters and nourishes the young until they can fly independently."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "place to lay eggs",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "protects eggs from weather",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p3",
+            "concept": "nourishes or shelters young until independent",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "grammarAffectsScore": false,
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Organize the answer into separate factual points.",
+      "explanation": "A complete answer includes eggs, protection and care of young birds.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-060",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "topicIds": [
+        "nests-and-eggs"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Which bird does not build a nest and lays its eggs in a crow's nest?",
+      "sourceRefs": [
+        {
+          "pageId": "page-38",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "cuckoo",
+            "text": "Cuckoo"
+          },
+          {
+            "id": "sparrow",
+            "text": "Sparrow"
+          },
+          {
+            "id": "weaver",
+            "text": "Weaver bird"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "cuckoo"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Choose the option that matches the chapter.",
+      "explanation": "The cuckoo uses a crow's nest.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-061",
+      "version": 1,
+      "type": "one_word",
+      "status": "active",
+      "topicIds": [
+        "common-birds-body"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Name the smallest bird mentioned in the chapter.",
+      "sourceRefs": [
+        {
+          "pageId": "page-38",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "maxWords": 3
+      },
+      "answer": {
+        "accepted": [
+          "hummingbird"
+        ],
+        "caseSensitive": false
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "hint": "Give the precise name or term.",
+      "explanation": "The hummingbird is identified as the smallest bird.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-062",
+      "version": 1,
+      "type": "fill_blank",
+      "status": "active",
+      "topicIds": [
+        "nests-and-eggs"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "The largest and heaviest bird egg is laid by the ____.",
+      "sourceRefs": [
+        {
+          "pageId": "page-39",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "blankCount": 1
+      },
+      "answer": {
+        "accepted": [
+          "ostrich"
+        ],
+        "caseSensitive": false
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "hint": "Recall the exact word or phrase used in the chapter.",
+      "explanation": "An ostrich egg is the largest and heaviest and weighs about 1–2 kg.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-063",
+      "version": 1,
+      "type": "true_false_correct",
+      "status": "active",
+      "topicIds": [
+        "nests-and-eggs"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Birds reproduce by laying one or more eggs. State true or false.",
+      "sourceRefs": [
+        {
+          "pageId": "page-39",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "requiresCorrectionWhenFalse": true
+      },
+      "answer": {
+        "value": true
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "identifies the statement as true",
+            "weight": 1,
+            "required": true
+          }
+        ]
+      },
+      "hint": "If it is false, replace only the incorrect idea with the correct one.",
+      "explanation": "Egg laying is how birds reproduce.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-064",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "topicIds": [
+        "nests-and-eggs"
+      ],
+      "difficulty": 2,
+      "marks": 4,
+      "prompt": "Describe what happens from the laying of a bird's egg until the young bird emerges.",
+      "sourceRefs": [
+        {
+          "pageId": "page-39",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedPoints": 4
+      },
+      "answer": {
+        "ideal": "A bird lays one or more eggs, sits on them to keep them warm, and after a few days the eggs hatch and the young birds emerge."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "lays one or more eggs",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "sits on eggs to keep them warm",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p3",
+            "concept": "eggs hatch after some days",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p4",
+            "concept": "young birds emerge",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "grammarAffectsScore": false,
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Organize the answer into separate factual points.",
+      "explanation": "The answer should follow the sequence given in the chapter.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-065",
+      "version": 1,
+      "type": "matching",
+      "status": "active",
+      "topicIds": [
+        "sounds-habitats-migration"
+      ],
+      "difficulty": 1,
+      "marks": 4,
+      "prompt": "Match each bird with its sound.",
+      "sourceRefs": [
+        {
+          "pageId": "page-39",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "left": [
+          {
+            "id": "sparrow",
+            "text": "Sparrow"
+          },
+          {
+            "id": "owl",
+            "text": "Owl"
+          },
+          {
+            "id": "duck",
+            "text": "Duck"
+          },
+          {
+            "id": "crow",
+            "text": "Crow"
+          }
+        ],
+        "right": [
+          {
+            "id": "caws",
+            "text": "Caws"
+          },
+          {
+            "id": "quacks",
+            "text": "Quacks"
+          },
+          {
+            "id": "hoots",
+            "text": "Hoots"
+          },
+          {
+            "id": "chirps",
+            "text": "Chirps"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "sparrow",
+            "rightId": "chirps"
+          },
+          {
+            "leftId": "owl",
+            "rightId": "hoots"
+          },
+          {
+            "leftId": "duck",
+            "rightId": "quacks"
+          },
+          {
+            "leftId": "crow",
+            "rightId": "caws"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "hint": "Match each item with its defining feature or example.",
+      "explanation": "The chapter names these four familiar bird sounds.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-066",
+      "version": 1,
+      "type": "multiple_select",
+      "status": "active",
+      "topicIds": [
+        "care-and-bird-baths"
+      ],
+      "difficulty": 2,
+      "marks": 5,
+      "prompt": "Which actions show care and compassion for birds?",
+      "sourceRefs": [
+        {
+          "pageId": "page-39",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "free",
+            "text": "Let birds live freely instead of keeping them in cages."
+          },
+          {
+            "id": "nests",
+            "text": "Do not touch their nests or eggs."
+          },
+          {
+            "id": "stones",
+            "text": "Throw stones to make birds fly away."
+          },
+          {
+            "id": "water",
+            "text": "Give birds clean water and food."
+          },
+          {
+            "id": "injured",
+            "text": "Care for injured birds."
+          },
+          {
+            "id": "bath",
+            "text": "Make a bird bath."
+          },
+          {
+            "id": "capture",
+            "text": "Capture wild birds for play."
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionIds": [
+          "free",
+          "nests",
+          "water",
+          "injured",
+          "bath"
+        ]
+      },
+      "rubric": {
+        "partialCredit": false
+      },
+      "hint": "Select every correct option and no incorrect option.",
+      "explanation": "The correct actions protect birds and meet their needs without harming or confining them.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-067",
+      "version": 1,
+      "type": "brief_answer",
+      "status": "active",
+      "topicIds": [
+        "care-and-bird-baths"
+      ],
+      "difficulty": 1,
+      "marks": 2,
+      "prompt": "How does a bird bath help birds?",
+      "sourceRefs": [
+        {
+          "pageId": "page-39",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedSentences": 2
+      },
+      "answer": {
+        "ideal": "It gives birds water to drink, bathe in and cool themselves."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "water to drink",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "water for bathing or cooling",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "grammarAffectsScore": false,
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Answer directly in one or two clear sentences.",
+      "explanation": "A shallow bird bath supports drinking, bathing and cooling.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-068",
+      "version": 1,
+      "type": "one_word",
+      "status": "active",
+      "topicIds": [
+        "sounds-habitats-migration"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "What is the seasonal long-distance movement of birds called?",
+      "sourceRefs": [
+        {
+          "pageId": "page-39",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "maxWords": 3
+      },
+      "answer": {
+        "accepted": [
+          "migration"
+        ],
+        "caseSensitive": false
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "hint": "Give the precise name or term.",
+      "explanation": "Migration is seasonal travel over long distances.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-069",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "topicIds": [
+        "sounds-habitats-migration"
+      ],
+      "difficulty": 2,
+      "marks": 3,
+      "prompt": "Why do some birds migrate? Give the two examples in the chapter.",
+      "sourceRefs": [
+        {
+          "pageId": "page-39",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedPoints": 3
+      },
+      "answer": {
+        "ideal": "Birds may migrate to escape harsh weather, find food or lay eggs. The Arctic tern travels from the Arctic to Antarctica and back, while the Siberian crane comes from Siberia to India in winter."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "escape harsh weather, find food or lay eggs",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "Arctic tern Arctic-Antarctica-return example",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p3",
+            "concept": "Siberian crane Siberia-to-India winter example",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "grammarAffectsScore": false,
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Organize the answer into separate factual points.",
+      "explanation": "Include reasons as well as both named journeys.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-070",
+      "version": 1,
+      "type": "compare",
+      "status": "active",
+      "topicIds": [
+        "common-birds-body"
+      ],
+      "difficulty": 2,
+      "marks": 3,
+      "prompt": "How are flying birds and flightless birds alike and different?",
+      "sourceRefs": [
+        {
+          "pageId": "page-34",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "dimensions": [
+          "similarity",
+          "difference"
+        ]
+      },
+      "answer": {
+        "ideal": {
+          "alike": "Both are birds with feathers, beaks, wings and legs.",
+          "different": "Most birds fly, but penguins, ostriches and emus cannot fly."
+        }
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "states a shared bird feature",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "states that most birds fly",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p3",
+            "concept": "names at least one flightless bird",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "grammarAffectsScore": false,
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "State both sides of the comparison clearly.",
+      "explanation": "Flightlessness is an exception even though these animals still have the main body parts of birds.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-071",
+      "version": 1,
+      "type": "brief_answer",
+      "status": "active",
+      "topicIds": [
+        "nests-and-eggs"
+      ],
+      "difficulty": 1,
+      "marks": 2,
+      "prompt": "Where may birds make their nests?",
+      "sourceRefs": [
+        {
+          "pageId": "page-38",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedSentences": 2
+      },
+      "answer": {
+        "ideal": "Most make nests in trees, while others use bushes, corners of buildings or the ground."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "trees",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "one or more of bushes, building corners or ground",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "grammarAffectsScore": false,
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Answer directly in one or two clear sentences.",
+      "explanation": "Birds use several kinds of locations.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-072",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "topicIds": [
+        "common-birds-body"
+      ],
+      "difficulty": 2,
+      "marks": 6,
+      "prompt": "List the main body parts shown for a bird in the chapter.",
+      "sourceRefs": [
+        {
+          "pageId": "page-34",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedPoints": 6
+      },
+      "answer": {
+        "ideal": "A bird has two eyes, two wings, a beak, two legs, a tail and a body covered with feathers."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "two eyes",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "two wings",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p3",
+            "concept": "beak",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p4",
+            "concept": "two legs",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p5",
+            "concept": "tail",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p6",
+            "concept": "feather-covered body",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "grammarAffectsScore": false,
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Organize the answer into separate factual points.",
+      "explanation": "The body diagram labels these main parts.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-073",
+      "version": 1,
+      "type": "true_false_correct",
+      "status": "active",
+      "topicIds": [
+        "common-birds-body"
+      ],
+      "difficulty": 1,
+      "marks": 2,
+      "prompt": "All birds can fly. State true or false and correct the statement if needed.",
+      "sourceRefs": [
+        {
+          "pageId": "page-34",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "requiresCorrectionWhenFalse": true
+      },
+      "answer": {
+        "value": false,
+        "correction": "Most birds can fly, but penguins, ostriches and emus cannot fly."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "identifies the statement as false",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "gives the concise correction: Most birds can fly, but penguins, ostriches and emus cannot fly.",
+            "weight": 1,
+            "required": true
+          }
+        ]
+      },
+      "hint": "If it is false, replace only the incorrect idea with the correct one.",
+      "explanation": "The correction preserves the general rule and names the exceptions.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-074",
+      "version": 1,
+      "type": "true_false_correct",
+      "status": "active",
+      "topicIds": [
+        "nests-and-eggs"
+      ],
+      "difficulty": 1,
+      "marks": 2,
+      "prompt": "Every bird builds its own nest. State true or false and correct the statement if needed.",
+      "sourceRefs": [
+        {
+          "pageId": "page-38",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "requiresCorrectionWhenFalse": true
+      },
+      "answer": {
+        "value": false,
+        "correction": "Most birds build nests, but a cuckoo lays its eggs in a crow's nest."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "identifies the statement as false",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "gives the concise correction: Most birds build nests, but a cuckoo lays its eggs in a crow's nest.",
+            "weight": 1,
+            "required": true
+          }
+        ]
+      },
+      "hint": "If it is false, replace only the incorrect idea with the correct one.",
+      "explanation": "The cuckoo is the exception given in the chapter.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-075",
+      "version": 1,
+      "type": "multiple_select",
+      "status": "active",
+      "topicIds": [
+        "common-birds-body"
+      ],
+      "difficulty": 2,
+      "marks": 5,
+      "prompt": "Which birds are listed as commonly seen around us?",
+      "sourceRefs": [
+        {
+          "pageId": "page-34",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "crow",
+            "text": "Crow"
+          },
+          {
+            "id": "sparrow",
+            "text": "Sparrow"
+          },
+          {
+            "id": "pigeon",
+            "text": "Pigeon"
+          },
+          {
+            "id": "parrot",
+            "text": "Parrot"
+          },
+          {
+            "id": "hen",
+            "text": "Hen"
+          },
+          {
+            "id": "arctic-tern",
+            "text": "Arctic tern"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionIds": [
+          "crow",
+          "sparrow",
+          "pigeon",
+          "parrot",
+          "hen"
+        ]
+      },
+      "rubric": {
+        "partialCredit": false
+      },
+      "hint": "Select every correct option and no incorrect option.",
+      "explanation": "The chapter opens with these five examples of common birds.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-076",
+      "version": 1,
+      "type": "matching",
+      "status": "active",
+      "topicIds": [
+        "chapter-vocabulary"
+      ],
+      "difficulty": 1,
+      "marks": 6,
+      "prompt": "Match each chapter word with its meaning.",
+      "sourceRefs": [
+        {
+          "pageId": "page-40",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "left": [
+          {
+            "id": "nourish",
+            "text": "Nourish"
+          },
+          {
+            "id": "nectar",
+            "text": "Nectar"
+          },
+          {
+            "id": "talons",
+            "text": "Talons"
+          },
+          {
+            "id": "perching",
+            "text": "Perching birds"
+          },
+          {
+            "id": "wading",
+            "text": "Wading birds"
+          },
+          {
+            "id": "scratching",
+            "text": "Scratching birds"
+          }
+        ],
+        "right": [
+          {
+            "id": "dig-food",
+            "text": "Birds that scratch and dig the ground for food"
+          },
+          {
+            "id": "shallow-water",
+            "text": "Birds that walk through shallow water to find food"
+          },
+          {
+            "id": "rest-grip",
+            "text": "Birds that rest on branches or wires by gripping them"
+          },
+          {
+            "id": "curved-claws",
+            "text": "Sharp, curved claws of flesh-eating birds"
+          },
+          {
+            "id": "flower-juice",
+            "text": "Sweet juice found inside flowers"
+          },
+          {
+            "id": "feed-care",
+            "text": "Feed, care for and protect so that something stays healthy"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "nourish",
+            "rightId": "feed-care"
+          },
+          {
+            "leftId": "nectar",
+            "rightId": "flower-juice"
+          },
+          {
+            "leftId": "talons",
+            "rightId": "curved-claws"
+          },
+          {
+            "leftId": "perching",
+            "rightId": "rest-grip"
+          },
+          {
+            "leftId": "wading",
+            "rightId": "shallow-water"
+          },
+          {
+            "leftId": "scratching",
+            "rightId": "dig-food"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "hint": "Match each item with its defining feature or example.",
+      "explanation": "These definitions come from the chapter's keyword list.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-077",
+      "version": 1,
+      "type": "compare",
+      "status": "active",
+      "topicIds": [
+        "feet-and-claws"
+      ],
+      "difficulty": 2,
+      "marks": 2,
+      "prompt": "Compare perching feet and wading feet.",
+      "sourceRefs": [
+        {
+          "pageId": "page-36",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-37",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "dimensions": [
+          "structure",
+          "purpose"
+        ]
+      },
+      "answer": {
+        "ideal": {
+          "Perching feet": "three toes in front and one behind to grip a branch",
+          "Wading feet": "long legs and spread-out toes for walking through muddy shallow water"
+        }
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "perching toe arrangement and purpose",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "wading leg or toe arrangement and purpose",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "grammarAffectsScore": false,
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "State both sides of the comparison clearly.",
+      "explanation": "The feet differ because gripping a branch and walking in mud require different structures.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-078",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "topicIds": [
+        "beaks-and-food",
+        "feet-and-claws"
+      ],
+      "difficulty": 3,
+      "marks": 3,
+      "prompt": "Why do different birds have different kinds of beaks, feet and claws? Explain with two examples.",
+      "sourceRefs": [
+        {
+          "pageId": "page-35",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-36",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-37",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedPoints": 3
+      },
+      "answer": {
+        "ideal": "These body parts are suited to how birds obtain food and move. For example, an eagle has a hooked beak and talons for tearing and catching prey, while a duck has a broad filtering beak and webbed feet for feeding and swimming in water."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "states adaptation to food or movement",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "one correct bird-feature-use example",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p3",
+            "concept": "a second correct bird-feature-use example",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "grammarAffectsScore": false,
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Organize the answer into separate factual points.",
+      "explanation": "Connect each structure to the action it helps the bird perform.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-079",
+      "version": 1,
+      "type": "matching",
+      "status": "active",
+      "topicIds": [
+        "flight"
+      ],
+      "difficulty": 1,
+      "marks": 5,
+      "prompt": "Match each flight term or structure with its function.",
+      "sourceRefs": [
+        {
+          "pageId": "page-37",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "left": [
+          {
+            "id": "upstroke",
+            "text": "Upstroke"
+          },
+          {
+            "id": "downstroke",
+            "text": "Downstroke"
+          },
+          {
+            "id": "tail",
+            "text": "Tail"
+          },
+          {
+            "id": "hollow-bones",
+            "text": "Hollow bones"
+          },
+          {
+            "id": "flight-muscles",
+            "text": "Strong flight muscles"
+          }
+        ],
+        "right": [
+          {
+            "id": "flap",
+            "text": "Move the wings up and down"
+          },
+          {
+            "id": "light",
+            "text": "Keep the body light"
+          },
+          {
+            "id": "direction",
+            "text": "Changes direction"
+          },
+          {
+            "id": "down-forward",
+            "text": "Wings move downward and forward"
+          },
+          {
+            "id": "up-back",
+            "text": "Wings move upward and backward"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "upstroke",
+            "rightId": "up-back"
+          },
+          {
+            "leftId": "downstroke",
+            "rightId": "down-forward"
+          },
+          {
+            "leftId": "tail",
+            "rightId": "direction"
+          },
+          {
+            "leftId": "hollow-bones",
+            "rightId": "light"
+          },
+          {
+            "leftId": "flight-muscles",
+            "rightId": "flap"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "hint": "Match each item with its defining feature or example.",
+      "explanation": "Each term describes a movement or a structure used in flight.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-080",
+      "version": 1,
+      "type": "compare",
+      "status": "active",
+      "topicIds": [
+        "nests-and-eggs"
+      ],
+      "difficulty": 2,
+      "marks": 3,
+      "prompt": "Compare the nests of a tailor bird and a weaver bird.",
+      "sourceRefs": [
+        {
+          "pageId": "page-38",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "dimensions": [
+          "construction method",
+          "materials and shape"
+        ]
+      },
+      "answer": {
+        "ideal": {
+          "Tailor bird": "sews leaves together and uses soft material inside",
+          "Weaver bird": "weaves grass, twigs and leaves into a hanging nest with a lower opening"
+        }
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "tailor bird construction",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "weaver bird construction",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p3",
+            "concept": "one clear contrast in materials, shape or method",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "grammarAffectsScore": false,
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "State both sides of the comparison clearly.",
+      "explanation": "Both use their beaks skillfully, but one sews leaves while the other weaves a hanging nest.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-081",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "topicIds": [
+        "sounds-habitats-migration"
+      ],
+      "difficulty": 1,
+      "marks": 2,
+      "prompt": "Name the two birds mentioned as being able to mimic sounds.",
+      "sourceRefs": [
+        {
+          "pageId": "page-39",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedPoints": 2
+      },
+      "answer": {
+        "ideal": "Parrots and drongos can mimic sounds."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "parrots",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "drongos",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "grammarAffectsScore": false,
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Organize the answer into separate factual points.",
+      "explanation": "The chapter specifically names parrots and drongos as mimics.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-082",
+      "version": 1,
+      "type": "multiple_select",
+      "status": "active",
+      "topicIds": [
+        "feet-and-claws"
+      ],
+      "difficulty": 2,
+      "marks": 4,
+      "prompt": "What do birds use their feet for?",
+      "sourceRefs": [
+        {
+          "pageId": "page-36",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "walk",
+            "text": "Walking"
+          },
+          {
+            "id": "hop",
+            "text": "Hopping"
+          },
+          {
+            "id": "swim",
+            "text": "Swimming"
+          },
+          {
+            "id": "hold",
+            "text": "Holding food"
+          },
+          {
+            "id": "chew",
+            "text": "Chewing food"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionIds": [
+          "walk",
+          "hop",
+          "swim",
+          "hold"
+        ]
+      },
+      "rubric": {
+        "partialCredit": false
+      },
+      "hint": "Select every correct option and no incorrect option.",
+      "explanation": "Birds use their feet to walk, hop, swim and hold food; they do not chew with their feet.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-01T21:30:00+05:30",
+        "validationStatus": "verified"
+      }
+    }
+  ]
+}

@@ -1,0 +1,5776 @@
+{
+  "bank": {
+    "board": "ICSE",
+    "bookTitle": "History and Civics",
+    "chapterNumber": 6,
+    "grade": 6,
+    "id": "later-vedic-civilization-v1",
+    "status": "reviewed",
+    "subject": "History",
+    "title": "The Later Vedic Civilization",
+    "version": 1
+  },
+  "questions": [
+    {
+      "answer": {
+        "accepted": [
+          "Ramayana and Mahabharata",
+          "Mahabharata and Ramayana",
+          "The Ramayana and the Mahabharata"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "The two epics are the Ramayana and the Mahabharata.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the exact term or names used in the chapter.",
+      "id": "q-001",
+      "marks": 1,
+      "prompt": "The two Indian epics of the Later Vedic period are the ____.",
+      "response": {
+        "blankCount": 1
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-60",
+          "regionId": "exercises-a-c",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-56",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "epics"
+      ],
+      "type": "fill_blank",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "Rajasuya yagna",
+          "Rajasuya yajna",
+          "Rajasuya"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "The Rajasuya yagna conferred supreme power on the king.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the exact term or names used in the chapter.",
+      "id": "q-002",
+      "marks": 1,
+      "prompt": "When a king ascended the throne, the purohita performed the ____.",
+      "response": {
+        "blankCount": 1
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-60",
+          "regionId": "exercises-a-c",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-54",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "political-organization"
+      ],
+      "type": "fill_blank",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "rigid and hereditary",
+          "hereditary and rigid"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "The four-varna classification became rigid and hereditary.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the exact term or names used in the chapter.",
+      "id": "q-003",
+      "marks": 1,
+      "prompt": "In the Later Vedic period, the classification of society into four varnas became ____.",
+      "response": {
+        "blankCount": 1
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-60",
+          "regionId": "exercises-a-c",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-55",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "social-classification"
+      ],
+      "type": "fill_blank",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "children and spiritual father",
+          "children; spiritual father",
+          "children, spiritual father"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "The guru treated pupils as children, while they regarded him as their spiritual father.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the exact term or names used in the chapter.",
+      "id": "q-004",
+      "marks": 1,
+      "prompt": "A guru treated his students like his ____ and the students regarded the guru as their ____.",
+      "response": {
+        "blankCount": 1
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-60",
+          "regionId": "exercises-a-c",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-56",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "gurukul-education"
+      ],
+      "type": "fill_blank",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "Maitreyi and Gargi",
+          "Gargi and Maitreyi"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "Maitreyi and Gargi are named as highly educated Early Vedic women.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the exact term or names used in the chapter.",
+      "id": "q-005",
+      "marks": 1,
+      "prompt": "____ were two highly educated women of the Early Vedic period.",
+      "response": {
+        "blankCount": 1
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-60",
+          "regionId": "exercises-a-c",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-56",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "family-and-women"
+      ],
+      "type": "fill_blank",
+      "version": 1
+    },
+    {
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "ashvamedha",
+            "rightId": "horse-sacrifice"
+          },
+          {
+            "leftId": "kosala",
+            "rightId": "awadh"
+          },
+          {
+            "leftId": "magadha",
+            "rightId": "patna-gaya"
+          },
+          {
+            "leftId": "grihastha",
+            "rightId": "householder"
+          },
+          {
+            "leftId": "shiva",
+            "rightId": "destroyer"
+          },
+          {
+            "leftId": "brahma",
+            "rightId": "creator"
+          }
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "Ashvamedha was the horse sacrifice; Kosala was Awadh; Magadha covered Patna and Gaya; grihastha was the householder stage; Shiva was the destroyer and Brahma the creator.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Match each item by its defining role, place or meaning.",
+      "id": "q-006",
+      "marks": 6,
+      "prompt": "Match each Later Vedic term with its correct description.",
+      "response": {
+        "left": [
+          {
+            "id": "ashvamedha",
+            "text": "Ashvamedha yagna"
+          },
+          {
+            "id": "kosala",
+            "text": "Kosala"
+          },
+          {
+            "id": "magadha",
+            "text": "Magadha"
+          },
+          {
+            "id": "grihastha",
+            "text": "Grihastha"
+          },
+          {
+            "id": "shiva",
+            "text": "Shiva"
+          },
+          {
+            "id": "brahma",
+            "text": "Brahma"
+          }
+        ],
+        "right": [
+          {
+            "id": "destroyer",
+            "text": "Destroyer"
+          },
+          {
+            "id": "householder",
+            "text": "Householder"
+          },
+          {
+            "id": "awadh",
+            "text": "Awadh"
+          },
+          {
+            "id": "creator",
+            "text": "Creator"
+          },
+          {
+            "id": "patna-gaya",
+            "text": "Patna and Gaya"
+          },
+          {
+            "id": "horse-sacrifice",
+            "text": "Horse sacrifice"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-60",
+          "regionId": "exercises-a-c",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-54",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-55",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-56",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "political-organization",
+        "ashramas",
+        "religion-and-hinduism"
+      ],
+      "type": "matching",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "mahabharata"
+      },
+      "difficulty": 1,
+      "explanation": "The Mahabharata was one of the two epics composed during the Later Vedic period.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Eliminate choices that belong to a different period, place or role.",
+      "id": "q-007",
+      "marks": 1,
+      "prompt": "Which work was composed during the Later Vedic period?",
+      "response": {
+        "options": [
+          {
+            "id": "mahabharata",
+            "text": "Mahabharata"
+          },
+          {
+            "id": "rig-veda",
+            "text": "Rig Veda"
+          },
+          {
+            "id": "arthashastra",
+            "text": "Arthashastra"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-60",
+          "regionId": "exercises-a-c",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-56",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "epics"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "kashi"
+      },
+      "difficulty": 1,
+      "explanation": "Kashi is identified with Varanasi.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Eliminate choices that belong to a different period, place or role.",
+      "id": "q-008",
+      "marks": 1,
+      "prompt": "What was Varanasi known as in the Later Vedic period?",
+      "response": {
+        "options": [
+          {
+            "id": "kashi",
+            "text": "Kashi"
+          },
+          {
+            "id": "kosala",
+            "text": "Kosala"
+          },
+          {
+            "id": "kuru",
+            "text": "Kuru"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-60",
+          "regionId": "exercises-a-c",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-54",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "political-organization"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "brahmacharya"
+      },
+      "difficulty": 1,
+      "explanation": "Brahmacharya was the first, student stage of life.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Eliminate choices that belong to a different period, place or role.",
+      "id": "q-009",
+      "marks": 1,
+      "prompt": "During which ashrama did an Aryan stay in a gurukul and receive education?",
+      "response": {
+        "options": [
+          {
+            "id": "vanaprastha",
+            "text": "Vanaprastha"
+          },
+          {
+            "id": "brahmacharya",
+            "text": "Brahmacharya"
+          },
+          {
+            "id": "grihastha",
+            "text": "Grihastha"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-60",
+          "regionId": "exercises-a-c",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-55",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "ashramas"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "seven-twenty-five"
+      },
+      "difficulty": 1,
+      "explanation": "A boy entered the gurukul at seven and stayed until twenty-five.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Eliminate choices that belong to a different period, place or role.",
+      "id": "q-010",
+      "marks": 1,
+      "prompt": "At what age was a boy sent to a gurukul, and until what age did he stay there?",
+      "response": {
+        "options": [
+          {
+            "id": "seven-twenty-five",
+            "text": "7 years; 25 years"
+          },
+          {
+            "id": "fifteen-forty",
+            "text": "15 years; 40 years"
+          },
+          {
+            "id": "twenty-five-fifty",
+            "text": "25 years; 50 years"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-61",
+          "regionId": "exercises-d-h",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-56",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "gurukul-education"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "agriculture"
+      },
+      "difficulty": 1,
+      "explanation": "Agriculture was the main occupation in their settled life.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Eliminate choices that belong to a different period, place or role.",
+      "id": "q-011",
+      "marks": 1,
+      "prompt": "What was the main occupation of the Aryans in the Later Vedic period?",
+      "response": {
+        "options": [
+          {
+            "id": "agriculture",
+            "text": "Agriculture"
+          },
+          {
+            "id": "trade",
+            "text": "Trade"
+          },
+          {
+            "id": "industry",
+            "text": "Industry"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-61",
+          "regionId": "exercises-d-h",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-57",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "economic-life"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1,
+      "explanation": "The Upanishads are among the works associated with the Later Vedic period.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Check whether the statement agrees with the chapter.",
+      "id": "q-012",
+      "marks": 1,
+      "prompt": "The Upanishads were composed during the Later Vedic period. State true or false and correct the statement if needed.",
+      "response": {
+        "requiresCorrectionWhenFalse": true
+      },
+      "rubric": {
+        "points": [
+          {
+            "concept": "identifies the statement as true",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-61",
+          "regionId": "exercises-d-h",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-54",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "later-vedic-period",
+        "religion-and-hinduism"
+      ],
+      "type": "true_false_correct",
+      "version": 1
+    },
+    {
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1,
+      "explanation": "Archaeological evidence from Hastinapur and the upper Gangetic Plains indicates iron use.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Check whether the statement agrees with the chapter.",
+      "id": "q-013",
+      "marks": 1,
+      "prompt": "Excavations indicate the use of iron during the Later Vedic period. State true or false and correct the statement if needed.",
+      "response": {
+        "requiresCorrectionWhenFalse": true
+      },
+      "rubric": {
+        "points": [
+          {
+            "concept": "identifies the statement as true",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-61",
+          "regionId": "exercises-d-h",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-54",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "later-vedic-period",
+        "economic-life"
+      ],
+      "type": "true_false_correct",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correction": "The sabha and samiti lost much of their control over the king.",
+        "value": false
+      },
+      "difficulty": 1,
+      "explanation": "As hereditary kings and kingdoms grew stronger, the sabha and samiti lost much of their control.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Change only the incorrect idea; a short factual correction is enough.",
+      "id": "q-014",
+      "marks": 2,
+      "prompt": "The sabha and the samiti became very powerful during the Later Vedic period. State true or false and correct the statement if needed.",
+      "response": {
+        "requiresCorrectionWhenFalse": true
+      },
+      "rubric": {
+        "points": [
+          {
+            "concept": "identifies the statement as false",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "gives the concise correction: The sabha and samiti lost much of their control over the king.",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-61",
+          "regionId": "exercises-d-h",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-54",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "political-organization"
+      ],
+      "type": "true_false_correct",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correction": "The caste system became rigid and hereditary.",
+        "value": false
+      },
+      "difficulty": 1,
+      "explanation": "Caste was decided by birth rather than occupation, and inter-caste marriage was not allowed.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Change only the incorrect idea; a short factual correction is enough.",
+      "id": "q-015",
+      "marks": 2,
+      "prompt": "The caste system became flexible in the Later Vedic period. State true or false and correct the statement if needed.",
+      "response": {
+        "requiresCorrectionWhenFalse": true
+      },
+      "rubric": {
+        "points": [
+          {
+            "concept": "identifies the statement as false",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "gives the concise correction: The caste system became rigid and hereditary.",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-61",
+          "regionId": "exercises-d-h",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-55",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "social-classification"
+      ],
+      "type": "true_false_correct",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correction": "Students paid guru dakshina according to their means.",
+        "value": false
+      },
+      "difficulty": 1,
+      "explanation": "After completing their education, students paid fees according to what they could afford.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Change only the incorrect idea; a short factual correction is enough.",
+      "id": "q-016",
+      "marks": 2,
+      "prompt": "Education in a gurukul was very expensive. State true or false and correct the statement if needed.",
+      "response": {
+        "requiresCorrectionWhenFalse": true
+      },
+      "rubric": {
+        "points": [
+          {
+            "concept": "identifies the statement as false",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "gives the concise correction: Students paid guru dakshina according to their means.",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-61",
+          "regionId": "exercises-d-h",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-56",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "gurukul-education"
+      ],
+      "type": "true_false_correct",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Epics are lengthy poems that describe the brave deeds and adventures of warriors."
+      },
+      "difficulty": 1,
+      "explanation": "Epics are lengthy poems that describe the brave deeds and adventures of warriors.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer directly using the chapter's key terms.",
+      "id": "q-017",
+      "marks": 2,
+      "prompt": "What are epics?",
+      "response": {
+        "recommendedSentences": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "lengthy poems",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "describe brave deeds and adventures of warriors",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-61",
+          "regionId": "exercises-d-h",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-54",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "epics"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Kuru, Kosala, Magadha and Kashi."
+      },
+      "difficulty": 1,
+      "explanation": "Kuru, Kosala, Magadha and Kashi.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Organize the answer into distinct points.",
+      "id": "q-018",
+      "marks": 4,
+      "prompt": "Name the four kingdoms that developed from small tribal organizations.",
+      "response": {
+        "recommendedPoints": 4
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Kuru",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Kosala",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Magadha",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Kashi",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": true,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-61",
+          "regionId": "exercises-d-h",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-54",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "political-organization"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "It was performed when a king ascended the throne to confer supreme power on him."
+      },
+      "difficulty": 1,
+      "explanation": "It was performed when a king ascended the throne to confer supreme power on him.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer directly using the chapter's key terms.",
+      "id": "q-019",
+      "marks": 2,
+      "prompt": "What was the importance of the Rajasuya yagna in the Later Vedic period?",
+      "response": {
+        "recommendedSentences": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "performed at the king's accession",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "conferred supreme power on the king",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-61",
+          "regionId": "exercises-d-h",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-54",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "political-organization"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Her highest duty was to serve her husband and take care of the family."
+      },
+      "difficulty": 1,
+      "explanation": "Her highest duty was to serve her husband and take care of the family.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer directly using the chapter's key terms.",
+      "id": "q-020",
+      "marks": 2,
+      "prompt": "What was considered the highest duty of a woman in the Epic Age?",
+      "response": {
+        "recommendedSentences": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "serve her husband",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "take care of the family",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-61",
+          "regionId": "exercises-d-h",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-55",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "family-and-women"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "The guru treated the students like his children, and they regarded him as their spiritual father."
+      },
+      "difficulty": 1,
+      "explanation": "The guru treated the students like his children, and they regarded him as their spiritual father.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer directly using the chapter's key terms.",
+      "id": "q-021",
+      "marks": 2,
+      "prompt": "What was the relationship between the guru and his students in a gurukul?",
+      "response": {
+        "recommendedSentences": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "guru treated students like children",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "students regarded guru as spiritual father",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-61",
+          "regionId": "exercises-d-h",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-56",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "gurukul-education"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "gurukul",
+          "a gurukul"
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "An Aryan boy was educated in a gurukul.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Name the teacher's house where pupils lived and learned.",
+      "id": "q-022",
+      "marks": 1,
+      "prompt": "Where was an Aryan boy educated?",
+      "response": {},
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-61",
+          "regionId": "exercises-d-h",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-56",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "gurukul-education"
+      ],
+      "type": "one_word",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Dharma is the moral duty to do what is right and lead a pious life."
+      },
+      "difficulty": 1,
+      "explanation": "Dharma is the moral duty to do what is right and lead a pious life.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer directly using the chapter's key terms.",
+      "id": "q-023",
+      "marks": 2,
+      "prompt": "In Hindu philosophy, what does the term ‘dharma’ mean?",
+      "response": {
+        "recommendedSentences": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "moral duty to do what is right",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "lead a pious life",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-61",
+          "regionId": "exercises-d-h",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-57",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "religion-and-hinduism"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "He performed it to establish his undisputed authority over every territory through which the released horse moved unchallenged."
+      },
+      "difficulty": 2,
+      "explanation": "He performed it to establish his undisputed authority over every territory through which the released horse moved unchallenged.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer directly using the chapter's key terms.",
+      "id": "q-024",
+      "marks": 2,
+      "prompt": "Why did a king perform the Ashvamedha yagna?",
+      "response": {
+        "recommendedSentences": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "establish undisputed authority",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "over territory crossed unchallenged by the horse",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-61",
+          "regionId": "exercises-d-h",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-54",
+          "regionId": "ashvamedha-callout",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "political-organization"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "They paid guru dakshina as the fee after completing their education, according to their means."
+      },
+      "difficulty": 2,
+      "explanation": "They paid guru dakshina as the fee after completing their education, according to their means.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer directly using the chapter's key terms.",
+      "id": "q-025",
+      "marks": 3,
+      "prompt": "Why did students pay guru dakshina to their gurus?",
+      "response": {
+        "recommendedSentences": 3
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "paid after completing education",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "was the fee or guru dakshina",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "amount was according to the student's means",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-61",
+          "regionId": "exercises-d-h",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-56",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "gurukul-education"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Small tribes expanded into large kingdoms such as Kuru, Kosala, Magadha and Kashi. Kingship became hereditary; the sabha and samiti lost control. Administration grew complex and officials assisted the powerful king. Rajasuya and Ashvamedha yagnas asserted royal power."
+      },
+      "difficulty": 2,
+      "explanation": "Small tribes expanded into large kingdoms such as Kuru, Kosala, Magadha and Kashi. Kingship became hereditary; the sabha and samiti lost control. Administration grew complex and officials assisted the powerful king. Rajasuya and Ashvamedha yagnas asserted royal power.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Organize the answer into distinct points.",
+      "id": "q-026",
+      "marks": 5,
+      "prompt": "Explain the important features of political organization in the Epic Age.",
+      "response": {
+        "recommendedPoints": 5
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "small tribes expanded into large kingdoms",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "kingship became hereditary",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "sabha and samiti lost control",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "complex administration with many officials",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Rajasuya and Ashvamedha asserted royal power",
+            "id": "p5",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-61",
+          "regionId": "exercises-d-h",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-54",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "political-organization"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "The four-varna system became rigid and hereditary, with caste decided by birth and no inter-caste marriage. Brahmanas and kshatriyas formed the ruling class; vaishyas were artisans, traders and farmers; shudras were uneducated workers serving the other groups."
+      },
+      "difficulty": 2,
+      "explanation": "The four-varna system became rigid and hereditary, with caste decided by birth and no inter-caste marriage. Brahmanas and kshatriyas formed the ruling class; vaishyas were artisans, traders and farmers; shudras were uneducated workers serving the other groups.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Organize the answer into distinct points.",
+      "id": "q-027",
+      "marks": 6,
+      "prompt": "How did society become sharply divided during the Later Vedic period?",
+      "response": {
+        "recommendedPoints": 6
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "four varnas became rigid and hereditary",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "caste decided by birth rather than occupation",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "inter-caste marriages not allowed",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "brahmanas and kshatriyas formed ruling class",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "vaishyas were artisans, traders and farmers",
+            "id": "p5",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "shudras were uneducated workers serving the other classes",
+            "id": "p6",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-61",
+          "regionId": "exercises-d-h",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-55",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "social-classification"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Women were considered inferior to men, no longer joined assemblies or studied Vedic literature, and their chief duty was to serve their husbands and care for the family, although they continued to participate in religious ceremonies."
+      },
+      "difficulty": 2,
+      "explanation": "Women were considered inferior to men, no longer joined assemblies or studied Vedic literature, and their chief duty was to serve their husbands and care for the family, although they continued to participate in religious ceremonies.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Organize the answer into distinct points.",
+      "id": "q-028",
+      "marks": 5,
+      "prompt": "What was the position of women during the Later Vedic period?",
+      "response": {
+        "recommendedPoints": 5
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "considered inferior to men",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "no longer took part in assemblies",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "not allowed to study Vedic literature",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "expected to serve husband and care for family",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "continued to participate in religious ceremonies",
+            "id": "p5",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-61",
+          "regionId": "exercises-d-h",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-55",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-56",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "family-and-women"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Brahmacharya was education with a guru; grihastha was married household life; vanaprastha meant giving up worldly ties to meditate in the forest; sanyasa meant renouncing all worldly ties as an ascetic spreading religion and truth."
+      },
+      "difficulty": 2,
+      "explanation": "Brahmacharya was education with a guru; grihastha was married household life; vanaprastha meant giving up worldly ties to meditate in the forest; sanyasa meant renouncing all worldly ties as an ascetic spreading religion and truth.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Organize the answer into distinct points.",
+      "id": "q-029",
+      "marks": 4,
+      "prompt": "Mention the four ashramas in an Aryan's life and state the distinctive feature of each.",
+      "response": {
+        "recommendedPoints": 4
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "brahmacharya: student life with guru",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "grihastha: married householder life",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "vanaprastha: left worldly life for forest meditation",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "sanyasa: renounced all ties as an ascetic",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-61",
+          "regionId": "exercises-d-h",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-55",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "ashramas"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "A boy entered at seven and stayed with the guru until twenty-five, usually in a forest gurukul. The guru treated pupils as children and taught orally; students memorized lessons, lived simply and helped with chores. Afterward they paid guru dakshina according to their means."
+      },
+      "difficulty": 2,
+      "explanation": "A boy entered at seven and stayed with the guru until twenty-five, usually in a forest gurukul. The guru treated pupils as children and taught orally; students memorized lessons, lived simply and helped with chores. Afterward they paid guru dakshina according to their means.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Organize the answer into distinct points.",
+      "id": "q-030",
+      "marks": 6,
+      "prompt": "Describe the gurukul system of education.",
+      "response": {
+        "recommendedPoints": 6
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "entered at seven and stayed until twenty-five",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "lived with guru in a forest gurukul",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "oral teaching and memorization",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "simple disciplined life and household or field chores",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "guru-child or spiritual-father relationship",
+            "id": "p5",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "guru dakshina according to means",
+            "id": "p6",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-61",
+          "regionId": "exercises-d-h",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-56",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "gurukul-education"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Early Vedic gods lost importance, while Brahma, Vishnu and Shiva became chief gods. Worship grew complex with elaborate rituals and sacrifices, raising the status of brahmanas who alone performed them. The epics and Upanishads expressed central religious and philosophical ideas."
+      },
+      "difficulty": 2,
+      "explanation": "Early Vedic gods lost importance, while Brahma, Vishnu and Shiva became chief gods. Worship grew complex with elaborate rituals and sacrifices, raising the status of brahmanas who alone performed them. The epics and Upanishads expressed central religious and philosophical ideas.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Organize the answer into distinct points.",
+      "id": "q-031",
+      "marks": 6,
+      "prompt": "Mention the important features of religion in the Later Vedic period.",
+      "response": {
+        "recommendedPoints": 6
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Early Vedic gods lost importance",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Brahma, Vishnu and Shiva became chief gods",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "worship became complex",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "elaborate rituals and sacrifices",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "brahmana status rose because they performed rituals",
+            "id": "p5",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "epics or Upanishads carried religious and philosophical ideas",
+            "id": "p6",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-61",
+          "regionId": "exercises-d-h",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-56",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-57",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "religion-and-hinduism"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Hinduism is an evolved philosophy and way of life, not founded by one spiritual leader. It teaches one omnipotent and omnipresent creative force known in different forms. Its three principles are dharma, karma and transmigration of the soul; for example, karma means people face the consequences of their actions."
+      },
+      "difficulty": 3,
+      "explanation": "Hinduism is an evolved philosophy and way of life, not founded by one spiritual leader. It teaches one omnipotent and omnipresent creative force known in different forms. Its three principles are dharma, karma and transmigration of the soul; for example, karma means people face the consequences of their actions.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Organize the answer into distinct points.",
+      "id": "q-032",
+      "marks": 6,
+      "prompt": "What are the basic elements of Hinduism? State and explain any one of the three main principles of Hindu philosophy.",
+      "response": {
+        "recommendedPoints": 5
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "philosophy and way of life that evolved over time",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "no single spiritual founder",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "one omnipotent and omnipresent creative force in different forms",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "names dharma, karma and transmigration",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "accurately explains any one principle",
+            "id": "p5",
+            "required": true,
+            "weight": 2
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-61",
+          "regionId": "exercises-d-h",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-57",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "religion-and-hinduism"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Agriculture was the main occupation. Artisans, traders and farmers continued their work; iron and improved implements increased prosperity. Trade developed through barter, and the growth of towns and cities accompanied settled life."
+      },
+      "difficulty": 2,
+      "explanation": "Agriculture was the main occupation. Artisans, traders and farmers continued their work; iron and improved implements increased prosperity. Trade developed through barter, and the growth of towns and cities accompanied settled life.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Organize the answer into distinct points.",
+      "id": "q-033",
+      "marks": 5,
+      "prompt": "What were the main occupations and economic activities of the Later Vedic people?",
+      "response": {
+        "recommendedPoints": 5
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "agriculture was main occupation",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "artisans and traders remained important",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "iron and improved implements increased prosperity",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "trade used barter",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "towns and cities grew",
+            "id": "p5",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-61",
+          "regionId": "exercises-d-h",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-55",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-57",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "economic-life"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "subanswers": [
+          {
+            "id": "a",
+            "ideal": "Brahmacharya."
+          },
+          {
+            "id": "b",
+            "ideal": "Four: brahmacharya, grihastha, vanaprastha and sanyasa."
+          },
+          {
+            "id": "c",
+            "ideal": "During brahmacharya a boy lived with his guru from age seven to twenty-five, received oral education, memorized lessons, followed a simple disciplined life and helped the guru with chores."
+          }
+        ]
+      },
+      "difficulty": 3,
+      "explanation": "The picture shows brahmacharya, the first ashrama, when a student lived and learned with the guru.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Identify the student stage first, then use the gurukul section for daily life.",
+      "id": "q-034",
+      "marks": 8,
+      "prompt": "Study the gurukul picture and answer the questions.",
+      "response": {
+        "subquestions": [
+          {
+            "id": "a",
+            "marks": 1,
+            "prompt": "Which ashrama is depicted?"
+          },
+          {
+            "id": "b",
+            "marks": 3,
+            "prompt": "Into how many ashramas was an Aryan's life divided? Name them."
+          },
+          {
+            "id": "c",
+            "marks": 4,
+            "prompt": "Give a detailed account of life during the first ashrama."
+          }
+        ]
+      },
+      "rubric": {
+        "subrubrics": [
+          {
+            "id": "a",
+            "points": [
+              {
+                "concept": "brahmacharya",
+                "id": "a1",
+                "required": true,
+                "weight": 1
+              }
+            ]
+          },
+          {
+            "id": "b",
+            "points": [
+              {
+                "concept": "life divided into four ashramas",
+                "id": "b1",
+                "required": true,
+                "weight": 1
+              },
+              {
+                "concept": "names brahmacharya and grihastha",
+                "id": "b2",
+                "required": true,
+                "weight": 1
+              },
+              {
+                "concept": "names vanaprastha and sanyasa",
+                "id": "b3",
+                "required": true,
+                "weight": 1
+              }
+            ]
+          },
+          {
+            "id": "c",
+            "points": [
+              {
+                "concept": "student lived with guru from seven to twenty-five",
+                "id": "c1",
+                "required": true,
+                "weight": 1
+              },
+              {
+                "concept": "oral learning and memorization",
+                "id": "c2",
+                "required": true,
+                "weight": 1
+              },
+              {
+                "concept": "simple disciplined life",
+                "id": "c3",
+                "required": true,
+                "weight": 1
+              },
+              {
+                "concept": "helped guru through household, water, wood or field work",
+                "id": "c4",
+                "required": true,
+                "weight": 1
+              }
+            ]
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-61",
+          "regionId": "gurukul-source",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-61",
+          "regionId": "exercises-d-h",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-55",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-56",
+          "regionId": "gurukul-picture",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "ashramas",
+        "gurukul-education"
+      ],
+      "type": "source_group",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionIds": [
+          "period",
+          "region",
+          "literature"
+        ]
+      },
+      "difficulty": 2,
+      "explanation": "The period ran from 1000–500 BCE in the Gangetic valley and is studied through later literature and archaeology.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose time, place and sources that belong to this period.",
+      "id": "q-035",
+      "marks": 3,
+      "prompt": "Select all statements that correctly describe the Later Vedic period.",
+      "response": {
+        "options": [
+          {
+            "id": "period",
+            "text": "It lasted approximately from 1000 BCE to 500 BCE."
+          },
+          {
+            "id": "region",
+            "text": "Indo-Aryans settled in the Gangetic valley."
+          },
+          {
+            "id": "literature",
+            "text": "The later Vedas, Upanishads and epics are major sources."
+          },
+          {
+            "id": "sapta",
+            "text": "Its principal settlement region was Sapta Sindhu."
+          },
+          {
+            "id": "no-iron",
+            "text": "Iron was unknown during this period."
+          }
+        ]
+      },
+      "rubric": {
+        "partialCredit": false
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-54",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "later-vedic-period"
+      ],
+      "type": "multiple_select",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "The Ramayana and Mahabharata were composed during this period; these lengthy poems recount the brave deeds and adventures of warriors."
+      },
+      "difficulty": 2,
+      "explanation": "The Ramayana and Mahabharata were composed during this period; these lengthy poems recount the brave deeds and adventures of warriors.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer directly using the chapter's key terms.",
+      "id": "q-036",
+      "marks": 2,
+      "prompt": "Why is the Later Vedic period also called the Epic Age?",
+      "response": {
+        "recommendedSentences": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Ramayana and Mahabharata were composed in the period",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "they are lengthy poems about warriors' deeds and adventures",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-54",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "later-vedic-period",
+        "epics"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Evidence from Hastinapur near Meerut and the upper Gangetic Plains, where excavations indicate the use of iron, supplements the later Vedas and epics."
+      },
+      "difficulty": 2,
+      "explanation": "Evidence from Hastinapur near Meerut and the upper Gangetic Plains, where excavations indicate the use of iron, supplements the later Vedas and epics.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer directly using the chapter's key terms.",
+      "id": "q-037",
+      "marks": 3,
+      "prompt": "What archaeological evidence helps historians reconstruct Later Vedic life?",
+      "response": {
+        "recommendedSentences": 3
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Hastinapur near Meerut",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "upper Gangetic Plains",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "excavations indicate iron use",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-54",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "later-vedic-period",
+        "economic-life"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "sides": {
+          "Early Vedic": {
+            "administration": "simpler",
+            "assemblies": "sabha and samiti exercised control",
+            "kingship": "less powerful",
+            "political units": "small tribes"
+          },
+          "Later Vedic": {
+            "administration": "complex with many officials",
+            "assemblies": "lost much control",
+            "kingship": "powerful and hereditary",
+            "political units": "large kingdoms"
+          }
+        }
+      },
+      "difficulty": 3,
+      "explanation": "Political power shifted from controlled tribal chiefs to hereditary kings of large, complex kingdoms.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Use the named dimensions so each contrast is explicit.",
+      "id": "q-038",
+      "marks": 4,
+      "prompt": "Compare political organization in the Early and Later Vedic periods.",
+      "response": {
+        "dimensions": [
+          "political units",
+          "kingship",
+          "assemblies",
+          "administration"
+        ]
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "small tribes became large kingdoms",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Later Vedic kingship became powerful and hereditary",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "sabha and samiti lost much control",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "administration became complex with officials",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-54",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "political-organization",
+        "early-later-comparison"
+      ],
+      "type": "compare",
+      "version": 1
+    },
+    {
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "kuru",
+            "rightId": "delhi"
+          },
+          {
+            "leftId": "kosala",
+            "rightId": "awadh"
+          },
+          {
+            "leftId": "magadha",
+            "rightId": "patna-gaya"
+          },
+          {
+            "leftId": "kashi",
+            "rightId": "varanasi"
+          }
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "Kuru lay near Delhi, Kosala in Awadh, Magadha around Patna and Gaya, and Kashi at Varanasi.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Match each item by its defining role, place or meaning.",
+      "id": "q-039",
+      "marks": 4,
+      "prompt": "Match each Later Vedic kingdom with its location given in the chapter.",
+      "response": {
+        "left": [
+          {
+            "id": "kuru",
+            "text": "Kuru"
+          },
+          {
+            "id": "kosala",
+            "text": "Kosala"
+          },
+          {
+            "id": "magadha",
+            "text": "Magadha"
+          },
+          {
+            "id": "kashi",
+            "text": "Kashi"
+          }
+        ],
+        "right": [
+          {
+            "id": "delhi",
+            "text": "Near present-day Delhi"
+          },
+          {
+            "id": "awadh",
+            "text": "Awadh"
+          },
+          {
+            "id": "patna-gaya",
+            "text": "Patna and Gaya"
+          },
+          {
+            "id": "varanasi",
+            "text": "Varanasi"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-54",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "political-organization"
+      ],
+      "type": "matching",
+      "version": 1
+    },
+    {
+      "answer": {
+        "subanswers": [
+          {
+            "id": "a",
+            "ideal": "Ashvamedha yagna or horse sacrifice."
+          },
+          {
+            "id": "b",
+            "ideal": "The region came under the authority of the king who had performed the yagna."
+          },
+          {
+            "id": "c",
+            "ideal": "A war followed; the victorious king annexed the defeated king's territories."
+          }
+        ]
+      },
+      "difficulty": 3,
+      "explanation": "The Ashvamedha tested and extended a powerful king's authority.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Follow the horse through the two possible outcomes in the callout.",
+      "id": "q-040",
+      "marks": 5,
+      "prompt": "Study the decorated horse and the Ashvamedha account, then answer the questions.",
+      "response": {
+        "subquestions": [
+          {
+            "id": "a",
+            "marks": 1,
+            "prompt": "Name the ceremony represented."
+          },
+          {
+            "id": "b",
+            "marks": 2,
+            "prompt": "What happened when the horse passed through a region unchallenged?"
+          },
+          {
+            "id": "c",
+            "marks": 2,
+            "prompt": "What happened if another king stopped the horse?"
+          }
+        ]
+      },
+      "rubric": {
+        "subrubrics": [
+          {
+            "id": "a",
+            "points": [
+              {
+                "concept": "Ashvamedha yagna or horse sacrifice",
+                "id": "a1",
+                "required": true,
+                "weight": 1
+              }
+            ]
+          },
+          {
+            "id": "b",
+            "points": [
+              {
+                "concept": "horse passed unchallenged",
+                "id": "b1",
+                "required": true,
+                "weight": 1
+              },
+              {
+                "concept": "region accepted performing king's rule",
+                "id": "b2",
+                "required": true,
+                "weight": 1
+              }
+            ]
+          },
+          {
+            "id": "c",
+            "points": [
+              {
+                "concept": "stopping horse caused war",
+                "id": "c1",
+                "required": true,
+                "weight": 1
+              },
+              {
+                "concept": "victor annexed defeated territory",
+                "id": "c2",
+                "required": true,
+                "weight": 1
+              }
+            ]
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-55",
+          "regionId": "ashvamedha-picture",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-54",
+          "regionId": "ashvamedha-callout",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "political-organization"
+      ],
+      "type": "source_group",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "hereditary"
+      },
+      "difficulty": 1,
+      "explanation": "Hereditary kingship, weakened assemblies and complex administration increased royal power.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Eliminate choices that belong to a different period, place or role.",
+      "id": "q-041",
+      "marks": 1,
+      "prompt": "Which change best explains why Later Vedic kings became more powerful?",
+      "response": {
+        "options": [
+          {
+            "id": "hereditary",
+            "text": "Kingship became hereditary and assemblies lost control."
+          },
+          {
+            "id": "temporary",
+            "text": "Kings were selected for one ceremony only."
+          },
+          {
+            "id": "village",
+            "text": "Every village became an independent kingdom."
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-54",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "political-organization"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "brahmanas",
+            "rightId": "priests"
+          },
+          {
+            "leftId": "kshatriyas",
+            "rightId": "warriors"
+          },
+          {
+            "leftId": "vaishyas",
+            "rightId": "producers"
+          },
+          {
+            "leftId": "shudras",
+            "rightId": "workers"
+          }
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "The caste hierarchy separated ruling priests and warriors from producing vaishyas and serving shudras.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Match each item by its defining role, place or meaning.",
+      "id": "q-042",
+      "marks": 4,
+      "prompt": "Match each Later Vedic caste with the role stated in the chapter.",
+      "response": {
+        "left": [
+          {
+            "id": "brahmanas",
+            "text": "Brahmanas"
+          },
+          {
+            "id": "kshatriyas",
+            "text": "Kshatriyas"
+          },
+          {
+            "id": "vaishyas",
+            "text": "Vaishyas"
+          },
+          {
+            "id": "shudras",
+            "text": "Shudras"
+          }
+        ],
+        "right": [
+          {
+            "id": "priests",
+            "text": "Priests in the ruling class"
+          },
+          {
+            "id": "warriors",
+            "text": "Warriors in the ruling class"
+          },
+          {
+            "id": "producers",
+            "text": "Artisans, traders and farmers"
+          },
+          {
+            "id": "workers",
+            "text": "Uneducated workers serving the other classes"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-55",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "social-classification"
+      ],
+      "type": "matching",
+      "version": 1
+    },
+    {
+      "answer": {
+        "sides": {
+          "Early Vedic": {
+            "basis": "occupation",
+            "mobility": "a person could change class"
+          },
+          "Later Vedic": {
+            "basis": "birth",
+            "marriage restriction": "inter-caste marriage not allowed",
+            "mobility": "rigid and hereditary"
+          }
+        }
+      },
+      "difficulty": 3,
+      "explanation": "An occupation-based, flexible division became a birth-based hereditary caste system.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Use the named dimensions so each contrast is explicit.",
+      "id": "q-043",
+      "marks": 4,
+      "prompt": "How did the basis and flexibility of social classification change from the Early to the Later Vedic period?",
+      "response": {
+        "dimensions": [
+          "basis",
+          "mobility",
+          "Later Vedic marriage restriction"
+        ]
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Early system was occupation-based",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Later caste was decided by birth",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Later system was rigid and hereditary",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "inter-caste marriage was not allowed",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-55",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "social-classification",
+        "early-later-comparison"
+      ],
+      "type": "compare",
+      "version": 1
+    },
+    {
+      "answer": {
+        "sides": {
+          "Early Vedic": {
+            "assemblies": "women participated",
+            "education": "educated women such as Maitreyi and Gargi",
+            "family role": "higher social position",
+            "religion": "participated"
+          },
+          "Later Vedic": {
+            "assemblies": "excluded",
+            "education": "could not study Vedic literature",
+            "family role": "served husband and cared for family",
+            "religion": "continued to participate"
+          }
+        }
+      },
+      "difficulty": 3,
+      "explanation": "Women's education and public role declined, though religious participation continued.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Use the named dimensions so each contrast is explicit.",
+      "id": "q-044",
+      "marks": 5,
+      "prompt": "Compare the position of women in the Early and Later Vedic periods.",
+      "response": {
+        "dimensions": [
+          "education",
+          "assemblies",
+          "religion",
+          "family role"
+        ]
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Early Vedic women could be highly educated",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Later Vedic women could not study Vedic literature",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "women no longer participated in assemblies",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "continued religious participation",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Later duty centered on husband and family",
+            "id": "p5",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-55",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-56",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "family-and-women",
+        "early-later-comparison"
+      ],
+      "type": "compare",
+      "version": 1
+    },
+    {
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "brahmacharya",
+            "rightId": "student"
+          },
+          {
+            "leftId": "grihastha",
+            "rightId": "householder"
+          },
+          {
+            "leftId": "vanaprastha",
+            "rightId": "forest"
+          },
+          {
+            "leftId": "sanyasa",
+            "rightId": "ascetic"
+          }
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "The four stages moved from student life to household life, forest retirement and full renunciation.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Match each item by its defining role, place or meaning.",
+      "id": "q-045",
+      "marks": 4,
+      "prompt": "Match each ashrama with its stage of life.",
+      "response": {
+        "left": [
+          {
+            "id": "brahmacharya",
+            "text": "Brahmacharya"
+          },
+          {
+            "id": "grihastha",
+            "text": "Grihastha"
+          },
+          {
+            "id": "vanaprastha",
+            "text": "Vanaprastha"
+          },
+          {
+            "id": "sanyasa",
+            "text": "Sanyasa"
+          }
+        ],
+        "right": [
+          {
+            "id": "student",
+            "text": "Student living with a guru"
+          },
+          {
+            "id": "householder",
+            "text": "Married householder"
+          },
+          {
+            "id": "forest",
+            "text": "Retirement to the forest for meditation"
+          },
+          {
+            "id": "ascetic",
+            "text": "Complete renunciation as an ascetic"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-55",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "ashramas"
+      ],
+      "type": "matching",
+      "version": 1
+    },
+    {
+      "answer": {
+        "sides": {
+          "sanyasa": {
+            "degree of withdrawal": "renounced all worldly ties",
+            "place or way of life": "became an ascetic",
+            "purpose": "spread religion and truth"
+          },
+          "vanaprastha": {
+            "degree of withdrawal": "gave up worldly life",
+            "place or way of life": "went to the forest",
+            "purpose": "meditation"
+          }
+        }
+      },
+      "difficulty": 3,
+      "explanation": "Vanaprastha was forest retirement for meditation; sanyasa was complete ascetic renunciation.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Use the named dimensions so each contrast is explicit.",
+      "id": "q-046",
+      "marks": 4,
+      "prompt": "Differentiate between vanaprastha and sanyasa.",
+      "response": {
+        "dimensions": [
+          "degree of withdrawal",
+          "place or way of life",
+          "purpose"
+        ]
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "vanaprastha involved leaving worldly life for the forest",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "vanaprastha focused on meditation",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "sanyasa involved complete renunciation as an ascetic",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "sanyasa spread principles of religion and truth",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-55",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "ashramas"
+      ],
+      "type": "compare",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Students lived simply and with discipline, memorized orally taught lessons, cleaned the guru's house, drew water, gathered wood and worked in the fields."
+      },
+      "difficulty": 2,
+      "explanation": "Students lived simply and with discipline, memorized orally taught lessons, cleaned the guru's house, drew water, gathered wood and worked in the fields.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Organize the answer into distinct points.",
+      "id": "q-047",
+      "marks": 5,
+      "prompt": "Describe a student's daily life and responsibilities in a gurukul.",
+      "response": {
+        "recommendedPoints": 5
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "simple and disciplined life",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "memorized lessons taught orally",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "cleaned the house",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "drew water or gathered wood",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "worked in fields",
+            "id": "p5",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-56",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "gurukul-education"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionIds": [
+          "forest",
+          "oral",
+          "chores",
+          "dakshina"
+        ]
+      },
+      "difficulty": 2,
+      "explanation": "Gurukul education combined residential oral learning, discipline, service and affordable guru dakshina.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Select living arrangement, teaching method, duties and fees.",
+      "id": "q-048",
+      "marks": 4,
+      "prompt": "Which features belonged to the Later Vedic gurukul system?",
+      "response": {
+        "options": [
+          {
+            "id": "forest",
+            "text": "Gurukuls were usually deep in forests."
+          },
+          {
+            "id": "oral",
+            "text": "Lessons were taught orally and memorized."
+          },
+          {
+            "id": "chores",
+            "text": "Students helped the guru with daily work."
+          },
+          {
+            "id": "dakshina",
+            "text": "Guru dakshina was paid according to means."
+          },
+          {
+            "id": "day-school",
+            "text": "Students returned to their own homes every afternoon."
+          }
+        ]
+      },
+      "rubric": {
+        "partialCredit": false
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-56",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "gurukul-education"
+      ],
+      "type": "multiple_select",
+      "version": 1
+    },
+    {
+      "answer": {
+        "sides": {
+          "Early Vedic": {
+            "form of worship": "less complex",
+            "important gods": "the earlier Vedic gods that later lost importance"
+          },
+          "Later Vedic": {
+            "form of worship": "complex rituals and sacrifices",
+            "important gods": "Brahma, Vishnu and Shiva"
+          }
+        }
+      },
+      "difficulty": 3,
+      "explanation": "Later worship centered on Brahma, Vishnu and Shiva and became more elaborate.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Use the named dimensions so each contrast is explicit.",
+      "id": "q-049",
+      "marks": 3,
+      "prompt": "How did gods and worship change from the Early to the Later Vedic period?",
+      "response": {
+        "dimensions": [
+          "important gods",
+          "form of worship"
+        ]
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Early Vedic gods lost importance",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Brahma, Vishnu and Shiva became chief gods",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "worship became complex with rituals and sacrifices",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-56",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "religion-and-hinduism",
+        "early-later-comparison"
+      ],
+      "type": "compare",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Worship involved complicated rituals and sacrifices that only brahmanas could perform."
+      },
+      "difficulty": 2,
+      "explanation": "Worship involved complicated rituals and sacrifices that only brahmanas could perform.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer directly using the chapter's key terms.",
+      "id": "q-050",
+      "marks": 2,
+      "prompt": "Why did the status of brahmanas rise in the Later Vedic period?",
+      "response": {
+        "recommendedSentences": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "rituals and sacrifices became complicated",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "only brahmanas could perform them",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-56",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "religion-and-hinduism",
+        "social-classification"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "mahabharata",
+            "rightId": "pandava-kaurava"
+          },
+          {
+            "leftId": "ramayana",
+            "rightId": "rama"
+          },
+          {
+            "leftId": "vyasa",
+            "rightId": "maha-author"
+          },
+          {
+            "leftId": "valmiki",
+            "rightId": "rama-author"
+          },
+          {
+            "leftId": "gita",
+            "rightId": "krishna-advice"
+          }
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "Vyasa is linked with the Mahabharata, Valmiki with the Ramayana, and the Bhagavad Gita with Krishna's counsel to Arjuna.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Match each item by its defining role, place or meaning.",
+      "id": "q-051",
+      "marks": 5,
+      "prompt": "Match each epic or related figure with the correct description.",
+      "response": {
+        "left": [
+          {
+            "id": "mahabharata",
+            "text": "Mahabharata"
+          },
+          {
+            "id": "ramayana",
+            "text": "Ramayana"
+          },
+          {
+            "id": "vyasa",
+            "text": "Rishi Vyasa"
+          },
+          {
+            "id": "valmiki",
+            "text": "Rishi Valmiki"
+          },
+          {
+            "id": "gita",
+            "text": "Bhagavad Gita"
+          }
+        ],
+        "right": [
+          {
+            "id": "pandava-kaurava",
+            "text": "Conflict between Pandavas and Kauravas"
+          },
+          {
+            "id": "rama",
+            "text": "Life and deeds of Rama"
+          },
+          {
+            "id": "maha-author",
+            "text": "Original composer of the Mahabharata"
+          },
+          {
+            "id": "rama-author",
+            "text": "Composer of the Ramayana"
+          },
+          {
+            "id": "krishna-advice",
+            "text": "Krishna's advice to Arjuna"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-56",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-57",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "epics"
+      ],
+      "type": "matching",
+      "version": 1
+    },
+    {
+      "answer": {
+        "subanswers": [
+          {
+            "id": "a",
+            "ideal": "The Pandavas were Pandu's five sons; the Kauravas were Dhritarashtra's one hundred sons."
+          },
+          {
+            "id": "b",
+            "ideal": "The Kauravas tricked the Pandavas into losing a game of dice whose condition required thirteen years of exile."
+          },
+          {
+            "id": "c",
+            "ideal": "The Kauravas refused to return the Pandavas' kingdom after the exile."
+          },
+          {
+            "id": "d",
+            "ideal": "Eighteen days."
+          },
+          {
+            "id": "e",
+            "ideal": "The Kauravas were defeated and killed, and Yudhishthir became king of Hastinapur."
+          }
+        ]
+      },
+      "difficulty": 3,
+      "explanation": "The passage traces the conflict from succession and rivalry through exile to the eighteen-day Kurukshetra battle.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Follow the sequence from family groups to dice, exile, refusal and battle.",
+      "id": "q-052",
+      "marks": 9,
+      "prompt": "Read the chapter's story of the Mahabharata and answer the questions.",
+      "response": {
+        "subquestions": [
+          {
+            "id": "a",
+            "marks": 2,
+            "prompt": "Who were the Pandavas and Kauravas?"
+          },
+          {
+            "id": "b",
+            "marks": 2,
+            "prompt": "Why did the Pandavas go into exile for thirteen years?"
+          },
+          {
+            "id": "c",
+            "marks": 2,
+            "prompt": "What caused the battle at Kurukshetra after their return?"
+          },
+          {
+            "id": "d",
+            "marks": 1,
+            "prompt": "How long did the battle last?"
+          },
+          {
+            "id": "e",
+            "marks": 2,
+            "prompt": "What was the result of the battle?"
+          }
+        ]
+      },
+      "rubric": {
+        "subrubrics": [
+          {
+            "id": "a",
+            "points": [
+              {
+                "concept": "Pandavas were Pandu's five sons",
+                "id": "a1",
+                "required": true,
+                "weight": 1
+              },
+              {
+                "concept": "Kauravas were Dhritarashtra's hundred sons",
+                "id": "a2",
+                "required": true,
+                "weight": 1
+              }
+            ]
+          },
+          {
+            "id": "b",
+            "points": [
+              {
+                "concept": "Kauravas tricked Pandavas into losing the dice game",
+                "id": "b1",
+                "required": true,
+                "weight": 1
+              },
+              {
+                "concept": "condition required thirteen years of exile",
+                "id": "b2",
+                "required": true,
+                "weight": 1
+              }
+            ]
+          },
+          {
+            "id": "c",
+            "points": [
+              {
+                "concept": "Pandavas demanded kingdom after exile",
+                "id": "c1",
+                "required": true,
+                "weight": 1
+              },
+              {
+                "concept": "Kauravas refused",
+                "id": "c2",
+                "required": true,
+                "weight": 1
+              }
+            ]
+          },
+          {
+            "id": "d",
+            "points": [
+              {
+                "concept": "eighteen days",
+                "id": "d1",
+                "required": true,
+                "weight": 1
+              }
+            ]
+          },
+          {
+            "id": "e",
+            "points": [
+              {
+                "concept": "Kauravas defeated and killed",
+                "id": "e1",
+                "required": true,
+                "weight": 1
+              },
+              {
+                "concept": "Yudhishthir became king of Hastinapur",
+                "id": "e2",
+                "required": true,
+                "weight": 1
+              }
+            ]
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-58",
+          "regionId": "mahabharata-story",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "epics"
+      ],
+      "type": "source_group",
+      "version": 1
+    },
+    {
+      "answer": {
+        "subanswers": [
+          {
+            "id": "a",
+            "ideal": "To keep Dasharatha's promise to Kaikeyi, Rama was sent into exile for fourteen years."
+          },
+          {
+            "id": "b",
+            "ideal": "Bharata refused the throne, ruled on Rama's behalf and waited for his return."
+          },
+          {
+            "id": "c",
+            "ideal": "Ravana kidnapped Sita; Sugriva and Hanuman helped Rama and Lakshmana rescue her."
+          },
+          {
+            "id": "d",
+            "ideal": "They lit earthen lamps to celebrate the rightful heir's return."
+          },
+          {
+            "id": "e",
+            "ideal": "An ideal state based on equality and justice, with prosperity and happiness."
+          }
+        ]
+      },
+      "difficulty": 3,
+      "explanation": "The story connects Rama's exile and rescue of Sita with his return and the ideal of Rama Rajya.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Trace the promise, exile, rescue and return in order.",
+      "id": "q-053",
+      "marks": 10,
+      "prompt": "Read the chapter's story of the Ramayana and answer the questions.",
+      "response": {
+        "subquestions": [
+          {
+            "id": "a",
+            "marks": 2,
+            "prompt": "Why was Rama sent into exile, and for how long?"
+          },
+          {
+            "id": "b",
+            "marks": 2,
+            "prompt": "What did Bharata do after Dasharatha's death?"
+          },
+          {
+            "id": "c",
+            "marks": 2,
+            "prompt": "Who kidnapped Sita, and who helped Rama rescue her?"
+          },
+          {
+            "id": "d",
+            "marks": 2,
+            "prompt": "How did the people of Ayodhya celebrate Rama's return?"
+          },
+          {
+            "id": "e",
+            "marks": 2,
+            "prompt": "What was Rama Rajya according to the passage?"
+          }
+        ]
+      },
+      "rubric": {
+        "subrubrics": [
+          {
+            "id": "a",
+            "points": [
+              {
+                "concept": "kept Dasharatha's promise to Kaikeyi",
+                "id": "a1",
+                "required": true,
+                "weight": 1
+              },
+              {
+                "concept": "fourteen-year exile",
+                "id": "a2",
+                "required": true,
+                "weight": 1
+              }
+            ]
+          },
+          {
+            "id": "b",
+            "points": [
+              {
+                "concept": "Bharata refused to become king",
+                "id": "b1",
+                "required": true,
+                "weight": 1
+              },
+              {
+                "concept": "ruled for Rama and awaited return",
+                "id": "b2",
+                "required": true,
+                "weight": 1
+              }
+            ]
+          },
+          {
+            "id": "c",
+            "points": [
+              {
+                "concept": "Ravana kidnapped Sita",
+                "id": "c1",
+                "required": true,
+                "weight": 1
+              },
+              {
+                "concept": "Sugriva and Hanuman helped the rescue",
+                "id": "c2",
+                "required": true,
+                "weight": 1
+              }
+            ]
+          },
+          {
+            "id": "d",
+            "points": [
+              {
+                "concept": "people lit earthen lamps",
+                "id": "d1",
+                "required": true,
+                "weight": 1
+              },
+              {
+                "concept": "celebrated Rama's return as rightful heir",
+                "id": "d2",
+                "required": true,
+                "weight": 1
+              }
+            ]
+          },
+          {
+            "id": "e",
+            "points": [
+              {
+                "concept": "ideal state based on equality and justice",
+                "id": "e1",
+                "required": true,
+                "weight": 1
+              },
+              {
+                "concept": "prosperity and happiness",
+                "id": "e2",
+                "required": true,
+                "weight": 1
+              }
+            ]
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-58",
+          "regionId": "ramayana-story",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "epics"
+      ],
+      "type": "source_group",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "The word Hindu comes from Sindhu. Hinduism was not founded by one leader; it evolved over centuries from the mingling of Indus Valley and Aryan beliefs. It is a philosophy and way of life centered on one omnipotent, omnipresent creative force known through different names and forms."
+      },
+      "difficulty": 2,
+      "explanation": "The word Hindu comes from Sindhu. Hinduism was not founded by one leader; it evolved over centuries from the mingling of Indus Valley and Aryan beliefs. It is a philosophy and way of life centered on one omnipotent, omnipresent creative force known through different names and forms.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Organize the answer into distinct points.",
+      "id": "q-054",
+      "marks": 6,
+      "prompt": "How does the chapter explain the origin and nature of Hinduism?",
+      "response": {
+        "recommendedPoints": 6
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Hindu derives from Sindhu",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "no single spiritual founder",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "evolved over centuries",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "mixing of Indus Valley and Aryan beliefs",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "philosophy and way of life",
+            "id": "p5",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "one omnipotent and omnipresent creative force in different forms",
+            "id": "p6",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-57",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "religion-and-hinduism"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "dharma",
+            "rightId": "duty"
+          },
+          {
+            "leftId": "karma",
+            "rightId": "consequences"
+          },
+          {
+            "leftId": "transmigration",
+            "rightId": "rebirth"
+          }
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "Dharma concerns duty, karma the results of actions, and transmigration the soul's rebirth.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Match each item by its defining role, place or meaning.",
+      "id": "q-055",
+      "marks": 3,
+      "prompt": "Match each principle of Hindu philosophy with its meaning.",
+      "response": {
+        "left": [
+          {
+            "id": "dharma",
+            "text": "Dharma"
+          },
+          {
+            "id": "karma",
+            "text": "Karma"
+          },
+          {
+            "id": "transmigration",
+            "text": "Transmigration of the soul"
+          }
+        ],
+        "right": [
+          {
+            "id": "duty",
+            "text": "Moral duty to do right and live piously"
+          },
+          {
+            "id": "consequences",
+            "text": "Actions bring consequences"
+          },
+          {
+            "id": "rebirth",
+            "text": "Immortal soul enters a new body after death"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-57",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "religion-and-hinduism"
+      ],
+      "type": "matching",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "The soul is immortal; when the body dies, the soul lives on, passes into a new body and is reborn."
+      },
+      "difficulty": 2,
+      "explanation": "The soul is immortal; when the body dies, the soul lives on, passes into a new body and is reborn.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer directly using the chapter's key terms.",
+      "id": "q-056",
+      "marks": 3,
+      "prompt": "Explain the transmigration of the soul.",
+      "response": {
+        "recommendedSentences": 3
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "soul is immortal and does not die",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "only the body dies",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "soul enters a new body and is reborn",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-57",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "religion-and-hinduism"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "Upanishads",
+          "the Upanishads"
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "The Upanishads are described as the fountainhead of Hindu philosophy.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Look for the texts containing the essence of Hinduism.",
+      "id": "q-057",
+      "marks": 1,
+      "prompt": "Which texts are described as the fountainhead or original source of Hindu philosophy?",
+      "response": {},
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-57",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "religion-and-hinduism"
+      ],
+      "type": "one_word",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionIds": [
+          "settled",
+          "agriculture",
+          "iron",
+          "grey",
+          "barter"
+        ]
+      },
+      "difficulty": 2,
+      "explanation": "Settled farming, iron tools, painted grey vessels, prosperity, urban growth and barter characterized the economy.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose every development explicitly stated in the Economic Life section.",
+      "id": "q-058",
+      "marks": 5,
+      "prompt": "Select all economic developments of the Later Vedic period stated in the chapter.",
+      "response": {
+        "options": [
+          {
+            "id": "settled",
+            "text": "The Aryans led a settled life."
+          },
+          {
+            "id": "agriculture",
+            "text": "Agriculture was the main occupation."
+          },
+          {
+            "id": "iron",
+            "text": "Iron and improved implements increased prosperity."
+          },
+          {
+            "id": "grey",
+            "text": "Painted grey vessels were used."
+          },
+          {
+            "id": "barter",
+            "text": "Towns, cities and barter trade developed."
+          },
+          {
+            "id": "coins",
+            "text": "Machine-minted coins replaced barter."
+          }
+        ]
+      },
+      "rubric": {
+        "partialCredit": false
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-57",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "economic-life"
+      ],
+      "type": "multiple_select",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Aryan civilization is described as a cradle of Indian culture. Hinduism today draws on the Vedas and Upanishads, while Sanskrit and Vedic literature serve as unifying forces for many Indians."
+      },
+      "difficulty": 2,
+      "explanation": "Aryan civilization is described as a cradle of Indian culture. Hinduism today draws on the Vedas and Upanishads, while Sanskrit and Vedic literature serve as unifying forces for many Indians.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Organize the answer into distinct points.",
+      "id": "q-059",
+      "marks": 4,
+      "prompt": "What lasting impact of Aryan culture does the chapter identify?",
+      "response": {
+        "recommendedPoints": 4
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Aryan civilization described as cradle of Indian culture",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Hinduism based on philosophy of Vedas and Upanishads",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Sanskrit acts as a unifying force",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Vedic literature acts as a unifying force",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-57",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "cultural-impact"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "sides": {
+          "Early Vedic": {
+            "politics": "small tribes and stronger assemblies",
+            "religion": "earlier gods and less complex worship",
+            "social classification": "flexible and occupation-based",
+            "women": "education and assembly participation"
+          },
+          "Later Vedic": {
+            "economy": "settled agriculture, iron, prosperity, towns and barter",
+            "politics": "large kingdoms and hereditary kings",
+            "religion": "Brahma, Vishnu and Shiva with complex rituals",
+            "social classification": "rigid hereditary caste",
+            "women": "education and public role declined"
+          }
+        }
+      },
+      "difficulty": 3,
+      "explanation": "Later Vedic life became more settled, stratified, monarchic and ritualized.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Use the named dimensions so each contrast is explicit.",
+      "id": "q-060",
+      "marks": 5,
+      "prompt": "Summarize five major changes from the Early to the Later Vedic period.",
+      "response": {
+        "dimensions": [
+          "politics",
+          "social classification",
+          "women",
+          "religion",
+          "economy"
+        ]
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "tribes became large kingdoms with hereditary kings",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "occupation-based classes became rigid hereditary castes",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "women's education and assembly role declined",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "gods and worship shifted toward Brahma, Vishnu, Shiva and complex rituals",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "settled agriculture, iron, prosperity, towns or barter developed",
+            "id": "p5",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-54",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-55",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-56",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-57",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "early-later-comparison",
+        "political-organization",
+        "social-classification",
+        "family-and-women",
+        "religion-and-hinduism",
+        "economic-life"
+      ],
+      "type": "compare",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Ved Vyasa is revered as the sage said to have divided the Vedas into four parts. He is also presented as the author of the Mahabharata and composer of the Puranas; his birthday is celebrated as Guru Purnima."
+      },
+      "difficulty": 2,
+      "explanation": "Ved Vyasa is revered as the sage said to have divided the Vedas into four parts. He is also presented as the author of the Mahabharata and composer of the Puranas; his birthday is celebrated as Guru Purnima.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Organize the answer into distinct points.",
+      "id": "q-061",
+      "marks": 4,
+      "prompt": "What does the biography box say about Ved Vyasa?",
+      "response": {
+        "recommendedPoints": 4
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "sage said to divide Vedas into four parts",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "author of the Mahabharata",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "composed the Puranas",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "birthday celebrated as Guru Purnima",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-59",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "later-vedic-period",
+        "epics"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Tagore's vision of educational reform led to Patha Bhavana at Santiniketan, which later developed into Visva-Bharati University."
+      },
+      "difficulty": 2,
+      "explanation": "Tagore's vision of educational reform led to Patha Bhavana at Santiniketan, which later developed into Visva-Bharati University.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer directly using the chapter's key terms.",
+      "id": "q-062",
+      "marks": 3,
+      "prompt": "What educational contribution of Rabindranath Tagore is described in the ‘Knowledge of India’ box?",
+      "response": {
+        "recommendedSentences": 3
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Tagore had a vision of educational reform",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "established Patha Bhavana at Santiniketan",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "it later developed into Visva-Bharati University",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-56",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "gurukul-education",
+        "cultural-impact"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "Sindhu"
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "The word Hindu comes from Sindhu.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Think of the Sanskrit name of the Indus River.",
+      "id": "q-063",
+      "marks": 1,
+      "prompt": "From which Sanskrit word does the word ‘Hindu’ come?",
+      "response": {},
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-57",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "religion-and-hinduism"
+      ],
+      "type": "one_word",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionIds": [
+          "atharva",
+          "sama",
+          "yajur",
+          "upanishads",
+          "archaeology"
+        ]
+      },
+      "difficulty": 2,
+      "explanation": "The three later Vedas, Upanishads, epics and archaeological discoveries are the stated sources.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Combine literary and archaeological sources.",
+      "id": "q-064",
+      "marks": 5,
+      "prompt": "Which sources does the chapter use to reconstruct life in the Later Vedic period?",
+      "response": {
+        "options": [
+          {
+            "id": "atharva",
+            "text": "Atharva Veda"
+          },
+          {
+            "id": "sama",
+            "text": "Sama Veda"
+          },
+          {
+            "id": "yajur",
+            "text": "Yajur Veda"
+          },
+          {
+            "id": "upanishads",
+            "text": "Upanishads and epics"
+          },
+          {
+            "id": "archaeology",
+            "text": "Archaeological evidence from Hastinapur and the upper Gangetic Plains"
+          },
+          {
+            "id": "modern",
+            "text": "Modern newspaper reports"
+          }
+        ]
+      },
+      "rubric": {
+        "partialCredit": false
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-54",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "later-vedic-period",
+        "epics"
+      ],
+      "type": "multiple_select",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "They increased agricultural prosperity, supporting settled life and accompanying the growth of towns, cities and trade."
+      },
+      "difficulty": 2,
+      "explanation": "They increased agricultural prosperity, supporting settled life and accompanying the growth of towns, cities and trade.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer directly using the chapter's key terms.",
+      "id": "q-065",
+      "marks": 3,
+      "prompt": "How did iron and improved farming implements affect Later Vedic economic life?",
+      "response": {
+        "recommendedSentences": 3
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "iron and improved implements aided farming",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "brought increased prosperity",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "connected with settled life and growth of towns, cities or trade",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-57",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "economic-life"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "The joint family system became stronger, and the birth of a son was welcomed."
+      },
+      "difficulty": 2,
+      "explanation": "The joint family system became stronger, and the birth of a son was welcomed.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer directly using the chapter's key terms.",
+      "id": "q-066",
+      "marks": 2,
+      "prompt": "What two developments in family life are mentioned for the Later Vedic period?",
+      "response": {
+        "recommendedSentences": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "joint family system was strengthened",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "birth of a son was welcomed",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-55",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "family-and-women"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "brahma",
+            "rightId": "creator"
+          },
+          {
+            "leftId": "vishnu",
+            "rightId": "preserver"
+          },
+          {
+            "leftId": "shiva",
+            "rightId": "destroyer"
+          }
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "Brahma, Vishnu and Shiva represent the creator, preserver and destroyer.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Match each item by its defining role, place or meaning.",
+      "id": "q-067",
+      "marks": 3,
+      "prompt": "Match the three important Later Vedic gods with the aspect stated in the chapter.",
+      "response": {
+        "left": [
+          {
+            "id": "brahma",
+            "text": "Brahma"
+          },
+          {
+            "id": "vishnu",
+            "text": "Vishnu"
+          },
+          {
+            "id": "shiva",
+            "text": "Shiva"
+          }
+        ],
+        "right": [
+          {
+            "id": "creator",
+            "text": "Creator"
+          },
+          {
+            "id": "preserver",
+            "text": "Preserver"
+          },
+          {
+            "id": "destroyer",
+            "text": "Destroyer"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-56",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-57",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "religion-and-hinduism"
+      ],
+      "type": "matching",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionIds": [
+          "british",
+          "generalized",
+          "sanatan"
+        ]
+      },
+      "difficulty": 2,
+      "explanation": "The term was coined in the early nineteenth century for related traditions also described as Vedic religion or Sanatan Dharma; the tradition has no single founder or fixed origin date.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose the statements about the name, breadth and alternate description.",
+      "id": "q-068",
+      "marks": 3,
+      "prompt": "Which statements agree with the chapter's explanatory box about the term ‘Hinduism’?",
+      "response": {
+        "options": [
+          {
+            "id": "british",
+            "text": "The British coined the term in the early nineteenth century."
+          },
+          {
+            "id": "generalized",
+            "text": "It generalized several related but not identical religious traditions."
+          },
+          {
+            "id": "sanatan",
+            "text": "It is also referred to as Vedic religion or Sanatan Dharma."
+          },
+          {
+            "id": "founder",
+            "text": "It began with one named spiritual founder."
+          },
+          {
+            "id": "fixed-date",
+            "text": "It has one precise date of origin."
+          }
+        ]
+      },
+      "rubric": {
+        "partialCredit": false
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-57",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "religion-and-hinduism"
+      ],
+      "type": "multiple_select",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionIds": [
+          "dhritarashtra",
+          "division",
+          "indraprastha",
+          "draupadi",
+          "exile"
+        ]
+      },
+      "difficulty": 2,
+      "explanation": "The passage moves from succession and division of the kingdom to Indraprastha, Draupadi, the dice game and exile.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Keep the places, family groups and events in the Mahabharata passage together.",
+      "id": "q-069",
+      "marks": 5,
+      "prompt": "Select all details stated in the chapter's Mahabharata narrative.",
+      "response": {
+        "options": [
+          {
+            "id": "dhritarashtra",
+            "text": "Dhritarashtra became king after Pandu's death."
+          },
+          {
+            "id": "division",
+            "text": "Hastinapur went to the Kauravas and Khandava forest to the Pandavas."
+          },
+          {
+            "id": "indraprastha",
+            "text": "The Pandavas built their capital at Indraprastha."
+          },
+          {
+            "id": "draupadi",
+            "text": "The Pandavas were married to Draupadi."
+          },
+          {
+            "id": "exile",
+            "text": "The dice-game loss led to thirteen years of exile."
+          },
+          {
+            "id": "ayodhya",
+            "text": "The Pandavas built their capital at Ayodhya."
+          }
+        ]
+      },
+      "rubric": {
+        "partialCredit": false
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-58",
+          "regionId": "mahabharata-story",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "epics"
+      ],
+      "type": "multiple_select",
+      "version": 1
+    },
+    {
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "kaushalya",
+            "rightId": "rama"
+          },
+          {
+            "leftId": "kaikeyi",
+            "rightId": "bharata"
+          },
+          {
+            "leftId": "sumitra",
+            "rightId": "twins"
+          },
+          {
+            "leftId": "janaka",
+            "rightId": "sita"
+          },
+          {
+            "leftId": "sugriva",
+            "rightId": "ally"
+          },
+          {
+            "leftId": "hanuman",
+            "rightId": "commander"
+          }
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "The passage identifies Dasharatha's queens and sons, Sita's father, and Rama's allies Sugriva and Hanuman.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Match each item by its defining role, place or meaning.",
+      "id": "q-070",
+      "marks": 6,
+      "prompt": "Match each Ramayana figure with the relationship or role stated in the chapter.",
+      "response": {
+        "left": [
+          {
+            "id": "kaushalya",
+            "text": "Kaushalya"
+          },
+          {
+            "id": "kaikeyi",
+            "text": "Kaikeyi"
+          },
+          {
+            "id": "sumitra",
+            "text": "Sumitra"
+          },
+          {
+            "id": "janaka",
+            "text": "King Janaka"
+          },
+          {
+            "id": "sugriva",
+            "text": "King Sugriva"
+          },
+          {
+            "id": "hanuman",
+            "text": "Hanuman"
+          }
+        ],
+        "right": [
+          {
+            "id": "rama",
+            "text": "Mother of Rama"
+          },
+          {
+            "id": "bharata",
+            "text": "Mother of Bharata"
+          },
+          {
+            "id": "twins",
+            "text": "Mother of Lakshmana and Shatrughna"
+          },
+          {
+            "id": "sita",
+            "text": "Father of Sita"
+          },
+          {
+            "id": "ally",
+            "text": "King who helped Rama"
+          },
+          {
+            "id": "commander",
+            "text": "Commander of Sugriva's army"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-58",
+          "regionId": "ramayana-story",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "epics"
+      ],
+      "type": "matching",
+      "version": 1
+    },
+    {
+      "answer": {
+        "sides": {
+          "Ashvamedha": {
+            "occasion or method": "a decorated horse moved through territories",
+            "purpose": "established the king's undisputed authority where it moved unchallenged"
+          },
+          "Rajasuya": {
+            "occasion or method": "performed by the purohita when a king ascended the throne",
+            "purpose": "conferred supreme power on him"
+          }
+        }
+      },
+      "difficulty": 3,
+      "explanation": "Rajasuya marked accession to supreme power; Ashvamedha tested and extended territorial authority through the horse.",
+      "generation": {
+        "generatedAt": "2026-09-01T02:45:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Use the named dimensions so each contrast is explicit.",
+      "id": "q-071",
+      "marks": 4,
+      "prompt": "Differentiate between the Rajasuya and Ashvamedha yagnas.",
+      "response": {
+        "dimensions": [
+          "occasion or method",
+          "purpose"
+        ]
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Rajasuya performed at accession by the purohita",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Rajasuya conferred supreme power",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Ashvamedha involved the released horse",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Ashvamedha established territorial authority",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-54",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "political-organization"
+      ],
+      "type": "compare",
+      "version": 1
+    }
+  ],
+  "schemaVersion": "0.1.0",
+  "sources": [
+    {
+      "assetRef": "manifest://later-vedic-civilization/page-54",
+      "extractionConfidence": 0.99,
+      "id": "page-54",
+      "pageNumber": 54,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.18,
+            "width": 0.4,
+            "x": 0.52,
+            "y": 0.68
+          },
+          "id": "ashvamedha-callout",
+          "kind": "passage"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://later-vedic-civilization/page-55",
+      "extractionConfidence": 0.99,
+      "id": "page-55",
+      "pageNumber": 55,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.3,
+            "width": 0.2,
+            "x": 0.04,
+            "y": 0.05
+          },
+          "id": "ashvamedha-picture",
+          "kind": "illustration"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://later-vedic-civilization/page-56",
+      "extractionConfidence": 0.99,
+      "id": "page-56",
+      "pageNumber": 56,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.3,
+            "width": 0.18,
+            "x": 0.54,
+            "y": 0.39
+          },
+          "id": "gurukul-picture",
+          "kind": "illustration"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://later-vedic-civilization/page-57",
+      "extractionConfidence": 0.99,
+      "id": "page-57",
+      "pageNumber": 57,
+      "regions": [],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://later-vedic-civilization/page-58",
+      "extractionConfidence": 0.99,
+      "id": "page-58",
+      "pageNumber": 58,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.34,
+            "width": 0.42,
+            "x": 0.54,
+            "y": 0.05
+          },
+          "id": "mahabharata-story",
+          "kind": "passage"
+        },
+        {
+          "bounds": {
+            "height": 0.39,
+            "width": 0.42,
+            "x": 0.54,
+            "y": 0.41
+          },
+          "id": "ramayana-story",
+          "kind": "passage"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://later-vedic-civilization/page-59",
+      "extractionConfidence": 0.99,
+      "id": "page-59",
+      "pageNumber": 59,
+      "regions": [],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://later-vedic-civilization/page-60",
+      "extractionConfidence": 0.99,
+      "id": "page-60",
+      "pageNumber": 60,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.57,
+            "width": 0.42,
+            "x": 0.54,
+            "y": 0.37
+          },
+          "id": "exercises-a-c",
+          "kind": "exercise"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://later-vedic-civilization/page-61",
+      "extractionConfidence": 0.99,
+      "id": "page-61",
+      "pageNumber": 61,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.93,
+            "width": 0.43,
+            "x": 0.04,
+            "y": 0.02
+          },
+          "id": "exercises-d-h",
+          "kind": "exercise"
+        },
+        {
+          "bounds": {
+            "height": 0.2,
+            "width": 0.11,
+            "x": 0.36,
+            "y": 0.68
+          },
+          "id": "gurukul-source",
+          "kind": "illustration"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://later-vedic-civilization/page-62",
+      "extractionConfidence": 0.99,
+      "id": "page-62",
+      "pageNumber": 62,
+      "regions": [],
+      "reviewRequired": false
+    }
+  ],
+  "topics": [
+    {
+      "id": "ashramas",
+      "title": "The four ashramas"
+    },
+    {
+      "id": "cultural-impact",
+      "title": "Impact of Aryan culture"
+    },
+    {
+      "id": "early-later-comparison",
+      "title": "Early and Later Vedic comparison"
+    },
+    {
+      "id": "economic-life",
+      "title": "Economic life"
+    },
+    {
+      "id": "epics",
+      "title": "The Ramayana and Mahabharata"
+    },
+    {
+      "id": "family-and-women",
+      "title": "Family and position of women"
+    },
+    {
+      "id": "gurukul-education",
+      "title": "Gurukul education"
+    },
+    {
+      "id": "later-vedic-period",
+      "title": "Period, literature and sources"
+    },
+    {
+      "id": "political-organization",
+      "title": "Political organization"
+    },
+    {
+      "id": "religion-and-hinduism",
+      "title": "Religion and Hindu philosophy"
+    },
+    {
+      "id": "social-classification",
+      "title": "Classification of society"
+    }
+  ]
+}

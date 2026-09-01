@@ -1,0 +1,225 @@
+{
+  "reviewVersion": "0.1.0",
+  "bankId": "later-vedic-civilization-v1",
+  "bankVersion": 1,
+  "reviewedAt": "2026-09-01T03:30:00+05:30",
+  "reviewerMethod": "Codex source-by-source review using the repository-local chapter-ingestion skill, after deterministic schema, source-hash, reference and rubric checks",
+  "inputs": {
+    "manifest": "samples/later-vedic-chapter-manifest.json",
+    "bank": "samples/later-vedic-question-bank.json",
+    "sourceAssetCount": 5,
+    "pageRange": "54–62"
+  },
+  "gates": {
+    "manifestSchema": "pass",
+    "sourceHashes": "pass",
+    "questionBankSchema": "pass",
+    "deterministicGroundingReview": "pass",
+    "manualGroundingReview": "pass",
+    "rubricBalanceReview": "pass",
+    "conciseFalseCorrectionReview": "pass"
+  },
+  "coverage": {
+    "questionCount": 71,
+    "topics": {
+      "later-vedic-period": 7,
+      "political-organization": 14,
+      "social-classification": 7,
+      "family-and-women": 6,
+      "ashramas": 6,
+      "gurukul-education": 11,
+      "religion-and-hinduism": 15,
+      "epics": 11,
+      "economic-life": 7,
+      "cultural-impact": 2,
+      "early-later-comparison": 5
+    },
+    "types": {
+      "brief_answer": 14,
+      "compare": 7,
+      "fill_blank": 5,
+      "matching": 8,
+      "multi_point": 13,
+      "multiple_select": 6,
+      "one_word": 3,
+      "single_choice": 6,
+      "source_group": 4,
+      "true_false_correct": 5
+    },
+    "difficulties": {
+      "1": 33,
+      "2": 26,
+      "3": 12
+    },
+    "pages": {
+      "page-54": 21,
+      "page-55": 18,
+      "page-56": 23,
+      "page-57": 17,
+      "page-58": 4,
+      "page-59": 1,
+      "page-60": 9,
+      "page-61": 25,
+      "page-62": 0
+    },
+    "learningOutcomes": {
+      "identify-later-vedic-evolution": [
+        "q-035",
+        "q-037",
+        "q-038",
+        "q-041",
+        "q-060",
+        "q-064",
+        "q-065"
+      ],
+      "summarize-lifestyle-through-epics": [
+        "q-017",
+        "q-036",
+        "q-051",
+        "q-052",
+        "q-053",
+        "q-061",
+        "q-069",
+        "q-070"
+      ],
+      "explain-four-varna-classification": [
+        "q-003",
+        "q-015",
+        "q-027",
+        "q-042",
+        "q-043",
+        "q-050",
+        "q-060"
+      ],
+      "compare-early-and-later-vedic": [
+        "q-038",
+        "q-043",
+        "q-044",
+        "q-049",
+        "q-060"
+      ],
+      "trace-changing-position-of-women": [
+        "q-005",
+        "q-020",
+        "q-028",
+        "q-044",
+        "q-066"
+      ],
+      "appreciate-cultural-heritage": [
+        "q-031",
+        "q-032",
+        "q-051",
+        "q-054",
+        "q-055",
+        "q-056",
+        "q-057",
+        "q-059",
+        "q-061",
+        "q-062",
+        "q-063",
+        "q-067",
+        "q-068",
+        "q-071"
+      ]
+    },
+    "bookExercises": {
+      "A-fill-in-the-blanks": [
+        "q-001",
+        "q-002",
+        "q-003",
+        "q-004",
+        "q-005"
+      ],
+      "B-match-the-following": [
+        "q-006"
+      ],
+      "C-choose-the-correct-answer": [
+        "q-007",
+        "q-008",
+        "q-009",
+        "q-010",
+        "q-011"
+      ],
+      "D-true-false-and-correct": [
+        "q-012",
+        "q-013",
+        "q-014",
+        "q-015",
+        "q-016"
+      ],
+      "E-one-or-two-words-or-sentences": [
+        "q-017",
+        "q-018",
+        "q-019",
+        "q-020",
+        "q-021",
+        "q-022",
+        "q-023"
+      ],
+      "F-give-reasons": [
+        "q-024",
+        "q-025"
+      ],
+      "G-answer-briefly": [
+        "q-026",
+        "q-027",
+        "q-028",
+        "q-029",
+        "q-030",
+        "q-031",
+        "q-032",
+        "q-033"
+      ],
+      "H-source-based-gurukul-picture": [
+        "q-034"
+      ]
+    },
+    "excludedByRequest": [
+      {
+        "source": "page-61",
+        "item": "I. Map work",
+        "reason": "Map work explicitly excluded by the parent."
+      },
+      {
+        "source": "page-62",
+        "item": "Do and Learn",
+        "reason": "Imagination, project, presentation, screening and skit activities explicitly excluded as non-test question-bank material."
+      }
+    ]
+  },
+  "issue23ConciseCorrectionReview": {
+    "status": "satisfied-with-current-contract",
+    "questionIds": [
+      "q-014",
+      "q-015",
+      "q-016"
+    ],
+    "method": "Each false statement stores the smallest source-grounded sufficient correction as answer.correction. Fuller textbook context appears only in the explanation and rubric wording, so concise valid responses can receive full credit under the present scorer.",
+    "futureContractNote": "Issue #23 proposes multiple accepted corrections or explicit wrong-term/replacement pairs. This v1 remains compatible by making the minimal correction the canonical primary answer."
+  },
+  "sourceAssetReadiness": {
+    "status": "not-uploaded",
+    "requiredBeforeVisualQuestionsAreEnabled": [
+      "page-61/gurukul-source",
+      "page-55/ashvamedha-picture",
+      "page-54/ashvamedha-callout",
+      "page-58/mahabharata-story",
+      "page-58/ramayana-story"
+    ],
+    "affectedQuestionIds": [
+      "q-034",
+      "q-040",
+      "q-052",
+      "q-053"
+    ],
+    "note": "The current child session does not serve source_group questions. Upload private cropped assets before enabling them."
+  },
+  "blockingFindings": [],
+  "advisoryNotes": [
+    "Full copyrighted chapter screenshots remain local and are intentionally excluded from Git.",
+    "Every assessable printed exercise from A through H is represented; map work and Do and Learn activities are intentionally excluded by the parent's scope.",
+    "No examination pattern was inferred because no sample paper was supplied.",
+    "Issue #23 remains an open contract enhancement; this bank uses minimal canonical corrections so its false-statement items grade fairly today."
+  ],
+  "decision": "accept"
+}

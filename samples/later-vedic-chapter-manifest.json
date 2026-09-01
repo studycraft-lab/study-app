@@ -1,0 +1,164 @@
+{
+  "manifestVersion": "0.1.0",
+  "chapter": {
+    "id": "later-vedic-civilization",
+    "board": "ICSE",
+    "grade": 6,
+    "subject": "History",
+    "bookTitle": "History and Civics",
+    "chapterNumber": 6,
+    "title": "The Later Vedic Civilization"
+  },
+  "sourcePolicy": {
+    "originals": "local-only",
+    "repositoryCopies": false,
+    "applicationStorage": "not-uploaded",
+    "runtimeStrategy": "required-regions",
+    "notes": "Keep the five copyrighted source screenshots outside Git. Before enabling source-based visual questions, upload only the required Ashvamedha and gurukul illustration or passage regions to private application storage."
+  },
+  "assets": [
+    {
+      "id": "source-01",
+      "fileName": "Screenshot 2026-09-01 at 2.07.51 AM.png",
+      "sha256": "b2cafb735d1298adc40a428c209a3a3e0f4c63b0c4b5ba4f1690bde5698d1c0b",
+      "width": 1548,
+      "height": 2058,
+      "pages": [
+        {
+          "id": "page-54",
+          "pageNumber": 54,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "source-02",
+      "fileName": "Screenshot 2026-09-01 at 2.08.04 AM.png",
+      "sha256": "31584f8cdb29a213d4d5f33e80a9a834c2a9f0ac6dd16a378335a43ec5cf59d9",
+      "width": 3076,
+      "height": 2062,
+      "pages": [
+        {
+          "id": "page-55",
+          "pageNumber": 55,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0.5,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-56",
+          "pageNumber": 56,
+          "bounds": {
+            "x": 0.5,
+            "y": 0,
+            "width": 0.5,
+            "height": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "source-03",
+      "fileName": "Screenshot 2026-09-01 at 2.08.17 AM.png",
+      "sha256": "ad69ee3f3a435adc6dbb3c2d20c11efa55e80bd45e40b18112a1dc5f96c27935",
+      "width": 3084,
+      "height": 2060,
+      "pages": [
+        {
+          "id": "page-57",
+          "pageNumber": 57,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0.5,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-58",
+          "pageNumber": 58,
+          "bounds": {
+            "x": 0.5,
+            "y": 0,
+            "width": 0.5,
+            "height": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "source-04",
+      "fileName": "Screenshot 2026-09-01 at 2.08.29 AM.png",
+      "sha256": "9d9390e4ef4bad08b4451bbc65ffbadf242e68338116ef8a05ebba5e1702587d",
+      "width": 3080,
+      "height": 2066,
+      "pages": [
+        {
+          "id": "page-59",
+          "pageNumber": 59,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0.5,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-60",
+          "pageNumber": 60,
+          "bounds": {
+            "x": 0.5,
+            "y": 0,
+            "width": 0.5,
+            "height": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "source-05",
+      "fileName": "Screenshot 2026-09-01 at 2.08.41 AM.png",
+      "sha256": "31814b097328bc4a6302051947038dcb7b50e1beb363118e25b2ad4aa14d1d43",
+      "width": 3096,
+      "height": 2066,
+      "pages": [
+        {
+          "id": "page-61",
+          "pageNumber": 61,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0.5,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-62",
+          "pageNumber": 62,
+          "bounds": {
+            "x": 0.5,
+            "y": 0,
+            "width": 0.5,
+            "height": 1
+          }
+        }
+      ]
+    }
+  ],
+  "learningOutcomes": [
+    "identifies the changes that led to the evolution of the Later Vedic period.",
+    "summarizes the lifestyle of the Later Vedic period by relating it to the epics.",
+    "explains the processes that led to the classification of society in the Later Vedic period into the four varnas or the caste system.",
+    "identifies and discusses the differences and similarities between the Early and Later Vedic periods.",
+    "traces the changing position of women in the Early and Later Vedic societies.",
+    "analyses and appreciates the rich cultural heritage of India in terms of values, beliefs and traditions."
+  ]
+}

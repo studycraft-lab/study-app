@@ -1,3 +1,3 @@
-import { redirect } from "next/navigation";
+import { ChildDashboard } from "@/components/child-dashboard";
 
-export default function StudyDashboardPage() { redirect("/study"); }
+export default function StudyDashboardPage() { return <ChildDashboard />; }

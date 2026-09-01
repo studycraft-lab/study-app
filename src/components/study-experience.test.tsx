@@ -22,8 +22,11 @@ describe("StudyExperience", () => {
       if (url === "/api/child/profiles") return new Response(JSON.stringify({ children: [{ id: "child", displayName: "Asha", grade: 6, board: "ICSE" }] }));
       if (url === "/api/child/login") return new Response(JSON.stringify({ child: { id: "child", displayName: "Asha", grade: 6, board: "ICSE" } }));
       if (url === "/api/study/library") return new Response(JSON.stringify({ child: { id: "child", displayName: "Asha", grade: 6, board: "ICSE" }, chapters: [{ id: "bank", subject: "History", chapterTitle: "Early Vedic", grade: 6, board: "ICSE", questionCount: 10 }] }));
+      if (url === "/api/study/history") return new Response(JSON.stringify({ summary: { completedSessions: 0, attempts: 0, uniqueQuestions: 0, accuracy: 0, mastery: 0, dueReview: 0 }, sessions: [] }));
       if (url.startsWith("/api/study/questions")) return new Response(JSON.stringify({ questions }));
-      return new Response(JSON.stringify({ correct: false, expectedAnswer: "Early Vedic", explanation: "The timeline shows the Early Vedic period.", sourcePages: [49] }));
+      if (url === "/api/study/sessions") return new Response(JSON.stringify({ sessionId: "session" }), { status: 201 });
+      if (url === "/api/study/attempts/rating") return new Response(JSON.stringify({ saved: true }));
+      return new Response(JSON.stringify({ correct: false, earnedMarks: 0, expectedAnswer: "Early Vedic", explanation: "The timeline shows the Early Vedic period.", sourcePages: [49], attemptId: "attempt" }));
     });
     render(<StudyExperience />);
 
@@ -41,6 +44,7 @@ describe("StudyExperience", () => {
     expect(await screen.findByText(/needs work/i)).toBeInTheDocument();
     expect(screen.getByRole("status")).toHaveTextContent("Expected: Early Vedic");
     expect(screen.getByText(/Page 49/i)).toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", { name: /needs practice/i }));
     const reviewFirst = await screen.findByRole("button", { name: /question 1: incorrect.*review answer/i });
     fireEvent.click(screen.getByRole("button", { name: /next question/i }));
     expect(await screen.findByText("Question 2")).toBeInTheDocument();

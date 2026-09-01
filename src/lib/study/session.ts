@@ -45,6 +45,20 @@ export function prepareSession(bankValue: unknown): StudyQuestion[] {
   }));
 }
 
+export function prepareReviewSession(bankValue: unknown, questionIds: string[]): StudyQuestion[] {
+  const selected = new Set(questionIds);
+  const bank = record(bankValue);
+  return records(bank.questions)
+    .filter((question) => selected.has(String(question.id)) && TYPE_SET.has(String(question.type)) && question.status !== "disabled")
+    .map((question) => ({
+      id: String(question.id),
+      type: String(question.type),
+      prompt: String(question.prompt ?? ""),
+      marks: typeof question.marks === "number" ? question.marks : 0,
+      response: record(question.response),
+    }));
+}
+
 function optionText(question: RecordValue, id: unknown): string {
   const option = records(record(question.response).options).find((candidate) => candidate.id === id);
   return option ? String(option.text ?? id) : String(id ?? "");

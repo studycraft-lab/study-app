@@ -116,7 +116,9 @@ Before a visual question is enabled for a child, upload the required map, diagra
 }
 ```
 
-## Supported types
+`hint` may be authored for forward compatibility, but the current child experience does not display hints or offer retries.
+
+## Contract and player types
 
 The `type` discriminator controls the response, answer, and rubric shape.
 
@@ -129,8 +131,10 @@ The `type` discriminator controls the response, answer, and rubric shape.
 - `brief_answer`: expected concepts and concise-answer guidance.
 - `multi_point`: independently weighted required/optional points.
 - `compare`: named comparison dimensions with points for each side.
-- `source_group`: shared image/passage with independently scored subquestions.
-- `map_work`: base-map reference and expected labels/regions; interaction is deferred until its UI is validated.
+- `source_group`: shared image/passage with independently scored subquestions; stored by the contract but not yet playable.
+- `map_work`: base-map reference and expected labels/regions; stored by the contract but not yet playable.
+
+The current player supports the first nine types, from `single_choice` through `compare`. It excludes disabled questions and does not expose answers or rubrics before submission.
 
 ## Multi-point rubric example
 
@@ -176,7 +180,7 @@ An import warns when:
 
 ## Scope and lifecycle
 
-Questions are not deleted merely because content is out of syllabus. Applicability is stored separately so a question may be active generally but excluded from one exam. Parent edits retain the question `id` and increment its integer `version`; attempts store both values and therefore continue to reference the exact version shown to the child. A newly generated bank also increments `bank.version`.
+Questions should not be deleted merely because content is out of syllabus. Exam applicability and out-of-syllabus controls are planned but are not represented in the current database yet. Attempts already store question and bank versions so future edits can continue to reference the exact item shown to the child. Today, disabling a reported question creates a new bank version and retains the question snapshot in historical attempts.
 
 There is one guarded replacement path for correcting a prototype import: when the stored bank is still `draft` and has no study sessions, attempts or review items, importing different content with the same bank ID and version replaces that row in place. This lets an incomplete draft such as a 12-question prototype be superseded by its reviewed v1 bank without leaving duplicate chapter entries. Once a bank is non-draft or has study history, it is immutable and changed content needs a higher `bank.version`.
 

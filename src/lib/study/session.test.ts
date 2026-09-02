@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { gradeQuestion, prepareReviewSession, prepareSession, selectableQuestionIds } from "./session";
+import { gradeQuestion, prepareReviewSession, selectableQuestionIds } from "./session";
 
 const bank = {
   sources: [{ id: "p1", pageNumber: 45, regions: [] }],
@@ -15,14 +15,6 @@ const bank = {
 };
 
 describe("study session DTO", () => {
-  it("returns five supported questions without answers", () => {
-    const questions = prepareSession(bank);
-    expect(questions).toHaveLength(5);
-    expect(questions.map((question) => question.type)).toEqual(["single_choice", "multiple_select", "fill_blank", "true_false_correct", "matching"]);
-    expect(JSON.stringify(questions)).not.toContain("correctOptionId");
-    expect(JSON.stringify(questions)).not.toContain("Sapta Sindhu");
-  });
-
   it("returns readable feedback and the cited page only after grading", () => {
     const feedback = gradeQuestion(bank, "one", "b");
     expect(feedback).toMatchObject({ correct: false, expectedAnswer: "Early Vedic", sourcePages: [45] });

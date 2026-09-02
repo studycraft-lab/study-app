@@ -1,60 +1,35 @@
 # Roadmap
 
-This is intentionally short. GitHub issues will hold implementation detail when work begins.
+GitHub issues are the implementation source of truth. This file records only the delivered product, the next approved themes, and explicit deferrals.
 
-## Milestone 0 — Validate the learning model
+## Delivered foundation
 
-- Finalize the product brief and question-bank contract.
-- Create a representative bank from textbook pages 45–53.
-- Include objective, brief, multi-point, source-based, timeline/diagram, and map-work examples.
-- Review question quality, citations, partial-credit rubrics, and expected child feedback.
+- Versioned, source-grounded question-bank contract and reusable chapter-ingestion skill.
+- Next.js web app on Vercel with Supabase storage and reproducible migrations.
+- Separate parent and child login sessions.
+- Parent-managed child profiles and board/grade-filtered content.
+- Validated JSON import, immutable bank history, child question reports, and parent disable/dismiss controls.
+- Ten-question exercises with balanced objective and subjective selection.
+- Immediate feedback, page citations, session resume/completion, clickable answer review, and history.
+- Deterministic objective grading plus OpenRouter fuzzy and rubric-based grading.
+- Private child stars/progress, concise parent progress, spaced-review data, and safe session purge.
 
-**Exit:** We can represent the real chapter without special-case data structures, and the parent accepts the sample questions and scoring rubrics.
+## Proposed work
 
-## Milestone 1 — Usable family quiz
+- [#28](https://github.com/studycraft-lab/study-app/issues/28): polished, playful UI/UX redesign without adding product complexity.
+- [#11](https://github.com/studycraft-lab/study-app/issues/11): exam scopes, out-of-syllabus exclusions, and exam-ready exercises.
+- [#12](https://github.com/studycraft-lab/study-app/issues/12): voice answers with transcript correction.
+- [#13](https://github.com/studycraft-lab/study-app/issues/13) and [#16](https://github.com/studycraft-lab/study-app/issues/16): in-app source upload and BYOK-assisted bank generation.
+- [#23](https://github.com/studycraft-lab/study-app/issues/23): concise false-statement correction acceptance in ingestion data.
 
-- Scaffold the responsive PWA and automated checks.
-- Provision Supabase and Vercel environments.
-- Add family, parent, and child profiles.
-- Add subjects, chapters, sources, topics, and bank import.
-- Build the one-question-at-a-time player and deterministic scoring.
+## Explicitly not planned now
 
-**Exit:** Each child can independently complete an imported chapter quiz on a tablet.
+- Skipping questions
+- Immediate retry and stored hints
+- Opening full textbook pages inside StudyCraft
+- AI-driven parent correction of reported questions
+- Streaks, levels, leaderboards, and sibling competition
+- Fixed 20-minute session timers or generated daily study plans
+- Native mobile applications, offline synchronization, and public subscriptions
 
-## Milestone 2 — Learning loop
-
-- Track attempts, coverage, accuracy, and topic mastery.
-- Add mistake review and spaced repetition.
-- Add hints, immediate retry, explanations, skipping, and 20-minute sessions.
-- Add child flags and parent question controls.
-- Add personal stars, streaks, and levels.
-
-**Exit:** The app reliably brings back weak material and shows useful parent progress.
-
-## Milestone 3 — Subjective understanding
-
-- Add provider-neutral AI routing and family-level credentials.
-- Grade brief and multi-point answers against structured rubrics.
-- Return numeric marks, simple verdicts, covered/missing points, and confidence.
-- Add typed answers first; voice transcription and transcript correction second.
-
-**Exit:** Real Grade 6 answers are graded consistently enough for supervised family use, with ambiguous cases clearly flagged.
-
-## Milestone 4 — Exam preparation
-
-- Add exam scopes and out-of-syllabus exclusions.
-- Add reusable paper-pattern definitions.
-- Compose exercises from selected chapters and patterns.
-- Later, extract patterns from uploaded sample papers.
-
-**Exit:** A parent can create an exam-ready exercise without generating unsupported facts.
-
-## Milestone 5 — Automated ingestion
-
-- Upload textbook photos and PDFs inside the app.
-- Extract text and understand diagrams, tables, maps, and page regions.
-- Flag uncertain pages.
-- Generate and independently validate a bank before publishing it.
-
-**Exit:** A parent can go from chapter photos to a traceable usable bank with minimal intervention.
-
+These decisions prevent closed ideas from quietly returning through stale documentation. Reintroducing one requires a new or reopened product-owner-approved issue.

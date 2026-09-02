@@ -19,16 +19,16 @@ export default function Home() {
           <p className="eyebrow">Family-first learning</p>
           <h1>A calmer way to prepare, practise and remember.</h1>
           <p className="hero-lede">
-            StudyCraft will turn the chapters your children already study into
+            StudyCraft turns the chapters your children already study into
             focused practice, helpful feedback and revision that adapts to each
             learner.
           </p>
           <ConnectionStatus />
         </div>
 
-        <aside className="study-preview" aria-label="Product direction preview">
+        <aside className="study-preview" aria-label="StudyCraft practice preview">
           <div className="preview-topline">
-            <span>Coming next</span>
+            <span>Available now</span>
             <span className="preview-page">Early Vedic Civilization</span>
           </div>
           <div className="preview-question">
@@ -38,8 +38,8 @@ export default function Home() {
               <span />
             </div>
             <div className="preview-answer">
-              Questions, textbook citations and progress will appear here as
-              the next stories are delivered.
+              Ten-question exercises mix objective and written answers, with
+              immediate feedback and textbook-page citations.
             </div>
           </div>
         </aside>
@@ -49,7 +49,7 @@ export default function Home() {
         <article>
           <span className="principle-number">01</span>
           <h2>Grounded in their books</h2>
-          <p>Every scored idea will point back to the chapter page that supports it.</p>
+          <p>Every scored idea points back to the chapter page that supports it.</p>
         </article>
         <article>
           <span className="principle-number">02</span>

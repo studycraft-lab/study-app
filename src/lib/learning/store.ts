@@ -183,10 +183,6 @@ export async function childLearningHistory(child: ChildContext) {
       mastery: Math.round(topicMastery.reduce<number>((sum, value) => sum + value, 0) / topicMastery.length * 100),
     };
   });
-  const studyDays = new Set(allAttempts.map((attempt) => new Date(attempt.attempted_at).toISOString().slice(0, 10)));
-  let streak = 0;
-  const cursor = new Date();
-  while (studyDays.has(cursor.toISOString().slice(0, 10))) { streak += 1; cursor.setUTCDate(cursor.getUTCDate() - 1); }
   const points = Math.round(earnedMarks * 10 + allAttempts.length * 2);
   return {
     summary: {
@@ -197,7 +193,7 @@ export async function childLearningHistory(child: ChildContext) {
       mastery: masteryPoints.length ? Math.round(masteryPoints.reduce<number>((sum, value) => sum + value, 0) / masteryPoints.length * 100) : 0,
       dueReview: dueCount ?? 0,
       gradingReview: allAttempts.filter((attempt) => record(attempt.feedback).reviewRequired === true).length,
-      rewards: { points, stars: Math.min(5, Math.floor(points / 50)), level: 1 + Math.floor(points / 100), streak },
+      rewards: { stars: Math.min(5, Math.floor(points / 50)) },
     },
     topics,
     sessions: (sessions ?? []).map((session) => ({
@@ -210,12 +206,4 @@ export async function childLearningHistory(child: ChildContext) {
 
 export async function familyLearningHistory(children: ChildProfile[]) {
   return Promise.all(children.map(async (profile) => ({ child: profile, history: await childLearningHistory({ ...profile, familyId: "" }) })));
-}
-
-export async function dueReviewQuestionIds(childId: string) {
-  const { data, error } = await adminClient().from("review_items").select("question_bank_id,question_id,due_at").eq("child_id", childId).lte("due_at", new Date().toISOString()).order("due_at").limit(5);
-  if (error) throw new Error(error.message);
-  if (!data?.length) return null;
-  const bankId = String(data[0].question_bank_id);
-  return { bankId, questionIds: data.filter((item) => item.question_bank_id === bankId).map((item) => String(item.question_id)) };
 }

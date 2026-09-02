@@ -82,30 +82,6 @@ export function selectableQuestionIds(bankValue: unknown): string[] {
     .map((question) => String(question.id));
 }
 
-export function prepareSession(bankValue: unknown): StudyQuestion[] {
-  const bank = record(bankValue);
-  const candidates = records(bank.questions).filter((question) =>
-    typeof question.id === "string" && typeof question.type === "string" &&
-    TYPE_SET.has(question.type) && question.status !== "disabled",
-  );
-  const chosen: RecordValue[] = [];
-  for (const type of TYPE_ORDER) {
-    const match = candidates.find((question) => question.type === type && !chosen.includes(question));
-    if (match) chosen.push(match);
-  }
-  for (const question of candidates) {
-    if (chosen.length >= 5) break;
-    if (!chosen.includes(question)) chosen.push(question);
-  }
-  return chosen.slice(0, 5).map((question) => ({
-    id: String(question.id),
-    type: String(question.type),
-    prompt: String(question.prompt ?? ""),
-    marks: typeof question.marks === "number" ? question.marks : 0,
-    response: record(question.response),
-  }));
-}
-
 export function prepareReviewSession(bankValue: unknown, questionIds: string[], presentationSeed?: string): StudyQuestion[] {
   const bank = record(bankValue);
   const byId = new Map(records(bank.questions).map((question) => [String(question.id), question]));

@@ -7,7 +7,7 @@ vi.mock("@/components/connection-status", () => ({
   ConnectionStatus: () => <div>StudyCraft is connected</div>,
 }));
 
-it("introduces the StudyCraft family learning foundation", () => {
+it("introduces the working StudyCraft family learning experience", () => {
   render(<Home />);
 
   expect(

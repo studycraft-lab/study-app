@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 import "./globals.css";
+import "./login.css";
+import "./study.css";
+import "./parent.css";
 
 export const metadata: Metadata = {
   title: "StudyCraft — Family-first learning",

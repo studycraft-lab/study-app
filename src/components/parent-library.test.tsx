@@ -94,6 +94,7 @@ describe("ParentLibrary", () => {
       attempts: [
         { reportId: "one", reporterName: "Asha", note: "The wording is confusing" },
         { reportId: "two", reporterName: "Arun", note: null, response: "Two garments", correct: false, earnedMarks: 0, maxMarks: 2, feedback: { expectedAnswer: "False", explanation: "It had two garments.", sourcePages: [48] }, attemptedAt: "2026-09-01T00:00:00Z" },
+        { reportId: "three", reporterName: "Asha", note: "I earned full marks", response: "Larva", correct: false, earnedMarks: 2, maxMarks: 2, feedback: { expectedAnswer: "False", explanation: "Correct.", sourcePages: [48] }, attemptedAt: "2026-09-01T00:00:00Z" },
       ],
     };
     const fetchMock = vi.spyOn(globalThis, "fetch").mockImplementation(async (input, init) => {
@@ -108,6 +109,7 @@ describe("ParentLibrary", () => {
     expect(screen.getByText(/reported before answering/i)).toBeInTheDocument();
     expect(screen.getByText(/the wording is confusing/i)).toBeInTheDocument();
     expect(screen.getByText("Two garments")).toBeInTheDocument();
+    expect(screen.getByText("Marked correct · 2/2")).toBeInTheDocument();
     expect(screen.getByText(/Textbook page 48/i)).toBeInTheDocument();
     expect(screen.queryByText(/answer json/i)).not.toBeInTheDocument();
     expect(screen.queryByRole("button", { name: /publish correction/i })).not.toBeInTheDocument();

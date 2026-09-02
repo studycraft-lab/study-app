@@ -46,14 +46,33 @@ describe("gradeSubmittedQuestion", () => {
     expect(classifier).not.toHaveBeenCalled();
   });
 
-  it("uses AI to judge a non-empty correction after the false choice is correct", async () => {
+  it("keeps an exact true-false correction deterministic and free", async () => {
     const correctionBank = { questions: [{ id: "dress", type: "true_false_correct", prompt: "Aryans wore three garments.", marks: 2, answer: { value: false, correction: "The Aryans wore two garments." } }] };
     const classifier = vi.fn(async () => ({
       points: [{ id: "answer", coverage: "covered" as const, confidence: 0.96 }], feedback: "The false detail was corrected.", confidence: 0.96, spellingErrors: [], grammarErrors: [],
       meta: { provider: "openrouter" as const, model: "test", promptTokens: 8, completionTokens: 4, totalTokens: 12, cost: 0.001, latencyMs: 15 },
     }));
     await expect(gradeSubmittedQuestion(correctionBank, "dress", { value: false, correction: "The Aryans wore two garments." }, classifier)).resolves.toMatchObject({ correct: true, earnedMarks: 2 });
-    expect(classifier).toHaveBeenCalledOnce();
+    expect(classifier).not.toHaveBeenCalled();
+  });
+
+  it("keeps a deterministically correct true-false correction correct without AI", async () => {
+    const correctionBank = { questions: [{ id: "butterfly", type: "true_false_correct", prompt: "Each butterfly egg hatches into a pupa.", marks: 2, answer: { value: false, correction: "Each butterfly egg hatches into a caterpillar or larva." } }] };
+    const classifier = vi.fn(async () => ({
+      points: [{ id: "answer", coverage: "missing" as const, confidence: 0.9 }], feedback: "You correctly identified that the egg hatches into a larva.", confidence: 0.9, spellingErrors: [], grammarErrors: [],
+      meta: { provider: "openrouter" as const, model: "test", promptTokens: 8, completionTokens: 4, totalTokens: 12, cost: 0.001, latencyMs: 15 },
+    }));
+    await expect(gradeSubmittedQuestion(correctionBank, "butterfly", { value: false, correction: "Each egg hatches into larvae" }, classifier)).resolves.toMatchObject({ correct: true, earnedMarks: 2, verdict: "correct" });
+    expect(classifier).not.toHaveBeenCalled();
+  });
+
+  it("routes contradictory AI grading output to parent review", async () => {
+    const fillBank = { questions: [{ id: "stages", type: "fill_blank", prompt: "A butterfly has ____ stages.", marks: 1, answer: { accepted: ["four", "4"] } }] };
+    const classifier = vi.fn(async () => ({
+      points: [{ id: "answer", coverage: "missing" as const, confidence: 0.95 }], feedback: "Great job! You correctly identified four stages.", confidence: 0.95, spellingErrors: [], grammarErrors: [],
+      meta: { provider: "openrouter" as const, model: "test", promptTokens: 8, completionTokens: 4, totalTokens: 12, cost: 0.001, latencyMs: 15 },
+    }));
+    await expect(gradeSubmittedQuestion(fillBank, "stages", "several", classifier)).resolves.toMatchObject({ correct: false, reviewRequired: true, verdict: "review", explanation: expect.stringMatching(/disagreed/i) });
   });
 
   it("calculates weighted marks in application code", async () => {

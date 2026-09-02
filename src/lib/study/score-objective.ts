@@ -24,6 +24,17 @@ function compact(value: unknown): string {
   return normalize(value).replace(/\s+/g, "");
 }
 
+function containsAcceptedAnswer(response: unknown, accepted: unknown): boolean {
+  const responseTokens = normalize(response).split(" ").filter(Boolean);
+  const acceptedTokens = normalize(accepted).split(" ").filter(Boolean);
+  if (!responseTokens.length || !acceptedTokens.length) return false;
+  if (acceptedTokens.length === 1) {
+    const token = acceptedTokens[0];
+    return (!STOP_WORDS.has(token) || /^\d+$/u.test(token)) && responseTokens.includes(token);
+  }
+  return responseTokens.some((_, index) => acceptedTokens.every((token, offset) => responseTokens[index + offset] === token));
+}
+
 function sameSet(left: unknown, right: unknown): boolean {
   if (!Array.isArray(left) || !Array.isArray(right)) return false;
   const a = [...new Set(left.map(normalize))].sort();
@@ -58,7 +69,7 @@ export function scoreObjective(question: ObjectiveQuestion, response: unknown): 
     case "one_word": {
       const accepted = Array.isArray(answer.accepted) ? answer.accepted : [];
       expectedAnswer = accepted.map(String).join(" / ");
-      correct = accepted.some((value) => normalize(value) === normalize(response) || compact(value) === compact(response));
+      correct = accepted.some((value) => normalize(value) === normalize(response) || compact(value) === compact(response) || containsAcceptedAnswer(response, value));
       break;
     }
     case "true_false_correct": {

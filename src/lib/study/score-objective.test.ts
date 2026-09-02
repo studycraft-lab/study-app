@@ -19,6 +19,13 @@ describe("scoreObjective", () => {
     expect(scoreObjective({ type: "one_word", answer: { accepted: ["Indo-Aryans"] }, marks: 1 }, "indo aryans")).toMatchObject({ correct: true, earnedMarks: 1 });
   });
 
+  it("accepts a fill-in answer when the expected value appears in a sentence", () => {
+    expect(scoreObjective(
+      { type: "fill_blank", answer: { accepted: ["four", "4"] }, marks: 1 },
+      "A life cycle of a butterfly has 4 stages",
+    )).toMatchObject({ correct: true, earnedMarks: 1 });
+  });
+
   it("requires a false statement to be corrected", () => {
     const question = {
       type: "true_false_correct",

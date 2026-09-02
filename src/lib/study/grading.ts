@@ -21,6 +21,18 @@ function rounded(value: number): number {
   return Math.round(value * 100) / 100;
 }
 
+function withObjectiveVerdict<T extends { correct: boolean; earnedMarks: number }>(result: T) {
+  return {
+    ...result,
+    verdict: result.correct ? "correct" : result.earnedMarks > 0 ? "partial" : "incorrect",
+    reviewRequired: false,
+  };
+}
+
+function feedbackClaimsCorrect(feedback: string): boolean {
+  return /\b(great job|correctly identified|answer is correct|fully correct|correct answer)\b/iu.test(feedback);
+}
+
 export async function gradeSubmittedQuestion(bankValue: unknown, questionId: string, response: unknown, classifier: Classifier = classifyRubric) {
   const bank = record(bankValue);
   const question = records(bank.questions).find((candidate) => candidate.id === questionId);
@@ -28,12 +40,12 @@ export async function gradeSubmittedQuestion(bankValue: unknown, questionId: str
   const type = String(question.type);
   if (!SUBJECTIVE_TYPES.has(type)) {
     const objective = gradeQuestion(bankValue, questionId, response);
-    if (!FUZZY_FALLBACK_TYPES.has(type)) return objective;
+    if (!FUZZY_FALLBACK_TYPES.has(type)) return withObjectiveVerdict(objective);
     const answer = record(question.answer);
     const given = record(response);
     const childAnswer = type === "true_false_correct" ? String(given.correction ?? "").trim() : String(response ?? "").trim();
     const eligibleCorrection = type !== "true_false_correct" || (answer.value === false && given.value === false);
-    if ((objective.correct && type !== "true_false_correct") || !childAnswer || !eligibleCorrection) return objective;
+    if (objective.correct || !childAnswer || !eligibleCorrection) return withObjectiveVerdict(objective);
     const expected = type === "true_false_correct" ? String(answer.correction ?? "") : (Array.isArray(answer.accepted) ? answer.accepted.map(String).join(" / ") : objective.expectedAnswer);
     const classification = await classifier({
       question: String(question.prompt ?? ""),
@@ -50,12 +62,15 @@ export async function gradeSubmittedQuestion(bankValue: unknown, questionId: str
     const judgement = classification.points.find((point) => point.id === "answer")!;
     const correct = judgement.coverage === "covered";
     const earnedMarks = correct ? Number(question.marks ?? 0) : objective.earnedMarks;
-    const reviewRequired = classification.confidence < 0.7;
+    const contradictoryFeedback = !correct && feedbackClaimsCorrect(classification.feedback);
+    const reviewRequired = classification.confidence < 0.7 || contradictoryFeedback;
     return {
       ...objective,
       correct,
       earnedMarks,
-      explanation: classification.feedback,
+      explanation: contradictoryFeedback
+        ? "The automated score and explanation disagreed, so this answer needs parent review."
+        : classification.feedback,
       verdict: reviewRequired ? "review" : correct ? "correct" : earnedMarks > 0 ? "partial" : "incorrect",
       reviewRequired,
       confidence: classification.confidence,

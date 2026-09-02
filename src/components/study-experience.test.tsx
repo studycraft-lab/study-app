@@ -25,9 +25,10 @@ describe("StudyExperience", () => {
 
     const chapterCard = await screen.findByRole("button", { name: /early vedic/i });
     expect(within(chapterCard).getByText("History")).toBeInTheDocument();
-    expect(within(chapterCard).getByText("0 of 10")).toBeInTheDocument();
-    expect(within(chapterCard).getByText("Questions covered")).toBeInTheDocument();
-    expect(within(chapterCard).getByText("Questions this exercise")).toBeInTheDocument();
+    expect(within(chapterCard).queryByText(/ICSE|Grade 6/)).not.toBeInTheDocument();
+    expect(within(chapterCard).getByText("0 of 10 covered")).toBeInTheDocument();
+    expect(within(chapterCard).getByRole("progressbar")).toHaveAttribute("aria-valuenow", "0");
+    expect(within(chapterCard).getByText("Start 10-question exercise")).toBeInTheDocument();
     fireEvent.click(chapterCard);
     expect(await screen.findByText("Which period?")).toBeInTheDocument();
 

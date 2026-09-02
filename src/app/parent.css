@@ -41,11 +41,15 @@
 .parent-progress-stats { border-block:1px solid var(--line); display:flex; flex-wrap:wrap; gap:1rem; margin:1rem 0; padding:.8rem 0; }
 .parent-progress-stats span { color:var(--muted); display:grid; font-size:.78rem; } .parent-progress-stats strong { color:var(--ink); font-size:1.15rem; }
 .parent-progress-stats .grading-review-count { color:#5943a4; }
+.parent-progress-card .metric-help { display:inline-flex; }
+.parent-progress-card .metric-tooltip { color:white; display:block; left:auto; right:0; transform:none; }
 .parent-session-list { display:grid; gap:.55rem; }
 .parent-session-list > div { border-bottom:1px solid var(--line); display:grid; gap:.15rem 1rem; grid-template-columns:1fr auto; padding-bottom:.55rem; }
 .parent-session-list small { grid-column:1/-1; }
 .session-delete { align-items:center; display:flex; flex-wrap:wrap; gap:.45rem; grid-column:1/-1; }
 .session-delete > span { color:#7c2d12; flex-basis:100%; font-size:.82rem; }
+.button-delete { background:white; border:1px solid rgba(178,58,43,.38); color:var(--danger); padding:9px 14px; }
+.button-delete:hover:not(:disabled) { background:var(--danger-soft); border-color:var(--danger); box-shadow:none; transform:none; }
 .question-report-grid { display:grid; gap:1rem; }
 .question-report-card { background:var(--card); border:1px solid var(--line); border-radius:var(--radius-md); box-shadow:var(--shadow-xs); padding:1.25rem; }
 .question-report-card header { display:flex; gap:1rem; justify-content:space-between; } .question-report-card h3 { margin:.35rem 0 1rem; }

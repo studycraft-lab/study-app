@@ -19,6 +19,8 @@ describe("ParentFamily", () => {
     expect(screen.getByRole("button", { name: /what accuracy means/i })).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /what mastery means/i })).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /what due for review means/i })).toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", { name: /what accuracy means/i }));
+    expect(screen.getByRole("tooltip")).toHaveTextContent("Marks earned divided by marks possible");
   });
 
   it("requires explicit confirmation before deleting a session", async () => {
@@ -29,7 +31,9 @@ describe("ParentFamily", () => {
     });
 
     render(<ParentFamily />);
-    fireEvent.click(await screen.findByRole("button", { name: /delete session/i }));
+    const deleteButton = await screen.findByRole("button", { name: /delete session/i });
+    expect(deleteButton).toHaveClass("button-delete");
+    fireEvent.click(deleteButton);
     expect(screen.getByText("1/1 marks")).toBeInTheDocument();
     expect(screen.getByText(/1 of 5 answered/)).toBeInTheDocument();
     expect(fetchMock.mock.calls.some(([, request]) => request?.method === "DELETE")).toBe(false);

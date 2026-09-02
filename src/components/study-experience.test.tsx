@@ -1,4 +1,4 @@
-import { cleanup, fireEvent, render, screen, waitFor } from "@testing-library/react";
+import { cleanup, fireEvent, render, screen, waitFor, within } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
 
 import { StudyExperience } from "./study-experience";
@@ -23,7 +23,12 @@ describe("StudyExperience", () => {
     });
     render(<StudyExperience />);
 
-    fireEvent.click(await screen.findByRole("button", { name: /early vedic/i }));
+    const chapterCard = await screen.findByRole("button", { name: /early vedic/i });
+    expect(within(chapterCard).getByText("History")).toBeInTheDocument();
+    expect(within(chapterCard).getByText("0 of 10")).toBeInTheDocument();
+    expect(within(chapterCard).getByText("Questions covered")).toBeInTheDocument();
+    expect(within(chapterCard).getByText("Questions this exercise")).toBeInTheDocument();
+    fireEvent.click(chapterCard);
     expect(await screen.findByText("Which period?")).toBeInTheDocument();
 
     fireEvent.click(screen.getByRole("button", { name: /give feedback/i }));

@@ -33,6 +33,22 @@ describe("ParentLibrary", () => {
     await waitFor(() => expect(screen.queryByText(/permission denied/i)).not.toBeInTheDocument());
   });
 
+  it("groups imported chapters by subject", async () => {
+    vi.spyOn(globalThis, "fetch").mockImplementation(async (input) => String(input) === "/api/parent/question-reports"
+      ? new Response(JSON.stringify({ reports: [] }))
+      : new Response(JSON.stringify({ chapters: [
+        { id: "h1", board: "ICSE", grade: 6, subject: "History", chapterTitle: "Early Vedic", bankVersion: 1, questionCount: 80 },
+        { id: "g1", board: "ICSE", grade: 6, subject: "Geography", chapterTitle: "Major Water Bodies", bankVersion: 1, questionCount: 125 },
+      ] })));
+
+    render(<ParentLibrary />);
+
+    expect(await screen.findByRole("heading", { name: "History" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Geography" })).toBeInTheDocument();
+    expect(screen.getByText("Early Vedic")).toBeInTheDocument();
+    expect(screen.getByText("Major Water Bodies")).toBeInTheDocument();
+  });
+
   it("confirms that a newer payload replaced an unattempted draft bank", async () => {
     const preview = {
       board: "ICSE", grade: 6, subject: "History", bookTitle: "History and Civics",

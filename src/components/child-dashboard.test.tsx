@@ -11,7 +11,7 @@ describe("ChildDashboard", () => {
       ? new Response(JSON.stringify({ child: { displayName: "Asha Rao" }, chapters: [] }))
       : new Response(JSON.stringify({
         summary: { completedSessions: 2, attempts: 8, accuracy: 75, mastery: 70, dueReview: 3, rewards: { points: 80, stars: 6, level: 2, streak: 4 } },
-        sessions: [{ id: "session-1", status: "completed", startedAt: "2026-09-01T00:00:00.000Z", totalQuestions: 5, attempts: [{ id: "attempt-1", question_prompt: "Question", correct: true, earned_marks: 4, max_marks: 5 }] }],
+        sessions: [{ id: "session-1", subject: "History", chapterTitle: "Early Vedic", status: "completed", startedAt: "2026-09-01T00:00:00.000Z", totalQuestions: 5, attempts: [{ id: "attempt-1", question_prompt: "Question", correct: true, earned_marks: 4, max_marks: 5 }] }],
       })));
 
     render(<ChildDashboard />);
@@ -21,6 +21,8 @@ describe("ChildDashboard", () => {
     expect(screen.getByText("2")).toBeInTheDocument();
     expect(screen.getByText("sessions completed")).toBeInTheDocument();
     expect(screen.getByText("4/5 marks")).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "History" })).toBeInTheDocument();
+    expect(screen.getByText(/Early Vedic/)).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Welcome back, Asha." })).toBeInTheDocument();
     expect(screen.getByRole("img", { name: /latest session: 1 of 5 questions answered/i })).toBeInTheDocument();
     expect(screen.getByText(/latest session: 1 of 5 questions answered/i)).toBeInTheDocument();
@@ -35,7 +37,7 @@ describe("ChildDashboard", () => {
       ? new Response(JSON.stringify({ child: { displayName: "Asha" }, chapters: [] }))
       : new Response(JSON.stringify({
         summary: { completedSessions: 0, rewards: { stars: 1 } },
-        sessions: [{ id: "unfinished", status: "in_progress", resumable: true, startedAt: "2026-09-01T00:00:00.000Z", totalQuestions: 5, attempts: [{ id: "attempt-1", question_prompt: "Question", correct: true, earned_marks: 1, max_marks: 1 }] }],
+        sessions: [{ id: "unfinished", subject: "Geography", chapterTitle: "Major Water Bodies", status: "in_progress", resumable: true, startedAt: "2026-09-01T00:00:00.000Z", totalQuestions: 5, attempts: [{ id: "attempt-1", question_prompt: "Question", correct: true, earned_marks: 1, max_marks: 1 }] }],
       })));
 
     render(<ChildDashboard />);

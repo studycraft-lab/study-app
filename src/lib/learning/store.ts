@@ -156,13 +156,26 @@ export async function recordStudyAttempt(input: { sessionId: string; child: Chil
 
 export async function childLearningHistory(child: ChildContext) {
   const client = adminClient();
-  const [{ data: sessions, error: sessionError }, { data: attempts, error: attemptError }, { count: dueCount, error: dueError }] = await Promise.all([
+  const [{ data: sessions, error: sessionError }, { data: attempts, error: attemptError }, { data: dueItems, error: dueError }] = await Promise.all([
     client.from("study_sessions").select("id,question_bank_id,status,started_at,completed_at,total_questions,question_ids").eq("child_id", child.id).order("started_at", { ascending: false }).limit(12),
     client.from("study_attempts").select("id,session_id,question_bank_id,question_id,question_prompt,topic_ids,response,correct,earned_marks,max_marks,feedback,self_rating,attempted_at").eq("child_id", child.id).order("attempted_at", { ascending: false }).limit(100),
-    client.from("review_items").select("id", { count: "exact", head: true }).eq("child_id", child.id).lte("due_at", new Date().toISOString()),
+    client.from("review_items").select("id,question_bank_id").eq("child_id", child.id).lte("due_at", new Date().toISOString()),
   ]);
   if (sessionError || attemptError || dueError) throw new Error(sessionError?.message ?? attemptError?.message ?? dueError?.message ?? "Learning history is unavailable.");
   const allAttempts = attempts ?? [];
+  const bankIds = [...new Set([
+    ...(sessions ?? []).map((session) => String(session.question_bank_id)),
+    ...allAttempts.map((attempt) => String(attempt.question_bank_id)),
+    ...(dueItems ?? []).map((item) => String(item.question_bank_id)),
+  ])];
+  const { data: chapters, error: chapterError } = bankIds.length
+    ? await client.from("library_chapters").select("id,subject,chapter_title").in("id", bankIds)
+    : { data: [], error: null };
+  if (chapterError) throw new Error(chapterError.message);
+  const chapterByBank = new Map((chapters ?? []).map((chapter) => [String(chapter.id), {
+    subject: String(chapter.subject), chapterTitle: String(chapter.chapter_title),
+  }]));
+  const chapterFor = (bankId: unknown) => chapterByBank.get(String(bankId)) ?? { subject: "Other", chapterTitle: "Chapter" };
   const latestByQuestion = new Map<string, typeof allAttempts[number]>();
   allAttempts.forEach((attempt) => { const key = `${attempt.question_bank_id}:${attempt.question_id}`; if (!latestByQuestion.has(key)) latestByQuestion.set(key, attempt); });
   const latest = [...latestByQuestion.values()];
@@ -184,6 +197,27 @@ export async function childLearningHistory(child: ChildContext) {
     };
   });
   const points = Math.round(earnedMarks * 10 + allAttempts.length * 2);
+  const subjectNames = [...new Set([
+    ...(sessions ?? []).map((session) => chapterFor(session.question_bank_id).subject),
+    ...allAttempts.map((attempt) => chapterFor(attempt.question_bank_id).subject),
+    ...(dueItems ?? []).map((item) => chapterFor(item.question_bank_id).subject),
+  ])].sort((a, b) => a.localeCompare(b));
+  const subjects = subjectNames.map((subject) => {
+    const subjectAttempts = allAttempts.filter((attempt) => chapterFor(attempt.question_bank_id).subject === subject);
+    const subjectLatest = latest.filter((attempt) => chapterFor(attempt.question_bank_id).subject === subject);
+    const subjectEarned = subjectAttempts.reduce((sum, attempt) => sum + Number(attempt.earned_marks), 0);
+    const subjectPossible = subjectAttempts.reduce((sum, attempt) => sum + Number(attempt.max_marks), 0);
+    const subjectMastery = subjectLatest.map((attempt) => Number(attempt.earned_marks) / Number(attempt.max_marks));
+    return {
+      subject,
+      completedSessions: (sessions ?? []).filter((session) => session.status === "completed" && chapterFor(session.question_bank_id).subject === subject).length,
+      attempts: subjectAttempts.length,
+      accuracy: subjectPossible ? Math.round(subjectEarned / subjectPossible * 100) : 0,
+      mastery: subjectMastery.length ? Math.round(subjectMastery.reduce<number>((sum, value) => sum + value, 0) / subjectMastery.length * 100) : 0,
+      readyToPractice: (dueItems ?? []).filter((item) => chapterFor(item.question_bank_id).subject === subject).length,
+      answersNeedingReview: subjectAttempts.filter((attempt) => record(attempt.feedback).reviewRequired === true).length,
+    };
+  });
   return {
     summary: {
       completedSessions: (sessions ?? []).filter((session) => session.status === "completed").length,
@@ -191,13 +225,15 @@ export async function childLearningHistory(child: ChildContext) {
       uniqueQuestions: latest.length,
       accuracy: possibleMarks ? Math.round(earnedMarks / possibleMarks * 100) : 0,
       mastery: masteryPoints.length ? Math.round(masteryPoints.reduce<number>((sum, value) => sum + value, 0) / masteryPoints.length * 100) : 0,
-      dueReview: dueCount ?? 0,
+      dueReview: (dueItems ?? []).length,
       gradingReview: allAttempts.filter((attempt) => record(attempt.feedback).reviewRequired === true).length,
       rewards: { stars: Math.min(5, Math.floor(points / 50)) },
     },
+    subjects,
     topics,
     sessions: (sessions ?? []).map((session) => ({
       id: session.id, bankId: session.question_bank_id, status: session.status, startedAt: session.started_at, completedAt: session.completed_at,
+      ...chapterFor(session.question_bank_id),
       totalQuestions: session.total_questions, resumable: session.status === "in_progress" && Array.isArray(session.question_ids),
       attempts: allAttempts.filter((attempt) => attempt.session_id === session.id).reverse(),
     })),

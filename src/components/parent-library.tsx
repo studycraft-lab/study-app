@@ -97,6 +97,11 @@ export function ParentLibrary() {
     setBusy(false);
   }
 
+  const libraryBySubject = library.reduce<Record<string, LibraryItem[]>>((groups, item) => {
+    (groups[item.subject] ??= []).push(item);
+    return groups;
+  }, {});
+
   return (
     <main className="parent-shell">
       <AppHeader role="parent" />
@@ -139,7 +144,7 @@ export function ParentLibrary() {
       <section className="library-section">
         <h2>Imported chapters</h2>
         {library.length === 0 ? <p className="empty-state">No chapters have been imported for this family yet.</p> :
-          <div className="library-grid">{library.map((item) => <article key={item.id}><span>{item.board} · Grade {item.grade} · {item.subject}</span><h3>{item.chapterNumber ? `${item.chapterNumber}. ` : ""}{item.chapterTitle}</h3><p>{item.questionCount} questions · bank v{item.bankVersion}</p></article>)}</div>}
+          <div className="library-subjects">{Object.entries(libraryBySubject).sort(([a], [b]) => a.localeCompare(b)).map(([subject, items]) => <section className="library-subject-group" key={subject}><div className="section-heading"><h3>{subject}</h3><span>{items.length} {items.length === 1 ? "chapter" : "chapters"}</span></div><div className="library-grid">{items.map((item) => <article key={item.id}><span>{item.board} · Grade {item.grade}</span><h3>{item.chapterNumber ? `${item.chapterNumber}. ` : ""}{item.chapterTitle}</h3><p>{item.questionCount} questions · bank v{item.bankVersion}</p></article>)}</div></section>)}</div>}
       </section>
     </main>
   );

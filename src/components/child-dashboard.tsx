@@ -6,7 +6,7 @@ import { AppHeader } from "./app-header";
 import { ProgressVisual, ProgressVisualStatus } from "./progress-visual";
 
 type Attempt = { id: string; question_prompt: string; correct: boolean; earned_marks: number; max_marks: number };
-type Session = { id: string; status: string; resumable?: boolean; startedAt: string; totalQuestions: number; attempts: Attempt[] };
+type Session = { id: string; subject: string; chapterTitle: string; status: string; resumable?: boolean; startedAt: string; totalQuestions: number; attempts: Attempt[] };
 type History = { summary: { completedSessions: number; attempts?: number }; sessions: Session[] };
 type StudyLibrary = { child?: { displayName: string }; chapters?: { id: string; chapterTitle: string }[] };
 
@@ -38,6 +38,11 @@ export function ChildDashboard() {
   const resumableSession = history?.sessions.find((session) => session.resumable);
   const firstName = library?.child?.displayName?.trim().split(/\s+/)[0];
   const answeredQuestions = history?.summary.attempts ?? history?.sessions.reduce((sum, session) => sum + session.attempts.length, 0) ?? 0;
+  const sessionsBySubject = (history?.sessions ?? []).reduce<Record<string, Session[]>>((groups, session) => {
+    const subject = session.subject || "Other";
+    (groups[subject] ??= []).push(session);
+    return groups;
+  }, {});
   const heroCopy = resumableSession
     ? `You have answered ${resumableSession.attempts.length} of ${resumableSession.totalQuestions} questions. Pick up where you left off.`
     : latestSession
@@ -52,13 +57,13 @@ export function ChildDashboard() {
     </section>
     {error ? <p className="notice notice-error">{error}</p> : !history ? <p className="study-loading">Loading your progress…</p> : <>
       <section className="child-motivation" aria-label="Your activity"><div><strong>{answeredQuestions}</strong><span>questions answered</span></div><div><strong>{history.summary.completedSessions}</strong><span>sessions completed</span></div></section>
-      <section className="dashboard-section"><div className="section-heading"><h2>Recent scores</h2></div>{history.sessions.length === 0 ? <div className="empty-state"><p>No scores yet.</p><Link href="/study">Start your first chapter</Link></div> : <div className="dashboard-sessions">{history.sessions.map((session) => {
+      <section className="dashboard-section"><div className="section-heading"><h2>Recent scores</h2></div>{history.sessions.length === 0 ? <div className="empty-state"><p>No scores yet.</p><Link href="/study">Start your first chapter</Link></div> : <div className="dashboard-subjects">{Object.entries(sessionsBySubject).map(([subject, sessions]) => <section className="dashboard-subject-group" key={subject}><h3>{subject}</h3><div className="dashboard-sessions">{sessions.map((session) => {
         const earned = session.attempts.reduce((sum, attempt) => sum + attempt.earned_marks, 0);
         const total = session.attempts.reduce((sum, attempt) => sum + attempt.max_marks, 0);
         const completed = session.status === "completed";
         const canResume = !completed && session.resumable;
-        return <Link className="dashboard-session" href={canResume ? `/study?resume=${encodeURIComponent(session.id)}` : `/study/history/${session.id}`} key={session.id}><span>{new Date(session.startedAt).toLocaleDateString()}</span><strong>{earned}/{total || 0} marks</strong><small>{session.attempts.length}/{session.totalQuestions} answered · {completed ? "Completed" : canResume ? "Resume session" : "Not finished"}</small><b>›</b></Link>;
-      })}</div>}</section>
+        return <Link className="dashboard-session" href={canResume ? `/study?resume=${encodeURIComponent(session.id)}` : `/study/history/${session.id}`} key={session.id}><span>{session.chapterTitle} · {new Date(session.startedAt).toLocaleDateString()}</span><strong>{earned}/{total || 0} marks</strong><small>{session.attempts.length}/{session.totalQuestions} answered · {completed ? "Completed" : canResume ? "Resume session" : "Not finished"}</small><b>›</b></Link>;
+      })}</div></section>)}</div>}</section>
       <p className="dashboard-note">Your answers and progress are private to you.</p>
     </>}
   </main>;

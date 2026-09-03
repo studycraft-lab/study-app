@@ -8,6 +8,13 @@ const questions = [
   ...Array.from({ length: 4 }, (_, index) => ({ id: `q${index + 2}`, type: "fill_blank", prompt: `Question ${index + 2}`, marks: 1, response: {} })),
 ];
 
+async function chooseHistoryChapter() {
+  fireEvent.click(await screen.findByRole("button", { name: /history/i }));
+  const chapterCard = await screen.findByRole("button", { name: /early vedic/i });
+  fireEvent.click(chapterCard);
+  return chapterCard;
+}
+
 describe("StudyExperience", () => {
   afterEach(() => { cleanup(); vi.restoreAllMocks(); window.history.replaceState({}, "", "/"); });
 
@@ -23,8 +30,10 @@ describe("StudyExperience", () => {
     });
     render(<StudyExperience />);
 
+    const subjectCard = await screen.findByRole("button", { name: /history/i });
+    expect(within(subjectCard).getByText("1 chapter")).toBeInTheDocument();
+    fireEvent.click(subjectCard);
     const chapterCard = await screen.findByRole("button", { name: /early vedic/i });
-    expect(within(chapterCard).getByText("History")).toBeInTheDocument();
     expect(within(chapterCard).queryByText(/ICSE|Grade 6/)).not.toBeInTheDocument();
     expect(within(chapterCard).getByText("0 of 10 covered")).toBeInTheDocument();
     expect(within(chapterCard).getByRole("progressbar")).toHaveAttribute("aria-valuenow", "0");
@@ -72,7 +81,7 @@ describe("StudyExperience", () => {
     });
 
     render(<StudyExperience />);
-    fireEvent.click(await screen.findByRole("button", { name: /early vedic/i }));
+    await chooseHistoryChapter();
     fireEvent.click(await screen.findByLabelText("Later Vedic"));
     fireEvent.click(screen.getByRole("button", { name: /check answer/i }));
     await screen.findByText(/incorrect/i);
@@ -97,7 +106,7 @@ describe("StudyExperience", () => {
     vi.spyOn(globalThis, "fetch").mockImplementation(async (input) => {
       const url = String(input);
       if (url === "/api/study/library") return new Response(JSON.stringify({ child: { id: "child", displayName: "Asha", grade: 6, board: "ICSE" }, chapters: [] }));
-      if (url === "/api/study/history") return new Response(JSON.stringify({ summary: { completedSessions: 0, attempts: 2, uniqueQuestions: 2, accuracy: 50, mastery: 50, dueReview: 1 }, topics: [], sessions: [{ id: "unfinished", bankId: "bank", status: "in_progress", startedAt: "2026-09-01T00:00:00.000Z", totalQuestions: 5, resumable: true, attempts: [{ id: "a1", question_prompt: "One", correct: true, earned_marks: 1, max_marks: 1, feedback: {} }, { id: "a2", question_prompt: "Two", correct: false, earned_marks: 0, max_marks: 2, feedback: {} }] }] }));
+      if (url === "/api/study/history") return new Response(JSON.stringify({ summary: { completedSessions: 0, attempts: 2, uniqueQuestions: 2, accuracy: 50, mastery: 50, dueReview: 1 }, topics: [], sessions: [{ id: "unfinished", bankId: "bank", subject: "History", chapterTitle: "Early Vedic", status: "in_progress", startedAt: "2026-09-01T00:00:00.000Z", totalQuestions: 5, resumable: true, attempts: [{ id: "a1", question_prompt: "One", correct: true, earned_marks: 1, max_marks: 1, feedback: {} }, { id: "a2", question_prompt: "Two", correct: false, earned_marks: 0, max_marks: 2, feedback: {} }] }] }));
       if (url === "/api/study/sessions?sessionId=unfinished") return new Response(JSON.stringify({ bankId: "bank", questions, attempts: [] }));
       throw new Error(`Unexpected request: ${url}`);
     });
@@ -135,11 +144,30 @@ describe("StudyExperience", () => {
       return new Response(JSON.stringify({ correct: false, earnedMarks: 1, expectedAnswer: "The councils controlled him.", explanation: "You identified one council.", coveredPoints: ["sabha advised the rajan"], partialPoints: [], missingPoints: ["samiti allowed tribal opinions"], sourcePages: [47], attemptId: "attempt" }));
     });
     render(<StudyExperience />);
-    fireEvent.click(await screen.findByRole("button", { name: /early vedic/i }));
+    await chooseHistoryChapter();
     fireEvent.change(await screen.findByLabelText("Your answer"), { target: { value: "The sabha advised him." } });
     fireEvent.click(screen.getByRole("button", { name: /check answer/i }));
     expect(await screen.findByText(/partly correct — 1\/2 marks/i)).toBeInTheDocument();
     expect(screen.getByText("sabha advised the rajan")).toBeInTheDocument();
     expect(screen.getByText("samiti allowed tribal opinions")).toBeInTheDocument();
+  });
+
+  it("requires a subject choice before showing chapters from multiple subjects", async () => {
+    vi.spyOn(globalThis, "fetch").mockImplementation(async (input) => String(input) === "/api/study/library"
+      ? new Response(JSON.stringify({ child: { id: "child", displayName: "Asha", grade: 6, board: "ICSE" }, chapters: [
+        { id: "history", subject: "History", chapterTitle: "Early Vedic", questionCount: 10 },
+        { id: "geography", subject: "Geography", chapterTitle: "Major Water Bodies", questionCount: 125 },
+      ] }))
+      : new Response(JSON.stringify({ summary: { completedSessions: 0 }, topics: [], sessions: [] })));
+
+    render(<StudyExperience />);
+
+    expect(await screen.findByRole("button", { name: /history/i })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /geography/i })).toBeInTheDocument();
+    expect(screen.queryByRole("button", { name: /early vedic/i })).not.toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", { name: /geography/i }));
+    expect(await screen.findByRole("button", { name: /major water bodies/i })).toBeInTheDocument();
+    expect(screen.queryByRole("button", { name: /early vedic/i })).not.toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /all subjects/i })).toBeInTheDocument();
   });
 });

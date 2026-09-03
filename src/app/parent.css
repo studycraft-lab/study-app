@@ -20,6 +20,9 @@
 .library-grid { display:grid; gap:14px; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); }
 .library-grid article { background:rgba(255,254,251,.82); border:1px solid var(--line); border-radius:var(--radius-md); border-top:5px solid var(--aqua); box-shadow:var(--shadow-xs); padding:21px; }
 .library-grid span,.library-grid p { color:var(--muted); font-size:.8rem; } .library-grid h3 { margin:10px 0; }
+.library-subjects { display:grid; gap:32px; }
+.library-subject-group { border-top:1px solid var(--line); padding-top:18px; }
+.library-subject-group > .section-heading h3 { color:var(--navy); font-size:1.2rem; margin:0; }
 .family-summary { display:grid; gap:12px; grid-template-columns:repeat(3,1fr); margin-bottom:22px; }
 .family-summary div { background:var(--card); border:1px solid var(--line); border-radius:var(--radius-md); border-top:4px solid var(--aqua); display:grid; gap:5px; padding:18px; }
 .family-summary div:nth-child(2) { border-top-color:var(--sun); } .family-summary div:nth-child(3) { border-top-color:var(--blue); }
@@ -40,6 +43,7 @@
 .parent-progress-card header span,.parent-progress-card small { color:var(--muted); }
 .parent-progress-stats { border-block:1px solid var(--line); display:flex; flex-wrap:wrap; gap:1rem; margin:1rem 0; padding:.8rem 0; }
 .parent-progress-stats span { color:var(--muted); display:grid; font-size:.78rem; } .parent-progress-stats strong { color:var(--ink); font-size:1.15rem; }
+.parent-progress-stats > a { display:grid; font-size:.78rem; }
 .parent-progress-stats .grading-review-count { color:#5943a4; }
 .parent-progress-card .metric-help { display:inline-flex; }
 .parent-progress-card .metric-tooltip { color:white; display:block; left:auto; right:0; transform:none; }
@@ -89,6 +93,12 @@
 .parent-progress-stats { background:var(--paper); border:0; border-radius:14px; gap:.7rem; justify-content:space-between; margin-top:0; padding:.85rem 1rem; }
 .parent-progress-stats > span { flex:1; min-width:76px; }
 .parent-session-list { margin-top:1rem; }
+.parent-subject-list { display:grid; gap:.65rem; }
+.parent-subject-list > details { border:1px solid var(--line); border-radius:14px; overflow:hidden; }
+.parent-subject-list > details > summary { align-items:center; cursor:pointer; display:flex; justify-content:space-between; min-height:48px; padding:.75rem 1rem; }
+.parent-subject-list > details > summary span { color:var(--muted); font-size:.78rem; }
+.parent-subject-list > details[open] > summary { background:var(--aqua-soft); }
+.parent-subject-list .parent-progress-stats,.parent-subject-list .parent-session-list { margin:.8rem; }
 
 @media (max-width:720px) {
   .parent-progress-grid { grid-template-columns:1fr; }

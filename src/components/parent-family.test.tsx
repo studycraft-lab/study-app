@@ -16,6 +16,8 @@ describe("ParentFamily", () => {
     expect(screen.getByDisplayValue("Asha")).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: /add a child/i })).toBeInTheDocument();
     expect(screen.getByText("80% accuracy")).toBeInTheDocument();
+    expect(screen.getByText("1 idea is ready to be strengthened.")).toBeInTheDocument();
+    expect(screen.getByRole("img", { name: /Asha's latest study constellation/i })).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /what accuracy means/i })).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /what mastery means/i })).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /what due for review means/i })).toBeInTheDocument();

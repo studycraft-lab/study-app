@@ -71,3 +71,31 @@
 .parent-review-session { border-top:1px solid var(--line); margin-top:16px; padding-top:12px; }
 .parent-review-session > div { border-radius:10px; margin:8px 0; padding:10px; } .parent-review-session p { margin:4px 0; }
 @media (max-width:720px) { .parent-shell { padding-inline:20px; } .metadata-grid,.profile-form,.family-summary { grid-template-columns:1fr; } .question-report-card header,.report-attempts header,.section-heading { align-items:flex-start; flex-direction:column; } .resolved-reports > article { grid-template-columns:1fr; } }
+
+/* Parent-facing view of the same learning story */
+.parent-learning-section > .section-heading { align-items:end; }
+.parent-learning-section .section-heading .eyebrow { margin-bottom:8px; }
+.parent-learning-section .section-heading h2 { margin-bottom:0; }
+.parent-progress-grid { grid-template-columns:repeat(auto-fit,minmax(380px,1fr)); }
+.parent-progress-card { border-radius:24px 24px 24px 9px; overflow:visible; padding:1.45rem; }
+.parent-brief-label { color:var(--success) !important; display:block; font-size:.65rem; font-weight:900; letter-spacing:.12em; margin-bottom:7px; text-transform:uppercase; }
+.parent-progress-card header > strong { align-items:center; background:var(--aqua-soft); border-radius:999px; color:var(--success); display:flex; font-size:.82rem; padding:3px 2px 3px 12px; white-space:nowrap; }
+.parent-progress-overview { align-items:center; background:linear-gradient(145deg,#182851,#273d76); border-radius:18px 18px 18px 6px; color:white; display:grid; gap:18px; grid-template-columns:minmax(0,1fr) 170px; margin:1.15rem 0; min-height:155px; overflow:hidden; padding:1.15rem 1.25rem; position:relative; }
+.parent-progress-overview::before { background-image:radial-gradient(circle,rgba(255,255,255,.55) 0 1px,transparent 1.5px); background-size:31px 28px; content:""; inset:0; opacity:.09; pointer-events:none; position:absolute; }
+.parent-progress-overview > div,.parent-progress-overview .mastery-constellation { position:relative; z-index:1; }
+.parent-progress-overview p { font-family:ui-rounded,"Arial Rounded MT Bold",Inter,Aptos,ui-sans-serif,system-ui,sans-serif; font-size:1.04rem; line-height:1.35; margin-bottom:9px; }
+.parent-progress-overview small { color:rgba(255,255,255,.58); line-height:1.4; }
+.parent-progress-overview .mastery-constellation { transform:scale(1.16); }
+.parent-progress-stats { background:var(--paper); border:0; border-radius:14px; gap:.7rem; justify-content:space-between; margin-top:0; padding:.85rem 1rem; }
+.parent-progress-stats > span { flex:1; min-width:76px; }
+.parent-session-list { margin-top:1rem; }
+
+@media (max-width:720px) {
+  .parent-progress-grid { grid-template-columns:1fr; }
+  .parent-progress-overview { grid-template-columns:1fr 130px; }
+}
+@media (max-width:480px) {
+  .parent-progress-overview { grid-template-columns:1fr; }
+  .parent-progress-overview .mastery-constellation { margin:-28px auto; max-width:260px; }
+  .parent-progress-card header { align-items:flex-start; flex-direction:column; }
+}

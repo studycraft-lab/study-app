@@ -85,6 +85,8 @@ describe("StudyExperience", () => {
       fireEvent.click(screen.getByRole("button", { name: index === 5 ? /see results/i : /next question/i }));
     }
 
+    expect(await screen.findByText("Constellation revealed")).toBeInTheDocument();
+    expect(screen.getByRole("img", { name: /completed session constellation/i })).toBeInTheDocument();
     fireEvent.click(await screen.findByRole("button", { name: /review mistakes/i }));
     expect(await screen.findByText("Which period?")).toBeInTheDocument();
     expect(screen.getByRole("status")).toHaveTextContent("Expected: Early Vedic");

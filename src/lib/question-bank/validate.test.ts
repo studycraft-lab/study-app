@@ -15,6 +15,15 @@ describe("validateQuestionBank", () => {
     expect(earlyVedicBank.questions.find(({ id }) => id === "q-041")?.version).toBe(1);
   });
 
+  it("accepts question origin and selection priority metadata", () => {
+    const bank = structuredClone(earlyVedicBank);
+    const question = bank.questions[0] as unknown as Record<string, unknown>;
+    question.origin = "end_exercise";
+    question.selectionPriority = 1;
+
+    expect(validateQuestionBank(bank).valid).toBe(true);
+  });
+
   it("rejects a rubric whose attainable score differs from the marks", () => {
     const bank = structuredClone(earlyVedicBank);
     const questionIndex = bank.questions.findIndex(({ id }) => id === "q-024");

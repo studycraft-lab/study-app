@@ -20,7 +20,11 @@ Create or update a chapter manifest conforming to `schemas/chapter-manifest.sche
 Read `docs/QUESTION_BANK.md` and validate against `schemas/question-bank.schema.json` before editing a bank. Generate a versioned bank that:
 
 - covers every learning outcome and substantive chapter topic;
-- uses exercises as useful patterns, not as the complete bank;
+- includes every answerable end-of-chapter exercise question; omit only genuinely activity-dependent or visual items that cannot work in the current player, and record every omission with a reason in the review;
+- marks end-exercise questions with `origin: end_exercise` and `selectionPriority: 1` so the player can reserve half of each exercise for them until the child has seen them all;
+- assigns `selectionPriority` from 1 (essential) to 3 (reinforcement), using learning outcomes, definitions, central explanations, repeated emphasis and exercises as evidence rather than guessing exam weight;
+- never refers to "the chapter", "the textbook", or "the passage above" in a child-visible prompt unless the question actually depends on a displayed source passage;
+- builds an atomic inventory before writing questions, covers every useful testable fact at least once, and gives central facts multiple genuinely different forms; do not stop at an arbitrary question count, and expect dense chapters commonly to exceed 100 questions;
 - includes supported facts from prose, diagrams, maps, timelines, tables, captions, and source passages;
 - cites a page and, when the evidence is visual or localized, a normalized region for every scored prompt, answer, and rubric;
 - gives objective items deterministic answers and subjective items independently scorable, mark-balanced rubrics;

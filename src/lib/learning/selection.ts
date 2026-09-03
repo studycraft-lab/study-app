@@ -5,6 +5,11 @@ export type QuestionSelectionHistory = {
   due: boolean;
 };
 
+export type QuestionSelectionMetadata = {
+  origin?: "end_exercise" | "chapter_content" | "learning_outcome";
+  priority?: number;
+};
+
 function shuffled<T>(values: T[], random: () => number): T[] {
   const result = [...values];
   for (let index = result.length - 1; index > 0; index -= 1) {
@@ -14,11 +19,18 @@ function shuffled<T>(values: T[], random: () => number): T[] {
   return result;
 }
 
-function selectFromPool(candidateIds: string[], history: QuestionSelectionHistory[], limit: number, random: () => number): string[] {
+function prioritized(values: string[], metadata: Record<string, QuestionSelectionMetadata>, random: () => number): string[] {
+  return [1, 2, 3, 4].flatMap((priority) => shuffled(values.filter((id) => {
+    const value = metadata[id]?.priority;
+    return priority === 4 ? ![1, 2, 3].includes(Number(value)) : value === priority;
+  }), random));
+}
+
+function selectFromPool(candidateIds: string[], history: QuestionSelectionHistory[], limit: number, random: () => number, metadata: Record<string, QuestionSelectionMetadata> = {}): string[] {
   const byId = new Map(history.map((item) => [item.questionId, item]));
-  const weak = shuffled(candidateIds.filter((id) => { const item = byId.get(id); return item?.due || (item?.attempted && !item.latestCorrect); }), random);
-  const unseen = shuffled(candidateIds.filter((id) => !byId.get(id)?.attempted), random);
-  const reinforcement = shuffled(candidateIds.filter((id) => { const item = byId.get(id); return item?.attempted && item.latestCorrect && !item.due; }), random);
+  const weak = prioritized(candidateIds.filter((id) => { const item = byId.get(id); return item?.due || (item?.attempted && !item.latestCorrect); }), metadata, random);
+  const unseen = prioritized(candidateIds.filter((id) => !byId.get(id)?.attempted), metadata, random);
+  const reinforcement = prioritized(candidateIds.filter((id) => { const item = byId.get(id); return item?.attempted && item.latestCorrect && !item.due; }), metadata, random);
   const chosen: string[] = [];
   const add = (values: string[], count = values.length) => values.some((id) => {
     if (chosen.length >= limit || count <= 0) return true;
@@ -40,19 +52,41 @@ export function selectQuestionIds(
   limit = 5,
   random: () => number = Math.random,
   questionTypes?: Record<string, string>,
+  questionMetadata: Record<string, QuestionSelectionMetadata> = {},
 ): string[] {
-  if (!questionTypes || limit < 10) return selectFromPool(candidateIds, history, limit, random);
   const subjective = new Set(["brief_answer", "multi_point", "compare"]);
+  const historyById = new Map(history.map((item) => [item.questionId, item]));
+  const exerciseIds = candidateIds.filter((id) => questionMetadata[id]?.origin === "end_exercise");
+  const reserveExercises = exerciseIds.some((id) => !historyById.get(id)?.attempted);
+  const exerciseLimit = reserveExercises ? Math.min(Math.floor(limit / 2), exerciseIds.length) : 0;
+  const chosen: string[] = [];
+  const add = (ids: string[]) => ids.forEach((id) => { if (chosen.length < limit && !chosen.includes(id)) chosen.push(id); });
+
+  if (!questionTypes || limit < 10) {
+    if (exerciseLimit) add(selectFromPool(exerciseIds, history, exerciseLimit, random, questionMetadata));
+    add(selectFromPool(candidateIds.filter((id) => !chosen.includes(id)), history, limit - chosen.length, random, questionMetadata));
+    return chosen.slice(0, limit);
+  }
+
   const subjectiveIds = candidateIds.filter((id) => subjective.has(questionTypes[id]));
   const objectiveIds = candidateIds.filter((id) => !subjective.has(questionTypes[id]));
-  const chosen = [
-    ...selectFromPool(objectiveIds, history, Math.min(OBJECTIVE_QUESTIONS_PER_EXERCISE, objectiveIds.length), random),
-    ...selectFromPool(subjectiveIds, history, Math.min(SUBJECTIVE_QUESTIONS_PER_EXERCISE, subjectiveIds.length), random),
-  ];
+  if (exerciseLimit) {
+    const exerciseObjective = exerciseIds.filter((id) => !subjective.has(questionTypes[id]));
+    const exerciseSubjective = exerciseIds.filter((id) => subjective.has(questionTypes[id]));
+    const desiredObjective = Math.min(exerciseObjective.length, Math.ceil(exerciseLimit * OBJECTIVE_QUESTIONS_PER_EXERCISE / limit));
+    const desiredSubjective = Math.min(exerciseSubjective.length, exerciseLimit - desiredObjective);
+    add(selectFromPool(exerciseObjective, history, desiredObjective, random, questionMetadata));
+    add(selectFromPool(exerciseSubjective, history, desiredSubjective, random, questionMetadata));
+    if (chosen.length < exerciseLimit) add(selectFromPool(exerciseIds.filter((id) => !chosen.includes(id)), history, exerciseLimit - chosen.length, random, questionMetadata));
+  }
+  const chosenObjective = chosen.filter((id) => !subjective.has(questionTypes[id])).length;
+  const chosenSubjective = chosen.filter((id) => subjective.has(questionTypes[id])).length;
+  add(selectFromPool(objectiveIds.filter((id) => !chosen.includes(id)), history, Math.max(0, OBJECTIVE_QUESTIONS_PER_EXERCISE - chosenObjective), random, questionMetadata));
+  add(selectFromPool(subjectiveIds.filter((id) => !chosen.includes(id)), history, Math.max(0, SUBJECTIVE_QUESTIONS_PER_EXERCISE - chosenSubjective), random, questionMetadata));
   if (chosen.length < limit) {
     const remaining = candidateIds.filter((id) => !chosen.includes(id));
-    chosen.push(...selectFromPool(remaining, history, limit - chosen.length, random));
+    add(selectFromPool(remaining, history, limit - chosen.length, random, questionMetadata));
   }
-  return chosen.slice(0, limit);
+  return shuffled(chosen.slice(0, limit), random);
 }
 import { OBJECTIVE_QUESTIONS_PER_EXERCISE, SUBJECTIVE_QUESTIONS_PER_EXERCISE } from "@/lib/study/config";

@@ -7,6 +7,10 @@ Run this review only after the manifest, source hashes, bank schema, references,
 - Map each printed learning outcome to at least one topic and at least two questions where the source supports that depth.
 - Check prose, captions, diagrams, maps, timelines, tables, callouts, and end exercises. Exercises supply patterns and important concepts but do not cap coverage.
 - Check the distribution of recall, understanding, application, comparison, and source interpretation. Do not invent an examination blueprint.
+- Confirm every answerable end-of-chapter question is represented and every omission is explicitly justified.
+- Confirm every question has a defensible origin and priority, and that priority 1 is reserved for essential material rather than used as a default.
+- Search child-visible prompts for avoidable phrases such as "in the chapter" or "as per the textbook."
+- Compare the bank against the atomic inventory. A page count or a round bank size is never evidence of adequate depth.
 
 ## Question-by-question grounding
 

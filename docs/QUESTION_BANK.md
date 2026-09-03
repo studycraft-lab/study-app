@@ -96,6 +96,8 @@ Before a visual question is enabled for a child, upload the required map, diagra
   "version": 1,
   "type": "multi_point",
   "status": "active",
+  "origin": "end_exercise",
+  "selectionPriority": 1,
   "topicIds": ["political-organization"],
   "difficulty": 2,
   "marks": 2,
@@ -115,6 +117,10 @@ Before a visual question is enabled for a child, upload the required map, diagra
   }
 }
 ```
+
+`origin` records whether a question came from an `end_exercise`, `chapter_content`, or a `learning_outcome`. `selectionPriority` ranges from 1 (essential) through 3 (reinforcement). New banks provide both fields; they remain optional in schema version 0.1.0 so previously imported banks stay compatible.
+
+While unseen end-exercise questions remain, a ten-question study exercise reserves five places for that pool. Selection still aims for seven objective and three subjective questions. After every end-exercise question has appeared at least once, normal weak/unseen/reinforcement selection resumes, with higher-priority questions preferred within each bucket.
 
 `hint` may be authored for forward compatibility, but the current child experience does not display hints or offer retries.
 

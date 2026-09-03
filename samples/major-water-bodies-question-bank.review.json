@@ -1,0 +1,114 @@
+{
+  "reviewVersion": "0.1.0",
+  "bankId": "major-water-bodies-v1",
+  "bankVersion": 1,
+  "reviewedAt": "2026-09-03T20:00:00+05:30",
+  "reviewerMethod": "Codex source-by-source review using the repository-local chapter-ingestion skill after schema, source-hash, reference and rubric checks",
+  "inputs": {
+    "manifest": "samples/major-water-bodies-chapter-manifest.json",
+    "bank": "samples/major-water-bodies-question-bank.json",
+    "sourceAssetCount": 7,
+    "pageRange": "40–51"
+  },
+  "gates": {
+    "manifestSchema": "pass",
+    "sourceHashes": "pass",
+    "questionBankSchema": "pass",
+    "deterministicGroundingReview": "pass",
+    "manualGroundingReview": "pass",
+    "rubricBalanceReview": "pass",
+    "endExerciseCoverage": "pass",
+    "selectionMetadataReview": "pass",
+    "childPromptLanguageReview": "pass"
+  },
+  "coverage": {
+    "questionCount": 125,
+    "topics": {
+      "overview": 2,
+      "oceans": 36,
+      "seas-gulfs-bays": 10,
+      "straits": 3,
+      "lakes": 25,
+      "rivers": 2,
+      "river-course": 7,
+      "river-examples": 14,
+      "river-civilizations": 2,
+      "importance": 13,
+      "water-pollution": 17,
+      "important-terms": 2
+    },
+    "types": {
+      "single_choice": 9,
+      "matching": 10,
+      "fill_blank": 28,
+      "true_false_correct": 14,
+      "compare": 4,
+      "brief_answer": 20,
+      "multi_point": 11,
+      "multiple_select": 18,
+      "one_word": 11
+    },
+    "difficulties": {
+      "1": 71,
+      "2": 54,
+      "3": 0
+    },
+    "pages": {
+      "page-40": 2,
+      "page-41": 19,
+      "page-42": 31,
+      "page-43": 21,
+      "page-44": 16,
+      "page-45": 13,
+      "page-46": 16,
+      "page-47": 7,
+      "page-49": 1,
+      "page-50": 1
+    },
+    "learningOutcomes": {
+      "locate-water-bodies": ["q-001", "q-003", "q-005", "q-032", "q-034", "q-035", "q-036", "q-037", "q-038", "q-039", "q-043", "q-044", "q-048", "q-049", "q-050", "q-051", "q-052", "q-057"],
+      "importance-for-development": ["q-025", "q-040", "q-041", "q-047", "q-058", "q-064"],
+      "water-bodies-civilizations-history": ["q-016", "q-065"],
+      "water-pollution": ["q-006", "q-024", "q-028", "q-029", "q-059", "q-060", "q-061", "q-062", "q-063", "q-114", "q-115", "q-116", "q-117", "q-118", "q-119", "q-120", "q-122"]
+    },
+    "origins": { "end_exercise": 29, "chapter_content": 96 },
+    "selectionPriorities": { "1": 51, "2": 46, "3": 28 },
+    "endExerciseQuestions": ["q-001", "q-002", "q-003", "q-004", "q-005", "q-006", "q-007", "q-008", "q-009", "q-010", "q-011", "q-012", "q-013", "q-014", "q-015", "q-016", "q-017", "q-018", "q-019", "q-020", "q-021", "q-022", "q-023", "q-024", "q-025", "q-026", "q-027", "q-028", "q-029"],
+    "excluded": [
+      {
+        "source": "page-50",
+        "item": "Map work",
+        "reason": "Correct map placement requires an atlas or a runtime map interaction not supplied by the current application."
+      },
+      {
+        "source": "page-50",
+        "item": "Source-based delta questions",
+        "reason": "The requested Indian example is not named in the supplied pages, and the application does not yet serve the required private image crop."
+      },
+      {
+        "source": "page-51",
+        "item": "Cross-curricular, field-trip, atlas and project activities",
+        "reason": "These require discussion, observation, internet research or an atlas rather than answers grounded entirely in the supplied chapter pages."
+      }
+    ]
+  },
+  "atomicCoverageInventory": {
+    "overview": ["71 per cent water coverage", "drinking water", "aquatic life"],
+    "oceans": ["five oceans", "97 per cent of earth's water", "Pacific size, shape, Ring of Fire and trenches", "Atlantic shape, size, traffic and Mid-Atlantic Ridge", "Indian shape, extent, name and boundaries", "Arctic location, ice, size and depth", "Southern location, formation and rank", "ocean resources, life, trade, climate, rain, food and tidal energy"],
+    "coastal-water-bodies": ["definition and examples of seas", "gulf definition", "bay definition", "gulf-bay indentation and enclosure", "strait definition", "Strait of Gibraltar", "Palk Strait"],
+    "lakes": ["lake definition", "comparison with ponds", "man-made reservoirs", "inland seas", "drinking, agriculture and leisure uses", "Baikal", "Great Lakes", "Onega", "Titicaca", "Victoria", "Chilika"],
+    "rivers": ["river definition", "source and mouth", "upper, middle and lower courses", "Nile and Amazon", "Mackenzie", "Saint Lawrence", "Rhine", "Danube", "Indus", "Ganga", "Huang He", "Yangtze", "Ob", "Murray", "river importance", "Indus Valley and Chinese civilizations"],
+    "pollution": ["water-pollution definition", "thermal liquid waste", "surface run-off and algae", "untreated household waste and diseases", "oil spills and harm to animals", "marine plastic and microplastics"]
+  },
+  "sourceAssetReadiness": {
+    "fullPages": "local-only",
+    "runtimeVisualQuestions": "not included",
+    "status": "ready for text-only import"
+  },
+  "blockingFindings": [],
+  "advisoryNotes": [
+    "The exact publisher book title is not visible in the supplied pages; bank.bookTitle uses the conservative value 'Geography'.",
+    "Pages 48 and 49–50 largely summarize or exercise facts grounded on earlier pages; questions cite the clearest supporting source rather than forcing every page into coverage."
+  ],
+  "decision": "accept"
+}

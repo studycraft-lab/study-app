@@ -1,0 +1,210 @@
+{
+  "manifestVersion": "0.1.0",
+  "chapter": {
+    "id": "major-water-bodies",
+    "board": "ICSE",
+    "grade": 6,
+    "subject": "Geography",
+    "bookTitle": "Geography",
+    "chapterNumber": 4,
+    "title": "Major Water Bodies"
+  },
+  "sourcePolicy": {
+    "originals": "local-only",
+    "repositoryCopies": false,
+    "applicationStorage": "not-uploaded",
+    "runtimeStrategy": "required-regions",
+    "notes": "Keep the seven copyrighted screenshots outside Git. Upload only required map, diagram, illustration, passage or exercise crops before enabling visual questions."
+  },
+  "assets": [
+    {
+      "id": "source-01",
+      "fileName": "Screenshot 2026-09-03 at 7.02.04 PM.png",
+      "sha256": "0d9e3a58f71992eb54f0789e554ee95459e4bd9b33627f96a861e2d13d7b6189",
+      "width": 1544,
+      "height": 2044,
+      "pages": [
+        {
+          "id": "page-40",
+          "pageNumber": 40,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "source-02",
+      "fileName": "Screenshot 2026-09-03 at 7.02.16 PM.png",
+      "sha256": "03a48491d1d313bffcfca40c2954b3474c180c89acea52bc3d06da10d227ba35",
+      "width": 3096,
+      "height": 2068,
+      "pages": [
+        {
+          "id": "page-41",
+          "pageNumber": 41,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0.5,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-42",
+          "pageNumber": 42,
+          "bounds": {
+            "x": 0.5,
+            "y": 0,
+            "width": 0.5,
+            "height": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "source-03",
+      "fileName": "Screenshot 2026-09-03 at 7.02.27 PM.png",
+      "sha256": "19313e064d5c4222a570c52845d8037f929b5abbbb0c3296d6428200a9d1ce01",
+      "width": 3146,
+      "height": 2080,
+      "pages": [
+        {
+          "id": "page-43",
+          "pageNumber": 43,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0.5,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-44",
+          "pageNumber": 44,
+          "bounds": {
+            "x": 0.5,
+            "y": 0,
+            "width": 0.5,
+            "height": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "source-04",
+      "fileName": "Screenshot 2026-09-03 at 7.03.05 PM.png",
+      "sha256": "eec6ff01c033c64fbec2760ab0690ea008f50c662c60233edb42df0216f5c205",
+      "width": 3114,
+      "height": 2050,
+      "pages": [
+        {
+          "id": "page-45",
+          "pageNumber": 45,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0.5,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-46",
+          "pageNumber": 46,
+          "bounds": {
+            "x": 0.5,
+            "y": 0,
+            "width": 0.5,
+            "height": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "source-05",
+      "fileName": "Screenshot 2026-09-03 at 7.03.17 PM.png",
+      "sha256": "d6121b661777f3d6600886a80f99ba30599c33a53cedae7108dc4ef74a983e02",
+      "width": 3094,
+      "height": 2066,
+      "pages": [
+        {
+          "id": "page-47",
+          "pageNumber": 47,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0.5,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-48",
+          "pageNumber": 48,
+          "bounds": {
+            "x": 0.5,
+            "y": 0,
+            "width": 0.5,
+            "height": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "source-06",
+      "fileName": "Screenshot 2026-09-03 at 7.03.29 PM.png",
+      "sha256": "9b2184b5f240f7480cbf07c25366bef45bd3e67d7e90183176391e324e499380",
+      "width": 3082,
+      "height": 2056,
+      "pages": [
+        {
+          "id": "page-49",
+          "pageNumber": 49,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0.5,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-50",
+          "pageNumber": 50,
+          "bounds": {
+            "x": 0.5,
+            "y": 0,
+            "width": 0.5,
+            "height": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "source-07",
+      "fileName": "Screenshot 2026-09-03 at 7.03.42 PM.png",
+      "sha256": "7f3c794ee83f27777dd0edce7894c1693986bec33966c07f28a0c67833da6023",
+      "width": 1540,
+      "height": 2068,
+      "pages": [
+        {
+          "id": "page-51",
+          "pageNumber": 51,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        }
+      ]
+    }
+  ],
+  "learningOutcomes": [
+    "locates oceans, important seas, rivers and lakes, on the world map and in the atlas.",
+    "describes the importance of seas, rivers and lakes for the development of any area.",
+    "identifies water bodies and discusses how they relate to river valley civilizations and sea voyages in history.",
+    "discusses problems related to water pollution."
+  ]
+}

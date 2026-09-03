@@ -39,7 +39,7 @@ describe("StudyExperience", () => {
     expect(fetch).toHaveBeenCalledWith("/api/study/question-reports", expect.objectContaining({ body: expect.stringContaining('"questionId":"q1"') }));
 
     fireEvent.click(screen.getByLabelText("Later Vedic"));
-    fireEvent.click(screen.getByRole("button", { name: /submit answer/i }));
+    fireEvent.click(screen.getByRole("button", { name: /check answer/i }));
     expect(await screen.findByText(/incorrect/i)).toBeInTheDocument();
     expect(screen.getByRole("status")).toHaveTextContent("Expected: Early Vedic");
     expect(screen.getByText(/Page 49/i)).toBeInTheDocument();
@@ -74,19 +74,19 @@ describe("StudyExperience", () => {
     render(<StudyExperience />);
     fireEvent.click(await screen.findByRole("button", { name: /early vedic/i }));
     fireEvent.click(await screen.findByLabelText("Later Vedic"));
-    fireEvent.click(screen.getByRole("button", { name: /submit answer/i }));
+    fireEvent.click(screen.getByRole("button", { name: /check answer/i }));
     await screen.findByText(/incorrect/i);
     fireEvent.click(screen.getByRole("button", { name: /next question/i }));
 
     for (let index = 2; index <= 5; index += 1) {
       fireEvent.change(await screen.findByLabelText("Your answer"), { target: { value: "Answer" } });
-      fireEvent.click(screen.getByRole("button", { name: /submit answer/i }));
+      fireEvent.click(screen.getByRole("button", { name: /check answer/i }));
       await screen.findByText("✓ Correct");
       fireEvent.click(screen.getByRole("button", { name: index === 5 ? /see results/i : /next question/i }));
     }
 
-    expect(await screen.findByText("Constellation revealed")).toBeInTheDocument();
-    expect(screen.getByRole("img", { name: /completed session constellation/i })).toBeInTheDocument();
+    expect(await screen.findByRole("heading", { name: /good work. keep practising/i })).toBeInTheDocument();
+    expect(screen.getByRole("img", { name: /session results: 4 correct out of 5/i })).toBeInTheDocument();
     fireEvent.click(await screen.findByRole("button", { name: /review mistakes/i }));
     expect(await screen.findByText("Which period?")).toBeInTheDocument();
     expect(screen.getByRole("status")).toHaveTextContent("Expected: Early Vedic");
@@ -137,7 +137,7 @@ describe("StudyExperience", () => {
     render(<StudyExperience />);
     fireEvent.click(await screen.findByRole("button", { name: /early vedic/i }));
     fireEvent.change(await screen.findByLabelText("Your answer"), { target: { value: "The sabha advised him." } });
-    fireEvent.click(screen.getByRole("button", { name: /submit answer/i }));
+    fireEvent.click(screen.getByRole("button", { name: /check answer/i }));
     expect(await screen.findByText(/partly correct — 1\/2 marks/i)).toBeInTheDocument();
     expect(screen.getByText("sabha advised the rajan")).toBeInTheDocument();
     expect(screen.getByText("samiti allowed tribal opinions")).toBeInTheDocument();

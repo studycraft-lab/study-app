@@ -12,7 +12,7 @@ GitHub issues are the implementation source of truth. This file records only the
 - Ten-question exercises with balanced objective and subjective selection.
 - Immediate feedback, page citations, session resume/completion, clickable answer review, and history.
 - Deterministic objective grading plus OpenRouter fuzzy and rubric-based grading.
-- Private child stars/progress, concise parent progress, spaced-review data, and safe session purge.
+- Private child progress, concise parent progress, spaced-review data, and safe session purge.
 
 ## Proposed work
 

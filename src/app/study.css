@@ -118,35 +118,34 @@
 @media (max-width:700px) { .study-shell { padding-inline:18px; } .dashboard-session,.recent-session-row { grid-template-columns:1fr; gap:5px; } .dashboard-session b { display:none; } .matching-list label { grid-template-columns:1fr; } .summary-counts { grid-template-columns:repeat(2,1fr); } }
 @media (max-width:450px) { .child-motivation { grid-template-columns:1fr 1fr; } }
 
-/* Mastery constellation */
-.mastery-constellation { display:block; height:auto; overflow:visible; width:100%; }
-.constellation-lines line { stroke:rgba(255,255,255,.16); stroke-linecap:round; stroke-width:1.4; transition:stroke 520ms var(--ease),stroke-width 520ms var(--ease); }
-.constellation-lines line.is-lit { stroke:rgba(246,200,95,.7); stroke-width:2; }
-.constellation-star { animation:star-arrive 620ms both var(--ease); transform-box:fill-box; transform-origin:center; }
-.constellation-star .star-aura { fill:rgba(255,255,255,.04); stroke:rgba(255,255,255,.18); stroke-width:1; }
-.constellation-star .star-core { fill:rgba(255,255,255,.42); }
-.constellation-star .star-spark { fill:rgba(255,255,255,.2); }
-.constellation-star.is-correct .star-aura { fill:rgba(246,200,95,.18); stroke:rgba(246,200,95,.3); }
-.constellation-star.is-correct .star-core,.constellation-star.is-correct .star-spark { fill:var(--sun); }
-.constellation-star.is-partial .star-aura { fill:rgba(246,200,95,.14); stroke:rgba(246,200,95,.35); }
-.constellation-star.is-partial .star-core,.constellation-star.is-partial .star-spark { fill:#ffdc88; }
-.constellation-star.is-review .star-aura { fill:rgba(174,153,255,.18); stroke:rgba(174,153,255,.35); }
-.constellation-star.is-review .star-core,.constellation-star.is-review .star-spark { fill:#b7a5ff; }
-.constellation-star.is-incorrect .star-aura { fill:rgba(255,137,114,.15); stroke:rgba(255,137,114,.38); }
-.constellation-star.is-incorrect .star-core,.constellation-star.is-incorrect .star-spark { fill:#ff927d; }
-@keyframes star-arrive { from { opacity:0; scale:.3; } 72% { scale:1.12; } to { opacity:1; scale:1; } }
+/* Question progress visual */
+.progress-visual { display:block; height:auto; overflow:visible; width:100%; }
+.progress-lines line { stroke:rgba(255,255,255,.16); stroke-linecap:round; stroke-width:1.4; transition:stroke 520ms var(--ease),stroke-width 520ms var(--ease); }
+.progress-lines line.is-complete { stroke:rgba(246,200,95,.7); stroke-width:2; }
+.progress-node { animation:progress-node-arrive 620ms both var(--ease); transform-box:fill-box; transform-origin:center; }
+.progress-node .node-ring { fill:rgba(255,255,255,.04); stroke:rgba(255,255,255,.18); stroke-width:1; }
+.progress-node .node-core { fill:rgba(255,255,255,.42); }
+.progress-node.is-correct .node-ring { fill:rgba(246,200,95,.18); stroke:rgba(246,200,95,.3); }
+.progress-node.is-correct .node-core { fill:var(--sun); }
+.progress-node.is-partial .node-ring { fill:rgba(246,200,95,.14); stroke:rgba(246,200,95,.35); }
+.progress-node.is-partial .node-core { fill:#ffdc88; }
+.progress-node.is-review .node-ring { fill:rgba(174,153,255,.18); stroke:rgba(174,153,255,.35); }
+.progress-node.is-review .node-core { fill:#b7a5ff; }
+.progress-node.is-incorrect .node-ring { fill:rgba(255,137,114,.15); stroke:rgba(255,137,114,.38); }
+.progress-node.is-incorrect .node-core { fill:#ff927d; }
+@keyframes progress-node-arrive { from { opacity:0; scale:.3; } 72% { scale:1.12; } to { opacity:1; scale:1; } }
 
-/* Personal study space */
-.dashboard-sky { align-items:center; display:grid; gap:clamp(28px,5vw,70px); grid-template-columns:minmax(0,1.08fr) minmax(280px,.92fr); min-height:470px; }
-.dashboard-sky::before { animation:sky-drift 12s ease-in-out infinite alternate; }
-.dashboard-sky h1 { font-size:clamp(2.9rem,5.7vw,4.9rem); }
+/* Child dashboard */
+.dashboard-progress-hero { align-items:center; display:grid; gap:clamp(28px,5vw,70px); grid-template-columns:minmax(0,1.08fr) minmax(280px,.92fr); min-height:470px; }
+.dashboard-progress-hero::before { animation:sky-drift 12s ease-in-out infinite alternate; }
+.dashboard-progress-hero h1 { font-size:clamp(2.9rem,5.7vw,4.9rem); }
 .dashboard-hero-copy .button { gap:14px; margin-top:8px; }
 .dashboard-hero-copy .button span { font-size:1.2rem; transition:transform var(--speed) var(--ease); }
 .dashboard-hero-copy .button:hover span { transform:translateX(4px); }
-.dashboard-constellation { background:linear-gradient(145deg,rgba(9,20,51,.72),rgba(50,72,143,.4)); border:1px solid rgba(255,255,255,.14); border-radius:28px 28px 28px 9px; box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 24px 50px rgba(5,12,34,.22); padding:19px 20px 10px; position:relative; transform:rotate(1.5deg); }
-.dashboard-constellation::after { background-image:radial-gradient(circle,rgba(255,255,255,.6) 0 1px,transparent 1.5px); background-size:37px 31px; content:""; inset:0; opacity:.16; pointer-events:none; position:absolute; }
-.dashboard-constellation .mastery-constellation { position:relative; z-index:1; }
-.constellation-kicker { color:rgba(255,255,255,.62); display:block; font-size:.67rem; font-weight:900; letter-spacing:.13em; padding:5px 8px 0; text-transform:uppercase; }
+.dashboard-progress-visual { background:linear-gradient(145deg,rgba(9,20,51,.72),rgba(50,72,143,.4)); border:1px solid rgba(255,255,255,.14); border-radius:28px 28px 28px 9px; box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 24px 50px rgba(5,12,34,.22); padding:19px 20px 10px; position:relative; transform:rotate(1.5deg); }
+.dashboard-progress-visual::after { background-image:radial-gradient(circle,rgba(255,255,255,.6) 0 1px,transparent 1.5px); background-size:37px 31px; content:""; inset:0; opacity:.16; pointer-events:none; position:absolute; }
+.dashboard-progress-visual .progress-visual { position:relative; z-index:1; }
+.progress-visual-kicker { color:rgba(255,255,255,.62); display:block; font-size:.67rem; font-weight:900; letter-spacing:.13em; padding:5px 8px 0; text-transform:uppercase; }
 @keyframes sky-drift { from { transform:translate3d(0,0,0); } to { transform:translate3d(-14px,12px,0); } }
 
 /* Illustrated chapter covers */
@@ -161,7 +160,7 @@
 .chapter-card[data-subject*="geography"] .chapter-card-art { background:radial-gradient(circle at 76% 22%,rgba(255,229,223,.22),transparent 27%),linear-gradient(145deg,#58392e,#a8553f); }
 .chapter-card[data-subject*="english"] .chapter-card-art { background:radial-gradient(circle at 76% 22%,rgba(238,233,255,.24),transparent 27%),linear-gradient(145deg,#33275d,#674fa5); }
 .chapter-card-art::before { background-image:radial-gradient(circle,rgba(255,255,255,.55) 0 1px,transparent 1.5px); background-size:34px 29px; content:""; inset:0; opacity:.15; position:absolute; }
-.chapter-card-art .mastery-constellation { height:190px; margin:10px auto 0; position:relative; width:min(90%,310px); z-index:2; }
+.chapter-card-art .progress-visual { height:190px; margin:10px auto 0; position:relative; width:min(90%,310px); z-index:2; }
 .chapter-orbit { border:1px solid rgba(255,255,255,.12); border-radius:50%; height:240px; position:absolute; right:-105px; top:-90px; transform:rotate(22deg); width:310px; }
 .chapter-orbit::after { background:var(--sun); border-radius:50%; box-shadow:0 0 18px rgba(246,200,95,.75); content:""; height:8px; left:35px; position:absolute; top:172px; width:8px; }
 .chapter-card-body { display:flex; flex:1; flex-direction:column; padding:24px 26px 26px; width:100%; }
@@ -219,7 +218,7 @@
 .feedback-next { border-top:1px solid rgba(23,33,43,.1); margin-top:22px; padding-top:20px; }
 .feedback-next button { gap:20px; }
 
-/* Constellation finale */
+/* Session summary */
 .study-shell.is-finale-mode { padding-bottom:110px; }
 .constellation-finale { animation:finale-rise 760ms both var(--ease); display:grid; gap:20px 44px; grid-template-columns:minmax(0,1.05fr) minmax(240px,.95fr); max-width:960px; }
 .constellation-finale::after { background:radial-gradient(circle,rgba(255,255,255,.7) 0 1px,transparent 1.5px); background-size:37px 32px; content:""; opacity:.12; pointer-events:none; position:absolute; right:0; top:0; width:45%; height:48%; }
@@ -231,21 +230,21 @@
 .chapter-stamp small { font-size:.58rem; font-weight:900; letter-spacing:.08em; line-height:1.1; text-transform:uppercase; }
 .finale-sky { align-self:center; background:radial-gradient(circle at 70% 20%,rgba(246,200,95,.15),transparent 30%),#15244d; border-radius:28px 28px 28px 9px; box-shadow:0 24px 50px rgba(32,50,101,.2); padding:18px 20px 16px; position:relative; z-index:1; }
 .finale-sky::before { background-image:radial-gradient(circle,rgba(255,255,255,.65) 0 1px,transparent 1.5px); background-size:33px 29px; content:""; inset:0; opacity:.12; position:absolute; }
-.finale-sky .mastery-constellation { position:relative; z-index:1; }
+.finale-sky .progress-visual { position:relative; z-index:1; }
 .finale-sky > span { color:rgba(255,255,255,.55); display:block; font-size:.67rem; font-weight:850; letter-spacing:.1em; text-align:center; text-transform:uppercase; }
 .constellation-finale .summary-counts,.constellation-finale .answer-review,.constellation-finale .finale-actions { grid-column:1/-1; }
 .constellation-finale .summary-counts div:first-child { background:var(--sun-soft); }
 .finale-actions { justify-content:center; }
 
 @media (max-width:820px) {
-  .dashboard-sky,.constellation-finale { grid-template-columns:1fr; }
-  .dashboard-constellation { margin:0 auto; max-width:460px; width:100%; }
+  .dashboard-progress-hero,.constellation-finale { grid-template-columns:1fr; }
+  .dashboard-progress-visual { margin:0 auto; max-width:460px; width:100%; }
   .constellation-finale::after { height:34%; width:100%; }
   .finale-sky { margin:0 auto; max-width:450px; width:100%; }
 }
 @media (max-width:560px) {
-  .dashboard-sky { padding:34px 24px; }
-  .dashboard-constellation { transform:none; }
+  .dashboard-progress-hero { padding:34px 24px; }
+  .dashboard-progress-visual { transform:none; }
   .chapter-grid { grid-template-columns:1fr; }
   .chapter-grid button.chapter-card { min-height:430px; }
   .chapter-card-art { height:190px; }

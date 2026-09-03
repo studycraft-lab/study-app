@@ -16,14 +16,14 @@ describe("ChildDashboard", () => {
 
     render(<ChildDashboard />);
 
-    expect(await screen.findByText("6")).toBeInTheDocument();
-    expect(screen.getByText("Stars")).toBeInTheDocument();
+    expect(await screen.findByText("8")).toBeInTheDocument();
+    expect(screen.getByText("questions answered")).toBeInTheDocument();
     expect(screen.getByText("2")).toBeInTheDocument();
     expect(screen.getByText("sessions completed")).toBeInTheDocument();
     expect(screen.getByText("4/5 marks")).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Welcome back, Asha." })).toBeInTheDocument();
-    expect(screen.getByRole("img", { name: /latest session/i })).toBeInTheDocument();
-    expect(screen.getByText(/latest constellation has 1 of 5 stars revealed/i)).toBeInTheDocument();
+    expect(screen.getByRole("img", { name: /latest session: 1 of 5 questions answered/i })).toBeInTheDocument();
+    expect(screen.getByText(/latest session: 1 of 5 questions answered/i)).toBeInTheDocument();
     expect(screen.queryByText("Accuracy")).not.toBeInTheDocument();
     expect(screen.queryByText("Mastery")).not.toBeInTheDocument();
     expect(screen.queryByText("Review due")).not.toBeInTheDocument();
@@ -40,6 +40,7 @@ describe("ChildDashboard", () => {
 
     render(<ChildDashboard />);
 
-    expect(await screen.findByRole("link", { name: /resume session/i })).toHaveAttribute("href", "/study?resume=unfinished");
+    const [resumeLink] = await screen.findAllByRole("link", { name: /resume session/i });
+    expect(resumeLink).toHaveAttribute("href", "/study?resume=unfinished");
   });
 });

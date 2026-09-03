@@ -43,7 +43,7 @@ The parent and each child sign in separately. There is no role switching inside 
 ## Current progress and motivation
 
 - Supabase stores sessions, attempts, marks, latest-question mastery, chapter coverage, and spaced-review state per child.
-- The child dashboard shows private stars, completed-session count, recent scores, resume links, and answer history.
+- The child dashboard shows questions answered, completed-session count, recent scores, resume links, and answer history.
 - The parent sees each child's completed sessions, accuracy, mastery, due-review count, grading-review count, and recent session scores.
 - There is no sibling comparison, leaderboard, streak, level, or parent notification.
 

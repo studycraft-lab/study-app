@@ -1,0 +1,6128 @@
+{
+  "bank": {
+    "board": "ICSE",
+    "bookTitle": "Geography",
+    "chapterNumber": 3,
+    "grade": 6,
+    "id": "major-landforms-earth-v1",
+    "status": "reviewed",
+    "subject": "Geography",
+    "title": "Major Landforms of the Earth",
+    "version": 1
+  },
+  "questions": [
+    {
+      "answer": {
+        "accepted": [
+          "South America"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "South America is shaped roughly like an inverted triangle.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the exact geographical term or name used in the chapter.",
+      "id": "q-001",
+      "marks": 1,
+      "prompt": "____ is shaped roughly like an inverted triangle.",
+      "response": {
+        "blankCount": 1
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-27",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "continents-oceans"
+      ],
+      "type": "fill_blank",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "Europe"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "Europe has the most indented coastline among the continents.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the exact geographical term or name used in the chapter.",
+      "id": "q-002",
+      "marks": 1,
+      "prompt": "____ has the most indented coastline among the continents.",
+      "response": {
+        "blankCount": 1
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-27",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "continents-oceans"
+      ],
+      "type": "fill_blank",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "crust",
+          "earth's crust",
+          "earth crust"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "Compression folds layers of the earth's crust.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the exact geographical term or name used in the chapter.",
+      "id": "q-003",
+      "marks": 1,
+      "prompt": "Fold mountains form when layers of the earth's ____ are folded by compression.",
+      "response": {
+        "blankCount": 1
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-29",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "mountain-formation-types"
+      ],
+      "type": "fill_blank",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "crater"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "The funnel-shaped depression at the top of a vent is a crater.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the exact geographical term or name used in the chapter.",
+      "id": "q-004",
+      "marks": 1,
+      "prompt": "The funnel-shaped depression at the top of a volcano's vent is called a ____.",
+      "response": {
+        "blankCount": 1
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "mountain-formation-types"
+      ],
+      "type": "fill_blank",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "Plateaus",
+          "plateau"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "Plateaus are uplifted, nearly level sections of crust that usually descend steeply to surrounding lowlands.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the exact geographical term or name used in the chapter.",
+      "id": "q-005",
+      "marks": 1,
+      "prompt": "____ are almost flat or level and usually descend steeply to the surrounding lowlands.",
+      "response": {
+        "blankCount": 1
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-31",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plateaus-basins-valleys"
+      ],
+      "type": "fill_blank",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "topography"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "Topography is the arrangement of landforms in a landscape.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the exact geographical term or name used in the chapter.",
+      "id": "q-006",
+      "marks": 1,
+      "prompt": "The arrangement of landforms in a landscape is called ____.",
+      "response": {
+        "blankCount": 1
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-26",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "landform-foundations"
+      ],
+      "type": "fill_blank",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "Pangaea"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "The chapter names the ancient single land mass Pangaea.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the exact geographical term or name used in the chapter.",
+      "id": "q-007",
+      "marks": 1,
+      "prompt": "The single great land mass that existed millions of years ago was called ____.",
+      "response": {
+        "blankCount": 1
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-27",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "continents-oceans"
+      ],
+      "type": "fill_blank",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "alluvium",
+          "alluvial deposits"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "River plains are mostly built by alluvium deposited by rivers and tributaries.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the exact geographical term or name used in the chapter.",
+      "id": "q-008",
+      "marks": 1,
+      "prompt": "Plains built from material deposited by rivers and tributaries are mostly made of ____.",
+      "response": {
+        "blankCount": 1
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-32",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plains"
+      ],
+      "type": "fill_blank",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "asia"
+      },
+      "difficulty": 1,
+      "explanation": "Asia is the largest continent and occupies about one-third of the planet's land area.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Eliminate choices that do not fit the description or location given in the chapter.",
+      "id": "q-009",
+      "marks": 1,
+      "prompt": "Which is the largest continent by area?",
+      "response": {
+        "options": [
+          {
+            "id": "asia",
+            "text": "Asia"
+          },
+          {
+            "id": "africa",
+            "text": "Africa"
+          },
+          {
+            "id": "north-america",
+            "text": "North America"
+          },
+          {
+            "id": "australia",
+            "text": "Australia"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-27",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "continents-oceans"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "vindhyas"
+      },
+      "difficulty": 1,
+      "explanation": "The Vindhyas are given as block mountains; the Himalayas, Rockies and Andes are young fold mountains.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Eliminate choices that do not fit the description or location given in the chapter.",
+      "id": "q-010",
+      "marks": 1,
+      "prompt": "Which is not listed as a young fold mountain range?",
+      "response": {
+        "options": [
+          {
+            "id": "himalayas",
+            "text": "Himalayas"
+          },
+          {
+            "id": "rockies",
+            "text": "Rockies"
+          },
+          {
+            "id": "andes",
+            "text": "Andes"
+          },
+          {
+            "id": "vindhyas",
+            "text": "Vindhyas"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-29",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "mountain-formation-types"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "vindhyas"
+      },
+      "difficulty": 1,
+      "explanation": "The Vindhyas in India are listed as block mountains.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Eliminate choices that do not fit the description or location given in the chapter.",
+      "id": "q-011",
+      "marks": 1,
+      "prompt": "Which is an example of a block mountain?",
+      "response": {
+        "options": [
+          {
+            "id": "himalayas",
+            "text": "Himalayas"
+          },
+          {
+            "id": "rockies",
+            "text": "Rockies"
+          },
+          {
+            "id": "andes",
+            "text": "Andes"
+          },
+          {
+            "id": "vindhyas",
+            "text": "Vindhyas"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-29",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "mountain-formation-types"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "africa"
+      },
+      "difficulty": 1,
+      "explanation": "The Mediterranean Sea separates Africa from Europe.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Eliminate choices that do not fit the description or location given in the chapter.",
+      "id": "q-012",
+      "marks": 1,
+      "prompt": "The Mediterranean Sea separates which continent from Europe?",
+      "response": {
+        "options": [
+          {
+            "id": "africa",
+            "text": "Africa"
+          },
+          {
+            "id": "asia",
+            "text": "Asia"
+          },
+          {
+            "id": "north-america",
+            "text": "North America"
+          },
+          {
+            "id": "australia",
+            "text": "Australia"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-27",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "continents-oceans"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "australia"
+      },
+      "difficulty": 1,
+      "explanation": "Australia is called the Land Down Under because it lies south of the main land masses.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Eliminate choices that do not fit the description or location given in the chapter.",
+      "id": "q-013",
+      "marks": 1,
+      "prompt": "Which continent is called the 'Land Down Under'?",
+      "response": {
+        "options": [
+          {
+            "id": "africa",
+            "text": "Africa"
+          },
+          {
+            "id": "antarctica",
+            "text": "Antarctica"
+          },
+          {
+            "id": "australia",
+            "text": "Australia"
+          },
+          {
+            "id": "asia",
+            "text": "Asia"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-27",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "continents-oceans"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "north-america"
+      },
+      "difficulty": 1,
+      "explanation": "North America is the third-largest continent.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Eliminate choices that do not fit the description or location given in the chapter.",
+      "id": "q-014",
+      "marks": 1,
+      "prompt": "Which is the third-largest continent?",
+      "response": {
+        "options": [
+          {
+            "id": "north-america",
+            "text": "North America"
+          },
+          {
+            "id": "south-america",
+            "text": "South America"
+          },
+          {
+            "id": "europe",
+            "text": "Europe"
+          },
+          {
+            "id": "australia",
+            "text": "Australia"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-27",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "continents-oceans"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "south-america"
+      },
+      "difficulty": 1,
+      "explanation": "South America is the fourth-largest continent.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Eliminate choices that do not fit the description or location given in the chapter.",
+      "id": "q-015",
+      "marks": 1,
+      "prompt": "Which is the fourth-largest continent?",
+      "response": {
+        "options": [
+          {
+            "id": "north-america",
+            "text": "North America"
+          },
+          {
+            "id": "south-america",
+            "text": "South America"
+          },
+          {
+            "id": "europe",
+            "text": "Europe"
+          },
+          {
+            "id": "antarctica",
+            "text": "Antarctica"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-27",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "continents-oceans"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "antarctica"
+      },
+      "difficulty": 2,
+      "explanation": "Antarctica contains about 90 per cent of the world's ice.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Eliminate choices that do not fit the description or location given in the chapter.",
+      "id": "q-016",
+      "marks": 1,
+      "prompt": "Which continent contains about 90 per cent of the world's ice?",
+      "response": {
+        "options": [
+          {
+            "id": "antarctica",
+            "text": "Antarctica"
+          },
+          {
+            "id": "asia",
+            "text": "Asia"
+          },
+          {
+            "id": "europe",
+            "text": "Europe"
+          },
+          {
+            "id": "north-america",
+            "text": "North America"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-27",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "continents-oceans"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "faulting"
+      },
+      "difficulty": 1,
+      "explanation": "Block mountains form due to faulting.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Eliminate choices that do not fit the description or location given in the chapter.",
+      "id": "q-017",
+      "marks": 1,
+      "prompt": "Which process forms block mountains?",
+      "response": {
+        "options": [
+          {
+            "id": "faulting",
+            "text": "Faulting"
+          },
+          {
+            "id": "compression",
+            "text": "Compression"
+          },
+          {
+            "id": "deposition",
+            "text": "Deposition"
+          },
+          {
+            "id": "weathering",
+            "text": "Weathering"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-29",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "mountain-formation-types"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "vent"
+      },
+      "difficulty": 1,
+      "explanation": "The opening through which lava and other material reach the surface is a vent.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Eliminate choices that do not fit the description or location given in the chapter.",
+      "id": "q-018",
+      "marks": 1,
+      "prompt": "What is the opening through which lava and other volcanic materials reach the surface?",
+      "response": {
+        "options": [
+          {
+            "id": "vent",
+            "text": "Vent"
+          },
+          {
+            "id": "crater",
+            "text": "Crater"
+          },
+          {
+            "id": "fault",
+            "text": "Fault"
+          },
+          {
+            "id": "gorge",
+            "text": "Gorge"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "mountain-formation-types"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "tibetan"
+      },
+      "difficulty": 1,
+      "explanation": "The Tibetan Plateau is enclosed by the Himalayas and Kunlun Shan and is an intermontane plateau.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Eliminate choices that do not fit the description or location given in the chapter.",
+      "id": "q-019",
+      "marks": 1,
+      "prompt": "Which is an intermontane plateau?",
+      "response": {
+        "options": [
+          {
+            "id": "tibetan",
+            "text": "Tibetan Plateau"
+          },
+          {
+            "id": "patagonia",
+            "text": "Patagonia Plateau"
+          },
+          {
+            "id": "colorado",
+            "text": "Colorado Plateau"
+          },
+          {
+            "id": "malwa",
+            "text": "Malwa Plateau"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-32",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plateaus-basins-valleys"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "patagonia"
+      },
+      "difficulty": 1,
+      "explanation": "The Patagonia Plateau is listed as a piedmont plateau.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Eliminate choices that do not fit the description or location given in the chapter.",
+      "id": "q-020",
+      "marks": 1,
+      "prompt": "Which is a piedmont plateau?",
+      "response": {
+        "options": [
+          {
+            "id": "patagonia",
+            "text": "Patagonia Plateau"
+          },
+          {
+            "id": "tibetan",
+            "text": "Tibetan Plateau"
+          },
+          {
+            "id": "south-african",
+            "text": "South African Plateau"
+          },
+          {
+            "id": "brazilian",
+            "text": "Brazilian Plateau"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-32",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plateaus-basins-valleys"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "basin"
+      },
+      "difficulty": 1,
+      "explanation": "A basin is a depressed section of crust surrounded by higher land.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Eliminate choices that do not fit the description or location given in the chapter.",
+      "id": "q-021",
+      "marks": 1,
+      "prompt": "A depressed section of the earth's crust surrounded by higher land is a ____.",
+      "response": {
+        "options": [
+          {
+            "id": "basin",
+            "text": "Basin"
+          },
+          {
+            "id": "plateau",
+            "text": "Plateau"
+          },
+          {
+            "id": "range",
+            "text": "Range"
+          },
+          {
+            "id": "peninsula",
+            "text": "Peninsula"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-32",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plateaus-basins-valleys"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "v-shaped"
+      },
+      "difficulty": 1,
+      "explanation": "River valleys are usually V-shaped.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Eliminate choices that do not fit the description or location given in the chapter.",
+      "id": "q-022",
+      "marks": 1,
+      "prompt": "River valleys are usually which shape?",
+      "response": {
+        "options": [
+          {
+            "id": "v-shaped",
+            "text": "V-shaped"
+          },
+          {
+            "id": "u-shaped",
+            "text": "U-shaped"
+          },
+          {
+            "id": "circular",
+            "text": "Circular"
+          },
+          {
+            "id": "table-shaped",
+            "text": "Table-shaped"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-32",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plateaus-basins-valleys"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "200"
+      },
+      "difficulty": 1,
+      "explanation": "Plains are usually less than 200 metres above sea level.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Eliminate choices that do not fit the description or location given in the chapter.",
+      "id": "q-023",
+      "marks": 1,
+      "prompt": "Plains are usually less than how many metres above sea level?",
+      "response": {
+        "options": [
+          {
+            "id": "200",
+            "text": "200 metres"
+          },
+          {
+            "id": "500",
+            "text": "500 metres"
+          },
+          {
+            "id": "1000",
+            "text": "1,000 metres"
+          },
+          {
+            "id": "2000",
+            "text": "2,000 metres"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-32",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plains"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "africa"
+      },
+      "difficulty": 1,
+      "explanation": "The Sahara, the world's largest desert according to the chapter, lies in Africa.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Eliminate choices that do not fit the description or location given in the chapter.",
+      "id": "q-024",
+      "marks": 1,
+      "prompt": "The Sahara Desert lies in which continent?",
+      "response": {
+        "options": [
+          {
+            "id": "africa",
+            "text": "Africa"
+          },
+          {
+            "id": "asia",
+            "text": "Asia"
+          },
+          {
+            "id": "australia",
+            "text": "Australia"
+          },
+          {
+            "id": "south-america",
+            "text": "South America"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-27",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "continents-oceans"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionIds": [
+          "uplift",
+          "sinking",
+          "folding",
+          "faulting"
+        ]
+      },
+      "difficulty": 2,
+      "explanation": "Internal processes cause upliftment and sinking and result in folding and faulting.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Select every statement supported by the chapter and no unsupported statement.",
+      "id": "q-025",
+      "marks": 4,
+      "prompt": "Which results are associated with internal or endogenous processes?",
+      "response": {
+        "options": [
+          {
+            "id": "uplift",
+            "text": "Upliftment of the surface"
+          },
+          {
+            "id": "sinking",
+            "text": "Sinking of the surface"
+          },
+          {
+            "id": "folding",
+            "text": "Folding"
+          },
+          {
+            "id": "faulting",
+            "text": "Faulting"
+          },
+          {
+            "id": "alluvial-deposition",
+            "text": "Alluvial deposition by rivers"
+          }
+        ]
+      },
+      "rubric": {
+        "partialCredit": false
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-26",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "landform-foundations"
+      ],
+      "type": "multiple_select",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionIds": [
+          "running-water",
+          "ice",
+          "wind",
+          "atmosphere",
+          "humans"
+        ]
+      },
+      "difficulty": 2,
+      "explanation": "The chapter lists running water, ice, wind, the atmosphere and humans as agents of external processes.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Select every statement supported by the chapter and no unsupported statement.",
+      "id": "q-026",
+      "marks": 5,
+      "prompt": "Which agents carry out the wearing down and rebuilding associated with external processes?",
+      "response": {
+        "options": [
+          {
+            "id": "running-water",
+            "text": "Running water"
+          },
+          {
+            "id": "ice",
+            "text": "Ice"
+          },
+          {
+            "id": "wind",
+            "text": "Wind"
+          },
+          {
+            "id": "atmosphere",
+            "text": "The atmosphere"
+          },
+          {
+            "id": "humans",
+            "text": "Humans"
+          },
+          {
+            "id": "tectonic-collision",
+            "text": "Collision of tectonic plates"
+          }
+        ]
+      },
+      "rubric": {
+        "partialCredit": false
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-27",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "landform-foundations"
+      ],
+      "type": "multiple_select",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionIds": [
+          "rockies",
+          "andes",
+          "alps",
+          "atlas",
+          "himalayas"
+        ]
+      },
+      "difficulty": 2,
+      "explanation": "The Rockies, Andes, Alps, Atlas Mountains and Himalayas are young fold mountains; the Urals are old fold mountains.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Select every statement supported by the chapter and no unsupported statement.",
+      "id": "q-027",
+      "marks": 5,
+      "prompt": "Which are listed as young fold mountain ranges?",
+      "response": {
+        "options": [
+          {
+            "id": "rockies",
+            "text": "Rockies"
+          },
+          {
+            "id": "andes",
+            "text": "Andes"
+          },
+          {
+            "id": "alps",
+            "text": "Alps"
+          },
+          {
+            "id": "atlas",
+            "text": "Atlas Mountains"
+          },
+          {
+            "id": "himalayas",
+            "text": "Himalayas"
+          },
+          {
+            "id": "urals",
+            "text": "Urals"
+          }
+        ]
+      },
+      "rubric": {
+        "partialCredit": false
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-29",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "mountain-formation-types"
+      ],
+      "type": "multiple_select",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionIds": [
+          "lava",
+          "ash",
+          "cinder",
+          "dust"
+        ]
+      },
+      "difficulty": 2,
+      "explanation": "Volcanic mountains are built by lava, ash, cinder and dust from inside the earth.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Select every statement supported by the chapter and no unsupported statement.",
+      "id": "q-028",
+      "marks": 4,
+      "prompt": "Which materials build volcanic mountains when they emerge and accumulate?",
+      "response": {
+        "options": [
+          {
+            "id": "lava",
+            "text": "Molten lava"
+          },
+          {
+            "id": "ash",
+            "text": "Ash"
+          },
+          {
+            "id": "cinder",
+            "text": "Cinder"
+          },
+          {
+            "id": "dust",
+            "text": "Dust"
+          },
+          {
+            "id": "alluvium",
+            "text": "Alluvium"
+          }
+        ]
+      },
+      "rubric": {
+        "partialCredit": false
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "mountain-formation-types"
+      ],
+      "type": "multiple_select",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionIds": [
+          "water",
+          "hydroelectricity",
+          "climate",
+          "minerals",
+          "tourism"
+        ]
+      },
+      "difficulty": 2,
+      "explanation": "Mountains store water, support hydroelectricity, influence climate, contain minerals and attract tourism; they are not the easiest terrain for roads.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Select every statement supported by the chapter and no unsupported statement.",
+      "id": "q-029",
+      "marks": 5,
+      "prompt": "Which are benefits or roles of mountains stated in the chapter?",
+      "response": {
+        "options": [
+          {
+            "id": "water",
+            "text": "Storehouse of water"
+          },
+          {
+            "id": "hydroelectricity",
+            "text": "Hydroelectric generation"
+          },
+          {
+            "id": "climate",
+            "text": "Influence on climate"
+          },
+          {
+            "id": "minerals",
+            "text": "Mineral and metal deposits"
+          },
+          {
+            "id": "tourism",
+            "text": "Tourism and recreation"
+          },
+          {
+            "id": "flat-construction",
+            "text": "The easiest terrain for building all roads"
+          }
+        ]
+      },
+      "rubric": {
+        "partialCredit": false
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "mountain-importance"
+      ],
+      "type": "multiple_select",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionIds": [
+          "largest",
+          "one-third",
+          "eurasia",
+          "arctic-north"
+        ]
+      },
+      "difficulty": 2,
+      "explanation": "Asia is the largest continent, occupies about one-third of land area, forms Eurasia with Europe, and has the Arctic Ocean to its north; the Pacific is to its east.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Select every statement supported by the chapter and no unsupported statement.",
+      "id": "q-030",
+      "marks": 4,
+      "prompt": "Which statements about Asia are supported by the chapter?",
+      "response": {
+        "options": [
+          {
+            "id": "largest",
+            "text": "It is the largest continent."
+          },
+          {
+            "id": "one-third",
+            "text": "It occupies about one-third of the planet's land area."
+          },
+          {
+            "id": "eurasia",
+            "text": "Its combined land mass with Europe is called Eurasia."
+          },
+          {
+            "id": "arctic-north",
+            "text": "The Arctic Ocean lies to its north."
+          },
+          {
+            "id": "atlantic-east",
+            "text": "The Atlantic Ocean lies to its east."
+          }
+        ]
+      },
+      "rubric": {
+        "partialCredit": false
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-27",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "continents-oceans"
+      ],
+      "type": "multiple_select",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionIds": [
+          "smallest",
+          "island-continent",
+          "land-down-under",
+          "water-all-sides"
+        ]
+      },
+      "difficulty": 2,
+      "explanation": "Australia is the smallest continent, lies south of the main land masses, has water on all sides and is called both the Land Down Under and the island continent.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Select every statement supported by the chapter and no unsupported statement.",
+      "id": "q-031",
+      "marks": 4,
+      "prompt": "Which statements about Australia are supported by the chapter?",
+      "response": {
+        "options": [
+          {
+            "id": "smallest",
+            "text": "It is the smallest continent."
+          },
+          {
+            "id": "island-continent",
+            "text": "It is called the island continent."
+          },
+          {
+            "id": "land-down-under",
+            "text": "It is called the Land Down Under."
+          },
+          {
+            "id": "north-main-masses",
+            "text": "It lies north of the main land masses."
+          },
+          {
+            "id": "water-all-sides",
+            "text": "It has water on all sides."
+          }
+        ]
+      },
+      "rubric": {
+        "partialCredit": false
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-27",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "continents-oceans"
+      ],
+      "type": "multiple_select",
+      "version": 1
+    },
+    {
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1,
+      "explanation": "The heavier plate may be pushed below the lighter plate; this is subduction.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Check the defining feature carefully. If it is false, replace only the incorrect idea.",
+      "id": "q-032",
+      "marks": 1,
+      "prompt": "Subduction occurs when a heavier plate is pushed below a lighter plate. State true or false and correct the statement if needed.",
+      "response": {
+        "requiresCorrectionWhenFalse": true
+      },
+      "rubric": {
+        "points": [
+          {
+            "concept": "identifies the statement as true",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-28",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-29",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "mountain-formation-types"
+      ],
+      "type": "true_false_correct",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correction": "Old fold mountains have gentle slopes and low altitude due to weathering over time.",
+        "value": false
+      },
+      "difficulty": 1,
+      "explanation": "Old fold mountains have been weathered for a long time and therefore have gentle slopes and low altitude.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Check the defining feature carefully. If it is false, replace only the incorrect idea.",
+      "id": "q-033",
+      "marks": 2,
+      "prompt": "Old fold mountains have steep slopes and high altitude. State true or false and correct the statement if needed.",
+      "response": {
+        "requiresCorrectionWhenFalse": true
+      },
+      "rubric": {
+        "points": [
+          {
+            "concept": "identifies the statement as false",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "gives the correction: Old fold mountains have gentle slopes and low altitude due to weathering over time.",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-29",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "mountain-formation-types"
+      ],
+      "type": "true_false_correct",
+      "version": 1
+    },
+    {
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1,
+      "explanation": "The statement gives the chapter's definition of faulting.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Check the defining feature carefully. If it is false, replace only the incorrect idea.",
+      "id": "q-034",
+      "marks": 1,
+      "prompt": "Faulting is the rupturing or fracturing of rock strata due to strain. State true or false and correct the statement if needed.",
+      "response": {
+        "requiresCorrectionWhenFalse": true
+      },
+      "rubric": {
+        "points": [
+          {
+            "concept": "identifies the statement as true",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-29",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "mountain-formation-types"
+      ],
+      "type": "true_false_correct",
+      "version": 1
+    },
+    {
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1,
+      "explanation": "Erosion gives dissected plateaus their irregular surface, canyons, gorges and steep narrow valleys.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Check the defining feature carefully. If it is false, replace only the incorrect idea.",
+      "id": "q-035",
+      "marks": 1,
+      "prompt": "Dissected plateaus have irregular surfaces marked by canyons, gorges and steep, narrow valleys. State true or false and correct the statement if needed.",
+      "response": {
+        "requiresCorrectionWhenFalse": true
+      },
+      "rubric": {
+        "points": [
+          {
+            "concept": "identifies the statement as true",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-31",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plateaus-basins-valleys"
+      ],
+      "type": "true_false_correct",
+      "version": 1
+    },
+    {
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1,
+      "explanation": "This is the chapter's definition of an isthmus.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Check the defining feature carefully. If it is false, replace only the incorrect idea.",
+      "id": "q-036",
+      "marks": 1,
+      "prompt": "An isthmus is a narrow piece of land with water on each side that joins two large land masses. State true or false and correct the statement if needed.",
+      "response": {
+        "requiresCorrectionWhenFalse": true
+      },
+      "rubric": {
+        "points": [
+          {
+            "concept": "identifies the statement as true",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-34",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "minor-landforms"
+      ],
+      "type": "true_false_correct",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correction": "A peninsula is surrounded by water on three sides and joined to a larger land mass.",
+        "value": false
+      },
+      "difficulty": 1,
+      "explanation": "Water surrounds a peninsula on three sides; an island is surrounded on all sides.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Check the defining feature carefully. If it is false, replace only the incorrect idea.",
+      "id": "q-037",
+      "marks": 2,
+      "prompt": "A peninsula is surrounded by water on all sides. State true or false and correct the statement if needed.",
+      "response": {
+        "requiresCorrectionWhenFalse": true
+      },
+      "rubric": {
+        "points": [
+          {
+            "concept": "identifies the statement as false",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "gives the correction: A peninsula is surrounded by water on three sides and joined to a larger land mass.",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-34",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "minor-landforms"
+      ],
+      "type": "true_false_correct",
+      "version": 1
+    },
+    {
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "appalachians",
+            "rightId": "old-north-america"
+          },
+          {
+            "leftId": "vent",
+            "rightId": "lava-opening"
+          },
+          {
+            "leftId": "faulting",
+            "rightId": "rock-fracture"
+          },
+          {
+            "leftId": "valleys",
+            "rightId": "low-between"
+          }
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "The Appalachians are old fold mountains; a vent carries lava to the surface; faulting fractures rock; valleys are low lands between hills or mountains.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Match each item by its definition, formation, example or location.",
+      "id": "q-038",
+      "marks": 4,
+      "prompt": "Match each term with its correct description.",
+      "response": {
+        "left": [
+          {
+            "id": "appalachians",
+            "text": "The Appalachians"
+          },
+          {
+            "id": "vent",
+            "text": "Vent"
+          },
+          {
+            "id": "faulting",
+            "text": "Faulting"
+          },
+          {
+            "id": "valleys",
+            "text": "Valleys"
+          }
+        ],
+        "right": [
+          {
+            "id": "low-between",
+            "text": "low-lying lands between hills or mountains"
+          },
+          {
+            "id": "rock-fracture",
+            "text": "rupturing or fracturing of rock strata due to strain"
+          },
+          {
+            "id": "lava-opening",
+            "text": "opening through which lava comes to the surface"
+          },
+          {
+            "id": "old-north-america",
+            "text": "old fold mountains in North America"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-29",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-30",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-32",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "mountain-formation-types",
+        "plateaus-basins-valleys"
+      ],
+      "type": "matching",
+      "version": 1
+    },
+    {
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "asia",
+            "rightId": "first"
+          },
+          {
+            "leftId": "africa",
+            "rightId": "second"
+          },
+          {
+            "leftId": "north-america",
+            "rightId": "third"
+          },
+          {
+            "leftId": "south-america",
+            "rightId": "fourth"
+          }
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "The chapter ranks Asia first, Africa second, North America third and South America fourth by size.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Match each item by its definition, formation, example or location.",
+      "id": "q-039",
+      "marks": 4,
+      "prompt": "Match each continent with its size rank given in the chapter.",
+      "response": {
+        "left": [
+          {
+            "id": "asia",
+            "text": "Asia"
+          },
+          {
+            "id": "africa",
+            "text": "Africa"
+          },
+          {
+            "id": "north-america",
+            "text": "North America"
+          },
+          {
+            "id": "south-america",
+            "text": "South America"
+          }
+        ],
+        "right": [
+          {
+            "id": "fourth",
+            "text": "fourth-largest"
+          },
+          {
+            "id": "third",
+            "text": "third-largest"
+          },
+          {
+            "id": "second",
+            "text": "second-largest"
+          },
+          {
+            "id": "first",
+            "text": "largest"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-27",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "continents-oceans"
+      ],
+      "type": "matching",
+      "version": 1
+    },
+    {
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "tectonic",
+            "rightId": "crustal-movement"
+          },
+          {
+            "leftId": "volcanic",
+            "rightId": "lava-layers"
+          },
+          {
+            "leftId": "intermontane",
+            "rightId": "mountain-surrounded"
+          },
+          {
+            "leftId": "piedmont",
+            "rightId": "mountain-and-lowland"
+          }
+        ]
+      },
+      "difficulty": 2,
+      "explanation": "Each plateau type is classified by its formation or location.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Match each item by its definition, formation, example or location.",
+      "id": "q-040",
+      "marks": 4,
+      "prompt": "Match each plateau type with its formation or position.",
+      "response": {
+        "left": [
+          {
+            "id": "tectonic",
+            "text": "Tectonic plateau"
+          },
+          {
+            "id": "volcanic",
+            "text": "Volcanic plateau"
+          },
+          {
+            "id": "intermontane",
+            "text": "Intermontane plateau"
+          },
+          {
+            "id": "piedmont",
+            "text": "Piedmont plateau"
+          }
+        ],
+        "right": [
+          {
+            "id": "mountain-and-lowland",
+            "text": "lies between a mountain and a plain or ocean"
+          },
+          {
+            "id": "mountain-surrounded",
+            "text": "surrounded by mountains"
+          },
+          {
+            "id": "lava-layers",
+            "text": "formed by successive layers of lava"
+          },
+          {
+            "id": "crustal-movement",
+            "text": "formed by movement of crustal plates"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-31",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-32",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plateaus-basins-valleys"
+      ],
+      "type": "matching",
+      "version": 1
+    },
+    {
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "aravallis",
+            "rightId": "old-india"
+          },
+          {
+            "leftId": "vosges",
+            "rightId": "block-europe"
+          },
+          {
+            "leftId": "chota-nagpur",
+            "rightId": "mineral-east-india"
+          },
+          {
+            "leftId": "nile-valley",
+            "rightId": "rift-egypt"
+          },
+          {
+            "leftId": "atlas",
+            "rightId": "range-north-africa"
+          }
+        ]
+      },
+      "difficulty": 2,
+      "explanation": "The chapter links the Aravallis, Vosges, Chota Nagpur Plateau, Nile Valley and Atlas Mountains with these locations and types.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Match each item by its definition, formation, example or location.",
+      "id": "q-041",
+      "marks": 5,
+      "prompt": "Match each feature with the location requested in the chapter's map work.",
+      "response": {
+        "left": [
+          {
+            "id": "aravallis",
+            "text": "Aravallis"
+          },
+          {
+            "id": "vosges",
+            "text": "Vosges"
+          },
+          {
+            "id": "chota-nagpur",
+            "text": "Chota Nagpur Plateau"
+          },
+          {
+            "id": "nile-valley",
+            "text": "Nile Valley"
+          },
+          {
+            "id": "atlas",
+            "text": "Atlas Mountains"
+          }
+        ],
+        "right": [
+          {
+            "id": "range-north-africa",
+            "text": "mountain range in north Africa"
+          },
+          {
+            "id": "rift-egypt",
+            "text": "rift valley in Egypt"
+          },
+          {
+            "id": "mineral-east-india",
+            "text": "storehouse of mineral wealth in eastern India"
+          },
+          {
+            "id": "block-europe",
+            "text": "block mountain in Europe"
+          },
+          {
+            "id": "old-india",
+            "text": "old fold range in India"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-29",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-31",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-32",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-38",
+          "regionId": "written-exercises",
+          "supports": [
+            "prompt"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "mountain-formation-types",
+        "plateaus-basins-valleys"
+      ],
+      "type": "matching",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "Plate Tectonics",
+          "plate tectonics theory"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "Plate Tectonics describes the crust as plates moving over the semi-solid mantle.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Name the precise term used for this feature or process.",
+      "id": "q-042",
+      "marks": 1,
+      "prompt": "Name the scientific theory that says the earth's crust is divided into plates that glide over the mantle.",
+      "response": {
+        "maxWords": 4
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-27",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "continents-oceans"
+      ],
+      "type": "one_word",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "Eurasia"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "Asia and Europe together form Eurasia.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Name the precise term used for this feature or process.",
+      "id": "q-043",
+      "marks": 1,
+      "prompt": "What is the combined land mass of Asia and Europe called?",
+      "response": {
+        "maxWords": 4
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-27",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "continents-oceans"
+      ],
+      "type": "one_word",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "Isthmus of Panama",
+          "Panama Isthmus"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "The Isthmus of Panama joins North and South America.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Name the precise term used for this feature or process.",
+      "id": "q-044",
+      "marks": 1,
+      "prompt": "Name the narrow stretch of land joining North America and South America.",
+      "response": {
+        "maxWords": 4
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-27",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-34",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "continents-oceans"
+      ],
+      "type": "one_word",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "subduction"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "The process is called subduction.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Name the precise term used for this feature or process.",
+      "id": "q-045",
+      "marks": 1,
+      "prompt": "What is the process called when the heavier tectonic plate is pushed below the lighter plate?",
+      "response": {
+        "maxWords": 4
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-28",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-29",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "mountain-formation-types"
+      ],
+      "type": "one_word",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "crater"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "The depression at the top of a vent is a crater.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Name the precise term used for this feature or process.",
+      "id": "q-046",
+      "marks": 1,
+      "prompt": "Name the funnel-shaped depression at the top of a volcanic vent.",
+      "response": {
+        "maxWords": 4
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "mountain-formation-types"
+      ],
+      "type": "one_word",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "tableland",
+          "table land"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "A plateau is also called a tableland or plain-in-the-air.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Name the precise term used for this feature or process.",
+      "id": "q-047",
+      "marks": 1,
+      "prompt": "What name meaning 'plain-in-the-air' is also used for a plateau?",
+      "response": {
+        "maxWords": 4
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-31",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plateaus-basins-valleys"
+      ],
+      "type": "one_word",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "peneplain"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "A peneplain is a level surface produced by long erosion undisturbed by crustal movement.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Name the precise term used for this feature or process.",
+      "id": "q-048",
+      "marks": 1,
+      "prompt": "Name the nearly level land surface produced by erosion over a long period without crustal disturbance.",
+      "response": {
+        "maxWords": 4
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-33",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plains"
+      ],
+      "type": "one_word",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "basin"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "This feature is a basin.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Name the precise term used for this feature or process.",
+      "id": "q-049",
+      "marks": 1,
+      "prompt": "What is a depressed section of the earth's crust surrounded by higher land called?",
+      "response": {
+        "maxWords": 4
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-32",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plateaus-basins-valleys"
+      ],
+      "type": "one_word",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "rift valley",
+          "rift"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "Land sinking between two faults forms a rift valley.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Name the precise term used for this feature or process.",
+      "id": "q-050",
+      "marks": 1,
+      "prompt": "What kind of valley forms when land between two faults sinks?",
+      "response": {
+        "maxWords": 4
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-32",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plateaus-basins-valleys"
+      ],
+      "type": "one_word",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "mountains",
+          "mountain"
+        ],
+        "caseSensitive": false
+      },
+      "difficulty": 1,
+      "explanation": "Mountains rise high above their surroundings and may form ranges.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Name the precise term used for this feature or process.",
+      "id": "q-051",
+      "marks": 1,
+      "prompt": "Name the massive high landforms that may occur in long narrow chains called ranges.",
+      "response": {
+        "maxWords": 4
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-28",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "mountain-formation-types"
+      ],
+      "type": "one_word",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Topography is the arrangement of landforms that together make up a terrain or landscape."
+      },
+      "difficulty": 1,
+      "explanation": "Topography is the arrangement of landforms that together make up a terrain or landscape.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer directly with the chapter's key geographical idea and any requested example.",
+      "id": "q-052",
+      "marks": 2,
+      "prompt": "What is topography?",
+      "response": {
+        "recommendedSentences": 1
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "landforms together make up a terrain",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "their arrangement in the landscape is topography",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-26",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "landform-foundations"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "A mountain range is a long, narrow chain of mountains."
+      },
+      "difficulty": 1,
+      "explanation": "A mountain range is a long, narrow chain of mountains.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer directly with the chapter's key geographical idea and any requested example.",
+      "id": "q-053",
+      "marks": 1,
+      "prompt": "What is a mountain range?",
+      "response": {
+        "recommendedSentences": 1
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "long narrow chain of mountains",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-28",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "mountain-formation-types"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Subduction is the process in which, after tectonic plates collide, the heavier plate is pushed below the lighter plate."
+      },
+      "difficulty": 2,
+      "explanation": "Subduction is the process in which, after tectonic plates collide, the heavier plate is pushed below the lighter plate.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer directly with the chapter's key geographical idea and any requested example.",
+      "id": "q-054",
+      "marks": 2,
+      "prompt": "What is subduction?",
+      "response": {
+        "recommendedSentences": 1
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "tectonic plates collide",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "heavier plate is pushed below the lighter plate",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-28",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-29",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "mountain-formation-types"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Europe has the most indented coastline among the continents, which provides many suitable coastal locations for ports and harbours."
+      },
+      "difficulty": 2,
+      "explanation": "Europe has the most indented coastline among the continents, which provides many suitable coastal locations for ports and harbours.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer directly with the chapter's key geographical idea and any requested example.",
+      "id": "q-055",
+      "marks": 2,
+      "prompt": "Why does Europe have numerous ports and some of the world's finest harbours?",
+      "response": {
+        "recommendedSentences": 1
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Europe has a highly or most indented coastline",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "this produces many suitable places for ports and harbours",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-27",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "continents-oceans"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Successive layers of lava spread over a region; when the lava cools and solidifies, the layers build a raised tableland over time."
+      },
+      "difficulty": 2,
+      "explanation": "Successive layers of lava spread over a region; when the lava cools and solidifies, the layers build a raised tableland over time.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer directly with the chapter's key geographical idea and any requested example.",
+      "id": "q-056",
+      "marks": 2,
+      "prompt": "How is a volcanic plateau formed?",
+      "response": {
+        "recommendedSentences": 1
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "successive layers of lava spread over a region",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "cooling and solidification build a raised tableland over time",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-31",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plateaus-basins-valleys"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "A basin is a depressed part of the earth's crust surrounded by higher land. Inland drainage occurs when rivers flowing into a basin do not reach the sea."
+      },
+      "difficulty": 2,
+      "explanation": "A basin is a depressed part of the earth's crust surrounded by higher land. Inland drainage occurs when rivers flowing into a basin do not reach the sea.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer directly with the chapter's key geographical idea and any requested example.",
+      "id": "q-057",
+      "marks": 2,
+      "prompt": "What is a basin, and what is meant by inland drainage?",
+      "response": {
+        "recommendedSentences": 1
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "basin is a depression surrounded by higher land",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "in inland drainage rivers do not reach the sea",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-32",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plateaus-basins-valleys"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Any two: fertile land for crops, support for large populations, room for cities and industries, or easy construction of roads, railways and airports."
+      },
+      "difficulty": 1,
+      "explanation": "Any two: fertile land for crops, support for large populations, room for cities and industries, or easy construction of roads, railways and airports.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer directly with the chapter's key geographical idea and any requested example.",
+      "id": "q-058",
+      "marks": 2,
+      "prompt": "State any two advantages of plains.",
+      "response": {
+        "recommendedSentences": 1
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "states one supported advantage of plains",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "states a second distinct supported advantage of plains",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-32",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-34",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plains"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "A V-shaped valley is a river valley, formed as a river flows down from the mountains and cuts a valley with a V-shaped cross-section."
+      },
+      "difficulty": 2,
+      "explanation": "A V-shaped valley is a river valley, formed as a river flows down from the mountains and cuts a valley with a V-shaped cross-section.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer directly with the chapter's key geographical idea and any requested example.",
+      "id": "q-059",
+      "marks": 2,
+      "prompt": "What is a V-shaped valley?",
+      "response": {
+        "recommendedSentences": 1
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "identifies it as a river valley",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "explains that river flow down the mountains forms the V shape",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-32",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plateaus-basins-valleys"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "The Narmada Valley in India and the Nile Valley in Egypt."
+      },
+      "difficulty": 1,
+      "explanation": "The Narmada Valley in India and the Nile Valley in Egypt.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer directly with the chapter's key geographical idea and any requested example.",
+      "id": "q-060",
+      "marks": 2,
+      "prompt": "Give two examples of rift valleys stated in the chapter.",
+      "response": {
+        "recommendedSentences": 1
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Narmada Valley",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Nile Valley",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-32",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plateaus-basins-valleys"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Internal processes cause upliftment and sinking and produce folding and faulting. External processes continuously wear down and rebuild land through erosion and deposition."
+      },
+      "difficulty": 2,
+      "explanation": "Internal processes cause upliftment and sinking and produce folding and faulting. External processes continuously wear down and rebuild land through erosion and deposition.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Organize the answer into distinct, independently scorable points.",
+      "id": "q-061",
+      "marks": 4,
+      "prompt": "Explain how internal and external processes shape landforms.",
+      "response": {
+        "recommendedPoints": 4
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "internal processes cause upliftment",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "internal processes cause sinking and lead to folding or faulting",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "external processes cause continuous wearing down and rebuilding",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "erosion wears away while deposition rebuilds lowered surfaces",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-26",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "landform-foundations"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Movements inside the earth generate compressional forces. Compression folds layers of the earth's crust, and the folded layers rise to form fold mountains."
+      },
+      "difficulty": 2,
+      "explanation": "Movements inside the earth generate compressional forces. Compression folds layers of the earth's crust, and the folded layers rise to form fold mountains.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Organize the answer into distinct, independently scorable points.",
+      "id": "q-062",
+      "marks": 3,
+      "prompt": "Explain the formation of fold mountains.",
+      "response": {
+        "recommendedPoints": 3
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "forces are generated by movements inside the earth",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "compression acts on layers of the crust",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "crustal layers fold and rise into mountains",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-29",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "mountain-formation-types"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Strain fractures rock strata and creates faults. The land between cracks sinks, leaving upstanding blocks on either side. These blocks are block mountains, with steep edges and almost level surfaces."
+      },
+      "difficulty": 2,
+      "explanation": "Strain fractures rock strata and creates faults. The land between cracks sinks, leaving upstanding blocks on either side. These blocks are block mountains, with steep edges and almost level surfaces.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Organize the answer into distinct, independently scorable points.",
+      "id": "q-063",
+      "marks": 4,
+      "prompt": "Explain the formation and main characteristics of block mountains.",
+      "response": {
+        "recommendedPoints": 4
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "strain causes rupturing or fracturing of rock strata",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "faults or cracks form in the crust",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "land between faults sinks leaving upstanding side blocks",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "block mountains have steep edges and nearly level surfaces",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-29",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "mountain-formation-types"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Lava, ash, cinder and dust emerge through cracks and accumulate as a high cone. The opening carrying material to the surface is the vent, and the funnel-shaped depression at its top is the crater."
+      },
+      "difficulty": 2,
+      "explanation": "Lava, ash, cinder and dust emerge through cracks and accumulate as a high cone. The opening carrying material to the surface is the vent, and the funnel-shaped depression at its top is the crater.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Organize the answer into distinct, independently scorable points.",
+      "id": "q-064",
+      "marks": 4,
+      "prompt": "Explain how a volcanic mountain forms and name its two main openings or depressions.",
+      "response": {
+        "recommendedPoints": 4
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "lava, ash, cinder and dust emerge from deep inside the earth",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "materials pass through cracks and accumulate into a high cone",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "vent is the opening through which material reaches the surface",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "crater is the funnel-shaped depression at the top",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "mountain-formation-types"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Any three supported roles: storing water and feeding rivers, enabling irrigation and hydroelectricity, providing fertile valleys, supporting flora and fauna, affecting climate, supplying minerals and forest products, housing people, or supporting tourism and recreation."
+      },
+      "difficulty": 2,
+      "explanation": "Any three supported roles: storing water and feeding rivers, enabling irrigation and hydroelectricity, providing fertile valleys, supporting flora and fauna, affecting climate, supplying minerals and forest products, housing people, or supporting tourism and recreation.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Organize the answer into distinct, independently scorable points.",
+      "id": "q-065",
+      "marks": 3,
+      "prompt": "State any three ways in which mountains are important to people.",
+      "response": {
+        "recommendedPoints": 3
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "states one supported importance of mountains",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "states a second distinct importance",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "states a third distinct importance",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "mountain-importance"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "The five types are tectonic, volcanic, dissected, intermontane and piedmont plateaus."
+      },
+      "difficulty": 2,
+      "explanation": "The five types are tectonic, volcanic, dissected, intermontane and piedmont plateaus.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Organize the answer into distinct, independently scorable points.",
+      "id": "q-066",
+      "marks": 5,
+      "prompt": "Mention the five types of plateaus described in the chapter.",
+      "response": {
+        "recommendedPoints": 5
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "tectonic plateau",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "volcanic plateau",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "dissected plateau",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "intermontane plateau",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "piedmont plateau",
+            "id": "p5",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-31",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-32",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plateaus-basins-valleys"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Structural plains form when parts of the sea floor or continental shelf are uplifted and later broadened by marine sediments. Erosional plains form when agents such as wind, rivers, rain and glaciers wear highlands down to a low level. Depositional plains form from sediments carried from higher regions by moving ice, water and wind."
+      },
+      "difficulty": 2,
+      "explanation": "Structural plains form when parts of the sea floor or continental shelf are uplifted and later broadened by marine sediments. Erosional plains form when agents such as wind, rivers, rain and glaciers wear highlands down to a low level. Depositional plains form from sediments carried from higher regions by moving ice, water and wind.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Organize the answer into distinct, independently scorable points.",
+      "id": "q-067",
+      "marks": 6,
+      "prompt": "Describe how structural, erosional and depositional plains are formed.",
+      "response": {
+        "recommendedPoints": 6
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "structural plains involve uplift of sea floor or continental shelf",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "marine sediments broaden and flatten structural plains",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "erosional plains result from erosion of mountains, hills or plateaus",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "wind, rivers, rain or glaciers lower the eroded material",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "depositional plains are built from sediments brought from upper regions",
+            "id": "p5",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "moving ice, water and wind are depositional agents",
+            "id": "p6",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-33",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plains"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Landforms influence safety through earthquakes and eruptions; rocks and soil affect settlement; elevation and relief affect weather and farming; and flat plains make houses, wells, roads and transport easier than mountainous terrain."
+      },
+      "difficulty": 2,
+      "explanation": "Landforms influence safety through earthquakes and eruptions; rocks and soil affect settlement; elevation and relief affect weather and farming; and flat plains make houses, wells, roads and transport easier than mountainous terrain.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Organize the answer into distinct, independently scorable points.",
+      "id": "q-068",
+      "marks": 4,
+      "prompt": "Explain four ways in which landforms affect people's lives.",
+      "response": {
+        "recommendedPoints": 4
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "earthquakes or eruptions can cause loss of life and property",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "rock and soil affect whether people can settle safely",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "elevation and climate affect weather or farming",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "plains make settlement and transport construction easier than mountains",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-35",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "landforms-people-india"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "The Himalayas acted as a northern barrier, while north-western passes became trade and invasion routes. Sea routes encouraged trade and interaction. Rivers and fertile plains supported settled life and ancient civilizations. The Vindhyas, Satpuras, rivers and Deccan Plateau shaped movement between north and south."
+      },
+      "difficulty": 3,
+      "explanation": "The Himalayas acted as a northern barrier, while north-western passes became trade and invasion routes. Sea routes encouraged trade and interaction. Rivers and fertile plains supported settled life and ancient civilizations. The Vindhyas, Satpuras, rivers and Deccan Plateau shaped movement between north and south.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Organize the answer into distinct, independently scorable points.",
+      "id": "q-069",
+      "marks": 5,
+      "prompt": "How have India's geographical features influenced its history?",
+      "response": {
+        "recommendedPoints": 5
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Himalayas acted as a protective natural barrier",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "north-west mountain passes served as trade or entry routes",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "coastal sea routes supported trade and interaction",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "rivers and fertile plains supported settlement and ancient civilizations",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Vindhyas, Satpuras, rivers and Deccan Plateau influenced north-south movement",
+            "id": "p5",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-35",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "landforms-people-india"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Plains offered fertile, river-watered land for farming, supported food production and settled life, and their flat surface made houses, roads and other infrastructure easier to build. These advantages supported dense populations and civilizations."
+      },
+      "difficulty": 3,
+      "explanation": "Plains offered fertile, river-watered land for farming, supported food production and settled life, and their flat surface made houses, roads and other infrastructure easier to build. These advantages supported dense populations and civilizations.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Organize the answer into distinct, independently scorable points.",
+      "id": "q-070",
+      "marks": 4,
+      "prompt": "Why were plains suitable places for large populations and early civilizations?",
+      "response": {
+        "recommendedPoints": 4
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "fertile or alluvial land supported farming",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "rivers supplied water and encouraged settled life",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "flat terrain made construction and transport easier",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "these conditions supported large populations and civilizations",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-32",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-34",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-35",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plains",
+        "landforms-people-india"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Antarctica is a large frozen land mass in the extreme south, almost circular, containing about 90 per cent of the world's ice. It is colder than the Arctic region, is surrounded by stormy seas, and hosts research stations for subjects including climatology and earth sciences."
+      },
+      "difficulty": 2,
+      "explanation": "Antarctica is a large frozen land mass in the extreme south, almost circular, containing about 90 per cent of the world's ice. It is colder than the Arctic region, is surrounded by stormy seas, and hosts research stations for subjects including climatology and earth sciences.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Organize the answer into distinct, independently scorable points.",
+      "id": "q-071",
+      "marks": 5,
+      "prompt": "Describe Antarctica using five facts from the chapter.",
+      "response": {
+        "recommendedPoints": 5
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "large frozen land mass in the extreme south",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "almost circular in shape",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "contains about 90 per cent of the world's ice",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "colder than the Arctic region and surrounded by stormy seas",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "countries operate research stations there",
+            "id": "p5",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-27",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "continents-oceans"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Many plateaus contain valuable minerals. The South African Plateau yields gold, diamonds, copper, manganese and chromium; Western Australia's plateau is rich in gold and iron; and India's Chota Nagpur Plateau is a storehouse of mineral wealth. Some plateaus such as the Deccan also contain large fertile areas."
+      },
+      "difficulty": 2,
+      "explanation": "Many plateaus contain valuable minerals. The South African Plateau yields gold, diamonds, copper, manganese and chromium; Western Australia's plateau is rich in gold and iron; and India's Chota Nagpur Plateau is a storehouse of mineral wealth. Some plateaus such as the Deccan also contain large fertile areas.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Organize the answer into distinct, independently scorable points.",
+      "id": "q-072",
+      "marks": 4,
+      "prompt": "Why do plateaus have great economic value? Give supporting examples.",
+      "response": {
+        "recommendedPoints": 4
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "plateaus can contain valuable mineral deposits",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "South African Plateau mineral example",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Western Australia or Chota Nagpur mineral example",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Deccan Plateau includes a large fertile area",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-31",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plateaus-basins-valleys"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Plains suit human and animal settlement, support large populations, grow major crops and act as granaries, accommodate cities and industries, and make roads, railways and airports easier to construct."
+      },
+      "difficulty": 2,
+      "explanation": "Plains suit human and animal settlement, support large populations, grow major crops and act as granaries, accommodate cities and industries, and make roads, railways and airports easier to construct.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Organize the answer into distinct, independently scorable points.",
+      "id": "q-073",
+      "marks": 4,
+      "prompt": "Explain four reasons why plains are important.",
+      "response": {
+        "recommendedPoints": 4
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "suitable for settlement and large populations",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "support crops and food production",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "support cities and industrialization",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "flat soft land eases transport construction",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-34",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plains"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "sides": {
+          "Old fold mountains": {
+            "age": "formed over 250 million years ago",
+            "relief and slopes": "gentle slopes and low altitude after long weathering"
+          },
+          "Young fold mountains": {
+            "age": "formed comparatively recently, about 25 million years ago",
+            "relief and slopes": "rugged, lofty and among the highest ranges"
+          }
+        }
+      },
+      "difficulty": 2,
+      "explanation": "A complete comparison covers both named features along the stated dimensions.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "State both sides of each comparison clearly; do not describe only one feature.",
+      "id": "q-074",
+      "marks": 4,
+      "prompt": "Differentiate between old fold mountains and young fold mountains.",
+      "response": {
+        "dimensions": [
+          "age",
+          "relief and slopes"
+        ]
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "old fold mountains formed over 250 million years ago",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "old fold mountains have gentle slopes and low altitude due to weathering",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "young fold mountains formed about 25 million years ago",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "young fold mountains are rugged and lofty",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-29",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "mountain-formation-types"
+      ],
+      "type": "compare",
+      "version": 1
+    },
+    {
+      "answer": {
+        "sides": {
+          "Block mountains": {
+            "formation": "upstanding blocks left by faulting as land between cracks sinks",
+            "typical form": "steep edges and nearly level surfaces"
+          },
+          "Fold mountains": {
+            "formation": "crustal layers folded by compression",
+            "typical form": "folded mountain ranges"
+          }
+        }
+      },
+      "difficulty": 2,
+      "explanation": "A complete comparison covers both named features along the stated dimensions.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "State both sides of each comparison clearly; do not describe only one feature.",
+      "id": "q-075",
+      "marks": 4,
+      "prompt": "Differentiate between fold mountains and block mountains by formation and shape.",
+      "response": {
+        "dimensions": [
+          "formation",
+          "typical form"
+        ]
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "fold mountains form when compression folds crustal layers",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "fold mountains have folded crustal form",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "block mountains form through faulting and sinking between cracks",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "block mountains have steep edges and nearly level surfaces",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-29",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-30",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "mountain-formation-types"
+      ],
+      "type": "compare",
+      "version": 1
+    },
+    {
+      "answer": {
+        "sides": {
+          "Island": {
+            "connection to larger land": "not joined as part of the definition",
+            "water boundary": "water on all sides"
+          },
+          "Peninsula": {
+            "connection to larger land": "joined to a larger land mass",
+            "water boundary": "water on three sides"
+          }
+        }
+      },
+      "difficulty": 1,
+      "explanation": "A complete comparison covers both named features along the stated dimensions.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "State both sides of each comparison clearly; do not describe only one feature.",
+      "id": "q-076",
+      "marks": 4,
+      "prompt": "Differentiate between a peninsula and an island.",
+      "response": {
+        "dimensions": [
+          "water boundary",
+          "connection to larger land"
+        ]
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "peninsula has water on three sides",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "peninsula is joined to a larger land mass",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "island has water on all sides",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "island is a separate piece of land within the surrounding water",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-34",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "minor-landforms"
+      ],
+      "type": "compare",
+      "version": 1
+    },
+    {
+      "answer": {
+        "sides": {
+          "Tectonic plateau": {
+            "example": "South African or Turkish-Iranian Plateau",
+            "forming process": "movement of crustal plates uplifts a large surface"
+          },
+          "Volcanic plateau": {
+            "example": "Columbia, north-western Deccan or Malwa Plateau",
+            "forming process": "successive lava layers cool and solidify into raised tableland"
+          }
+        }
+      },
+      "difficulty": 2,
+      "explanation": "A complete comparison covers both named features along the stated dimensions.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "State both sides of each comparison clearly; do not describe only one feature.",
+      "id": "q-077",
+      "marks": 4,
+      "prompt": "Differentiate between a tectonic plateau and a volcanic plateau.",
+      "response": {
+        "dimensions": [
+          "forming process",
+          "example"
+        ]
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "tectonic plateau forms through crustal-plate movement and uplift",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "valid tectonic plateau example",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "volcanic plateau forms from successive cooled lava layers",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "valid volcanic plateau example",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-31",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plateaus-basins-valleys"
+      ],
+      "type": "compare",
+      "version": 1
+    },
+    {
+      "answer": {
+        "sides": {
+          "Glacial valleys": {
+            "forming agent or example": "formed by glaciers; many occur in the Alps and Himalayas",
+            "shape": "U-shaped"
+          },
+          "River valleys": {
+            "forming agent or example": "cut by rivers; Rhine and Damodar are examples",
+            "shape": "usually V-shaped"
+          }
+        }
+      },
+      "difficulty": 2,
+      "explanation": "A complete comparison covers both named features along the stated dimensions.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "State both sides of each comparison clearly; do not describe only one feature.",
+      "id": "q-078",
+      "marks": 4,
+      "prompt": "Differentiate between river valleys and glacial valleys.",
+      "response": {
+        "dimensions": [
+          "shape",
+          "forming agent or example"
+        ]
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "river valleys are usually V-shaped",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "river action or a valid river-valley example",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "glacial valleys are U-shaped",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "glacier action or Alps/Himalayas example",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-32",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plateaus-basins-valleys"
+      ],
+      "type": "compare",
+      "version": 1
+    },
+    {
+      "answer": {
+        "sides": {
+          "Deposition": {
+            "action": "laying down transported material",
+            "effect on land": "rebuilds a lowered surface"
+          },
+          "Erosion": {
+            "action": "wearing away of the earth's surface",
+            "effect on land": "lowers or removes surface material"
+          }
+        }
+      },
+      "difficulty": 1,
+      "explanation": "A complete comparison covers both named features along the stated dimensions.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "State both sides of each comparison clearly; do not describe only one feature.",
+      "id": "q-079",
+      "marks": 4,
+      "prompt": "Differentiate between erosion and deposition.",
+      "response": {
+        "dimensions": [
+          "action",
+          "effect on land"
+        ]
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "erosion is wearing away",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "erosion removes or lowers surface material",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "deposition lays down material",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "deposition rebuilds a lowered surface",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-26",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "landform-foundations"
+      ],
+      "type": "compare",
+      "version": 1
+    },
+    {
+      "answer": {
+        "sides": {
+          "Mountains": {
+            "farming and livelihoods": "terraces, livestock, forests, minerals and tourism are important",
+            "settlement and transport": "more difficult terrain for houses and roads"
+          },
+          "Plains": {
+            "farming and livelihoods": "fertile land supports major crops, populations, cities and industry",
+            "settlement and transport": "flat land eases houses, roads, railways and airports"
+          }
+        }
+      },
+      "difficulty": 2,
+      "explanation": "A complete comparison covers both named features along the stated dimensions.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "State both sides of each comparison clearly; do not describe only one feature.",
+      "id": "q-080",
+      "marks": 4,
+      "prompt": "Compare life and economic activity in mountains and plains using the chapter.",
+      "response": {
+        "dimensions": [
+          "settlement and transport",
+          "farming and livelihoods"
+        ]
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "mountain terrain makes settlement or transport harder",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "mountain livelihoods include supported examples such as terraces, livestock, forests, minerals or tourism",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "plains ease settlement and transport construction",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "plains support farming, dense populations, cities or industry",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-32",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-34",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-35",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "landforms-people-india",
+        "plains",
+        "mountain-importance"
+      ],
+      "type": "compare",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "twenty-nine"
+      },
+      "difficulty": 1,
+      "explanation": "Land covers nearly 29 per cent of the earth's surface area.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Eliminate choices that do not fit the description or location given in the chapter.",
+      "id": "q-081",
+      "marks": 1,
+      "prompt": "Land covers nearly what percentage of the earth's surface area?",
+      "response": {
+        "options": [
+          {
+            "id": "twenty-nine",
+            "text": "29 per cent"
+          },
+          {
+            "id": "fifty",
+            "text": "50 per cent"
+          },
+          {
+            "id": "seventy-one",
+            "text": "71 per cent"
+          },
+          {
+            "id": "ninety",
+            "text": "90 per cent"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-26",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "landform-foundations"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "A landform is a natural or artificial feature of the solid surface of the earth. Landforms together make up a terrain."
+      },
+      "difficulty": 1,
+      "explanation": "A landform is a natural or artificial feature of the solid surface of the earth. Landforms together make up a terrain.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer directly with the chapter's key geographical idea and any requested example.",
+      "id": "q-082",
+      "marks": 2,
+      "prompt": "Define a landform and a terrain.",
+      "response": {
+        "recommendedSentences": 1
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "landform is a natural or artificial feature of the earth's solid surface",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "landforms together make up a terrain",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-26",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "landform-foundations"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "The Isthmus of Suez joins Africa to Asia and separates the Mediterranean Sea from the Red Sea."
+      },
+      "difficulty": 2,
+      "explanation": "The Isthmus of Suez joins Africa to Asia and separates the Mediterranean Sea from the Red Sea.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer directly with the chapter's key geographical idea and any requested example.",
+      "id": "q-083",
+      "marks": 2,
+      "prompt": "What does the Isthmus of Suez join and what does it separate?",
+      "response": {
+        "recommendedSentences": 1
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "joins Africa and Asia",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "separates the Mediterranean Sea and Red Sea",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-34",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "minor-landforms",
+        "continents-oceans"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionIds": [
+          "tarim",
+          "tsaidam",
+          "chad"
+        ]
+      },
+      "difficulty": 2,
+      "explanation": "The Tarim and Tsaidam Basins of Asia and the Chad Basin of north-central Africa are given as inland-drainage basins.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Select every statement supported by the chapter and no unsupported statement.",
+      "id": "q-084",
+      "marks": 3,
+      "prompt": "Which are given as basins of inland drainage?",
+      "response": {
+        "options": [
+          {
+            "id": "tarim",
+            "text": "Tarim Basin"
+          },
+          {
+            "id": "tsaidam",
+            "text": "Tsaidam Basin"
+          },
+          {
+            "id": "chad",
+            "text": "Chad Basin"
+          },
+          {
+            "id": "ganga",
+            "text": "Ganga Basin"
+          },
+          {
+            "id": "mississippi",
+            "text": "Mississippi Basin"
+          }
+        ]
+      },
+      "rubric": {
+        "partialCredit": false
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-32",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plateaus-basins-valleys"
+      ],
+      "type": "multiple_select",
+      "version": 1
+    },
+    {
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "structural",
+            "rightId": "gulf-coast"
+          },
+          {
+            "leftId": "erosional",
+            "rightId": "northern-canada"
+          },
+          {
+            "leftId": "depositional",
+            "rightId": "coastal-india"
+          }
+        ]
+      },
+      "difficulty": 2,
+      "explanation": "The Gulf Coast plains are structural, northern Canada's plains are erosional, and India's coastal plains are depositional.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Match each item by its definition, formation, example or location.",
+      "id": "q-085",
+      "marks": 3,
+      "prompt": "Match each type of plain with a stated example.",
+      "response": {
+        "left": [
+          {
+            "id": "structural",
+            "text": "Structural plain"
+          },
+          {
+            "id": "erosional",
+            "text": "Erosional plain"
+          },
+          {
+            "id": "depositional",
+            "text": "Depositional plain"
+          }
+        ],
+        "right": [
+          {
+            "id": "coastal-india",
+            "text": "eastern and western coastal plains of India"
+          },
+          {
+            "id": "northern-canada",
+            "text": "plains of northern Canada"
+          },
+          {
+            "id": "gulf-coast",
+            "text": "coastal plains of south-eastern USA near the Gulf Coast"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-33",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plains"
+      ],
+      "type": "matching",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionIds": [
+          "fuji",
+          "mayon",
+          "kilimanjaro",
+          "vesuvius"
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "Mt Fuji, Mt Mayon, Mt Kilimanjaro and Mt Vesuvius are volcanic mountains; the Vosges are block mountains.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Select every statement supported by the chapter and no unsupported statement.",
+      "id": "q-086",
+      "marks": 4,
+      "prompt": "Which are examples of volcanic mountains given in the chapter?",
+      "response": {
+        "options": [
+          {
+            "id": "fuji",
+            "text": "Mt Fuji"
+          },
+          {
+            "id": "mayon",
+            "text": "Mt Mayon"
+          },
+          {
+            "id": "kilimanjaro",
+            "text": "Mt Kilimanjaro"
+          },
+          {
+            "id": "vesuvius",
+            "text": "Mt Vesuvius"
+          },
+          {
+            "id": "vosges",
+            "text": "Vosges"
+          }
+        ]
+      },
+      "rubric": {
+        "partialCredit": false
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "mountain-formation-types"
+      ],
+      "type": "multiple_select",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "The Himalayas block the south-west monsoon winds and cause rainfall in India, and they protect India from the cold winter winds of Central Asia."
+      },
+      "difficulty": 2,
+      "explanation": "The Himalayas block the south-west monsoon winds and cause rainfall in India, and they protect India from the cold winter winds of Central Asia.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer directly with the chapter's key geographical idea and any requested example.",
+      "id": "q-087",
+      "marks": 2,
+      "prompt": "How do the Himalayas affect India's climate?",
+      "response": {
+        "recommendedSentences": 1
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "block south-west monsoon winds and cause rainfall",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "protect India from cold Central Asian winter winds",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "mountain-importance"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Conservation helps maintain ecological balance, preserve biodiversity and sustain natural resources. The chapter suggests establishing and maintaining protected areas to safeguard unique and fragile landforms."
+      },
+      "difficulty": 2,
+      "explanation": "Conservation helps maintain ecological balance, preserve biodiversity and sustain natural resources. The chapter suggests establishing and maintaining protected areas to safeguard unique and fragile landforms.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Organize the answer into distinct, independently scorable points.",
+      "id": "q-088",
+      "marks": 3,
+      "prompt": "Why is conserving landforms important, and what action does the chapter suggest?",
+      "response": {
+        "recommendedPoints": 3
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "maintains ecological balance",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "preserves biodiversity or sustains natural resources",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "establishes and maintains protected areas for fragile landforms",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-35",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "landforms-people-india"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Varahamihira was an ancient Indian mathematician, astronomer and polymath. His Brihat-Samhita described mountains, rivers, forests and cities."
+      },
+      "difficulty": 2,
+      "explanation": "Varahamihira was an ancient Indian mathematician, astronomer and polymath. His Brihat-Samhita described mountains, rivers, forests and cities.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer directly with the chapter's key geographical idea and any requested example.",
+      "id": "q-089",
+      "marks": 2,
+      "prompt": "Who was Varahamihira, and which of his works described geographical features?",
+      "response": {
+        "recommendedSentences": 1
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "ancient Indian mathematician, astronomer or polymath",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Brihat-Samhita described geographical features",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-36",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "landforms-people-india"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "ganga",
+            "rightId": "gangotri"
+          },
+          {
+            "leftId": "yamuna",
+            "rightId": "yamunotri"
+          },
+          {
+            "leftId": "brahmaputra",
+            "rightId": "chemayungdung"
+          }
+        ]
+      },
+      "difficulty": 2,
+      "explanation": "The Ganga and Yamuna originate in the Gangotri and Yamunotri glaciers; the Brahmaputra originates from the Chemayungdung Glacier.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Match each item by its definition, formation, example or location.",
+      "id": "q-090",
+      "marks": 3,
+      "prompt": "Match each river with the glacier stated as its source.",
+      "response": {
+        "left": [
+          {
+            "id": "ganga",
+            "text": "Ganga"
+          },
+          {
+            "id": "yamuna",
+            "text": "Yamuna"
+          },
+          {
+            "id": "brahmaputra",
+            "text": "Brahmaputra"
+          }
+        ],
+        "right": [
+          {
+            "id": "chemayungdung",
+            "text": "Chemayungdung Glacier"
+          },
+          {
+            "id": "yamunotri",
+            "text": "Yamunotri Glacier"
+          },
+          {
+            "id": "gangotri",
+            "text": "Gangotri Glacier"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-35",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "landforms-people-india",
+        "mountain-importance"
+      ],
+      "type": "matching",
+      "version": 1
+    },
+    {
+      "answer": {
+        "sides": {
+          "Canyon": {
+            "definition": "a deep valley with steep sides of rock"
+          },
+          "Gorge": {
+            "definition": "a deep narrow valley with near-vertical sides"
+          }
+        }
+      },
+      "difficulty": 2,
+      "explanation": "A complete comparison covers both named features along the stated dimensions.",
+      "generation": {
+        "generatedAt": "2026-09-04T01:15:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "State both sides of each comparison clearly; do not describe only one feature.",
+      "id": "q-091",
+      "marks": 2,
+      "prompt": "Differentiate between a canyon and a gorge.",
+      "response": {
+        "dimensions": [
+          "definition"
+        ]
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "canyon is a deep valley with steep rock sides",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "gorge is deep and narrow with near-vertical sides",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "sourceRefs": [
+        {
+          "pageId": "page-37",
+          "regionId": "important-terms",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plateaus-basins-valleys"
+      ],
+      "type": "compare",
+      "version": 1
+    }
+  ],
+  "schemaVersion": "0.1.0",
+  "sources": [
+    {
+      "assetRef": "manifest://major-landforms-earth/page-26",
+      "extractionConfidence": 0.99,
+      "id": "page-26",
+      "pageNumber": 26,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.26,
+            "width": 0.68,
+            "x": 0.11,
+            "y": 0.17
+          },
+          "id": "learning-outcomes",
+          "kind": "passage"
+        },
+        {
+          "bounds": {
+            "height": 0.39,
+            "width": 0.41,
+            "x": 0.52,
+            "y": 0.55
+          },
+          "id": "process-cards",
+          "kind": "diagram"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://major-landforms-earth/page-27",
+      "extractionConfidence": 0.99,
+      "id": "page-27",
+      "pageNumber": 27,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.2,
+            "width": 0.43,
+            "x": 0.04,
+            "y": 0.27
+          },
+          "id": "plate-tectonics-callout",
+          "kind": "passage"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://major-landforms-earth/page-28",
+      "extractionConfidence": 0.99,
+      "id": "page-28",
+      "pageNumber": 28,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.31,
+            "width": 0.69,
+            "x": 0.19,
+            "y": 0.03
+          },
+          "id": "continents-map",
+          "kind": "map"
+        },
+        {
+          "bounds": {
+            "height": 0.31,
+            "width": 0.48,
+            "x": 0.5,
+            "y": 0.43
+          },
+          "id": "major-landforms-illustration",
+          "kind": "illustration"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://major-landforms-earth/page-29",
+      "extractionConfidence": 0.99,
+      "id": "page-29",
+      "pageNumber": 29,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.2,
+            "width": 0.42,
+            "x": 0.52,
+            "y": 0.73
+          },
+          "id": "block-mountain-diagram",
+          "kind": "diagram"
+        },
+        {
+          "bounds": {
+            "height": 0.48,
+            "width": 0.42,
+            "x": 0.05,
+            "y": 0.29
+          },
+          "id": "fold-mountain-diagrams",
+          "kind": "diagram"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://major-landforms-earth/page-30",
+      "extractionConfidence": 0.99,
+      "id": "page-30",
+      "pageNumber": 30,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.18,
+            "width": 0.4,
+            "x": 0.03,
+            "y": 0.04
+          },
+          "id": "fold-block-comparison",
+          "kind": "table"
+        },
+        {
+          "bounds": {
+            "height": 0.21,
+            "width": 0.42,
+            "x": 0.03,
+            "y": 0.52
+          },
+          "id": "volcanic-mountain-diagram",
+          "kind": "diagram"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://major-landforms-earth/page-31",
+      "extractionConfidence": 0.99,
+      "id": "page-31",
+      "pageNumber": 31,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.43,
+            "width": 0.9,
+            "x": 0.03,
+            "y": 0.52
+          },
+          "id": "mountains-plateaus-map",
+          "kind": "map"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://major-landforms-earth/page-32",
+      "extractionConfidence": 0.99,
+      "id": "page-32",
+      "pageNumber": 32,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.24,
+            "width": 0.44,
+            "x": 0.51,
+            "y": 0.04
+          },
+          "id": "valley-photo",
+          "kind": "illustration"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://major-landforms-earth/page-33",
+      "extractionConfidence": 0.99,
+      "id": "page-33",
+      "pageNumber": 33,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.41,
+            "width": 0.9,
+            "x": 0.03,
+            "y": 0.53
+          },
+          "id": "plains-map",
+          "kind": "map"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://major-landforms-earth/page-34",
+      "extractionConfidence": 0.99,
+      "id": "page-34",
+      "pageNumber": 34,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.3,
+            "width": 0.4,
+            "x": 0.53,
+            "y": 0.63
+          },
+          "id": "panama-map",
+          "kind": "map"
+        },
+        {
+          "bounds": {
+            "height": 0.27,
+            "width": 0.43,
+            "x": 0.51,
+            "y": 0.08
+          },
+          "id": "peninsula-map",
+          "kind": "map"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://major-landforms-earth/page-35",
+      "extractionConfidence": 0.99,
+      "id": "page-35",
+      "pageNumber": 35,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.38,
+            "width": 0.9,
+            "x": 0.03,
+            "y": 0.55
+          },
+          "id": "india-history-section",
+          "kind": "passage"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://major-landforms-earth/page-36",
+      "extractionConfidence": 0.99,
+      "id": "page-36",
+      "pageNumber": 36,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.76,
+            "width": 0.92,
+            "x": 0.04,
+            "y": 0.17
+          },
+          "id": "chapter-summary",
+          "kind": "diagram"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://major-landforms-earth/page-37",
+      "extractionConfidence": 0.99,
+      "id": "page-37",
+      "pageNumber": 37,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.27,
+            "width": 0.9,
+            "x": 0.04,
+            "y": 0.04
+          },
+          "id": "important-terms",
+          "kind": "passage"
+        },
+        {
+          "bounds": {
+            "height": 0.61,
+            "width": 0.9,
+            "x": 0.04,
+            "y": 0.35
+          },
+          "id": "objective-exercises",
+          "kind": "exercise"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://major-landforms-earth/page-38",
+      "extractionConfidence": 0.99,
+      "id": "page-38",
+      "pageNumber": 38,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.92,
+            "width": 0.93,
+            "x": 0.03,
+            "y": 0.03
+          },
+          "id": "written-exercises",
+          "kind": "exercise"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://major-landforms-earth/page-39",
+      "extractionConfidence": 0.99,
+      "id": "page-39",
+      "pageNumber": 39,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.4,
+            "width": 0.83,
+            "x": 0.08,
+            "y": 0.04
+          },
+          "id": "source-based-exercise",
+          "kind": "exercise"
+        }
+      ],
+      "reviewRequired": false
+    }
+  ],
+  "topics": [
+    {
+      "id": "continents-oceans",
+      "learningOutcomeIds": [
+        "identify-landforms"
+      ],
+      "title": "Continents and oceans"
+    },
+    {
+      "id": "landform-foundations",
+      "learningOutcomeIds": [
+        "identify-landforms"
+      ],
+      "title": "Landforms and formation processes"
+    },
+    {
+      "id": "landforms-people-india",
+      "learningOutcomeIds": [
+        "geography-shapes-history",
+        "landforms-affect-people"
+      ],
+      "title": "Landforms, people and Indian history"
+    },
+    {
+      "id": "minor-landforms",
+      "learningOutcomeIds": [
+        "identify-landforms"
+      ],
+      "title": "Islands, peninsulas and isthmuses"
+    },
+    {
+      "id": "mountain-formation-types",
+      "learningOutcomeIds": [
+        "locate-mountain-ranges",
+        "differentiate-fold-block",
+        "explain-volcanic-mountains"
+      ],
+      "title": "Mountain formation and types"
+    },
+    {
+      "id": "mountain-importance",
+      "learningOutcomeIds": [
+        "importance-of-mountains",
+        "landforms-affect-people"
+      ],
+      "title": "Importance of mountains"
+    },
+    {
+      "id": "plains",
+      "learningOutcomeIds": [
+        "identify-landforms",
+        "landforms-affect-people"
+      ],
+      "title": "Plains: formation and importance"
+    },
+    {
+      "id": "plateaus-basins-valleys",
+      "learningOutcomeIds": [
+        "compare-valleys-plateaus",
+        "identify-landforms"
+      ],
+      "title": "Plateaus, basins and valleys"
+    }
+  ]
+}

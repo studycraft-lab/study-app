@@ -1,0 +1,243 @@
+{
+  "manifestVersion": "0.1.0",
+  "chapter": {
+    "id": "major-landforms-earth",
+    "board": "ICSE",
+    "grade": 6,
+    "subject": "Geography",
+    "bookTitle": "Geography",
+    "chapterNumber": 3,
+    "title": "Major Landforms of the Earth"
+  },
+  "sourcePolicy": {
+    "originals": "local-only",
+    "repositoryCopies": false,
+    "applicationStorage": "not-uploaded",
+    "runtimeStrategy": "required-regions",
+    "notes": "Keep the eight copyrighted screenshots outside Git. This playable v1 uses text questions only; retain region metadata for traceability and possible future private visual questions."
+  },
+  "assets": [
+    {
+      "id": "source-01",
+      "fileName": "Screenshot 2026-09-04 at 12.23.29 AM.png",
+      "sha256": "50c8d9ebc2d2bd0f9bfdbfeb341fd59637f440b1ea9bbec1644c3a95474790c4",
+      "width": 1540,
+      "height": 2064,
+      "pages": [
+        {
+          "id": "page-26",
+          "pageNumber": 26,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "source-02",
+      "fileName": "Screenshot 2026-09-04 at 12.23.43 AM.png",
+      "sha256": "6ffd41271d8649545b0f9d1e916ed9c0060a78a1cbcbdafecec932406a9b5ae0",
+      "width": 3082,
+      "height": 2060,
+      "pages": [
+        {
+          "id": "page-27",
+          "pageNumber": 27,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0.5,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-28",
+          "pageNumber": 28,
+          "bounds": {
+            "x": 0.5,
+            "y": 0,
+            "width": 0.5,
+            "height": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "source-03",
+      "fileName": "Screenshot 2026-09-04 at 12.23.58 AM.png",
+      "sha256": "cfa288cdd5fb581279f8b4e5e0f5206136fd768eb95a3b13809c2129d988f2a5",
+      "width": 3076,
+      "height": 2056,
+      "pages": [
+        {
+          "id": "page-29",
+          "pageNumber": 29,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0.5,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-30",
+          "pageNumber": 30,
+          "bounds": {
+            "x": 0.5,
+            "y": 0,
+            "width": 0.5,
+            "height": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "source-04",
+      "fileName": "Screenshot 2026-09-04 at 12.24.09 AM.png",
+      "sha256": "e439d9e431ce958e63d0005258f29796d831b06ea9d107d6ab79eb20d21c765a",
+      "width": 3076,
+      "height": 2064,
+      "pages": [
+        {
+          "id": "page-31",
+          "pageNumber": 31,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0.5,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-32",
+          "pageNumber": 32,
+          "bounds": {
+            "x": 0.5,
+            "y": 0,
+            "width": 0.5,
+            "height": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "source-05",
+      "fileName": "Screenshot 2026-09-04 at 12.24.22 AM.png",
+      "sha256": "f7db5ee05ccfb2828b4053f7b4a0574bcb345cf75cf469e633bf0a405f33eb54",
+      "width": 3076,
+      "height": 2056,
+      "pages": [
+        {
+          "id": "page-33",
+          "pageNumber": 33,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0.5,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-34",
+          "pageNumber": 34,
+          "bounds": {
+            "x": 0.5,
+            "y": 0,
+            "width": 0.5,
+            "height": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "source-06",
+      "fileName": "Screenshot 2026-09-04 at 12.24.34 AM.png",
+      "sha256": "f2cdaa25be56774b137e24a2d794dfb3d5ca840cf341af4b58ac9133f26b7027",
+      "width": 3076,
+      "height": 2060,
+      "pages": [
+        {
+          "id": "page-35",
+          "pageNumber": 35,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0.5,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-36",
+          "pageNumber": 36,
+          "bounds": {
+            "x": 0.5,
+            "y": 0,
+            "width": 0.5,
+            "height": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "source-07",
+      "fileName": "Screenshot 2026-09-04 at 12.24.46 AM.png",
+      "sha256": "ebf2147fd8fd3c349a392d074e1ec5062fece4eee4862dddc6ed083604a98858",
+      "width": 3078,
+      "height": 2058,
+      "pages": [
+        {
+          "id": "page-37",
+          "pageNumber": 37,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0.5,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-38",
+          "pageNumber": 38,
+          "bounds": {
+            "x": 0.5,
+            "y": 0,
+            "width": 0.5,
+            "height": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "source-08",
+      "fileName": "Screenshot 2026-09-04 at 12.24.57 AM.png",
+      "sha256": "93662f4ba1678126c65a35dc5ca35b4c2542fe4b00190b5a644e6425ff0c0294",
+      "width": 1536,
+      "height": 2064,
+      "pages": [
+        {
+          "id": "page-39",
+          "pageNumber": 39,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        }
+      ]
+    }
+  ],
+  "learningOutcomes": [
+    "identifies different types of landforms in their immediate surroundings and on visuals.",
+    "locates the important mountain ranges on the world map.",
+    "differentiates between processes of formation of fold mountains and block mountains.",
+    "discusses the process of formation of volcanic mountains and locates important mountains on the world map.",
+    "describes the importance of mountains in our life.",
+    "compares and describes the formation and characteristics of valleys and plateaus.",
+    "discusses the effects of geography on the history of our country.",
+    "explains how landforms affect the lives of people."
+  ]
+}

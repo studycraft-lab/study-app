@@ -49,6 +49,35 @@ describe("ParentLibrary", () => {
     expect(screen.getByText("Major Water Bodies")).toBeInTheDocument();
   });
 
+  it("requires confirmation and deletes only the selected bank version", async () => {
+    let chapters = [
+      { id: "biology-v1", board: "School Curriculum", grade: 6, subject: "Biology", chapterTitle: "The Cell", bankVersion: 1, questionCount: 52 },
+      { id: "biology-v2", board: "ICSE", grade: 6, subject: "Biology", chapterTitle: "The Cell", bankVersion: 2, questionCount: 52 },
+    ];
+    const fetchMock = vi.spyOn(globalThis, "fetch").mockImplementation(async (input, init) => {
+      const url = String(input);
+      if (url === "/api/parent/question-reports") return new Response(JSON.stringify({ reports: [] }));
+      if (url === "/api/library" && init?.method === "DELETE") {
+        const id = JSON.parse(String(init.body)).id;
+        chapters = chapters.filter((chapter) => chapter.id !== id);
+        return new Response(JSON.stringify({ deleted: true, id, bankVersion: 1, chapterTitle: "The Cell" }));
+      }
+      return new Response(JSON.stringify({ chapters }));
+    });
+
+    render(<ParentLibrary />);
+    expect(await screen.findByText(/School Curriculum · Grade 6/i)).toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", { name: /delete the cell bank v1/i }));
+    expect(screen.getByText(/This permanently deletes only bank v1/i)).toBeInTheDocument();
+    expect(fetchMock).not.toHaveBeenCalledWith("/api/library", expect.objectContaining({ method: "DELETE" }));
+
+    fireEvent.click(screen.getByRole("button", { name: /confirm delete the cell bank v1/i }));
+    await waitFor(() => expect(fetchMock).toHaveBeenCalledWith("/api/library", expect.objectContaining({ method: "DELETE", body: JSON.stringify({ id: "biology-v1" }) })));
+    expect(await screen.findByText(/Deleted The Cell bank v1/i)).toBeInTheDocument();
+    expect(screen.queryByText(/School Curriculum · Grade 6/i)).not.toBeInTheDocument();
+    expect(screen.getByText(/ICSE · Grade 6/i)).toBeInTheDocument();
+  });
+
   it("confirms that a newer payload replaced an unattempted draft bank", async () => {
     const preview = {
       board: "ICSE", grade: 6, subject: "History", bookTitle: "History and Civics",

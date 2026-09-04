@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import earlyVedicBank from "../../../samples/early-vedic-question-bank.json";
+import theCellBank from "../../../samples/the-cell-question-bank.json";
 import { validateQuestionBank } from "./validate";
 
 describe("validateQuestionBank", () => {
@@ -81,5 +82,29 @@ describe("validateQuestionBank", () => {
 
     expect(result.valid).toBe(false);
     expect(result.errors).toContain(`questions[${questionIndex}] has no source reference supporting its rubric.`);
+  });
+
+  it("rejects active text questions that depend on undisplayed visual context", () => {
+    const bank = structuredClone(earlyVedicBank);
+    const question = bank.questions[0];
+    question.prompt = "Identify one characteristic feature of cell Q in the case study.";
+
+    const result = validateQuestionBank(bank);
+
+    expect(result.valid).toBe(false);
+    expect(result.errors).toContain("questions[0] is active but refers to visual or shared case-study context that the text player does not display.");
+  });
+
+  it("accepts the Cell bank only with unsupported visual questions held for review", () => {
+    const result = validateQuestionBank(theCellBank);
+
+    expect(result.valid).toBe(true);
+    expect(result.errors).toEqual([]);
+    expect(theCellBank.bank.version).toBe(3);
+    expect(theCellBank.questions.filter(({ status }) => status === "review").map(({ id }) => id)).toEqual([
+      "q-028",
+      "q-049",
+      "q-052",
+    ]);
   });
 });

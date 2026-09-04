@@ -1,0 +1,75 @@
+{
+  "reviewVersion": "0.1.0",
+  "bankId": "matter-v1",
+  "bankVersion": 1,
+  "reviewedAt": "2026-09-04T19:45:00+05:30",
+  "reviewerMethod": "Codex visual source-by-source review of the 21-page scan using the repository-local chapter-ingestion workflow, followed by manifest, source-hash, schema, reference and rubric-total checks",
+  "inputs": {
+    "manifest": "samples/matter-chapter-manifest.json",
+    "bank": "samples/matter-question-bank.json",
+    "sourceAssetCount": 1,
+    "pageRange": "19-39",
+    "inferredMetadata": {
+      "board": "ICSE",
+      "grade": 6,
+      "subject": "Chemistry",
+      "bookTitle": "Concise Chemistry Middle School - 6"
+    }
+  },
+  "scope": {
+    "strategy": "Sparse, exercise-led selection: every bank prompt comes from Exercises I-III, but repeated variants are intentionally omitted.",
+    "included": "Foundational Exercise I questions, a broad but non-repetitive Exercise II set, selected end-of-chapter Exercise III questions, and the case study.",
+    "crossedOutExclusions": [
+      "Exercise II B.2(c), cohesive force",
+      "Exercise II B.2(e), Brownian movement",
+      "Exercise II C.2(j), the egg-and-bottle air-pressure activity",
+      "Exercise III A.1(v) and other thermal-expansion assessment material"
+    ],
+    "densityExclusions": "Repeated assertion-reason, fill-in-the-blank, true/false, matching, odd-one-out, definition and crossword variants were sampled or omitted when the same eligible concept was already assessed directly.",
+    "nonExerciseExclusions": "Activities, projects, in-text prompts and newly invented variants were not added."
+  },
+  "gates": {
+    "manifestSchema": "pass",
+    "sourceHashes": "pass",
+    "questionBankSchema": "pass",
+    "deterministicGroundingReview": "pass",
+    "manualGroundingReview": "pass",
+    "rubricBalanceReview": "pass"
+  },
+  "coverage": {
+    "questionCount": 48,
+    "topics": {
+      "matter-foundations": 10,
+      "states-properties": 11,
+      "particles": 12,
+      "interconversion": 14,
+      "physical-chemical-change": 1
+    },
+    "types": {
+      "single_choice": 14,
+      "multi_point": 9,
+      "brief_answer": 16,
+      "one_word": 2,
+      "compare": 4,
+      "true_false_correct": 2,
+      "matching": 1
+    },
+    "difficulties": {
+      "1": 25,
+      "2": 23
+    }
+  },
+  "sourceAssetReadiness": {
+    "runtimeVisualsRequired": false,
+    "originalsVerifiedBySha256": true,
+    "notes": "All child-facing prompts are self-contained text. The copyrighted PDF remains local-only."
+  },
+  "findings": {
+    "blocking": [],
+    "advisory": [
+      "Handwritten strike-throughs were interpreted conservatively; excluded areas are listed explicitly above.",
+      "This is a selective exercise bank, not an exhaustive transcription of every exercise subpart."
+    ]
+  },
+  "decision": "accept"
+}

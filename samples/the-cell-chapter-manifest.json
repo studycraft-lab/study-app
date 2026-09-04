@@ -1,0 +1,156 @@
+{
+  "manifestVersion": "0.1.0",
+  "chapter": {
+    "id": "the-cell",
+    "board": "ICSE",
+    "grade": 6,
+    "subject": "Biology",
+    "bookTitle": "Biology",
+    "chapterNumber": 3,
+    "title": "The Cell"
+  },
+  "sourcePolicy": {
+    "originals": "local-only",
+    "repositoryCopies": false,
+    "applicationStorage": "not-uploaded",
+    "runtimeStrategy": "required-regions",
+    "notes": "Keep the copyrighted source PDF outside Git. Text questions need no runtime source. Two diagram-labeling drafts require newly prepared, unlabelled private crops before activation."
+  },
+  "assets": [
+    {
+      "id": "source-01",
+      "fileName": "Biology The Cell.pdf",
+      "sha256": "e25dea1fb949b0107b918a6d96c8d0f4b8d0ffb5902ffd8c7923b0cbea20e269",
+      "width": 2447,
+      "height": 3214,
+      "pages": [
+        {
+          "id": "page-34",
+          "pageNumber": 34,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-35",
+          "pageNumber": 35,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-36",
+          "pageNumber": 36,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-37",
+          "pageNumber": 37,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-38",
+          "pageNumber": 38,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-39",
+          "pageNumber": 39,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-40",
+          "pageNumber": 40,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-41",
+          "pageNumber": 41,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-42",
+          "pageNumber": 42,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-43",
+          "pageNumber": 43,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-44",
+          "pageNumber": 44,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-45",
+          "pageNumber": 45,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        }
+      ]
+    }
+  ],
+  "learningOutcomes": [
+    "identify the difference in unicellular and multicellular organisms and cite examples;",
+    "observe cells (plant and animal) under microscope and discuss in class;",
+    "identify the different cell organelles (cell wall, cell membrane, nucleus, chloroplast, vacuole) and learn about their primary functions;",
+    "distinguish and draw diagrams of a plant cell and an animal cell."
+  ]
+}

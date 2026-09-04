@@ -1,0 +1,247 @@
+{
+  "manifestVersion": "0.1.0",
+  "chapter": {
+    "id": "matter",
+    "board": "ICSE",
+    "grade": 6,
+    "subject": "Chemistry",
+    "bookTitle": "Concise Chemistry Middle School - 6",
+    "chapterNumber": 3,
+    "title": "Matter"
+  },
+  "sourcePolicy": {
+    "originals": "local-only",
+    "repositoryCopies": false,
+    "applicationStorage": "not-uploaded",
+    "runtimeStrategy": "none",
+    "notes": "Keep the copyrighted source PDF outside Git. The bank uses self-contained text questions copied or minimally adapted from Exercises I-III; crossed-out syllabus portions, activities and projects are excluded."
+  },
+  "assets": [
+    {
+      "id": "source-01",
+      "fileName": "Chemistry Matter.pdf",
+      "sha256": "3bd942d2cab24ad6da6821aa9f79bcbc5b7cab51bc1738bc87adaa5c4b830741",
+      "width": 2428,
+      "height": 3214,
+      "pages": [
+        {
+          "id": "page-19",
+          "pageNumber": 19,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-20",
+          "pageNumber": 20,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-21",
+          "pageNumber": 21,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-22",
+          "pageNumber": 22,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-23",
+          "pageNumber": 23,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-24",
+          "pageNumber": 24,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-25",
+          "pageNumber": 25,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-26",
+          "pageNumber": 26,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-27",
+          "pageNumber": 27,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-28",
+          "pageNumber": 28,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-29",
+          "pageNumber": 29,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-30",
+          "pageNumber": 30,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-31",
+          "pageNumber": 31,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-32",
+          "pageNumber": 32,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-33",
+          "pageNumber": 33,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-34",
+          "pageNumber": 34,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-35",
+          "pageNumber": 35,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-36",
+          "pageNumber": 36,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-37",
+          "pageNumber": 37,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-38",
+          "pageNumber": 38,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-39",
+          "pageNumber": 39,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        }
+      ]
+    }
+  ],
+  "learningOutcomes": [
+    "define matter and distinguish living, non-living, natural and man-made matter",
+    "describe particles of matter and the three states of matter",
+    "compare the shape, volume, flow, spacing, density and diffusion of solids, liquids and gases",
+    "identify common changes of state and the conditions that cause them",
+    "distinguish melting, boiling, evaporation, condensation, solidification, sublimation, gas and vapour"
+  ]
+}

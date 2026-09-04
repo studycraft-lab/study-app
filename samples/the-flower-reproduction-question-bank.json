@@ -1,0 +1,3906 @@
+{
+  "bank": {
+    "board": "ICSE",
+    "bookTitle": "Concise Biology Middle School - 6",
+    "chapterNumber": 2,
+    "grade": 6,
+    "id": "the-flower-reproduction-v1",
+    "status": "reviewed",
+    "subject": "Biology",
+    "title": "The Flower - Reproduction Portion",
+    "version": 1
+  },
+  "questions": [
+    {
+      "answer": {
+        "correctOptionId": "style-stigma-ovary"
+      },
+      "difficulty": 1,
+      "explanation": "A carpel has a stigma, style and ovary.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose the scientifically correct option.",
+      "id": "q-001",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "The carpel consists of:",
+      "response": {
+        "options": [
+          {
+            "id": "anther-filament",
+            "text": "anthers and filaments"
+          },
+          {
+            "id": "style-stigma-ovary",
+            "text": "style, stigma and ovary"
+          },
+          {
+            "id": "ovary-anther-gamete",
+            "text": "ovary, anther and female gamete"
+          },
+          {
+            "id": "ovary-stigma-anther",
+            "text": "ovary, stigma and anther"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-29",
+          "regionId": "exercise-i",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-21",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "reproductive-structures"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "anthers"
+      },
+      "difficulty": 1,
+      "explanation": "The anther produces pollen grains containing the male gametes.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose the scientifically correct option.",
+      "id": "q-002",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Pollen grains are produced in:",
+      "response": {
+        "options": [
+          {
+            "id": "flowers",
+            "text": "flowers"
+          },
+          {
+            "id": "ovaries",
+            "text": "ovaries"
+          },
+          {
+            "id": "anthers",
+            "text": "anthers"
+          },
+          {
+            "id": "fruits",
+            "text": "fruits"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-29",
+          "regionId": "exercise-i",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-21",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "reproductive-structures"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "ovules"
+      },
+      "difficulty": 1,
+      "explanation": "After fertilisation, ovules develop into seeds.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose the scientifically correct option.",
+      "id": "q-003",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Seeds are produced from the:",
+      "response": {
+        "options": [
+          {
+            "id": "ovules",
+            "text": "ovules"
+          },
+          {
+            "id": "ovary",
+            "text": "ovary"
+          },
+          {
+            "id": "stigma",
+            "text": "stigma"
+          },
+          {
+            "id": "pollen",
+            "text": "pollen grains"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-29",
+          "regionId": "exercise-i",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-24",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "fruit-and-seed-formation"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "all-three"
+      },
+      "difficulty": 1,
+      "explanation": "Seeds need water, oxygen and a favourable temperature to germinate.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose the scientifically correct option.",
+      "id": "q-004",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Which set gives all the conditions necessary for seed germination?",
+      "response": {
+        "options": [
+          {
+            "id": "all-three",
+            "text": "water, oxygen and a suitable temperature"
+          },
+          {
+            "id": "water-oxygen",
+            "text": "water and oxygen only"
+          },
+          {
+            "id": "water-temperature",
+            "text": "water and a suitable temperature only"
+          },
+          {
+            "id": "oxygen-warmth",
+            "text": "oxygen and warmth only"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-29",
+          "regionId": "exercise-i",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-26",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-27",
+          "supports": [
+            "answer",
+            "rubric",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "germination"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "pollination"
+      },
+      "difficulty": 1,
+      "explanation": "Pollination is the transfer of pollen grains from anther to stigma.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose the scientifically correct option.",
+      "id": "q-005",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "The transfer of pollen grains from a ripe anther to a stigma is called:",
+      "response": {
+        "options": [
+          {
+            "id": "pollination",
+            "text": "pollination"
+          },
+          {
+            "id": "fertilisation",
+            "text": "fertilisation"
+          },
+          {
+            "id": "reproduction",
+            "text": "reproduction"
+          },
+          {
+            "id": "none",
+            "text": "none of these"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-29",
+          "regionId": "exercise-i",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-22",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "pollination"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "coat-embryo-cotyledons"
+      },
+      "difficulty": 1,
+      "explanation": "A seed has a protective seed coat, an embryo and one or two cotyledons.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose the scientifically correct option.",
+      "id": "q-006",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "A seed consists of:",
+      "response": {
+        "options": [
+          {
+            "id": "embryo",
+            "text": "an embryo only"
+          },
+          {
+            "id": "coat-embryo-cotyledons",
+            "text": "a seed coat, embryo and one or two cotyledons"
+          },
+          {
+            "id": "embryo-coat",
+            "text": "an embryo and seed coat only"
+          },
+          {
+            "id": "coat-endosperm",
+            "text": "a seed coat and endosperm only"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-29",
+          "regionId": "exercise-i",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-25",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "seed-structure"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "plumule-radicle"
+      },
+      "difficulty": 1,
+      "explanation": "The embryo is represented by the plumule and radicle.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose the scientifically correct option.",
+      "id": "q-007",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "The embryo of a seed consists of:",
+      "response": {
+        "options": [
+          {
+            "id": "plumule",
+            "text": "plumule only"
+          },
+          {
+            "id": "all-three",
+            "text": "radicle, plumule and cotyledons"
+          },
+          {
+            "id": "plumule-radicle",
+            "text": "plumule and radicle"
+          },
+          {
+            "id": "radicle-cotyledons",
+            "text": "radicle and cotyledons"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-29",
+          "regionId": "exercise-i",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-25",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "seed-structure"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "radicle"
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "The radicle develops into the root system.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Complete the sentence with the precise biological term or terms.",
+      "id": "q-008",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "The root system arises from the _____ in the embryo.",
+      "response": {
+        "caseSensitive": false
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "regionId": "exercises-ii-viii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-25",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "seed-structure",
+        "germination"
+      ],
+      "type": "fill_blank",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "seeds"
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "Ovules become seeds after fertilisation.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Complete the sentence with the precise biological term or terms.",
+      "id": "q-009",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Ovules grow into _____ after fertilisation.",
+      "response": {
+        "caseSensitive": false
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "regionId": "exercises-ii-viii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-24",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "fruit-and-seed-formation"
+      ],
+      "type": "fill_blank",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "shoot system",
+          "shoot"
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "The plumule develops into the shoot system.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Complete the sentence with the precise biological term or terms.",
+      "id": "q-010",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "During germination, the plumule gives rise to the _____.",
+      "response": {
+        "caseSensitive": false
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "regionId": "exercises-ii-viii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-25",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-26",
+          "supports": [
+            "answer",
+            "rubric",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "germination"
+      ],
+      "type": "fill_blank",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "ripened",
+          "ripe"
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "A fruit is the ripened ovary.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Complete the sentence with the precise biological term or terms.",
+      "id": "q-011",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "A fruit is a _____ ovary.",
+      "response": {
+        "caseSensitive": false
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "regionId": "exercises-ii-viii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-24",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "fruit-and-seed-formation"
+      ],
+      "type": "fill_blank",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "embryo, cotyledons and seed coat",
+          "an embryo, one or two cotyledons and a seed coat",
+          "seed coat, embryo and cotyledons"
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "A mature seed contains an embryo, one or two cotyledons and a protective seed coat.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Complete the sentence with the precise biological term or terms.",
+      "id": "q-012",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "A mature seed consists of _____, _____ and _____.",
+      "response": {
+        "caseSensitive": false
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "regionId": "exercises-ii-viii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-25",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "seed-structure"
+      ],
+      "type": "fill_blank",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "epigeal",
+          "epigeal germination"
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "Bean shows epigeal germination.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Complete the sentence with the precise biological term or terms.",
+      "id": "q-013",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "In bean seed, germination is _____.",
+      "response": {
+        "caseSensitive": false
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "regionId": "exercises-ii-viii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-27",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-28",
+          "supports": [
+            "answer",
+            "rubric",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "germination-types"
+      ],
+      "type": "fill_blank",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "anthers",
+          "the anthers"
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "Pollen grains are produced in anthers.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Complete the sentence with the precise biological term or terms.",
+      "id": "q-014",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Pollen grains are produced in _____.",
+      "response": {
+        "caseSensitive": false
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "regionId": "exercises-ii-viii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-21",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "reproductive-structures"
+      ],
+      "type": "fill_blank",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "pea"
+      },
+      "difficulty": 1,
+      "explanation": "Pea is a dicot seed; maize, wheat and rice are monocot grains.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose the scientifically correct option.",
+      "id": "q-015",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Find the odd one out: maize, wheat, pea, rice.",
+      "response": {
+        "options": [
+          {
+            "id": "maize",
+            "text": "maize"
+          },
+          {
+            "id": "wheat",
+            "text": "wheat"
+          },
+          {
+            "id": "pea",
+            "text": "pea"
+          },
+          {
+            "id": "rice",
+            "text": "rice"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "regionId": "exercises-ii-viii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-26",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "seed-types"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "filament"
+      },
+      "difficulty": 1,
+      "explanation": "Filament is part of a stamen; style, ovary and stigma are parts of a carpel.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose the scientifically correct option.",
+      "id": "q-016",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Find the odd one out: style, ovary, filament, stigma.",
+      "response": {
+        "options": [
+          {
+            "id": "style",
+            "text": "style"
+          },
+          {
+            "id": "ovary",
+            "text": "ovary"
+          },
+          {
+            "id": "filament",
+            "text": "filament"
+          },
+          {
+            "id": "stigma",
+            "text": "stigma"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "regionId": "exercises-ii-viii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-21",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "reproductive-structures"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "In epigeal germination, the hypocotyl elongates and pushes the cotyledons above the soil; bean is an example. In hypogeal germination, the epicotyl elongates and the cotyledons remain below the soil; maize is an example."
+      },
+      "difficulty": 2,
+      "explanation": "The position of the cotyledons and the faster-growing axis distinguish the two patterns.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Write the differences in matching points for the two sides.",
+      "id": "q-017",
+      "marks": 3,
+      "origin": "end_exercise",
+      "prompt": "Differentiate between epigeal germination and hypogeal germination.",
+      "response": {
+        "recommendedPoints": 3
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "states where the cotyledons are found in each type",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "identifies hypocotyl elongation in epigeal and epicotyl elongation in hypogeal",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "gives a supported example of each type",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "regionId": "exercises-ii-viii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-27",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-28",
+          "supports": [
+            "answer",
+            "rubric",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "germination-types"
+      ],
+      "type": "compare",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "A dicot seed has two cotyledons, usually lacks endosperm at maturity, stores food in cotyledons and includes gram, kidney bean and pea. A monocot seed has one cotyledon, has endosperm, stores food in the endosperm and includes wheat, rice and maize."
+      },
+      "difficulty": 2,
+      "explanation": "Dicot and monocot seeds differ chiefly in cotyledon number and food-storage arrangement.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Write the differences in matching points for the two sides.",
+      "id": "q-018",
+      "marks": 4,
+      "origin": "end_exercise",
+      "prompt": "Differentiate between a dicot seed and a monocot seed.",
+      "response": {
+        "recommendedPoints": 4
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "compares the number of cotyledons",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "compares the usual presence of endosperm",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "compares the site of stored food",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "gives supported examples of both types",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "regionId": "exercises-ii-viii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-26",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "seed-types"
+      ],
+      "type": "compare",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "A seed develops from an ovule and contains the embryo with cotyledon or cotyledons inside a seed coat. A fruit develops from the ovary and consists of the fruit wall or pericarp enclosing seeds."
+      },
+      "difficulty": 2,
+      "explanation": "Fertilisation turns ovules into seeds and the ovary into a fruit.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Write the differences in matching points for the two sides.",
+      "id": "q-019",
+      "marks": 3,
+      "origin": "end_exercise",
+      "prompt": "Differentiate between a seed and a fruit.",
+      "response": {
+        "recommendedPoints": 3
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "states that seed develops from ovule while fruit develops from ovary",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "describes the main parts of a seed",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "describes fruit as pericarp or fruit wall enclosing seeds",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "regionId": "exercises-ii-viii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-24",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-25",
+          "supports": [
+            "answer",
+            "rubric",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "fruit-and-seed-formation",
+        "seed-structure"
+      ],
+      "type": "compare",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "The embryo is the baby plant inside a seed, represented by the plumule and radicle."
+      },
+      "difficulty": 1,
+      "explanation": "The embryo is the young plant within the seed.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer in short, separate scientific points.",
+      "id": "q-020",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Define embryo.",
+      "response": {
+        "recommendedSentences": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "defines the embryo as the baby plant inside a seed, made up of plumule and radicle",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "regionId": "exercises-ii-viii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-25",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "seed-structure"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Seed germination is the process by which the embryo of a seed becomes active and grows into a new plant."
+      },
+      "difficulty": 1,
+      "explanation": "Germination begins the growth of a new plant from the seed embryo.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer in short, separate scientific points.",
+      "id": "q-021",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Define seed germination.",
+      "response": {
+        "recommendedSentences": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "states that the seed embryo becomes active and grows into a new plant",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "regionId": "exercises-ii-viii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-26",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "germination"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Pollination is the transfer of pollen grains from the anther to the stigma of the same or another flower."
+      },
+      "difficulty": 1,
+      "explanation": "The defining transfer in pollination is from anther to stigma.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer in short, separate scientific points.",
+      "id": "q-022",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Define pollination.",
+      "response": {
+        "recommendedSentences": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "states that pollen grains are transferred from anther to stigma",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "regionId": "exercises-ii-viii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-22",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "pollination"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "The plumule is the part of the seed embryo that develops into the shoot system."
+      },
+      "difficulty": 1,
+      "explanation": "During germination, the plumule grows upward and forms the shoot.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer in short, separate scientific points.",
+      "id": "q-023",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Define plumule.",
+      "response": {
+        "recommendedSentences": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "identifies plumule as the embryonic part that forms the shoot system",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "regionId": "exercises-ii-viii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-25",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-26",
+          "supports": [
+            "answer",
+            "rubric",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "seed-structure",
+        "germination"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "The radicle develops into the root system."
+      },
+      "difficulty": 1,
+      "explanation": "The radicle is the root-forming part of the embryo.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer in short, separate scientific points.",
+      "id": "q-024",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "State the function of the radicle.",
+      "response": {
+        "recommendedSentences": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "states that the radicle forms the root system",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "regionId": "exercises-ii-viii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-25",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-26",
+          "supports": [
+            "answer",
+            "rubric",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "seed-structure",
+        "germination"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "The plumule develops into the shoot system and first leaves."
+      },
+      "difficulty": 1,
+      "explanation": "The plumule is the shoot-forming part of the embryo.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer in short, separate scientific points.",
+      "id": "q-025",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "State the function of the plumule.",
+      "response": {
+        "recommendedSentences": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "states that the plumule forms the shoot system or first leaves",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "regionId": "exercises-ii-viii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-25",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-26",
+          "supports": [
+            "answer",
+            "rubric",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "seed-structure",
+        "germination"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Cotyledons store reserve food for the developing plant."
+      },
+      "difficulty": 1,
+      "explanation": "Stored food in cotyledons supports the young plant.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer in short, separate scientific points.",
+      "id": "q-026",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "State the function of cotyledons.",
+      "response": {
+        "recommendedSentences": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "states that cotyledons store reserve food for the developing plant",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "regionId": "exercises-ii-viii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-25",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "seed-structure"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "The endosperm stores food that is used for growth, especially in monocot seeds such as maize."
+      },
+      "difficulty": 1,
+      "explanation": "In maize, stored food in the endosperm supports germination.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer in short, separate scientific points.",
+      "id": "q-027",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "State the function of endosperm.",
+      "response": {
+        "recommendedSentences": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "states that endosperm stores food used during growth",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "regionId": "exercises-ii-viii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-26",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-28",
+          "supports": [
+            "answer",
+            "rubric",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "seed-structure",
+        "seed-types"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "The seed coat protects the embryo and the other parts inside the seed."
+      },
+      "difficulty": 1,
+      "explanation": "The seed coat is the protective covering of a seed.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer in short, separate scientific points.",
+      "id": "q-028",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "State the function of the seed coat.",
+      "response": {
+        "recommendedSentences": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "states that the seed coat protects the seed or embryo",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "regionId": "exercises-ii-viii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-25",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "seed-structure"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Seed -> germination -> seedling -> mature plant -> flowering."
+      },
+      "difficulty": 1,
+      "explanation": "A seed germinates into a seedling, which grows into a mature plant that produces flowers.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer in short, separate scientific points.",
+      "id": "q-029",
+      "marks": 2,
+      "origin": "end_exercise",
+      "prompt": "Arrange these terms in a logical sequence: seed, seedling, mature plant, flowering, germination.",
+      "response": {
+        "recommendedSentences": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "places seed, germination and seedling in the correct order",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "places mature plant and flowering after the seedling",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "regionId": "exercises-ii-viii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-26",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-27",
+          "supports": [
+            "answer",
+            "rubric",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-21",
+          "supports": [
+            "answer",
+            "rubric",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "germination",
+        "sexual-reproduction"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Anther -> pollen grain -> stigma (pollination) -> fertilisation."
+      },
+      "difficulty": 1,
+      "explanation": "Pollen forms in the anther, reaches the stigma during pollination, and fertilisation follows.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer in short, separate scientific points.",
+      "id": "q-030",
+      "marks": 2,
+      "origin": "end_exercise",
+      "prompt": "Arrange these terms in a logical sequence: pollination, pollen grain, anther, stigma, fertilisation.",
+      "response": {
+        "recommendedSentences": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "places anther and pollen grain before the stigma transfer called pollination",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "places fertilisation after pollination",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "regionId": "exercises-ii-viii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-22",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-24",
+          "supports": [
+            "answer",
+            "rubric",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "pollination",
+        "fertilisation"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "After fertilisation: ovule -> seed formation, and ovary -> fruit development."
+      },
+      "difficulty": 1,
+      "explanation": "The printed terms form two linked outcomes after fertilisation rather than one straight line.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer in short, separate scientific points.",
+      "id": "q-031",
+      "marks": 2,
+      "origin": "end_exercise",
+      "prompt": "Show the logical sequence for these terms: ovule, seed formation, fertilisation, ovary, fruit development.",
+      "response": {
+        "recommendedSentences": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "shows fertilisation followed by the ovule developing into a seed",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "shows fertilisation followed by the ovary developing into a fruit",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "regionId": "exercises-ii-viii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-24",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "fruit-and-seed-formation",
+        "fertilisation"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Sexual reproduction takes place in flowers."
+      },
+      "difficulty": 1,
+      "explanation": "A flower is the reproductive organ of a plant.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer in short, separate scientific points.",
+      "id": "q-032",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Where does sexual reproduction take place in plants?",
+      "response": {
+        "recommendedSentences": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "states that sexual reproduction takes place in flowers",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "regionId": "exercises-ii-viii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-21",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "sexual-reproduction"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Stamens are the male reproductive organs and their anthers produce pollen grains containing male gametes. The carpel is the female reproductive organ; its ovary contains ovules with female gametes."
+      },
+      "difficulty": 1,
+      "explanation": "Stamens supply the male gametes and the carpel contains the female gamete in an ovule.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer in short, separate scientific points.",
+      "id": "q-033",
+      "marks": 2,
+      "origin": "end_exercise",
+      "prompt": "What are the functions of stamens and carpels in reproduction?",
+      "response": {
+        "recommendedSentences": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "states the male reproductive role of stamens or anthers in producing pollen or male gametes",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "states the female reproductive role of the carpel or ovary in containing ovules or female gametes",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "regionId": "exercises-ii-viii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-21",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "reproductive-structures",
+        "sexual-reproduction"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "The flower is the plant's reproductive organ where sexual reproduction occurs. After fertilisation, it gives rise to fruits and seeds."
+      },
+      "difficulty": 1,
+      "explanation": "Flowers enable sexual reproduction and the production of the next generation through seeds.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer in short, separate scientific points.",
+      "id": "q-034",
+      "marks": 2,
+      "origin": "end_exercise",
+      "prompt": "Why is a flower important to a plant?",
+      "response": {
+        "recommendedSentences": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "identifies the flower as the plant's reproductive organ or site of sexual reproduction",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "connects fertilisation in the flower with formation of fruits and seeds",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "regionId": "exercises-ii-viii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-21",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-24",
+          "supports": [
+            "answer",
+            "rubric",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "sexual-reproduction",
+        "fruit-and-seed-formation"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Any three of: wind, water, insects, birds or other animals."
+      },
+      "difficulty": 1,
+      "explanation": "The section lists wind, water, insects, birds and other animals as agents of pollination.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer in short, separate scientific points.",
+      "id": "q-035",
+      "marks": 3,
+      "origin": "end_exercise",
+      "prompt": "Name any three agents of pollination.",
+      "response": {
+        "recommendedSentences": 1
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "names one valid agent: wind, water, insects, birds or other animals",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "names a second distinct valid agent",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "names a third distinct valid agent",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "regionId": "exercises-ii-viii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-22",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "pollination"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "A fruit consists of the fruit wall or pericarp and seeds. In a fleshy fruit such as mango, the pericarp has an outer epicarp, a fleshy mesocarp and an inner hard endocarp."
+      },
+      "difficulty": 1,
+      "explanation": "The fruit wall develops from the ovary wall and may form three layers in mango.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer in short, separate scientific points.",
+      "id": "q-036",
+      "marks": 3,
+      "origin": "end_exercise",
+      "prompt": "Describe the parts of a fruit.",
+      "response": {
+        "recommendedSentences": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "identifies the fruit wall or pericarp and seeds as the two main parts",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "identifies epicarp as the outer layer and mesocarp as the middle fleshy layer",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "identifies endocarp as the inner hard layer containing the seed",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "regionId": "exercises-ii-viii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-25",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "fruit-and-seed-formation"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "A seed has a protective seed coat, one or two cotyledons and an embryo made up of the plumule and radicle."
+      },
+      "difficulty": 1,
+      "explanation": "These structures protect, nourish and form the young plant.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer in short, separate scientific points.",
+      "id": "q-037",
+      "marks": 3,
+      "origin": "end_exercise",
+      "prompt": "Name the different parts of a seed.",
+      "response": {
+        "recommendedSentences": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "names the seed coat",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "names one or two cotyledons",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "names the embryo and identifies its plumule and radicle",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "regionId": "exercises-ii-viii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-25",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "seed-structure"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "A stamen has an anther and filament. A pistil or carpel has a stigma, style and ovary."
+      },
+      "difficulty": 1,
+      "explanation": "The stamen is the male organ and the pistil or carpel is the female organ.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer in short, separate scientific points.",
+      "id": "q-038",
+      "marks": 2,
+      "origin": "end_exercise",
+      "prompt": "Name the different parts of the stamen and pistil.",
+      "response": {
+        "recommendedSentences": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "names anther and filament as parts of a stamen",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "names stigma, style and ovary as parts of a pistil or carpel",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "regionId": "exercises-ii-viii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-21",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "reproductive-structures"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Seed germination requires water, oxygen or air, and a favourable temperature."
+      },
+      "difficulty": 1,
+      "explanation": "Water activates growth processes, oxygen supports respiration and a favourable temperature supports seedling growth.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer in short, separate scientific points.",
+      "id": "q-039",
+      "marks": 3,
+      "origin": "end_exercise",
+      "prompt": "Mention the conditions necessary for seed germination.",
+      "response": {
+        "recommendedSentences": 1
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "names water",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "names oxygen or air",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "names a favourable or suitable temperature",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "regionId": "exercises-ii-viii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-26",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-27",
+          "supports": [
+            "answer",
+            "rubric",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "germination"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "In bean, water uptake bursts the seed coat, the radicle grows downward, the plumule emerges between the two cotyledons, and the cotyledons rise above the soil, supply food, then shrivel and fall. In maize, the seed absorbs water, the radicle forms the primary root, the plumule forms leaves, stored food from the endosperm is used, and the cotyledon stays below ground."
+      },
+      "difficulty": 2,
+      "explanation": "Bean shows epigeal germination, whereas maize shows hypogeal germination.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer in short, separate scientific points.",
+      "id": "q-040",
+      "marks": 4,
+      "origin": "end_exercise",
+      "prompt": "Describe the process of germination in bean and maize seeds.",
+      "response": {
+        "recommendedSentences": 2
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "describes water uptake and radicle or root development in bean",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "describes plumule growth and the above-ground cotyledons in bean",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "describes radicle and plumule development in maize",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "states that maize uses endosperm food and its cotyledon remains below ground",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "regionId": "exercises-ii-viii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-27",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-28",
+          "supports": [
+            "answer",
+            "rubric",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "germination",
+        "germination-types"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "In epigeal germination, the hypocotyl elongates and lifts the cotyledons above the soil; bean is an example. In hypogeal germination, the epicotyl elongates and the cotyledons stay below the soil; maize is an example."
+      },
+      "difficulty": 2,
+      "explanation": "Cotyledon position and which axis elongates distinguish the two types.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Write the differences in matching points for the two sides.",
+      "id": "q-041",
+      "marks": 4,
+      "origin": "end_exercise",
+      "prompt": "Describe the two types of seed germination.",
+      "response": {
+        "recommendedPoints": 4
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "defines epigeal germination by cotyledons rising above the soil",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "connects epigeal germination with hypocotyl elongation and a supported example",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "defines hypogeal germination by cotyledons remaining below the soil",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "connects hypogeal germination with epicotyl elongation and a supported example",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-30",
+          "regionId": "exercises-ii-viii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-27",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-28",
+          "supports": [
+            "answer",
+            "rubric",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "germination-types"
+      ],
+      "type": "compare",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "flower"
+      },
+      "difficulty": 1,
+      "explanation": "The flower is the reproductive organ of the plant.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose the scientifically correct option.",
+      "id": "q-042",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Look at the flower diagram. Which plant part is reproductive?",
+      "response": {
+        "options": [
+          {
+            "id": "leaf",
+            "text": "leaf"
+          },
+          {
+            "id": "seed",
+            "text": "seed"
+          },
+          {
+            "id": "flower",
+            "text": "flower"
+          },
+          {
+            "id": "stem",
+            "text": "stem"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-31",
+          "regionId": "exercises-ix-xiii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-21",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "sexual-reproduction"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "female"
+      },
+      "difficulty": 1,
+      "explanation": "The carpel or pistil is the female reproductive organ.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose the scientifically correct option.",
+      "id": "q-043",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "The carpel or pistil is a _____ reproductive organ.",
+      "response": {
+        "options": [
+          {
+            "id": "male",
+            "text": "male"
+          },
+          {
+            "id": "female",
+            "text": "female"
+          },
+          {
+            "id": "both",
+            "text": "both male and female"
+          },
+          {
+            "id": "none",
+            "text": "neither"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-31",
+          "regionId": "exercises-ix-xiii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-21",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "reproductive-structures"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "ovule"
+      },
+      "difficulty": 1,
+      "explanation": "The female gamete or egg cell lies inside an ovule.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose the scientifically correct option.",
+      "id": "q-044",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "The female sex cell is present inside the:",
+      "response": {
+        "options": [
+          {
+            "id": "ovule",
+            "text": "ovule"
+          },
+          {
+            "id": "stamen",
+            "text": "stamen"
+          },
+          {
+            "id": "stigma",
+            "text": "stigma"
+          },
+          {
+            "id": "filament",
+            "text": "filament"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-31",
+          "regionId": "exercises-ix-xiii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-21",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-24",
+          "supports": [
+            "answer",
+            "rubric",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "reproductive-structures",
+        "fertilisation"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "stamen"
+      },
+      "difficulty": 1,
+      "explanation": "Each stamen consists of an anther and a filament.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose the scientifically correct option.",
+      "id": "q-045",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "The anther and filament together form a:",
+      "response": {
+        "options": [
+          {
+            "id": "stigma",
+            "text": "stigma"
+          },
+          {
+            "id": "stamen",
+            "text": "stamen"
+          },
+          {
+            "id": "ovary",
+            "text": "ovary"
+          },
+          {
+            "id": "gynoecium",
+            "text": "gynoecium"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-31",
+          "regionId": "exercises-ix-xiii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-21",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "reproductive-structures"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "both-explains"
+      },
+      "difficulty": 1,
+      "explanation": "Maize is wind-pollinated, and its light, dry pollen can be carried by wind.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose the scientifically correct option.",
+      "id": "q-046",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Assertion: Maize plants are pollinated by wind. Reason: Wind-pollinated pollen grains are light in weight. Choose the correct relationship.",
+      "response": {
+        "options": [
+          {
+            "id": "both-explains",
+            "text": "Both are true, and the reason correctly explains the assertion."
+          },
+          {
+            "id": "both-not-explains",
+            "text": "Both are true, but the reason does not explain the assertion."
+          },
+          {
+            "id": "a-true-r-false",
+            "text": "The assertion is true, but the reason is false."
+          },
+          {
+            "id": "a-false-r-true",
+            "text": "The assertion is false, but the reason is true."
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-31",
+          "regionId": "exercises-ix-xiii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-23",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "pollination"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "both-explains"
+      },
+      "difficulty": 1,
+      "explanation": "Bright colours help insect-pollinated flowers attract insects.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose the scientifically correct option.",
+      "id": "q-047",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Assertion: Petals help to attract insects for pollination. Reason: Petals are brightly coloured parts of a flower. Choose the correct relationship.",
+      "response": {
+        "options": [
+          {
+            "id": "both-explains",
+            "text": "Both are true, and the reason correctly explains the assertion."
+          },
+          {
+            "id": "both-not-explains",
+            "text": "Both are true, but the reason does not explain the assertion."
+          },
+          {
+            "id": "a-true-r-false",
+            "text": "The assertion is true, but the reason is false."
+          },
+          {
+            "id": "a-false-r-true",
+            "text": "The assertion is false, but the reason is true."
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-31",
+          "regionId": "exercises-ix-xiii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-22",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "pollination"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "sonu-abhay"
+      },
+      "difficulty": 1,
+      "explanation": "Dahlia, rose, salvia and sunflower are listed as insect-pollinated; maize and wheat are wind-pollinated.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose the scientifically correct option.",
+      "id": "q-048",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Students named examples of insect-pollinated flowers. Raj: sunflower and maize; Sonu: dahlia and rose; Lata: salvia and wheat; Abhay: rose and sunflower. Who were correct?",
+      "response": {
+        "options": [
+          {
+            "id": "raj-lata",
+            "text": "Raj and Lata"
+          },
+          {
+            "id": "sonu-abhay",
+            "text": "Sonu and Abhay"
+          },
+          {
+            "id": "lata-abhay",
+            "text": "Lata and Abhay"
+          },
+          {
+            "id": "raj-sonu",
+            "text": "Raj and Sonu"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-31",
+          "regionId": "exercises-ix-xiii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-22",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-23",
+          "supports": [
+            "answer",
+            "rubric",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "pollination"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "self"
+      },
+      "difficulty": 1,
+      "explanation": "Transfer within the same flower is self-pollination.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose the scientifically correct option.",
+      "id": "q-049",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Pollen grains are transferred from the anther to the stigma of the same flower. Which process is this?",
+      "response": {
+        "options": [
+          {
+            "id": "cross",
+            "text": "cross-pollination"
+          },
+          {
+            "id": "self",
+            "text": "self-pollination"
+          },
+          {
+            "id": "wind",
+            "text": "wind pollination"
+          },
+          {
+            "id": "water",
+            "text": "water pollination"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-32",
+          "regionId": "exercise-xiii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-22",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "pollination"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "bright-scented"
+      },
+      "difficulty": 1,
+      "explanation": "Insect-pollinated flowers are brightly coloured and often scented.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose the scientifically correct option.",
+      "id": "q-050",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Which flower feature is most likely to attract bees for pollination?",
+      "response": {
+        "options": [
+          {
+            "id": "small-green",
+            "text": "small green flowers"
+          },
+          {
+            "id": "bright-scented",
+            "text": "brightly coloured flowers with strong fragrances"
+          },
+          {
+            "id": "large-white-no-scent",
+            "text": "large white flowers with no scent"
+          },
+          {
+            "id": "dull-no-scent",
+            "text": "dull flowers with no fragrance"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-32",
+          "regionId": "exercise-xiii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-22",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "pollination"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "ineffective-pollination"
+      },
+      "difficulty": 1,
+      "explanation": "Without functional stamens, the flower cannot produce and release pollen normally, so pollination is directly affected.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose the scientifically correct option.",
+      "id": "q-051",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "A plant produces flowers without functional stamens. What is the most direct effect?",
+      "response": {
+        "options": [
+          {
+            "id": "ineffective-pollination",
+            "text": "ineffective pollination"
+          },
+          {
+            "id": "incomplete-fruit",
+            "text": "incomplete fruit development"
+          },
+          {
+            "id": "abnormal-seed",
+            "text": "abnormal seed formation"
+          },
+          {
+            "id": "reduced-colour",
+            "text": "reduced flower colour intensity"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-32",
+          "regionId": "exercise-xiii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-21",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-22",
+          "supports": [
+            "answer",
+            "rubric",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "reproductive-structures",
+        "pollination"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "p-s"
+      },
+      "difficulty": 1,
+      "explanation": "P and S are correct. Seeds develop from ovules, and epicarp—not mesocarp—is the outer thin layer.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Choose the scientifically correct option.",
+      "id": "q-052",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Which statements about fruits and seeds are correct? P: The pericarp in mango is divided into epicarp, mesocarp and endocarp. Q: Seeds develop from the ovary after fertilisation. R: Mesocarp is the outer thin layer of a fleshy fruit. S: Cotyledons store food for the developing plant.",
+      "response": {
+        "options": [
+          {
+            "id": "p-q",
+            "text": "P and Q"
+          },
+          {
+            "id": "q-s",
+            "text": "Q and S"
+          },
+          {
+            "id": "r-s",
+            "text": "R and S"
+          },
+          {
+            "id": "p-s",
+            "text": "P and S"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-32",
+          "regionId": "exercise-xiii",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-24",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-25",
+          "supports": [
+            "answer",
+            "rubric",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "fruit-and-seed-formation",
+        "seed-structure"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "subanswers": [
+          {
+            "id": "a",
+            "ideal": "1 stigma; 2 anther; 3 filament; 4 ovary; 5 ovule."
+          },
+          {
+            "id": "b",
+            "ideal": "Stigma (callout 1)."
+          },
+          {
+            "id": "c",
+            "ideal": "Anther (callout 2)."
+          },
+          {
+            "id": "d",
+            "ideal": "Ovule (callout 5)."
+          }
+        ]
+      },
+      "difficulty": 2,
+      "explanation": "The diagram focuses only on the flower parts needed for pollination and fertilisation.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "interaction-pending"
+      },
+      "hint": "Use each number once, then connect the labelled parts with their reproductive roles.",
+      "id": "q-053",
+      "marks": 8,
+      "origin": "end_exercise",
+      "prompt": "Use the numbered flower-reproduction diagram to label the reproductive parts and answer the follow-up questions.",
+      "response": {
+        "subquestions": [
+          {
+            "id": "a",
+            "marks": 5,
+            "prompt": "Label callouts 1-5."
+          },
+          {
+            "id": "b",
+            "marks": 1,
+            "prompt": "Which labelled part receives pollen grains during pollination?"
+          },
+          {
+            "id": "c",
+            "marks": 1,
+            "prompt": "Which labelled part produces pollen grains?"
+          },
+          {
+            "id": "d",
+            "marks": 1,
+            "prompt": "Inside which labelled part is the female gamete present?"
+          }
+        ]
+      },
+      "rubric": {
+        "subrubrics": [
+          {
+            "id": "a",
+            "points": [
+              {
+                "concept": "labels callout 1 as stigma",
+                "id": "a1",
+                "required": true,
+                "weight": 1
+              },
+              {
+                "concept": "labels callout 2 as anther",
+                "id": "a2",
+                "required": true,
+                "weight": 1
+              },
+              {
+                "concept": "labels callout 3 as filament",
+                "id": "a3",
+                "required": true,
+                "weight": 1
+              },
+              {
+                "concept": "labels callout 4 as ovary",
+                "id": "a4",
+                "required": true,
+                "weight": 1
+              },
+              {
+                "concept": "labels callout 5 as ovule",
+                "id": "a5",
+                "required": true,
+                "weight": 1
+              }
+            ]
+          },
+          {
+            "id": "b",
+            "points": [
+              {
+                "concept": "identifies stigma or callout 1",
+                "id": "b1",
+                "required": true,
+                "weight": 1
+              }
+            ]
+          },
+          {
+            "id": "c",
+            "points": [
+              {
+                "concept": "identifies anther or callout 2",
+                "id": "c1",
+                "required": true,
+                "weight": 1
+              }
+            ]
+          },
+          {
+            "id": "d",
+            "points": [
+              {
+                "concept": "identifies ovule or callout 5",
+                "id": "d1",
+                "required": true,
+                "weight": 1
+              }
+            ]
+          }
+        ]
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-31",
+          "regionId": "flower-case-study-diagram",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-21",
+          "supports": [
+            "answer",
+            "rubric",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-24",
+          "supports": [
+            "answer",
+            "rubric",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "review",
+      "topicIds": [
+        "reproductive-structures",
+        "pollination",
+        "fertilisation"
+      ],
+      "type": "source_group",
+      "version": 1
+    }
+  ],
+  "schemaVersion": "0.1.0",
+  "sources": [
+    {
+      "assetRef": "manifest://the-flower-reproduction/page-21",
+      "extractionConfidence": 0.94,
+      "id": "page-21",
+      "pageNumber": 21,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.9,
+            "width": 0.72,
+            "x": 0.25,
+            "y": 0.05
+          },
+          "id": "sexual-reproduction",
+          "kind": "passage"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://the-flower-reproduction/page-22",
+      "extractionConfidence": 0.98,
+      "id": "page-22",
+      "pageNumber": 22,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.94,
+            "width": 0.72,
+            "x": 0.26,
+            "y": 0.03
+          },
+          "id": "pollination",
+          "kind": "passage"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://the-flower-reproduction/page-23",
+      "extractionConfidence": 0.98,
+      "id": "page-23",
+      "pageNumber": 23,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.94,
+            "width": 0.62,
+            "x": 0.35,
+            "y": 0.03
+          },
+          "id": "pollination-agents-table",
+          "kind": "table"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://the-flower-reproduction/page-24",
+      "extractionConfidence": 0.98,
+      "id": "page-24",
+      "pageNumber": 24,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.72,
+            "width": 0.93,
+            "x": 0.04,
+            "y": 0.03
+          },
+          "id": "fertilisation-and-formation",
+          "kind": "diagram"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://the-flower-reproduction/page-25",
+      "extractionConfidence": 0.98,
+      "id": "page-25",
+      "pageNumber": 25,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.94,
+            "width": 0.94,
+            "x": 0.04,
+            "y": 0.02
+          },
+          "id": "fruit-and-seed",
+          "kind": "diagram"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://the-flower-reproduction/page-26",
+      "extractionConfidence": 0.98,
+      "id": "page-26",
+      "pageNumber": 26,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.93,
+            "width": 0.93,
+            "x": 0.05,
+            "y": 0.03
+          },
+          "id": "seed-types-and-germination",
+          "kind": "table"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://the-flower-reproduction/page-27",
+      "extractionConfidence": 0.98,
+      "id": "page-27",
+      "pageNumber": 27,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.95,
+            "width": 0.95,
+            "x": 0.03,
+            "y": 0.02
+          },
+          "id": "germination-types",
+          "kind": "diagram"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://the-flower-reproduction/page-28",
+      "extractionConfidence": 0.98,
+      "id": "page-28",
+      "pageNumber": 28,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.48,
+            "width": 0.9,
+            "x": 0.05,
+            "y": 0.03
+          },
+          "id": "germination-diagrams",
+          "kind": "diagram"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://the-flower-reproduction/page-29",
+      "extractionConfidence": 0.98,
+      "id": "page-29",
+      "pageNumber": 29,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.56,
+            "width": 0.92,
+            "x": 0.04,
+            "y": 0.4
+          },
+          "id": "exercise-i",
+          "kind": "exercise"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://the-flower-reproduction/page-30",
+      "extractionConfidence": 0.98,
+      "id": "page-30",
+      "pageNumber": 30,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.94,
+            "width": 0.93,
+            "x": 0.04,
+            "y": 0.02
+          },
+          "id": "exercises-ii-viii",
+          "kind": "exercise"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://the-flower-reproduction/page-31",
+      "extractionConfidence": 0.98,
+      "id": "page-31",
+      "pageNumber": 31,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.95,
+            "width": 0.96,
+            "x": 0.02,
+            "y": 0.02
+          },
+          "id": "exercises-ix-xiii",
+          "kind": "exercise"
+        },
+        {
+          "bounds": {
+            "height": 0.28,
+            "width": 0.47,
+            "x": 0.46,
+            "y": 0.02
+          },
+          "id": "flower-case-study-diagram",
+          "kind": "diagram",
+          "runtimeAssetRef": "/question-assets/flower-reproduction-diagram.svg"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://the-flower-reproduction/page-32",
+      "extractionConfidence": 0.96,
+      "id": "page-32",
+      "pageNumber": 32,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.9,
+            "width": 0.94,
+            "x": 0.04,
+            "y": 0.02
+          },
+          "id": "exercise-xiii",
+          "kind": "exercise"
+        }
+      ],
+      "reviewRequired": false
+    }
+  ],
+  "topics": [
+    {
+      "id": "fertilisation",
+      "title": "Fertilisation"
+    },
+    {
+      "id": "fruit-and-seed-formation",
+      "title": "Fruit and Seed Formation"
+    },
+    {
+      "id": "germination",
+      "title": "Seed Germination"
+    },
+    {
+      "id": "germination-types",
+      "title": "Types of Germination"
+    },
+    {
+      "id": "pollination",
+      "title": "Pollination and Its Agents"
+    },
+    {
+      "id": "reproductive-structures",
+      "title": "Reproductive Parts of a Flower"
+    },
+    {
+      "id": "seed-structure",
+      "title": "Parts and Functions of a Seed"
+    },
+    {
+      "id": "seed-types",
+      "title": "Dicot and Monocot Seeds"
+    },
+    {
+      "id": "sexual-reproduction",
+      "title": "Sexual Reproduction in Plants"
+    }
+  ]
+}

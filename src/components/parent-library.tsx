@@ -38,6 +38,7 @@ export function ParentLibrary() {
   const [message, setMessage] = useState("");
   const [library, setLibrary] = useState<LibraryItem[]>([]);
   const [reports, setReports] = useState<{ open: QuestionReport[]; resolved: QuestionReport[] }>({ open: [], resolved: [] });
+  const [deleteCandidate, setDeleteCandidate] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
 
   const headers = { "content-type": "application/json" };
@@ -97,6 +98,18 @@ export function ParentLibrary() {
     setBusy(false);
   }
 
+  async function deleteBankVersion(item: LibraryItem) {
+    setBusy(true); setErrors([]); setMessage("");
+    const response = await fetch("/api/library", { method: "DELETE", headers, body: JSON.stringify({ id: item.id }) });
+    const result = await response.json();
+    if (response.ok) {
+      setDeleteCandidate(null);
+      setMessage(`Deleted ${item.chapterTitle} bank v${item.bankVersion}.`);
+      await loadLibrary();
+    } else setErrors([result.error ?? "The bank version could not be deleted."]);
+    setBusy(false);
+  }
+
   const libraryBySubject = library.reduce<Record<string, LibraryItem[]>>((groups, item) => {
     (groups[item.subject] ??= []).push(item);
     return groups;
@@ -144,7 +157,7 @@ export function ParentLibrary() {
       <section className="library-section">
         <h2>Imported chapters</h2>
         {library.length === 0 ? <p className="empty-state">No chapters have been imported for this family yet.</p> :
-          <div className="library-subjects">{Object.entries(libraryBySubject).sort(([a], [b]) => a.localeCompare(b)).map(([subject, items]) => <section className="library-subject-group" key={subject}><div className="section-heading"><h3>{subject}</h3><span>{items.length} {items.length === 1 ? "chapter" : "chapters"}</span></div><div className="library-grid">{items.map((item) => <article key={item.id}><span>{item.board} · Grade {item.grade}</span><h3>{item.chapterNumber ? `${item.chapterNumber}. ` : ""}{item.chapterTitle}</h3><p>{item.questionCount} questions · bank v{item.bankVersion}</p></article>)}</div></section>)}</div>}
+          <div className="library-subjects">{Object.entries(libraryBySubject).sort(([a], [b]) => a.localeCompare(b)).map(([subject, items]) => <section className="library-subject-group" key={subject}><div className="section-heading"><h3>{subject}</h3><span>{items.length} {items.length === 1 ? "chapter" : "chapters"}</span></div><div className="library-grid">{items.map((item) => <article key={item.id}><span>{item.board} · Grade {item.grade}</span><h3>{item.chapterNumber ? `${item.chapterNumber}. ` : ""}{item.chapterTitle}</h3><p>{item.questionCount} questions · bank v{item.bankVersion}</p>{deleteCandidate === item.id ? <div className="library-delete"><p>This permanently deletes only bank v{item.bankVersion}. Newer versions are not affected.</p><div className="button-row"><button className="button-danger" disabled={busy} aria-label={`Confirm delete ${item.chapterTitle} bank v${item.bankVersion}`} onClick={() => void deleteBankVersion(item)}>Delete permanently</button><button className="button-quiet" disabled={busy} onClick={() => setDeleteCandidate(null)}>Cancel</button></div></div> : <button className="button-delete" disabled={busy} aria-label={`Delete ${item.chapterTitle} bank v${item.bankVersion}`} onClick={() => setDeleteCandidate(item.id)}>Delete bank v{item.bankVersion}</button>}</article>)}</div></section>)}</div>}
       </section>
     </main>
   );

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Numbered flower reproduction diagram</title>
+  <desc id="desc">A simplified flower cross-section with five numbered callouts for reproductive parts.</desc>
+  <rect width="800" height="600" fill="#fffdf7"/>
+  <text x="400" y="42" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#233044">Flower Reproduction Diagram</text>
+  <text x="400" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#4b5563">Label callouts 1-5, then answer the questions.</text>
+
+  <g stroke="#b9426e" stroke-width="4" fill="#f5a8c3">
+    <ellipse cx="400" cy="260" rx="82" ry="154"/>
+    <ellipse cx="300" cy="280" rx="78" ry="150" transform="rotate(-38 300 280)"/>
+    <ellipse cx="500" cy="280" rx="78" ry="150" transform="rotate(38 500 280)"/>
+    <ellipse cx="250" cy="365" rx="70" ry="132" transform="rotate(-68 250 365)"/>
+    <ellipse cx="550" cy="365" rx="70" ry="132" transform="rotate(68 550 365)"/>
+  </g>
+
+  <g fill="#4f9c63" stroke="#25633a" stroke-width="4">
+    <path d="M333 455 Q285 430 245 475 Q300 500 355 478 Z"/>
+    <path d="M467 455 Q515 430 555 475 Q500 500 445 478 Z"/>
+    <path d="M385 468 L415 468 L430 575 L370 575 Z"/>
+  </g>
+
+  <g stroke="#6f4a2f" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M315 425 Q300 310 320 190"/>
+    <path d="M350 425 Q340 290 355 165"/>
+    <path d="M450 425 Q460 290 445 165"/>
+    <path d="M485 425 Q500 310 480 190"/>
+  </g>
+  <g fill="#e7a63b" stroke="#8c5a15" stroke-width="3">
+    <ellipse cx="320" cy="183" rx="18" ry="28" transform="rotate(-14 320 183)"/>
+    <ellipse cx="355" cy="158" rx="18" ry="28" transform="rotate(-5 355 158)"/>
+    <ellipse cx="445" cy="158" rx="18" ry="28" transform="rotate(5 445 158)"/>
+    <ellipse cx="480" cy="183" rx="18" ry="28" transform="rotate(14 480 183)"/>
+  </g>
+
+  <g stroke="#2f7c4d" stroke-width="5" fill="#d8f1df">
+    <path d="M390 430 Q370 395 382 355 L390 180 L410 180 L418 355 Q430 395 410 430 Z"/>
+    <ellipse cx="400" cy="176" rx="31" ry="16"/>
+    <ellipse cx="400" cy="420" rx="64" ry="58"/>
+  </g>
+  <ellipse cx="400" cy="421" rx="16" ry="24" fill="#f2d15b" stroke="#8a6c18" stroke-width="3"/>
+
+  <g stroke="#26384c" stroke-width="3" fill="none">
+    <path d="M400 176 L620 120"/>
+    <path d="M480 183 L650 205"/>
+    <path d="M483 300 L650 300"/>
+    <path d="M448 420 L650 405"/>
+    <path d="M400 421 L625 505"/>
+  </g>
+  <g fill="#233044" font-family="Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">
+    <g><circle cx="650" cy="112" r="25" fill="#e8eef6" stroke="#233044" stroke-width="3"/><text x="650" y="120">1</text></g>
+    <g><circle cx="682" cy="210" r="25" fill="#e8eef6" stroke="#233044" stroke-width="3"/><text x="682" y="218">2</text></g>
+    <g><circle cx="682" cy="304" r="25" fill="#e8eef6" stroke="#233044" stroke-width="3"/><text x="682" y="312">3</text></g>
+    <g><circle cx="682" cy="403" r="25" fill="#e8eef6" stroke="#233044" stroke-width="3"/><text x="682" y="411">4</text></g>
+    <g><circle cx="650" cy="516" r="25" fill="#e8eef6" stroke="#233044" stroke-width="3"/><text x="650" y="524">5</text></g>
+  </g>
+</svg>

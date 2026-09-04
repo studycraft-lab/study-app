@@ -1,0 +1,3615 @@
+{
+  "schemaVersion": "0.1.0",
+  "bank": {
+    "id": "matter-v1",
+    "version": 1,
+    "title": "Matter",
+    "board": "ICSE",
+    "subject": "Chemistry",
+    "grade": 6,
+    "bookTitle": "Concise Chemistry Middle School - 6",
+    "chapterNumber": 3,
+    "status": "reviewed"
+  },
+  "sources": [
+    {
+      "id": "page-19",
+      "pageNumber": 19,
+      "assetRef": "manifest://matter/page-19",
+      "extractionConfidence": 0.97,
+      "reviewRequired": false,
+      "regions": []
+    },
+    {
+      "id": "page-20",
+      "pageNumber": 20,
+      "assetRef": "manifest://matter/page-20",
+      "extractionConfidence": 0.97,
+      "reviewRequired": false,
+      "regions": []
+    },
+    {
+      "id": "page-21",
+      "pageNumber": 21,
+      "assetRef": "manifest://matter/page-21",
+      "extractionConfidence": 0.97,
+      "reviewRequired": false,
+      "regions": [
+        {
+          "id": "exercise",
+          "kind": "exercise",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "page-22",
+      "pageNumber": 22,
+      "assetRef": "manifest://matter/page-22",
+      "extractionConfidence": 0.97,
+      "reviewRequired": false,
+      "regions": []
+    },
+    {
+      "id": "page-23",
+      "pageNumber": 23,
+      "assetRef": "manifest://matter/page-23",
+      "extractionConfidence": 0.97,
+      "reviewRequired": false,
+      "regions": []
+    },
+    {
+      "id": "page-24",
+      "pageNumber": 24,
+      "assetRef": "manifest://matter/page-24",
+      "extractionConfidence": 0.97,
+      "reviewRequired": false,
+      "regions": []
+    },
+    {
+      "id": "page-25",
+      "pageNumber": 25,
+      "assetRef": "manifest://matter/page-25",
+      "extractionConfidence": 0.97,
+      "reviewRequired": false,
+      "regions": []
+    },
+    {
+      "id": "page-26",
+      "pageNumber": 26,
+      "assetRef": "manifest://matter/page-26",
+      "extractionConfidence": 0.97,
+      "reviewRequired": false,
+      "regions": []
+    },
+    {
+      "id": "page-27",
+      "pageNumber": 27,
+      "assetRef": "manifest://matter/page-27",
+      "extractionConfidence": 0.97,
+      "reviewRequired": false,
+      "regions": []
+    },
+    {
+      "id": "page-28",
+      "pageNumber": 28,
+      "assetRef": "manifest://matter/page-28",
+      "extractionConfidence": 0.97,
+      "reviewRequired": false,
+      "regions": [
+        {
+          "id": "exercise",
+          "kind": "exercise",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "page-29",
+      "pageNumber": 29,
+      "assetRef": "manifest://matter/page-29",
+      "extractionConfidence": 0.97,
+      "reviewRequired": false,
+      "regions": [
+        {
+          "id": "exercise",
+          "kind": "exercise",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "page-30",
+      "pageNumber": 30,
+      "assetRef": "manifest://matter/page-30",
+      "extractionConfidence": 0.97,
+      "reviewRequired": false,
+      "regions": []
+    },
+    {
+      "id": "page-31",
+      "pageNumber": 31,
+      "assetRef": "manifest://matter/page-31",
+      "extractionConfidence": 0.97,
+      "reviewRequired": false,
+      "regions": []
+    },
+    {
+      "id": "page-32",
+      "pageNumber": 32,
+      "assetRef": "manifest://matter/page-32",
+      "extractionConfidence": 0.97,
+      "reviewRequired": false,
+      "regions": []
+    },
+    {
+      "id": "page-33",
+      "pageNumber": 33,
+      "assetRef": "manifest://matter/page-33",
+      "extractionConfidence": 0.97,
+      "reviewRequired": false,
+      "regions": []
+    },
+    {
+      "id": "page-34",
+      "pageNumber": 34,
+      "assetRef": "manifest://matter/page-34",
+      "extractionConfidence": 0.97,
+      "reviewRequired": false,
+      "regions": []
+    },
+    {
+      "id": "page-35",
+      "pageNumber": 35,
+      "assetRef": "manifest://matter/page-35",
+      "extractionConfidence": 0.97,
+      "reviewRequired": false,
+      "regions": []
+    },
+    {
+      "id": "page-36",
+      "pageNumber": 36,
+      "assetRef": "manifest://matter/page-36",
+      "extractionConfidence": 0.97,
+      "reviewRequired": false,
+      "regions": [
+        {
+          "id": "exercise",
+          "kind": "exercise",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "page-37",
+      "pageNumber": 37,
+      "assetRef": "manifest://matter/page-37",
+      "extractionConfidence": 0.97,
+      "reviewRequired": false,
+      "regions": [
+        {
+          "id": "exercise",
+          "kind": "exercise",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "page-38",
+      "pageNumber": 38,
+      "assetRef": "manifest://matter/page-38",
+      "extractionConfidence": 0.97,
+      "reviewRequired": false,
+      "regions": [
+        {
+          "id": "exercise",
+          "kind": "exercise",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "page-39",
+      "pageNumber": 39,
+      "assetRef": "manifest://matter/page-39",
+      "extractionConfidence": 0.97,
+      "reviewRequired": false,
+      "regions": [
+        {
+          "id": "exercise",
+          "kind": "table",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        }
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "id": "matter-foundations",
+      "title": "Meaning and classification of matter",
+      "learningOutcomeIds": [
+        "define-matter"
+      ]
+    },
+    {
+      "id": "particles",
+      "title": "Particles and molecular behaviour",
+      "learningOutcomeIds": [
+        "describe-particles"
+      ]
+    },
+    {
+      "id": "states-properties",
+      "title": "Properties of solids, liquids and gases",
+      "learningOutcomeIds": [
+        "compare-states"
+      ]
+    },
+    {
+      "id": "interconversion",
+      "title": "Interconversion and changes of state",
+      "learningOutcomeIds": [
+        "identify-changes",
+        "distinguish-processes"
+      ]
+    },
+    {
+      "id": "physical-chemical-change",
+      "title": "Physical and chemical change on heating",
+      "learningOutcomeIds": [
+        "identify-changes"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-001",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "topicIds": [
+        "matter-foundations"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Which one is a kind of matter?",
+      "sourceRefs": [
+        {
+          "pageId": "page-21",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-20",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-39",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "light",
+            "text": "Light"
+          },
+          {
+            "id": "petroleum",
+            "text": "Petroleum"
+          },
+          {
+            "id": "sound",
+            "text": "Sound"
+          },
+          {
+            "id": "heat",
+            "text": "Heat"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "petroleum"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Choose the option supported by the chapter.",
+      "explanation": "Petroleum has mass and occupies space, so it is matter.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-002",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "topicIds": [
+        "matter-foundations"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "All kinds of matter:",
+      "sourceRefs": [
+        {
+          "pageId": "page-21",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-20",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-39",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "mass-space",
+            "text": "occupy space and have a definite mass"
+          },
+          {
+            "id": "mass-shape",
+            "text": "have mass and a definite shape"
+          },
+          {
+            "id": "change-states",
+            "text": "can change their states"
+          },
+          {
+            "id": "definite-volume",
+            "text": "have a definite volume"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "mass-space"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Choose the option supported by the chapter.",
+      "explanation": "All matter has mass and occupies space.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-003",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "topicIds": [
+        "matter-foundations"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "The space occupied by matter is called:",
+      "sourceRefs": [
+        {
+          "pageId": "page-21",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-39",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "mass",
+            "text": "mass"
+          },
+          {
+            "id": "area",
+            "text": "area"
+          },
+          {
+            "id": "volume",
+            "text": "volume"
+          },
+          {
+            "id": "weight",
+            "text": "weight"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "volume"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Choose the option supported by the chapter.",
+      "explanation": "The space occupied by matter is its volume.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-004",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "topicIds": [
+        "matter-foundations"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "The quantity of matter in an object is called:",
+      "sourceRefs": [
+        {
+          "pageId": "page-21",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-39",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "mass",
+            "text": "mass"
+          },
+          {
+            "id": "volume",
+            "text": "volume"
+          },
+          {
+            "id": "density",
+            "text": "density"
+          },
+          {
+            "id": "weight",
+            "text": "weight"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "mass"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Choose the option supported by the chapter.",
+      "explanation": "Mass is the amount of matter in an object.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-005",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "topicIds": [
+        "matter-foundations"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Which of the following is a kind of man-made matter?",
+      "sourceRefs": [
+        {
+          "pageId": "page-21",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-20",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-39",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "coal",
+            "text": "Coal"
+          },
+          {
+            "id": "cotton",
+            "text": "Cotton"
+          },
+          {
+            "id": "plastic",
+            "text": "Plastic"
+          },
+          {
+            "id": "silk",
+            "text": "Silk"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "plastic"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Choose the option supported by the chapter.",
+      "explanation": "Plastic is produced artificially and is man-made matter.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-006",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "topicIds": [
+        "matter-foundations"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Which object is not made of wood?",
+      "sourceRefs": [
+        {
+          "pageId": "page-21",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-20",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-39",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "desk",
+            "text": "Desk"
+          },
+          {
+            "id": "soap",
+            "text": "Soap"
+          },
+          {
+            "id": "chair",
+            "text": "Chair"
+          },
+          {
+            "id": "handle",
+            "text": "Handle"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "soap"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Choose the option supported by the chapter.",
+      "explanation": "Soap is not a wooden object.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-007",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "topicIds": [
+        "matter-foundations"
+      ],
+      "difficulty": 2,
+      "marks": 2,
+      "prompt": "Classify these as natural matter or man-made matter: wood, plastic, silk, medicines, detergents, coal, water, ceramic, cotton, glass, nylon and fruits.",
+      "sourceRefs": [
+        {
+          "pageId": "page-21",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-20",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedPoints": 2
+      },
+      "answer": {
+        "ideal": "Natural: wood, silk, coal, water, cotton and fruits. Man-made: plastic, medicines, detergents, ceramic, glass and nylon."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "correctly classifies wood, silk, coal, water, cotton and fruits as natural",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "correctly classifies plastic, medicines, detergents, ceramic, glass and nylon as man-made",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "spellingAffectsScore": false,
+        "grammarAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Answer each part in a separate short point.",
+      "explanation": "Natural matter occurs in nature; man-made matter is produced artificially.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-008",
+      "version": 1,
+      "type": "brief_answer",
+      "status": "active",
+      "topicIds": [
+        "matter-foundations"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Define matter.",
+      "sourceRefs": [
+        {
+          "pageId": "page-21",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-20",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedSentences": 1
+      },
+      "answer": {
+        "ideal": "Anything that has mass and occupies space is called matter."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "states that matter has mass and occupies space",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "spellingAffectsScore": false,
+        "grammarAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Answer briefly using the chapter's key scientific terms.",
+      "explanation": "The definition requires both mass and occupied space.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-009",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "topicIds": [
+        "matter-foundations"
+      ],
+      "difficulty": 2,
+      "marks": 3,
+      "prompt": "What are the two main types of matter? Give two examples of each type.",
+      "sourceRefs": [
+        {
+          "pageId": "page-21",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-20",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedPoints": 3
+      },
+      "answer": {
+        "ideal": "The two main types are living matter and non-living matter. Examples of living matter include plants and animals; examples of non-living matter include air, water, rocks or man-made objects."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "names living matter and non-living matter",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "gives two valid examples of living matter",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p3",
+            "concept": "gives two valid examples of non-living matter",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "spellingAffectsScore": false,
+        "grammarAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Answer each part in a separate short point.",
+      "explanation": "Matter is divided into living and non-living matter.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-010",
+      "version": 1,
+      "type": "brief_answer",
+      "status": "active",
+      "topicIds": [
+        "matter-foundations"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Why are plants and animals considered matter?",
+      "sourceRefs": [
+        {
+          "pageId": "page-21",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-20",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedSentences": 1
+      },
+      "answer": {
+        "ideal": "Plants and animals are matter because they have mass and occupy space."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "states that plants and animals have mass and occupy space",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "spellingAffectsScore": false,
+        "grammarAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Answer briefly using the chapter's key scientific terms.",
+      "explanation": "Living things satisfy the definition of matter.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-011",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "topicIds": [
+        "states-properties"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "The state of matter which has no definite shape or volume is called:",
+      "sourceRefs": [
+        {
+          "pageId": "page-28",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-25",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-39",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "solid",
+            "text": "solid"
+          },
+          {
+            "id": "liquid",
+            "text": "liquid"
+          },
+          {
+            "id": "gas",
+            "text": "gas"
+          },
+          {
+            "id": "none",
+            "text": "none of these"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "gas"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Choose the option supported by the chapter.",
+      "explanation": "A gas has neither definite shape nor definite volume.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-012",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "topicIds": [
+        "particles"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "The largest intermolecular gaps occur in:",
+      "sourceRefs": [
+        {
+          "pageId": "page-28",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-26",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-39",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "water",
+            "text": "water"
+          },
+          {
+            "id": "iron-ball",
+            "text": "iron ball"
+          },
+          {
+            "id": "common-salt",
+            "text": "common salt"
+          },
+          {
+            "id": "air",
+            "text": "air"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "air"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Choose the option supported by the chapter.",
+      "explanation": "Gas particles are farthest apart; air is a gas.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-013",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "topicIds": [
+        "states-properties"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "A solid:",
+      "sourceRefs": [
+        {
+          "pageId": "page-28",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-23",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-39",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "definite-shape",
+            "text": "has a definite shape"
+          },
+          {
+            "id": "cannot-flow",
+            "text": "cannot flow"
+          },
+          {
+            "id": "hard-compress",
+            "text": "cannot be compressed easily"
+          },
+          {
+            "id": "all",
+            "text": "all of the above"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "all"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Choose the option supported by the chapter.",
+      "explanation": "Solids have a definite shape, do not flow and are almost incompressible.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-014",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "topicIds": [
+        "states-properties"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Which of the following diffuses very fast?",
+      "sourceRefs": [
+        {
+          "pageId": "page-28",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-25",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-27",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-39",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "water",
+            "text": "Water"
+          },
+          {
+            "id": "gold",
+            "text": "Gold"
+          },
+          {
+            "id": "milk",
+            "text": "Milk"
+          },
+          {
+            "id": "nitrogen",
+            "text": "Nitrogen"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "nitrogen"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Choose the option supported by the chapter.",
+      "explanation": "Nitrogen is a gas, and gases diffuse very fast.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-015",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "topicIds": [
+        "states-properties"
+      ],
+      "difficulty": 2,
+      "marks": 3,
+      "prompt": "Classify these into solids, liquids and gases: oxygen, milk, common salt, wax, stone, LPG, carbon dioxide, sugar, mercury, coal, blood, butter, copper, coconut oil and kerosene.",
+      "sourceRefs": [
+        {
+          "pageId": "page-28",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-23",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-24",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-25",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedPoints": 3
+      },
+      "answer": {
+        "ideal": "Solids: common salt, wax, stone, sugar, coal, butter, copper. Liquids: milk, mercury, blood, coconut oil, kerosene. Gases: oxygen, LPG, carbon dioxide."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "correctly classifies all listed solids",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "correctly classifies all listed liquids",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p3",
+            "concept": "correctly classifies all listed gases",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "spellingAffectsScore": false,
+        "grammarAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Answer each part in a separate short point.",
+      "explanation": "The items are sorted by their physical state under ordinary conditions.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-016",
+      "version": 1,
+      "type": "one_word",
+      "status": "active",
+      "topicIds": [
+        "particles"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Name the smallest particle from which matter is made.",
+      "sourceRefs": [
+        {
+          "pageId": "page-28",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-22",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "maxWords": 5
+      },
+      "answer": {
+        "accepted": [
+          "atom",
+          "an atom"
+        ],
+        "caseSensitive": false
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "hint": "Give only the required word or term.",
+      "explanation": "Matter is made of extremely small particles called atoms.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-017",
+      "version": 1,
+      "type": "brief_answer",
+      "status": "active",
+      "topicIds": [
+        "particles"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "What are molecules?",
+      "sourceRefs": [
+        {
+          "pageId": "page-28",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-22",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedSentences": 1
+      },
+      "answer": {
+        "ideal": "A molecule is the smallest unit of a kind of matter that has all its properties and can exist independently."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "smallest unit that retains the properties of that kind of matter and can exist independently",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "spellingAffectsScore": false,
+        "grammarAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Answer briefly using the chapter's key scientific terms.",
+      "explanation": "A molecule can exist independently while retaining the properties of its substance.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-018",
+      "version": 1,
+      "type": "brief_answer",
+      "status": "active",
+      "topicIds": [
+        "particles"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Define intermolecular force of attraction.",
+      "sourceRefs": [
+        {
+          "pageId": "page-29",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-22",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-23",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedSentences": 1
+      },
+      "answer": {
+        "ideal": "It is the force of attraction that exists between molecules or particles of matter."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "force of attraction between molecules or particles of matter",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "spellingAffectsScore": false,
+        "grammarAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Answer briefly using the chapter's key scientific terms.",
+      "explanation": "This force holds particles of matter together.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-019",
+      "version": 1,
+      "type": "brief_answer",
+      "status": "active",
+      "topicIds": [
+        "particles"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Define intermolecular space.",
+      "sourceRefs": [
+        {
+          "pageId": "page-29",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-22",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-23",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedSentences": 1
+      },
+      "answer": {
+        "ideal": "Intermolecular space is the gap or space between molecules of matter."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "gap or space between molecules",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "spellingAffectsScore": false,
+        "grammarAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Answer briefly using the chapter's key scientific terms.",
+      "explanation": "Particles of matter have spaces between them.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-020",
+      "version": 1,
+      "type": "brief_answer",
+      "status": "active",
+      "topicIds": [
+        "particles"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Define diffusion.",
+      "sourceRefs": [
+        {
+          "pageId": "page-29",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-27",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedSentences": 1
+      },
+      "answer": {
+        "ideal": "Diffusion is the intermixing of particles of one kind with particles of another kind through their natural motion."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "intermixing of particles of different kinds through natural particle motion",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "spellingAffectsScore": false,
+        "grammarAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Answer briefly using the chapter's key scientific terms.",
+      "explanation": "Diffusion occurs because particles are in motion.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-021",
+      "version": 1,
+      "type": "compare",
+      "status": "active",
+      "topicIds": [
+        "particles"
+      ],
+      "difficulty": 2,
+      "marks": 2,
+      "prompt": "Give one difference between atoms and molecules.",
+      "sourceRefs": [
+        {
+          "pageId": "page-29",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-22",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "dimensions": [
+          "atom",
+          "molecule"
+        ]
+      },
+      "answer": {
+        "ideal": {
+          "atom": "An atom is the smallest possible unit of matter and usually does not exist independently.",
+          "molecule": "A molecule is formed from two or more atoms and can exist independently while retaining the substance's properties."
+        }
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "states one correct defining fact about an atom",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "states the contrasting independent-existence or composition fact about a molecule",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "spellingAffectsScore": false,
+        "grammarAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "State the defining change for each term.",
+      "explanation": "Atoms usually combine; molecules can exist independently.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-022",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "topicIds": [
+        "states-properties"
+      ],
+      "difficulty": 2,
+      "marks": 2,
+      "prompt": "What are fluids? Give two examples.",
+      "sourceRefs": [
+        {
+          "pageId": "page-29",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-25",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedPoints": 2
+      },
+      "answer": {
+        "ideal": "Substances that can flow are called fluids. Water and air are examples."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "defines fluids as substances that can flow",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "gives two valid liquid or gas examples",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "spellingAffectsScore": false,
+        "grammarAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Answer each part in a separate short point.",
+      "explanation": "Both liquids and gases are fluids because they flow.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-023",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "topicIds": [
+        "states-properties"
+      ],
+      "difficulty": 2,
+      "marks": 3,
+      "prompt": "Name the three states of matter and define them.",
+      "sourceRefs": [
+        {
+          "pageId": "page-29",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-23",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-24",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-25",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedPoints": 3
+      },
+      "answer": {
+        "ideal": "Solid: definite shape and volume. Liquid: definite volume but no definite shape. Gas: neither definite shape nor definite volume."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "defines solid as having definite shape and volume",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "defines liquid as having definite volume but no definite shape",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p3",
+            "concept": "defines gas as having neither definite shape nor definite volume",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "spellingAffectsScore": false,
+        "grammarAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Answer each part in a separate short point.",
+      "explanation": "The three states differ in whether shape and volume are definite.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-024",
+      "version": 1,
+      "type": "brief_answer",
+      "status": "active",
+      "topicIds": [
+        "states-properties"
+      ],
+      "difficulty": 2,
+      "marks": 1,
+      "prompt": "Give a reason: Liquids and gases flow but solids do not.",
+      "sourceRefs": [
+        {
+          "pageId": "page-29",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-26",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedSentences": 1
+      },
+      "answer": {
+        "ideal": "Particles in liquids and gases can move more freely because their intermolecular forces are weaker and their spaces are larger than in solids; solid particles are closely packed."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "contrasts freer-moving liquid/gas particles with closely packed solid particles",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "spellingAffectsScore": false,
+        "grammarAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Answer briefly using the chapter's key scientific terms.",
+      "explanation": "Particle movement explains fluidity.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-025",
+      "version": 1,
+      "type": "brief_answer",
+      "status": "active",
+      "topicIds": [
+        "states-properties"
+      ],
+      "difficulty": 2,
+      "marks": 1,
+      "prompt": "Give a reason: A gas fills up the space available to it.",
+      "sourceRefs": [
+        {
+          "pageId": "page-29",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-25",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-26",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedSentences": 1
+      },
+      "answer": {
+        "ideal": "Gas molecules are far apart, attract one another very weakly and move freely in all directions, so they fill all available space."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "gas particles are far apart and move freely in all directions",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "spellingAffectsScore": false,
+        "grammarAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Answer briefly using the chapter's key scientific terms.",
+      "explanation": "Freely moving gas particles spread throughout the container.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-026",
+      "version": 1,
+      "type": "brief_answer",
+      "status": "active",
+      "topicIds": [
+        "particles"
+      ],
+      "difficulty": 2,
+      "marks": 1,
+      "prompt": "Give a reason: The odour of scent spreads in a room.",
+      "sourceRefs": [
+        {
+          "pageId": "page-29",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-27",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedSentences": 1
+      },
+      "answer": {
+        "ideal": "Scent vapour particles mix with air particles and spread through diffusion."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "identifies diffusion of scent vapour through air",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "spellingAffectsScore": false,
+        "grammarAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Answer briefly using the chapter's key scientific terms.",
+      "explanation": "Gases diffuse rapidly.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-027",
+      "version": 1,
+      "type": "brief_answer",
+      "status": "active",
+      "topicIds": [
+        "particles"
+      ],
+      "difficulty": 2,
+      "marks": 1,
+      "prompt": "Give a reason: We can walk through air.",
+      "sourceRefs": [
+        {
+          "pageId": "page-29",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-26",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedSentences": 1
+      },
+      "answer": {
+        "ideal": "Air particles are far apart with large intermolecular spaces and weak attraction, so they can move aside."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "air particles have large spaces and weak attraction and can move aside",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "spellingAffectsScore": false,
+        "grammarAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Answer briefly using the chapter's key scientific terms.",
+      "explanation": "The large gaps between gas particles allow movement through air.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-028",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "topicIds": [
+        "states-properties"
+      ],
+      "difficulty": 2,
+      "marks": 2,
+      "prompt": "Give a reason: Liquids have a definite volume but no definite shape.",
+      "sourceRefs": [
+        {
+          "pageId": "page-29",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-24",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-26",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedPoints": 2
+      },
+      "answer": {
+        "ideal": "Liquid particles remain close enough to give a definite volume, but they can move past one another, so a liquid takes the shape of its container."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "explains definite volume from particles remaining fairly close",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "explains no definite shape from particles moving and taking the container's shape",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "spellingAffectsScore": false,
+        "grammarAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Answer each part in a separate short point.",
+      "explanation": "Liquid particles are close but mobile.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-029",
+      "version": 1,
+      "type": "brief_answer",
+      "status": "active",
+      "topicIds": [
+        "particles"
+      ],
+      "difficulty": 2,
+      "marks": 1,
+      "prompt": "Give a reason: When a teaspoon of sugar is added to half a glass of water and stirred, the water level remains unchanged.",
+      "sourceRefs": [
+        {
+          "pageId": "page-29",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-22",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-23",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedSentences": 1
+      },
+      "answer": {
+        "ideal": "Sugar particles fit into the intermolecular gaps between water molecules."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "sugar particles occupy intermolecular gaps between water molecules",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "spellingAffectsScore": false,
+        "grammarAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Answer briefly using the chapter's key scientific terms.",
+      "explanation": "The activity demonstrates intermolecular spaces.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-030",
+      "version": 1,
+      "type": "brief_answer",
+      "status": "active",
+      "topicIds": [
+        "particles"
+      ],
+      "difficulty": 2,
+      "marks": 1,
+      "prompt": "Give a reason: When an empty gas jar is inverted over a gas jar containing a coloured gas, the gas spreads into the empty jar.",
+      "sourceRefs": [
+        {
+          "pageId": "page-29",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-25",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-27",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedSentences": 1
+      },
+      "answer": {
+        "ideal": "Gas particles are in constant motion and diffuse into the available space in the empty jar."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "gas particles move and diffuse into the empty jar",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "spellingAffectsScore": false,
+        "grammarAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Answer briefly using the chapter's key scientific terms.",
+      "explanation": "Gases diffuse and fill available space.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-031",
+      "version": 1,
+      "type": "brief_answer",
+      "status": "active",
+      "topicIds": [
+        "particles"
+      ],
+      "difficulty": 2,
+      "marks": 1,
+      "prompt": "Give a reason: A drop of red ink added to a small amount of water turns the water red after some time.",
+      "sourceRefs": [
+        {
+          "pageId": "page-29",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-27",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedSentences": 1
+      },
+      "answer": {
+        "ideal": "The ink particles diffuse slowly through the water particles."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "ink particles diffuse through water",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "spellingAffectsScore": false,
+        "grammarAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Answer briefly using the chapter's key scientific terms.",
+      "explanation": "Diffusion also occurs in liquids.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-032",
+      "version": 1,
+      "type": "brief_answer",
+      "status": "active",
+      "topicIds": [
+        "states-properties"
+      ],
+      "difficulty": 2,
+      "marks": 1,
+      "prompt": "Give a reason: Solids usually have higher density than liquids and gases.",
+      "sourceRefs": [
+        {
+          "pageId": "page-29",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-23",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-26",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-28",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedSentences": 1
+      },
+      "answer": {
+        "ideal": "Solid particles are packed very closely with very small intermolecular spaces, so more matter is packed into a given volume."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "solid particles are closely packed with very small gaps",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "spellingAffectsScore": false,
+        "grammarAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Answer briefly using the chapter's key scientific terms.",
+      "explanation": "Close packing gives solids a higher density.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-033",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "topicIds": [
+        "interconversion"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "A kind of matter which can sublime is:",
+      "sourceRefs": [
+        {
+          "pageId": "page-36",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-31",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-39",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "water",
+            "text": "water"
+          },
+          {
+            "id": "plastic",
+            "text": "plastic"
+          },
+          {
+            "id": "milk",
+            "text": "milk"
+          },
+          {
+            "id": "iodine",
+            "text": "iodine"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "iodine"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Choose the option supported by the chapter.",
+      "explanation": "Iodine is listed as a sublimable substance.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-034",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "topicIds": [
+        "interconversion"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "A substance which can change its state is:",
+      "sourceRefs": [
+        {
+          "pageId": "page-36",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-31",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-39",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "wood",
+            "text": "wood"
+          },
+          {
+            "id": "oxygen",
+            "text": "oxygen"
+          },
+          {
+            "id": "paper",
+            "text": "paper"
+          },
+          {
+            "id": "cloth",
+            "text": "cloth"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "oxygen"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Choose the option supported by the chapter.",
+      "explanation": "Oxygen can change between gaseous and liquid states under changed temperature and pressure.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-035",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "topicIds": [
+        "interconversion"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "The process by which a solid changes into a liquid is called:",
+      "sourceRefs": [
+        {
+          "pageId": "page-36",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-31",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-33",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-39",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "freezing",
+            "text": "freezing"
+          },
+          {
+            "id": "melting",
+            "text": "melting"
+          },
+          {
+            "id": "condensation",
+            "text": "condensation"
+          },
+          {
+            "id": "evaporation",
+            "text": "evaporation"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "melting"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Choose the option supported by the chapter.",
+      "explanation": "Melting or fusion is the change from solid to liquid.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-036",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "topicIds": [
+        "interconversion"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "The change of a liquid into vapour below its boiling point is called:",
+      "sourceRefs": [
+        {
+          "pageId": "page-36",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-32",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-39",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "melting",
+            "text": "melting"
+          },
+          {
+            "id": "freezing",
+            "text": "freezing"
+          },
+          {
+            "id": "boiling",
+            "text": "boiling"
+          },
+          {
+            "id": "evaporation",
+            "text": "evaporation"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "evaporation"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Choose the option supported by the chapter.",
+      "explanation": "Evaporation occurs below the boiling point.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-037",
+      "version": 1,
+      "type": "true_false_correct",
+      "status": "active",
+      "topicIds": [
+        "interconversion"
+      ],
+      "difficulty": 1,
+      "marks": 2,
+      "prompt": "Only water can exist in three different states. State true or false.",
+      "sourceRefs": [
+        {
+          "pageId": "page-37",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-30",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-31",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "requiresCorrectionWhenFalse": true
+      },
+      "answer": {
+        "value": false,
+        "correction": "Many substances can exist in solid, liquid and gaseous states when conditions change."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "identifies the statement as false",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "Many substances can exist in solid, liquid and gaseous states when conditions change.",
+            "weight": 1,
+            "required": true
+          }
+        ]
+      },
+      "hint": "If it is false, rewrite the incorrect idea correctly.",
+      "explanation": "Water is an example, not the only substance that can change state.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-038",
+      "version": 1,
+      "type": "true_false_correct",
+      "status": "active",
+      "topicIds": [
+        "interconversion"
+      ],
+      "difficulty": 1,
+      "marks": 2,
+      "prompt": "There is no difference between evaporation and boiling. State true or false.",
+      "sourceRefs": [
+        {
+          "pageId": "page-37",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-32",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "requiresCorrectionWhenFalse": true
+      },
+      "answer": {
+        "value": false,
+        "correction": "Evaporation occurs below the boiling point, whereas boiling occurs at the boiling point."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "identifies the statement as false",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "Evaporation occurs below the boiling point, whereas boiling occurs at the boiling point.",
+            "weight": 1,
+            "required": true
+          }
+        ]
+      },
+      "hint": "If it is false, rewrite the incorrect idea correctly.",
+      "explanation": "The two processes occur under different temperature conditions.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-039",
+      "version": 1,
+      "type": "one_word",
+      "status": "active",
+      "topicIds": [
+        "interconversion"
+      ],
+      "difficulty": 2,
+      "marks": 1,
+      "prompt": "Select the odd one out: freezing, condensation, melting point, evaporation.",
+      "sourceRefs": [
+        {
+          "pageId": "page-37",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-31",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-32",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "maxWords": 5
+      },
+      "answer": {
+        "accepted": [
+          "melting point"
+        ],
+        "caseSensitive": false
+      },
+      "rubric": {
+        "exact": true,
+        "spellingAffectsScore": true
+      },
+      "hint": "Give only the required word or term.",
+      "explanation": "Freezing, condensation and evaporation are processes; melting point is a temperature.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-040",
+      "version": 1,
+      "type": "matching",
+      "status": "active",
+      "topicIds": [
+        "interconversion"
+      ],
+      "difficulty": 2,
+      "marks": 4,
+      "prompt": "Match each change with its correct phenomenon: formation of water vapour from water; disappearance of camphor in air; conversion of ice into water; conversion of water into steam.",
+      "sourceRefs": [
+        {
+          "pageId": "page-37",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-30",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-31",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-32",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-33",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "left": [
+          {
+            "id": "water-vapour",
+            "text": "Formation of water vapour from water"
+          },
+          {
+            "id": "camphor",
+            "text": "Disappearance of camphor in air"
+          },
+          {
+            "id": "ice-water",
+            "text": "Conversion of ice into water"
+          },
+          {
+            "id": "water-steam",
+            "text": "Conversion of water into steam"
+          }
+        ],
+        "right": [
+          {
+            "id": "evaporation",
+            "text": "Evaporation"
+          },
+          {
+            "id": "sublimation",
+            "text": "Sublimation"
+          },
+          {
+            "id": "melting",
+            "text": "Melting"
+          },
+          {
+            "id": "boiling",
+            "text": "Boiling or vaporisation"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "water-vapour",
+            "rightId": "evaporation"
+          },
+          {
+            "leftId": "camphor",
+            "rightId": "sublimation"
+          },
+          {
+            "leftId": "ice-water",
+            "rightId": "melting"
+          },
+          {
+            "leftId": "water-steam",
+            "rightId": "boiling"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "hint": "Match each physical change to its named process.",
+      "explanation": "These are evaporation, sublimation, melting and boiling respectively.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-041",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "topicIds": [
+        "physical-chemical-change"
+      ],
+      "difficulty": 2,
+      "marks": 2,
+      "prompt": "Give two examples of substances which do not change their state on heating.",
+      "sourceRefs": [
+        {
+          "pageId": "page-37",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-31",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedPoints": 2
+      },
+      "answer": {
+        "ideal": "Paper and sugar burn on heating instead of simply changing state."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "names paper",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "names sugar",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "spellingAffectsScore": false,
+        "grammarAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Answer each part in a separate short point.",
+      "explanation": "The chapter's activity contrasts burning paper and sugar with melting butter.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-042",
+      "version": 1,
+      "type": "brief_answer",
+      "status": "active",
+      "topicIds": [
+        "interconversion"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Define boiling point.",
+      "sourceRefs": [
+        {
+          "pageId": "page-37",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-32",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-33",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedSentences": 1
+      },
+      "answer": {
+        "ideal": "The boiling point is the fixed temperature at which a liquid starts changing into the gaseous state."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "fixed temperature at which a liquid starts changing into gas",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "spellingAffectsScore": false,
+        "grammarAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Answer briefly using the chapter's key scientific terms.",
+      "explanation": "Boiling point names a fixed transition temperature.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-043",
+      "version": 1,
+      "type": "brief_answer",
+      "status": "active",
+      "topicIds": [
+        "interconversion"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Define sublimation.",
+      "sourceRefs": [
+        {
+          "pageId": "page-37",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-31",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedSentences": 1
+      },
+      "answer": {
+        "ideal": "Sublimation is the direct change of a solid into vapour without passing through the liquid state."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "direct solid-to-vapour change without passing through liquid",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "spellingAffectsScore": false,
+        "grammarAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Answer briefly using the chapter's key scientific terms.",
+      "explanation": "Sublimation bypasses the liquid state.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-044",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "topicIds": [
+        "interconversion"
+      ],
+      "difficulty": 2,
+      "marks": 3,
+      "prompt": "Define interconversion of states of matter. What are the two conditions that cause it?",
+      "sourceRefs": [
+        {
+          "pageId": "page-37",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-29",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-30",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedPoints": 3
+      },
+      "answer": {
+        "ideal": "Interconversion is the reversible change of matter from one state to another and back without changing its chemical composition. It is caused by changes in temperature and pressure."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "defines reversible change from one state to another without chemical-composition change",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "identifies temperature change",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p3",
+            "concept": "identifies pressure change",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "spellingAffectsScore": false,
+        "grammarAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Answer each part in a separate short point.",
+      "explanation": "Temperature and pressure cause reversible changes of state.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-045",
+      "version": 1,
+      "type": "compare",
+      "status": "active",
+      "topicIds": [
+        "interconversion"
+      ],
+      "difficulty": 2,
+      "marks": 2,
+      "prompt": "Differentiate between solidification and condensation.",
+      "sourceRefs": [
+        {
+          "pageId": "page-37",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-32",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-33",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "dimensions": [
+          "solidification",
+          "condensation"
+        ]
+      },
+      "answer": {
+        "ideal": {
+          "solidification": "A liquid changes into a solid on cooling.",
+          "condensation": "A gas or vapour changes into a liquid on cooling."
+        }
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "solidification is liquid to solid",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "condensation is gas or vapour to liquid",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "spellingAffectsScore": false,
+        "grammarAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "State the defining change for each term.",
+      "explanation": "The two cooling processes end in different states.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-046",
+      "version": 1,
+      "type": "compare",
+      "status": "active",
+      "topicIds": [
+        "interconversion"
+      ],
+      "difficulty": 2,
+      "marks": 2,
+      "prompt": "Differentiate between melting and boiling.",
+      "sourceRefs": [
+        {
+          "pageId": "page-37",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-31",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-32",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-33",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "dimensions": [
+          "melting",
+          "boiling"
+        ]
+      },
+      "answer": {
+        "ideal": {
+          "melting": "A solid changes into a liquid on heating.",
+          "boiling": "A liquid changes into gas at its boiling point."
+        }
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "melting is solid to liquid",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "boiling is liquid to gas at the boiling point",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "spellingAffectsScore": false,
+        "grammarAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "State the defining change for each term.",
+      "explanation": "Melting and boiling begin from different states.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-047",
+      "version": 1,
+      "type": "compare",
+      "status": "active",
+      "topicIds": [
+        "interconversion"
+      ],
+      "difficulty": 2,
+      "marks": 2,
+      "prompt": "Differentiate between a gas and a vapour.",
+      "sourceRefs": [
+        {
+          "pageId": "page-37",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-35",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "dimensions": [
+          "gas",
+          "vapour"
+        ]
+      },
+      "answer": {
+        "ideal": {
+          "gas": "A substance that normally exists in the gaseous state at ordinary temperature and pressure.",
+          "vapour": "The gaseous state of a substance that is normally solid or liquid at ordinary temperature and pressure."
+        }
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "gas normally exists as gas under ordinary conditions",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "vapour is gaseous form of a normally solid or liquid substance",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "spellingAffectsScore": false,
+        "grammarAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "State the defining change for each term.",
+      "explanation": "The distinction depends on the substance's usual state under ordinary conditions.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-048",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "topicIds": [
+        "states-properties"
+      ],
+      "difficulty": 2,
+      "marks": 4,
+      "prompt": "Anshul stacked pebbles into a tower and then poured water over it. The water flowed through the gaps and spread across the floor. (a) Why could the pebbles be stacked? (b) Why did the water spread? (c) What happens to the water after it spreads? (d) Which other state of matter can flow in all directions?",
+      "sourceRefs": [
+        {
+          "pageId": "page-38",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-23",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-24",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-25",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-32",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "recommendedPoints": 4
+      },
+      "answer": {
+        "ideal": "Pebbles are solids with a definite shape, so they can be stacked. Water is a liquid with no definite shape and can flow. It gradually evaporates into water vapour. Gases can also flow in all directions."
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "pebbles are solids with definite shape and can be stacked",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "water is a liquid that flows and has no definite shape",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p3",
+            "concept": "spread water evaporates into water vapour",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p4",
+            "concept": "identifies gas as the other flowing state",
+            "weight": 1,
+            "required": true
+          }
+        ],
+        "spellingAffectsScore": false,
+        "grammarAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "hint": "Answer each part in a separate short point.",
+      "explanation": "The case applies the properties of solids, liquids and gases and the process of evaporation.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-04T19:45:00+05:30",
+        "validationStatus": "verified"
+      }
+    }
+  ]
+}

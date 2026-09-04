@@ -1,0 +1,251 @@
+{
+  "reviewVersion": "0.1.0",
+  "bankId": "the-flower-reproduction-v1",
+  "bankVersion": 1,
+  "reviewedAt": "2026-09-04T20:45:00+05:30",
+  "reviewerMethod": "Codex page-by-page visual review of the 12-page reproduction scan using the repository-local chapter-ingestion and PDF workflows, followed by manifest, source-hash, schema, reference and rubric-total checks",
+  "inputs": {
+    "manifest": "samples/the-flower-reproduction-chapter-manifest.json",
+    "bank": "samples/the-flower-reproduction-question-bank.json",
+    "sourceAssetCount": 1,
+    "pageRange": "21-32",
+    "inferredMetadata": {
+      "board": "ICSE",
+      "grade": 6,
+      "subject": "Biology",
+      "bookTitle": "Concise Biology Middle School - 6",
+      "chapterNumber": 2,
+      "chapterTitle": "The Flower"
+    }
+  },
+  "scope": {
+    "strategy": "Exercise-exclusive and reproduction-only: each active prompt comes from a relevant printed exercise item; no prose-only drill questions were added.",
+    "included": "Sexual reproduction, reproductive structures needed for reproduction, pollination, fertilisation, fruit and seed formation, seed structure and types, and germination.",
+    "excludedEarlierPortion": "Items testing calyx/corolla, complete/incomplete flowers, bisexual/unisexual classification and monoecious/dioecious plants were excluded unless a reproductive structure was directly needed for pollination or fertilisation.",
+    "visualAdaptation": "The printed flower case study and art exercise were adapted into one reproduction-only source group with five numbered callouts and three follow-up questions."
+  },
+  "gates": {
+    "manifestSchema": "pass",
+    "sourceHashes": "pass",
+    "questionBankSchema": "pass",
+    "deterministicGroundingReview": "pass",
+    "manualGroundingReview": "pass",
+    "rubricBalanceReview": "pass"
+  },
+  "coverage": {
+    "questionCount": 53,
+    "activeQuestionCount": 52,
+    "reviewQuestionCount": 1,
+    "topics": {
+      "reproductive-structures": 11,
+      "fruit-and-seed-formation": 8,
+      "germination": 10,
+      "pollination": 11,
+      "seed-structure": 14,
+      "germination-types": 4,
+      "seed-types": 3,
+      "sexual-reproduction": 5,
+      "fertilisation": 4
+    },
+    "types": {
+      "single_choice": 20,
+      "fill_blank": 7,
+      "compare": 4,
+      "brief_answer": 10,
+      "multi_point": 11,
+      "source_group": 1
+    },
+    "difficulties": {
+      "1": 47,
+      "2": 6
+    },
+    "bookExercises": {
+      "I-relevant-multiple-choice": [
+        "q-001",
+        "q-002",
+        "q-003",
+        "q-004",
+        "q-005",
+        "q-006",
+        "q-007"
+      ],
+      "II-relevant-fill-blanks": [
+        "q-008",
+        "q-009",
+        "q-010",
+        "q-011",
+        "q-012",
+        "q-013",
+        "q-014"
+      ],
+      "III-relevant-odd-one-out": [
+        "q-015",
+        "q-016"
+      ],
+      "IV-differentiate": [
+        "q-017",
+        "q-018",
+        "q-019"
+      ],
+      "V-relevant-definitions": [
+        "q-020",
+        "q-021",
+        "q-022",
+        "q-023"
+      ],
+      "VI-functions": [
+        "q-024",
+        "q-025",
+        "q-026",
+        "q-027",
+        "q-028"
+      ],
+      "VII-supported-sequences": [
+        "q-029",
+        "q-030",
+        "q-031"
+      ],
+      "VIII-relevant-short-answers": [
+        "q-032",
+        "q-033",
+        "q-034",
+        "q-035",
+        "q-036",
+        "q-037",
+        "q-038",
+        "q-039",
+        "q-040",
+        "q-041"
+      ],
+      "IX-case-study": [
+        "q-042",
+        "q-043",
+        "q-044",
+        "q-045"
+      ],
+      "X-relevant-assertion-reason": [
+        "q-046",
+        "q-047"
+      ],
+      "XI-reproduction-only-diagram-adaptation": [
+        "q-053"
+      ],
+      "XIII-relevant-competency-focused": [
+        "q-048",
+        "q-049",
+        "q-050",
+        "q-051",
+        "q-052"
+      ]
+    },
+    "excludedByScope": [
+      {
+        "source": "page-29",
+        "item": "Exercise I.3: calyx",
+        "reason": "Tests the earlier flower-structure portion only."
+      },
+      {
+        "source": "page-29",
+        "item": "Exercise I.4: bisexual flower",
+        "reason": "Tests the earlier flower-classification portion only."
+      },
+      {
+        "source": "page-30",
+        "item": "Exercise III.1: cross, self, water and wind pollination odd-one-out",
+        "reason": "No unique odd item is deterministically supported because the list mixes two classification schemes."
+      },
+      {
+        "source": "page-30",
+        "item": "Exercise V.5-V.6: complete and bisexual flower definitions",
+        "reason": "Tests the earlier flower-classification portion only."
+      },
+      {
+        "source": "page-30",
+        "item": "Exercise VII.4: fertilisation, embryo, zygote, seedling, germination sequence",
+        "reason": "The supplied reproduction section does not state the zygote-to-embryo sequence, so a fully grounded answer cannot be scored."
+      },
+      {
+        "source": "page-30",
+        "item": "Exercise VIII.11-VIII.12: draw hypogeal and epigeal stages",
+        "reason": "Freehand drawing is not supported by the current player; the descriptive comparison and process questions are included."
+      },
+      {
+        "source": "page-31",
+        "item": "Exercise X.3: mustard as an incomplete flower",
+        "reason": "Tests the earlier complete/incomplete-flower portion and is not supported by the supplied reproduction pages."
+      },
+      {
+        "source": "page-31",
+        "item": "Exercise XII: nursery visit and planting activity",
+        "reason": "Requires external inquiry and a physical activity."
+      },
+      {
+        "source": "pages-31-32",
+        "item": "Exercise XIII.2-XIII.5 and XIII.9",
+        "reason": "Tests bisexual/unisexual, complete/incomplete, monoecious/dioecious or non-reproductive whorl content from the earlier portion."
+      }
+    ]
+  },
+  "atomicCoverageInventory": {
+    "sexual-reproduction": [
+      "flower as reproductive organ",
+      "stamen male role",
+      "carpel female role"
+    ],
+    "pollination": [
+      "definition",
+      "self-pollination",
+      "agents",
+      "insect-pollinated traits and examples",
+      "wind-pollinated traits and maize"
+    ],
+    "fertilisation": [
+      "pollination before fertilisation",
+      "male and female gamete fusion",
+      "female gamete in ovule"
+    ],
+    "fruit-and-seed-formation": [
+      "ovary to fruit",
+      "ovule to seed",
+      "pericarp and its layers",
+      "fruit versus seed"
+    ],
+    "seeds": [
+      "seed coat",
+      "embryo",
+      "plumule",
+      "radicle",
+      "cotyledons",
+      "endosperm",
+      "dicot versus monocot"
+    ],
+    "germination": [
+      "definition",
+      "conditions",
+      "bean process",
+      "maize process",
+      "epigeal versus hypogeal",
+      "life-cycle sequence"
+    ]
+  },
+  "sourceAssetReadiness": {
+    "status": "prepared-but-player-pending",
+    "affectedQuestionIds": [
+      "q-053"
+    ],
+    "runtimeVisualsRequired": true,
+    "originalDiagram": "public/question-assets/flower-reproduction-diagram.svg",
+    "note": "The original, label-free SVG is available at the runtime asset reference, but q-053 remains in review because source_group is stored by the contract and not yet playable."
+  },
+  "blockingFindings": [],
+  "advisoryNotes": [
+    "No printed learning-outcomes panel is present in the supplied reproduction-only scan; no outcome wording was invented.",
+    "Metadata was inferred from the visible chapter numbering and matching ICSE Class 6 Concise Biology references.",
+    "The copyrighted source PDF remains local and is intentionally excluded from Git.",
+    "The bank is intentionally moderate in size and follows the relevant printed exercises rather than exhaustively turning every paragraph into new questions.",
+    "Questions q-002 and q-014 intentionally retain the same fact in multiple-choice and fill-in-the-blank forms because both are separate printed exercise items.",
+    "Question q-031 represents the exercise's post-fertilisation terms as two grounded branches because they do not form one scientifically valid linear sequence.",
+    "The source-group diagram question is review-only until the player supports that question type."
+  ],
+  "decision": "accept"
+}

@@ -20,6 +20,10 @@
 .library-grid { display:grid; gap:14px; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); }
 .library-grid article { background:rgba(255,254,251,.82); border:1px solid var(--line); border-radius:var(--radius-md); border-top:5px solid var(--aqua); box-shadow:var(--shadow-xs); padding:21px; }
 .library-grid span,.library-grid p { color:var(--muted); font-size:.8rem; } .library-grid h3 { margin:10px 0; }
+.library-grid .button-delete { margin-top:8px; }
+.library-delete { border-top:1px solid var(--line); margin-top:14px; padding-top:14px; }
+.library-delete > p { color:var(--danger); line-height:1.45; margin-bottom:0; }
+.library-delete .button-row { margin-top:12px; }
 .library-subjects { display:grid; gap:32px; }
 .library-subject-group { border-top:1px solid var(--line); padding-top:18px; }
 .library-subject-group > .section-heading h3 { color:var(--navy); font-size:1.2rem; margin:0; }

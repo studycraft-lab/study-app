@@ -7,6 +7,7 @@ import { adminClient } from "@/lib/supabase/admin";
 
 export type LibraryFilter = { familyId: string; board?: string; grade?: number };
 export type ImportQuestionBankResult = { id: string; created: boolean; replaced: boolean };
+export type DeletedQuestionBankVersion = { id: string; bankVersion: number; chapterTitle: string };
 
 export async function importQuestionBank(bank: ValidatedQuestionBank, metadata: BankMetadata) {
   const contentHash = createHash("sha256").update(JSON.stringify(bank)).digest("hex");
@@ -48,6 +49,34 @@ export async function listLibrary(filter?: LibraryFilter) {
     seen.add(key);
     return true;
   });
+}
+
+export async function deleteQuestionBankVersion(input: { id: string; familyId: string }): Promise<DeletedQuestionBankVersion> {
+  const client = adminClient();
+  const { data: visible, error: visibleError } = await client.from("library_chapters")
+    .select("id,bank_version,chapter_title")
+    .eq("id", input.id)
+    .eq("family_id", input.familyId)
+    .maybeSingle();
+  if (visibleError) throw new Error(visibleError.message);
+  if (!visible) throw new Error("Question bank not found.");
+
+  const historyTables = ["study_sessions", "study_attempts", "review_items", "question_reports"] as const;
+  const historyChecks = await Promise.all(historyTables.map((table) => client.from(table)
+    .select("id")
+    .eq("question_bank_id", input.id)
+    .limit(1)
+    .maybeSingle()));
+  const historyError = historyChecks.find((result) => result.error)?.error;
+  if (historyError) throw new Error(historyError.message);
+  if (historyChecks.some((result) => result.data)) throw new Error("A bank with study history cannot be deleted.");
+
+  const { error: deleteError } = await client.from("question_banks").delete().eq("id", input.id);
+  if (deleteError) {
+    if (deleteError.code === "23503") throw new Error("A bank with study history cannot be deleted.");
+    throw new Error(deleteError.message);
+  }
+  return { id: input.id, bankVersion: Number(visible.bank_version), chapterTitle: String(visible.chapter_title) };
 }
 
 export async function getQuestionBank(id: string): Promise<Record<string, unknown>> {

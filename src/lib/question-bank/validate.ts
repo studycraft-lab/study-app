@@ -109,6 +109,11 @@ function normalizedPrompt(prompt: unknown): string {
   return String(prompt ?? "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
 }
 
+function dependsOnUndisplayedContext(question: Record<string, unknown>): boolean {
+  if (question.status !== "active" || ["source_group", "map_work"].includes(String(question.type))) return false;
+  return /\b(?:case[- ]study|diagram|illustration|image|labelled|labeled)\b|\bshown\s+(?:in|above|below)\b/i.test(String(question.prompt ?? ""));
+}
+
 export function validateQuestionBank(input: unknown): BankValidation {
   const errors: string[] = [];
   const warnings: string[] = [];
@@ -137,6 +142,9 @@ export function validateQuestionBank(input: unknown): BankValidation {
   questions.forEach((question, index) => {
     const path = `questions[${index}]`;
     const id = String(question.id ?? path);
+    if (dependsOnUndisplayedContext(question)) {
+      errors.push(`${path} is active but refers to visual or shared case-study context that the text player does not display.`);
+    }
     strings(question.topicIds).forEach((topicId) => {
       if (!topicIds.has(topicId)) errors.push(`${path} cites missing topic ${topicId}.`);
     });

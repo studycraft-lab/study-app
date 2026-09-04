@@ -1,0 +1,4654 @@
+{
+  "bank": {
+    "board": "ICSE",
+    "bookTitle": "Biology",
+    "chapterNumber": 3,
+    "grade": 6,
+    "id": "the-cell-v1",
+    "status": "reviewed",
+    "subject": "Biology",
+    "title": "The Cell",
+    "version": 3
+  },
+  "questions": [
+    {
+      "answer": {
+        "correctOptionId": "cell"
+      },
+      "difficulty": 1,
+      "explanation": "The cell is the basic structural and functional unit of living things.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-001",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "What is the lowest level of organisation in a multicellular organism?",
+      "response": {
+        "options": [
+          {
+            "id": "organ-system",
+            "text": "Organ system"
+          },
+          {
+            "id": "organ",
+            "text": "Organ"
+          },
+          {
+            "id": "tissue",
+            "text": "Tissue"
+          },
+          {
+            "id": "cell",
+            "text": "Cell"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-41",
+          "regionId": "exercise-choice",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-34",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "cell-basics"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "hooke"
+      },
+      "difficulty": 1,
+      "explanation": "Robert Hooke discovered the cell while observing thin cork slices in 1665.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-002",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Who discovered the cell?",
+      "response": {
+        "options": [
+          {
+            "id": "brown",
+            "text": "Robert Brown"
+          },
+          {
+            "id": "linnaeus",
+            "text": "C. Linnaeus"
+          },
+          {
+            "id": "hooke",
+            "text": "Robert Hooke"
+          },
+          {
+            "id": "darwin",
+            "text": "C. Darwin"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-41",
+          "regionId": "exercise-choice",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-35",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "cell-basics"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "human"
+      },
+      "difficulty": 1,
+      "explanation": "Humans are multicellular; Amoeba, yeast and Euglena are unicellular.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-003",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Which is not a unicellular organism?",
+      "response": {
+        "options": [
+          {
+            "id": "amoeba",
+            "text": "Amoeba"
+          },
+          {
+            "id": "human",
+            "text": "Human"
+          },
+          {
+            "id": "yeast",
+            "text": "Yeast"
+          },
+          {
+            "id": "euglena",
+            "text": "Euglena"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-41",
+          "regionId": "exercise-choice",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-34",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "cell-basics"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "nuclear"
+      },
+      "difficulty": 1,
+      "explanation": "The nuclear membrane surrounds the nucleus and separates it from the cytoplasm.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-004",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "What is the membrane that separates the nucleus from the cytoplasm called?",
+      "response": {
+        "options": [
+          {
+            "id": "plasma",
+            "text": "Plasma membrane"
+          },
+          {
+            "id": "nuclear",
+            "text": "Nuclear membrane"
+          },
+          {
+            "id": "cell",
+            "text": "Cell membrane"
+          },
+          {
+            "id": "wall",
+            "text": "Cell wall"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-41",
+          "regionId": "exercise-choice",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-37",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "cell-structure"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "all"
+      },
+      "difficulty": 1,
+      "explanation": "A typical plant cell has a nucleus, cell wall and chloroplasts.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-005",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Which set of structures is found in a typical plant cell?",
+      "response": {
+        "options": [
+          {
+            "id": "nucleus",
+            "text": "Nucleus only"
+          },
+          {
+            "id": "wall",
+            "text": "Cell wall only"
+          },
+          {
+            "id": "chloroplast",
+            "text": "Chloroplast only"
+          },
+          {
+            "id": "all",
+            "text": "Nucleus, cell wall and chloroplast"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-41",
+          "regionId": "exercise-choice",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-36",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plant-animal-cells"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "membrane"
+      },
+      "difficulty": 1,
+      "explanation": "The cell membrane, also called the plasma membrane, surrounds the cell.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-006",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "The cell is surrounded by which membrane?",
+      "response": {
+        "options": [
+          {
+            "id": "wall",
+            "text": "Cell wall"
+          },
+          {
+            "id": "membrane",
+            "text": "Cell membrane"
+          },
+          {
+            "id": "cytoplasm",
+            "text": "Cytoplasm"
+          },
+          {
+            "id": "nuclear",
+            "text": "Nuclear membrane"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-41",
+          "regionId": "exercise-choice",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-36",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "cell-structure"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "cytoplasm"
+      },
+      "difficulty": 1,
+      "explanation": "Cell organelles are minute structures present in the cytoplasm.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-007",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Where are cell organelles present?",
+      "response": {
+        "options": [
+          {
+            "id": "cytoplasm",
+            "text": "Cytoplasm"
+          },
+          {
+            "id": "vacuoles",
+            "text": "Vacuoles"
+          },
+          {
+            "id": "nucleus",
+            "text": "Nucleus"
+          },
+          {
+            "id": "all",
+            "text": "All of these"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-41",
+          "regionId": "exercise-choice",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-38",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "cell-organelles"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "lysosome"
+      },
+      "difficulty": 1,
+      "explanation": "Lysosomes contain digestive enzymes and are called suicide bags.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-008",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Which organelle is commonly called the suicide bag of the cell?",
+      "response": {
+        "options": [
+          {
+            "id": "nucleus",
+            "text": "Nucleus"
+          },
+          {
+            "id": "lysosome",
+            "text": "Lysosome"
+          },
+          {
+            "id": "chloroplast",
+            "text": "Chloroplast"
+          },
+          {
+            "id": "ribosome",
+            "text": "Ribosome"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-41",
+          "regionId": "exercise-choice",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-39",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-40",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "cell-organelles"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "l1",
+            "rightId": "r1"
+          },
+          {
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
+          },
+          {
+            "leftId": "l5",
+            "rightId": "r5"
+          },
+          {
+            "leftId": "l6",
+            "rightId": "r6"
+          },
+          {
+            "leftId": "l7",
+            "rightId": "r7"
+          }
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "The completed sentences identify the nucleus, microscope, chloroplast, cell membrane, mitochondria, Robert Hooke and plant cells.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-009",
+      "marks": 7,
+      "origin": "end_exercise",
+      "prompt": "Match each sentence with the word that correctly fills its blank.",
+      "response": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "The ___ is the control centre of the cell."
+          },
+          {
+            "id": "l2",
+            "text": "The instrument used to see tiny objects is a ___."
+          },
+          {
+            "id": "l3",
+            "text": "___ contain green pigment in a plant cell."
+          },
+          {
+            "id": "l4",
+            "text": "The outer layer of a cell is the ___."
+          },
+          {
+            "id": "l5",
+            "text": "Energy is produced in ___."
+          },
+          {
+            "id": "l6",
+            "text": "The term cell was given by ___."
+          },
+          {
+            "id": "l7",
+            "text": "A cell wall is present in ___ cells."
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "Nucleus"
+          },
+          {
+            "id": "r2",
+            "text": "Microscope"
+          },
+          {
+            "id": "r3",
+            "text": "Chloroplasts"
+          },
+          {
+            "id": "r4",
+            "text": "Cell membrane"
+          },
+          {
+            "id": "r5",
+            "text": "Mitochondria"
+          },
+          {
+            "id": "r6",
+            "text": "Robert Hooke"
+          },
+          {
+            "id": "r7",
+            "text": "Plant"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-41",
+          "regionId": "exercise-fill",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-35",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-36",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-38",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-40",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "cell-structure",
+        "cell-organelles"
+      ],
+      "type": "matching",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "true"
+      },
+      "difficulty": 1,
+      "explanation": "Most cells have one nucleus, although some cells have more than one.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-010",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Most cells have only one nucleus.",
+      "response": {
+        "options": [
+          {
+            "id": "true",
+            "text": "True"
+          },
+          {
+            "id": "false",
+            "text": "False"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-42",
+          "regionId": "exercise-true-false",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-37",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "cell-structure"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "false"
+      },
+      "difficulty": 1,
+      "explanation": "Protoplasm includes the cell membrane, nucleus and cytoplasm.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-011",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Only the nucleus of a cell represents the protoplasm.",
+      "response": {
+        "options": [
+          {
+            "id": "true",
+            "text": "True"
+          },
+          {
+            "id": "false",
+            "text": "False"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-42",
+          "regionId": "exercise-true-false",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-37",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "cell-structure"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "true"
+      },
+      "difficulty": 1,
+      "explanation": "The Hydrilla leaf-cell figure shows chloroplasts.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-012",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "The cells of a Hydrilla leaf contain chloroplasts.",
+      "response": {
+        "options": [
+          {
+            "id": "true",
+            "text": "True"
+          },
+          {
+            "id": "false",
+            "text": "False"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-42",
+          "regionId": "exercise-true-false",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-38",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plant-animal-cells"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "true"
+      },
+      "difficulty": 1,
+      "explanation": "Cell theory states that all organisms are made of cells and their products.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-013",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "All living organisms are made of cells.",
+      "response": {
+        "options": [
+          {
+            "id": "true",
+            "text": "True"
+          },
+          {
+            "id": "false",
+            "text": "False"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-42",
+          "regionId": "exercise-true-false",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-35",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "cell-basics"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "true"
+      },
+      "difficulty": 1,
+      "explanation": "The nucleus controls and regulates cell activities.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-014",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "The nucleus is the brain of the cell.",
+      "response": {
+        "options": [
+          {
+            "id": "true",
+            "text": "True"
+          },
+          {
+            "id": "false",
+            "text": "False"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-42",
+          "regionId": "exercise-true-false",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-37",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "cell-structure"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "true"
+      },
+      "difficulty": 1,
+      "explanation": "Living plant and animal cells contain cytoplasm as part of their protoplasm.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-015",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Every cell has cytoplasm.",
+      "response": {
+        "options": [
+          {
+            "id": "true",
+            "text": "True"
+          },
+          {
+            "id": "false",
+            "text": "False"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-42",
+          "regionId": "exercise-true-false",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-36",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-37",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "cell-structure"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "false"
+      },
+      "difficulty": 1,
+      "explanation": "Cells in multicellular organisms are specialised and work together rather than living independently.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-016",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "All cells in a multicellular organism can live independently.",
+      "response": {
+        "options": [
+          {
+            "id": "true",
+            "text": "True"
+          },
+          {
+            "id": "false",
+            "text": "False"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-42",
+          "regionId": "exercise-true-false",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-34",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "cell-basics"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "false"
+      },
+      "difficulty": 1,
+      "explanation": "Animal cells lack a cell wall; their outer boundary is the cell membrane.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-017",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "The outermost covering of an animal cell is the cell wall.",
+      "response": {
+        "options": [
+          {
+            "id": "true",
+            "text": "True"
+          },
+          {
+            "id": "false",
+            "text": "False"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-42",
+          "regionId": "exercise-true-false",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-36",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-40",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plant-animal-cells"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "l1",
+            "rightId": "r1"
+          },
+          {
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
+          },
+          {
+            "leftId": "l5",
+            "rightId": "r5"
+          },
+          {
+            "leftId": "l6",
+            "rightId": "r6"
+          }
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "Each term has one matching definition or feature.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-018",
+      "marks": 6,
+      "origin": "end_exercise",
+      "prompt": "Match each cell term with its description.",
+      "response": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "Cell"
+          },
+          {
+            "id": "l2",
+            "text": "Nucleus"
+          },
+          {
+            "id": "l3",
+            "text": "Cell wall"
+          },
+          {
+            "id": "l4",
+            "text": "Chloroplast"
+          },
+          {
+            "id": "l5",
+            "text": "Cytoplasm"
+          },
+          {
+            "id": "l6",
+            "text": "Organelles"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "Unit of a living body"
+          },
+          {
+            "id": "r2",
+            "text": "Brain of the cell"
+          },
+          {
+            "id": "r3",
+            "text": "Found in plants"
+          },
+          {
+            "id": "r4",
+            "text": "Contains green pigment"
+          },
+          {
+            "id": "r5",
+            "text": "Jelly-like substance between the cell membrane and nucleus"
+          },
+          {
+            "id": "r6",
+            "text": "Tiny structures inside cells"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-42",
+          "regionId": "exercise-match-define",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-34",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-36",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-37",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-38",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "cell-structure",
+        "cell-organelles"
+      ],
+      "type": "matching",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "A cell is the basic structural and functional unit of life. The nucleus controls cell activities. Cytoplasm is the jelly-like substance between the cell membrane and nucleus. Protoplasm is the living substance made up of cell membrane, nucleus and cytoplasm. The cell membrane is the thin living outer boundary that selectively controls entry and exit. A microscopic organism is too small to be seen with the naked eye and is observed with a microscope."
+      },
+      "difficulty": 2,
+      "explanation": "These definitions distinguish the basic unit of life, its main living parts and organisms visible only with a microscope.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-019",
+      "marks": 6,
+      "origin": "end_exercise",
+      "prompt": "Define cell, nucleus, cytoplasm, protoplasm, cell membrane and microscopic organism.",
+      "response": {
+        "format": "short-text"
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "defines a cell as the basic structural and functional unit of life",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "defines the nucleus as the cell's control centre",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "defines cytoplasm as the jelly-like substance between cell membrane and nucleus",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "defines protoplasm as the living substance including cell membrane, nucleus and cytoplasm",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "defines cell membrane as the thin living outer boundary that selectively controls entry and exit",
+            "id": "p5",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "defines a microscopic organism as too small for the naked eye and observable with a microscope",
+            "id": "p6",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-42",
+          "regionId": "exercise-match-define",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-34",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-36",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-37",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "cell-basics",
+        "cell-structure"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "l1",
+            "rightId": "r1"
+          },
+          {
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
+          }
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "The four words are nucleus, membrane, cytoplasm and protoplasm.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-020",
+      "marks": 4,
+      "origin": "end_exercise",
+      "prompt": "Unscramble each group of letters to make a cell-related word.",
+      "response": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "SUNECUL"
+          },
+          {
+            "id": "l2",
+            "text": "RAMBENME"
+          },
+          {
+            "id": "l3",
+            "text": "PALCOTMYS"
+          },
+          {
+            "id": "l4",
+            "text": "SAMPLOTROP"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "NUCLEUS"
+          },
+          {
+            "id": "r2",
+            "text": "MEMBRANE"
+          },
+          {
+            "id": "r3",
+            "text": "CYTOPLASM"
+          },
+          {
+            "id": "r4",
+            "text": "PROTOPLASM"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-42",
+          "regionId": "exercise-jumble-odd",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-36",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-37",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "cell-structure"
+      ],
+      "type": "matching",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Cell division is the odd one out because it is a process, while the others are cell parts or contents."
+      },
+      "difficulty": 2,
+      "explanation": "Cell division is a process; the other terms name parts or contents of a cell.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-021",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Find the odd one out and give a reason: nucleus, cytoplasm, cell organelles, cell division.",
+      "response": {
+        "format": "short-text"
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "identifies cell division and explains that it is a process rather than a cell part or content",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-42",
+          "regionId": "exercise-jumble-odd",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-36",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-37",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-38",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "cell-structure"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Mitochondria are the odd one out because the other three are parts or contents of the nucleus."
+      },
+      "difficulty": 2,
+      "explanation": "Mitochondria lie in the cytoplasm; the other three are parts or contents of the nucleus.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-022",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Find the odd one out and give a reason: nuclear membrane, nucleolus, mitochondria, chromatin.",
+      "response": {
+        "format": "short-text"
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "identifies mitochondria and explains that the other terms belong to the nucleus",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-42",
+          "regionId": "exercise-jumble-odd",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-37",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-39",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "cell-structure",
+        "cell-organelles"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Centrosome is the odd one out because chloroplast, chlorophyll and granum are related to photosynthetic plastids."
+      },
+      "difficulty": 2,
+      "explanation": "Centrosome is unrelated to chloroplast structure; chlorophyll and grana are found in chloroplasts.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-023",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Find the odd one out and give a reason: chloroplast, chlorophyll, centrosome, granum.",
+      "response": {
+        "format": "short-text"
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "identifies centrosome and connects the other terms with chloroplasts",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-42",
+          "regionId": "exercise-jumble-odd",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-38",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-39",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-40",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "cell-organelles"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Any three of: Amoeba, Paramecium, Euglena, Chlamydomonas, bacteria, yeast."
+      },
+      "difficulty": 1,
+      "explanation": "Examples include Amoeba, Paramecium, Euglena, Chlamydomonas, bacteria and yeast.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-024",
+      "marks": 3,
+      "origin": "end_exercise",
+      "prompt": "Give three examples of unicellular organisms.",
+      "response": {
+        "format": "short-text"
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "names one valid unicellular organism",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "names a second valid unicellular organism",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "names a third valid unicellular organism",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-42",
+          "regionId": "exercise-short-answer",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-34",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "cell-basics"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "The cell membrane controls entry and exit; chromosomes transmit characters from one generation to another; vacuoles store food or waste and support plant cells; cytoplasm transports materials across the cell."
+      },
+      "difficulty": 2,
+      "explanation": "These structures regulate exchange, transmit inherited characters, store or support, and transport materials respectively.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-025",
+      "marks": 4,
+      "origin": "end_exercise",
+      "prompt": "State one function each of the cell membrane, chromosomes, vacuoles and cytoplasm.",
+      "response": {
+        "format": "short-text"
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "states a function of the cell membrane",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "states the inheritance function of chromosomes",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "states a storage or support function of vacuoles",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "states a transport or waste-dissolving function of cytoplasm",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-42",
+          "regionId": "exercise-short-answer",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-36",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-37",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-38",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "cell-structure",
+        "cell-organelles"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "The cell wall gives rigidity and protection; chloroplasts help manufacture food by photosynthesis; mitochondria provide energy by respiration; the nucleus controls life functions and carries hereditary material."
+      },
+      "difficulty": 2,
+      "explanation": "They provide rigidity and protection, make food, release energy and control cell activities.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-026",
+      "marks": 4,
+      "origin": "end_exercise",
+      "prompt": "Why are the cell wall, chloroplast, mitochondria and nucleus important to a plant cell?",
+      "response": {
+        "format": "short-text"
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "explains the importance of the cell wall",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "explains the importance of chloroplasts",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "explains the importance of mitochondria",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "explains the importance of the nucleus",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-42",
+          "regionId": "exercise-short-answer",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-36",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-37",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-38",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-40",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plant-animal-cells",
+        "cell-organelles"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "centrosome"
+      },
+      "difficulty": 1,
+      "explanation": "The centrosome is present in animal cells and absent in plant cells.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-027",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Which cell organelle is found only in animal cells?",
+      "response": {
+        "options": [
+          {
+            "id": "centrosome",
+            "text": "Centrosome"
+          },
+          {
+            "id": "chloroplast",
+            "text": "Chloroplast"
+          },
+          {
+            "id": "cell-wall",
+            "text": "Cell wall"
+          },
+          {
+            "id": "vacuole",
+            "text": "Vacuole"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-42",
+          "regionId": "exercise-short-answer",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-38",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-39",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-40",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plant-animal-cells",
+        "cell-organelles"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "subanswers": [
+          {
+            "id": "a",
+            "ideal": "1 cell membrane; 2 cytoplasm; 3 nucleus; 4 mitochondrion; 5 Golgi apparatus; 6 endoplasmic reticulum."
+          },
+          {
+            "id": "b",
+            "ideal": "Nucleus (callout 3)."
+          },
+          {
+            "id": "c",
+            "ideal": "Mitochondrion (callout 4)."
+          }
+        ]
+      },
+      "difficulty": 2,
+      "explanation": "The planned visual is an unlabelled version of Fig. 3.6 with six numbered callouts; it must be prepared before this item is activated.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "interaction-pending"
+      },
+      "hint": "Use each numbered callout once, then connect the labelled parts to their functions.",
+      "id": "q-028",
+      "marks": 8,
+      "origin": "end_exercise",
+      "prompt": "Use the numbered, unlabelled animal-cell diagram to label its parts and answer the follow-up questions.",
+      "response": {
+        "subquestions": [
+          {
+            "id": "a",
+            "marks": 6,
+            "prompt": "Label callouts 1-6."
+          },
+          {
+            "id": "b",
+            "marks": 1,
+            "prompt": "Which labelled part controls the activities of the cell?"
+          },
+          {
+            "id": "c",
+            "marks": 1,
+            "prompt": "Which labelled organelle provides energy to the cell?"
+          }
+        ]
+      },
+      "rubric": {
+        "subrubrics": [
+          {
+            "id": "a",
+            "points": [
+              {
+                "concept": "correctly labels callout 1 as cell membrane",
+                "id": "a1",
+                "required": true,
+                "weight": 1
+              },
+              {
+                "concept": "correctly labels callout 2 as cytoplasm",
+                "id": "a2",
+                "required": true,
+                "weight": 1
+              },
+              {
+                "concept": "correctly labels callout 3 as nucleus",
+                "id": "a3",
+                "required": true,
+                "weight": 1
+              },
+              {
+                "concept": "correctly labels callout 4 as mitochondrion",
+                "id": "a4",
+                "required": true,
+                "weight": 1
+              },
+              {
+                "concept": "correctly labels callout 5 as Golgi apparatus",
+                "id": "a5",
+                "required": true,
+                "weight": 1
+              },
+              {
+                "concept": "correctly labels callout 6 as endoplasmic reticulum",
+                "id": "a6",
+                "required": true,
+                "weight": 1
+              }
+            ]
+          },
+          {
+            "id": "b",
+            "points": [
+              {
+                "concept": "identifies the nucleus or callout 3",
+                "id": "b1",
+                "required": true,
+                "weight": 1
+              }
+            ]
+          },
+          {
+            "id": "c",
+            "points": [
+              {
+                "concept": "identifies the mitochondrion or callout 4",
+                "id": "c1",
+                "required": true,
+                "weight": 1
+              }
+            ]
+          }
+        ]
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-42",
+          "regionId": "exercise-short-answer",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-36",
+          "regionId": "animal-cell-diagram",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-40",
+          "regionId": "organelle-functions-table",
+          "supports": [
+            "answer",
+            "rubric",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "review",
+      "topicIds": [
+        "plant-animal-cells",
+        "cell-organelles"
+      ],
+      "type": "source_group",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Plant cells have a rigid cell wall, chloroplasts, no centrosome, and usually one large vacuole. Animal cells lack a cell wall and chloroplasts, have a centrosome, and have no vacuoles or smaller, more numerous vacuoles."
+      },
+      "difficulty": 2,
+      "explanation": "Plant and animal cells differ in cell wall, chloroplasts, centrosome and vacuoles.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-029",
+      "marks": 4,
+      "origin": "end_exercise",
+      "prompt": "State four differences between plant cells and animal cells.",
+      "response": {
+        "format": "short-text"
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "compares the cell wall",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "compares chloroplasts",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "compares the centrosome",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "compares vacuoles",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-42",
+          "regionId": "exercise-short-answer",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-40",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plant-animal-cells"
+      ],
+      "type": "compare",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Both have a plasma membrane, nucleus and mitochondria. Both also contain endoplasmic reticulum, Golgi complex, lysosomes and ribosomes."
+      },
+      "difficulty": 2,
+      "explanation": "Both types have a plasma membrane, nucleus, mitochondria, endoplasmic reticulum, Golgi complex, lysosomes and ribosomes according to the supplied comparison.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-030",
+      "marks": 4,
+      "origin": "end_exercise",
+      "prompt": "What features are shared by plant cells and animal cells?",
+      "response": {
+        "format": "short-text"
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "names plasma membrane as common",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "names nucleus as common",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "names mitochondria as common",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "names endoplasmic reticulum, Golgi complex, lysosomes or ribosomes as common",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-42",
+          "regionId": "exercise-short-answer",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-40",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plant-animal-cells"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Plastids are plant-only organelles. Chloroplasts contain chlorophyll and trap sunlight; chromoplasts contain non-green pigments; leucoplasts lack pigment and store starch, proteins and oils."
+      },
+      "difficulty": 2,
+      "explanation": "Plastids occur only in plant cells and include chloroplasts, chromoplasts and leucoplasts.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-031",
+      "marks": 4,
+      "origin": "end_exercise",
+      "prompt": "Name and describe the cell organelles found only in plant cells.",
+      "response": {
+        "format": "short-text"
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "names plastids as plant-only organelles",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "describes chloroplasts",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "describes chromoplasts",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "describes leucoplasts",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-42",
+          "regionId": "exercise-short-answer",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-38",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plant-animal-cells",
+        "cell-organelles"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Mitochondria are small rods with two membranes and a folded inner membrane. Endoplasmic reticulum is a smooth or rough membrane network. Golgi complex is a stack of cisternae with vesicles. Lysosomes are small enzyme-filled spheres. A centrosome near the nucleus contains two centrioles. Chloroplasts contain stroma and thylakoids stacked as grana. Ribosomes are tiny membraneless granules, free or attached to rough ER."
+      },
+      "difficulty": 3,
+      "explanation": "The response assesses the structural features in the organelle table; the unscorable drawing component of the printed item is recorded in the review.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-032",
+      "marks": 7,
+      "origin": "end_exercise",
+      "prompt": "Describe the structure of mitochondria, endoplasmic reticulum, Golgi complex, lysosomes, centrosome, chloroplasts and ribosomes.",
+      "response": {
+        "format": "short-text"
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "describes mitochondria",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "describes endoplasmic reticulum",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "describes Golgi complex",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "describes lysosomes",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "describes centrosome",
+            "id": "p5",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "describes chloroplasts",
+            "id": "p6",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "describes ribosomes",
+            "id": "p7",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-42",
+          "regionId": "exercise-short-answer",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-39",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-40",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "cell-organelles"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "outer"
+      },
+      "difficulty": 2,
+      "explanation": "An animal cell has the plasma membrane as its outer boundary, while a plant cell has a cell wall outside its plasma membrane.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-033",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Which option correctly states a difference between a plant cell and an animal cell?",
+      "response": {
+        "options": [
+          {
+            "id": "nucleus",
+            "text": "A plant cell has no nuclear membrane, but an animal cell does."
+          },
+          {
+            "id": "outer",
+            "text": "An animal cell has an outer plasma membrane, while a plant cell has an outer cell wall."
+          },
+          {
+            "id": "bacteria",
+            "text": "Plant cells occur only in bacteria, while animal cells occur in animals."
+          },
+          {
+            "id": "mitochondria",
+            "text": "Plant cells lack mitochondria, while animal cells have them."
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-43",
+          "regionId": "case-study",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-36",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-40",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plant-animal-cells"
+      ],
+      "type": "single_choice",
+      "version": 2
+    },
+    {
+      "answer": {
+        "correctOptionId": "insects"
+      },
+      "difficulty": 2,
+      "explanation": "Insects are animals, whereas onion peel, ferns and grasses are plant material.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-034",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Plant cells can be observed in onion peel, ferns and grasses. In which option would plant cells not be observed?",
+      "response": {
+        "options": [
+          {
+            "id": "onion",
+            "text": "Onion peel"
+          },
+          {
+            "id": "ferns",
+            "text": "Ferns"
+          },
+          {
+            "id": "grasses",
+            "text": "Grasses"
+          },
+          {
+            "id": "insects",
+            "text": "Insects"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-43",
+          "regionId": "case-study",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-34",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-40",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plant-animal-cells"
+      ],
+      "type": "single_choice",
+      "version": 2
+    },
+    {
+      "answer": {
+        "ideal": "An animal cell lacks a cell wall, so its outermost boundary is the plasma membrane."
+      },
+      "difficulty": 2,
+      "explanation": "Animal cells lack a cell wall and chloroplasts, and their outer boundary is the plasma membrane.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-035",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Identify one characteristic feature of an animal cell.",
+      "response": {
+        "format": "short-text"
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "states a valid animal-cell feature such as no cell wall, no chloroplast, outer plasma membrane or presence of centrosome",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-43",
+          "regionId": "case-study",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-36",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-40",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plant-animal-cells"
+      ],
+      "type": "brief_answer",
+      "version": 2
+    },
+    {
+      "answer": {
+        "correctOptionId": "centrosome"
+      },
+      "difficulty": 2,
+      "explanation": "The centrosome is absent from plant cells and present in animal cells.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-036",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Which organelle near the nucleus helps an animal cell divide and is absent from plant cells?",
+      "response": {
+        "options": [
+          {
+            "id": "centrosome",
+            "text": "Centrosome"
+          },
+          {
+            "id": "nucleus",
+            "text": "Nucleus"
+          },
+          {
+            "id": "mitochondrion",
+            "text": "Mitochondrion"
+          },
+          {
+            "id": "ribosome",
+            "text": "Ribosome"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-43",
+          "regionId": "case-study",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-38",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-40",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plant-animal-cells",
+        "cell-organelles"
+      ],
+      "type": "single_choice",
+      "version": 2
+    },
+    {
+      "answer": {
+        "correctOptionId": "a-true"
+      },
+      "difficulty": 2,
+      "explanation": "The inner mitochondrial membrane is folded, but mitochondria perform respiration rather than photosynthesis.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-037",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Assertion (A): The inner membrane of mitochondria is highly folded. Reason (R): The inner membrane increases surface area for photosynthetic functions.",
+      "response": {
+        "options": [
+          {
+            "id": "both-true",
+            "text": "Both A and R are true"
+          },
+          {
+            "id": "both-false",
+            "text": "Both A and R are false"
+          },
+          {
+            "id": "a-true",
+            "text": "A is true and R is false"
+          },
+          {
+            "id": "r-true",
+            "text": "A is false and R is true"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-43",
+          "regionId": "assertion-reason",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-39",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-40",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "cell-organelles"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "r-true"
+      },
+      "difficulty": 2,
+      "explanation": "Ribosomes are free in cytoplasm or attached to ER, while the cell membrane does surround the cell.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-038",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Assertion (A): Ribosomes are located on chromosomes. Reason (R): The cell membrane surrounds the cell.",
+      "response": {
+        "options": [
+          {
+            "id": "both-true",
+            "text": "Both A and R are true"
+          },
+          {
+            "id": "both-false",
+            "text": "Both A and R are false"
+          },
+          {
+            "id": "a-true",
+            "text": "A is true and R is false"
+          },
+          {
+            "id": "r-true",
+            "text": "A is false and R is true"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-43",
+          "regionId": "assertion-reason",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-36",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-37",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-39",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "cell-structure",
+        "cell-organelles"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "both-true"
+      },
+      "difficulty": 2,
+      "explanation": "Both statements are supported by the cell-wall description and functions.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-039",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Assertion (A): The thick outer layer of a plant cell is called the cell wall. Reason (R): The cell wall protects plant cells and helps maintain their shape.",
+      "response": {
+        "options": [
+          {
+            "id": "both-true",
+            "text": "Both A and R are true"
+          },
+          {
+            "id": "both-false",
+            "text": "Both A and R are false"
+          },
+          {
+            "id": "a-true",
+            "text": "A is true and R is false"
+          },
+          {
+            "id": "r-true",
+            "text": "A is false and R is true"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-43",
+          "regionId": "assertion-reason",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-36",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plant-animal-cells"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "pairs": [
+          {
+            "leftId": "l1",
+            "rightId": "r1"
+          },
+          {
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
+          },
+          {
+            "leftId": "l5",
+            "rightId": "r5"
+          },
+          {
+            "leftId": "l6",
+            "rightId": "r6"
+          },
+          {
+            "leftId": "l7",
+            "rightId": "r7"
+          },
+          {
+            "leftId": "l8",
+            "rightId": "r8"
+          }
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "The crossword reviews cell vocabulary from the exercises.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-040",
+      "marks": 8,
+      "origin": "end_exercise",
+      "prompt": "Match each crossword clue with its answer.",
+      "response": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "Single-celled organisms"
+          },
+          {
+            "id": "l2",
+            "text": "Structure outside the cell membrane in plant cells"
+          },
+          {
+            "id": "l3",
+            "text": "Kitchen of the cell"
+          },
+          {
+            "id": "l4",
+            "text": "Smallest known cell"
+          },
+          {
+            "id": "l5",
+            "text": "Example of a single-celled organism"
+          },
+          {
+            "id": "l6",
+            "text": "Control centre of the cell"
+          },
+          {
+            "id": "l7",
+            "text": "Tiny structures present inside cytoplasm"
+          },
+          {
+            "id": "l8",
+            "text": "Powerhouse of the cell"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "Unicellular"
+          },
+          {
+            "id": "r2",
+            "text": "Cell wall"
+          },
+          {
+            "id": "r3",
+            "text": "Chloroplast"
+          },
+          {
+            "id": "r4",
+            "text": "Mycoplasma"
+          },
+          {
+            "id": "r5",
+            "text": "Amoeba"
+          },
+          {
+            "id": "r6",
+            "text": "Nucleus"
+          },
+          {
+            "id": "r7",
+            "text": "Organelles"
+          },
+          {
+            "id": "r8",
+            "text": "Mitochondria"
+          }
+        ]
+      },
+      "rubric": {
+        "pointsPerPair": 1
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-43",
+          "regionId": "crossword",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-34",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-35",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-36",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-38",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-40",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "cell-basics",
+        "cell-organelles"
+      ],
+      "type": "matching",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "cells"
+      },
+      "difficulty": 2,
+      "explanation": "Robert Hooke used the name cells for box-like compartments seen with a microscope.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-041",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Rita observed several tiny, box-like compartments in pond water under a microscope. What are these compartments most likely to be?",
+      "response": {
+        "options": [
+          {
+            "id": "nuclei",
+            "text": "Nuclei"
+          },
+          {
+            "id": "chromosomes",
+            "text": "Chromosomes"
+          },
+          {
+            "id": "cells",
+            "text": "Cells"
+          },
+          {
+            "id": "organelles",
+            "text": "Organelles"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-44",
+          "regionId": "competency-questions",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-34",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-35",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "microscopy-observation",
+        "cell-basics"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "ars"
+      },
+      "difficulty": 2,
+      "explanation": "Amit, Ravi and Sita named unicellular organisms; Mina named parts of a multicellular organism.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-042",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Amit listed Amoeba and Paramecium; Ravi listed Chlamydomonas and bacteria; Sita listed yeast and Euglena; Mina listed muscle tissue and stomach. Who correctly listed only unicellular organisms?",
+      "response": {
+        "options": [
+          {
+            "id": "ars",
+            "text": "Amit, Ravi and Sita"
+          },
+          {
+            "id": "rm",
+            "text": "Ravi and Mina"
+          },
+          {
+            "id": "asm",
+            "text": "Amit, Sita and Mina"
+          },
+          {
+            "id": "am",
+            "text": "Amit and Mina"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-44",
+          "regionId": "competency-questions",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-34",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "cell-basics"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "(a) Cell wall -> protoplasm -> cytoplasm -> organelles. (b) Nuclear membrane -> nucleus -> chromatin -> chromosomes. (c) Mitochondrion -> outer membrane -> inner membrane -> ATP production. (d) Cytoplasm -> endoplasmic reticulum -> ribosomes -> protein synthesis."
+      },
+      "difficulty": 3,
+      "explanation": "The sequences move from enclosing structure or organelle to contained structure and then to the related product or process.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-043",
+      "marks": 4,
+      "origin": "end_exercise",
+      "prompt": "Arrange each group into a logical sequence: (a) cell wall, cytoplasm, organelles, protoplasm; (b) nucleus, nuclear membrane, chromatin, chromosomes; (c) mitochondrion, outer membrane, inner membrane, ATP production; (d) cytoplasm, endoplasmic reticulum, ribosomes, protein synthesis.",
+      "response": {
+        "format": "short-text"
+      },
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "correctly orders group a",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "correctly orders group b",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "correctly orders group c",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "correctly orders group d",
+            "id": "p4",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-44",
+          "regionId": "competency-questions",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-36",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-37",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-39",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-40",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "cell-structure",
+        "cell-organelles"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "both-wall"
+      },
+      "difficulty": 2,
+      "explanation": "Animal cells do not have a cell wall.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-044",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "A cell wall surrounds the cell membrane of some cells, the plasma membrane is present in almost all cells, and mitochondria occur in plant and animal cells. Which statement is incorrect?",
+      "response": {
+        "options": [
+          {
+            "id": "both-wall",
+            "text": "The cell wall is present in both plant and animal cells."
+          },
+          {
+            "id": "plasma",
+            "text": "The plasma membrane controls entry and exit of substances."
+          },
+          {
+            "id": "energy",
+            "text": "Mitochondria are responsible for energy production."
+          },
+          {
+            "id": "plant-wall",
+            "text": "Plant cells have an extra covering called the cell wall."
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-44",
+          "regionId": "competency-questions",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-36",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-40",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "plant-animal-cells",
+        "cell-organelles"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "12"
+      },
+      "difficulty": 2,
+      "explanation": "The supplied Hydrilla observation shows a cell wall and chloroplasts, not the other two claims.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-045",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Thin green Hydrilla leaves were stained and observed under a microscope. Which features does this observation demonstrate: (i) cell wall, (ii) chloroplasts, (iii) large central vacuole, (iv) absence of lysosomes?",
+      "response": {
+        "options": [
+          {
+            "id": "123",
+            "text": "(i), (ii) and (iii) only"
+          },
+          {
+            "id": "23",
+            "text": "(ii) and (iii) only"
+          },
+          {
+            "id": "12",
+            "text": "(i) and (ii) only"
+          },
+          {
+            "id": "3",
+            "text": "(iii) only"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-45",
+          "regionId": "competency-questions",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-38",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "microscopy-observation",
+        "plant-animal-cells"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "same"
+      },
+      "difficulty": 2,
+      "explanation": "Cells in multicellular organisms are specialised and are not all of the same type.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-046",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Which statement is not supported by cell theory?",
+      "response": {
+        "options": [
+          {
+            "id": "products",
+            "text": "All organisms are made of cells and their products."
+          },
+          {
+            "id": "unit",
+            "text": "The cell is the fundamental structural and functional unit of living organisms."
+          },
+          {
+            "id": "division",
+            "text": "All cells arise by division of pre-existing cells."
+          },
+          {
+            "id": "same",
+            "text": "Cells in multicellular organisms are all of the same type."
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-45",
+          "regionId": "competency-questions",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-35",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "cell-basics"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "wcn"
+      },
+      "difficulty": 2,
+      "explanation": "The onion-peel figure identifies cell wall, cytoplasm and nucleus.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-047",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "An onion-peel cell shows a distinct boundary, a jelly-like substance and a prominent central part. Which components are being observed?",
+      "response": {
+        "options": [
+          {
+            "id": "wcn",
+            "text": "Cell wall, cytoplasm and nucleus"
+          },
+          {
+            "id": "mvr",
+            "text": "Cell membrane, vacuole and ribosomes"
+          },
+          {
+            "id": "nmc",
+            "text": "Nucleus, mitochondria and chloroplasts"
+          },
+          {
+            "id": "cge",
+            "text": "Cytoplasm, Golgi complex and endoplasmic reticulum"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-45",
+          "regionId": "competency-questions",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-37",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "microscopy-observation",
+        "cell-structure"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "plant"
+      },
+      "difficulty": 2,
+      "explanation": "These are plant cells showing cell wall, cytoplasm and nucleus.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-048",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Ravi observed an iodine-stained onion peel with a rigid outer layer, jelly-like substance and central round structure. What was he observing?",
+      "response": {
+        "options": [
+          {
+            "id": "animal",
+            "text": "Animal cells showing cell membrane, cytoplasm and nucleus"
+          },
+          {
+            "id": "plant",
+            "text": "Plant cells showing cell wall, cytoplasm and nucleus"
+          },
+          {
+            "id": "bacteria",
+            "text": "Bacterial cells showing cell wall, cytoplasm and nucleoid"
+          },
+          {
+            "id": "fungal",
+            "text": "Fungal cells showing cell wall, cytoplasm and vacuole"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-45",
+          "regionId": "competency-questions",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-37",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "microscopy-observation",
+        "plant-animal-cells"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "p"
+      },
+      "difficulty": 2,
+      "explanation": "The nucleus is the controlling centre, and it is marked P in the exercise diagram.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:30:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "interaction-pending"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-049",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "In the labelled plant-cell diagram, which label marks the controlling centre of the cell?",
+      "response": {
+        "options": [
+          {
+            "id": "p",
+            "text": "P"
+          },
+          {
+            "id": "q",
+            "text": "Q"
+          },
+          {
+            "id": "r",
+            "text": "R"
+          },
+          {
+            "id": "s",
+            "text": "S"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-45",
+          "regionId": "labelled-plant-cell",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-37",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-45",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "review",
+      "topicIds": [
+        "plant-animal-cells",
+        "cell-structure"
+      ],
+      "type": "single_choice",
+      "version": 2
+    },
+    {
+      "answer": {
+        "correctOptionId": "cytoplasm"
+      },
+      "difficulty": 2,
+      "explanation": "Cytoplasm is jelly-like and helps transport materials within the cell.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-050",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Rohit observed a jelly-like substance inside an onion-peel cell, surrounding the nucleus. Which part was it, and what is one function?",
+      "response": {
+        "options": [
+          {
+            "id": "cytoplasm",
+            "text": "Cytoplasm; transports materials within the cell"
+          },
+          {
+            "id": "nucleoplasm",
+            "text": "Nucleoplasm; stores chromosomes"
+          },
+          {
+            "id": "nuclear",
+            "text": "Nuclear membrane; separates nucleus from cytoplasm"
+          },
+          {
+            "id": "chromatin",
+            "text": "Chromatin; condenses to form chromosomes"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-45",
+          "regionId": "competency-questions",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-37",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "cell-structure"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "cl"
+      },
+      "difficulty": 2,
+      "explanation": "Chloroplasts trap sunlight, while leucoplasts store starch, proteins and oils.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relevant cell fact and answer only what is asked.",
+      "id": "q-051",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "A table says P traps sunlight for photosynthesis and Q stores starch, proteins and oils. Which pair correctly identifies P and Q?",
+      "response": {
+        "options": [
+          {
+            "id": "cl",
+            "text": "P - Chloroplasts; Q - Leucoplasts"
+          },
+          {
+            "id": "lc",
+            "text": "P - Leucoplasts; Q - Chromoplasts"
+          },
+          {
+            "id": "cc",
+            "text": "P - Chromoplasts; Q - Chloroplasts"
+          },
+          {
+            "id": "lch",
+            "text": "P - Leucoplasts; Q - Chloroplasts"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-45",
+          "regionId": "competency-questions",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-38",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "cell-organelles"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "subanswers": [
+          {
+            "id": "a",
+            "ideal": "1 cell wall; 2 cell membrane; 3 cytoplasm; 4 nucleus; 5 chloroplast; 6 large vacuole."
+          },
+          {
+            "id": "b",
+            "ideal": "Cell wall (callout 1)."
+          },
+          {
+            "id": "c",
+            "ideal": "Chloroplast (callout 5)."
+          },
+          {
+            "id": "d",
+            "ideal": "Large vacuole (callout 6)."
+          }
+        ]
+      },
+      "difficulty": 2,
+      "explanation": "The planned visual is an unlabelled version of Fig. 3.7 with six numbered callouts; it must be prepared before this item is activated.",
+      "generation": {
+        "generatedAt": "2026-09-04T20:00:00+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "interaction-pending"
+      },
+      "hint": "Use each numbered callout once, then connect the labelled parts to their functions.",
+      "id": "q-052",
+      "marks": 9,
+      "origin": "chapter_content",
+      "prompt": "Use the numbered, unlabelled plant-cell diagram to label its parts and answer the follow-up questions.",
+      "response": {
+        "subquestions": [
+          {
+            "id": "a",
+            "marks": 6,
+            "prompt": "Label callouts 1-6."
+          },
+          {
+            "id": "b",
+            "marks": 1,
+            "prompt": "Which labelled part gives rigidity and protection?"
+          },
+          {
+            "id": "c",
+            "marks": 1,
+            "prompt": "Which labelled organelle traps sunlight for photosynthesis?"
+          },
+          {
+            "id": "d",
+            "marks": 1,
+            "prompt": "Which labelled part stores food and waste and supports the plant cell?"
+          }
+        ]
+      },
+      "rubric": {
+        "subrubrics": [
+          {
+            "id": "a",
+            "points": [
+              {
+                "concept": "correctly labels callout 1 as cell wall",
+                "id": "a1",
+                "required": true,
+                "weight": 1
+              },
+              {
+                "concept": "correctly labels callout 2 as cell membrane",
+                "id": "a2",
+                "required": true,
+                "weight": 1
+              },
+              {
+                "concept": "correctly labels callout 3 as cytoplasm",
+                "id": "a3",
+                "required": true,
+                "weight": 1
+              },
+              {
+                "concept": "correctly labels callout 4 as nucleus",
+                "id": "a4",
+                "required": true,
+                "weight": 1
+              },
+              {
+                "concept": "correctly labels callout 5 as chloroplast",
+                "id": "a5",
+                "required": true,
+                "weight": 1
+              },
+              {
+                "concept": "correctly labels callout 6 as large vacuole",
+                "id": "a6",
+                "required": true,
+                "weight": 1
+              }
+            ]
+          },
+          {
+            "id": "b",
+            "points": [
+              {
+                "concept": "identifies the cell wall or callout 1",
+                "id": "b1",
+                "required": true,
+                "weight": 1
+              }
+            ]
+          },
+          {
+            "id": "c",
+            "points": [
+              {
+                "concept": "identifies the chloroplast or callout 5",
+                "id": "c1",
+                "required": true,
+                "weight": 1
+              }
+            ]
+          },
+          {
+            "id": "d",
+            "points": [
+              {
+                "concept": "identifies the large vacuole or callout 6",
+                "id": "d1",
+                "required": true,
+                "weight": 1
+              }
+            ]
+          }
+        ]
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-34",
+          "regionId": "learning-outcomes",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-36",
+          "regionId": "plant-cell-diagram",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-38",
+          "regionId": "vacuole-diagram",
+          "supports": [
+            "answer",
+            "rubric",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-40",
+          "regionId": "organelle-functions-table",
+          "supports": [
+            "answer",
+            "rubric",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "review",
+      "topicIds": [
+        "plant-animal-cells",
+        "cell-organelles"
+      ],
+      "type": "source_group",
+      "version": 1
+    }
+  ],
+  "schemaVersion": "0.1.0",
+  "sources": [
+    {
+      "assetRef": "manifest://the-cell/page-34",
+      "extractionConfidence": 0.98,
+      "id": "page-34",
+      "pageNumber": 34,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.25,
+            "width": 0.72,
+            "x": 0.18,
+            "y": 0.19
+          },
+          "id": "learning-outcomes",
+          "kind": "passage"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://the-cell/page-35",
+      "extractionConfidence": 0.98,
+      "id": "page-35",
+      "pageNumber": 35,
+      "regions": [],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://the-cell/page-36",
+      "extractionConfidence": 0.98,
+      "id": "page-36",
+      "pageNumber": 36,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.27,
+            "width": 0.39,
+            "x": 0.05,
+            "y": 0.05
+          },
+          "id": "animal-cell-diagram",
+          "kind": "diagram"
+        },
+        {
+          "bounds": {
+            "height": 0.24,
+            "width": 0.47,
+            "x": 0.04,
+            "y": 0.34
+          },
+          "id": "plant-cell-diagram",
+          "kind": "diagram"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://the-cell/page-37",
+      "extractionConfidence": 0.98,
+      "id": "page-37",
+      "pageNumber": 37,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.24,
+            "width": 0.31,
+            "x": 0.01,
+            "y": 0.46
+          },
+          "id": "nucleus-diagram",
+          "kind": "diagram"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://the-cell/page-38",
+      "extractionConfidence": 0.98,
+      "id": "page-38",
+      "pageNumber": 38,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.21,
+            "width": 0.31,
+            "x": 0.65,
+            "y": 0.76
+          },
+          "id": "hydrilla-cell",
+          "kind": "diagram"
+        },
+        {
+          "bounds": {
+            "height": 0.28,
+            "width": 0.37,
+            "x": 0.58,
+            "y": 0.25
+          },
+          "id": "vacuole-diagram",
+          "kind": "diagram"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://the-cell/page-39",
+      "extractionConfidence": 0.98,
+      "id": "page-39",
+      "pageNumber": 39,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.69,
+            "width": 0.96,
+            "x": 0.02,
+            "y": 0.3
+          },
+          "id": "organelle-structure-table",
+          "kind": "table"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://the-cell/page-40",
+      "extractionConfidence": 0.98,
+      "id": "page-40",
+      "pageNumber": 40,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.23,
+            "width": 0.94,
+            "x": 0.03,
+            "y": 0.74
+          },
+          "id": "cell-comparison-table",
+          "kind": "table"
+        },
+        {
+          "bounds": {
+            "height": 0.42,
+            "width": 0.96,
+            "x": 0.02,
+            "y": 0.24
+          },
+          "id": "organelle-functions-table",
+          "kind": "table"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://the-cell/page-41",
+      "extractionConfidence": 0.98,
+      "id": "page-41",
+      "pageNumber": 41,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.39,
+            "width": 0.94,
+            "x": 0.02,
+            "y": 0.29
+          },
+          "id": "exercise-choice",
+          "kind": "exercise"
+        },
+        {
+          "bounds": {
+            "height": 0.27,
+            "width": 0.9,
+            "x": 0.03,
+            "y": 0.69
+          },
+          "id": "exercise-fill",
+          "kind": "exercise"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://the-cell/page-42",
+      "extractionConfidence": 0.98,
+      "id": "page-42",
+      "pageNumber": 42,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.18,
+            "width": 0.9,
+            "x": 0.03,
+            "y": 0.61
+          },
+          "id": "exercise-jumble-odd",
+          "kind": "exercise"
+        },
+        {
+          "bounds": {
+            "height": 0.34,
+            "width": 0.96,
+            "x": 0.02,
+            "y": 0.27
+          },
+          "id": "exercise-match-define",
+          "kind": "exercise"
+        },
+        {
+          "bounds": {
+            "height": 0.21,
+            "width": 0.96,
+            "x": 0.02,
+            "y": 0.78
+          },
+          "id": "exercise-short-answer",
+          "kind": "exercise"
+        },
+        {
+          "bounds": {
+            "height": 0.26,
+            "width": 0.94,
+            "x": 0.02,
+            "y": 0.01
+          },
+          "id": "exercise-true-false",
+          "kind": "exercise"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://the-cell/page-43",
+      "extractionConfidence": 0.98,
+      "id": "page-43",
+      "pageNumber": 43,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.33,
+            "width": 0.95,
+            "x": 0.01,
+            "y": 0.32
+          },
+          "id": "assertion-reason",
+          "kind": "exercise"
+        },
+        {
+          "bounds": {
+            "height": 0.31,
+            "width": 0.97,
+            "x": 0.01,
+            "y": 0.01
+          },
+          "id": "case-study",
+          "kind": "exercise"
+        },
+        {
+          "bounds": {
+            "height": 0.32,
+            "width": 0.97,
+            "x": 0.01,
+            "y": 0.65
+          },
+          "id": "crossword",
+          "kind": "exercise"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://the-cell/page-44",
+      "extractionConfidence": 0.98,
+      "id": "page-44",
+      "pageNumber": 44,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.44,
+            "width": 0.94,
+            "x": 0.04,
+            "y": 0.55
+          },
+          "id": "competency-questions",
+          "kind": "exercise"
+        },
+        {
+          "bounds": {
+            "height": 0.11,
+            "width": 0.88,
+            "x": 0.04,
+            "y": 0.44
+          },
+          "id": "inquiry-questions",
+          "kind": "exercise"
+        },
+        {
+          "bounds": {
+            "height": 0.43,
+            "width": 0.92,
+            "x": 0.04,
+            "y": 0.01
+          },
+          "id": "slide-preparation",
+          "kind": "exercise"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://the-cell/page-45",
+      "extractionConfidence": 0.98,
+      "id": "page-45",
+      "pageNumber": 45,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.9,
+            "width": 0.94,
+            "x": 0.03,
+            "y": 0.01
+          },
+          "id": "competency-questions",
+          "kind": "exercise"
+        },
+        {
+          "bounds": {
+            "height": 0.18,
+            "width": 0.24,
+            "x": 0.72,
+            "y": 0.47
+          },
+          "id": "labelled-plant-cell",
+          "kind": "diagram"
+        }
+      ],
+      "reviewRequired": false
+    }
+  ],
+  "topics": [
+    {
+      "id": "cell-basics",
+      "learningOutcomeIds": [
+        "lo-1"
+      ],
+      "title": "Cells and organisms"
+    },
+    {
+      "id": "cell-organelles",
+      "learningOutcomeIds": [
+        "lo-3"
+      ],
+      "title": "Cell organelles and functions"
+    },
+    {
+      "id": "cell-structure",
+      "learningOutcomeIds": [
+        "lo-2",
+        "lo-3"
+      ],
+      "title": "Cell structure and protoplasm"
+    },
+    {
+      "id": "microscopy-observation",
+      "learningOutcomeIds": [
+        "lo-2"
+      ],
+      "title": "Microscopy and cell observation"
+    },
+    {
+      "id": "plant-animal-cells",
+      "learningOutcomeIds": [
+        "lo-2",
+        "lo-4"
+      ],
+      "title": "Plant and animal cells"
+    }
+  ]
+}

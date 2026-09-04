@@ -1,0 +1,234 @@
+{
+  "reviewVersion": "0.1.0",
+  "bankId": "the-cell-v1",
+  "bankVersion": 3,
+  "reviewedAt": "2026-09-04T20:30:00+05:30",
+  "reviewerMethod": "Codex visual source-by-source review of textbook pages 34-45 using the repository-local chapter-ingestion workflow, followed by manifest, source-hash, schema, reference and rubric-total checks",
+  "inputs": {
+    "manifest": "samples/the-cell-chapter-manifest.json",
+    "bank": "samples/the-cell-question-bank.json",
+    "sourceAssetCount": 1,
+    "pageRange": "34-45",
+    "confirmedMetadata": {
+      "board": "ICSE",
+      "grade": 6,
+      "subject": "Biology",
+      "bookTitle": "Biology"
+    }
+  },
+  "scope": {
+    "strategy": "Sparse, exercise-led selection. The bank includes every answerable printed exercise item, groups word-bank, definition, jumble and crossword sets to avoid artificial density, and adds only the requested cell-diagram labeling clusters.",
+    "nonExerciseAdditions": [
+      "q-052: requested plant-cell diagram labelling with questions on the labelled parts"
+    ],
+    "omissions": [
+      {
+        "source": "page-42",
+        "item": "Exercise VIII.9: draw proper diagrams of seven organelles",
+        "reason": "The structural descriptions are assessed in q-032; freehand drawings are not independently gradable in the current player."
+      },
+      {
+        "source": "page-44",
+        "item": "Inquiry XIII.1: visit a laboratory and learn microscope functioning",
+        "reason": "Activity-dependent and not independently scorable from the supplied source."
+      },
+      {
+        "source": "page-44",
+        "item": "Inquiry XIII.2: learn to observe a prepared slide",
+        "reason": "Activity-dependent and not independently scorable from the supplied source."
+      },
+      {
+        "source": "page-45",
+        "item": "QR-code worksheet",
+        "reason": "The external worksheet was not supplied and was not used as a source."
+      }
+    ]
+  },
+  "gates": {
+    "manifestSchema": "pass",
+    "sourceHashes": "pass",
+    "questionBankSchema": "pass",
+    "deterministicGroundingReview": "pass",
+    "manualGroundingReview": "pass",
+    "rubricBalanceReview": "pass"
+  },
+  "coverage": {
+    "questionCount": 52,
+    "activeQuestionCount": 49,
+    "interactionPendingQuestionCount": 3,
+    "topics": {
+      "cell-basics": 11,
+      "cell-structure": 18,
+      "cell-organelles": 20,
+      "plant-animal-cells": 19,
+      "microscopy-observation": 4
+    },
+    "types": {
+      "brief_answer": 4,
+      "compare": 1,
+      "matching": 4,
+      "multi_point": 8,
+      "single_choice": 33,
+      "source_group": 2
+    },
+    "difficulties": {
+      "1": 22,
+      "2": 28,
+      "3": 2
+    },
+    "pages": {
+      "page-41": 9,
+      "page-34": 11,
+      "page-35": 6,
+      "page-37": 18,
+      "page-36": 20,
+      "page-38": 15,
+      "page-39": 8,
+      "page-40": 19,
+      "page-42": 23,
+      "page-43": 8,
+      "page-44": 4,
+      "page-45": 8
+    },
+    "printedExerciseMapping": {
+      "I-multiple-choice": [
+        "q-001",
+        "q-002",
+        "q-003",
+        "q-004",
+        "q-005",
+        "q-006",
+        "q-007",
+        "q-008"
+      ],
+      "II-fill-in-the-blanks": [
+        "q-009"
+      ],
+      "III-true-false": [
+        "q-010",
+        "q-011",
+        "q-012",
+        "q-013",
+        "q-014",
+        "q-015",
+        "q-016",
+        "q-017"
+      ],
+      "IV-matching": [
+        "q-018"
+      ],
+      "V-definitions": [
+        "q-019"
+      ],
+      "VI-unscramble": [
+        "q-020"
+      ],
+      "VII-odd-one-out": [
+        "q-021",
+        "q-022",
+        "q-023"
+      ],
+      "VIII-short-answers": [
+        "q-024",
+        "q-025",
+        "q-026",
+        "q-027",
+        "q-028",
+        "q-029",
+        "q-030",
+        "q-031",
+        "q-032"
+      ],
+      "IX-case-study": [
+        "q-033",
+        "q-034",
+        "q-035",
+        "q-036"
+      ],
+      "X-assertion-reason": [
+        "q-037",
+        "q-038",
+        "q-039"
+      ],
+      "XI-crossword": [
+        "q-040"
+      ],
+      "XIV-competency-focused": [
+        "q-041",
+        "q-042",
+        "q-043",
+        "q-044",
+        "q-045",
+        "q-046",
+        "q-047",
+        "q-048",
+        "q-049",
+        "q-050",
+        "q-051"
+      ]
+    }
+  },
+  "atomicCoverageInventory": {
+    "exerciseConcepts": [
+      "cell as lowest unit",
+      "Robert Hooke",
+      "unicellular examples",
+      "nuclear membrane",
+      "plant-cell components",
+      "cell membrane",
+      "organelle location",
+      "lysosome",
+      "protoplasm",
+      "Hydrilla chloroplasts",
+      "cell theory",
+      "cell definitions",
+      "odd-one-out classifications",
+      "functions of cell parts",
+      "plant-cell importance",
+      "plant-animal differences and common features",
+      "plastids",
+      "organelle structures",
+      "plant-animal identification without hidden visual context",
+      "assertion-reason",
+      "crossword vocabulary",
+      "microscope observations",
+      "logical sequences"
+    ],
+    "requestedVisualConcepts": [
+      "animal-cell labels and functions",
+      "plant-cell labels and functions"
+    ]
+  },
+  "sourceAssetReadiness": {
+    "status": "pending-for-visual-questions",
+    "affectedQuestionIds": [
+      "q-028",
+      "q-049",
+      "q-052"
+    ],
+    "note": "All three visual questions remain status=review and are excluded from active study. q-049 depends on the textbook's labelled plant-cell diagram; q-028 and q-052 require private unlabelled crops from Figs. 3.6 and 3.7 with the exact numbered callouts specified in their answers. Before activation, add runtimeAssetRef values and source-group rendering support to the player."
+  },
+  "blockingFindings": [],
+  "advisoryNotes": [
+    "The board was corrected to ICSE from the family's declared curriculum. Grade 6 remains inferred because the supplied pages do not show the grade or full book title.",
+    "The copyrighted source PDF remains local-only and is not committed.",
+    "Question density is intentionally lower than prior Geography and History banks: prompts are limited to printed exercises plus the requested diagram work.",
+    "The grouped word-bank, definitions, jumbles and crossword questions preserve every printed item without multiplying near-duplicate prompts.",
+    "Every active prompt was audited to ensure it can be answered from the text displayed in the child player; prompts referring to unseen cells P/Q or an unseen case study were rewritten, and q-049 was held for visual support.",
+    "No examination pattern or facts outside the supplied pages were introduced."
+  ],
+  "decision": "accept",
+  "versionLineage": {
+    "previousBankVersion": 2,
+    "currentBankVersion": 3,
+    "reason": "Removed dependencies on an undisplayed case-study image from active questions and held the remaining plant-cell diagram question for visual-player support.",
+    "changedQuestionIds": [
+      "q-033",
+      "q-034",
+      "q-035",
+      "q-036",
+      "q-049"
+    ],
+    "questionVersionPolicy": "Each changed question advanced from version 1 to version 2; unchanged questions retained their existing versions."
+  }
+}

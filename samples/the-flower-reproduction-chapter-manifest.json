@@ -1,0 +1,153 @@
+{
+  "manifestVersion": "0.1.0",
+  "chapter": {
+    "id": "the-flower-reproduction",
+    "board": "ICSE",
+    "grade": 6,
+    "subject": "Biology",
+    "bookTitle": "Concise Biology Middle School - 6",
+    "chapterNumber": 2,
+    "title": "The Flower - Reproduction Portion"
+  },
+  "sourcePolicy": {
+    "originals": "local-only",
+    "repositoryCopies": false,
+    "applicationStorage": "not-uploaded",
+    "runtimeStrategy": "required-regions",
+    "notes": "Keep the copyrighted source PDF outside Git. Active questions are self-contained. The one diagram group uses an original simplified SVG and remains in review because source-group questions are not yet playable."
+  },
+  "assets": [
+    {
+      "id": "source-01",
+      "fileName": "Biology Flower Reproduction.pdf",
+      "sha256": "b180bbc0649783932b9990aaa3fd6571a9f04f3ae543e15f4697ee9f03334c41",
+      "width": 1979,
+      "height": 3216,
+      "pages": [
+        {
+          "id": "page-21",
+          "pageNumber": 21,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-22",
+          "pageNumber": 22,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-23",
+          "pageNumber": 23,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-24",
+          "pageNumber": 24,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-25",
+          "pageNumber": 25,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-26",
+          "pageNumber": 26,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-27",
+          "pageNumber": 27,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-28",
+          "pageNumber": 28,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-29",
+          "pageNumber": 29,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-30",
+          "pageNumber": 30,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-31",
+          "pageNumber": 31,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-32",
+          "pageNumber": 32,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        }
+      ]
+    }
+  ],
+  "learningOutcomes": [
+    "No printed learning outcomes are visible in the supplied reproduction-only scan; the bank scope follows the supplied section and relevant end exercises."
+  ]
+}

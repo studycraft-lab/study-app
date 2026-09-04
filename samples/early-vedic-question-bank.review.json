@@ -1,15 +1,15 @@
 {
   "reviewVersion": "0.1.0",
   "bankId": "early-vedic-civilization-v1",
-  "bankVersion": 3,
-  "reviewedAt": "2026-09-01T18:00:00+05:30",
+  "bankVersion": 4,
+  "reviewedAt": "2026-09-04T17:45:00+05:30",
   "reviewerMethod": "Codex source-by-source and version-lineage review using the repository-local chapter-ingestion skill after deterministic schema, source-hash, reference and rubric checks",
   "inputs": {
     "manifest": "samples/early-vedic-chapter-manifest.json",
     "bank": "samples/early-vedic-question-bank.json",
     "sourceAssetCount": 5,
     "pageRange": "45–53",
-    "previousBankVersion": 2
+    "previousBankVersion": 3
   },
   "gates": {
     "manifestSchema": "pass",
@@ -300,16 +300,19 @@
     "Full copyrighted chapter screenshots remain local and are intentionally excluded from Git.",
     "Every assessable printed exercise from A through I is represented; J map work and Do and Learn activities are intentionally excluded by the parent's scope.",
     "No examination pattern was inferred because no sample paper was supplied.",
-    "Issue #23 remains a future scoring-contract enhancement; this bank uses concise canonical corrections today.",
-    "Bank version 3 preserves the stable bank ID while avoiding replacement of the existing immutable version 2 import."
+    "False statements use concise canonical corrections plus explicit grounded alternatives and are scored deterministically without runtime AI.",
+    "Bank version 4 upgrades the false-statement correction contract while retaining the stable bank ID."
   ],
   "decision": "accept",
   "versionLineage": {
-    "previousBankVersion": 2,
-    "currentBankVersion": 3,
-    "reason": "The application already contains a different non-draft version 2. Version 3 republishes the accepted 79-question bank without changing any question content.",
-    "changedQuestionIds": [],
+    "previousBankVersion": 3,
+    "currentBankVersion": 4,
+    "reason": "Version 4 adds explicit concise correction alternatives for deterministic false-statement scoring.",
+    "changedQuestionIds": [
+      "q-016",
+      "q-018"
+    ],
     "addedQuestionIds": [],
-    "questionVersionPolicy": "Question content is unchanged from bank version 2, so every question keeps its existing question version."
+    "questionVersionPolicy": "Questions q-016 and q-018 increment to version 3 because their accepted-answer contract changed; all other question versions remain unchanged."
   }
 }

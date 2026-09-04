@@ -7,7 +7,7 @@ type RecordValue = Record<string, unknown>;
 type Classifier = (input: RubricClassificationInput) => ReturnType<typeof classifyRubric>;
 
 const SUBJECTIVE_TYPES = new Set(["brief_answer", "multi_point", "compare"]);
-const FUZZY_FALLBACK_TYPES = new Set(["fill_blank", "one_word", "true_false_correct"]);
+const FUZZY_FALLBACK_TYPES = new Set(["fill_blank", "one_word"]);
 
 function record(value: unknown): RecordValue {
   return typeof value === "object" && value !== null && !Array.isArray(value) ? value as RecordValue : {};
@@ -42,11 +42,9 @@ export async function gradeSubmittedQuestion(bankValue: unknown, questionId: str
     const objective = gradeQuestion(bankValue, questionId, response);
     if (!FUZZY_FALLBACK_TYPES.has(type)) return withObjectiveVerdict(objective);
     const answer = record(question.answer);
-    const given = record(response);
-    const childAnswer = type === "true_false_correct" ? String(given.correction ?? "").trim() : String(response ?? "").trim();
-    const eligibleCorrection = type !== "true_false_correct" || (answer.value === false && given.value === false);
-    if (objective.correct || !childAnswer || !eligibleCorrection) return withObjectiveVerdict(objective);
-    const expected = type === "true_false_correct" ? String(answer.correction ?? "") : (Array.isArray(answer.accepted) ? answer.accepted.map(String).join(" / ") : objective.expectedAnswer);
+    const childAnswer = String(response ?? "").trim();
+    if (objective.correct || !childAnswer) return withObjectiveVerdict(objective);
+    const expected = Array.isArray(answer.accepted) ? answer.accepted.map(String).join(" / ") : objective.expectedAnswer;
     const classification = await classifier({
       question: String(question.prompt ?? ""),
       childAnswer,

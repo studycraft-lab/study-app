@@ -36,6 +36,41 @@ describe("scoreObjective", () => {
     expect(scoreObjective(question, { value: false, correction: "Aryans wore two garments." }).correct).toBe(true);
   });
 
+  it("accepts explicit concise corrections and rejects the original wrong term", () => {
+    const food = {
+      type: "true_false_correct",
+      answer: {
+        value: false,
+        correction: "Wheat was the staple food of the Aryans.",
+        acceptedCorrections: ["Wheat, barley, maize, fruits and vegetables formed the staple diet of the Aryans."],
+      },
+      marks: 2,
+    };
+    expect(scoreObjective(food, { value: false, correction: "Wheat was the staple food of the Aryans" })).toMatchObject({ correct: true, earnedMarks: 2 });
+    expect(scoreObjective(food, { value: false, correction: "Meat was the staple food of the Aryans" })).toMatchObject({ correct: false, earnedMarks: 1 });
+
+    const dress = {
+      type: "true_false_correct",
+      answer: {
+        value: false,
+        correction: "The dress of the Aryans consisted of two garments.",
+        acceptedCorrections: ["The Aryans wore two garments."],
+      },
+      marks: 2,
+    };
+    expect(scoreObjective(dress, { value: false, correction: "The Aryans wore two garments" })).toMatchObject({ correct: true, earnedMarks: 2 });
+    expect(scoreObjective(dress, { value: false, correction: "The Aryans wore three garments" })).toMatchObject({ correct: false, earnedMarks: 1 });
+  });
+
+  it("awards zero when the truth choice is wrong", () => {
+    const question = {
+      type: "true_false_correct",
+      answer: { value: false, correction: "The Aryans wore two garments.", acceptedCorrections: ["There were two garments."] },
+      marks: 2,
+    };
+    expect(scoreObjective(question, { value: true, correction: "" })).toMatchObject({ correct: false, earnedMarks: 0 });
+  });
+
   it("awards half marks when the truth choice is correct but its correction is missing", () => {
     const question = {
       type: "true_false_correct",

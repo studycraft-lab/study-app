@@ -23,6 +23,8 @@ For every question, open each cited page and region and confirm:
 5. the mark total equals the attainable rubric score;
 6. wording is age-appropriate and does not reveal the answer accidentally.
 
+For a false statement, also verify that the primary correction is the smallest complete valid rewrite, every `acceptedCorrections` entry is supported, and no accepted wording retains the false term or quantity.
+
 For source groups, also confirm that the visual or passage is necessary and that each subquestion is independently scored. For maps and timelines, verify labels, dates, directions, and normalized region bounds visually.
 
 ## Review record

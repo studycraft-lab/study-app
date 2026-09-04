@@ -66,6 +66,16 @@ describe("gradeSubmittedQuestion", () => {
     expect(classifier).not.toHaveBeenCalled();
   });
 
+  it("never sends true-false corrections to AI", async () => {
+    const correctionBank = { questions: [{
+      id: "dress", type: "true_false_correct", prompt: "Aryans wore three garments.", marks: 2,
+      answer: { value: false, correction: "The Aryans wore two garments.", acceptedCorrections: ["The dress consisted of two garments."] },
+    }] };
+    const classifier = vi.fn();
+    await expect(gradeSubmittedQuestion(correctionBank, "dress", { value: false, correction: "The Aryans wore four garments." }, classifier)).resolves.toMatchObject({ correct: false, earnedMarks: 1, verdict: "partial" });
+    expect(classifier).not.toHaveBeenCalled();
+  });
+
   it("routes contradictory AI grading output to parent review", async () => {
     const fillBank = { questions: [{ id: "stages", type: "fill_blank", prompt: "A butterfly has ____ stages.", marks: 1, answer: { accepted: ["four", "4"] } }] };
     const classifier = vi.fn(async () => ({

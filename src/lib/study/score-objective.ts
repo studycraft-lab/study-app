@@ -11,6 +11,9 @@ export type ScoreResult = {
 };
 
 const STOP_WORDS = new Set(["a", "an", "and", "of", "the", "was", "were", "is", "are"]);
+const NUMBER_WORDS: Record<string, string> = {
+  one: "1", two: "2", three: "3", four: "4", five: "5", six: "6", seven: "7", eight: "8", nine: "9", ten: "10",
+};
 
 function record(value: unknown): Record<string, unknown> {
   return typeof value === "object" && value !== null && !Array.isArray(value) ? value as Record<string, unknown> : {};
@@ -42,11 +45,27 @@ function sameSet(left: unknown, right: unknown): boolean {
   return a.length === b.length && a.every((value, index) => value === b[index]);
 }
 
-function correctionMatches(actual: unknown, expected: unknown): boolean {
-  const actualTokens = new Set(normalize(actual).split(" ").filter((token) => token && !STOP_WORDS.has(token)));
-  const expectedTokens = normalize(expected).split(" ").filter((token) => token && !STOP_WORDS.has(token));
+function correctionTokens(value: unknown): string[] {
+  return normalize(value).split(" ").filter((token) => token && !STOP_WORDS.has(token)).map((token) => NUMBER_WORDS[token] ?? token);
+}
+
+function hasConflictingNumbers(actualTokens: string[], expectedTokens: string[]): boolean {
+  const actualNumbers = new Set(actualTokens.filter((token) => /^\d+$/u.test(token)));
+  const expectedNumbers = new Set(expectedTokens.filter((token) => /^\d+$/u.test(token)));
+  return actualNumbers.size > 0 && expectedNumbers.size > 0 && ![...actualNumbers].some((token) => expectedNumbers.has(token));
+}
+
+function correctionMatches(actual: unknown, expected: unknown, allowLegacyOverlap: boolean): boolean {
+  if (normalize(actual) === normalize(expected) || compact(actual) === compact(expected)) return true;
+  const actualList = correctionTokens(actual);
+  const expectedTokens = correctionTokens(expected);
+  if (hasConflictingNumbers(actualList, expectedTokens)) return false;
+  const actualTokens = new Set(actualList);
+  const expectedSet = new Set(expectedTokens);
   if (!actualTokens.size || !expectedTokens.length) return false;
-  return expectedTokens.filter((token) => actualTokens.has(token)).length / expectedTokens.length >= 0.5;
+  if (expectedTokens.every((token) => actualTokens.has(token))) return true;
+  if (actualList.length >= 2 && actualList.every((token) => expectedSet.has(token))) return true;
+  return allowLegacyOverlap && expectedTokens.filter((token) => actualTokens.has(token)).length / expectedTokens.length >= 0.5;
 }
 
 export function scoreObjective(question: ObjectiveQuestion, response: unknown): ScoreResult {
@@ -76,7 +95,10 @@ export function scoreObjective(question: ObjectiveQuestion, response: unknown): 
       const given = record(response);
       expectedAnswer = answer.value === false ? `False — ${String(answer.correction ?? "")}` : "True";
       const truthChoiceCorrect = given.value === answer.value;
-      correct = truthChoiceCorrect && (answer.value === true || correctionMatches(given.correction, answer.correction));
+      const additionalCorrections = Array.isArray(answer.acceptedCorrections) ? answer.acceptedCorrections : [];
+      const acceptedCorrections = [answer.correction, ...additionalCorrections].filter((value) => typeof value === "string" && value.trim());
+      const allowLegacyOverlap = additionalCorrections.length === 0;
+      correct = truthChoiceCorrect && (answer.value === true || acceptedCorrections.some((value) => correctionMatches(given.correction, value, allowLegacyOverlap)));
       if (truthChoiceCorrect && !correct) earnedMarks = marks / 2;
       break;
     }

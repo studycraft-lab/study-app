@@ -15,15 +15,17 @@ Before writing questions, create an atomic coverage inventory of every testable 
 
 Generate broad and deep coverage without padding the bank with superficial paraphrases. Important concepts may receive multiple worthwhile question forms. Add `origin` and an inferred `selectionPriority` from 1 (essential) to 3 (reinforcement) to every question; end-exercise questions use `origin: end_exercise` and priority 1. Avoid phrases such as "in the chapter" and "as per the chapter" in child-visible prompts. Every scored prompt, answer and rubric point must cite a supporting page or normalized image region. Include deterministic answers for objective questions and independently scorable, mark-balanced rubrics for subjective questions. Do not introduce external facts or infer an examination pattern without a supplied sample paper.
 
+For every false statement, make `answer.correction` the smallest complete factual rewrite and put other concise, source-grounded rewrites in `answer.acceptedCorrections`. Include the likely minimal word replacement where it forms a valid sentence. Do not depend on runtime AI to recognize an unlisted correction.
+
 Create the chapter manifest, version-1 question bank and separate grounding-review record. Run manifest validation, source-hash verification, bank validation, deterministic review and manual source-by-source review. Normalize the accepted bank and commit only the chapter-ingestion artifacts and any necessary contract changes. Do not import the bank or upload source images unless I explicitly request those external actions.
 ```
 
-## Review the existing Early Vedic version 3
+## Review the existing Early Vedic version 4
 
-Use this when the goal is to verify or make narrowly justified corrections without creating version 4:
+Use this when the goal is to verify or make narrowly justified corrections without creating version 5:
 
 ```text
-$chapter-ingestion Review the existing Early Vedic Civilization version-3 artifacts:
+$chapter-ingestion Review the existing Early Vedic Civilization version-4 artifacts:
 
 - samples/early-vedic-chapter-manifest.json
 - samples/early-vedic-question-bank.json
@@ -31,7 +33,7 @@ $chapter-ingestion Review the existing Early Vedic Civilization version-3 artifa
 
 Use the source images in /Users/aquaraga/Desktop/raw-study-material/grade-6/history/early-vedic. Verify source hashes, schema conformance, every citation, deterministic answer, distractor, rubric point, hint, explanation, topic assignment and coverage claim against pages 45–53.
 
-Keep bank.version at 3. Preserve existing question IDs and versions. Make only corrections required for factual grounding, schema validity, scoring correctness or clear coverage defects; do not begin a version-4 expansion. Re-run every chapter-ingestion validation and review gate. Update the review record if findings change, and commit only the files changed by this review. Do not import the bank or upload source images.
+Keep bank.version at 4. Preserve existing question IDs and versions. Make only corrections required for factual grounding, schema validity, scoring correctness or clear coverage defects; do not begin a version-5 expansion. Re-run every chapter-ingestion validation and review gate. Update the review record if findings change, and commit only the files changed by this review. Do not import the bank or upload source images.
 ```
 
 ## Expand a reviewed bank later
@@ -44,6 +46,8 @@ $chapter-ingestion Expand the existing reviewed question bank into a new exhaust
 Treat the current bank as the stable baseline, not as the full scope. Build an atomic-fact coverage inventory for every supplied page, including prose, learning outcomes, maps, diagrams, timelines, captions, callouts, important words and exercise concepts. Include every answerable end exercise, record justified omissions, and cover every educationally useful testable fact. Give central concepts multiple meaningful question forms without creating superficial duplicates or stopping at an arbitrary count.
 
 Preserve existing question IDs and question versions unless their content changes. Assign new sequential IDs to new questions, increment bank.version, update the manifest and grounding-review record, run every validation and review gate, and commit the result. Do not import the bank or upload source images unless explicitly requested.
+
+When upgrading false-statement questions, increment the changed question versions, use the smallest complete correction as the primary answer, and enumerate additional grounded corrections explicitly.
 ```
 
 ## Validate or import without regenerating

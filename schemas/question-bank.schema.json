@@ -194,7 +194,25 @@
           "then": {
             "properties": {
               "response": { "required": ["requiresCorrectionWhenFalse"] },
-              "answer": { "required": ["value"], "properties": { "value": { "type": "boolean" } } },
+              "answer": {
+                "required": ["value"],
+                "properties": {
+                  "value": { "type": "boolean" },
+                  "correction": { "$ref": "#/definitions/nonEmptyString" },
+                  "acceptedCorrections": {
+                    "type": "array",
+                    "minItems": 1,
+                    "uniqueItems": true,
+                    "items": { "$ref": "#/definitions/nonEmptyString" }
+                  }
+                },
+                "allOf": [
+                  {
+                    "if": { "properties": { "value": { "const": false } }, "required": ["value"] },
+                    "then": { "required": ["correction"] }
+                  }
+                ]
+              },
               "rubric": { "required": ["points"], "properties": { "points": { "type": "array", "minItems": 1, "items": { "$ref": "#/definitions/point" } } } }
             }
           }

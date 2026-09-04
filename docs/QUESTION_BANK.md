@@ -23,10 +23,10 @@ Open a Codex task in this repository, attach the chapter images or PDF (or provi
 For the current Early Vedic deliverable, use the review-only prompt. Its committed artifacts remain:
 
 - [`samples/early-vedic-chapter-manifest.json`](../samples/early-vedic-chapter-manifest.json)
-- [`samples/early-vedic-question-bank.json`](../samples/early-vedic-question-bank.json), with `bank.version` kept at `3`
+- [`samples/early-vedic-question-bank.json`](../samples/early-vedic-question-bank.json), currently at `bank.version` `4`
 - [`samples/early-vedic-question-bank.review.json`](../samples/early-vedic-question-bank.review.json)
 
-Do not use the expansion prompt again until a version beyond `3` is intentionally requested.
+Do not use the expansion prompt again until a version beyond `4` is intentionally requested.
 
 Run the deterministic gates with:
 
@@ -131,7 +131,7 @@ The `type` discriminator controls the response, answer, and rubric shape.
 - `single_choice`: options and one correct option ID.
 - `multiple_select`: options, correct IDs, and partial-credit policy.
 - `fill_blank`: one or more blanks with accepted normalized answers.
-- `true_false_correct`: boolean answer plus correction required when false.
+- `true_false_correct`: boolean answer plus a deterministic correction required when false. `answer.correction` is the smallest complete valid rewrite; optional `answer.acceptedCorrections` lists other source-grounded rewrites that earn full credit.
 - `matching`: left/right items and correct pairs.
 - `one_word`: accepted terms and spelling policy.
 - `brief_answer`: expected concepts and concise-answer guidance.
@@ -141,6 +141,25 @@ The `type` discriminator controls the response, answer, and rubric shape.
 - `map_work`: base-map reference and expected labels/regions; stored by the contract but not yet playable.
 
 The current player supports the first nine types, from `single_choice` through `compare`. It excludes disabled questions and does not expose answers or rubrics before submission.
+
+### False-statement correction example
+
+```json
+{
+  "type": "true_false_correct",
+  "marks": 2,
+  "prompt": "The dress of the Aryans consisted of a three-piece garment. State true or false and correct the statement if needed.",
+  "answer": {
+    "value": false,
+    "correction": "The dress of the Aryans consisted of two garments.",
+    "acceptedCorrections": [
+      "The Aryans wore two garments."
+    ]
+  }
+}
+```
+
+The truth choice and correction are each worth half the marks. A wrong truth choice receives zero; a correct `false` choice with a missing or unaccepted correction receives half. These questions never use runtime AI. Authors must enumerate concise, grounded alternatives and must not include a wording that preserves the false fact.
 
 ## Multi-point rubric example
 
@@ -191,6 +210,8 @@ Questions should not be deleted merely because content is out of syllabus. Exam 
 There is one guarded replacement path for correcting a prototype import: when the stored bank is still `draft` and has no study sessions, attempts or review items, importing different content with the same bank ID and version replaces that row in place. This lets an incomplete draft such as a 12-question prototype be superseded by its reviewed v1 bank without leaving duplicate chapter entries. Once a bank is non-draft or has study history, it is immutable and changed content needs a higher `bank.version`.
 
 Authors should still increment `bank.version` for an intentional new release. The parent upload preview displays the selected bank version and question count before import. As a safety net, the shared import route automatically advances through occupied immutable versions and imports at the first compatible version; consecutive collisions are handled without asking the parent to edit JSON. The response reports `requestedVersion`, `importedVersion`, and `versionAdjusted`, and an identical bank already stored at an advanced version remains idempotent rather than being duplicated.
+
+To upgrade an existing false-statement question, keep its ID, increment its question `version`, add the smallest valid rewrite as `answer.correction`, and place other acceptable rewrites in `answer.acceptedCorrections`. Release the edited bank with a higher `bank.version`; historical attempts continue to retain the version that the child answered.
 
 ## Stable import command
 

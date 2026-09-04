@@ -169,6 +169,14 @@ export function validateQuestionBank(input: unknown): BankValidation {
         if (!options.has(optionId)) errors.push(`${path} has correct option ${optionId} missing from response.options.`);
       });
     }
+    if (question.type === "true_false_correct") {
+      const correction = typeof answer.correction === "string" ? answer.correction.trim() : "";
+      const alternatives = strings(answer.acceptedCorrections).map((value) => normalizedPrompt(value));
+      if (answer.value === false && !correction) errors.push(`${path} is false but has no correction.`);
+      if (answer.value === true && (correction || alternatives.length)) errors.push(`${path} is true but defines false-statement corrections.`);
+      const allCorrections = [normalizedPrompt(correction), ...alternatives].filter(Boolean);
+      if (new Set(allCorrections).size !== allCorrections.length) errors.push(`${path} has duplicate accepted corrections.`);
+    }
 
     const promptKey = normalizedPrompt(question.prompt);
     const duplicate = prompts.get(promptKey);

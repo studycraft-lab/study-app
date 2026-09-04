@@ -28,6 +28,7 @@ Read `docs/QUESTION_BANK.md` and validate against `schemas/question-bank.schema.
 - includes supported facts from prose, diagrams, maps, timelines, tables, captions, and source passages;
 - cites a page and, when the evidence is visual or localized, a normalized region for every scored prompt, answer, and rubric;
 - gives objective items deterministic answers and subjective items independently scorable, mark-balanced rubrics;
+- for each false-statement correction, stores the smallest complete valid rewrite as `answer.correction` and every other useful source-grounded wording in `answer.acceptedCorrections`; never rely on runtime AI or make a full textbook sentence the only accepted target;
 - avoids external facts, exam-pattern claims without a supplied paper, and near-duplicate prompts;
 - uses `review` status and explains uncertainty instead of guessing when extraction is unclear.
 

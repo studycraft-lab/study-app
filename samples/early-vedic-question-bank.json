@@ -8,7 +8,7 @@
     "status": "reviewed",
     "subject": "History",
     "title": "The Early Vedic Civilization",
-    "version": 3
+    "version": 4
   },
   "questions": [
     {
@@ -883,7 +883,11 @@
     },
     {
       "answer": {
-        "correction": "Wheat, barley, maize, fruits and vegetables formed the staple diet of the Aryans.",
+        "acceptedCorrections": [
+          "Wheat, barley, maize, fruits and vegetables formed the staple diet of the Aryans.",
+          "Wheat was the staple food of the Aryans."
+        ],
+        "correction": "Wheat was part of the staple diet of the Aryans.",
         "value": false
       },
       "difficulty": 1,
@@ -909,7 +913,7 @@
             "weight": 1
           },
           {
-            "concept": "gives the concise sufficient correction: Wheat, barley, maize, fruits and vegetables formed the staple diet of the Aryans.",
+            "concept": "gives a concise sufficient correction that replaces rice with wheat or states the supported staple foods",
             "id": "p2",
             "required": true,
             "weight": 1
@@ -939,7 +943,7 @@
         "food-dress-recreation"
       ],
       "type": "true_false_correct",
-      "version": 2
+      "version": 3
     },
     {
       "answer": {
@@ -996,6 +1000,10 @@
     },
     {
       "answer": {
+        "acceptedCorrections": [
+          "The Aryans wore two garments.",
+          "The dress of the Aryans consisted of a two-piece garment."
+        ],
         "correction": "The dress of the Aryans consisted of two garments.",
         "value": false
       },
@@ -1052,7 +1060,7 @@
         "food-dress-recreation"
       ],
       "type": "true_false_correct",
-      "version": 2
+      "version": 3
     },
     {
       "answer": {

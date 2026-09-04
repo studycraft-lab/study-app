@@ -67,7 +67,11 @@ describe("ParentLibrary", () => {
 
     render(<ParentLibrary />);
     expect(await screen.findByText(/School Curriculum · Grade 6/i)).toBeInTheDocument();
-    fireEvent.click(screen.getByRole("button", { name: /delete the cell bank v1/i }));
+    const deleteButton = screen.getByRole("button", { name: /delete the cell bank v1/i });
+    expect(deleteButton).toHaveClass("library-delete-trigger");
+    expect(deleteButton.querySelector("svg")).toBeInTheDocument();
+    expect(deleteButton).not.toHaveTextContent(/delete bank/i);
+    fireEvent.click(deleteButton);
     expect(screen.getByText(/This permanently deletes only bank v1/i)).toBeInTheDocument();
     expect(fetchMock).not.toHaveBeenCalledWith("/api/library", expect.objectContaining({ method: "DELETE" }));
 

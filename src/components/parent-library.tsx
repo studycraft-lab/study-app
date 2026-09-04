@@ -29,6 +29,12 @@ function answerSummary(question: Record<string, unknown>) {
   return "";
 }
 
+function TrashIcon() {
+  return <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+    <path d="M4 7h16M9 7V4h6v3m3 0-1 13H7L6 7m4 4v5m4-5v5" />
+  </svg>;
+}
+
 export function ParentLibrary() {
   const router = useRouter();
   const [file, setFile] = useState<File | null>(null);
@@ -157,7 +163,7 @@ export function ParentLibrary() {
       <section className="library-section">
         <h2>Imported chapters</h2>
         {library.length === 0 ? <p className="empty-state">No chapters have been imported for this family yet.</p> :
-          <div className="library-subjects">{Object.entries(libraryBySubject).sort(([a], [b]) => a.localeCompare(b)).map(([subject, items]) => <section className="library-subject-group" key={subject}><div className="section-heading"><h3>{subject}</h3><span>{items.length} {items.length === 1 ? "chapter" : "chapters"}</span></div><div className="library-grid">{items.map((item) => <article key={item.id}><span>{item.board} · Grade {item.grade}</span><h3>{item.chapterNumber ? `${item.chapterNumber}. ` : ""}{item.chapterTitle}</h3><p>{item.questionCount} questions · bank v{item.bankVersion}</p>{deleteCandidate === item.id ? <div className="library-delete"><p>This permanently deletes only bank v{item.bankVersion}. Newer versions are not affected.</p><div className="button-row"><button className="button-danger" disabled={busy} aria-label={`Confirm delete ${item.chapterTitle} bank v${item.bankVersion}`} onClick={() => void deleteBankVersion(item)}>Delete permanently</button><button className="button-quiet" disabled={busy} onClick={() => setDeleteCandidate(null)}>Cancel</button></div></div> : <button className="button-delete" disabled={busy} aria-label={`Delete ${item.chapterTitle} bank v${item.bankVersion}`} onClick={() => setDeleteCandidate(item.id)}>Delete bank v{item.bankVersion}</button>}</article>)}</div></section>)}</div>}
+          <div className="library-subjects">{Object.entries(libraryBySubject).sort(([a], [b]) => a.localeCompare(b)).map(([subject, items]) => <section className="library-subject-group" key={subject}><div className="section-heading"><h3>{subject}</h3><span>{items.length} {items.length === 1 ? "chapter" : "chapters"}</span></div><div className="library-grid">{items.map((item) => <article className="library-card" key={item.id}><span>{item.board} · Grade {item.grade}</span><h3>{item.chapterNumber ? `${item.chapterNumber}. ` : ""}{item.chapterTitle}</h3><p>{item.questionCount} questions · bank v{item.bankVersion}</p>{deleteCandidate === item.id ? <div className="library-delete"><p>This permanently deletes only bank v{item.bankVersion}. Newer versions are not affected.</p><div className="button-row"><button className="button-danger" disabled={busy} aria-label={`Confirm delete ${item.chapterTitle} bank v${item.bankVersion}`} onClick={() => void deleteBankVersion(item)}>Delete permanently</button><button className="button-quiet" disabled={busy} onClick={() => setDeleteCandidate(null)}>Cancel</button></div></div> : <button type="button" className="library-delete-trigger" disabled={busy} aria-label={`Delete ${item.chapterTitle} bank v${item.bankVersion}`} title={`Delete bank v${item.bankVersion}`} onClick={() => setDeleteCandidate(item.id)}><TrashIcon /></button>}</article>)}</div></section>)}</div>}
       </section>
     </main>
   );

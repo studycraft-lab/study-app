@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { AppHeader } from "./app-header";
 
-type ReviewAttempt = { id: string; prompt: string; answer: string; correct: boolean; earnedMarks: number; maxMarks: number; status: string; correctAnswer: string; explanation: string; sourcePages?: number[] };
+type ReviewAttempt = { id: string; prompt: string; answer: string; correct: boolean; earnedMarks: number; originalEarnedMarks?: number; maxMarks: number; status: string; correctAnswer: string; explanation: string; sourcePages?: number[]; scoreAppeal?: { status: string; resolved_earned_marks?: number | null } | null };
 type SessionReview = { id: string; status: string; startedAt: string; totalQuestions: number; resumable?: boolean; attempts: ReviewAttempt[] };
 
 export function ChildSessionReview({ sessionId }: { sessionId: string }) {
@@ -31,6 +31,7 @@ export function ChildSessionReview({ sessionId }: { sessionId: string }) {
         <h3>{attempt.prompt}</h3>
         <dl className="review-answers"><div><dt>Your answer</dt><dd>{attempt.answer || "No answer recorded"}</dd></div><div><dt>Correct answer</dt><dd>{attempt.correctAnswer}</dd></div></dl>
         {attempt.explanation && <p className="review-explanation">{attempt.explanation}</p>}
+        {attempt.scoreAppeal && <p className="score-appeal-status">Score appeal: {attempt.scoreAppeal.status}{attempt.scoreAppeal.resolved_earned_marks !== null && attempt.scoreAppeal.resolved_earned_marks !== undefined ? ` · final score ${attempt.scoreAppeal.resolved_earned_marks}/${attempt.maxMarks}` : ""}</p>}
         {attempt.sourcePages?.length ? <small className="source-cite">Textbook {attempt.sourcePages.map((page) => `Page ${page}`).join(", ")}</small> : null}
       </article>)}</div>
     </>}

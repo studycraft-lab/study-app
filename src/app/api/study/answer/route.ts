@@ -1,5 +1,6 @@
 import { childFromRequest } from "@/lib/family/request";
 import { recordStudyAttempt, studyAttemptBySubmission } from "@/lib/learning/store";
+import { createScoreAppeal } from "@/lib/learning/appeals";
 import { getQuestionBankForChild } from "@/lib/question-bank/store";
 import { GradingUnavailableError } from "@/lib/ai/openrouter";
 import { gradeSubmittedQuestion } from "@/lib/study/grading";
@@ -32,7 +33,10 @@ export async function POST(request: Request) {
       };
     }
     const attemptId = await recordStudyAttempt({ sessionId: body.sessionId, child, bankId: body.bankId, bank, questionId: body.questionId, response: body.response, feedback, submissionId, gradingStatus });
-    return Response.json({ ...feedback, attemptId });
+    const scoreAppeal = gradingStatus === "pending_review"
+      ? await createScoreAppeal({ child, attemptId, comment: "Automated grading was unavailable." })
+      : null;
+    return Response.json({ ...feedback, attemptId, scoreAppeal });
   } catch (error) {
     return Response.json({ error: error instanceof Error ? error.message : "Answer could not be checked." }, { status: error instanceof GradingUnavailableError ? 503 : 500 });
   }

@@ -16,6 +16,19 @@ function records(value: unknown): RecordValue[] {
   return Array.isArray(value) ? value.map(record) : [];
 }
 
+function effectiveAttempt(attempt: RecordValue): RecordValue & { original_earned_marks: unknown; original_correct: unknown; earned_marks: number; correct: boolean } {
+  const adjusted = attempt.adjusted_earned_marks != null;
+  const feedback = record(attempt.feedback);
+  return {
+    ...attempt,
+    feedback: adjusted ? { ...feedback, reviewRequired: false } : feedback,
+    original_earned_marks: attempt.earned_marks,
+    original_correct: attempt.correct,
+    earned_marks: Number(attempt.adjusted_earned_marks ?? attempt.earned_marks),
+    correct: Boolean(attempt.adjusted_correct ?? attempt.correct),
+  };
+}
+
 function bankVersion(bank: RecordValue): number {
   return Number(record(bank.bank).version || 1);
 }
@@ -37,13 +50,14 @@ export async function createStudySession(input: { child: ChildContext; bankId: s
 export async function questionSelectionHistory(childId: string, bankId: string) {
   const client = adminClient();
   const [{ data: attempts, error: attemptError }, { data: reviews, error: reviewError }] = await Promise.all([
-    client.from("study_attempts").select("question_id,correct,earned_marks,max_marks,grading_status,attempted_at").eq("child_id", childId).eq("question_bank_id", bankId).order("attempted_at", { ascending: false }),
+    client.from("study_attempts").select("question_id,correct,earned_marks,max_marks,adjusted_correct,adjusted_earned_marks,grading_status,attempted_at").eq("child_id", childId).eq("question_bank_id", bankId).order("attempted_at", { ascending: false }),
     client.from("review_items").select("question_id,due_at").eq("child_id", childId).eq("question_bank_id", bankId),
   ]);
   if (attemptError || reviewError) throw new Error(attemptError?.message ?? reviewError?.message ?? "Question history is unavailable.");
   const latest = new Map<string, { correct: boolean; scoreRatio: number; reviewPending: boolean }>();
-  (attempts ?? []).forEach((attempt) => {
-    if (!latest.has(attempt.question_id)) latest.set(attempt.question_id, {
+  (attempts ?? []).map((attempt) => effectiveAttempt(record(attempt))).forEach((attempt) => {
+    const questionId = String(attempt.question_id);
+    if (!latest.has(questionId)) latest.set(questionId, {
       correct: Boolean(attempt.correct),
       scoreRatio: Number(attempt.max_marks) > 0 ? Number(attempt.earned_marks) / Number(attempt.max_marks) : 0,
       reviewPending: attempt.grading_status === "pending_review",
@@ -73,11 +87,11 @@ export async function chapterCoverage(childId: string, bankIds: string[]) {
   const client = adminClient();
   const [{ data: banks, error: bankError }, { data: attempts, error: attemptError }] = await Promise.all([
     client.from("question_banks").select("id,payload").in("id", bankIds),
-    client.from("study_attempts").select("question_bank_id,question_id").eq("child_id", childId).eq("correct", true).in("question_bank_id", bankIds),
+    client.from("study_attempts").select("question_bank_id,question_id,correct,earned_marks,max_marks,adjusted_correct,adjusted_earned_marks,grading_status").eq("child_id", childId).in("question_bank_id", bankIds),
   ]);
   if (bankError || attemptError) throw new Error(bankError?.message ?? attemptError?.message ?? "Chapter coverage is unavailable.");
   const correctByBank = new Map<string, Set<string>>();
-  (attempts ?? []).forEach((attempt) => {
+  (attempts ?? []).map((attempt) => effectiveAttempt(record(attempt))).filter((attempt) => attempt.grading_status !== "pending_review" && attempt.correct).forEach((attempt) => {
     const bankId = String(attempt.question_bank_id);
     if (!correctByBank.has(bankId)) correctByBank.set(bankId, new Set());
     correctByBank.get(bankId)?.add(String(attempt.question_id));
@@ -97,10 +111,10 @@ export async function resumableStudySession(sessionId: string, childId: string) 
     .eq("id", sessionId).eq("child_id", childId).maybeSingle();
   if (sessionError || !session || session.status !== "in_progress" || !Array.isArray(session.question_ids)) throw new Error("This unfinished session cannot be resumed.");
   const { data: attempts, error: attemptError } = await client.from("study_attempts")
-    .select("id,question_id,response,correct,earned_marks,max_marks,feedback,attempted_at")
+    .select("id,question_id,response,correct,earned_marks,max_marks,adjusted_correct,adjusted_earned_marks,feedback,grading_status,attempted_at")
     .eq("session_id", sessionId).eq("child_id", childId).order("attempted_at");
   if (attemptError) throw new Error(attemptError.message);
-  return { bankId: String(session.question_bank_id), questionIds: session.question_ids.map(String), presentationSeed: typeof session.presentation_seed === "string" ? session.presentation_seed : undefined, attempts: attempts ?? [] };
+  return { bankId: String(session.question_bank_id), questionIds: session.question_ids.map(String), presentationSeed: typeof session.presentation_seed === "string" ? session.presentation_seed : undefined, attempts: (attempts ?? []).map((attempt) => effectiveAttempt(record(attempt))) };
 }
 
 export async function studySessionReview(sessionId: string, childId: string) {
@@ -110,14 +124,21 @@ export async function studySessionReview(sessionId: string, childId: string) {
     .eq("id", sessionId).eq("child_id", childId).maybeSingle();
   if (sessionError || !session || !Array.isArray(session.question_ids)) throw new Error("This session is unavailable.");
   const { data: attempts, error: attemptError } = await client.from("study_attempts")
-    .select("id,question_id,response,correct,earned_marks,max_marks,feedback,attempted_at")
+    .select("id,question_id,response,correct,earned_marks,max_marks,adjusted_correct,adjusted_earned_marks,feedback,grading_status,attempted_at")
     .eq("session_id", sessionId).eq("child_id", childId).order("attempted_at");
   if (attemptError) throw new Error(attemptError.message);
+  const effectiveAttempts = (attempts ?? []).map((attempt) => effectiveAttempt(record(attempt)));
+  const attemptIds = effectiveAttempts.map((attempt) => String(attempt.id));
+  const { data: appeals, error: appealError } = attemptIds.length
+    ? await client.from("score_appeals").select("attempt_id,status,child_comment,resolved_earned_marks,parent_comment,resolved_at").in("attempt_id", attemptIds)
+    : { data: [], error: null };
+  if (appealError) throw new Error(appealError.message);
+  const appealByAttempt = new Map((appeals ?? []).map((appeal) => [String(appeal.attempt_id), appeal]));
   return {
     id: String(session.id), bankId: String(session.question_bank_id), status: String(session.status), startedAt: String(session.started_at),
     totalQuestions: Number(session.total_questions), questionIds: session.question_ids.map(String),
     presentationSeed: typeof session.presentation_seed === "string" ? session.presentation_seed : undefined,
-    attempts: attempts ?? [],
+    attempts: effectiveAttempts.map((attempt) => ({ ...attempt, score_appeal: appealByAttempt.get(String(attempt.id)) ?? null })),
   };
 }
 
@@ -185,11 +206,11 @@ export async function childLearningHistory(child: ChildContext) {
   const client = adminClient();
   const [{ data: sessions, error: sessionError }, { data: attempts, error: attemptError }, { data: dueItems, error: dueError }] = await Promise.all([
     client.from("study_sessions").select("id,question_bank_id,status,started_at,completed_at,total_questions,question_ids").eq("child_id", child.id).order("started_at", { ascending: false }).limit(12),
-    client.from("study_attempts").select("id,session_id,question_bank_id,question_id,question_prompt,topic_ids,response,correct,earned_marks,max_marks,feedback,self_rating,grading_status,attempted_at").eq("child_id", child.id).order("attempted_at", { ascending: false }).limit(100),
+    client.from("study_attempts").select("id,session_id,question_bank_id,question_id,question_prompt,topic_ids,response,correct,earned_marks,max_marks,adjusted_correct,adjusted_earned_marks,feedback,self_rating,grading_status,attempted_at").eq("child_id", child.id).order("attempted_at", { ascending: false }).limit(100),
     client.from("review_items").select("id,question_bank_id").eq("child_id", child.id).lte("due_at", new Date().toISOString()),
   ]);
   if (sessionError || attemptError || dueError) throw new Error(sessionError?.message ?? attemptError?.message ?? dueError?.message ?? "Learning history is unavailable.");
-  const allAttempts = attempts ?? [];
+  const allAttempts = (attempts ?? []).map((attempt) => effectiveAttempt(record(attempt)));
   const scoredAttempts = allAttempts.filter((attempt) => attempt.grading_status !== "pending_review");
   const bankIds = [...new Set([
     ...(sessions ?? []).map((session) => String(session.question_bank_id)),
@@ -210,10 +231,11 @@ export async function childLearningHistory(child: ChildContext) {
   const earnedMarks = scoredAttempts.reduce((sum, attempt) => sum + Number(attempt.earned_marks), 0);
   const possibleMarks = scoredAttempts.reduce((sum, attempt) => sum + Number(attempt.max_marks), 0);
   const masteryPoints = latest.map((attempt) => Number(attempt.earned_marks) / Number(attempt.max_marks));
-  const topicIds = [...new Set(scoredAttempts.flatMap((attempt) => attempt.topic_ids ?? []))];
+  const attemptTopics = (attempt: RecordValue) => Array.isArray(attempt.topic_ids) ? attempt.topic_ids.map(String) : [];
+  const topicIds = [...new Set(scoredAttempts.flatMap(attemptTopics))];
   const topics = topicIds.map((topicId) => {
-    const topicAttempts = scoredAttempts.filter((attempt) => attempt.topic_ids?.includes(topicId));
-    const topicLatest = latest.filter((attempt) => attempt.topic_ids?.includes(topicId));
+    const topicAttempts = scoredAttempts.filter((attempt) => attemptTopics(attempt).includes(topicId));
+    const topicLatest = latest.filter((attempt) => attemptTopics(attempt).includes(topicId));
     const topicEarned = topicAttempts.reduce((sum, attempt) => sum + Number(attempt.earned_marks), 0);
     const topicPossible = topicAttempts.reduce((sum, attempt) => sum + Number(attempt.max_marks), 0);
     const topicMastery = topicLatest.map((attempt) => Number(attempt.earned_marks) / Number(attempt.max_marks));
@@ -244,7 +266,7 @@ export async function childLearningHistory(child: ChildContext) {
       accuracy: subjectPossible ? Math.round(subjectEarned / subjectPossible * 100) : 0,
       mastery: subjectMastery.length ? Math.round(subjectMastery.reduce<number>((sum, value) => sum + value, 0) / subjectMastery.length * 100) : 0,
       readyToPractice: (dueItems ?? []).filter((item) => chapterFor(item.question_bank_id).subject === subject).length,
-      answersNeedingReview: allSubjectAttempts.filter((attempt) => attempt.grading_status === "pending_review" || record(attempt.feedback).reviewRequired === true).length,
+      answersNeedingReview: allSubjectAttempts.filter((attempt) => attempt.grading_status === "pending_review" || (attempt.adjusted_earned_marks == null && record(attempt.feedback).reviewRequired === true)).length,
     };
   });
   return {
@@ -255,7 +277,7 @@ export async function childLearningHistory(child: ChildContext) {
       accuracy: possibleMarks ? Math.round(earnedMarks / possibleMarks * 100) : 0,
       mastery: masteryPoints.length ? Math.round(masteryPoints.reduce<number>((sum, value) => sum + value, 0) / masteryPoints.length * 100) : 0,
       dueReview: (dueItems ?? []).length,
-      gradingReview: allAttempts.filter((attempt) => attempt.grading_status === "pending_review" || record(attempt.feedback).reviewRequired === true).length,
+      gradingReview: allAttempts.filter((attempt) => attempt.grading_status === "pending_review" || (attempt.adjusted_earned_marks == null && record(attempt.feedback).reviewRequired === true)).length,
       rewards: { stars: Math.min(5, Math.floor(points / 50)) },
     },
     subjects,

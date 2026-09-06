@@ -1,17 +1,18 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
 
 vi.mock("server-only", () => ({}));
-const { childFromRequest, getQuestionBankForChild, recordStudyAttempt, studyAttemptBySubmission, classifyRubric } = vi.hoisted(() => ({ childFromRequest: vi.fn(), getQuestionBankForChild: vi.fn(), recordStudyAttempt: vi.fn(), studyAttemptBySubmission: vi.fn(), classifyRubric: vi.fn() }));
+const { childFromRequest, getQuestionBankForChild, recordStudyAttempt, studyAttemptBySubmission, createScoreAppeal, classifyRubric } = vi.hoisted(() => ({ childFromRequest: vi.fn(), getQuestionBankForChild: vi.fn(), recordStudyAttempt: vi.fn(), studyAttemptBySubmission: vi.fn(), createScoreAppeal: vi.fn(), classifyRubric: vi.fn() }));
 vi.mock("@/lib/family/request", () => ({ childFromRequest }));
 vi.mock("@/lib/question-bank/store", () => ({ getQuestionBankForChild }));
 vi.mock("@/lib/learning/store", () => ({ recordStudyAttempt, studyAttemptBySubmission }));
+vi.mock("@/lib/learning/appeals", () => ({ createScoreAppeal }));
 vi.mock("@/lib/ai/openrouter", async () => ({ ...(await vi.importActual<typeof import("@/lib/ai/openrouter")>("@/lib/ai/openrouter")), classifyRubric }));
 
 import { POST } from "./route";
 import { GradingUnavailableError } from "@/lib/ai/openrouter";
 
 describe("POST /api/study/answer", () => {
-  afterEach(() => { delete process.env.PARENT_IMPORT_PASSPHRASE; vi.clearAllMocks(); studyAttemptBySubmission.mockResolvedValue(null); });
+  afterEach(() => { delete process.env.PARENT_IMPORT_PASSPHRASE; vi.clearAllMocks(); studyAttemptBySubmission.mockResolvedValue(null); createScoreAppeal.mockResolvedValue({ id: "appeal", status: "pending" }); });
 
   it("grades on the server and returns cited feedback", async () => {
     childFromRequest.mockResolvedValue({ id: "child", familyId: "family", board: "ICSE", grade: 6 });
@@ -44,6 +45,7 @@ describe("POST /api/study/answer", () => {
     expect(response.status).toBe(200);
     await expect(response.json()).resolves.toMatchObject({ attemptId: "pending-attempt", gradingPending: true, reviewRequired: true, verdict: "review" });
     expect(recordStudyAttempt).toHaveBeenCalledWith(expect.objectContaining({ submissionId: "submission-1", gradingStatus: "pending_review", response: "My answer" }));
+    expect(createScoreAppeal).toHaveBeenCalledWith(expect.objectContaining({ attemptId: "pending-attempt" }));
   });
 
   it("returns an existing submission without grading or inserting again", async () => {

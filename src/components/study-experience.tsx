@@ -61,6 +61,9 @@ export function StudyExperience() {
   const [feedbackOpen, setFeedbackOpen] = useState<Record<string, boolean>>({});
   const [reportNotes, setReportNotes] = useState<Record<string, string>>({});
   const [reportedQuestions, setReportedQuestions] = useState<Record<string, boolean>>({});
+  const [appealOpen, setAppealOpen] = useState<Record<string, boolean>>({});
+  const [appealNotes, setAppealNotes] = useState<Record<string, string>>({});
+  const [appealStatus, setAppealStatus] = useState<Record<string, string>>({});
   const [history, setHistory] = useState<History | null>(null);
   const [reviewingId, setReviewingId] = useState<string | null>(null);
   const [reviewOrigin, setReviewOrigin] = useState<"session" | "summary">("session");
@@ -102,7 +105,7 @@ export function StudyExperience() {
     setSessionId(sessionBody.sessionId);
     setQuestions(loaded); setQueue(loaded.map((question) => question.id));
     setStatuses(Object.fromEntries(loaded.map((question) => [question.id, "pending"])));
-    setFeedback(null); setResponse(""); setResponses({}); setFeedbackByQuestion({}); setSubmissionIds({}); setFeedbackOpen({}); setReportNotes({}); setReportedQuestions({}); setReviewingId(null); setPhase("session"); setBusy(false);
+    setFeedback(null); setResponse(""); setResponses({}); setFeedbackByQuestion({}); setSubmissionIds({}); setFeedbackOpen({}); setReportNotes({}); setReportedQuestions({}); setAppealOpen({}); setAppealNotes({}); setAppealStatus({}); setReviewingId(null); setPhase("session"); setBusy(false);
   }
 
 
@@ -143,6 +146,7 @@ export function StudyExperience() {
       setResponses((existing) => ({ ...existing, [current.id]: answer }));
       setFeedbackByQuestion((existing) => ({ ...existing, [current.id]: checked }));
       setStatuses((existing) => ({ ...existing, [current.id]: resultStatus(checked) }));
+      if (body.scoreAppeal?.status) setAppealStatus((existing) => ({ ...existing, [current.id]: body.scoreAppeal.status }));
     }
     setBusy(false);
   }
@@ -161,6 +165,21 @@ export function StudyExperience() {
       setReportedQuestions((existing) => ({ ...existing, [current.id]: true }));
       setFeedbackOpen((existing) => ({ ...existing, [current.id]: false }));
     } else setError("Could not send this question to your parent.");
+    setBusy(false);
+  }
+
+  async function appealCurrentScore() {
+    if (!current || !shownFeedback?.attemptId) return;
+    setBusy(true); setError("");
+    const result = await fetch("/api/study/score-appeals", {
+      method: "POST", headers: { "content-type": "application/json" },
+      body: JSON.stringify({ attemptId: shownFeedback.attemptId, comment: appealNotes[current.id] ?? "" }),
+    });
+    const body = await result.json();
+    if (result.ok) {
+      setAppealStatus((existing) => ({ ...existing, [current.id]: body.appeal?.status ?? "pending" }));
+      setAppealOpen((existing) => ({ ...existing, [current.id]: false }));
+    } else setError(body.error ?? "Could not send this score appeal.");
     setBusy(false);
   }
 
@@ -206,7 +225,7 @@ export function StudyExperience() {
       <article className="question-card" key={`${current.id}-${shownFeedback ? "revealed" : "answer"}`}><div className="question-meta"><span>Question {currentIndex + 1} · {current.type.replaceAll("_", " ")}</span><span>{current.marks} {current.marks === 1 ? "mark" : "marks"}</span></div><h1>{current.prompt}</h1>
         {!reviewingId && <div className="question-feedback"><button type="button" className="question-feedback-link" onClick={() => setFeedbackOpen((existing) => ({ ...existing, [current.id]: !existing[current.id] }))}>{reportedQuestions[current.id] ? "Feedback sent" : "Give feedback"}</button>{feedbackOpen[current.id] && !reportedQuestions[current.id] && <div className="question-feedback-panel"><label>What seems wrong? <span>(optional)</span><textarea rows={2} value={reportNotes[current.id] ?? ""} onChange={(event) => setReportNotes((existing) => ({ ...existing, [current.id]: event.target.value }))} placeholder="For example: the wording is confusing" /></label><div className="button-row"><button type="button" onClick={reportCurrentQuestion} disabled={busy}>{busy ? "Sending…" : "Report question"}</button><button type="button" className="button-quiet" onClick={() => setFeedbackOpen((existing) => ({ ...existing, [current.id]: false }))}>Cancel</button></div></div>}</div>}
         <QuestionInput question={current} value={shownResponse} onChange={setResponse} disabled={Boolean(shownFeedback) || Boolean(reviewingId)} />
-        {!shownFeedback ? <div className="question-actions"><button className="answer-submit" onClick={checkAnswer} disabled={!hasResponse(current, response) || busy}>{busy ? "Checking…" : "Check answer"}<span aria-hidden="true">→</span></button><button className="button-quiet" onClick={dontKnow} disabled={busy}>I don’t know</button></div> : <div className={`answer-feedback ${shownFeedback.reviewRequired ? "is-review" : shownFeedback.correct ? "is-correct" : shownFeedback.earnedMarks > 0 ? "is-partial" : "is-wrong"}`} role="status"><div className="feedback-verdict"><span className="verdict-orbit" aria-hidden="true"><i>{shownFeedback.correct ? "✓" : shownFeedback.earnedMarks > 0 ? "½" : shownFeedback.reviewRequired ? "?" : "×"}</i></span><div><span className="feedback-kicker">{shownFeedback.reviewRequired ? "Parent review required" : shownFeedback.earnedMarks > 0 && !shownFeedback.correct ? "Partial credit" : "Answer checked"}</span><h2>{shownFeedback.reviewRequired ? `? Parent review needed — ${shownFeedback.earnedMarks}/${current.marks} provisional marks` : shownFeedback.correct ? "✓ Correct" : shownFeedback.earnedMarks > 0 ? `½ Partly correct — ${shownFeedback.earnedMarks}/${current.marks} marks` : "× Incorrect"}</h2></div></div>{!shownFeedback.correct && <p className="expected-answer"><strong>Expected:</strong> {shownFeedback.expectedAnswer}</p>}<p className="feedback-explanation">{shownFeedback.explanation}</p>{shownFeedback.coveredPoints?.length ? <div className="rubric-feedback"><strong>Points covered</strong><ul>{shownFeedback.coveredPoints.map((point) => <li key={point}>{point}</li>)}</ul></div> : null}{shownFeedback.partialPoints?.length ? <div className="rubric-feedback"><strong>Partly covered</strong><ul>{shownFeedback.partialPoints.map((point) => <li key={point}>{point}</li>)}</ul></div> : null}{shownFeedback.missingPoints?.length ? <div className="rubric-feedback"><strong>Points to add</strong><ul>{shownFeedback.missingPoints.map((point) => <li key={point}>{point}</li>)}</ul></div> : null}{shownFeedback.sourcePages.length > 0 && <p className="source-cite source-seal"><span aria-hidden="true">▤</span> Textbook {shownFeedback.sourcePages.map((page) => `Page ${page}`).join(", ")}</p>}<div className="feedback-next">{reviewingId ? <button onClick={closeReview}>{reviewOrigin === "summary" ? "Back to results" : "Back to current question"}</button> : <button onClick={() => advance(queue.slice(1))}>{queue.length === 1 ? "See results" : "Next question"}<span aria-hidden="true">→</span></button>}</div></div>}
+        {!shownFeedback ? <div className="question-actions"><button className="answer-submit" onClick={checkAnswer} disabled={!hasResponse(current, response) || busy}>{busy ? "Checking…" : "Check answer"}<span aria-hidden="true">→</span></button><button className="button-quiet" onClick={dontKnow} disabled={busy}>I don’t know</button></div> : <div className={`answer-feedback ${shownFeedback.reviewRequired ? "is-review" : shownFeedback.correct ? "is-correct" : shownFeedback.earnedMarks > 0 ? "is-partial" : "is-wrong"}`} role="status"><div className="feedback-verdict"><span className="verdict-orbit" aria-hidden="true"><i>{shownFeedback.correct ? "✓" : shownFeedback.earnedMarks > 0 ? "½" : shownFeedback.reviewRequired ? "?" : "×"}</i></span><div><span className="feedback-kicker">{shownFeedback.reviewRequired ? "Parent review required" : shownFeedback.earnedMarks > 0 && !shownFeedback.correct ? "Partial credit" : "Answer checked"}</span><h2>{shownFeedback.reviewRequired ? `? Parent review needed — ${shownFeedback.earnedMarks}/${current.marks} provisional marks` : shownFeedback.correct ? "✓ Correct" : shownFeedback.earnedMarks > 0 ? `½ Partly correct — ${shownFeedback.earnedMarks}/${current.marks} marks` : "× Incorrect"}</h2></div></div>{!shownFeedback.correct && <p className="expected-answer"><strong>Expected:</strong> {shownFeedback.expectedAnswer}</p>}<p className="feedback-explanation">{shownFeedback.explanation}</p>{shownFeedback.coveredPoints?.length ? <div className="rubric-feedback"><strong>Points covered</strong><ul>{shownFeedback.coveredPoints.map((point) => <li key={point}>{point}</li>)}</ul></div> : null}{shownFeedback.partialPoints?.length ? <div className="rubric-feedback"><strong>Partly covered</strong><ul>{shownFeedback.partialPoints.map((point) => <li key={point}>{point}</li>)}</ul></div> : null}{shownFeedback.missingPoints?.length ? <div className="rubric-feedback"><strong>Points to add</strong><ul>{shownFeedback.missingPoints.map((point) => <li key={point}>{point}</li>)}</ul></div> : null}{shownFeedback.sourcePages.length > 0 && <p className="source-cite source-seal"><span aria-hidden="true">▤</span> Textbook {shownFeedback.sourcePages.map((page) => `Page ${page}`).join(", ")}</p>}<div className="score-appeal">{appealStatus[current.id] ? <span>Score appeal {appealStatus[current.id]}</span> : <button type="button" className="question-feedback-link" onClick={() => setAppealOpen((existing) => ({ ...existing, [current.id]: !existing[current.id] }))}>Appeal score</button>}{appealOpen[current.id] && !appealStatus[current.id] && <div className="question-feedback-panel"><label>Why should the score change? <span>(optional)</span><textarea rows={2} value={appealNotes[current.id] ?? ""} onChange={(event) => setAppealNotes((existing) => ({ ...existing, [current.id]: event.target.value }))} /></label><div className="button-row"><button type="button" onClick={appealCurrentScore} disabled={busy}>Send to parent</button><button type="button" className="button-quiet" onClick={() => setAppealOpen((existing) => ({ ...existing, [current.id]: false }))}>Cancel</button></div></div>}</div><div className="feedback-next">{reviewingId ? <button onClick={closeReview}>{reviewOrigin === "summary" ? "Back to results" : "Back to current question"}</button> : <button onClick={() => advance(queue.slice(1))}>{queue.length === 1 ? "See results" : "Next question"}<span aria-hidden="true">→</span></button>}</div></div>}
       </article>
     </section>}
 

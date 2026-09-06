@@ -57,7 +57,8 @@ export async function GET(request: Request, context: { params: Promise<{ session
     return Response.json({
       id: session.id, status: session.status, startedAt: session.startedAt, totalQuestions: session.totalQuestions,
       resumable: session.status === "in_progress",
-      attempts: session.attempts.map((attempt) => {
+      attempts: session.attempts.map((value) => {
+        const attempt = record(value);
         const question = byId.get(String(attempt.question_id));
         const feedback = record(attempt.feedback);
         const earnedMarks = Number(attempt.earned_marks);
@@ -65,9 +66,11 @@ export async function GET(request: Request, context: { params: Promise<{ session
         return {
           id: String(attempt.id), prompt: question?.prompt ?? "Question unavailable", answer: question ? readableResponse(question, attempt.response) : String(attempt.response ?? ""),
           correct: Boolean(attempt.correct), earnedMarks, maxMarks,
-          status: feedback.reviewRequired ? "Needs parent review" : attempt.correct ? "Correct" : earnedMarks > 0 ? "Partly correct" : "Incorrect",
+          originalEarnedMarks: Number(attempt.original_earned_marks ?? attempt.earned_marks),
+          status: attempt.adjusted_earned_marks == null && feedback.reviewRequired ? "Needs parent review" : attempt.correct ? "Correct" : earnedMarks > 0 ? "Partly correct" : "Incorrect",
           correctAnswer: String(feedback.expectedAnswer ?? "Not available"), explanation: String(feedback.explanation ?? ""),
           sourcePages: Array.isArray(feedback.sourcePages) ? feedback.sourcePages : [],
+          scoreAppeal: attempt.score_appeal ?? null,
         };
       }),
     });

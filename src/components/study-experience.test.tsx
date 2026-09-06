@@ -26,6 +26,7 @@ describe("StudyExperience", () => {
       if (url.startsWith("/api/study/questions")) return new Response(JSON.stringify({ questions }));
       if (url === "/api/study/sessions") return new Response(JSON.stringify({ sessionId: "session" }), { status: 201 });
       if (url === "/api/study/question-reports") return new Response(JSON.stringify({ reportId: "report" }), { status: 201 });
+      if (url === "/api/study/score-appeals") return new Response(JSON.stringify({ appeal: { id: "appeal", status: "pending" } }), { status: 201 });
       return new Response(JSON.stringify({ correct: false, earnedMarks: 0, expectedAnswer: "Early Vedic", explanation: "The timeline shows the Early Vedic period.", sourcePages: [49], attemptId: "attempt" }));
     });
     render(<StudyExperience />);
@@ -52,6 +53,11 @@ describe("StudyExperience", () => {
     expect(await screen.findByText(/incorrect/i)).toBeInTheDocument();
     expect(screen.getByRole("status")).toHaveTextContent("Expected: Early Vedic");
     expect(screen.getByText(/Page 49/i)).toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", { name: /appeal score/i }));
+    fireEvent.change(screen.getByLabelText(/why should the score change/i), { target: { value: "I chose the right period." } });
+    fireEvent.click(screen.getByRole("button", { name: /send to parent/i }));
+    expect(await screen.findByText(/score appeal pending/i)).toBeInTheDocument();
+    expect(fetch).toHaveBeenCalledWith("/api/study/score-appeals", expect.objectContaining({ body: expect.stringContaining('"attemptId":"attempt"') }));
     const reviewFirst = await screen.findByRole("button", { name: /question 1: incorrect.*review answer/i });
     fireEvent.click(screen.getByRole("button", { name: /next question/i }));
     expect(await screen.findByText("Question 2")).toBeInTheDocument();

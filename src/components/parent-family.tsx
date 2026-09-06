@@ -9,12 +9,12 @@ import { useRouter } from "next/navigation";
 type Child = { id: string; displayName: string; board: string; grade: number; active: boolean };
 type Workspace = { family: { name: string }; parent: { displayName: string }; children: Child[] };
 type SubjectProgress = { subject: string; completedSessions: number; attempts: number; accuracy: number; mastery: number; readyToPractice: number; answersNeedingReview: number };
-type ProgressSession = { id: string; subject: string; chapterTitle: string; status: string; startedAt: string; totalQuestions: number; attempts: { correct: boolean; earned_marks: number; max_marks: number; feedback?: { reviewRequired?: boolean } }[] };
+type ProgressSession = { id: string; subject: string; chapterTitle: string; status: string; startedAt: string; totalQuestions: number; attempts: { correct: boolean; earned_marks: number; max_marks: number; adjusted_earned_marks?: number | null; feedback?: { reviewRequired?: boolean } }[] };
 type Progress = { child: Child; history: { summary: { completedSessions: number; attempts: number }; subjects: SubjectProgress[]; sessions: ProgressSession[] } };
 
 function parentConstellation(session?: Progress["history"]["sessions"][number]): ConstellationStatus[] {
   if (!session) return [];
-  const attempted = session.attempts.map((attempt) => attempt.feedback?.reviewRequired ? "review" : attempt.correct ? "correct" : attempt.earned_marks > 0 ? "partial" : "incorrect") satisfies ConstellationStatus[];
+  const attempted = session.attempts.map((attempt) => attempt.adjusted_earned_marks == null && attempt.feedback?.reviewRequired ? "review" : attempt.correct ? "correct" : attempt.earned_marks > 0 ? "partial" : "incorrect") satisfies ConstellationStatus[];
   return [...attempted, ...Array.from({ length: Math.max(0, session.totalQuestions - attempted.length) }, () => "pending" as const)];
 }
 

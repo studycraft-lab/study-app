@@ -95,6 +95,8 @@
 .question-feedback-panel label span { color:var(--muted); font-weight:500; }
 .question-feedback-panel textarea { margin-top:7px; resize:vertical; width:100%; }
 .question-feedback-panel .button-row { margin-top:10px; }
+.score-appeal { border-top:1px solid var(--line); margin-top:18px; padding-top:8px; }
+.score-appeal > span,.score-appeal-status { color:var(--violet); font-size:.82rem; font-weight:800; }
 .answer-feedback { border:1px solid transparent; border-radius:var(--radius-md); margin-top:30px; padding:25px; }
 .answer-feedback h2 { margin-bottom:12px; } .answer-feedback p { line-height:1.55; }
 .answer-feedback.is-correct { animation:feedback-pop 420ms var(--ease); background:var(--success-soft); border-color:rgba(38,120,90,.2); box-shadow:inset 6px 0 0 var(--success); }

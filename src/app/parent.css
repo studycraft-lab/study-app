@@ -81,6 +81,15 @@
 .report-status.is-dismissed { background:#edf0ef; color:var(--muted); } .report-status.is-disabled { background:var(--danger-soft); color:var(--danger); } .report-status.is-corrected { background:var(--success-soft); color:var(--success); }
 .parent-review-session { border-top:1px solid var(--line); margin-top:16px; padding-top:12px; }
 .parent-review-session > div { border-radius:10px; margin:8px 0; padding:10px; } .parent-review-session p { margin:4px 0; }
+.appeal-queue { display:grid; gap:14px; }
+.appeal-card { background:var(--card); border:1px solid var(--line); border-radius:var(--radius-md); box-shadow:var(--shadow-sm); padding:22px; }
+.appeal-card > header { align-items:flex-start; display:flex; gap:16px; justify-content:space-between; }
+.appeal-card > header div { display:grid; gap:4px; }
+.appeal-card > header span,.appeal-card > small { color:var(--muted); }
+.appeal-resolution { align-items:end; display:grid; gap:12px; grid-template-columns:minmax(110px,.25fr) minmax(220px,1fr); margin-top:18px; }
+.appeal-resolution label { display:grid; font-size:.82rem; font-weight:800; gap:6px; }
+.appeal-resolution input { border:1px solid var(--line-strong); border-radius:10px; font:inherit; min-height:44px; padding:10px; }
+.appeal-resolution .button-row { grid-column:1/-1; margin-top:0; }
 @media (max-width:720px) { .parent-shell { padding-inline:20px; } .metadata-grid,.profile-form,.family-summary { grid-template-columns:1fr; } .question-report-card header,.report-attempts header,.section-heading { align-items:flex-start; flex-direction:column; } .resolved-reports > article { grid-template-columns:1fr; } }
 
 /* Parent-facing view of the same learning story */

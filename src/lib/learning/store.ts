@@ -37,19 +37,25 @@ export async function createStudySession(input: { child: ChildContext; bankId: s
 export async function questionSelectionHistory(childId: string, bankId: string) {
   const client = adminClient();
   const [{ data: attempts, error: attemptError }, { data: reviews, error: reviewError }] = await Promise.all([
-    client.from("study_attempts").select("question_id,correct,attempted_at").eq("child_id", childId).eq("question_bank_id", bankId).order("attempted_at", { ascending: false }),
+    client.from("study_attempts").select("question_id,correct,earned_marks,max_marks,attempted_at").eq("child_id", childId).eq("question_bank_id", bankId).order("attempted_at", { ascending: false }),
     client.from("review_items").select("question_id,due_at").eq("child_id", childId).eq("question_bank_id", bankId),
   ]);
   if (attemptError || reviewError) throw new Error(attemptError?.message ?? reviewError?.message ?? "Question history is unavailable.");
-  const latest = new Map<string, { correct: boolean }>();
-  (attempts ?? []).forEach((attempt) => { if (!latest.has(attempt.question_id)) latest.set(attempt.question_id, { correct: Boolean(attempt.correct) }); });
+  const latest = new Map<string, { correct: boolean; scoreRatio: number }>();
+  (attempts ?? []).forEach((attempt) => {
+    if (!latest.has(attempt.question_id)) latest.set(attempt.question_id, {
+      correct: Boolean(attempt.correct),
+      scoreRatio: Number(attempt.max_marks) > 0 ? Number(attempt.earned_marks) / Number(attempt.max_marks) : 0,
+    });
+  });
   const due = new Set((reviews ?? []).filter((item) => new Date(item.due_at).getTime() <= Date.now()).map((item) => String(item.question_id)));
   const questionIds = new Set([
     ...(attempts ?? []).map((item) => String(item.question_id)),
     ...(reviews ?? []).map((item) => String(item.question_id)),
   ]);
   return [...questionIds].map((questionId) => ({
-    questionId, attempted: latest.has(questionId), latestCorrect: latest.get(questionId)?.correct ?? false, due: due.has(questionId),
+    questionId, attempted: latest.has(questionId), latestCorrect: latest.get(questionId)?.correct ?? false,
+    latestScoreRatio: latest.get(questionId)?.scoreRatio ?? 0, due: due.has(questionId),
   }));
 }
 
@@ -124,11 +130,11 @@ async function sessionBelongsToChild(sessionId: string, childId: string, bankId:
   if (error || !data || (Array.isArray(data.question_ids) && !data.question_ids.includes(questionId))) throw new Error("Study session is unavailable.");
 }
 
-async function upsertReview(input: { childId: string; bankId: string; bankVersion: number; questionId: string; questionVersion: number; attemptId: string; correct: boolean }) {
+async function upsertReview(input: { childId: string; bankId: string; bankVersion: number; questionId: string; questionVersion: number; attemptId: string; correct: boolean; scoreRatio: number }) {
   const client = adminClient();
   const { data: existing } = await client.from("review_items").select("repetitions").eq("child_id", input.childId).eq("question_bank_id", input.bankId)
     .eq("bank_version", input.bankVersion).eq("question_id", input.questionId).eq("question_version", input.questionVersion).maybeSingle();
-  const schedule = reviewSchedule({ correct: input.correct, repetitions: Number(existing?.repetitions ?? 0) });
+  const schedule = reviewSchedule({ correct: input.correct, scoreRatio: input.scoreRatio, repetitions: Number(existing?.repetitions ?? 0) });
   const { error } = await client.from("review_items").upsert({
     child_id: input.childId, question_bank_id: input.bankId, bank_version: input.bankVersion,
     question_id: input.questionId, question_version: input.questionVersion,
@@ -150,7 +156,13 @@ export async function recordStudyAttempt(input: { sessionId: string; child: Chil
   }).select("id").single();
   if (error || !data) throw new Error(error?.message ?? "Attempt could not be saved.");
   const attemptId = String(data.id);
-  await upsertReview({ childId: input.child.id, bankId: input.bankId, bankVersion: version, questionId: input.questionId, questionVersion: Number(item.version || 1), attemptId, correct: Boolean(input.feedback.correct) });
+  const maxMarks = Number(item.marks ?? 1);
+  const earnedMarks = Number(input.feedback.earnedMarks ?? 0);
+  await upsertReview({
+    childId: input.child.id, bankId: input.bankId, bankVersion: version, questionId: input.questionId,
+    questionVersion: Number(item.version || 1), attemptId, correct: Boolean(input.feedback.correct),
+    scoreRatio: maxMarks > 0 ? earnedMarks / maxMarks : 0,
+  });
   return attemptId;
 }
 

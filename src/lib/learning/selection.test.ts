@@ -35,8 +35,20 @@ describe("selectQuestionIds", () => {
     );
 
     expect(selected).toHaveLength(5);
-    expect(selected.filter((id) => id.startsWith("w"))).toHaveLength(2);
+    expect(selected.filter((id) => id.startsWith("w"))).toEqual(["w2"]);
     expect(selected).toEqual(expect.arrayContaining(["n1", "n2", "n3"]));
+  });
+
+  it("does not repeat an imperfect answer before its due date", () => {
+    const selected = selectQuestionIds(
+      ["partial", "new-1", "new-2"],
+      [{ questionId: "partial", attempted: true, latestCorrect: false, due: false }],
+      2,
+      () => 0,
+    );
+
+    expect(selected).toEqual(expect.arrayContaining(["new-1", "new-2"]));
+    expect(selected).not.toContain("partial");
   });
 
   it("fills the session from weak and reinforcement questions after full coverage", () => {
@@ -52,7 +64,8 @@ describe("selectQuestionIds", () => {
     );
 
     expect(selected).toHaveLength(5);
-    expect(selected).toEqual(expect.arrayContaining(["w1", "w2"]));
+    expect(selected).toEqual(expect.arrayContaining(["w2", "r1", "r2", "r3", "r4"]));
+    expect(selected).not.toContain("w1");
   });
 
   it("reserves half of a ten-question exercise for end exercises until they are exhausted", () => {

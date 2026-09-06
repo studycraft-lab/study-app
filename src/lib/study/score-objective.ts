@@ -1,6 +1,7 @@
 type ObjectiveQuestion = {
   type?: unknown;
   answer?: unknown;
+  rubric?: unknown;
   marks?: unknown;
 };
 
@@ -45,6 +46,10 @@ function sameSet(left: unknown, right: unknown): boolean {
   return a.length === b.length && a.every((value, index) => value === b[index]);
 }
 
+function roundedMarks(value: number): number {
+  return Math.round((value + Number.EPSILON) * 100) / 100;
+}
+
 function correctionTokens(value: unknown): string[] {
   return normalize(value).split(" ").filter((token) => token && !STOP_WORDS.has(token)).map((token) => NUMBER_WORDS[token] ?? token);
 }
@@ -83,6 +88,13 @@ export function scoreObjective(question: ObjectiveQuestion, response: unknown): 
     case "multiple_select":
       expectedAnswer = Array.isArray(answer.correctOptionIds) ? answer.correctOptionIds.join(", ") : "";
       correct = sameSet(response, answer.correctOptionIds);
+      if (!correct && Array.isArray(response) && Array.isArray(answer.correctOptionIds)) {
+        const selected = new Set(response.map(normalize));
+        const expected = new Set(answer.correctOptionIds.map(normalize));
+        const right = [...selected].filter((value) => expected.has(value)).length;
+        const wrong = [...selected].filter((value) => !expected.has(value)).length;
+        earnedMarks = expected.size ? roundedMarks(marks * Math.max(0, right - wrong) / expected.size) : 0;
+      }
       break;
     case "fill_blank":
     case "one_word": {
@@ -105,8 +117,14 @@ export function scoreObjective(question: ObjectiveQuestion, response: unknown): 
     case "matching": {
       const given = record(response);
       const pairs = Array.isArray(answer.pairs) ? answer.pairs.map(record) : [];
+      const rubric = record(question.rubric);
       expectedAnswer = pairs.map((pair) => `${String(pair.leftId)} → ${String(pair.rightId)}`).join("; ");
-      correct = pairs.length > 0 && pairs.every((pair) => normalize(given[String(pair.leftId)]) === normalize(pair.rightId));
+      const correctPairs = pairs.filter((pair) => normalize(given[String(pair.leftId)]) === normalize(pair.rightId)).length;
+      correct = pairs.length > 0 && correctPairs === pairs.length;
+      if (!correct && pairs.length) {
+        const pointsPerPair = typeof rubric.pointsPerPair === "number" ? rubric.pointsPerPair : marks / pairs.length;
+        earnedMarks = roundedMarks(Math.min(marks, correctPairs * pointsPerPair));
+      }
       break;
     }
   }

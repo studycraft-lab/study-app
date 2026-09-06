@@ -84,8 +84,21 @@ describe("scoreObjective", () => {
   });
 
   it("scores every matching pair", () => {
-    const question = { type: "matching", answer: { pairs: [{ leftId: "jana", rightId: "tribe" }, { leftId: "gramani", rightId: "village" }] }, marks: 2 };
+    const question = { type: "matching", answer: { pairs: [{ leftId: "jana", rightId: "tribe" }, { leftId: "gramani", rightId: "village" }] }, rubric: { pointsPerPair: 1 }, marks: 2 };
     expect(scoreObjective(question, { jana: "tribe", gramani: "village" }).correct).toBe(true);
-    expect(scoreObjective(question, { jana: "village", gramani: "tribe" }).correct).toBe(false);
+    expect(scoreObjective(question, { jana: "tribe", gramani: "tribe" })).toMatchObject({ correct: false, earnedMarks: 1 });
+  });
+
+  it("awards proportional multi-select credit with a bounded wrong-answer penalty", () => {
+    const question = { type: "multiple_select", answer: { correctOptionIds: ["a", "b", "c"] }, marks: 3 };
+
+    expect(scoreObjective(question, ["a", "b"])).toMatchObject({ correct: false, earnedMarks: 2 });
+    expect(scoreObjective(question, ["a", "b", "wrong"])).toMatchObject({ correct: false, earnedMarks: 1 });
+    expect(scoreObjective(question, ["a", "b", "c", "wrong"])).toMatchObject({ correct: false, earnedMarks: 2 });
+  });
+
+  it("does not reward selecting every option", () => {
+    const question = { type: "multiple_select", answer: { correctOptionIds: ["a"] }, marks: 1 };
+    expect(scoreObjective(question, ["a", "b", "c"])).toMatchObject({ correct: false, earnedMarks: 0 });
   });
 });

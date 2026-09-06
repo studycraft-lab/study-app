@@ -12,4 +12,16 @@ describe("reviewSchedule", () => {
   it("expands a successful review interval", () => {
     expect(reviewSchedule({ correct: true, repetitions: 2, now })).toMatchObject({ intervalDays: 14, repetitions: 3, reason: "maintenance" });
   });
+
+  it("does not immediately repeat a near-perfect answer", () => {
+    expect(reviewSchedule({ correct: false, scoreRatio: 0.875, repetitions: 2, now })).toMatchObject({
+      intervalDays: 3,
+      repetitions: 2,
+      reason: "partial",
+    });
+  });
+
+  it("returns answers below 75 percent tomorrow", () => {
+    expect(reviewSchedule({ correct: false, scoreRatio: 0.5, repetitions: 2, now })).toMatchObject({ intervalDays: 1, repetitions: 0, reason: "incorrect" });
+  });
 });

@@ -51,7 +51,9 @@ The first parent uses `PARENT_IMPORT_PASSPHRASE` as the family password. After p
 | `PARENT_IMPORT_PASSPHRASE` | Yes | Parent sign-in, protected bank import, and default session-signing secret. |
 | `OPENROUTER_API_KEY` | Yes for fuzzy/subjective grading | Server-only OpenRouter credential. |
 | `OPENROUTER_MODEL` | No | Defaults to `deepseek/deepseek-v4-flash`. |
+| `OPENROUTER_FALLBACK_MODEL` | No | Optional model used only after bounded primary-model retries fail. |
 | `OPENROUTER_TIMEOUT_MS` | No | Defaults to 15000 ms. |
+| `OPENROUTER_MAX_ATTEMPTS` | No | Primary-model attempts, capped at 3; defaults to 2. |
 | `NEXT_PUBLIC_APP_URL` | No | OpenRouter HTTP referrer; public by design. |
 | `PARENT_SESSION_SECRET` | No | Dedicated parent-cookie signing secret. |
 | `CHILD_SESSION_SECRET` | No | Dedicated child-cookie signing secret. |

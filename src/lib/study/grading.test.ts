@@ -104,6 +104,27 @@ describe("gradeSubmittedQuestion", () => {
     await expect(gradeSubmittedQuestion(bank, "q-006", "Maybe the king listened.", classifier)).resolves.toMatchObject({ reviewRequired: true, verdict: "review" });
   });
 
+  it("routes a self-contradictory subjective grade to parent review", async () => {
+    const suezBank = {
+      sources: [{ id: "page-12", pageNumber: 12 }],
+      questions: [{
+        id: "suez", type: "brief_answer", prompt: "What does the Isthmus of Suez join and separate?", marks: 2,
+        answer: { ideal: "It joins Asia and Africa and separates the Mediterranean Sea and Red Sea." },
+        rubric: { points: [{ id: "join", concept: "joins Asia and Africa", weight: 1 }, { id: "separate", concept: "separates the Mediterranean Sea and Red Sea", weight: 1 }] },
+        sourceRefs: [{ pageId: "page-12" }],
+      }],
+    };
+    const classifier = vi.fn(async () => ({
+      points: [{ id: "join", coverage: "covered" as const, confidence: 0.95 }, { id: "separate", coverage: "missing" as const, confidence: 0.95 }],
+      feedback: "Great job! You correctly identified both what the isthmus joins and what it separates.", confidence: 0.95, spellingErrors: [], grammarErrors: [],
+      meta: { provider: "openrouter" as const, model: "test", promptTokens: 10, completionTokens: 5, totalTokens: 15, cost: 0.001, latencyMs: 20 },
+    }));
+
+    await expect(gradeSubmittedQuestion(suezBank, "suez", "It joins Asia and Africa and separates the Mediterranean Sea and Red Sea.", classifier)).resolves.toMatchObject({
+      earnedMarks: 1, reviewRequired: true, verdict: "review", explanation: expect.stringMatching(/disagreed/i),
+    });
+  });
+
   it("applies language penalties only when the rubric enables them", async () => {
     const spellingBank = structuredClone(bank);
     spellingBank.questions[0].rubric.spellingAffectsScore = true;

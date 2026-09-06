@@ -57,6 +57,7 @@ export function StudyExperience() {
   const [feedback, setFeedback] = useState<Feedback | null>(null);
   const [responses, setResponses] = useState<Record<string, unknown>>({});
   const [feedbackByQuestion, setFeedbackByQuestion] = useState<Record<string, Feedback>>({});
+  const [submissionIds, setSubmissionIds] = useState<Record<string, string>>({});
   const [feedbackOpen, setFeedbackOpen] = useState<Record<string, boolean>>({});
   const [reportNotes, setReportNotes] = useState<Record<string, string>>({});
   const [reportedQuestions, setReportedQuestions] = useState<Record<string, boolean>>({});
@@ -101,7 +102,7 @@ export function StudyExperience() {
     setSessionId(sessionBody.sessionId);
     setQuestions(loaded); setQueue(loaded.map((question) => question.id));
     setStatuses(Object.fromEntries(loaded.map((question) => [question.id, "pending"])));
-    setFeedback(null); setResponse(""); setResponses({}); setFeedbackByQuestion({}); setFeedbackOpen({}); setReportNotes({}); setReportedQuestions({}); setReviewingId(null); setPhase("session"); setBusy(false);
+    setFeedback(null); setResponse(""); setResponses({}); setFeedbackByQuestion({}); setSubmissionIds({}); setFeedbackOpen({}); setReportNotes({}); setReportedQuestions({}); setReviewingId(null); setPhase("session"); setBusy(false);
   }
 
 
@@ -130,7 +131,10 @@ export function StudyExperience() {
   async function submitAnswer(answer: unknown) {
     if (!current) return;
     setBusy(true);
-    const result = await fetch("/api/study/answer", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ sessionId, bankId, questionId: current.id, response: answer }) });
+    setError("");
+    const submissionId = submissionIds[current.id] ?? crypto.randomUUID();
+    if (!submissionIds[current.id]) setSubmissionIds((existing) => ({ ...existing, [current.id]: submissionId }));
+    const result = await fetch("/api/study/answer", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ submissionId, sessionId, bankId, questionId: current.id, response: answer }) });
     const body = await result.json();
     if (!result.ok) setError(body.error ?? "Could not check this answer.");
     else {

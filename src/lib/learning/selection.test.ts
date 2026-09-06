@@ -51,6 +51,18 @@ describe("selectQuestionIds", () => {
     expect(selected).not.toContain("partial");
   });
 
+  it("never repeats an answer while its grade is pending review", () => {
+    const selected = selectQuestionIds(
+      ["pending", "new-1", "new-2"],
+      [{ questionId: "pending", attempted: true, latestCorrect: false, due: false, reviewPending: true }],
+      3,
+      () => 0,
+    );
+
+    expect(selected).toEqual(expect.arrayContaining(["new-1", "new-2"]));
+    expect(selected).not.toContain("pending");
+  });
+
   it("fills the session from weak and reinforcement questions after full coverage", () => {
     const selected = selectQuestionIds(
       ["w1", "w2", "r1", "r2", "r3", "r4"],

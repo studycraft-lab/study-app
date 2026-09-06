@@ -16,6 +16,8 @@ export type RubricClassification = {
     totalTokens: number;
     cost: number;
     latencyMs: number;
+    attempts?: number;
+    fallbackUsed?: boolean;
   };
 };
 
@@ -28,7 +30,12 @@ export type RubricClassificationInput = {
   checkGrammar: boolean;
 };
 
-export class GradingUnavailableError extends Error {}
+export class GradingUnavailableError extends Error {
+  constructor(message: string, public readonly retryable = true) {
+    super(message);
+    this.name = "GradingUnavailableError";
+  }
+}
 
 type FetchLike = typeof fetch;
 
@@ -56,26 +63,32 @@ function parseClassification(value: unknown, pointIds: string[]) {
   };
 }
 
-export async function classifyRubric(input: RubricClassificationInput, options: { fetchImpl?: FetchLike; apiKey?: string; model?: string; timeoutMs?: number } = {}): Promise<RubricClassification> {
-  const apiKey = options.apiKey ?? process.env.OPENROUTER_API_KEY;
-  if (!apiKey) throw new GradingUnavailableError("AI grading is not configured yet.");
-  const model = options.model ?? process.env.OPENROUTER_MODEL ?? "deepseek/deepseek-v4-flash";
-  const timeoutMs = options.timeoutMs ?? Number(process.env.OPENROUTER_TIMEOUT_MS || 15000);
+type ClassificationOptions = {
+  fetchImpl?: FetchLike;
+  apiKey?: string;
+  model?: string;
+  fallbackModel?: string;
+  timeoutMs?: number;
+  maxAttempts?: number;
+  retryDelayMs?: number;
+};
+
+async function requestClassification(input: RubricClassificationInput, options: Required<Pick<ClassificationOptions, "fetchImpl" | "apiKey" | "model" | "timeoutMs">>): Promise<RubricClassification> {
   const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), Math.max(3000, Math.min(timeoutMs, 60000)));
+  const timeout = setTimeout(() => controller.abort(), Math.max(50, Math.min(options.timeoutMs, 60000)));
   const started = Date.now();
   try {
-    const response = await (options.fetchImpl ?? fetch)("https://openrouter.ai/api/v1/chat/completions", {
+    const response = await options.fetchImpl("https://openrouter.ai/api/v1/chat/completions", {
       method: "POST",
       signal: controller.signal,
       headers: {
-        authorization: `Bearer ${apiKey}`,
+        authorization: `Bearer ${options.apiKey}`,
         "content-type": "application/json",
         "http-referer": process.env.NEXT_PUBLIC_APP_URL ?? "https://studycraft-iota.vercel.app",
         "x-title": "StudyCraft",
       },
       body: JSON.stringify({
-        model,
+        model: options.model,
         temperature: 0,
         seed: 9,
         max_tokens: 800,
@@ -104,7 +117,10 @@ export async function classifyRubric(input: RubricClassificationInput, options: 
         },
       }),
     });
-    if (!response.ok) throw new GradingUnavailableError("AI grading is temporarily unavailable.");
+    if (!response.ok) {
+      const retryable = response.status === 429 || response.status >= 500;
+      throw new GradingUnavailableError(retryable ? "AI grading is temporarily unavailable." : "AI grading request was rejected.", retryable);
+    }
     const payload = await response.json() as Record<string, unknown>;
     const choices = Array.isArray(payload.choices) ? payload.choices : [];
     const message = typeof choices[0] === "object" && choices[0] !== null ? (choices[0] as Record<string, unknown>).message : null;
@@ -118,12 +134,14 @@ export async function classifyRubric(input: RubricClassificationInput, options: 
       ...classification,
       meta: {
         provider: "openrouter",
-        model: String(payload.model ?? model),
+        model: String(payload.model ?? options.model),
         promptTokens: finite(usage.prompt_tokens),
         completionTokens: finite(usage.completion_tokens),
         totalTokens: finite(usage.total_tokens),
         cost: finite(usage.cost),
         latencyMs: Date.now() - started,
+        attempts: 1,
+        fallbackUsed: false,
       },
     };
   } catch (error) {
@@ -132,4 +150,46 @@ export async function classifyRubric(input: RubricClassificationInput, options: 
   } finally {
     clearTimeout(timeout);
   }
+}
+
+function wait(milliseconds: number) {
+  return milliseconds > 0 ? new Promise((resolve) => setTimeout(resolve, milliseconds)) : Promise.resolve();
+}
+
+export async function classifyRubric(input: RubricClassificationInput, options: ClassificationOptions = {}): Promise<RubricClassification> {
+  const apiKey = options.apiKey ?? process.env.OPENROUTER_API_KEY;
+  if (!apiKey) throw new GradingUnavailableError("AI grading is not configured yet.", false);
+  const model = options.model ?? process.env.OPENROUTER_MODEL ?? "deepseek/deepseek-v4-flash";
+  const fallbackModel = options.fallbackModel ?? process.env.OPENROUTER_FALLBACK_MODEL;
+  const timeoutMs = options.timeoutMs ?? Number(process.env.OPENROUTER_TIMEOUT_MS || 15000);
+  const maxAttempts = Math.max(1, Math.min(options.maxAttempts ?? Number(process.env.OPENROUTER_MAX_ATTEMPTS || 2), 3));
+  const retryDelayMs = Math.max(0, options.retryDelayMs ?? 250);
+  const fetchImpl = options.fetchImpl ?? fetch;
+  const started = Date.now();
+  let attempts = 0;
+  let lastError = new GradingUnavailableError("AI grading is temporarily unavailable.");
+
+  for (let attempt = 0; attempt < maxAttempts; attempt += 1) {
+    attempts += 1;
+    try {
+      const result = await requestClassification(input, { fetchImpl, apiKey, model, timeoutMs });
+      return { ...result, meta: { ...result.meta, attempts, fallbackUsed: false, latencyMs: Date.now() - started } };
+    } catch (error) {
+      lastError = error instanceof GradingUnavailableError ? error : lastError;
+      if (!lastError.retryable || attempt === maxAttempts - 1) break;
+      await wait(retryDelayMs * (attempt + 1));
+    }
+  }
+
+  if (fallbackModel && fallbackModel !== model && lastError.retryable) {
+    attempts += 1;
+    try {
+      const result = await requestClassification(input, { fetchImpl, apiKey, model: fallbackModel, timeoutMs });
+      return { ...result, meta: { ...result.meta, attempts, fallbackUsed: true, latencyMs: Date.now() - started } };
+    } catch (error) {
+      lastError = error instanceof GradingUnavailableError ? error : lastError;
+    }
+  }
+
+  throw lastError;
 }

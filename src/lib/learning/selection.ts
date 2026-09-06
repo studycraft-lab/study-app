@@ -3,6 +3,7 @@ export type QuestionSelectionHistory = {
   attempted: boolean;
   latestCorrect: boolean;
   latestScoreRatio?: number;
+  reviewPending?: boolean;
   due: boolean;
 };
 
@@ -32,7 +33,7 @@ function selectFromPool(candidateIds: string[], history: QuestionSelectionHistor
   const weak = prioritized(candidateIds.filter((id) => byId.get(id)?.due), metadata, random);
   const unseen = prioritized(candidateIds.filter((id) => !byId.get(id)?.attempted), metadata, random);
   const reinforcement = prioritized(candidateIds.filter((id) => { const item = byId.get(id); return item?.attempted && item.latestCorrect && !item.due; }), metadata, random);
-  const deferredImperfect = prioritized(candidateIds.filter((id) => { const item = byId.get(id); return item?.attempted && !item.latestCorrect && !item.due; }), metadata, random);
+  const deferredImperfect = prioritized(candidateIds.filter((id) => { const item = byId.get(id); return item?.attempted && !item.latestCorrect && !item.due && !item.reviewPending; }), metadata, random);
   const chosen: string[] = [];
   const add = (values: string[], count = values.length) => values.some((id) => {
     if (chosen.length >= limit || count <= 0) return true;

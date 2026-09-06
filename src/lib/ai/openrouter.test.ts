@@ -26,4 +26,40 @@ describe("classifyRubric", () => {
     const fetchImpl = vi.fn(async () => new Response(JSON.stringify({ choices: [{ message: { content: JSON.stringify({ points: [], feedback: "", confidence: 0.5, spellingErrors: [], grammarErrors: [] }) } }] })));
     await expect(classifyRubric({ question: "Q", childAnswer: "A", groundedEvidence: "E", points: [{ id: "p1", concept: "C" }], checkSpelling: false, checkGrammar: false }, { fetchImpl: fetchImpl as typeof fetch, apiKey: "test" })).rejects.toThrow("incomplete");
   });
+
+  it("retries retryable provider failures before succeeding", async () => {
+    const fetchImpl = vi.fn()
+      .mockResolvedValueOnce(new Response("busy", { status: 503 }))
+      .mockResolvedValueOnce(new Response(JSON.stringify({
+        model: "deepseek/deepseek-v4-flash",
+        choices: [{ message: { content: JSON.stringify({ points: [{ id: "p1", coverage: "covered", confidence: 0.9 }], feedback: "Correct.", confidence: 0.9, spellingErrors: [], grammarErrors: [] }) } }],
+      })));
+
+    const result = await classifyRubric(
+      { question: "Q", childAnswer: "A", groundedEvidence: "E", points: [{ id: "p1", concept: "C" }], checkSpelling: false, checkGrammar: false },
+      { fetchImpl: fetchImpl as typeof fetch, apiKey: "test", maxAttempts: 2, retryDelayMs: 0 },
+    );
+
+    expect(fetchImpl).toHaveBeenCalledTimes(2);
+    expect(result.meta).toMatchObject({ attempts: 2, fallbackUsed: false });
+  });
+
+  it("uses the configured fallback only after primary retries fail", async () => {
+    const fetchImpl = vi.fn()
+      .mockResolvedValueOnce(new Response("busy", { status: 503 }))
+      .mockResolvedValueOnce(new Response("busy", { status: 503 }))
+      .mockResolvedValueOnce(new Response(JSON.stringify({
+        model: "openai/gpt-5-mini",
+        choices: [{ message: { content: JSON.stringify({ points: [{ id: "p1", coverage: "covered", confidence: 0.95 }], feedback: "Correct.", confidence: 0.95, spellingErrors: [], grammarErrors: [] }) } }],
+      })));
+
+    const result = await classifyRubric(
+      { question: "Q", childAnswer: "A", groundedEvidence: "E", points: [{ id: "p1", concept: "C" }], checkSpelling: false, checkGrammar: false },
+      { fetchImpl: fetchImpl as typeof fetch, apiKey: "test", maxAttempts: 2, retryDelayMs: 0, fallbackModel: "openai/gpt-5-mini" },
+    );
+
+    expect(fetchImpl).toHaveBeenCalledTimes(3);
+    expect(JSON.parse(String(fetchImpl.mock.calls[2][1]?.body)).model).toBe("openai/gpt-5-mini");
+    expect(result.meta).toMatchObject({ attempts: 3, fallbackUsed: true, model: "openai/gpt-5-mini" });
+  });
 });

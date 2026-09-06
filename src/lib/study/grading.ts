@@ -107,14 +107,17 @@ export async function gradeSubmittedQuestion(bankValue: unknown, questionId: str
   const grammarPenalty = rubric.grammarAffectsScore === true && classification.grammarErrors.length ? 0.5 : 0;
   const earnedMarks = rounded(Math.max(0, contentMarks - spellingPenalty - grammarPenalty));
   const threshold = typeof rubric.uncertainBelowConfidence === "number" ? rubric.uncertainBelowConfidence : 0.7;
-  const reviewRequired = classification.confidence < threshold;
   const correct = earnedMarks >= maximum;
+  const contradictoryFeedback = !correct && feedbackClaimsCorrect(classification.feedback);
+  const reviewRequired = classification.confidence < threshold || contradictoryFeedback;
   const verdict = reviewRequired ? "review" : correct ? "correct" : earnedMarks > 0 ? "partial" : "incorrect";
   return {
     correct,
     earnedMarks,
     expectedAnswer: String(answer.ideal ?? "See the required textbook points below."),
-    explanation: classification.feedback,
+    explanation: contradictoryFeedback
+      ? "The automated score and explanation disagreed, so this answer needs parent review."
+      : classification.feedback,
     sourcePages,
     verdict,
     reviewRequired,

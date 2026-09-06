@@ -5,8 +5,8 @@
   "reviewedAt": "2026-09-01T22:45:00+05:30",
   "reviewerMethod": "Codex source-by-source and Grade 3 answer-length review using the repository-local chapter-ingestion skill after deterministic schema, source-hash, reference and rubric checks",
   "inputs": {
-    "manifest": "samples/birds-chapter-manifest.json",
-    "bank": "samples/birds-question-bank.json",
+    "manifest": "ingestion-artifacts/birds-chapter-manifest.json",
+    "bank": "ingestion-artifacts/birds-question-bank.json",
     "sourceAssetCount": 1,
     "pageRange": "33–45",
     "previousBankVersion": 1

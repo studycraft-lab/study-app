@@ -27,9 +27,9 @@ Use this when the goal is to verify or make narrowly justified corrections witho
 ```text
 $chapter-ingestion Review the existing Early Vedic Civilization version-4 artifacts:
 
-- samples/early-vedic-chapter-manifest.json
-- samples/early-vedic-question-bank.json
-- samples/early-vedic-question-bank.review.json
+- ingestion-artifacts/early-vedic-chapter-manifest.json
+- ingestion-artifacts/early-vedic-question-bank.json
+- ingestion-artifacts/early-vedic-question-bank.review.json
 
 Use the source images in /Users/aquaraga/Desktop/raw-study-material/grade-6/history/early-vedic. Verify source hashes, schema conformance, every citation, deterministic answer, distractor, rubric point, hint, explanation, topic assignment and coverage claim against pages 45–53.
 

@@ -5,8 +5,8 @@
   "reviewedAt": "2026-09-01T23:45:00+05:30",
   "reviewerMethod": "Codex page-by-page visual and Grade 3 answer-length review using the repository-local chapter-ingestion and PDF skills, followed by deterministic schema, source-hash, reference and rubric checks",
   "inputs": {
-    "manifest": "samples/insects-chapter-manifest.json",
-    "bank": "samples/insects-question-bank.json",
+    "manifest": "ingestion-artifacts/insects-chapter-manifest.json",
+    "bank": "ingestion-artifacts/insects-question-bank.json",
     "sourceAssetCount": 1,
     "pageRange": "46-56"
   },

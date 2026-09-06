@@ -110,7 +110,8 @@ function normalizedPrompt(prompt: unknown): string {
 }
 
 function dependsOnSourceContext(prompt: unknown): boolean {
-  return /\b(?:case[- ]study|source passage|displayed source)\b|\b(?:diagram|illustration|image|picture|figure|map|table|passage)\s+(?:above|below|shown|given|displayed|on the (?:left|right))\b|\bshown\s+(?:in|above|below)\b|\b(?:labelled|labeled|marked)\s+(?:as\s+)?[A-Z]\b/i.test(String(prompt ?? ""));
+  const text = String(prompt ?? "");
+  return /\b(?:case[- ]study|source passage|displayed source)\b|\b(?:diagram|illustration|image|picture|figure|map|table|passage)\s+(?:above|below|shown|given|displayed|on the (?:left|right))\b|\bshown\s+(?:in|above|below)\b|\b(?:labelled|labeled|marked)\s+(?:as\s+)?[A-Z]\b/i.test(text);
 }
 
 function usesTextbookReference(prompt: unknown): boolean {
@@ -137,7 +138,10 @@ export function validateQuestionBank(input: unknown): BankValidation {
   sources.forEach((source) => {
     const regions = records(source.regions);
     sourceRegions.set(String(source.id), new Set(regions.map((region) => String(region.id))));
-    runtimeRegions.set(String(source.id), new Set(regions.filter((region) => typeof region.runtimeAssetRef === "string").map((region) => String(region.id))));
+    runtimeRegions.set(
+      String(source.id),
+      new Set(regions.filter((region) => typeof region.runtimeAssetRef === "string").map((region) => String(region.id))),
+    );
     if (typeof source.extractionConfidence === "number" && source.extractionConfidence < 0.85) {
       warnings.push(`Source ${String(source.id)} has low extraction confidence.`);
     }
@@ -150,10 +154,18 @@ export function validateQuestionBank(input: unknown): BankValidation {
     const id = String(question.id ?? path);
     const contextDependent = dependsOnSourceContext(question.prompt);
     const refs = records(question.sourceRefs);
-    const hasDisplayedContext = question.type === "source_group" && refs.some((ref) => typeof ref.regionId === "string" && runtimeRegions.get(String(ref.pageId))?.has(ref.regionId));
-    if (question.status === "active" && contextDependent && !hasDisplayedContext) errors.push(`${path} is active but depends on source context that the current question player does not display.`);
-    if (question.status === "active" && usesTextbookReference(question.prompt)) errors.push(`${path} uses textbook-referential wording; rewrite the prompt as a direct, self-contained question.`);
-    if (question.status !== "active" && contextDependent && !String(question.reviewReason ?? "").trim()) errors.push(`${path} depends on source context and must record reviewReason while it is disabled or under review.`);
+    const hasDisplayedContext = question.type === "source_group" && refs.some((ref) =>
+      typeof ref.regionId === "string" && runtimeRegions.get(String(ref.pageId))?.has(ref.regionId),
+    );
+    if (question.status === "active" && contextDependent && !hasDisplayedContext) {
+      errors.push(`${path} is active but depends on source context that the current question player does not display.`);
+    }
+    if (question.status === "active" && usesTextbookReference(question.prompt)) {
+      errors.push(`${path} uses textbook-referential wording; rewrite the prompt as a direct, self-contained question.`);
+    }
+    if (question.status !== "active" && contextDependent && !String(question.reviewReason ?? "").trim()) {
+      errors.push(`${path} depends on source context and must record reviewReason while it is disabled or under review.`);
+    }
     strings(question.topicIds).forEach((topicId) => {
       if (!topicIds.has(topicId)) errors.push(`${path} cites missing topic ${topicId}.`);
     });

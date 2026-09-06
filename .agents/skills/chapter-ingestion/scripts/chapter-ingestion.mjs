@@ -111,10 +111,18 @@ function reviewBank(bank) {
     if (questionIds.has(question.id)) errors.push(`Duplicate question id ${question.id}.`);
     questionIds.add(question.id);
     const contextual = dependsOnSourceContext(question.prompt);
-    const hasDisplayedContext = question.type === "source_group" && records(question.sourceRefs).some((ref) => ref.regionId && runtimeRegionIds.get(ref.pageId)?.has(ref.regionId));
-    if (question.status === "active" && contextual && !hasDisplayedContext) errors.push(`${question.id} is active but depends on source context that the current question player does not display.`);
-    if (question.status === "active" && usesTextbookReference(question.prompt)) errors.push(`${question.id} uses textbook-referential wording; rewrite it as a direct, self-contained question.`);
-    if (question.status !== "active" && contextual && !String(question.reviewReason ?? "").trim()) errors.push(`${question.id} depends on source context and must record reviewReason while it is disabled or under review.`);
+    const hasDisplayedContext = question.type === "source_group" && records(question.sourceRefs).some((ref) =>
+      ref.regionId && runtimeRegionIds.get(ref.pageId)?.has(ref.regionId),
+    );
+    if (question.status === "active" && contextual && !hasDisplayedContext) {
+      errors.push(`${question.id} is active but depends on source context that the current question player does not display.`);
+    }
+    if (question.status === "active" && usesTextbookReference(question.prompt)) {
+      errors.push(`${question.id} uses textbook-referential wording; rewrite it as a direct, self-contained question.`);
+    }
+    if (question.status !== "active" && contextual && !String(question.reviewReason ?? "").trim()) {
+      errors.push(`${question.id} depends on source context and must record reviewReason while it is disabled or under review.`);
+    }
     for (const topicId of question.topicIds ?? []) if (!topicIds.has(topicId)) errors.push(`${question.id} cites missing topic ${topicId}.`);
     const supports = new Set();
     for (const ref of records(question.sourceRefs)) {

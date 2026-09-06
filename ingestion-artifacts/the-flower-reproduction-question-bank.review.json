@@ -5,8 +5,8 @@
   "reviewedAt": "2026-09-04T20:45:00+05:30",
   "reviewerMethod": "Codex page-by-page visual review of the 12-page reproduction scan using the repository-local chapter-ingestion and PDF workflows, followed by manifest, source-hash, schema, reference and rubric-total checks",
   "inputs": {
-    "manifest": "samples/the-flower-reproduction-chapter-manifest.json",
-    "bank": "samples/the-flower-reproduction-question-bank.json",
+    "manifest": "ingestion-artifacts/the-flower-reproduction-chapter-manifest.json",
+    "bank": "ingestion-artifacts/the-flower-reproduction-question-bank.json",
     "sourceAssetCount": 1,
     "pageRange": "21-32",
     "inferredMetadata": {

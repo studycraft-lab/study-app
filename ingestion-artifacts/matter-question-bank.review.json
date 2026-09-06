@@ -5,8 +5,8 @@
   "reviewedAt": "2026-09-04T19:45:00+05:30",
   "reviewerMethod": "Codex visual source-by-source review of the 21-page scan using the repository-local chapter-ingestion workflow, followed by manifest, source-hash, schema, reference and rubric-total checks",
   "inputs": {
-    "manifest": "samples/matter-chapter-manifest.json",
-    "bank": "samples/matter-question-bank.json",
+    "manifest": "ingestion-artifacts/matter-chapter-manifest.json",
+    "bank": "ingestion-artifacts/matter-question-bank.json",
     "sourceAssetCount": 1,
     "pageRange": "19-39",
     "inferredMetadata": {

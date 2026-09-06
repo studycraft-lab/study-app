@@ -5,8 +5,8 @@
   "reviewedAt": "2026-09-04T01:15:00+05:30",
   "reviewerMethod": "Codex source-by-source review using the repository-local chapter-ingestion skill after manifest schema, source-hash, bank schema, reference and rubric-total checks",
   "inputs": {
-    "manifest": "samples/major-landforms-earth-chapter-manifest.json",
-    "bank": "samples/major-landforms-earth-question-bank.json",
+    "manifest": "ingestion-artifacts/major-landforms-earth-chapter-manifest.json",
+    "bank": "ingestion-artifacts/major-landforms-earth-question-bank.json",
     "sourceAssetCount": 8,
     "pageRange": "26–39",
     "inferredMetadata": {

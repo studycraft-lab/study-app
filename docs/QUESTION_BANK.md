@@ -14,17 +14,19 @@ Use the repository-local `$chapter-ingestion` skill for textbook images or PDFs.
 - the question-bank JSON;
 - a separate grounding and quality review record.
 
+These are application content deliverables, not examples or generated build output. Keep each accepted manifest, bank and review record together in [`ingestion-artifacts/`](../ingestion-artifacts/); see the directory README for ownership, naming and repository-split guidance.
+
 The manifest records source filenames, page/spread bounds, dimensions and SHA-256 hashes without committing copyrighted textbook images or machine-specific absolute paths. The end-of-chapter exercises guide useful question patterns but do not define the full bank.
 
 ### Invoking the skill
 
 Open a Codex task in this repository, attach the chapter images or PDF (or provide an accessible source-directory path), and begin the request with `$chapter-ingestion`. Copy-ready prompts for first-version generation, review-only work and later expansion are maintained in [the skill’s prompt reference](../.agents/skills/chapter-ingestion/references/prompts.md).
 
-For the current Early Vedic deliverable, use the review-only prompt. Its committed artifacts remain:
+For the current Early Vedic deliverable, use the review-only prompt. Its committed artifacts remain in `ingestion-artifacts/`:
 
-- [`samples/early-vedic-chapter-manifest.json`](../samples/early-vedic-chapter-manifest.json)
-- [`samples/early-vedic-question-bank.json`](../samples/early-vedic-question-bank.json), currently at `bank.version` `4`
-- [`samples/early-vedic-question-bank.review.json`](../samples/early-vedic-question-bank.review.json)
+- [`ingestion-artifacts/early-vedic-chapter-manifest.json`](../ingestion-artifacts/early-vedic-chapter-manifest.json)
+- [`ingestion-artifacts/early-vedic-question-bank.json`](../ingestion-artifacts/early-vedic-question-bank.json), currently at `bank.version` `4`
+- [`ingestion-artifacts/early-vedic-question-bank.review.json`](../ingestion-artifacts/early-vedic-question-bank.review.json)
 
 Do not use the expansion prompt again until a version beyond `4` is intentionally requested.
 

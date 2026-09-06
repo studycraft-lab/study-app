@@ -5,8 +5,8 @@
   "reviewedAt": "2026-09-04T20:30:00+05:30",
   "reviewerMethod": "Codex visual source-by-source review of textbook pages 34-45 using the repository-local chapter-ingestion workflow, followed by manifest, source-hash, schema, reference and rubric-total checks",
   "inputs": {
-    "manifest": "samples/the-cell-chapter-manifest.json",
-    "bank": "samples/the-cell-question-bank.json",
+    "manifest": "ingestion-artifacts/the-cell-chapter-manifest.json",
+    "bank": "ingestion-artifacts/the-cell-question-bank.json",
     "sourceAssetCount": 1,
     "pageRange": "34-45",
     "confirmedMetadata": {

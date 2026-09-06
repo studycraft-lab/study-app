@@ -5,8 +5,8 @@
   "reviewedAt": "2026-09-01T03:30:00+05:30",
   "reviewerMethod": "Codex source-by-source review using the repository-local chapter-ingestion skill, after deterministic schema, source-hash, reference and rubric checks",
   "inputs": {
-    "manifest": "samples/later-vedic-chapter-manifest.json",
-    "bank": "samples/later-vedic-question-bank.json",
+    "manifest": "ingestion-artifacts/later-vedic-chapter-manifest.json",
+    "bank": "ingestion-artifacts/later-vedic-question-bank.json",
     "sourceAssetCount": 5,
     "pageRange": "54–62"
   },

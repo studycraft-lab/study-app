@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 
-import earlyVedicBank from "../../../samples/early-vedic-question-bank.json";
-import theCellBank from "../../../samples/the-cell-question-bank.json";
+import earlyVedicBank from "../../../ingestion-artifacts/early-vedic-question-bank.json";
+import theCellBank from "../../../ingestion-artifacts/the-cell-question-bank.json";
 import { validateQuestionBank } from "./validate";
 
 describe("validateQuestionBank", () => {

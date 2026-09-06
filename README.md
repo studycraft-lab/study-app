@@ -105,7 +105,7 @@ The repository contains source manifests and generated question banks, but no te
 - `src/lib`: authentication, question-bank, grading, study, and Supabase services
 - `supabase/migrations`: append-only database history
 - `schemas`: canonical ingestion JSON schemas
-- `samples`: manifests, banks, and grounding reviews
+- `ingestion-artifacts`: versioned ingestion deliverables (not sample data), including manifests, banks, and grounding reviews
 - `.agents/skills/chapter-ingestion`: reusable Codex ingestion workflow
 - `docs`: product, roadmap, and question-bank documentation
 

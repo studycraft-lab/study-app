@@ -1,7 +1,7 @@
 {
   "reviewVersion": "0.1.0",
   "bankId": "major-landforms-earth-v1",
-  "bankVersion": 1,
+  "bankVersion": 2,
   "reviewedAt": "2026-09-04T01:15:00+05:30",
   "reviewerMethod": "Codex source-by-source review using the repository-local chapter-ingestion skill after manifest schema, source-hash, bank schema, reference and rubric-total checks",
   "inputs": {
@@ -443,5 +443,9 @@
     "The textbook's statement that the Sahara is the world's largest desert is preserved as written; q-024 asks only its continent to avoid introducing an external qualification.",
     "True statements use a two-point true/false rubric; the current objective scorer awards full marks for the correct truth choice and does not require a correction when the answer is true."
   ],
-  "decision": "accept"
+  "decision": "accept",
+  "reviewDate": "2026-09-06",
+  "notes": [
+    "Reworded child prompts to be direct and self-contained; no answer, rubric, or citation changed."
+  ]
 }

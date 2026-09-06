@@ -109,9 +109,12 @@ function normalizedPrompt(prompt: unknown): string {
   return String(prompt ?? "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
 }
 
-function dependsOnUndisplayedContext(question: Record<string, unknown>): boolean {
-  if (question.status !== "active" || ["source_group", "map_work"].includes(String(question.type))) return false;
-  return /\b(?:case[- ]study|diagram|illustration|image|labelled|labeled)\b|\bshown\s+(?:in|above|below)\b/i.test(String(question.prompt ?? ""));
+function dependsOnSourceContext(prompt: unknown): boolean {
+  return /\b(?:case[- ]study|source passage|displayed source)\b|\b(?:diagram|illustration|image|picture|figure|map|table|passage)\s+(?:above|below|shown|given|displayed|on the (?:left|right))\b|\bshown\s+(?:in|above|below)\b|\b(?:labelled|labeled|marked)\s+(?:as\s+)?[A-Z]\b/i.test(String(prompt ?? ""));
+}
+
+function usesTextbookReference(prompt: unknown): boolean {
+  return /\b(?:as per|according to)\s+(?:the\s+)?(?:chapter|lesson|textbook)\b|\b(?:in|from|named in|stated in|described in|mentioned in|given in)\s+(?:this\s+|the\s+)?(?:chapter|lesson|textbook)\b/i.test(String(prompt ?? ""));
 }
 
 export function validateQuestionBank(input: unknown): BankValidation {
@@ -130,8 +133,11 @@ export function validateQuestionBank(input: unknown): BankValidation {
   duplicateIds(questions, "question", errors);
 
   const sourceRegions = new Map<string, Set<string>>();
+  const runtimeRegions = new Map<string, Set<string>>();
   sources.forEach((source) => {
-    sourceRegions.set(String(source.id), new Set(records(source.regions).map((region) => String(region.id))));
+    const regions = records(source.regions);
+    sourceRegions.set(String(source.id), new Set(regions.map((region) => String(region.id))));
+    runtimeRegions.set(String(source.id), new Set(regions.filter((region) => typeof region.runtimeAssetRef === "string").map((region) => String(region.id))));
     if (typeof source.extractionConfidence === "number" && source.extractionConfidence < 0.85) {
       warnings.push(`Source ${String(source.id)} has low extraction confidence.`);
     }
@@ -142,14 +148,16 @@ export function validateQuestionBank(input: unknown): BankValidation {
   questions.forEach((question, index) => {
     const path = `questions[${index}]`;
     const id = String(question.id ?? path);
-    if (dependsOnUndisplayedContext(question)) {
-      errors.push(`${path} is active but refers to visual or shared case-study context that the text player does not display.`);
-    }
+    const contextDependent = dependsOnSourceContext(question.prompt);
+    const refs = records(question.sourceRefs);
+    const hasDisplayedContext = question.type === "source_group" && refs.some((ref) => typeof ref.regionId === "string" && runtimeRegions.get(String(ref.pageId))?.has(ref.regionId));
+    if (question.status === "active" && contextDependent && !hasDisplayedContext) errors.push(`${path} is active but depends on source context that the current question player does not display.`);
+    if (question.status === "active" && usesTextbookReference(question.prompt)) errors.push(`${path} uses textbook-referential wording; rewrite the prompt as a direct, self-contained question.`);
+    if (question.status !== "active" && contextDependent && !String(question.reviewReason ?? "").trim()) errors.push(`${path} depends on source context and must record reviewReason while it is disabled or under review.`);
     strings(question.topicIds).forEach((topicId) => {
       if (!topicIds.has(topicId)) errors.push(`${path} cites missing topic ${topicId}.`);
     });
 
-    const refs = records(question.sourceRefs);
     refs.forEach((ref) => {
       const pageId = String(ref.pageId ?? "");
       if (!sourceIds.has(pageId)) errors.push(`${path} cites missing source page ${pageId || "(blank)"}.`);

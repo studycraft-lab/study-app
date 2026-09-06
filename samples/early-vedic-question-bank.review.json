@@ -1,7 +1,7 @@
 {
   "reviewVersion": "0.1.0",
   "bankId": "early-vedic-civilization-v1",
-  "bankVersion": 4,
+  "bankVersion": 5,
   "reviewedAt": "2026-09-04T17:45:00+05:30",
   "reviewerMethod": "Codex source-by-source and version-lineage review using the repository-local chapter-ingestion skill after deterministic schema, source-hash, reference and rubric checks",
   "inputs": {
@@ -314,5 +314,9 @@
     ],
     "addedQuestionIds": [],
     "questionVersionPolicy": "Questions q-016 and q-018 increment to version 3 because their accepted-answer contract changed; all other question versions remain unchanged."
-  }
+  },
+  "reviewDate": "2026-09-06",
+  "notes": [
+    "Reworded child prompts to be direct and self-contained; no answer, rubric, or citation changed."
+  ]
 }

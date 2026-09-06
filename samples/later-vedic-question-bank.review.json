@@ -1,7 +1,7 @@
 {
   "reviewVersion": "0.1.0",
   "bankId": "later-vedic-civilization-v1",
-  "bankVersion": 1,
+  "bankVersion": 2,
   "reviewedAt": "2026-09-01T03:30:00+05:30",
   "reviewerMethod": "Codex source-by-source review using the repository-local chapter-ingestion skill, after deterministic schema, source-hash, reference and rubric checks",
   "inputs": {
@@ -221,5 +221,9 @@
     "No examination pattern was inferred because no sample paper was supplied.",
     "Issue #23 remains an open contract enhancement; this bank uses minimal canonical corrections so its false-statement items grade fairly today."
   ],
-  "decision": "accept"
+  "decision": "accept",
+  "reviewDate": "2026-09-06",
+  "notes": [
+    "Reworded child prompts to be direct and self-contained; no answer, rubric, or citation changed."
+  ]
 }

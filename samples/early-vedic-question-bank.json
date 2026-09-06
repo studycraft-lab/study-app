@@ -8,7 +8,7 @@
     "status": "reviewed",
     "subject": "History",
     "title": "The Early Vedic Civilization",
-    "version": 4
+    "version": 5
   },
   "questions": [
     {
@@ -3193,7 +3193,7 @@
       "hint": "Select every statement supported by the chapter and no unsupported statement.",
       "id": "q-047",
       "marks": 5,
-      "prompt": "Which works are included in the chapter's account of Vedic literature?",
+      "prompt": "Which works form part of Vedic literature?",
       "response": {
         "options": [
           {
@@ -3243,7 +3243,7 @@
         "vedic-literature"
       ],
       "type": "multiple_select",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -4038,7 +4038,7 @@
       "hint": "Select every statement supported by the chapter and no unsupported statement.",
       "id": "q-058",
       "marks": 6,
-      "prompt": "Select all recreational activities named in the chapter.",
+      "prompt": "Select all recreational activities of the Early Vedic people.",
       "response": {
         "options": [
           {
@@ -4091,7 +4091,7 @@
         "food-dress-recreation"
       ],
       "type": "multiple_select",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -4268,7 +4268,7 @@
       "hint": "Match each item by its defining meaning, role or description.",
       "id": "q-061",
       "marks": 9,
-      "prompt": "Match each Early Vedic deity with the natural force or role stated in the chapter.",
+      "prompt": "Match each Early Vedic deity with the associated natural force or role.",
       "response": {
         "left": [
           {
@@ -4367,7 +4367,7 @@
         "religion"
       ],
       "type": "matching",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -4984,7 +4984,7 @@
       "hint": "Select every statement supported by the chapter and no unsupported statement.",
       "id": "q-070",
       "marks": 5,
-      "prompt": "Which craftspeople are explicitly mentioned in the chapter?",
+      "prompt": "Which craftspeople worked during the Early Vedic period?",
       "response": {
         "options": [
           {
@@ -5033,7 +5033,7 @@
         "economic-life"
       ],
       "type": "multiple_select",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -5123,7 +5123,7 @@
       "hint": "Organize the answer into distinct, independently scorable points.",
       "id": "q-072",
       "marks": 4,
-      "prompt": "What central idea of Ayurveda is described in the chapter?",
+      "prompt": "What is the central idea of Ayurveda?",
       "response": {
         "recommendedPoints": 4
       },
@@ -5176,7 +5176,7 @@
         "cultural-heritage"
       ],
       "type": "multi_point",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {

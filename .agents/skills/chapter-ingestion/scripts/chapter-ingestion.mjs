@@ -79,11 +79,20 @@ function attainableMarks(question) {
   return question.marks;
 }
 
+function dependsOnSourceContext(prompt) {
+  return /\b(?:case[- ]study|source passage|displayed source)\b|\b(?:diagram|illustration|image|picture|figure|map|table|passage)\s+(?:above|below|shown|given|displayed|on the (?:left|right))\b|\bshown\s+(?:in|above|below)\b|\b(?:labelled|labeled|marked)\s+(?:as\s+)?[A-Z]\b/i.test(String(prompt ?? ""));
+}
+
+function usesTextbookReference(prompt) {
+  return /\b(?:as per|according to)\s+(?:the\s+)?(?:chapter|lesson|textbook)\b|\b(?:in|from|named in|stated in|described in|mentioned in|given in)\s+(?:this\s+|the\s+)?(?:chapter|lesson|textbook)\b/i.test(String(prompt ?? ""));
+}
+
 function reviewBank(bank) {
   const errors = [];
   const warnings = [];
   const sourceIds = new Set();
   const regionIds = new Map();
+  const runtimeRegionIds = new Map();
   const topicIds = new Set();
   const questionIds = new Set();
   const prompts = new Map();
@@ -92,6 +101,7 @@ function reviewBank(bank) {
     if (sourceIds.has(source.id)) errors.push(`Duplicate source id ${source.id}.`);
     sourceIds.add(source.id);
     regionIds.set(source.id, new Set(records(source.regions).map((region) => region.id)));
+    runtimeRegionIds.set(source.id, new Set(records(source.regions).filter((region) => region.runtimeAssetRef).map((region) => region.id)));
   }
   for (const topic of records(bank.topics)) {
     if (topicIds.has(topic.id)) errors.push(`Duplicate topic id ${topic.id}.`);
@@ -100,6 +110,11 @@ function reviewBank(bank) {
   for (const question of records(bank.questions)) {
     if (questionIds.has(question.id)) errors.push(`Duplicate question id ${question.id}.`);
     questionIds.add(question.id);
+    const contextual = dependsOnSourceContext(question.prompt);
+    const hasDisplayedContext = question.type === "source_group" && records(question.sourceRefs).some((ref) => ref.regionId && runtimeRegionIds.get(ref.pageId)?.has(ref.regionId));
+    if (question.status === "active" && contextual && !hasDisplayedContext) errors.push(`${question.id} is active but depends on source context that the current question player does not display.`);
+    if (question.status === "active" && usesTextbookReference(question.prompt)) errors.push(`${question.id} uses textbook-referential wording; rewrite it as a direct, self-contained question.`);
+    if (question.status !== "active" && contextual && !String(question.reviewReason ?? "").trim()) errors.push(`${question.id} depends on source context and must record reviewReason while it is disabled or under review.`);
     for (const topicId of question.topicIds ?? []) if (!topicIds.has(topicId)) errors.push(`${question.id} cites missing topic ${topicId}.`);
     const supports = new Set();
     for (const ref of records(question.sourceRefs)) {

@@ -8,7 +8,7 @@
     "status": "reviewed",
     "subject": "Geography",
     "title": "Major Landforms of the Earth",
-    "version": 1
+    "version": 2
   },
   "questions": [
     {
@@ -1583,7 +1583,7 @@
       "hint": "Select every statement supported by the chapter and no unsupported statement.",
       "id": "q-029",
       "marks": 5,
-      "prompt": "Which are benefits or roles of mountains stated in the chapter?",
+      "prompt": "Which are benefits or roles of mountains?",
       "response": {
         "options": [
           {
@@ -1632,7 +1632,7 @@
         "mountain-importance"
       ],
       "type": "multiple_select",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -2216,7 +2216,7 @@
       "hint": "Match each item by its definition, formation, example or location.",
       "id": "q-039",
       "marks": 4,
-      "prompt": "Match each continent with its size rank given in the chapter.",
+      "prompt": "Match each continent with its size rank.",
       "response": {
         "left": [
           {
@@ -2275,7 +2275,7 @@
         "continents-oceans"
       ],
       "type": "matching",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -2414,7 +2414,7 @@
       "hint": "Match each item by its definition, formation, example or location.",
       "id": "q-041",
       "marks": 5,
-      "prompt": "Match each feature with the location requested in the chapter's map work.",
+      "prompt": "Match each geographical feature with its location.",
       "response": {
         "left": [
           {
@@ -2509,7 +2509,7 @@
         "plateaus-basins-valleys"
       ],
       "type": "matching",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -3452,7 +3452,7 @@
       "hint": "Answer directly with the chapter's key geographical idea and any requested example.",
       "id": "q-060",
       "marks": 2,
-      "prompt": "Give two examples of rift valleys stated in the chapter.",
+      "prompt": "Give two examples of rift valleys.",
       "response": {
         "recommendedSentences": 1
       },
@@ -3492,7 +3492,7 @@
         "plateaus-basins-valleys"
       ],
       "type": "brief_answer",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -3836,7 +3836,7 @@
       "hint": "Organize the answer into distinct, independently scorable points.",
       "id": "q-066",
       "marks": 5,
-      "prompt": "Mention the five types of plateaus described in the chapter.",
+      "prompt": "Name the five types of plateaus.",
       "response": {
         "recommendedPoints": 5
       },
@@ -3904,7 +3904,7 @@
         "plateaus-basins-valleys"
       ],
       "type": "multi_point",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -4231,7 +4231,7 @@
       "hint": "Organize the answer into distinct, independently scorable points.",
       "id": "q-071",
       "marks": 5,
-      "prompt": "Describe Antarctica using five facts from the chapter.",
+      "prompt": "Describe Antarctica using five facts.",
       "response": {
         "recommendedPoints": 5
       },
@@ -4289,7 +4289,7 @@
         "continents-oceans"
       ],
       "type": "multi_point",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -5363,7 +5363,7 @@
       "hint": "Select every statement supported by the chapter and no unsupported statement.",
       "id": "q-086",
       "marks": 4,
-      "prompt": "Which are examples of volcanic mountains given in the chapter?",
+      "prompt": "Which are examples of volcanic mountains?",
       "response": {
         "options": [
           {
@@ -5408,7 +5408,7 @@
         "mountain-formation-types"
       ],
       "type": "multiple_select",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {

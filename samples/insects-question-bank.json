@@ -8,7 +8,7 @@
     "status": "reviewed",
     "subject": "Science",
     "title": "Insects",
-    "version": 1
+    "version": 2
   },
   "questions": [
     {
@@ -1986,7 +1986,7 @@
       "hint": "Give only the required name or term.",
       "id": "q-034",
       "marks": 1,
-      "prompt": "Name the insect described as an important source of protein in the chapter.",
+      "prompt": "Which insect is an important source of protein?",
       "response": {
         "maxWords": 3
       },
@@ -2017,7 +2017,7 @@
         "common-insects"
       ],
       "type": "one_word",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -2931,7 +2931,7 @@
       "hint": "Select every correct option and no incorrect option.",
       "id": "q-050",
       "marks": 3,
-      "prompt": "How do insects move according to the chapter?",
+      "prompt": "How do insects move?",
       "response": {
         "options": [
           {
@@ -2972,7 +2972,7 @@
         "common-insects"
       ],
       "type": "multiple_select",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -5211,7 +5211,7 @@
       "hint": "Choose the option supported by the chapter.",
       "id": "q-088",
       "marks": 1,
-      "prompt": "How much weight can an ant lift according to the chapter?",
+      "prompt": "How much weight can an ant lift?",
       "response": {
         "options": [
           {
@@ -5248,7 +5248,7 @@
         "social-insects"
       ],
       "type": "single_choice",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -5268,7 +5268,7 @@
       "hint": "Select every correct option and no incorrect option.",
       "id": "q-089",
       "marks": 3,
-      "prompt": "Which facts about grasshoppers are stated in the chapter?",
+      "prompt": "Which statements about grasshoppers are correct?",
       "response": {
         "options": [
           {
@@ -5309,7 +5309,7 @@
         "common-insects"
       ],
       "type": "multiple_select",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {

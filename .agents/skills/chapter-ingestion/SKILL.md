@@ -24,6 +24,7 @@ Read `docs/QUESTION_BANK.md` and validate against `schemas/question-bank.schema.
 - marks end-exercise questions with `origin: end_exercise` and `selectionPriority: 1` so the player can reserve half of each exercise for them until the child has seen them all;
 - assigns `selectionPriority` from 1 (essential) to 3 (reinforcement), using learning outcomes, definitions, central explanations, repeated emphasis and exercises as evidence rather than guessing exam weight;
 - never refers to "the chapter", "the textbook", or "the passage above" in a child-visible prompt unless the question actually depends on a displayed source passage;
+- never activates a question that relies on an undisplayed case study, passage, picture, diagram, map, table, or unexplained label; keep it in `review` or `disabled` with `reviewReason`, or make the required source a real runtime asset;
 - builds an atomic inventory before writing questions, covers every useful testable fact at least once, and gives central facts multiple genuinely different forms; do not stop at an arbitrary question count, and expect dense chapters commonly to exceed 100 questions;
 - includes supported facts from prose, diagrams, maps, timelines, tables, captions, and source passages;
 - cites a page and, when the evidence is visual or localized, a normalized region for every scored prompt, answer, and rubric;

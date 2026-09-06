@@ -1,7 +1,7 @@
 {
   "reviewVersion": "0.1.0",
   "bankId": "birds-v1",
-  "bankVersion": 2,
+  "bankVersion": 3,
   "reviewedAt": "2026-09-01T22:45:00+05:30",
   "reviewerMethod": "Codex source-by-source and Grade 3 answer-length review using the repository-local chapter-ingestion skill after deterministic schema, source-hash, reference and rubric checks",
   "inputs": {
@@ -266,5 +266,9 @@
       "q-083"
     ],
     "questionVersionPolicy": "Changed questions advance to version 2; unchanged questions retain version 1; the new question starts at version 1."
-  }
+  },
+  "reviewDate": "2026-09-06",
+  "notes": [
+    "Reworded child prompts to be direct and self-contained; no answer, rubric, or citation changed."
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "reviewVersion": "0.1.0",
   "bankId": "insects-v1",
-  "bankVersion": 1,
+  "bankVersion": 2,
   "reviewedAt": "2026-09-01T23:45:00+05:30",
   "reviewerMethod": "Codex page-by-page visual and Grade 3 answer-length review using the repository-local chapter-ingestion and PDF skills, followed by deterministic schema, source-hash, reference and rubric checks",
   "inputs": {
@@ -254,5 +254,9 @@
     "The drawing and picture-matching exercises were converted into self-contained ordering and text-matching questions.",
     "No examination pattern was inferred because no sample paper was supplied."
   ],
-  "decision": "accept"
+  "decision": "accept",
+  "reviewDate": "2026-09-06",
+  "notes": [
+    "Reworded child prompts to be direct and self-contained; no answer, rubric, or citation changed."
+  ]
 }

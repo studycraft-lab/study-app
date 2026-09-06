@@ -8,7 +8,7 @@
     "status": "reviewed",
     "subject": "History",
     "title": "The Later Vedic Civilization",
-    "version": 1
+    "version": 2
   },
   "questions": [
     {
@@ -2828,7 +2828,7 @@
       "hint": "Match each item by its defining role, place or meaning.",
       "id": "q-039",
       "marks": 4,
-      "prompt": "Match each Later Vedic kingdom with its location given in the chapter.",
+      "prompt": "Match each Later Vedic kingdom with its location.",
       "response": {
         "left": [
           {
@@ -2887,7 +2887,7 @@
         "political-organization"
       ],
       "type": "matching",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -3096,7 +3096,7 @@
       "hint": "Match each item by its defining role, place or meaning.",
       "id": "q-042",
       "marks": 4,
-      "prompt": "Match each Later Vedic caste with the role stated in the chapter.",
+      "prompt": "Match each Later Vedic caste with its role.",
       "response": {
         "left": [
           {
@@ -3155,7 +3155,7 @@
         "social-classification"
       ],
       "type": "matching",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -4530,7 +4530,7 @@
       "hint": "Choose every development explicitly stated in the Economic Life section.",
       "id": "q-058",
       "marks": 5,
-      "prompt": "Select all economic developments of the Later Vedic period stated in the chapter.",
+      "prompt": "Select all economic developments of the Later Vedic period.",
       "response": {
         "options": [
           {
@@ -4579,7 +4579,7 @@
         "economic-life"
       ],
       "type": "multiple_select",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -5168,7 +5168,7 @@
       "hint": "Match each item by its defining role, place or meaning.",
       "id": "q-067",
       "marks": 3,
-      "prompt": "Match the three important Later Vedic gods with the aspect stated in the chapter.",
+      "prompt": "Match each important Later Vedic god with the associated aspect.",
       "response": {
         "left": [
           {
@@ -5229,7 +5229,7 @@
         "religion-and-hinduism"
       ],
       "type": "matching",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -5316,7 +5316,7 @@
       "hint": "Keep the places, family groups and events in the Mahabharata passage together.",
       "id": "q-069",
       "marks": 5,
-      "prompt": "Select all details stated in the chapter's Mahabharata narrative.",
+      "prompt": "Select all correct details about the Mahabharata.",
       "response": {
         "options": [
           {
@@ -5366,7 +5366,7 @@
         "epics"
       ],
       "type": "multiple_select",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -5407,7 +5407,7 @@
       "hint": "Match each item by its defining role, place or meaning.",
       "id": "q-070",
       "marks": 6,
-      "prompt": "Match each Ramayana figure with the relationship or role stated in the chapter.",
+      "prompt": "Match each Ramayana figure with the correct relationship or role.",
       "response": {
         "left": [
           {
@@ -5483,7 +5483,7 @@
         "epics"
       ],
       "type": "matching",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {

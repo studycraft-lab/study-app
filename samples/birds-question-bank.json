@@ -8,7 +8,7 @@
     "status": "reviewed",
     "subject": "Science",
     "title": "Birds",
-    "version": 2
+    "version": 3
   },
   "questions": [
     {
@@ -3529,7 +3529,7 @@
       "hint": "Match each item with its defining feature or example.",
       "id": "q-056",
       "marks": 4,
-      "prompt": "Match each bird with a food named in the chapter.",
+      "prompt": "Match each bird with its food.",
       "response": {
         "left": [
           {
@@ -3588,7 +3588,7 @@
         "beaks-and-food"
       ],
       "type": "matching",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -3817,7 +3817,7 @@
       "hint": "Give the precise name or term.",
       "id": "q-061",
       "marks": 1,
-      "prompt": "Name the smallest bird mentioned in the chapter.",
+      "prompt": "What is the smallest bird?",
       "response": {
         "maxWords": 3
       },
@@ -3842,7 +3842,7 @@
         "common-birds-body"
       ],
       "type": "one_word",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -5243,7 +5243,7 @@
       "hint": "Recall the two journeys named in the migration section.",
       "id": "q-083",
       "marks": 2,
-      "prompt": "Match each migratory bird with the journey described in the chapter.",
+      "prompt": "Match each migratory bird with its journey.",
       "response": {
         "left": [
           {
@@ -5286,7 +5286,7 @@
         "sounds-habitats-migration"
       ],
       "type": "matching",
-      "version": 1
+      "version": 2
     }
   ],
   "schemaVersion": "0.1.0",

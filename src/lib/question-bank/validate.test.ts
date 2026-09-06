@@ -11,7 +11,7 @@ describe("validateQuestionBank", () => {
     expect(result.valid).toBe(true);
     expect(result.errors).toEqual([]);
     expect(result.preview).toMatchObject({ questionCount: 79, sourceCount: 9, topicCount: 10 });
-    expect(earlyVedicBank.bank.version).toBe(4);
+    expect(earlyVedicBank.bank.version).toBe(5);
     expect(earlyVedicBank.questions.find(({ id }) => id === "q-001")?.version).toBe(2);
     expect(earlyVedicBank.questions.find(({ id }) => id === "q-016")?.version).toBe(3);
     expect(earlyVedicBank.questions.find(({ id }) => id === "q-018")?.version).toBe(3);
@@ -92,7 +92,7 @@ describe("validateQuestionBank", () => {
     const result = validateQuestionBank(bank);
 
     expect(result.valid).toBe(false);
-    expect(result.errors).toContain("questions[0] is active but refers to visual or shared case-study context that the text player does not display.");
+    expect(result.errors).toContain("questions[0] is active but depends on source context that the current question player does not display.");
   });
 
   it("accepts the Cell bank only with unsupported visual questions held for review", () => {

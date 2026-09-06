@@ -10,6 +10,7 @@ Run this review only after the manifest, source hashes, bank schema, references,
 - Confirm every answerable end-of-chapter question is represented and every omission is explicitly justified.
 - Confirm every question has a defensible origin and priority, and that priority 1 is reserved for essential material rather than used as a default.
 - Search child-visible prompts for avoidable phrases such as "in the chapter" or "as per the textbook."
+- Reject active prompts that rely on an undisplayed case study, passage, picture, diagram, map, table, or unexplained label. A held question must include `reviewReason`; a displayed source must have a runtime asset reference.
 - Compare the bank against the atomic inventory. A page count or a round bank size is never evidence of adequate depth.
 
 ## Question-by-question grounding

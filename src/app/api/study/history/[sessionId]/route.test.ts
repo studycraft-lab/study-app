@@ -18,4 +18,14 @@ describe("GET /api/study/history/:sessionId", () => {
 
     await expect(response.json()).resolves.toMatchObject({ attempts: [{ answer: "Later Vedic", correctAnswer: "Early Vedic", status: "Incorrect" }] });
   });
+
+  it("exposes provider failures as retryable grading, not parent appeals", async () => {
+    mocks.childFromRequest.mockResolvedValue({ id: "child", familyId: "family", board: "ICSE", grade: 6 });
+    mocks.studySessionReview.mockResolvedValue({ id: "session", bankId: "bank", status: "completed", startedAt: "2026-09-01T00:00:00.000Z", totalQuestions: 1, questionIds: ["q1"], attempts: [{ id: "attempt", question_id: "q1", response: "My answer", correct: false, earned_marks: 0, max_marks: 4, grading_status: "pending_review", feedback: { expectedAnswer: "Not graded yet", explanation: "AI grading timed out. Please try again.", gradingPending: true, retryAvailable: true } }] });
+    mocks.getQuestionBankForChild.mockResolvedValue({ questions: [{ id: "q1", type: "multi_point", prompt: "Why are organelles important?", marks: 4, response: {} }] });
+
+    const response = await GET(new Request("http://localhost/api/study/history/session"), { params: Promise.resolve({ sessionId: "session" }) });
+
+    await expect(response.json()).resolves.toMatchObject({ attempts: [{ status: "Automatic grading pending", gradingPending: true, retryAvailable: true, scoreAppeal: null }] });
+  });
 });

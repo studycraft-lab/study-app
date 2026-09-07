@@ -1,18 +1,17 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
 
 vi.mock("server-only", () => ({}));
-const { childFromRequest, getQuestionBankForChild, recordStudyAttempt, studyAttemptBySubmission, createScoreAppeal, classifyRubric } = vi.hoisted(() => ({ childFromRequest: vi.fn(), getQuestionBankForChild: vi.fn(), recordStudyAttempt: vi.fn(), studyAttemptBySubmission: vi.fn(), createScoreAppeal: vi.fn(), classifyRubric: vi.fn() }));
+const { childFromRequest, getQuestionBankForChild, recordStudyAttempt, studyAttemptBySubmission, pendingStudyAttempt, finalizePendingStudyAttempt, classifyRubric } = vi.hoisted(() => ({ childFromRequest: vi.fn(), getQuestionBankForChild: vi.fn(), recordStudyAttempt: vi.fn(), studyAttemptBySubmission: vi.fn(), pendingStudyAttempt: vi.fn(), finalizePendingStudyAttempt: vi.fn(), classifyRubric: vi.fn() }));
 vi.mock("@/lib/family/request", () => ({ childFromRequest }));
 vi.mock("@/lib/question-bank/store", () => ({ getQuestionBankForChild }));
-vi.mock("@/lib/learning/store", () => ({ recordStudyAttempt, studyAttemptBySubmission }));
-vi.mock("@/lib/learning/appeals", () => ({ createScoreAppeal }));
+vi.mock("@/lib/learning/store", () => ({ recordStudyAttempt, studyAttemptBySubmission, pendingStudyAttempt, finalizePendingStudyAttempt }));
 vi.mock("@/lib/ai/openrouter", async () => ({ ...(await vi.importActual<typeof import("@/lib/ai/openrouter")>("@/lib/ai/openrouter")), classifyRubric }));
 
 import { POST } from "./route";
 import { GradingUnavailableError } from "@/lib/ai/openrouter";
 
 describe("POST /api/study/answer", () => {
-  afterEach(() => { delete process.env.PARENT_IMPORT_PASSPHRASE; vi.clearAllMocks(); studyAttemptBySubmission.mockResolvedValue(null); createScoreAppeal.mockResolvedValue({ id: "appeal", status: "pending" }); });
+  afterEach(() => { delete process.env.PARENT_IMPORT_PASSPHRASE; vi.clearAllMocks(); studyAttemptBySubmission.mockResolvedValue(null); });
 
   it("grades on the server and returns cited feedback", async () => {
     childFromRequest.mockResolvedValue({ id: "child", familyId: "family", board: "ICSE", grade: 6 });
@@ -36,16 +35,27 @@ describe("POST /api/study/answer", () => {
     expect(recordStudyAttempt).toHaveBeenCalledWith(expect.objectContaining({ feedback: expect.objectContaining({ gradingMeta: expect.objectContaining({ provider: "openrouter", promptTokens: 10, cost: 0.001 }) }) }));
   });
 
-  it("preserves an answer for parent review when the provider fails", async () => {
+  it("preserves an answer for an automatic-grading retry when the provider fails", async () => {
     childFromRequest.mockResolvedValue({ id: "child", familyId: "family", board: "ICSE", grade: 6 });
     getQuestionBankForChild.mockResolvedValue({ sources: [{ id: "p", pageNumber: 47 }], questions: [{ id: "q", type: "brief_answer", prompt: "Explain", marks: 1, answer: { ideal: "Answer" }, rubric: { points: [{ id: "p1", concept: "answer", weight: 1 }] }, sourceRefs: [{ pageId: "p" }] }] });
     classifyRubric.mockRejectedValue(new GradingUnavailableError("AI grading timed out. Please try again."));
     recordStudyAttempt.mockResolvedValue("pending-attempt");
     const response = await POST(new Request("http://localhost/api/study/answer", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ submissionId: "submission-1", sessionId: "session", bankId: "bank", questionId: "q", response: "My answer" }) }));
     expect(response.status).toBe(200);
-    await expect(response.json()).resolves.toMatchObject({ attemptId: "pending-attempt", gradingPending: true, reviewRequired: true, verdict: "review" });
+    await expect(response.json()).resolves.toMatchObject({ attemptId: "pending-attempt", gradingPending: true, retryAvailable: true, verdict: "review" });
     expect(recordStudyAttempt).toHaveBeenCalledWith(expect.objectContaining({ submissionId: "submission-1", gradingStatus: "pending_review", response: "My answer" }));
-    expect(createScoreAppeal).toHaveBeenCalledWith(expect.objectContaining({ attemptId: "pending-attempt" }));
+  });
+
+  it("retries a pending attempt in place without creating another attempt", async () => {
+    childFromRequest.mockResolvedValue({ id: "child", familyId: "family", board: "ICSE", grade: 6 });
+    pendingStudyAttempt.mockResolvedValue({ id: "pending-attempt", sessionId: "session", bankId: "bank", questionId: "q", response: "My answer" });
+    getQuestionBankForChild.mockResolvedValue({ sources: [{ id: "p", pageNumber: 47 }], questions: [{ id: "q", type: "brief_answer", prompt: "Explain", marks: 1, answer: { ideal: "Answer" }, rubric: { points: [{ id: "p1", concept: "answer", weight: 1 }] }, sourceRefs: [{ pageId: "p" }] }] });
+    classifyRubric.mockResolvedValue({ points: [{ id: "p1", coverage: "covered", confidence: 0.98 }], feedback: "Correct.", confidence: 0.98, spellingErrors: [], grammarErrors: [], meta: { provider: "openrouter", model: "test", promptTokens: 5, completionTokens: 3, totalTokens: 8, cost: 0.001, latencyMs: 10 } });
+    const response = await POST(new Request("http://localhost/api/study/answer", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ retryAttemptId: "pending-attempt" }) }));
+    expect(response.status).toBe(200);
+    await expect(response.json()).resolves.toMatchObject({ attemptId: "pending-attempt", correct: true, earnedMarks: 1 });
+    expect(finalizePendingStudyAttempt).toHaveBeenCalledWith(expect.objectContaining({ attemptId: "pending-attempt", feedback: expect.objectContaining({ correct: true }) }));
+    expect(recordStudyAttempt).not.toHaveBeenCalled();
   });
 
   it("returns an existing submission without grading or inserting again", async () => {

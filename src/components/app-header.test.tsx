@@ -18,4 +18,10 @@ describe("AppHeader logout", () => {
     await waitFor(() => expect(fetchMock).toHaveBeenCalledWith(endpoint, { method: "POST" }));
     expect(fetchMock).not.toHaveBeenCalledWith("/api/family/logout", expect.anything());
   });
+
+  it("gives parents a permanent route to score appeals", () => {
+    render(<AppHeader role="parent" />);
+
+    expect(screen.getByRole("link", { name: "Review answers" })).toHaveAttribute("href", "/parent/family/session");
+  });
 });

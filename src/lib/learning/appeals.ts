@@ -17,9 +17,10 @@ function records(value: unknown): RecordValue[] {
 export async function createScoreAppeal(input: { child: ChildContext; attemptId: string; comment?: string }) {
   const client = adminClient();
   const { data: attempt, error: attemptError } = await client.from("study_attempts")
-    .select("id,child_id,earned_marks,max_marks")
+    .select("id,child_id,earned_marks,max_marks,grading_status")
     .eq("id", input.attemptId).eq("child_id", input.child.id).maybeSingle();
   if (attemptError || !attempt) throw new Error("That answer attempt is unavailable.");
+  if (attempt.grading_status === "pending_review") throw new Error("Retry automatic grading before appealing the score.");
 
   const { data: existing, error: existingError } = await client.from("score_appeals")
     .select("id,status").eq("attempt_id", input.attemptId).maybeSingle();

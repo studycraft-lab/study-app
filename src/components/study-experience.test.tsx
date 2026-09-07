@@ -70,6 +70,35 @@ describe("StudyExperience", () => {
     await waitFor(() => expect(screen.getByText("Question 2")).toBeInTheDocument());
   });
 
+  it("offers automatic retry after grading fails and does not call it a score appeal", async () => {
+    let answerCalls = 0;
+    vi.spyOn(globalThis, "fetch").mockImplementation(async (input) => {
+      const url = String(input);
+      if (url === "/api/study/library") return new Response(JSON.stringify({ child: { id: "child", displayName: "Asha", grade: 6, board: "ICSE" }, chapters: [{ id: "bank", subject: "History", chapterTitle: "Early Vedic", grade: 6, board: "ICSE", questionCount: 10 }] }));
+      if (url === "/api/study/history") return new Response(JSON.stringify({ summary: { completedSessions: 0, attempts: 0, uniqueQuestions: 0, accuracy: 0, mastery: 0, dueReview: 0 }, topics: [], sessions: [] }));
+      if (url.startsWith("/api/study/questions")) return new Response(JSON.stringify({ questions }));
+      if (url === "/api/study/sessions") return new Response(JSON.stringify({ sessionId: "session" }), { status: 201 });
+      if (url === "/api/study/answer") {
+        answerCalls += 1;
+        return answerCalls === 1
+          ? new Response(JSON.stringify({ correct: false, earnedMarks: 0, expectedAnswer: "Not graded yet", explanation: "Automatic grading timed out.", sourcePages: [], attemptId: "pending-attempt", gradingPending: true, retryAvailable: true }))
+          : new Response(JSON.stringify({ correct: true, earnedMarks: 1, expectedAnswer: "Early Vedic", explanation: "Correct.", sourcePages: [49], attemptId: "pending-attempt" }));
+      }
+      throw new Error(`Unexpected request: ${url}`);
+    });
+    render(<StudyExperience />);
+    await chooseHistoryChapter();
+    fireEvent.click(await screen.findByLabelText("Early Vedic"));
+    fireEvent.click(screen.getByRole("button", { name: /check answer/i }));
+
+    expect(await screen.findByRole("button", { name: /retry automatic grading/i })).toBeInTheDocument();
+    expect(screen.queryByText(/score appeal pending/i)).not.toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", { name: /retry automatic grading/i }));
+    expect(await screen.findByText("✓ Correct")).toBeInTheDocument();
+    const retryBody = JSON.parse(String(vi.mocked(fetch).mock.calls.filter(([url]) => String(url) === "/api/study/answer")[1][1]?.body));
+    expect(retryBody).toEqual({ retryAttemptId: "pending-attempt" });
+  });
+
   it("reviews mistakes without creating a one-question session", async () => {
     const fetchMock = vi.spyOn(globalThis, "fetch").mockImplementation(async (input, init) => {
       const url = String(input);

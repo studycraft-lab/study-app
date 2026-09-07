@@ -63,13 +63,16 @@ export async function GET(request: Request, context: { params: Promise<{ session
         const feedback = record(attempt.feedback);
         const earnedMarks = Number(attempt.earned_marks);
         const maxMarks = Number(attempt.max_marks);
+        const gradingPending = attempt.grading_status === "pending_review";
         return {
           id: String(attempt.id), prompt: question?.prompt ?? "Question unavailable", answer: question ? readableResponse(question, attempt.response) : String(attempt.response ?? ""),
           correct: Boolean(attempt.correct), earnedMarks, maxMarks,
           originalEarnedMarks: Number(attempt.original_earned_marks ?? attempt.earned_marks),
-          status: attempt.adjusted_earned_marks == null && feedback.reviewRequired ? "Needs parent review" : attempt.correct ? "Correct" : earnedMarks > 0 ? "Partly correct" : "Incorrect",
+          status: gradingPending ? "Automatic grading pending" : attempt.adjusted_earned_marks == null && feedback.reviewRequired ? "Needs parent review" : attempt.correct ? "Correct" : earnedMarks > 0 ? "Partly correct" : "Incorrect",
           correctAnswer: String(feedback.expectedAnswer ?? "Not available"), explanation: String(feedback.explanation ?? ""),
           sourcePages: Array.isArray(feedback.sourcePages) ? feedback.sourcePages : [],
+          gradingPending,
+          retryAvailable: gradingPending && feedback.retryAvailable !== false,
           scoreAppeal: attempt.score_appeal ?? null,
         };
       }),

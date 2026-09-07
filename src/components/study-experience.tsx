@@ -11,7 +11,7 @@ type Chapter = { id: string; board: string; grade: number; subject: string; chap
 type Child = { id: string; displayName: string; board: string; grade: number };
 type Option = { id: string; text: string };
 type Question = { id: string; type: string; prompt: string; marks: number; response: { options?: Option[]; left?: Option[]; right?: Option[]; requiresCorrectionWhenFalse?: boolean } };
-type Feedback = { correct: boolean; earnedMarks: number; expectedAnswer: string; explanation: string; sourcePages: number[]; attemptId: string; reviewRequired?: boolean; confidence?: number; coveredPoints?: string[]; partialPoints?: string[]; missingPoints?: string[] };
+type Feedback = { correct: boolean; earnedMarks: number; expectedAnswer: string; explanation: string; sourcePages: number[]; attemptId: string; reviewRequired?: boolean; gradingPending?: boolean; retryAvailable?: boolean; confidence?: number; coveredPoints?: string[]; partialPoints?: string[]; missingPoints?: string[] };
 type Status = "pending" | "correct" | "partial" | "review" | "incorrect";
 type HistoryAttempt = { id: string; question_id?: string; question_prompt: string; response?: unknown; correct: boolean; earned_marks: number; max_marks: number; feedback: Omit<Feedback, "attemptId"> };
 type HistorySession = { id: string; bankId: string; subject: string; chapterTitle: string; status: string; startedAt: string; totalQuestions: number; resumable: boolean; attempts: HistoryAttempt[] };
@@ -31,8 +31,8 @@ function sessionMarks(session: HistorySession) {
   };
 }
 
-function resultStatus(result: { correct: boolean; earnedMarks?: number; earned_marks?: number; reviewRequired?: boolean }): Status {
-  if (result.reviewRequired) return "review";
+function resultStatus(result: { correct: boolean; earnedMarks?: number; earned_marks?: number; reviewRequired?: boolean; gradingPending?: boolean }): Status {
+  if (result.gradingPending || result.reviewRequired) return "review";
   if (result.correct) return "correct";
   return Number(result.earnedMarks ?? result.earned_marks ?? 0) > 0 ? "partial" : "incorrect";
 }
@@ -120,7 +120,7 @@ export function StudyExperience() {
     const latest = new Map(attempts.map((attempt) => [attempt.question_id, attempt]));
     const remaining = loaded.filter((question) => !latest.has(question.id)).map((question) => question.id);
     setBankId(body.bankId); setSessionId(resumableId); setQuestions(loaded); setQueue(remaining);
-    setStatuses(Object.fromEntries(loaded.map((question) => { const attempt = latest.get(question.id); return [question.id, attempt ? resultStatus({ ...attempt, reviewRequired: attempt.feedback.reviewRequired }) : "pending"]; })));
+    setStatuses(Object.fromEntries(loaded.map((question) => { const attempt = latest.get(question.id); return [question.id, attempt ? resultStatus({ ...attempt, reviewRequired: attempt.feedback.reviewRequired, gradingPending: attempt.feedback.gradingPending }) : "pending"]; })));
     setResponses(Object.fromEntries(attempts.map((attempt) => [attempt.question_id, attempt.response])));
     setFeedbackByQuestion(Object.fromEntries(attempts.map((attempt) => [attempt.question_id, { ...attempt.feedback, attemptId: attempt.id }])));
     setFeedback(null); setResponse(""); setReviewingId(null); setPhase(remaining.length ? "session" : "summary"); setBusy(false);
@@ -152,6 +152,24 @@ export function StudyExperience() {
   }
   async function checkAnswer() { await submitAnswer(response); }
   async function dontKnow() { await submitAnswer(current?.type === "multiple_select" ? [] : current?.type === "matching" ? {} : current?.type === "true_false_correct" ? { value: null } : ""); }
+
+  async function retryAutomaticGrading() {
+    if (!current || !shownFeedback?.attemptId) return;
+    setBusy(true); setError("");
+    const result = await fetch("/api/study/answer", {
+      method: "POST", headers: { "content-type": "application/json" },
+      body: JSON.stringify({ retryAttemptId: shownFeedback.attemptId }),
+    });
+    const body = await result.json();
+    if (!result.ok) setError(body.error ?? "Could not retry automatic grading.");
+    else {
+      const checked = body as Feedback;
+      setFeedback(checked);
+      setFeedbackByQuestion((existing) => ({ ...existing, [current.id]: checked }));
+      setStatuses((existing) => ({ ...existing, [current.id]: resultStatus(checked) }));
+    }
+    setBusy(false);
+  }
 
   async function reportCurrentQuestion() {
     if (!current || reportedQuestions[current.id]) return;
@@ -225,7 +243,17 @@ export function StudyExperience() {
       <article className="question-card" key={`${current.id}-${shownFeedback ? "revealed" : "answer"}`}><div className="question-meta"><span>Question {currentIndex + 1} · {current.type.replaceAll("_", " ")}</span><span>{current.marks} {current.marks === 1 ? "mark" : "marks"}</span></div><h1>{current.prompt}</h1>
         {!reviewingId && <div className="question-feedback"><button type="button" className="question-feedback-link" onClick={() => setFeedbackOpen((existing) => ({ ...existing, [current.id]: !existing[current.id] }))}>{reportedQuestions[current.id] ? "Feedback sent" : "Give feedback"}</button>{feedbackOpen[current.id] && !reportedQuestions[current.id] && <div className="question-feedback-panel"><label>What seems wrong? <span>(optional)</span><textarea rows={2} value={reportNotes[current.id] ?? ""} onChange={(event) => setReportNotes((existing) => ({ ...existing, [current.id]: event.target.value }))} placeholder="For example: the wording is confusing" /></label><div className="button-row"><button type="button" onClick={reportCurrentQuestion} disabled={busy}>{busy ? "Sending…" : "Report question"}</button><button type="button" className="button-quiet" onClick={() => setFeedbackOpen((existing) => ({ ...existing, [current.id]: false }))}>Cancel</button></div></div>}</div>}
         <QuestionInput question={current} value={shownResponse} onChange={setResponse} disabled={Boolean(shownFeedback) || Boolean(reviewingId)} />
-        {!shownFeedback ? <div className="question-actions"><button className="answer-submit" onClick={checkAnswer} disabled={!hasResponse(current, response) || busy}>{busy ? "Checking…" : "Check answer"}<span aria-hidden="true">→</span></button><button className="button-quiet" onClick={dontKnow} disabled={busy}>I don’t know</button></div> : <div className={`answer-feedback ${shownFeedback.reviewRequired ? "is-review" : shownFeedback.correct ? "is-correct" : shownFeedback.earnedMarks > 0 ? "is-partial" : "is-wrong"}`} role="status"><div className="feedback-verdict"><span className="verdict-orbit" aria-hidden="true"><i>{shownFeedback.correct ? "✓" : shownFeedback.earnedMarks > 0 ? "½" : shownFeedback.reviewRequired ? "?" : "×"}</i></span><div><span className="feedback-kicker">{shownFeedback.reviewRequired ? "Parent review required" : shownFeedback.earnedMarks > 0 && !shownFeedback.correct ? "Partial credit" : "Answer checked"}</span><h2>{shownFeedback.reviewRequired ? `? Parent review needed — ${shownFeedback.earnedMarks}/${current.marks} provisional marks` : shownFeedback.correct ? "✓ Correct" : shownFeedback.earnedMarks > 0 ? `½ Partly correct — ${shownFeedback.earnedMarks}/${current.marks} marks` : "× Incorrect"}</h2></div></div>{!shownFeedback.correct && <p className="expected-answer"><strong>Expected:</strong> {shownFeedback.expectedAnswer}</p>}<p className="feedback-explanation">{shownFeedback.explanation}</p>{shownFeedback.coveredPoints?.length ? <div className="rubric-feedback"><strong>Points covered</strong><ul>{shownFeedback.coveredPoints.map((point) => <li key={point}>{point}</li>)}</ul></div> : null}{shownFeedback.partialPoints?.length ? <div className="rubric-feedback"><strong>Partly covered</strong><ul>{shownFeedback.partialPoints.map((point) => <li key={point}>{point}</li>)}</ul></div> : null}{shownFeedback.missingPoints?.length ? <div className="rubric-feedback"><strong>Points to add</strong><ul>{shownFeedback.missingPoints.map((point) => <li key={point}>{point}</li>)}</ul></div> : null}{shownFeedback.sourcePages.length > 0 && <p className="source-cite source-seal"><span aria-hidden="true">▤</span> Textbook {shownFeedback.sourcePages.map((page) => `Page ${page}`).join(", ")}</p>}<div className="score-appeal">{appealStatus[current.id] ? <span>Score appeal {appealStatus[current.id]}</span> : <button type="button" className="question-feedback-link" onClick={() => setAppealOpen((existing) => ({ ...existing, [current.id]: !existing[current.id] }))}>Appeal score</button>}{appealOpen[current.id] && !appealStatus[current.id] && <div className="question-feedback-panel"><label>Why should the score change? <span>(optional)</span><textarea rows={2} value={appealNotes[current.id] ?? ""} onChange={(event) => setAppealNotes((existing) => ({ ...existing, [current.id]: event.target.value }))} /></label><div className="button-row"><button type="button" onClick={appealCurrentScore} disabled={busy}>Send to parent</button><button type="button" className="button-quiet" onClick={() => setAppealOpen((existing) => ({ ...existing, [current.id]: false }))}>Cancel</button></div></div>}</div><div className="feedback-next">{reviewingId ? <button onClick={closeReview}>{reviewOrigin === "summary" ? "Back to results" : "Back to current question"}</button> : <button onClick={() => advance(queue.slice(1))}>{queue.length === 1 ? "See results" : "Next question"}<span aria-hidden="true">→</span></button>}</div></div>}
+        {!shownFeedback ? <div className="question-actions"><button className="answer-submit" onClick={checkAnswer} disabled={!hasResponse(current, response) || busy}>{busy ? "Checking…" : "Check answer"}<span aria-hidden="true">→</span></button><button className="button-quiet" onClick={dontKnow} disabled={busy}>I don’t know</button></div> : <div className={`answer-feedback ${shownFeedback.gradingPending || shownFeedback.reviewRequired ? "is-review" : shownFeedback.correct ? "is-correct" : shownFeedback.earnedMarks > 0 ? "is-partial" : "is-wrong"}`} role="status">
+          <div className="feedback-verdict"><span className="verdict-orbit" aria-hidden="true"><i>{shownFeedback.gradingPending || shownFeedback.reviewRequired ? "?" : shownFeedback.correct ? "✓" : shownFeedback.earnedMarks > 0 ? "½" : "×"}</i></span><div><span className="feedback-kicker">{shownFeedback.gradingPending ? "Automatic grading unavailable" : shownFeedback.reviewRequired ? "Parent review required" : shownFeedback.earnedMarks > 0 && !shownFeedback.correct ? "Partial credit" : "Answer checked"}</span><h2>{shownFeedback.gradingPending ? "Not graded yet" : shownFeedback.reviewRequired ? `? Parent review needed — ${shownFeedback.earnedMarks}/${current.marks} provisional marks` : shownFeedback.correct ? "✓ Correct" : shownFeedback.earnedMarks > 0 ? `½ Partly correct — ${shownFeedback.earnedMarks}/${current.marks} marks` : "× Incorrect"}</h2></div></div>
+          {!shownFeedback.gradingPending && !shownFeedback.correct && <p className="expected-answer"><strong>Expected:</strong> {shownFeedback.expectedAnswer}</p>}
+          <p className="feedback-explanation">{shownFeedback.explanation}</p>
+          {shownFeedback.coveredPoints?.length ? <div className="rubric-feedback"><strong>Points covered</strong><ul>{shownFeedback.coveredPoints.map((point) => <li key={point}>{point}</li>)}</ul></div> : null}
+          {shownFeedback.partialPoints?.length ? <div className="rubric-feedback"><strong>Partly covered</strong><ul>{shownFeedback.partialPoints.map((point) => <li key={point}>{point}</li>)}</ul></div> : null}
+          {shownFeedback.missingPoints?.length ? <div className="rubric-feedback"><strong>Points to add</strong><ul>{shownFeedback.missingPoints.map((point) => <li key={point}>{point}</li>)}</ul></div> : null}
+          {shownFeedback.sourcePages.length > 0 && <p className="source-cite source-seal"><span aria-hidden="true">▤</span> Textbook {shownFeedback.sourcePages.map((page) => `Page ${page}`).join(", ")}</p>}
+          {shownFeedback.gradingPending ? shownFeedback.retryAvailable && <div className="score-appeal"><button type="button" onClick={retryAutomaticGrading} disabled={busy}>{busy ? "Retrying…" : "Retry automatic grading"}</button></div> : <div className="score-appeal">{appealStatus[current.id] ? <span>Score appeal {appealStatus[current.id]}</span> : <button type="button" className="question-feedback-link" onClick={() => setAppealOpen((existing) => ({ ...existing, [current.id]: !existing[current.id] }))}>Appeal score</button>}{appealOpen[current.id] && !appealStatus[current.id] && <div className="question-feedback-panel"><label>Why should the score change? <span>(optional)</span><textarea rows={2} value={appealNotes[current.id] ?? ""} onChange={(event) => setAppealNotes((existing) => ({ ...existing, [current.id]: event.target.value }))} /></label><div className="button-row"><button type="button" onClick={appealCurrentScore} disabled={busy}>Send to parent</button><button type="button" className="button-quiet" onClick={() => setAppealOpen((existing) => ({ ...existing, [current.id]: false }))}>Cancel</button></div></div>}</div>}
+          <div className="feedback-next">{reviewingId ? <button onClick={closeReview}>{reviewOrigin === "summary" ? "Back to results" : "Back to current question"}</button> : <button onClick={() => advance(queue.slice(1))}>{queue.length === 1 ? "See results" : "Next question"}<span aria-hidden="true">→</span></button>}</div>
+        </div>}
       </article>
     </section>}
 

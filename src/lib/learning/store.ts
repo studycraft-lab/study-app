@@ -82,6 +82,18 @@ export async function studyAttemptBySubmission(childId: string, submissionId: st
   return data ? { id: String(data.id), feedback: record(data.feedback), gradingStatus: String(data.grading_status) } : null;
 }
 
+export async function pendingStudyAttempt(childId: string, attemptId: string) {
+  const { data, error } = await adminClient().from("study_attempts")
+    .select("id,session_id,question_bank_id,question_id,response,grading_status")
+    .eq("id", attemptId).eq("child_id", childId).maybeSingle();
+  if (error) throw new Error(error.message);
+  if (!data || data.grading_status !== "pending_review") throw new Error("This answer is no longer waiting for automatic grading.");
+  return {
+    id: String(data.id), sessionId: String(data.session_id), bankId: String(data.question_bank_id),
+    questionId: String(data.question_id), response: data.response,
+  };
+}
+
 export async function chapterCoverage(childId: string, bankIds: string[]) {
   if (!bankIds.length) return {} as Record<string, { questionCount: number; correctEver: number; coveragePercent: number; fullCoverage: boolean }>;
   const client = adminClient();
@@ -200,6 +212,24 @@ export async function recordStudyAttempt(input: { sessionId: string; child: Chil
     scoreRatio: maxMarks > 0 ? earnedMarks / maxMarks : 0,
   });
   return attemptId;
+}
+
+export async function finalizePendingStudyAttempt(input: { attemptId: string; child: ChildContext; bankId: string; bank: RecordValue; questionId: string; feedback: RecordValue }) {
+  const item = question(input.bank, input.questionId);
+  const version = bankVersion(input.bank);
+  const maxMarks = Number(item.marks ?? 1);
+  const earnedMarks = Number(input.feedback.earnedMarks ?? 0);
+  const { data, error } = await adminClient().from("study_attempts").update({
+    correct: Boolean(input.feedback.correct), earned_marks: earnedMarks, max_marks: maxMarks,
+    feedback: input.feedback, grading_status: "graded",
+  }).eq("id", input.attemptId).eq("child_id", input.child.id).eq("question_bank_id", input.bankId)
+    .eq("question_id", input.questionId).eq("grading_status", "pending_review").select("id").maybeSingle();
+  if (error || !data) throw new Error(error?.message ?? "This answer is no longer waiting for automatic grading.");
+  await upsertReview({
+    childId: input.child.id, bankId: input.bankId, bankVersion: version, questionId: input.questionId,
+    questionVersion: Number(item.version || 1), attemptId: input.attemptId, correct: Boolean(input.feedback.correct),
+    scoreRatio: maxMarks > 0 ? earnedMarks / maxMarks : 0,
+  });
 }
 
 export async function childLearningHistory(child: ChildContext) {

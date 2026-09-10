@@ -8,7 +8,6 @@ describe("ParentSessionReview", () => {
 
   it("shows appeal evidence and lets a parent award final marks without AI", async () => {
     const fetchMock = vi.spyOn(globalThis, "fetch").mockImplementation(async (input, init) => {
-      if (String(input) === "/api/parent/progress") return new Response(JSON.stringify({ children: [] }));
       if (String(input) === "/api/parent/score-appeals" && init?.method === "PATCH") return new Response(JSON.stringify({ resolution: { status: "adjusted" } }));
       if (String(input) === "/api/parent/score-appeals") return new Response(JSON.stringify({ pending: [{
         id: "appeal", childName: "Easwar", subject: "Geography", chapterTitle: "Landforms",
@@ -22,6 +21,7 @@ describe("ParentSessionReview", () => {
 
     render(<ParentSessionReview />);
     expect(await screen.findByText("Score appeals (1)")).toBeInTheDocument();
+    expect(screen.queryByRole("heading", { name: /session history/i })).not.toBeInTheDocument();
     expect(screen.getByText("Both points are present.")).toBeInTheDocument();
     expect(screen.getByText("separates the Mediterranean Sea and Red Sea")).toBeInTheDocument();
     fireEvent.change(screen.getByLabelText("Final marks"), { target: { value: "2" } });

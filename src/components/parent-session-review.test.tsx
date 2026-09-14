@@ -24,8 +24,9 @@ describe("ParentSessionReview", () => {
     expect(screen.queryByRole("heading", { name: /session history/i })).not.toBeInTheDocument();
     expect(screen.getByText("Both points are present.")).toBeInTheDocument();
     expect(screen.getByText("separates the Mediterranean Sea and Red Sea")).toBeInTheDocument();
+    expect(screen.queryByRole("button", { name: /confirm current score/i })).not.toBeInTheDocument();
     fireEvent.change(screen.getByLabelText("Final marks"), { target: { value: "2" } });
-    fireEvent.click(screen.getByRole("button", { name: /save final marks/i }));
+    fireEvent.click(screen.getByRole("button", { name: /confirm final marks/i }));
     await waitFor(() => expect(fetchMock).toHaveBeenCalledWith("/api/parent/score-appeals", expect.objectContaining({ method: "PATCH", body: expect.stringContaining('"earnedMarks":2') })));
   });
 });

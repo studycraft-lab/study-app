@@ -6,7 +6,8 @@ import { applyTutorCommand, initialTutorState, type TutorState } from "./state";
 export type TutorChild = { id: string; familyId: string; board: string; grade: number };
 export type ProgressRow = { id: string; pack_id: string; child_id: string; revision: number; state: TutorState };
 export async function childPack(child: TutorChild, packId: string, pinned = false) {
-  const { data, error } = await adminClient().from("tutor_library").select("id,payload,status").eq("id", packId).eq("family_id", child.familyId).ilike("board", child.board).eq("grade", child.grade).maybeSingle();
+  const boardPattern = child.board.replace(/[\\%_]/g, "\\$&");
+  const { data, error } = await adminClient().from("tutor_library").select("id,payload,status").eq("id", packId).eq("family_id", child.familyId).ilike("board", boardPattern).eq("grade", child.grade).maybeSingle();
   if (error) throw error;
   if (!data || (!pinned && data.status !== "published")) throw new TutorError("This lesson is unavailable. Ask your parent for help.", 404);
   if (data.status === "draft") throw new TutorError("This lesson is not published.", 404);

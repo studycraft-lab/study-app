@@ -1,0 +1,17 @@
+import { beforeEach, expect, it, vi } from "vitest";
+vi.mock("server-only", () => ({}));
+const mocks = vi.hoisted(() => ({ child: vi.fn(), library: vi.fn(), request: vi.fn() }));
+vi.mock("@/lib/family/request", () => ({ childFromRequest: mocks.child }));
+vi.mock("@/lib/tutor/request-store", () => ({ tutorRequestLibrary: mocks.library, requestSection: mocks.request }));
+import { GET, POST } from "./route";
+import { TutorError } from "@/lib/tutor/http";
+const child = { id: "child-a", familyId: "family-a", board: "ICSE", grade: 6 };
+const chapterId = "11111111-1111-1111-1111-111111111111";
+const body = { chapterId, sectionId: null, heading: "Plastids", page: "38", note: "" };
+const req = (value = body) => new Request("http://localhost/api/study/tutor/library", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(value) });
+beforeEach(() => { vi.clearAllMocks(); vi.stubEnv("TUTOR_ENABLED", "true"); mocks.child.mockResolvedValue(child); mocks.library.mockResolvedValue({}); mocks.request.mockResolvedValue("request-id"); });
+it.each([GET,POST])("rejects direct anonymous requests", async handler => { mocks.child.mockResolvedValue(null); expect((await handler(req())).status).toBe(401); });
+it("uses the authenticated child for private library reads", async () => { await GET(req()); expect(mocks.library).toHaveBeenCalledWith("family-a",child); });
+it("uses authenticated ownership for request writes", async () => { await POST(req({ ...body, ...{ childId: "sibling", familyId: "other" } })); expect(mocks.request).toHaveBeenCalledWith(child,body); });
+it("rejects oversized notes before persistence", async () => { expect((await POST(req({ ...body,note: "a".repeat(301) }))).status).toBe(400); expect(mocks.request).not.toHaveBeenCalled(); });
+it("denies ineligible chapters", async () => { mocks.request.mockRejectedValue(new TutorError("Chapter unavailable.",404)); expect((await POST(req())).status).toBe(404); });

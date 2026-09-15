@@ -2,6 +2,7 @@ import { cleanup, fireEvent, render, screen, waitFor } from "@testing-library/re
 import { afterEach, beforeEach, expect, it, vi } from "vitest";
 import pack from "../../examples/lesson-packs/synthetic-shapes.json";
 import { ParentTutorLibrary } from "./parent-tutor-library";
+vi.mock("./tutor-request-library", () => ({ ParentTutorRequests: () => null }));
 vi.mock("./app-header", () => ({ AppHeader: () => <header>Parent</header> }));
 afterEach(cleanup);
 let previewed = false;

@@ -1,0 +1,355 @@
+{
+  "schemaVersion": "1.0",
+  "lessonId": "plastids-contract-fixture",
+  "contentVersion": 1,
+  "capabilities": [
+    "vector-v1"
+  ],
+  "source": {
+    "board": "ICSE",
+    "grade": 6,
+    "subject": "Biology",
+    "bookTitle": null,
+    "edition": null,
+    "chapterId": "the-cell",
+    "chapterTitle": "The Cell",
+    "documentName": "Issue 50 outline; NOT source verified",
+    "sourceStatus": "unverified"
+  },
+  "section": {
+    "id": "plastids",
+    "heading": "Plastids",
+    "path": [
+      "The Cell",
+      "Plastids"
+    ],
+    "printedPages": [
+      "38"
+    ],
+    "pdfPages": []
+  },
+  "goals": [
+    "Identify the three plastid types."
+  ],
+  "citations": [
+    {
+      "id": "page-one",
+      "printedPage": "38",
+      "pdfPage": null,
+      "locator": "Unverified contract fixture; replace after PDF review"
+    }
+  ],
+  "facts": [
+    {
+      "id": "introduction-fact",
+      "text": "Plastids have three types.",
+      "citationIds": [
+        "page-one"
+      ]
+    },
+    {
+      "id": "chloroplasts-fact",
+      "text": "Chloroplasts are green due to chlorophyll.",
+      "citationIds": [
+        "page-one"
+      ]
+    },
+    {
+      "id": "chromoplasts-fact",
+      "text": "Chromoplasts give non-green colour to flowers and fruits.",
+      "citationIds": [
+        "page-one"
+      ]
+    },
+    {
+      "id": "leucoplasts-fact",
+      "text": "Leucoplasts store starch, proteins and oils.",
+      "citationIds": [
+        "page-one"
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "introduction-board",
+      "label": "introduction",
+      "elements": [
+        {
+          "id": "introduction-body",
+          "kind": "ellipse",
+          "x": 400,
+          "y": 250,
+          "rx": 200,
+          "ry": 100,
+          "fill": "#777777",
+          "label": "introduction"
+        },
+        {
+          "id": "introduction-label",
+          "kind": "text",
+          "x": 200,
+          "y": 450,
+          "fontSize": 28,
+          "fill": "#222222",
+          "label": "introduction",
+          "text": "introduction"
+        }
+      ]
+    },
+    {
+      "id": "chloroplasts-board",
+      "label": "chloroplasts",
+      "elements": [
+        {
+          "id": "chloroplasts-body",
+          "kind": "ellipse",
+          "x": 400,
+          "y": 250,
+          "rx": 200,
+          "ry": 100,
+          "fill": "#228844",
+          "label": "chloroplasts"
+        },
+        {
+          "id": "chloroplasts-label",
+          "kind": "text",
+          "x": 200,
+          "y": 450,
+          "fontSize": 28,
+          "fill": "#222222",
+          "label": "chloroplasts",
+          "text": "chloroplasts"
+        }
+      ]
+    },
+    {
+      "id": "chromoplasts-board",
+      "label": "chromoplasts",
+      "elements": [
+        {
+          "id": "chromoplasts-body",
+          "kind": "ellipse",
+          "x": 400,
+          "y": 250,
+          "rx": 200,
+          "ry": 100,
+          "fill": "#dd7733",
+          "label": "chromoplasts"
+        },
+        {
+          "id": "chromoplasts-label",
+          "kind": "text",
+          "x": 200,
+          "y": 450,
+          "fontSize": 28,
+          "fill": "#222222",
+          "label": "chromoplasts",
+          "text": "chromoplasts"
+        }
+      ]
+    },
+    {
+      "id": "leucoplasts-board",
+      "label": "leucoplasts",
+      "elements": [
+        {
+          "id": "leucoplasts-body",
+          "kind": "ellipse",
+          "x": 400,
+          "y": 250,
+          "rx": 200,
+          "ry": 100,
+          "fill": "#eeeeee",
+          "label": "leucoplasts"
+        },
+        {
+          "id": "leucoplasts-label",
+          "kind": "text",
+          "x": 200,
+          "y": 450,
+          "fontSize": 28,
+          "fill": "#222222",
+          "label": "leucoplasts",
+          "text": "leucoplasts"
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "introduction",
+      "factIds": [
+        "introduction-fact"
+      ],
+      "narration": "Plastids have three types.",
+      "simplerExplanation": "Plastids have three types.",
+      "sceneId": "introduction-board",
+      "focusIds": [
+        "introduction-body"
+      ],
+      "actions": [
+        {
+          "kind": "highlight",
+          "target": "introduction-body",
+          "durationMs": 600
+        }
+      ],
+      "checkpoint": {
+        "id": "introduction-check",
+        "prompt": "How many types of plastids are there?",
+        "options": [
+          {
+            "id": "answer",
+            "text": "Three"
+          },
+          {
+            "id": "distractor",
+            "text": "Two"
+          }
+        ],
+        "correctOptionId": "answer",
+        "acceptedAnswers": [
+          "three"
+        ],
+        "criteria": "Identifies Three.",
+        "hint": "Plastids have three types.",
+        "encouragement": "Good effort recalling that idea!"
+      },
+      "nextStepId": "chloroplasts"
+    },
+    {
+      "id": "chloroplasts",
+      "factIds": [
+        "chloroplasts-fact"
+      ],
+      "narration": "Chloroplasts are green due to chlorophyll.",
+      "simplerExplanation": "Chloroplasts are green due to chlorophyll.",
+      "sceneId": "chloroplasts-board",
+      "focusIds": [
+        "chloroplasts-body"
+      ],
+      "actions": [
+        {
+          "kind": "highlight",
+          "target": "chloroplasts-body",
+          "durationMs": 600
+        }
+      ],
+      "checkpoint": {
+        "id": "chloroplasts-check",
+        "prompt": "Which pigment makes chloroplasts green?",
+        "options": [
+          {
+            "id": "answer",
+            "text": "Chlorophyll"
+          },
+          {
+            "id": "distractor",
+            "text": "Red pigment"
+          }
+        ],
+        "correctOptionId": "answer",
+        "acceptedAnswers": [
+          "chlorophyll"
+        ],
+        "criteria": "Identifies Chlorophyll.",
+        "hint": "Chloroplasts are green due to chlorophyll.",
+        "encouragement": "Good effort recalling that idea!"
+      },
+      "nextStepId": "chromoplasts"
+    },
+    {
+      "id": "chromoplasts",
+      "factIds": [
+        "chromoplasts-fact"
+      ],
+      "narration": "Chromoplasts give non-green colour to flowers and fruits.",
+      "simplerExplanation": "Chromoplasts give non-green colour to flowers and fruits.",
+      "sceneId": "chromoplasts-board",
+      "focusIds": [
+        "chromoplasts-body"
+      ],
+      "actions": [
+        {
+          "kind": "highlight",
+          "target": "chromoplasts-body",
+          "durationMs": 600
+        }
+      ],
+      "checkpoint": {
+        "id": "chromoplasts-check",
+        "prompt": "Which type gives non-green colour?",
+        "options": [
+          {
+            "id": "answer",
+            "text": "Chromoplasts"
+          },
+          {
+            "id": "distractor",
+            "text": "Leucoplasts"
+          }
+        ],
+        "correctOptionId": "answer",
+        "acceptedAnswers": [
+          "chromoplasts"
+        ],
+        "criteria": "Identifies Chromoplasts.",
+        "hint": "Chromoplasts give non-green colour to flowers and fruits.",
+        "encouragement": "Good effort recalling that idea!"
+      },
+      "nextStepId": "leucoplasts"
+    },
+    {
+      "id": "leucoplasts",
+      "factIds": [
+        "leucoplasts-fact"
+      ],
+      "narration": "Leucoplasts store starch, proteins and oils.",
+      "simplerExplanation": "Leucoplasts store starch, proteins and oils.",
+      "sceneId": "leucoplasts-board",
+      "focusIds": [
+        "leucoplasts-body"
+      ],
+      "actions": [
+        {
+          "kind": "highlight",
+          "target": "leucoplasts-body",
+          "durationMs": 600
+        }
+      ],
+      "checkpoint": {
+        "id": "leucoplasts-check",
+        "prompt": "Which type stores food?",
+        "options": [
+          {
+            "id": "answer",
+            "text": "Leucoplasts"
+          },
+          {
+            "id": "distractor",
+            "text": "Chromoplasts"
+          }
+        ],
+        "correctOptionId": "answer",
+        "acceptedAnswers": [
+          "leucoplasts"
+        ],
+        "criteria": "Identifies Leucoplasts.",
+        "hint": "Leucoplasts store starch, proteins and oils.",
+        "encouragement": "Good effort recalling that idea!"
+      },
+      "nextStepId": null
+    }
+  ],
+  "clarifications": [],
+  "recap": {
+    "text": "Three plastid types: chloroplasts, chromoplasts and leucoplasts.",
+    "factIds": [
+      "introduction-fact",
+      "chloroplasts-fact",
+      "chromoplasts-fact",
+      "leucoplasts-fact"
+    ],
+    "sceneId": "introduction-board"
+  }
+}

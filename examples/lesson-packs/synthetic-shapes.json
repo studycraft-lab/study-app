@@ -1,0 +1,131 @@
+{
+  "schemaVersion": "1.0",
+  "lessonId": "shapes-demo",
+  "contentVersion": 1,
+  "capabilities": [
+    "vector-v1"
+  ],
+  "source": {
+    "board": "Demo",
+    "grade": 6,
+    "subject": "Geometry",
+    "bookTitle": null,
+    "edition": null,
+    "chapterId": "shapes",
+    "chapterTitle": "Synthetic shapes",
+    "documentName": "Original synthetic fixture",
+    "sourceStatus": "synthetic"
+  },
+  "section": {
+    "id": "squares",
+    "heading": "Squares",
+    "path": [
+      "Shapes",
+      "Squares"
+    ],
+    "printedPages": [
+      "1"
+    ],
+    "pdfPages": []
+  },
+  "goals": [
+    "Recognise a square."
+  ],
+  "citations": [
+    {
+      "id": "page-one",
+      "printedPage": "1",
+      "pdfPage": null,
+      "locator": "Original synthetic statement"
+    }
+  ],
+  "facts": [
+    {
+      "id": "four-sides",
+      "text": "A square has four equal sides.",
+      "citationIds": [
+        "page-one"
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "square-board",
+      "label": "A blue square",
+      "elements": [
+        {
+          "id": "blue-square",
+          "kind": "rect",
+          "x": 150,
+          "y": 150,
+          "width": 300,
+          "height": 300,
+          "fill": "#2255aa",
+          "label": "Square"
+        },
+        {
+          "id": "square-label",
+          "kind": "text",
+          "x": 150,
+          "y": 500,
+          "fontSize": 28,
+          "fill": "#222222",
+          "label": "Four equal sides",
+          "text": "Four equal sides"
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "meet-square",
+      "factIds": [
+        "four-sides"
+      ],
+      "narration": "Look at the square. Its four sides are equal.",
+      "simplerExplanation": "Count four sides, all the same length.",
+      "sceneId": "square-board",
+      "focusIds": [
+        "blue-square"
+      ],
+      "actions": [
+        {
+          "kind": "pulse",
+          "target": "blue-square",
+          "durationMs": 800
+        }
+      ],
+      "checkpoint": {
+        "id": "square-check",
+        "prompt": "How many sides does a square have?",
+        "options": [
+          {
+            "id": "four",
+            "text": "Four"
+          },
+          {
+            "id": "three",
+            "text": "Three"
+          }
+        ],
+        "correctOptionId": "four",
+        "acceptedAnswers": [
+          "four",
+          "4"
+        ],
+        "criteria": "Identifies four sides.",
+        "hint": "Count each edge once.",
+        "encouragement": "You counted the sides carefully!"
+      },
+      "nextStepId": null
+    }
+  ],
+  "clarifications": [],
+  "recap": {
+    "text": "A square has four equal sides.",
+    "factIds": [
+      "four-sides"
+    ],
+    "sceneId": "square-board"
+  }
+}

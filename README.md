@@ -115,3 +115,7 @@ The repository contains source manifests and generated question banks, but no te
 - [Question-bank contract](docs/QUESTION_BANK.md)
 - [Roadmap and explicit deferrals](docs/ROADMAP.md)
 - [Maintenance and intentional-retention notes](docs/MAINTENANCE.md)
+
+## Preparing tutoring lessons
+
+The experimental tutoring work uses a separate, versioned [lesson-pack contract and external authoring workflow](docs/tutor/AUTHORING.md). Prepare one exact textbook section as JSON data; structural validation and factual source review are separate gates. The fixtures are examples, not reviewed teaching content. Track implementation and pilot blockers in the [tutoring checkpoint](docs/tutor/CHECKPOINT.md).

@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
+import { ParentTutorRequests } from "./tutor-request-library";
 import { TutorPlayer } from "./tutor-player";
 import { AppHeader } from "./app-header";
 import { MAX_PACK_BYTES, validateLessonPack } from "@/lib/tutor/validate";
@@ -61,5 +62,6 @@ export function ParentTutorLibrary() {
       })}>Import draft</button></section>}
     <section aria-label="Saved lessons"><h2>Saved lessons</h2>{packs.map(row => <article key={row.id}><h3>{row.heading} · v{row.content_version}</h3><p>{row.chapter_title} · {row.status}</p><button disabled={busy} onClick={() => void action(row, "preview")}>Preview {row.heading} v{row.content_version}</button>{row.status === "draft" && <button disabled={busy || !row.previewed_at} onClick={() => void action(row, "publish")}>Publish {row.heading} v{row.content_version}</button>}{row.status !== "archived" && <button disabled={busy} onClick={() => void action(row, "archive")}>Archive {row.heading} v{row.content_version}</button>}</article>)}</section>
     {preview && <section aria-label="Scripted lesson preview"><h2>{preview.heading}: scripted preview</h2><p>No voice API is used. Review each explanation and answer against the source before publishing. </p><TutorPlayer key={preview.id} pack={preview.payload} /><button onClick={() => setPreview(null)}>Close preview</button></section>}
+    <ParentTutorRequests />
   </main>;
 }

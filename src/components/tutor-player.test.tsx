@@ -1,0 +1,26 @@
+import { cleanup, fireEvent, render, screen } from "@testing-library/react";
+import { afterEach, expect, it } from "vitest";
+import shapes from "../../examples/lesson-packs/synthetic-shapes.json";
+import { validateLessonPack } from "@/lib/tutor/validate";
+import { TutorPlayer } from "./tutor-player";
+afterEach(cleanup);
+it("rehearses explanation, wrong answer, hint, retry, star and explicit recap without a provider", async () => {
+  const result = validateLessonPack(shapes); if (!result.valid) throw new Error();
+  render(<TutorPlayer pack={result.pack} />);
+  expect(screen.getByText(/No live AI or microphone/)).toBeVisible();
+  expect(screen.getByRole("img", { name: "A blue square" })).toBeVisible();
+  fireEvent.click(screen.getByRole("button", { name: "Pause" }));
+  expect(screen.getByRole("button", { name: "I have read the explanation" })).toBeDisabled();
+  fireEvent.click(screen.getByRole("button", { name: "Resume" }));
+  fireEvent.click(screen.getByRole("button", { name: "I have read the explanation" }));
+  fireEvent.click(await screen.findByRole("button", { name: "I understand — ask me a question" }));
+  expect(screen.getByRole("status")).toHaveTextContent("0 / 1 tutoring stars");
+  fireEvent.click(await screen.findByRole("button", { name: "Three" }));
+  expect(screen.getByLabelText("Tutor caption")).toHaveTextContent("Let's try again");
+  fireEvent.click(await screen.findByRole("button", { name: "Try again" }));
+  fireEvent.click(await screen.findByRole("button", { name: "Four" }));
+  expect(screen.getByRole("status")).toHaveTextContent("1 / 1 tutoring stars");
+  fireEvent.click(await screen.findByRole("button", { name: "See recap" }));
+  fireEvent.click(await screen.findByRole("button", { name: "Finish lesson" }));
+  expect(screen.getByText(/Lesson complete/)).toBeVisible();
+});

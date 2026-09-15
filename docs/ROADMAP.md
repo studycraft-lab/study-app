@@ -34,6 +34,6 @@ GitHub issues are the implementation source of truth. This file records only the
 
 These decisions prevent closed ideas from quietly returning through stale documentation. Reintroducing one requires a new or reopened product-owner-approved issue.
 
-## In review: bounded live tutoring
+## Merged, awaiting activation: bounded live tutoring
 
-[#44](https://github.com/studycraft-lab/study-app/issues/44), stories #45–#50: separate lesson-pack contract, parent library, section requests, generic player/private progress, guarded WebRTC/controller and a source-reviewed Plastids pack. Changes are in stacked PRs, not merged or accepted for routine live use. Automated tests do not replace the required real provider, tablet and parent pilot. See [checkpoint](tutor/CHECKPOINT.md), [setup and limits](tutor/VOICE.md), and [remaining acceptance evidence](tutor/PILOT.md).
+[#44](https://github.com/studycraft-lab/study-app/issues/44), stories #45–#50: separate lesson-pack contract, parent library, section requests, generic player/private progress, guarded WebRTC/controller and a source-reviewed Plastids pack. The six stacked PRs are merged into main. Live use still awaits infrastructure configuration and real-session acceptance. Automated tests do not replace the required real provider, tablet and parent pilot. See [checkpoint](tutor/CHECKPOINT.md), [setup and limits](tutor/VOICE.md), and [remaining acceptance evidence](tutor/PILOT.md).

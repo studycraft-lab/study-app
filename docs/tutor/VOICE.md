@@ -55,3 +55,15 @@ Before acceptance, exercise simultaneous authenticated starts against preview Su
 ## Official protocol references
 
 Checked 2026-09-15: [WebRTC and unified SDP setup](https://developers.openai.com/api/docs/guides/voice-webrtc), [Realtime conversations and function-call output](https://developers.openai.com/api/docs/guides/realtime-conversations), [create call](https://developers.openai.com/api/reference/typescript/resources/realtime/subresources/calls/methods/create), and [server hangup](https://developers.openai.com/api/reference/python/resources/realtime/subresources/calls/methods/hangup). The documented model example is configurable; documentation does not establish this account's model entitlement. Recheck these contracts when performing the real pilot.
+
+## Activation after merge
+
+No custom Vercel build command is required. Existing Supabase and parent authentication settings stay in place. The code is merged; database migrations and live infrastructure are separate operations.
+
+1. Apply these new Supabase migrations once, in order, to the database for the selected environment: `20260915010000_create_tutor_content.sql`, `20260915020000_create_tutor_progress.sql`, `20260915030000_create_tutor_requests.sql`, `20260915040000_create_tutor_voice_usage.sql`.
+2. In Vercel **Project → Settings → Environment Variables**, set `TUTOR_ENABLED=true`, `TUTOR_LIVE_ENABLED=false`, and `TUTOR_CONTROLLER_VERIFIED=false` for that environment. Redeploy: [environment changes apply only to new deployments](https://vercel.com/docs/environment-variables).
+3. Sign in as parent, open `/parent/library/tutor`, import `lesson-packs/icse-6-biology/plastids/v1.json` into the matching The Cell chapter, rehearse and publish. A matching ICSE Grade 6 child can then use the lesson without microphone/provider calls.
+4. For live voice, provision one continuously running Node controller using the setup above. Configure `OPENAI_API_KEY`, `TUTOR_CONTROLLER_URL` (its HTTPS URL) and `TUTOR_CONTROLLER_SECRET` in Vercel; configure the same key/secret, target Supabase database and voice settings on the controller. Do not use a localhost controller URL in Vercel. Existing OpenRouter credentials do not replace an OpenAI API key.
+5. Verify model access, controller restart recovery and actual provider termination in the supervised pilot. Then set `TUTOR_CONTROLLER_VERIFIED=true` and `TUTOR_LIVE_ENABLED=true`, redeploy/restart the relevant processes, and enable the family's live-voice permission in the parent library. Default allowances are ten minutes per session and twenty reserved minutes per child per UTC day.
+
+The continuously running controller is part of this implementation's architecture. A Vercel environment setting does not create or supervise it; ordinary [Vercel Functions have finite execution lifetimes](https://vercel.com/docs/functions/limitations). Real voice remains untested until that service and credentials are available.

@@ -59,7 +59,7 @@ The parent and each child sign in separately. There is no role switching inside 
 
 - The OpenRouter key and model are configured on the server, not by a parent in the UI.
 - Question generation is front-loaded outside the app.
-- Runtime AI is limited to subjective grading and fuzzy comparison where exact matching is unsafe.
+- Normal exercise AI is limited to subjective grading and fuzzy comparison where exact matching is unsafe. Experimental bounded tutoring has a separate OpenAI Realtime integration, disabled pending acceptance.
 - Objective scoring remains deterministic and free of model calls.
 
 ## Deferred
@@ -80,3 +80,9 @@ The parent and each child sign in separately. There is no role switching inside 
 4. Feedback that explains missing thinking, not only correctness.
 5. Reusable content with low runtime AI cost.
 6. A small understandable product over feature accumulation.
+
+## Experimental section tutoring (#44)
+
+Children can request an exact eligible textbook section; parents prepare a declarative lesson pack externally, import it, rehearse it and publish it. A generic animated board presents short explanations, understanding checks, formative checkpoints, hints/retry and a recap. Progress is private per child and pinned to an immutable pack version. These tutoring hints/retries do not alter the exercise loop.
+
+Scripted rehearsal works without voice credentials. Optional OpenAI voice requires parent permission, server controls, allowances and verified controller hosting. The Plastids pack is source-reviewed, but the integrated real voice/device pilot and parent acceptance remain pending. There is no general chat, runtime lesson generation or claim of exam mastery. See [pilot evidence](tutor/PILOT.md).

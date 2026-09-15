@@ -13,7 +13,7 @@ StudyCraft is a family-first study application that turns source-grounded textbo
 - Children may report a questionable item with an optional comment. Parents can dismiss the report or disable the question in a new bank version.
 - Parents can inspect concise progress and permanently purge an invalid session.
 
-There is no public signup, multi-family administrator, in-app OCR/question generation, voice input, exam composer, skipping, retry, or hint flow yet. See [the roadmap](docs/ROADMAP.md).
+There is no public signup, multi-family administrator, in-app OCR/question generation, voice answers in exercises, exam composer, skipping, or exercise retry/hints yet. Bounded tutoring is implemented behind disabled experimental flags and awaits an integrated live pilot. See [the roadmap](docs/ROADMAP.md).
 
 ## Stack
 
@@ -119,3 +119,5 @@ The repository contains source manifests and generated question banks, but no te
 ## Preparing tutoring lessons
 
 The experimental tutoring work uses a separate, versioned [lesson-pack contract and external authoring workflow](docs/tutor/AUTHORING.md). Prepare one exact textbook section as JSON data; structural validation and factual source review are separate gates. The fixtures are examples, not reviewed teaching content. Track implementation and pilot blockers in the [tutoring checkpoint](docs/tutor/CHECKPOINT.md).
+
+Tutoring has separate textbook-section requests, immutable lesson packs, parent rehearsal/publication and private child progress. Start with the [source-reviewed Plastids pack](lesson-packs/icse-6-biology/plastids/v1.json) and [pilot handoff](docs/tutor/PILOT.md). For OpenAI API billing, server-only environment configuration, allowances and a supervised controller on Codespaces/Vercel preview, see [live voice setup](docs/tutor/VOICE.md). `TUTOR_ENABLED` and `TUTOR_LIVE_ENABLED` default off. Scripted rehearsal needs no voice provider call. Tutor stars are formative and do not change exercise marks or mastery.

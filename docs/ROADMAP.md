@@ -25,7 +25,7 @@ GitHub issues are the implementation source of truth. This file records only the
 ## Explicitly not planned now
 
 - Skipping questions
-- Immediate retry and stored hints
+- Immediate retry and stored hints in normal exercises
 - Opening full textbook pages inside StudyCraft
 - AI-driven parent correction of reported questions
 - Streaks, levels, leaderboards, and sibling competition
@@ -33,3 +33,7 @@ GitHub issues are the implementation source of truth. This file records only the
 - Native mobile applications, offline synchronization, and public subscriptions
 
 These decisions prevent closed ideas from quietly returning through stale documentation. Reintroducing one requires a new or reopened product-owner-approved issue.
+
+## In review: bounded live tutoring
+
+[#44](https://github.com/studycraft-lab/study-app/issues/44), stories #45–#50: separate lesson-pack contract, parent library, section requests, generic player/private progress, guarded WebRTC/controller and a source-reviewed Plastids pack. Changes are in stacked PRs, not merged or accepted for routine live use. Automated tests do not replace the required real provider, tablet and parent pilot. See [checkpoint](tutor/CHECKPOINT.md), [setup and limits](tutor/VOICE.md), and [remaining acceptance evidence](tutor/PILOT.md).

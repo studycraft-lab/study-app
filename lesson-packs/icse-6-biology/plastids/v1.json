@@ -1,0 +1,1274 @@
+{
+  "schemaVersion": "1.0",
+  "lessonId": "icse-6-biology-the-cell-plastids",
+  "contentVersion": 1,
+  "capabilities": [
+    "vector-v1"
+  ],
+  "source": {
+    "board": "ICSE",
+    "grade": 6,
+    "subject": "Biology",
+    "bookTitle": null,
+    "edition": null,
+    "chapterId": "the-cell",
+    "chapterTitle": "The Cell",
+    "documentName": "Biology The Cell.pdf",
+    "sourceStatus": "reviewed"
+  },
+  "section": {
+    "id": "plastids",
+    "heading": "Plastids",
+    "path": [
+      "The Cell",
+      "Plastids"
+    ],
+    "printedPages": [
+      "38",
+      "37"
+    ],
+    "pdfPages": [
+      5,
+      4
+    ]
+  },
+  "goals": [
+    "Locate plastids in plant cells and name their three types.",
+    "Connect chloroplasts with chlorophyll and sunlight.",
+    "Distinguish coloured chromoplasts from colourless storage leucoplasts."
+  ],
+  "citations": [
+    {
+      "id": "plastids-page",
+      "printedPage": "38",
+      "pdfPage": 5,
+      "locator": "Left column: Plastids and its three type paragraphs"
+    },
+    {
+      "id": "cytoplasm-page",
+      "printedPage": "37",
+      "pdfPage": 4,
+      "locator": "Right column: Cytoplasm, opening definition; clarification only"
+    }
+  ],
+  "facts": [
+    {
+      "id": "introduction-fact",
+      "text": "Plastids are dense bodies with two membranes in plant-cell cytoplasm. Animal cells have no plastids. There are three types: chloroplasts, chromoplasts and leucoplasts.",
+      "citationIds": [
+        "plastids-page"
+      ]
+    },
+    {
+      "id": "chloroplasts-fact",
+      "text": "Chloroplasts look green because they contain chlorophyll, a green pigment. Chlorophyll helps capture sunlight during photosynthesis.",
+      "citationIds": [
+        "plastids-page"
+      ]
+    },
+    {
+      "id": "chromoplasts-fact",
+      "text": "Chromoplast pigments are colours other than green, including red, yellow and orange. They give flowers and fruits their colour.",
+      "citationIds": [
+        "plastids-page"
+      ]
+    },
+    {
+      "id": "leucoplasts-fact",
+      "text": "Leucoplasts have no pigment. They store starch, proteins and oils and occur mostly in seeds.",
+      "citationIds": [
+        "plastids-page"
+      ]
+    },
+    {
+      "id": "cytoplasm-fact",
+      "text": "Cytoplasm is the jelly-like material inside a cell, between its membrane and nucleus.",
+      "citationIds": [
+        "cytoplasm-page"
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "introduction-board",
+      "label": "Plastids within a simplified plant cell",
+      "elements": [
+        {
+          "id": "title",
+          "kind": "text",
+          "x": 100,
+          "y": 110,
+          "fill": "#17324D",
+          "label": "Plastids: three types",
+          "text": "Plastids: three types",
+          "fontSize": 44
+        },
+        {
+          "id": "plant-boundary",
+          "kind": "rect",
+          "x": 100,
+          "y": 200,
+          "width": 800,
+          "height": 540,
+          "fill": "#17324D",
+          "label": "Simplified plant cell boundary"
+        },
+        {
+          "id": "cytoplasm",
+          "kind": "rect",
+          "x": 110,
+          "y": 210,
+          "width": 780,
+          "height": 520,
+          "fill": "#EEF4FA",
+          "label": "Cytoplasm inside the plant cell"
+        },
+        {
+          "id": "cell-label",
+          "kind": "text",
+          "x": 140,
+          "y": 270,
+          "fill": "#17324D",
+          "label": "Inside a plant cell",
+          "text": "Inside a plant cell",
+          "fontSize": 32
+        },
+        {
+          "id": "cytoplasm-label",
+          "kind": "text",
+          "x": 140,
+          "y": 330,
+          "fill": "#17324D",
+          "label": "Cytoplasm",
+          "text": "Cytoplasm",
+          "fontSize": 32
+        },
+        {
+          "id": "membranes",
+          "kind": "text",
+          "x": 140,
+          "y": 680,
+          "fill": "#17324D",
+          "label": "Each plastid has two membranes",
+          "text": "Each plastid has two membranes",
+          "fontSize": 32
+        },
+        {
+          "id": "animal-note",
+          "kind": "text",
+          "x": 140,
+          "y": 820,
+          "fill": "#17324D",
+          "label": "Animal cells have no plastids",
+          "text": "Animal cells have no plastids",
+          "fontSize": 32
+        },
+        {
+          "id": "schematic",
+          "kind": "text",
+          "x": 140,
+          "y": 890,
+          "fill": "#17324D",
+          "label": "Simplified diagram; colours indicate types",
+          "text": "Simplified diagram; colours indicate types",
+          "fontSize": 26
+        },
+        {
+          "id": "chloroplasts-outer",
+          "kind": "ellipse",
+          "x": 260,
+          "y": 470,
+          "rx": 120,
+          "ry": 75,
+          "fill": "#17324D",
+          "label": "Outer membrane"
+        },
+        {
+          "id": "chloroplasts-gap",
+          "kind": "ellipse",
+          "x": 260,
+          "y": 470,
+          "rx": 111,
+          "ry": 66,
+          "fill": "#FFFFFF",
+          "label": "Space between membranes"
+        },
+        {
+          "id": "chloroplasts-inner",
+          "kind": "ellipse",
+          "x": 260,
+          "y": 470,
+          "rx": 103,
+          "ry": 58,
+          "fill": "#17324D",
+          "label": "Inner membrane"
+        },
+        {
+          "id": "chloroplasts-body",
+          "kind": "ellipse",
+          "x": 260,
+          "y": 470,
+          "rx": 95,
+          "ry": 50,
+          "fill": "#68BC77",
+          "label": "Simplified plastid interior"
+        },
+        {
+          "id": "chloroplasts-label",
+          "kind": "text",
+          "x": 148,
+          "y": 585,
+          "fill": "#17324D",
+          "label": "Chloroplasts",
+          "text": "Chloroplasts",
+          "fontSize": 26
+        },
+        {
+          "id": "chromoplasts-outer",
+          "kind": "ellipse",
+          "x": 500,
+          "y": 470,
+          "rx": 120,
+          "ry": 75,
+          "fill": "#17324D",
+          "label": "Outer membrane"
+        },
+        {
+          "id": "chromoplasts-gap",
+          "kind": "ellipse",
+          "x": 500,
+          "y": 470,
+          "rx": 111,
+          "ry": 66,
+          "fill": "#FFFFFF",
+          "label": "Space between membranes"
+        },
+        {
+          "id": "chromoplasts-inner",
+          "kind": "ellipse",
+          "x": 500,
+          "y": 470,
+          "rx": 103,
+          "ry": 58,
+          "fill": "#17324D",
+          "label": "Inner membrane"
+        },
+        {
+          "id": "chromoplasts-body",
+          "kind": "ellipse",
+          "x": 500,
+          "y": 470,
+          "rx": 95,
+          "ry": 50,
+          "fill": "#F5AA47",
+          "label": "Simplified plastid interior"
+        },
+        {
+          "id": "chromoplasts-label",
+          "kind": "text",
+          "x": 388,
+          "y": 585,
+          "fill": "#17324D",
+          "label": "Chromoplasts",
+          "text": "Chromoplasts",
+          "fontSize": 26
+        },
+        {
+          "id": "leucoplasts-outer",
+          "kind": "ellipse",
+          "x": 740,
+          "y": 470,
+          "rx": 120,
+          "ry": 75,
+          "fill": "#17324D",
+          "label": "Outer membrane"
+        },
+        {
+          "id": "leucoplasts-gap",
+          "kind": "ellipse",
+          "x": 740,
+          "y": 470,
+          "rx": 111,
+          "ry": 66,
+          "fill": "#FFFFFF",
+          "label": "Space between membranes"
+        },
+        {
+          "id": "leucoplasts-inner",
+          "kind": "ellipse",
+          "x": 740,
+          "y": 470,
+          "rx": 103,
+          "ry": 58,
+          "fill": "#17324D",
+          "label": "Inner membrane"
+        },
+        {
+          "id": "leucoplasts-body",
+          "kind": "ellipse",
+          "x": 740,
+          "y": 470,
+          "rx": 95,
+          "ry": 50,
+          "fill": "#FFFFFF",
+          "label": "Simplified plastid interior"
+        },
+        {
+          "id": "leucoplasts-label",
+          "kind": "text",
+          "x": 628,
+          "y": 585,
+          "fill": "#17324D",
+          "label": "Leucoplasts",
+          "text": "Leucoplasts",
+          "fontSize": 26
+        }
+      ]
+    },
+    {
+      "id": "chloroplasts-board",
+      "label": "Green chloroplast and sunlight",
+      "elements": [
+        {
+          "id": "title",
+          "kind": "text",
+          "x": 100,
+          "y": 110,
+          "fill": "#17324D",
+          "label": "Chloroplasts",
+          "text": "Chloroplasts",
+          "fontSize": 44
+        },
+        {
+          "id": "chloroplasts-outer",
+          "kind": "ellipse",
+          "x": 510,
+          "y": 510,
+          "rx": 120,
+          "ry": 75,
+          "fill": "#17324D",
+          "label": "Outer membrane"
+        },
+        {
+          "id": "chloroplasts-gap",
+          "kind": "ellipse",
+          "x": 510,
+          "y": 510,
+          "rx": 111,
+          "ry": 66,
+          "fill": "#FFFFFF",
+          "label": "Space between membranes"
+        },
+        {
+          "id": "chloroplasts-inner",
+          "kind": "ellipse",
+          "x": 510,
+          "y": 510,
+          "rx": 103,
+          "ry": 58,
+          "fill": "#17324D",
+          "label": "Inner membrane"
+        },
+        {
+          "id": "chloroplasts-body",
+          "kind": "ellipse",
+          "x": 510,
+          "y": 510,
+          "rx": 95,
+          "ry": 50,
+          "fill": "#68BC77",
+          "label": "Simplified plastid interior"
+        },
+        {
+          "id": "sun",
+          "kind": "ellipse",
+          "x": 220,
+          "y": 270,
+          "rx": 60,
+          "ry": 60,
+          "fill": "#F8D84A",
+          "label": "Symbol for sunlight"
+        },
+        {
+          "id": "sun-label",
+          "kind": "text",
+          "x": 120,
+          "y": 170,
+          "fill": "#17324D",
+          "label": "Sunlight",
+          "text": "Sunlight",
+          "fontSize": 32
+        },
+        {
+          "id": "sunlight-arrow",
+          "kind": "path",
+          "x": 0,
+          "y": 0,
+          "fill": "#D09316",
+          "label": "Sunlight reaching chlorophyll",
+          "d": "M 260 320 L 430 425 L 410 445 L 480 455 L 450 390 L 438 414 Z"
+        },
+        {
+          "id": "pigment",
+          "kind": "text",
+          "x": 140,
+          "y": 700,
+          "fill": "#17324D",
+          "label": "Chlorophyll is the green pigment",
+          "text": "Chlorophyll is the green pigment",
+          "fontSize": 32
+        },
+        {
+          "id": "capture",
+          "kind": "text",
+          "x": 140,
+          "y": 765,
+          "fill": "#17324D",
+          "label": "It helps capture sunlight",
+          "text": "It helps capture sunlight",
+          "fontSize": 32
+        },
+        {
+          "id": "process",
+          "kind": "text",
+          "x": 140,
+          "y": 815,
+          "fill": "#17324D",
+          "label": "during photosynthesis",
+          "text": "during photosynthesis",
+          "fontSize": 32
+        },
+        {
+          "id": "schematic",
+          "kind": "text",
+          "x": 140,
+          "y": 910,
+          "fill": "#17324D",
+          "label": "Symbolic view; internal details omitted",
+          "text": "Symbolic view; internal details omitted",
+          "fontSize": 26
+        }
+      ]
+    },
+    {
+      "id": "chromoplasts-board",
+      "label": "Red, yellow and orange chromoplast pigments",
+      "elements": [
+        {
+          "id": "title",
+          "kind": "text",
+          "x": 100,
+          "y": 110,
+          "fill": "#17324D",
+          "label": "Chromoplasts",
+          "text": "Chromoplasts",
+          "fontSize": 44
+        },
+        {
+          "id": "red-outer",
+          "kind": "ellipse",
+          "x": 240,
+          "y": 420,
+          "rx": 120,
+          "ry": 75,
+          "fill": "#17324D",
+          "label": "Outer membrane"
+        },
+        {
+          "id": "red-gap",
+          "kind": "ellipse",
+          "x": 240,
+          "y": 420,
+          "rx": 111,
+          "ry": 66,
+          "fill": "#FFFFFF",
+          "label": "Space between membranes"
+        },
+        {
+          "id": "red-inner",
+          "kind": "ellipse",
+          "x": 240,
+          "y": 420,
+          "rx": 103,
+          "ry": 58,
+          "fill": "#17324D",
+          "label": "Inner membrane"
+        },
+        {
+          "id": "red-body",
+          "kind": "ellipse",
+          "x": 240,
+          "y": 420,
+          "rx": 95,
+          "ry": 50,
+          "fill": "#EF6C62",
+          "label": "Simplified plastid interior"
+        },
+        {
+          "id": "red-label",
+          "kind": "text",
+          "x": 180,
+          "y": 550,
+          "fill": "#17324D",
+          "label": "Red",
+          "text": "Red",
+          "fontSize": 32
+        },
+        {
+          "id": "yellow-outer",
+          "kind": "ellipse",
+          "x": 500,
+          "y": 420,
+          "rx": 120,
+          "ry": 75,
+          "fill": "#17324D",
+          "label": "Outer membrane"
+        },
+        {
+          "id": "yellow-gap",
+          "kind": "ellipse",
+          "x": 500,
+          "y": 420,
+          "rx": 111,
+          "ry": 66,
+          "fill": "#FFFFFF",
+          "label": "Space between membranes"
+        },
+        {
+          "id": "yellow-inner",
+          "kind": "ellipse",
+          "x": 500,
+          "y": 420,
+          "rx": 103,
+          "ry": 58,
+          "fill": "#17324D",
+          "label": "Inner membrane"
+        },
+        {
+          "id": "yellow-body",
+          "kind": "ellipse",
+          "x": 500,
+          "y": 420,
+          "rx": 95,
+          "ry": 50,
+          "fill": "#F5D54D",
+          "label": "Simplified plastid interior"
+        },
+        {
+          "id": "yellow-label",
+          "kind": "text",
+          "x": 440,
+          "y": 550,
+          "fill": "#17324D",
+          "label": "Yellow",
+          "text": "Yellow",
+          "fontSize": 32
+        },
+        {
+          "id": "orange-outer",
+          "kind": "ellipse",
+          "x": 760,
+          "y": 420,
+          "rx": 120,
+          "ry": 75,
+          "fill": "#17324D",
+          "label": "Outer membrane"
+        },
+        {
+          "id": "orange-gap",
+          "kind": "ellipse",
+          "x": 760,
+          "y": 420,
+          "rx": 111,
+          "ry": 66,
+          "fill": "#FFFFFF",
+          "label": "Space between membranes"
+        },
+        {
+          "id": "orange-inner",
+          "kind": "ellipse",
+          "x": 760,
+          "y": 420,
+          "rx": 103,
+          "ry": 58,
+          "fill": "#17324D",
+          "label": "Inner membrane"
+        },
+        {
+          "id": "orange-body",
+          "kind": "ellipse",
+          "x": 760,
+          "y": 420,
+          "rx": 95,
+          "ry": 50,
+          "fill": "#F5AA47",
+          "label": "Simplified plastid interior"
+        },
+        {
+          "id": "orange-label",
+          "kind": "text",
+          "x": 700,
+          "y": 550,
+          "fill": "#17324D",
+          "label": "Orange",
+          "text": "Orange",
+          "fontSize": 32
+        },
+        {
+          "id": "colours",
+          "kind": "text",
+          "x": 140,
+          "y": 680,
+          "fill": "#17324D",
+          "label": "Pigments other than green",
+          "text": "Pigments other than green",
+          "fontSize": 32
+        },
+        {
+          "id": "flowers-fruits",
+          "kind": "text",
+          "x": 100,
+          "y": 760,
+          "fill": "#17324D",
+          "label": "These colours appear in flowers and fruits",
+          "text": "These colours appear in flowers and fruits",
+          "fontSize": 32
+        },
+        {
+          "id": "schematic",
+          "kind": "text",
+          "x": 100,
+          "y": 880,
+          "fill": "#17324D",
+          "label": "Examples of colours, not extra plastid types",
+          "text": "Examples of colours, not extra plastid types",
+          "fontSize": 26
+        }
+      ]
+    },
+    {
+      "id": "leucoplasts-board",
+      "label": "Colourless leucoplast storage",
+      "elements": [
+        {
+          "id": "title",
+          "kind": "text",
+          "x": 100,
+          "y": 110,
+          "fill": "#17324D",
+          "label": "Leucoplasts",
+          "text": "Leucoplasts",
+          "fontSize": 44
+        },
+        {
+          "id": "leucoplasts-outer",
+          "kind": "ellipse",
+          "x": 500,
+          "y": 350,
+          "rx": 120,
+          "ry": 75,
+          "fill": "#17324D",
+          "label": "Outer membrane"
+        },
+        {
+          "id": "leucoplasts-gap",
+          "kind": "ellipse",
+          "x": 500,
+          "y": 350,
+          "rx": 111,
+          "ry": 66,
+          "fill": "#FFFFFF",
+          "label": "Space between membranes"
+        },
+        {
+          "id": "leucoplasts-inner",
+          "kind": "ellipse",
+          "x": 500,
+          "y": 350,
+          "rx": 103,
+          "ry": 58,
+          "fill": "#17324D",
+          "label": "Inner membrane"
+        },
+        {
+          "id": "leucoplasts-body",
+          "kind": "ellipse",
+          "x": 500,
+          "y": 350,
+          "rx": 95,
+          "ry": 50,
+          "fill": "#FFFFFF",
+          "label": "Simplified plastid interior"
+        },
+        {
+          "id": "no-pigment",
+          "kind": "text",
+          "x": 390,
+          "y": 490,
+          "fill": "#17324D",
+          "label": "No pigment",
+          "text": "No pigment",
+          "fontSize": 32
+        },
+        {
+          "id": "storage-label",
+          "kind": "text",
+          "x": 140,
+          "y": 610,
+          "fill": "#17324D",
+          "label": "Store:",
+          "text": "Store:",
+          "fontSize": 32
+        },
+        {
+          "id": "starch",
+          "kind": "text",
+          "x": 170,
+          "y": 690,
+          "fill": "#17324D",
+          "label": "Starch",
+          "text": "Starch",
+          "fontSize": 32
+        },
+        {
+          "id": "proteins",
+          "kind": "text",
+          "x": 410,
+          "y": 690,
+          "fill": "#17324D",
+          "label": "Proteins",
+          "text": "Proteins",
+          "fontSize": 32
+        },
+        {
+          "id": "oils",
+          "kind": "text",
+          "x": 720,
+          "y": 690,
+          "fill": "#17324D",
+          "label": "Oils",
+          "text": "Oils",
+          "fontSize": 32
+        },
+        {
+          "id": "seeds",
+          "kind": "text",
+          "x": 140,
+          "y": 800,
+          "fill": "#17324D",
+          "label": "Found mostly in seeds",
+          "text": "Found mostly in seeds",
+          "fontSize": 32
+        },
+        {
+          "id": "schematic",
+          "kind": "text",
+          "x": 100,
+          "y": 900,
+          "fill": "#17324D",
+          "label": "White represents no pigment; schematic only",
+          "text": "White represents no pigment; schematic only",
+          "fontSize": 26
+        }
+      ]
+    },
+    {
+      "id": "recap-board",
+      "label": "Comparison of the three plastid types",
+      "elements": [
+        {
+          "id": "title",
+          "kind": "text",
+          "x": 100,
+          "y": 110,
+          "fill": "#17324D",
+          "label": "Remember the three types",
+          "text": "Remember the three types",
+          "fontSize": 44
+        },
+        {
+          "id": "chloroplasts-outer",
+          "kind": "ellipse",
+          "x": 200,
+          "y": 340,
+          "rx": 120,
+          "ry": 75,
+          "fill": "#17324D",
+          "label": "Outer membrane"
+        },
+        {
+          "id": "chloroplasts-gap",
+          "kind": "ellipse",
+          "x": 200,
+          "y": 340,
+          "rx": 111,
+          "ry": 66,
+          "fill": "#FFFFFF",
+          "label": "Space between membranes"
+        },
+        {
+          "id": "chloroplasts-inner",
+          "kind": "ellipse",
+          "x": 200,
+          "y": 340,
+          "rx": 103,
+          "ry": 58,
+          "fill": "#17324D",
+          "label": "Inner membrane"
+        },
+        {
+          "id": "chloroplasts-body",
+          "kind": "ellipse",
+          "x": 200,
+          "y": 340,
+          "rx": 95,
+          "ry": 50,
+          "fill": "#68BC77",
+          "label": "Simplified plastid interior"
+        },
+        {
+          "id": "chloroplasts-label",
+          "kind": "text",
+          "x": 72,
+          "y": 490,
+          "fill": "#17324D",
+          "label": "Chloroplasts",
+          "text": "Chloroplasts",
+          "fontSize": 28
+        },
+        {
+          "id": "chloroplasts-summary-0",
+          "kind": "text",
+          "x": 72,
+          "y": 585,
+          "fill": "#17324D",
+          "label": "Green pigment:",
+          "text": "Green pigment:",
+          "fontSize": 26
+        },
+        {
+          "id": "chloroplasts-summary-1",
+          "kind": "text",
+          "x": 72,
+          "y": 640,
+          "fill": "#17324D",
+          "label": "chlorophyll",
+          "text": "chlorophyll",
+          "fontSize": 26
+        },
+        {
+          "id": "chloroplasts-summary-2",
+          "kind": "text",
+          "x": 72,
+          "y": 695,
+          "fill": "#17324D",
+          "label": "Helps capture sunlight",
+          "text": "Helps capture sunlight",
+          "fontSize": 26
+        },
+        {
+          "id": "chromoplasts-outer",
+          "kind": "ellipse",
+          "x": 500,
+          "y": 340,
+          "rx": 120,
+          "ry": 75,
+          "fill": "#17324D",
+          "label": "Outer membrane"
+        },
+        {
+          "id": "chromoplasts-gap",
+          "kind": "ellipse",
+          "x": 500,
+          "y": 340,
+          "rx": 111,
+          "ry": 66,
+          "fill": "#FFFFFF",
+          "label": "Space between membranes"
+        },
+        {
+          "id": "chromoplasts-inner",
+          "kind": "ellipse",
+          "x": 500,
+          "y": 340,
+          "rx": 103,
+          "ry": 58,
+          "fill": "#17324D",
+          "label": "Inner membrane"
+        },
+        {
+          "id": "chromoplasts-body",
+          "kind": "ellipse",
+          "x": 500,
+          "y": 340,
+          "rx": 95,
+          "ry": 50,
+          "fill": "#F5AA47",
+          "label": "Simplified plastid interior"
+        },
+        {
+          "id": "chromoplasts-label",
+          "kind": "text",
+          "x": 372,
+          "y": 490,
+          "fill": "#17324D",
+          "label": "Chromoplasts",
+          "text": "Chromoplasts",
+          "fontSize": 28
+        },
+        {
+          "id": "chromoplasts-summary-0",
+          "kind": "text",
+          "x": 372,
+          "y": 585,
+          "fill": "#17324D",
+          "label": "Other colours",
+          "text": "Other colours",
+          "fontSize": 26
+        },
+        {
+          "id": "chromoplasts-summary-1",
+          "kind": "text",
+          "x": 372,
+          "y": 640,
+          "fill": "#17324D",
+          "label": "Colour flowers",
+          "text": "Colour flowers",
+          "fontSize": 26
+        },
+        {
+          "id": "chromoplasts-summary-2",
+          "kind": "text",
+          "x": 372,
+          "y": 695,
+          "fill": "#17324D",
+          "label": "and fruits",
+          "text": "and fruits",
+          "fontSize": 26
+        },
+        {
+          "id": "leucoplasts-outer",
+          "kind": "ellipse",
+          "x": 800,
+          "y": 340,
+          "rx": 120,
+          "ry": 75,
+          "fill": "#17324D",
+          "label": "Outer membrane"
+        },
+        {
+          "id": "leucoplasts-gap",
+          "kind": "ellipse",
+          "x": 800,
+          "y": 340,
+          "rx": 111,
+          "ry": 66,
+          "fill": "#FFFFFF",
+          "label": "Space between membranes"
+        },
+        {
+          "id": "leucoplasts-inner",
+          "kind": "ellipse",
+          "x": 800,
+          "y": 340,
+          "rx": 103,
+          "ry": 58,
+          "fill": "#17324D",
+          "label": "Inner membrane"
+        },
+        {
+          "id": "leucoplasts-body",
+          "kind": "ellipse",
+          "x": 800,
+          "y": 340,
+          "rx": 95,
+          "ry": 50,
+          "fill": "#FFFFFF",
+          "label": "Simplified plastid interior"
+        },
+        {
+          "id": "leucoplasts-label",
+          "kind": "text",
+          "x": 672,
+          "y": 490,
+          "fill": "#17324D",
+          "label": "Leucoplasts",
+          "text": "Leucoplasts",
+          "fontSize": 28
+        },
+        {
+          "id": "leucoplasts-summary-0",
+          "kind": "text",
+          "x": 672,
+          "y": 585,
+          "fill": "#17324D",
+          "label": "No pigment",
+          "text": "No pigment",
+          "fontSize": 26
+        },
+        {
+          "id": "leucoplasts-summary-1",
+          "kind": "text",
+          "x": 672,
+          "y": 640,
+          "fill": "#17324D",
+          "label": "Store starch,",
+          "text": "Store starch,",
+          "fontSize": 26
+        },
+        {
+          "id": "leucoplasts-summary-2",
+          "kind": "text",
+          "x": 672,
+          "y": 695,
+          "fill": "#17324D",
+          "label": "proteins and oils",
+          "text": "proteins and oils",
+          "fontSize": 26
+        },
+        {
+          "id": "formative",
+          "kind": "text",
+          "x": 100,
+          "y": 890,
+          "fill": "#17324D",
+          "label": "Four checks: section practice, not exam mastery",
+          "text": "Four checks: section practice, not exam mastery",
+          "fontSize": 26
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "introduction",
+      "factIds": [
+        "introduction-fact",
+        "cytoplasm-fact"
+      ],
+      "narration": "Plastids are dense bodies with two membranes in plant-cell cytoplasm. Animal cells have no plastids. There are three types: chloroplasts, chromoplasts and leucoplasts.",
+      "simplerExplanation": "Think of plastids as tiny bodies with two surrounding membranes. They are in plant cells, and there are three types.",
+      "sceneId": "introduction-board",
+      "focusIds": [
+        "chloroplasts-body",
+        "chromoplasts-body",
+        "leucoplasts-body"
+      ],
+      "actions": [
+        {
+          "kind": "pulse",
+          "target": "chloroplasts-body",
+          "durationMs": 900
+        }
+      ],
+      "checkpoint": {
+        "id": "introduction-check",
+        "prompt": "How many types of plastids are there?",
+        "options": [
+          {
+            "id": "answer",
+            "text": "Three"
+          },
+          {
+            "id": "distractor",
+            "text": "Two"
+          }
+        ],
+        "correctOptionId": "answer",
+        "acceptedAnswers": [
+          "three",
+          "3",
+          "three types"
+        ],
+        "criteria": "Recognises exactly three types. Accept the number 3 or the word three.",
+        "hint": "Count chloroplasts, chromoplasts and leucoplasts.",
+        "encouragement": "You recalled that idea. One checkpoint star earned."
+      },
+      "nextStepId": "chloroplasts"
+    },
+    {
+      "id": "chloroplasts",
+      "factIds": [
+        "chloroplasts-fact",
+        "cytoplasm-fact"
+      ],
+      "narration": "Chloroplasts look green because they contain chlorophyll, a green pigment. Chlorophyll helps capture sunlight during photosynthesis.",
+      "simplerExplanation": "Chlorophyll is the green pigment in chloroplasts. It helps trap sunlight during photosynthesis.",
+      "sceneId": "chloroplasts-board",
+      "focusIds": [
+        "chloroplasts-body",
+        "sunlight-arrow"
+      ],
+      "actions": [
+        {
+          "kind": "pulse",
+          "target": "chloroplasts-body",
+          "durationMs": 900
+        },
+        {
+          "kind": "move",
+          "target": "sunlight-arrow",
+          "durationMs": 1200,
+          "dx": 35,
+          "dy": 25
+        }
+      ],
+      "checkpoint": {
+        "id": "chloroplasts-check",
+        "prompt": "Which pigment makes chloroplasts green?",
+        "options": [
+          {
+            "id": "answer",
+            "text": "Chlorophyll"
+          },
+          {
+            "id": "distractor",
+            "text": "Red pigment"
+          }
+        ],
+        "correctOptionId": "answer",
+        "acceptedAnswers": [
+          "chlorophyll",
+          "chlorophyl",
+          "clorophyll",
+          "chlorofill"
+        ],
+        "criteria": "Names chlorophyll, not chloroplast. Accept a recognisable spelling or transcription variation.",
+        "hint": "Name the green pigment, rather than the plastid that contains it.",
+        "encouragement": "You recalled that idea. One checkpoint star earned."
+      },
+      "nextStepId": "chromoplasts"
+    },
+    {
+      "id": "chromoplasts",
+      "factIds": [
+        "chromoplasts-fact",
+        "cytoplasm-fact"
+      ],
+      "narration": "Chromoplast pigments are colours other than green, including red, yellow and orange. They give flowers and fruits their colour.",
+      "simplerExplanation": "Chromoplasts give flowers and fruits colours such as red, yellow and orange. These pigments are not green.",
+      "sceneId": "chromoplasts-board",
+      "focusIds": [
+        "red-body",
+        "yellow-body",
+        "orange-body"
+      ],
+      "actions": [
+        {
+          "kind": "pulse",
+          "target": "red-body",
+          "durationMs": 900
+        }
+      ],
+      "checkpoint": {
+        "id": "chromoplasts-check",
+        "prompt": "Which type gives non-green colour?",
+        "options": [
+          {
+            "id": "answer",
+            "text": "Chromoplasts"
+          },
+          {
+            "id": "distractor",
+            "text": "Leucoplasts"
+          }
+        ],
+        "correctOptionId": "answer",
+        "acceptedAnswers": [
+          "chromoplast",
+          "chromoplasts",
+          "cromoplast",
+          "cromoplasts"
+        ],
+        "criteria": "Names chromoplasts, not chloroplasts or leucoplasts. Accept a recognisable variation without confusing the three types.",
+        "hint": "Think of the plastid associated with red, yellow and orange.",
+        "encouragement": "You recalled that idea. One checkpoint star earned."
+      },
+      "nextStepId": "leucoplasts"
+    },
+    {
+      "id": "leucoplasts",
+      "factIds": [
+        "leucoplasts-fact",
+        "cytoplasm-fact"
+      ],
+      "narration": "Leucoplasts have no pigment. They store starch, proteins and oils and occur mostly in seeds.",
+      "simplerExplanation": "Leucoplasts have no pigment. They store starch, proteins and oils, mostly in seeds.",
+      "sceneId": "leucoplasts-board",
+      "focusIds": [
+        "leucoplasts-body",
+        "starch",
+        "proteins",
+        "oils"
+      ],
+      "actions": [
+        {
+          "kind": "pulse",
+          "target": "leucoplasts-body",
+          "durationMs": 900
+        }
+      ],
+      "checkpoint": {
+        "id": "leucoplasts-check",
+        "prompt": "Which type stores food?",
+        "options": [
+          {
+            "id": "answer",
+            "text": "Leucoplasts"
+          },
+          {
+            "id": "distractor",
+            "text": "Chromoplasts"
+          }
+        ],
+        "correctOptionId": "answer",
+        "acceptedAnswers": [
+          "leucoplast",
+          "leucoplasts",
+          "leukoplast",
+          "leukoplasts"
+        ],
+        "criteria": "Names leucoplasts, not chloroplasts or chromoplasts. Accept a recognisable spelling or transcription variation.",
+        "hint": "Choose the colourless type that stores starch, proteins and oils.",
+        "encouragement": "You recalled that idea. One checkpoint star earned."
+      },
+      "nextStepId": null
+    }
+  ],
+  "clarifications": [
+    {
+      "id": "cytoplasm",
+      "question": "What does cytoplasm mean?",
+      "answer": "Cytoplasm is the jelly-like material inside a cell, between its membrane and nucleus.",
+      "factIds": [
+        "cytoplasm-fact"
+      ]
+    },
+    {
+      "id": "chlorophyll-again",
+      "question": "Explain chlorophyll again.",
+      "answer": "Chlorophyll is the green pigment in chloroplasts. It helps trap sunlight during photosynthesis.",
+      "factIds": [
+        "chloroplasts-fact"
+      ]
+    },
+    {
+      "id": "two-membranes",
+      "question": "What does double membrane mean here?",
+      "answer": "It means two membranes surround a plastid. The paired outlines in this diagram represent them.",
+      "factIds": [
+        "introduction-fact"
+      ]
+    }
+  ],
+  "recap": {
+    "text": "Chloroplasts: green chlorophyll helps trap sunlight. Chromoplasts: other pigments colour flowers and fruits. Leucoplasts: no pigment; store starch, proteins and oils, mostly in seeds.",
+    "factIds": [
+      "introduction-fact",
+      "chloroplasts-fact",
+      "chromoplasts-fact",
+      "leucoplasts-fact"
+    ],
+    "sceneId": "recap-board"
+  }
+}

@@ -1,0 +1,13 @@
+**
+!package.json
+!package-lock.json
+!tsconfig.json
+!schemas/
+!schemas/**
+!src/
+!src/lib/
+!src/lib/**
+!scripts/
+!scripts/tutor-controller.ts
+src/lib/**/*.test.ts
+src/lib/**/*.test.tsx

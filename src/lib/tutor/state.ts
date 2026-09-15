@@ -1,6 +1,6 @@
 import type { LessonPack } from "./types";
 export type Phase = "explain" | "understanding" | "checkpoint" | "retry" | "ready" | "recap" | "completed";
-export type TutorState = { stepIndex: number; phase: Phase; completed: string[]; assessed: Record<string, "choice" | "accepted-text">; revision: number; callIds: string[]; clarificationId: string | null; focusId: string | null };
+export type TutorState = { stepIndex: number; phase: Phase; completed: string[]; assessed: Record<string, "choice" | "accepted-text" | "model">; revision: number; callIds: string[]; clarificationId: string | null; focusId: string | null };
 export type TutorCommand = { callId: string; revision: number; stepId: string; name: "explained" | "show_section" | "show_step" | "highlight" | "clarify" | "ask_checkpoint" | "record_checkpoint" | "retry" | "continue" | "finish_lesson" | "resume"; target?: string; answer?: string; answerKind?: "choice" | "text" };
 export class TransitionError extends Error {}
 export const initialTutorState = (): TutorState => ({ stepIndex: 0, phase: "explain", completed: [], assessed: {}, revision: 0, callIds: [], clarificationId: null, focusId: null });

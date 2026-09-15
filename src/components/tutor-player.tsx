@@ -2,11 +2,14 @@
 import { useState } from "react";
 import { applyTutorCommand, initialTutorState, type TutorCommand, type TutorState } from "@/lib/tutor/state";
 import type { LessonPack } from "@/lib/tutor/types";
+import { TutorVoiceControls } from "./tutor-voice-controls";
 import { TutorBoard } from "./tutor-board";
 
 type Input = Pick<TutorCommand, "name" | "target" | "answer" | "answerKind">;
-export function TutorPlayer({ pack, initialState, onCommand, onReload }: { pack: LessonPack; initialState?: TutorState; onCommand?: (command: TutorCommand) => Promise<TutorState>; onReload?: () => void }) {
+export function TutorPlayer({ pack, initialState, onCommand, onReload, progressId }: { progressId?: string; pack: LessonPack; initialState?: TutorState; onCommand?: (command: TutorCommand) => Promise<TutorState>; onReload?: () => void }) {
   const [state, setState] = useState(initialState ?? initialTutorState);
+  const [voiceSend, setVoiceSend] = useState<((text: string) => void) | null>(null);
+  const [voiceMotionPaused, setVoiceMotionPaused] = useState(false);
   const [paused, setPaused] = useState(false);
   const [answer, setAnswer] = useState("");
   const [busy, setBusy] = useState(false);
@@ -18,6 +21,10 @@ export function TutorPlayer({ pack, initialState, onCommand, onReload }: { pack:
   const caption = recap ? pack.recap.text : clarification?.answer ?? (state.phase === "retry" ? `Let's try again. ${step.checkpoint.hint}` : state.phase === "ready" ? step.checkpoint.encouragement : step.narration);
   async function send(input: Input) {
     if (busy || paused) return;
+    if (voiceSend) {
+      const words = input.name === "record_checkpoint" ? `My answer is ${input.answerKind === "choice" ? step.checkpoint.options.find(o => o.id === input.answer)?.text : input.answer}` : input.name === "show_step" ? "Explain this step again." : input.name === "ask_checkpoint" ? "I understand. Ask me the checkpoint." : input.name === "continue" ? "I am ready. Continue to the next step." : input.name === "clarify" ? pack.clarifications.find(c => c.id === input.target)?.question ?? "Please explain again." : input.name === "finish_lesson" ? "I have read the recap. Finish the lesson." : input.name === "retry" ? "Let me try the question again." : "I have read the explanation.";
+      voiceSend(words); return;
+    }
     setBusy(true); setError("");
     const command: TutorCommand = { ...input, callId: crypto.randomUUID(), revision: state.revision, stepId: step.id };
     try { setState(onCommand ? await onCommand(command) : applyTutorCommand(pack, state, command)); setAnswer(""); }
@@ -25,11 +32,12 @@ export function TutorPlayer({ pack, initialState, onCommand, onReload }: { pack:
     finally { setBusy(false); }
   }
   return <section className="tutor-player" aria-label="Tutoring player"><h2>{pack.section.heading}</h2>
-    <p>Scripted rehearsal · No live AI or microphone. Choose prepared explanations or answer checks below.</p>
+    <p>{voiceSend ? "Live tutoring · Spoken responses are model-assessed formative feedback." : progressId ? "Scripted rehearsal controls are available below. Live voice has separate start and end controls." : "Scripted rehearsal · No live AI or microphone. Choose prepared explanations or answer checks below."}</p>
+    {progressId && <TutorVoiceControls progressId={progressId} paused={paused} onActivity={setVoiceMotionPaused} onState={setState} onMode={send => setVoiceSend(() => send)} />}
     <p role="status">{paused ? "Paused" : busy ? "Saving" : recap ? "Recap" : "Ready to read"} · {state.completed.length} / {pack.steps.length} tutoring stars</p>
     <p>These checks are formative practice, separate from exercise marks.</p>
     {error && <p role="alert">{error} {onReload && <button onClick={onReload}>Resume saved lesson</button>}</p>}
-    <div className="tutor-layout"><TutorBoard key={`${step.id}-${state.phase}`} scene={scene} actions={recap ? [] : step.actions} focusId={state.focusId} paused={paused} />
+    <div className="tutor-layout"><TutorBoard key={`${step.id}-${state.phase}`} scene={scene} actions={recap ? [] : step.actions} focusId={state.focusId} paused={paused || (!!voiceSend && voiceMotionPaused)} />
       <div><p aria-label="Tutor caption" aria-live="polite">{caption}</p>
         {state.phase === "explain" && <p>{step.simplerExplanation}</p>}
         <button onClick={() => setPaused(p => !p)}>{paused ? "Resume" : "Pause"}</button>

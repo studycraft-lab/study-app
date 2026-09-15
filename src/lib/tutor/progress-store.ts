@@ -25,10 +25,11 @@ export async function startProgress(child: TutorChild, packId: string) {
   if (error) throw new TutorError("This lesson is unavailable to start or resume.", 404);
   return resumeProgress(child, (data as ProgressRow).id);
 }
-export async function commandProgress(child: TutorChild, id: string, command: unknown) {
+export async function commandProgress(child: TutorChild, id: string, command: unknown, assessment: "scripted" | "model" = "scripted") {
   const { progress, pack } = await loadProgress(child, id);
   const state = applyTutorCommand(pack, progress.state, command);
   if (state === progress.state) return { progress, pack };
+  if (assessment === "model" && progress.state.phase === "checkpoint" && state.phase === "ready") state.assessed[pack.steps[state.stepIndex].checkpoint.id] = "model";
   const { data, error } = await adminClient().rpc("save_tutor_progress", { p_child_id: child.id, p_id: id, p_revision: progress.revision, p_state: state });
   if (error) throw new TutorError("Progress changed. Resume the current step.", 409);
   return { progress: data as ProgressRow, pack };

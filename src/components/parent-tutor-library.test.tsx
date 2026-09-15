@@ -17,8 +17,8 @@ it("requires preview before publication and accurately labels the free scripted 
   expect(await screen.findByRole("button", { name: "Publish Squares v1" })).toBeDisabled();
   fireEvent.click(screen.getByRole("button", { name: "Preview Squares v1" }));
   expect(await screen.findByRole("region", { name: "Scripted lesson preview" })).toHaveTextContent("No voice API is used");
-  expect(screen.getByText(pack.steps[0].checkpoint.prompt)).toBeVisible();
-  expect(screen.getByText("Four (answer)")).toBeVisible();
+  expect(screen.getByRole("img", { name: pack.scenes[0].label })).toBeVisible();
+  expect(screen.getByLabelText("Tutor caption")).toHaveTextContent(pack.steps[0].narration);
   await waitFor(() => expect(screen.getByRole("button", { name: "Publish Squares v1" })).toBeEnabled());
 });
 it("reports unauthorized reads without exposing content", async () => {

@@ -83,3 +83,20 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 @media (max-width:650px) { .app-header { align-items:flex-start; gap:18px; } .app-header nav { justify-content:flex-end; } }
 @media (max-width:560px) { .topbar,.hero { padding-inline:20px; } .foundation-badge { font-size:.65rem; } h1 { font-size:3rem; } .study-preview { min-height:430px; padding:18px; } .preview-page { display:none; } .preview-question { margin-top:50px; padding:26px; } }
 @media (prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration:.01ms !important; animation-iteration-count:1 !important; scroll-behavior:auto !important; transition-duration:.01ms !important; } }
+
+/* Tutoring is isolated from exercise scoring and presentation. */
+.tutor-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(16rem, 1fr); gap: 1.5rem; align-items: start; }
+.tutor-player button { margin: .3rem; min-height: 44px; }
+.tutor-player fieldset { border: 1px solid #c3ccd4; border-radius: .6rem; padding: 1rem; }
+.tutor-element { animation-duration: var(--tutor-duration); animation-fill-mode: both; }
+.tutor-reveal { animation-name: tutor-reveal; }
+.tutor-pulse { animation-name: tutor-pulse; }
+.tutor-move { animation-name: tutor-move; }
+@keyframes tutor-reveal { from { opacity: 0; } to { opacity: 1; } }
+@keyframes tutor-pulse { 50% { opacity: .45; } }
+@keyframes tutor-move { from { transform: translate(0, 0); } to { transform: translate(var(--tutor-dx), var(--tutor-dy)); } }
+@media (max-width: 700px) { .tutor-layout { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) {
+  .tutor-element { animation: none; }
+  .tutor-move { transform: translate(var(--tutor-dx), var(--tutor-dy)); }
+}

@@ -1,4 +1,5 @@
 import "server-only";
+import { isDeepStrictEqual } from "node:util";
 
 import { adminClient } from "@/lib/supabase/admin";
 import type { ChildProfile } from "@/lib/family/store";
@@ -97,20 +98,42 @@ export async function pendingStudyAttempt(childId: string, attemptId: string) {
 export async function chapterCoverage(childId: string, bankIds: string[]) {
   if (!bankIds.length) return {} as Record<string, { questionCount: number; correctEver: number; coveragePercent: number; fullCoverage: boolean }>;
   const client = adminClient();
-  const [{ data: banks, error: bankError }, { data: attempts, error: attemptError }] = await Promise.all([
-    client.from("question_banks").select("id,payload").in("id", bankIds),
-    client.from("study_attempts").select("question_bank_id,question_id,correct,earned_marks,max_marks,adjusted_correct,adjusted_earned_marks,grading_status").eq("child_id", childId).in("question_bank_id", bankIds),
-  ]);
-  if (bankError || attemptError) throw new Error(bankError?.message ?? attemptError?.message ?? "Chapter coverage is unavailable.");
-  const correctByBank = new Map<string, Set<string>>();
-  (attempts ?? []).map((attempt) => effectiveAttempt(record(attempt))).filter((attempt) => attempt.grading_status !== "pending_review" && attempt.correct).forEach((attempt) => {
-    const bankId = String(attempt.question_bank_id);
-    if (!correctByBank.has(bankId)) correctByBank.set(bankId, new Set());
-    correctByBank.get(bankId)?.add(String(attempt.question_id));
-  });
-  return Object.fromEntries((banks ?? []).map((bank) => {
+  const { data: banks, error: bankError } = await client.from("question_banks").select("id,chapter_id,external_id,payload").in("id", bankIds);
+  if (bankError) throw new Error(bankError.message);
+  if (!banks?.length) return {};
+  // Stable chapter + bank identity bounds the lineage; question content must still match.
+  const { data: versions, error: versionError } = await client.from("question_banks")
+    .select("id,chapter_id,external_id,payload").in("chapter_id", [...new Set(banks.map(bank => bank.chapter_id))]);
+  if (versionError) throw new Error(versionError.message);
+  const lineage = (versions ?? []).filter(version => banks.some(bank => bank.chapter_id === version.chapter_id && bank.external_id === version.external_id));
+  const versionById = new Map(lineage.map(version => [String(version.id), version]));
+  const questionsByBank = new Map(lineage.map(version => [String(version.id), new Map(records(record(version.payload).questions).map(q => [String(q.id), q]))]));
+  const attempts: RecordValue[] = [];
+  // Supabase caps a response at 1,000 rows. Do not silently lose older progress.
+  for (let offset = 0; lineage.length; offset += 1000) {
+    const { data, error } = await client.from("study_attempts")
+      .select("id,question_bank_id,question_id,question_version,correct,earned_marks,max_marks,adjusted_correct,adjusted_earned_marks,grading_status")
+      .eq("child_id", childId).in("question_bank_id", lineage.map(bank => bank.id))
+      .order("id").range(offset, offset + 999);
+    if (error) throw new Error(error.message);
+    attempts.push(...(data ?? []).map(record));
+    if (!data || data.length < 1000) break;
+  }
+  const correctAttempts = attempts.map(effectiveAttempt).filter(attempt => attempt.grading_status !== "pending_review" && attempt.correct);
+  return Object.fromEntries(banks.map(bank => {
     const activeIds = new Set(selectableQuestionIds(bank.payload));
-    const correctEver = [...(correctByBank.get(String(bank.id)) ?? [])].filter((id) => activeIds.has(id)).length;
+    const currentQuestions = new Map(records(record(bank.payload).questions).map(q => [String(q.id), q]));
+    const correctIds = new Set<string>();
+    for (const attempt of correctAttempts) {
+      const previous = versionById.get(String(attempt.question_bank_id));
+      const id = String(attempt.question_id);
+      const current = currentQuestions.get(id);
+      const old = questionsByBank.get(String(attempt.question_bank_id))?.get(id);
+      if (previous?.chapter_id !== bank.chapter_id || previous?.external_id !== bank.external_id || !activeIds.has(id)) continue;
+      // Changed/reused IDs do not inherit credit; retries and unchanged releases count once.
+      if (current && old && Number(attempt.question_version) === Number(old.version) && isDeepStrictEqual(old, current)) correctIds.add(id);
+    }
+    const correctEver = correctIds.size;
     const questionCount = activeIds.size;
     return [String(bank.id), { questionCount, correctEver, coveragePercent: questionCount ? Math.round(correctEver / questionCount * 100) : 0, fullCoverage: questionCount > 0 && correctEver === questionCount }];
   }));

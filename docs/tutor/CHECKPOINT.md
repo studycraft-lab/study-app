@@ -74,3 +74,11 @@ Verification: lint, typecheck and production build pass; full suite 262 passed, 
 Applied `20260919060000_simplify_tutor_request_workflow.sql` to Supabase project `llrgblwrywrauzfjledj` via MCP, ledger version `20260919054523`, name `simplify_tutor_request_workflow`. Verified both new RPCs deny anon/authenticated execution and permit service_role. No existing request/lesson rows modified during deployment. Migration history still needs explicit reconciliation before CLI db push.
 
 Release: PR and production result pending; do not report live until merged deployment is READY. No Vercel configuration needed for this workflow.
+
+### Exercise coverage discrepancy (2026-09-19)
+
+Branch `fix/chapter-progress-history`. User reported dashboard history surviving while Biology chapter progress looked reset. Read-only hosted inspection confirmed attempts remain attached to superseded bank versions. Reproduced with `npm test -- src/lib/learning/coverage.test.ts`: unchanged correct answer in old bank yielded 0 instead of 1. Chapter coverage now follows stable chapter/bank identity across versions and counts only identical active questions with matching question versions, once per question and per child. Changed questions do not inherit credit. Reads all attempt pages instead of silently stopping at 1,000 rows. No database writes/migration required; tutoring restart only writes tutor_progress and did not cause the discrepancy.
+
+Also reproduced stale in-memory chapter coverage after finishing an exercise: the component regression expected 1/1 but saw 0/1. Returning to chapter selection now reloads coverage. Labels say “answered correctly” to distinguish unique correct coverage from dashboard attempt counts. Selection/grading/session history behavior remains unchanged.
+
+Verification so far: 20 focused tests passed; lint, typecheck, production build passed. Chromium mocked API checks at 1280px and 390px show correct percentage/labels without overflow; mobile screenshot inspected. Full suite/release results to follow. Production queries were read-only; no real voice testing involved.

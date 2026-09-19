@@ -36,7 +36,7 @@ describe("StudyExperience", () => {
     fireEvent.click(subjectCard);
     const chapterCard = await screen.findByRole("button", { name: /early vedic/i });
     expect(within(chapterCard).queryByText(/ICSE|Grade 6/)).not.toBeInTheDocument();
-    expect(within(chapterCard).getByText("0 of 10 covered")).toBeInTheDocument();
+    expect(within(chapterCard).getByText("0 of 10 answered correctly")).toBeInTheDocument();
     expect(within(chapterCard).getByRole("progressbar")).toHaveAttribute("aria-valuenow", "0");
     expect(within(chapterCard).getByText("Start 10-question exercise")).toBeInTheDocument();
     fireEvent.click(chapterCard);
@@ -205,6 +205,25 @@ describe("StudyExperience", () => {
     expect(screen.queryByRole("button", { name: /early vedic/i })).not.toBeInTheDocument();
     expect(screen.getByRole("button", { name: /all subjects/i })).toBeInTheDocument();
   });
+  it("refreshes chapter coverage when returning from a completed exercise", async () => {
+    let answered = false;
+    vi.spyOn(globalThis,"fetch").mockImplementation(async (input) => {
+      const url=String(input);
+      if(url==="/api/study/library") return Response.json({child:{displayName:"Asha"},chapters:[{id:"bank",subject:"History",chapterTitle:"Early Vedic",questionCount:1,correctEver:answered?1:0}]});
+      if(url==="/api/study/history") return Response.json({summary:{completedSessions:0},sessions:[]});
+      if(url.startsWith("/api/study/questions")) return Response.json({questions:questions.slice(0,1)});
+      if(url==="/api/study/sessions") return Response.json({sessionId:"session",completed:true});
+      answered=true;return Response.json({correct:true,earnedMarks:1,expectedAnswer:"Early Vedic",explanation:"Correct.",sourcePages:[],attemptId:"attempt"});
+    });
+    render(<StudyExperience/>);
+    await chooseHistoryChapter();
+    fireEvent.click(await screen.findByLabelText("Early Vedic"));
+    fireEvent.click(screen.getByRole("button",{name:/check answer/i}));
+    fireEvent.click(await screen.findByRole("button",{name:/see results/i}));
+    fireEvent.click(await screen.findByRole("button",{name:"Choose another chapter"}));
+    expect(await screen.findByText("1 of 1 answered correctly")).toBeVisible();
+  });
+
 });
 
 it("places tutoring under its subject and chapter without changing the exercise action", async () => {

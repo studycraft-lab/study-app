@@ -11,7 +11,7 @@
 
 ## Required environment / unresolved inputs
 
-Provide the POC ZIP as a workspace path or accessible attachment. Configure preview-only Supabase and OpenAI secrets through the environment, not a message or committed file. Identify a supervised, continuously running controller host and the intended tablet/browser. See [voice setup](VOICE.md) for Vercel/Codespaces HTTPS and controller requirements. No hosted migration, authenticated deployed preview pilot, model entitlement check or real microphone session has been performed. GitHub reports successful Vercel preview checks for the first five PRs; this does not establish preview data configuration or live acceptance.
+Provide the POC ZIP as a workspace path or accessible attachment. Configure preview-only Supabase and OpenAI secrets through the environment, not a message or committed file. Identify a supervised, continuously running controller host and the intended tablet/browser. See [voice setup](VOICE.md) for Vercel/Codespaces HTTPS and controller requirements. Production tutoring migrations were applied on 2026-09-19 and the reviewed pack imported as a draft; see CHECKPOINT.md. No authenticated deployed preview pilot, model entitlement check or real microphone session has been performed. GitHub reports successful Vercel preview checks for the first five PRs; this does not establish preview data configuration or live acceptance.
 
 A running controller is essential for usage enforcement. Host/provider outages and unknown call creation outcomes remain operational limits; deployment evidence must resolve them before claiming a hard cap. The verification flag is not itself evidence. Parent acceptance is required before routine child use, as specified by #50.
 

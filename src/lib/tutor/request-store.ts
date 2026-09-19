@@ -23,7 +23,7 @@ export async function tutorRequestLibrary(familyId: string, child?: TutorChild) 
   if (sectionResult.error || packResult.error || requestResult.error || progressResult.error) throw new Error("Request library unavailable.");
   const allPacks = (packResult.data ?? []) as (AvailableLesson & { status: string })[];
   const lessons = allPacks.filter(p => p.status === "published");
-  const progress = (progressResult.data ?? []).flatMap(row => { const pack = allPacks.find(p => p.id === row.pack_id && p.status !== "draft"); return pack ? [{ id: String(row.id), pack_id: pack.id, chapter_title: pack.chapter_title, heading: pack.heading, completed: row.state?.phase === "completed" }] : []; });
+  const progress = (progressResult.data ?? []).flatMap(row => { const pack = allPacks.find(p => p.id === row.pack_id && p.status !== "draft"); return pack ? [{ id: String(row.id), pack_id: pack.id, chapter_id: pack.chapter_id, chapter_title: pack.chapter_title, heading: pack.heading, completed: row.state?.phase === "completed" }] : []; });
   const requests = (requestResult.data ?? []) as unknown as TutorRequest[];
   return { chapters, progress, sections: (sectionResult.data ?? []) as TutorSection[], lessons, requests: requests.map(r => ({ ...r, available: r.status === "ready" && lessons.some(p => p.id === r.pack_id && p.section_id === r.section_id && p.chapter_id === r.chapter_id) })) };
 }

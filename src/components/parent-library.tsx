@@ -35,7 +35,7 @@ function TrashIcon() {
   </svg>;
 }
 
-export function ParentLibrary() {
+export function ParentLibrary({ tutorEnabled = false }: { tutorEnabled?: boolean }) {
   const router = useRouter();
   const [file, setFile] = useState<File | null>(null);
   const [bank, setBank] = useState<unknown>(null);
@@ -131,6 +131,7 @@ export function ParentLibrary() {
         <p>For the MVP, give textbook pages to Codex and ask it to prepare a StudyCraft question-bank JSON. Upload that JSON here. In a later version, the app will accept the pages and use your AI key itself.</p>
       </section>
 
+      {tutorEnabled && <nav className="content-tabs" aria-label="Content type"><a href="/parent/library" aria-current="page">Practice questions</a><a href="/parent/library/tutor">Tutoring lessons</a></nav>}
       <section className="import-card">
         <h2>Import a prepared chapter</h2>
         <label>Question-bank JSON<input type="file" accept="application/json,.json" onChange={(event) => { setFile(event.target.files?.[0] ?? null); setPreview(null); setBank(null); }} /></label>

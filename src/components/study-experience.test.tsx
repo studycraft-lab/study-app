@@ -206,3 +206,16 @@ describe("StudyExperience", () => {
     expect(screen.getByRole("button", { name: /all subjects/i })).toBeInTheDocument();
   });
 });
+
+it("places tutoring under its subject and chapter without changing the exercise action", async () => {
+  vi.spyOn(globalThis, "fetch").mockImplementation(async input => String(input) === "/api/study/library"
+    ? Response.json({ child: { displayName: "Learner" }, chapters: [{ id: "bank", tutorChapterId: "cell-id", subject: "Biology", chapterTitle: "The Cell", questionCount: 10 }] })
+    : Response.json({ sessions: [] }));
+  render(<StudyExperience tutorEnabled />);
+  const subject = await screen.findByRole("button", { name: /Biology/ });
+  expect(screen.queryByRole("link", { name: /Tutoring lessons/ })).not.toBeInTheDocument();
+  fireEvent.click(subject);
+  expect(screen.getByRole("link", { name: /Tutoring lessons for The Cell/ })).toHaveAttribute("href", "/study/tutor/library?chapter=cell-id");
+  expect(screen.getByRole("button", { name: "Study The Cell" })).toBeEnabled();
+  cleanup(); vi.restoreAllMocks();
+});

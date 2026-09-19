@@ -20,6 +20,7 @@ export function ParentTutorLibrary() {
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
+  const [subject, setSubject] = useState("");
   const load = useCallback(async () => {
     const response = await fetch("/api/parent/tutor"); const data = await response.json();
     if (!response.ok) throw new Error(data.error);
@@ -41,9 +42,27 @@ export function ParentTutorLibrary() {
       await load();
     });
   }
-  return <main className="study-shell"><AppHeader role="parent" /><Link href="/parent/library">Back to content</Link><h1>Tutoring lessons</h1>
-    <p>Prepare one textbook section outside StudyCraft, then upload, review and publish it. <Link href="/parent/library/tutor">Refresh lessons</Link></p>
-    {error && <p role="alert">{error}</p>}{message && <p role="status">{message}</p>}
+  const subjects = [...new Set(packs.map(row => row.payload.source.subject))].sort();
+  const visiblePacks = packs.filter(row => !subject || row.payload.source.subject === subject);
+  const previewRow = preview && (packs.find(row => row.id === preview.id) ?? preview);
+  return <main className="parent-shell parent-tutor"><AppHeader role="parent" />
+    <header className="parent-intro"><p className="eyebrow">Parent workspace</p><h1>{preview ? preview.heading : "Tutoring lessons"}</h1><p>{preview ? "Review the lesson your child will see, then publish when it is ready." : "Manage lessons by subject and chapter. Published lessons appear in your child’s chapter."}</p></header>
+    <nav className="content-tabs" aria-label="Content type"><Link href="/parent/library">Practice questions</Link><Link href="/parent/library/tutor" aria-current="page">Tutoring lessons</Link></nav>
+    {error && <p className="notice notice-error" role="alert">{error}</p>}{message && <p className="notice" role="status">{message}</p>}
+    {preview && previewRow ? <section className="parent-preview" aria-label="Scripted lesson preview">
+      <div className="parent-preview-toolbar"><button className="button-quiet" onClick={() => setPreview(null)}>← Back to lessons</button><span className="tutor-badge">{previewRow.status === "published" ? "Visible to children" : previewRow.status === "draft" ? "Draft · not visible to children" : "Archived"}</span>{previewRow.status === "draft" && <button disabled={busy || !previewRow.previewed_at} onClick={() => void action(previewRow, "publish")}>Publish {preview.heading} v{preview.content_version}</button>}</div>
+      <p className="preview-note">No voice API is used. This preview shows the diagrams, explanations and questions.</p>
+      <TutorPlayer key={preview.id} pack={preview.payload} />
+    </section> : <>
+    <section className="parent-tutor-panel" aria-label="Saved lessons"><div className="parent-panel-heading"><div><h2>Lesson library</h2><p>Preview a draft before publishing it for your child.</p></div>{subjects.length > 1 && <label>Subject<select value={subject} onChange={e => setSubject(e.target.value)}><option value="">All subjects</option>{subjects.map(name => <option key={name}>{name}</option>)}</select></label>}</div>
+      {!packs.length && <p>No lessons yet. Add a prepared lesson below to get started.</p>}
+      {[...new Set(visiblePacks.map(row => row.chapter_id ?? row.chapter_title))].map(chapterKey => {
+        const rows = visiblePacks.filter(row => (row.chapter_id ?? row.chapter_title) === chapterKey);
+        const first = rows[0];
+        return <section className="parent-lesson-chapter" key={chapterKey}><p className="eyebrow">{first.payload.source.subject} · {first.payload.source.board} · Grade {first.payload.source.grade}</p><h3>{first.chapter_title}</h3><div className="parent-lesson-grid">{rows.map(row => <article className="parent-lesson-card" key={row.id}><span className="tutor-badge">{row.status === "published" ? "Published" : row.status === "draft" ? "Draft" : "Archived"}</span><h4>{row.heading}</h4><p>Version {row.content_version} · {row.payload.steps.length} teaching steps</p><p>{row.status === "published" ? "Available in your child’s chapter." : row.status === "draft" ? "Only you can see this until it is published." : "Saved progress is still available to children."}</p><div className="button-row"><button disabled={busy} onClick={() => void action(row, "preview")}>Preview {row.heading} v{row.content_version}</button>{row.status === "draft" && <button className="button-secondary" disabled={busy || !row.previewed_at} onClick={() => void action(row, "publish")}>Publish {row.heading} v{row.content_version}</button>}</div>{row.status !== "archived" && <details className="tutor-help"><summary>Manage version</summary><p>Archiving hides this version from new learners. Existing progress is kept.</p><button className="button-quiet" disabled={busy} onClick={() => void action(row, "archive")}>Archive {row.heading} v{row.content_version}</button></details>}</article>)}</div></section>;
+      })}
+    </section>
+    <details className="parent-tutor-panel parent-import"><summary>Add a prepared lesson</summary><p>Upload a lesson file, check its chapter, then preview it before publishing.</p>
     <label>Lesson JSON <input type="file" accept=".json,application/json" disabled={busy} onChange={event => {
       const file = event.target.files?.[0]; setPack(null); setConfirmed(false);
       if (file) void run(async () => {
@@ -61,9 +80,9 @@ export function ParentTutorLibrary() {
         const data = await response.json(); if (!response.ok) throw new Error(data.errors?.join("\n") ?? data.error);
         setMessage(data.created ? "Draft imported. Preview it before publication." : "This version is already imported."); setPack(null); await load();
       })}>Import draft</button></section>}
-    <section aria-label="Saved lessons"><h2>Saved lessons</h2>{packs.map(row => <article key={row.id}><h3>{row.heading} · v{row.content_version}</h3><p>{row.chapter_title} · {row.status}</p><button disabled={busy} onClick={() => void action(row, "preview")}>Preview {row.heading} v{row.content_version}</button>{row.status === "draft" && <button disabled={busy || !row.previewed_at} onClick={() => void action(row, "publish")}>Publish {row.heading} v{row.content_version}</button>}{row.status !== "archived" && <button disabled={busy} onClick={() => void action(row, "archive")}>Archive {row.heading} v{row.content_version}</button>}</article>)}</section>
-    {preview && <section aria-label="Scripted lesson preview"><h2>{preview.heading}: scripted preview</h2><p>No voice API is used. Review each explanation and answer against the source before publishing. </p><TutorPlayer key={preview.id} pack={preview.payload} /><button onClick={() => setPreview(null)}>Close preview</button></section>}
-    <ParentVoicePermission />
+    </details>
     <ParentTutorRequests />
+    <details className="parent-tutor-panel"><summary>Voice settings</summary><ParentVoicePermission /></details>
+    </>}
   </main>;
 }

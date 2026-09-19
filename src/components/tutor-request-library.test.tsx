@@ -13,3 +13,10 @@ it("offers published lessons directly and explains unavailable and declined requ
   expect(screen.getByText("Let's choose one short section.")).toBeVisible();
   expect(screen.queryByRole("link",{ name: "Start Plastids" })).not.toBeInTheDocument();
 });
+it("limits lessons and saved progress to the chapter selected from Study", async () => {
+  vi.stubGlobal("fetch", vi.fn().mockResolvedValue(Response.json({ chapters: [{ id: "cell", title: "The Cell", courses: { subject: "Biology" } }], sections: [], requests: [], lessons: [{ id: "p", chapter_id: "cell", heading: "Plastids", chapter_title: "The Cell" }, { id: "other", chapter_id: "map", heading: "Maps" }], progress: [{ id: "saved-map", pack_id: "other", chapter_id: "map", heading: "Maps", completed: false }] })));
+  render(<ChildTutorLibrary chapterFilter="cell" />);
+  expect(await screen.findByRole("link", { name: /Learn Plastids/ })).toBeVisible();
+  expect(screen.queryByRole("link", { name: /Maps/ })).not.toBeInTheDocument();
+  expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("The Cell");
+});

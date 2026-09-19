@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { ChildTutorLibrary } from "@/components/tutor-request-library";
-export default function Page() {
+export default async function Page({ searchParams }: { searchParams: Promise<{ chapter?: string | string[] }> }) {
   if (process.env.TUTOR_ENABLED !== "true") notFound();
-  return <ChildTutorLibrary />;
+  const { chapter } = await searchParams;
+  return <ChildTutorLibrary chapterFilter={typeof chapter === "string" ? chapter : undefined} />;
 }

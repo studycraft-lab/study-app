@@ -133,3 +133,39 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 @media(max-width:700px) { .tutor-entry { align-items:stretch; flex-direction:column; padding:22px; } .tutor-layout { grid-template-columns:1fr; } .tutor-player { padding:18px; } }
 .tutor-library .role-label:empty,.tutor-lesson .role-label:empty { display:none; }
 @media(max-width:650px) { .tutor-library .app-header,.tutor-lesson .app-header { flex-direction:column; gap:12px; } .tutor-library .app-header nav,.tutor-lesson .app-header nav { width:100%; justify-content:space-between; } }
+
+/* Tutoring belongs to its chapter, alongside chapter practice. */
+.chapter-with-tutor { display:flex; flex-direction:column; min-width:0; }
+.chapter-with-tutor > .chapter-card { width:100%; flex:1; }
+.chapter-tutor-link { display:flex; align-items:center; justify-content:space-between; gap:16px; background:var(--blue-soft); color:var(--navy); border:1px solid var(--line); border-radius:14px; padding:16px 20px; margin-top:12px; font-weight:800; min-height:52px; }
+.tutor-chapter-index { display:grid; gap:24px; grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr)); }
+.tutor-chapter-index section { padding:24px; background:var(--card); border:1px solid var(--line); border-radius:20px; }
+.tutor-chapter-index a { display:block; padding:16px 0; border-top:1px solid var(--line); font-weight:700; }
+.content-tabs { display:flex; gap:8px; flex-wrap:wrap; margin:24px 0 32px; border-bottom:1px solid var(--line); padding-bottom:12px; }
+.content-tabs a { display:inline-flex; align-items:center; min-height:48px; padding:12px 20px; border-radius:12px; font-weight:800; }
+.content-tabs a[aria-current="page"] { background:var(--navy); color:white; }
+.parent-tutor-panel { background:var(--card); border:1px solid var(--line); border-radius:22px; padding:clamp(20px,3vw,32px); margin:24px 0; }
+.parent-tutor-panel > summary { cursor:pointer; font-size:1.2rem; font-weight:800; padding:4px 0; min-height:44px; }
+.parent-tutor-panel p { color:var(--muted); line-height:1.65; }
+.parent-panel-heading { display:flex; justify-content:space-between; align-items:start; gap:24px; }
+.parent-panel-heading h2 { margin-top:0; }
+.parent-lesson-chapter { margin-top:32px; } .parent-lesson-chapter h3 { font-size:1.5rem; margin:10px 0 20px; }
+.parent-lesson-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr)); gap:20px; }
+.parent-lesson-card { border:1px solid var(--line); background:white; border-radius:18px; padding:24px; }
+.parent-lesson-card h4 { font-size:1.4rem; margin:18px 0 8px; }
+.parent-tutor label { display:grid; gap:8px; margin:18px 0; font-weight:700; }
+.parent-tutor input:not([type="checkbox"]),.parent-tutor select { display:block; width:100%; min-width:0; min-height:48px; border:1px solid var(--line-strong); border-radius:10px; background:white; padding:12px; font:inherit; color:var(--ink); }
+.parent-tutor label:has(input[type="checkbox"]) { display:flex; align-items:flex-start; gap:12px; line-height:1.6; }
+.parent-tutor input[type="checkbox"] { flex-shrink:0; width:20px; height:20px; margin-top:3px; }
+.parent-tutor fieldset { border:1px solid var(--line); border-radius:14px; padding:20px; min-width:0; margin-top:20px; }
+.parent-tutor legend { font-weight:800; padding:0 8px; }
+.parent-request-card { border-top:1px solid var(--line); padding:24px 0; margin-top:20px; }
+.parent-preview-toolbar { display:flex; align-items:center; flex-wrap:wrap; justify-content:space-between; gap:16px; margin:24px 0; }
+.parent-preview .preview-note { color:var(--muted); margin:20px 0; }
+.parent-import [aria-label="Import details"] { margin-top:28px; border-top:1px solid var(--line); padding-top:24px; }
+@media(max-width:650px) { .parent-panel-heading { flex-direction:column; } .parent-tutor .app-header { flex-direction:column; gap:16px; } .parent-tutor .app-header nav { justify-content:flex-start; } .parent-preview-toolbar { align-items:stretch; flex-direction:column; } .content-tabs a { padding:12px; } }
+.parent-tutor .parent-intro { padding:12px 0 8px; max-width:900px; }
+.parent-tutor .parent-intro h1 { font-size:clamp(2rem,5vw,3rem); margin:10px 0 16px; }
+.parent-tutor .content-tabs { margin:16px 0 24px; }
+.parent-preview .tutor-player-heading h2 { display:none; }
+.parent-preview .tutor-player fieldset { border:0; padding:12px 0; }

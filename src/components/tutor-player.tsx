@@ -31,25 +31,25 @@ export function TutorPlayer({ pack, initialState, onCommand, onReload, progressI
     catch (cause) { setError(cause instanceof Error ? cause.message : "Could not save progress."); }
     finally { setBusy(false); }
   }
-  return <section className="tutor-player" aria-label="Tutoring player"><h2>{pack.section.heading}</h2>
-    <p>{voiceSend ? "Live tutoring · Spoken responses are model-assessed formative feedback." : progressId ? "Scripted rehearsal controls are available below. Live voice has separate start and end controls." : "Scripted rehearsal · No live AI or microphone. Choose prepared explanations or answer checks below."}</p>
+  return <section className="tutor-player" aria-label="Tutoring player"><header className="tutor-player-heading"><p className="eyebrow">{pack.source.chapterTitle} · {recap ? "Recap" : `Step ${state.stepIndex + 1} of ${pack.steps.length}`}</p><h2>{pack.section.heading}</h2></header>
+    {!progressId && <p>Parent preview · No live AI or microphone.</p>}
     {progressId && <TutorVoiceControls progressId={progressId} paused={paused} onActivity={setVoiceMotionPaused} onState={setState} onMode={send => setVoiceSend(() => send)} />}
     <p role="status">{paused ? "Paused" : busy ? "Saving" : recap ? "Recap" : "Ready to read"} · {state.completed.length} / {pack.steps.length} tutoring stars</p>
-    <p>These checks are formative practice, separate from exercise marks.</p>
+    <progress className="tutor-progress" value={state.completed.length} max={pack.steps.length} aria-label="Lesson progress" />
     {error && <p role="alert">{error} {onReload && <button onClick={onReload}>Resume saved lesson</button>}</p>}
     <div className="tutor-layout"><TutorBoard key={`${step.id}-${state.phase}`} scene={scene} actions={recap ? [] : step.actions} focusId={state.focusId} paused={paused || (!!voiceSend && voiceMotionPaused)} />
       <div><p aria-label="Tutor caption" aria-live="polite">{caption}</p>
-        {state.phase === "explain" && <p>{step.simplerExplanation}</p>}
-        <button onClick={() => setPaused(p => !p)}>{paused ? "Resume" : "Pause"}</button>
-        <fieldset disabled={busy || paused}><legend>Lesson controls</legend>
-          {!recap && <button onClick={() => void send({ name: "show_step", target: step.id })}>Explain again</button>}
-          {state.phase === "explain" && <button onClick={() => void send({ name: "explained" })}>I have read the explanation</button>}
-          {state.phase === "understanding" && <button onClick={() => void send({ name: "ask_checkpoint" })}>I understand — ask me a question</button>}
-          {!recap && pack.clarifications.filter(c => c.factIds.every(id => step.factIds.includes(id))).map(c => <button key={c.id} onClick={() => void send({ name: "clarify", target: c.id })}>{c.question}</button>)}
-          {state.phase === "checkpoint" && <div><h3>{step.checkpoint.prompt}</h3>{step.checkpoint.options.map(option => <button key={option.id} onClick={() => void send({ name: "record_checkpoint", answerKind: "choice", answer: option.id })}>{option.text}</button>)}<form onSubmit={e => { e.preventDefault(); void send({ name: "record_checkpoint", answerKind: "text", answer }); }}><label>Your answer <input value={answer} onChange={e => setAnswer(e.target.value)} maxLength={500} /></label><button disabled={!answer.trim()}>Check answer</button><p>Rehearsal checks prepared answer variants. If your wording is not recognised, try a choice.</p></form></div>}
-          {state.phase === "retry" && <button onClick={() => void send({ name: "retry" })}>Try again</button>}
-          {state.phase === "ready" && <button onClick={() => void send({ name: "continue" })}>{state.stepIndex === pack.steps.length - 1 ? "See recap" : "Continue to next step"}</button>}
-          {state.phase === "recap" && <button onClick={() => void send({ name: "finish_lesson" })}>Finish lesson</button>}
+
+        <button className="button-quiet" onClick={() => setPaused(p => !p)}>{paused ? "Resume" : "Pause"}</button>
+        <fieldset disabled={busy || paused}><legend className="sr-only">Lesson controls</legend>
+
+          {state.phase === "explain" && <button className="tutor-primary" onClick={() => void send({ name: "explained" })}>I have read the explanation</button>}
+          {state.phase === "understanding" && <button className="tutor-primary" onClick={() => void send({ name: "ask_checkpoint" })}>I understand — ask me a question</button>}
+          {!recap && <details className="tutor-help"><summary>Help me understand</summary><p>{step.simplerExplanation}</p><button className="tutor-primary" onClick={() => void send({ name: "show_step", target: step.id })}>Explain again</button>{pack.clarifications.filter(c => c.factIds.every(id => step.factIds.includes(id))).map(c => <button key={c.id} onClick={() => void send({ name: "clarify", target: c.id })}>{c.question}</button>)}</details>}
+          {state.phase === "checkpoint" && <div><h3>{step.checkpoint.prompt}</h3>{step.checkpoint.options.map(option => <button key={option.id} onClick={() => void send({ name: "record_checkpoint", answerKind: "choice", answer: option.id })}>{option.text}</button>)}<details className="tutor-help"><summary>Type an answer instead</summary><form onSubmit={e => { e.preventDefault(); void send({ name: "record_checkpoint", answerKind: "text", answer }); }}><label>Your answer <input value={answer} onChange={e => setAnswer(e.target.value)} maxLength={500} /></label><button disabled={!answer.trim()}>Check answer</button><p>If your wording is not recognised, try one of the choices.</p></form></details></div>}
+          {state.phase === "retry" && <button className="tutor-primary" onClick={() => void send({ name: "retry" })}>Try again</button>}
+          {state.phase === "ready" && <button className="tutor-primary" onClick={() => void send({ name: "continue" })}>{state.stepIndex === pack.steps.length - 1 ? "See recap" : "Continue to next step"}</button>}
+          {state.phase === "recap" && <button className="tutor-primary" onClick={() => void send({ name: "finish_lesson" })}>Finish lesson</button>}
           {state.phase === "completed" && <p>Lesson complete. You can return to practice whenever you are ready.</p>}
         </fieldset>
       </div></div>

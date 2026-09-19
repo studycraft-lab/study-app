@@ -29,13 +29,14 @@ export function TutorVoiceControls({ progressId, onState, onMode, onActivity, pa
   },[progressId]);
   useEffect(() => { connection.current?.mute(paused); },[paused]);
   const active = !["idle","ended","error"].includes(status);
-  return <section aria-label="Live voice controls"><h3>Live voice</h3><p>{message}</p><p role="status">Voice: {status}</p>{caption && <p aria-label="Live tutor caption" aria-live="polite">{caption}</p>}
-    <button disabled={!available || active || paused} onClick={() => { setCaption(""); setMuted(false); void connection.current?.start(progressId); }}>Start live voice</button>
-    <button disabled={!active} onClick={() => void connection.current?.end()}>End voice</button>
+  if (!available && !active) return <aside className="tutor-voice-notice"><strong>Voice is not available yet.</strong><span>You can read the lesson and answer questions below.</span></aside>;
+  return <section className="tutor-voice-panel" aria-label="Live voice controls"><h3>Live voice</h3><p>{message}</p><p role="status">Voice: {status}</p>{caption && <p aria-label="Live tutor caption" aria-live="polite">{caption}</p>}
+    {!active && <button className="tutor-primary" disabled={!available || paused} onClick={() => { setCaption(""); setMuted(false); void connection.current?.start(progressId); }}>Start live voice</button>}
+    {active && <><button onClick={() => void connection.current?.end()}>End voice</button>
     <button disabled={!active} onClick={() => { setMuted(!muted); connection.current?.mute(!muted); }}>{muted ? "Unmute microphone" : "Mute microphone"}</button>
     <button disabled={!active} onClick={() => connection.current?.interrupt()}>Interrupt voice</button>
     {status === "autoplay-blocked" && <button onClick={() => void connection.current?.play()}>Play voice</button>}
-    <form onSubmit={event => { event.preventDefault(); connection.current?.text(text); setText(""); }}><label>Type to the live tutor <input value={text} onChange={event => setText(event.target.value)} maxLength={500} disabled={!active} /></label><button disabled={!active || !text.trim()}>Send to tutor</button></form>
+    <form onSubmit={event => { event.preventDefault(); connection.current?.text(text); setText(""); }}><label>Type to the live tutor <input value={text} onChange={event => setText(event.target.value)} maxLength={500} disabled={!active} /></label><button disabled={!active || !text.trim()}>Send to tutor</button></form></>}
   </section>;
 }
 export function ParentVoicePermission() {

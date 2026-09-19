@@ -2,11 +2,12 @@
 import { useState } from "react";
 import { applyTutorCommand, initialTutorState, type TutorCommand, type TutorState } from "@/lib/tutor/state";
 import type { LessonPack } from "@/lib/tutor/types";
+import type { SectionAnswer } from "@/lib/tutor/section-question";
 import { TutorVoiceControls } from "./tutor-voice-controls";
 import { TutorBoard } from "./tutor-board";
 
 type Input = Pick<TutorCommand, "name" | "target" | "answer" | "answerKind">;
-export function TutorPlayer({ pack, initialState, onCommand, onReload, progressId }: { progressId?: string; pack: LessonPack; initialState?: TutorState; onCommand?: (command: TutorCommand) => Promise<TutorState>; onReload?: () => void }) {
+export function TutorPlayer({ pack, initialState, onCommand, onAskQuestion, onReload, progressId }: { progressId?: string; pack: LessonPack; initialState?: TutorState; onCommand?: (command: TutorCommand) => Promise<TutorState>; onAskQuestion?: (question: string) => Promise<SectionAnswer>; onReload?: () => void }) {
   const [state, setState] = useState(initialState ?? initialTutorState);
   const [voiceSend, setVoiceSend] = useState<((text: string) => void) | null>(null);
   const [voiceMotionPaused, setVoiceMotionPaused] = useState(false);
@@ -15,6 +16,10 @@ export function TutorPlayer({ pack, initialState, onCommand, onReload, progressI
   const [answer, setAnswer] = useState("");
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
+  const [question, setQuestion] = useState("");
+  const [questionBusy, setQuestionBusy] = useState(false);
+  const [questionError, setQuestionError] = useState("");
+  const [questionResult, setQuestionResult] = useState<{ question: string; result: SectionAnswer } | null>(null);
   const step = pack.steps[state.stepIndex];
   const recap = state.phase === "recap" || state.phase === "completed";
   const scene = pack.scenes.find(s => s.id === (recap ? pack.recap.sceneId : step.sceneId))!;
@@ -38,9 +43,17 @@ export function TutorPlayer({ pack, initialState, onCommand, onReload, progressI
     const command: TutorCommand = { name: "restart", callId: crypto.randomUUID(), revision: state.revision, stepId: step.id };
     try {
       setState(onCommand ? await onCommand(command) : applyTutorCommand(pack, state, command));
-      setAnswer(""); setPaused(false); setVoiceMotionPaused(false);
+      setAnswer(""); setQuestion(""); setQuestionResult(null); setQuestionError(""); setPaused(false); setVoiceMotionPaused(false);
     } catch (cause) { setError(cause instanceof Error ? cause.message : "Could not restart lesson."); }
     finally { setBusy(false); }
+  }
+  async function askQuestion() {
+    const asked = question.trim();
+    if (!onAskQuestion || questionBusy || asked.length < 3) return;
+    setQuestionBusy(true); setQuestionError("");
+    try { setQuestionResult({ question: asked, result: await onAskQuestion(asked) }); setQuestion(""); }
+    catch (cause) { setQuestionError(cause instanceof Error ? cause.message : "Could not answer your question."); }
+    finally { setQuestionBusy(false); }
   }
   return <section className="tutor-player" aria-label="Tutoring player"><header className="tutor-player-heading"><p className="eyebrow">{pack.source.chapterTitle} · {recap ? "Recap" : `Step ${state.stepIndex + 1} of ${pack.steps.length}`}</p><h2>{pack.section.heading}</h2><button className="button-quiet" disabled={busy || voiceActive} title={voiceActive ? "End live voice before restarting" : undefined} onClick={() => void restart()}>Restart lesson</button></header>
     {!progressId && <p>Parent preview · No live AI or microphone.</p>}
@@ -56,7 +69,9 @@ export function TutorPlayer({ pack, initialState, onCommand, onReload, progressI
 
           {state.phase === "explain" && <button className="tutor-primary" onClick={() => void send({ name: "explained" })}>I have read the explanation</button>}
           {state.phase === "understanding" && <button className="tutor-primary" onClick={() => void send({ name: "ask_checkpoint" })}>I understand — ask me a question</button>}
-          {!recap && <details className="tutor-help"><summary>Help me understand</summary><p>{step.simplerExplanation}</p><button className="tutor-primary" onClick={() => void send({ name: "show_step", target: step.id })}>Explain again</button>{pack.clarifications.filter(c => c.factIds.every(id => step.factIds.includes(id))).map(c => <button key={c.id} onClick={() => void send({ name: "clarify", target: c.id })}>{c.question}</button>)}</details>}
+          {!recap && <details className="tutor-help"><summary>Help me understand</summary><p>{step.simplerExplanation}</p><button className="tutor-primary" onClick={() => void send({ name: "show_step", target: step.id })}>Explain again</button>{pack.clarifications.filter(c => c.factIds.every(id => step.factIds.includes(id))).map(c => <button key={c.id} onClick={() => void send({ name: "clarify", target: c.id })}>{c.question}</button>)}
+            {onAskQuestion && <div className="tutor-own-question"><form onSubmit={event => { event.preventDefault(); void askQuestion(); }}><label>Type your own question<input value={question} onChange={event => setQuestion(event.target.value)} maxLength={300} placeholder={`Ask about ${pack.section.heading}`} /></label><button type="submit" disabled={questionBusy || question.trim().length < 3}>{questionBusy ? "Finding an answer…" : "Ask question"}</button><p>Ask about this section. Your question goes to OpenAI and is not saved by StudyCraft.</p></form>{questionError && <p role="alert">{questionError}</p>}{questionResult && <div className="tutor-own-answer" aria-live="polite"><p><strong>Your question:</strong> {questionResult.question}</p><p><strong>Tutor:</strong> {questionResult.result.answer}</p>{questionResult.result.pages.length > 0 && <p>Textbook {questionResult.result.pages.length === 1 ? "page" : "pages"} {questionResult.result.pages.join(", ")}</p>}</div>}</div>}
+          </details>}
           {state.phase === "checkpoint" && <div><h3>{step.checkpoint.prompt}</h3>{step.checkpoint.options.map(option => <button key={option.id} onClick={() => void send({ name: "record_checkpoint", answerKind: "choice", answer: option.id })}>{option.text}</button>)}<details className="tutor-help"><summary>Type an answer instead</summary><form onSubmit={e => { e.preventDefault(); void send({ name: "record_checkpoint", answerKind: "text", answer }); }}><label>Your answer <input value={answer} onChange={e => setAnswer(e.target.value)} maxLength={500} /></label><button disabled={!answer.trim()}>Check answer</button><p>If your wording is not recognised, try one of the choices.</p></form></details></div>}
           {state.phase === "retry" && <button className="tutor-primary" onClick={() => void send({ name: "retry" })}>Try again</button>}
           {state.phase === "ready" && <button className="tutor-primary" onClick={() => void send({ name: "continue" })}>{state.stepIndex === pack.steps.length - 1 ? "See recap" : "Continue to next step"}</button>}

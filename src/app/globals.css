@@ -130,6 +130,12 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 .tutor-player fieldset { border:0; padding:16px 0; min-width:0; }
 .tutor-help { margin-top:18px; border-top:1px solid var(--line); padding-top:10px; }
 .tutor-help p { line-height:1.7; color:var(--muted); }
+.tutor-own-question { margin-top:18px; padding-top:16px; border-top:1px solid var(--line); }
+.tutor-own-question form { display:grid; gap:10px; }
+.tutor-own-question form button { justify-self:start; }
+.tutor-own-answer { margin-top:16px; padding:14px 18px; border-radius:12px; background:var(--paper-deep); }
+.tutor-own-answer p { margin:0 0 8px; }
+.tutor-own-answer p:last-child { margin-bottom:0; }
 .tutor-voice-panel { padding:18px; background:var(--blue-soft); border-radius:16px; margin-bottom:24px; }
 @media(max-width:700px) { .tutor-entry { align-items:stretch; flex-direction:column; padding:22px; } .tutor-layout { grid-template-columns:1fr; } .tutor-player { padding:18px; } }
 .tutor-library .role-label:empty,.tutor-lesson .role-label:empty { display:none; }

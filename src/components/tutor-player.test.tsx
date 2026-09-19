@@ -38,3 +38,15 @@ it("asks before clearing lesson progress and returns to the first explanation", 
   expect(await screen.findByRole("button", { name: "I have read the explanation" })).toBeVisible();
   expect(screen.getByRole("status")).toHaveTextContent("0 / 1 tutoring stars");
 });
+it("lets a child type a section question without changing lesson progress", async () => {
+  const result = validateLessonPack(shapes); if (!result.valid) throw new Error();
+  const ask = vi.fn().mockResolvedValue({ kind: "answered", answer: "A square has four equal sides.", pages: ["12"] });
+  render(<TutorPlayer pack={result.pack} onAskQuestion={ask} />);
+  fireEvent.click(screen.getByText("Help me understand"));
+  fireEvent.change(screen.getByRole("textbox", { name: "Type your own question" }), { target: { value: "Why is it a square?" } });
+  fireEvent.click(screen.getByRole("button", { name: "Ask question" }));
+  expect(await screen.findByText("A square has four equal sides.")).toBeVisible();
+  expect(screen.getByText("Textbook page 12")).toBeVisible();
+  expect(ask).toHaveBeenCalledWith("Why is it a square?");
+  expect(screen.getByRole("status")).toHaveTextContent("0 / 1 tutoring stars");
+});

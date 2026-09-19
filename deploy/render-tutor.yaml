@@ -1,0 +1,40 @@
+# Proposed deployment only. Creating this service incurs Render charges.
+services:
+  - type: web
+    name: studycraft-tutor-controller
+    runtime: docker
+    repo: https://github.com/studycraft-lab/study-app
+    branch: main
+    plan: 0.5c-512mb
+    region: singapore
+    dockerfilePath: ./deploy/tutor-controller.Dockerfile
+    dockerContext: .
+    autoDeployTrigger: off
+    numInstances: 1
+    maxShutdownDelaySeconds: 120
+    # Forces stop-before-start deployments; no lesson/audio data is stored here.
+    disk:
+      name: single-controller
+      mountPath: /var/data
+      sizeGB: 1
+    # Omit healthCheckPath: /health requires a bearer token and returns 401
+    # to anonymous probes. Render's default TCP check establishes liveness only.
+    envVars:
+      - key: PORT
+        value: "4310"
+      - key: TUTOR_CONTROLLER_PORT
+        value: "4310"
+      - key: TUTOR_CONTROLLER_HOST
+        value: "0.0.0.0"
+      - key: TUTOR_ENABLED
+        value: "true"
+      - key: TUTOR_LIVE_ENABLED
+        value: "false"
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SECRET_KEY
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: TUTOR_CONTROLLER_SECRET
+        sync: false

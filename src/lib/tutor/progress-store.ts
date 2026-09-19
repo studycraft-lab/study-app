@@ -47,3 +47,14 @@ export async function resumeProgress(child: TutorChild, id: string) {
   }
   throw new TutorError("Could not resume. Try again.", 409);
 }
+
+export async function restartProgress(child: TutorChild, id: string) {
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    const { progress, pack } = await loadProgress(child, id);
+    const state = applyTutorCommand(pack, progress.state, { name: "restart", callId: crypto.randomUUID(), revision: progress.state.revision, stepId: pack.steps[progress.state.stepIndex].id });
+    const { data, error } = await adminClient().rpc("save_tutor_progress", { p_child_id: child.id, p_id: id, p_revision: progress.revision, p_state: state });
+    if (!error) return { progress: data as ProgressRow, pack };
+    if (attempt === 2) throw new TutorError("Progress changed. Try restarting again.", 409);
+  }
+  throw new TutorError("Could not restart. Try again.", 409);
+}

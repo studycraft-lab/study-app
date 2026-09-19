@@ -1,5 +1,5 @@
 import { childFromRequest } from "@/lib/family/request";
-import { commandProgress, loadProgress, resumeProgress, startProgress } from "@/lib/tutor/progress-store";
+import { commandProgress, loadProgress, restartProgress, resumeProgress, startProgress } from "@/lib/tutor/progress-store";
 import { readTutorJSON, requireTutorEnabled, TutorError, tutorError, uuid } from "@/lib/tutor/http";
 import { TransitionError } from "@/lib/tutor/state";
 async function child(request: Request) {
@@ -17,6 +17,7 @@ export async function GET(request: Request) {
 export async function POST(request: Request) {
   try {
     const profile = await child(request); const body = await readTutorJSON(request, 2048);
+    if (uuid(body.restartId)) return Response.json(await restartProgress(profile, body.restartId));
     if (uuid(body.resumeId)) return Response.json(await resumeProgress(profile, body.resumeId));
     if (!uuid(body.packId)) throw new TutorError("Choose a lesson.");
     return Response.json(await startProgress(profile, body.packId));

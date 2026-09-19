@@ -1,16 +1,17 @@
 import { beforeEach, expect, it, vi } from "vitest";
 vi.mock("server-only", () => ({}));
-const mocks = vi.hoisted(() => ({ child: vi.fn(), start: vi.fn(), load: vi.fn(), command: vi.fn() }));
+const mocks = vi.hoisted(() => ({ child: vi.fn(), start: vi.fn(), load: vi.fn(), command: vi.fn(), restart: vi.fn() }));
 vi.mock("@/lib/family/request", () => ({ childFromRequest: mocks.child }));
-vi.mock("@/lib/tutor/progress-store", () => ({ startProgress: mocks.start, loadProgress: mocks.load, resumeProgress: mocks.load, commandProgress: mocks.command }));
+vi.mock("@/lib/tutor/progress-store", () => ({ startProgress: mocks.start, loadProgress: mocks.load, resumeProgress: mocks.load, commandProgress: mocks.command, restartProgress: mocks.restart }));
 import { GET, POST, PATCH } from "./route";
 import { TutorError } from "@/lib/tutor/http";
 const id = "11111111-1111-1111-1111-111111111111";
 const child = { id: "child-a", familyId: "family-a", board: "ICSE", grade: 6 };
 const request = (body: unknown) => new Request(`http://localhost/api/study/tutor/progress?id=${id}`, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(body) });
-beforeEach(() => { vi.clearAllMocks(); vi.stubEnv("TUTOR_ENABLED", "true"); mocks.child.mockResolvedValue(child); mocks.start.mockResolvedValue({}); mocks.load.mockResolvedValue({}); mocks.command.mockResolvedValue({}); });
+beforeEach(() => { vi.clearAllMocks(); vi.stubEnv("TUTOR_ENABLED", "true"); mocks.child.mockResolvedValue(child); mocks.start.mockResolvedValue({}); mocks.load.mockResolvedValue({}); mocks.command.mockResolvedValue({}); mocks.restart.mockResolvedValue({}); });
 it.each([GET, POST, PATCH])("requires an authenticated child", async handler => { mocks.child.mockResolvedValue(null); expect((await handler(request({}))).status).toBe(401); expect(mocks.start).not.toHaveBeenCalled(); expect(mocks.load).not.toHaveBeenCalled(); });
 it("obtains ownership from child auth for direct start requests", async () => { await POST(request({ packId: id, childId: "sibling" })); expect(mocks.start).toHaveBeenCalledWith(child, id); });
+it("restarts only the authenticated child's saved lesson", async () => { await POST(request({ restartId: id, childId: "sibling", state: { completed: [] } })); expect(mocks.restart).toHaveBeenCalledWith(child, id); });
 it("scopes resume to the child and propagates unavailable history", async () => { mocks.load.mockRejectedValue(new TutorError("Saved lesson unavailable.", 404)); expect((await GET(request({}))).status).toBe(404); expect(mocks.load).toHaveBeenCalledWith(child, id); });
 it("passes only a command to the state service, never client-supplied stars/state", async () => {
   const command = { name: "explained", stepId: "step", revision: 0, callId: "one" };

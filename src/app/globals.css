@@ -111,6 +111,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 .tutor-cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr)); gap:24px; }
 .tutor-lesson-card { background:var(--card); padding:28px; border:1px solid var(--line); border-radius:24px; box-shadow:0 8px 24px #17264208; }
 .tutor-lesson-card h2 { margin:12px 0; font-size:1.8rem; } .tutor-lesson-card p { color:var(--muted); line-height:1.6; } .tutor-lesson-card .eyebrow { margin-top:24px; }
+.tutor-card-actions { display:flex; flex-wrap:wrap; align-items:center; gap:12px; }
 .tutor-badge { display:inline-block; background:var(--sun-soft); border-radius:20px; padding:6px 12px; font-size:.8rem; font-weight:800; }
 .tutor-request-panel { margin-top:32px; border:1px solid var(--line); border-radius:18px; padding:24px; background:var(--card); }
 .tutor-request-panel summary,.tutor-help summary { cursor:pointer; font-weight:800; padding:8px 0; min-height:44px; }

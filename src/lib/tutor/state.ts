@@ -1,13 +1,13 @@
 import type { LessonPack } from "./types";
 export type Phase = "explain" | "understanding" | "checkpoint" | "retry" | "ready" | "recap" | "completed";
 export type TutorState = { stepIndex: number; phase: Phase; completed: string[]; assessed: Record<string, "choice" | "accepted-text" | "model">; revision: number; callIds: string[]; clarificationId: string | null; focusId: string | null };
-export type TutorCommand = { callId: string; revision: number; stepId: string; name: "explained" | "show_section" | "show_step" | "highlight" | "clarify" | "ask_checkpoint" | "record_checkpoint" | "retry" | "continue" | "finish_lesson" | "resume"; target?: string; answer?: string; answerKind?: "choice" | "text" };
+export type TutorCommand = { callId: string; revision: number; stepId: string; name: "explained" | "show_section" | "show_step" | "highlight" | "clarify" | "ask_checkpoint" | "record_checkpoint" | "retry" | "continue" | "finish_lesson" | "resume" | "restart"; target?: string; answer?: string; answerKind?: "choice" | "text" };
 export class TransitionError extends Error {}
 export const initialTutorState = (): TutorState => ({ stepIndex: 0, phase: "explain", completed: [], assessed: {}, revision: 0, callIds: [], clarificationId: null, focusId: null });
 export function parseTutorCommand(value: unknown): TutorCommand {
   if (!value || typeof value !== "object" || Array.isArray(value)) throw new TransitionError("Invalid tutor command.");
   const c = value as Record<string, unknown>;
-  if (Object.keys(c).some(k => !["callId", "revision", "stepId", "name", "target", "answer", "answerKind"].includes(k)) || typeof c.callId !== "string" || !/^[a-zA-Z0-9_-]{1,100}$/.test(c.callId) || !Number.isSafeInteger(c.revision) || Number(c.revision) < 0 || typeof c.stepId !== "string" || c.stepId.length > 64 || !["explained", "show_section", "show_step", "highlight", "clarify", "ask_checkpoint", "record_checkpoint", "retry", "continue", "finish_lesson", "resume"].includes(String(c.name))) throw new TransitionError("Invalid tutor command.");
+  if (Object.keys(c).some(k => !["callId", "revision", "stepId", "name", "target", "answer", "answerKind"].includes(k)) || typeof c.callId !== "string" || !/^[a-zA-Z0-9_-]{1,100}$/.test(c.callId) || !Number.isSafeInteger(c.revision) || Number(c.revision) < 0 || typeof c.stepId !== "string" || c.stepId.length > 64 || !["explained", "show_section", "show_step", "highlight", "clarify", "ask_checkpoint", "record_checkpoint", "retry", "continue", "finish_lesson", "resume", "restart"].includes(String(c.name))) throw new TransitionError("Invalid tutor command.");
   const targeted = ["show_section", "show_step", "highlight", "clarify"].includes(String(c.name));
   if (targeted ? typeof c.target !== "string" || c.target.length > 64 : c.target !== undefined) throw new TransitionError("Invalid command target.");
   if (c.name === "record_checkpoint") {
@@ -21,6 +21,7 @@ export function applyTutorCommand(pack: LessonPack, state: TutorState, untrusted
   if (state.callIds.includes(command.callId)) return state;
   const step = pack.steps[state.stepIndex];
   if (!step || command.revision !== state.revision || command.stepId !== step.id) throw new TransitionError("The lesson has changed. Resume the current step.");
+  if (command.name === "restart") return { ...initialTutorState(), revision: state.revision + 1, callIds: [command.callId] };
   const next: TutorState = { ...state, completed: [...state.completed], assessed: { ...state.assessed }, callIds: [...state.callIds.slice(-63), command.callId], revision: state.revision + 1, clarificationId: null };
   const requirePhase = (...phases: Phase[]) => { if (!phases.includes(state.phase)) throw new TransitionError("Finish the current question before continuing."); };
   switch (command.name) {

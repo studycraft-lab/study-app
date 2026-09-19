@@ -50,4 +50,17 @@ describe("one deterministic formative tutoring state", () => {
     s.send({ name: "record_checkpoint", answerKind: "text", answer: " FOUR! " }); s.send({ name: "resume" });
     expect(s.state.phase).toBe("ready"); expect(s.state.completed).toHaveLength(1); expect(Object.values(s.state.assessed)).toEqual(["accepted-text"]);
   });
+  it("restarts a completed lesson and rejects commands from before the restart", () => {
+    const pack = fixture(shapes); const s = session(pack);
+    s.send({ name: "explained" }); s.send({ name: "ask_checkpoint" });
+    s.send({ name: "record_checkpoint", answerKind: "choice", answer: pack.steps[0].checkpoint.correctOptionId });
+    s.send({ name: "continue" }); s.send({ name: "finish_lesson" });
+    const oldRevision = s.state.revision;
+    const restart = s.send({ name: "restart" });
+    expect(s.state).toEqual({ ...initialTutorState(), revision: oldRevision + 1, callIds: [restart.callId] });
+    expect(applyTutorCommand(pack, s.state, restart)).toBe(s.state);
+    expect(() => s.send({ name: "explained", revision: oldRevision })).toThrow("changed");
+    s.send({ name: "explained" });
+    expect(s.state.phase).toBe("understanding");
+  });
 });

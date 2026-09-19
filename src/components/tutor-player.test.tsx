@@ -1,9 +1,9 @@
 import { cleanup, fireEvent, render, screen } from "@testing-library/react";
-import { afterEach, expect, it } from "vitest";
+import { afterEach, expect, it, vi } from "vitest";
 import shapes from "../../examples/lesson-packs/synthetic-shapes.json";
 import { validateLessonPack } from "@/lib/tutor/validate";
 import { TutorPlayer } from "./tutor-player";
-afterEach(cleanup);
+afterEach(() => { cleanup(); vi.restoreAllMocks(); });
 it("rehearses explanation, wrong answer, hint, retry, star and explicit recap without a provider", async () => {
   const result = validateLessonPack(shapes); if (!result.valid) throw new Error();
   render(<TutorPlayer pack={result.pack} />);
@@ -23,4 +23,18 @@ it("rehearses explanation, wrong answer, hint, retry, star and explicit recap wi
   fireEvent.click(await screen.findByRole("button", { name: "See recap" }));
   fireEvent.click(await screen.findByRole("button", { name: "Finish lesson" }));
   expect(screen.getByText(/Lesson complete/)).toBeVisible();
+});
+it("asks before clearing lesson progress and returns to the first explanation", async () => {
+  const result = validateLessonPack(shapes); if (!result.valid) throw new Error();
+  const confirm = vi.spyOn(window, "confirm").mockReturnValue(false);
+  render(<TutorPlayer pack={result.pack} />);
+  fireEvent.click(screen.getByRole("button", { name: "I have read the explanation" }));
+  expect(await screen.findByRole("button", { name: "I understand — ask me a question" })).toBeVisible();
+  fireEvent.click(screen.getByRole("button", { name: "Restart lesson" }));
+  expect(confirm).toHaveBeenCalled();
+  expect(screen.getByRole("button", { name: "I understand — ask me a question" })).toBeVisible();
+  confirm.mockReturnValue(true);
+  fireEvent.click(screen.getByRole("button", { name: "Restart lesson" }));
+  expect(await screen.findByRole("button", { name: "I have read the explanation" })).toBeVisible();
+  expect(screen.getByRole("status")).toHaveTextContent("0 / 1 tutoring stars");
 });

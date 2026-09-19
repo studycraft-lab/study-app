@@ -10,6 +10,7 @@ export function TutorPlayer({ pack, initialState, onCommand, onReload, progressI
   const [state, setState] = useState(initialState ?? initialTutorState);
   const [voiceSend, setVoiceSend] = useState<((text: string) => void) | null>(null);
   const [voiceMotionPaused, setVoiceMotionPaused] = useState(false);
+  const [voiceActive, setVoiceActive] = useState(false);
   const [paused, setPaused] = useState(false);
   const [answer, setAnswer] = useState("");
   const [busy, setBusy] = useState(false);
@@ -31,9 +32,19 @@ export function TutorPlayer({ pack, initialState, onCommand, onReload, progressI
     catch (cause) { setError(cause instanceof Error ? cause.message : "Could not save progress."); }
     finally { setBusy(false); }
   }
-  return <section className="tutor-player" aria-label="Tutoring player"><header className="tutor-player-heading"><p className="eyebrow">{pack.source.chapterTitle} · {recap ? "Recap" : `Step ${state.stepIndex + 1} of ${pack.steps.length}`}</p><h2>{pack.section.heading}</h2></header>
+  async function restart() {
+    if (busy || voiceActive || !window.confirm("Restart this lesson? Your saved steps and tutoring stars will be cleared.")) return;
+    setBusy(true); setError("");
+    const command: TutorCommand = { name: "restart", callId: crypto.randomUUID(), revision: state.revision, stepId: step.id };
+    try {
+      setState(onCommand ? await onCommand(command) : applyTutorCommand(pack, state, command));
+      setAnswer(""); setPaused(false); setVoiceMotionPaused(false);
+    } catch (cause) { setError(cause instanceof Error ? cause.message : "Could not restart lesson."); }
+    finally { setBusy(false); }
+  }
+  return <section className="tutor-player" aria-label="Tutoring player"><header className="tutor-player-heading"><p className="eyebrow">{pack.source.chapterTitle} · {recap ? "Recap" : `Step ${state.stepIndex + 1} of ${pack.steps.length}`}</p><h2>{pack.section.heading}</h2><button className="button-quiet" disabled={busy || voiceActive} title={voiceActive ? "End live voice before restarting" : undefined} onClick={() => void restart()}>Restart lesson</button></header>
     {!progressId && <p>Parent preview · No live AI or microphone.</p>}
-    {progressId && <TutorVoiceControls progressId={progressId} paused={paused} onActivity={setVoiceMotionPaused} onState={setState} onMode={send => setVoiceSend(() => send)} />}
+    {progressId && <TutorVoiceControls progressId={progressId} paused={paused} onActivity={setVoiceMotionPaused} onActiveChange={setVoiceActive} onState={setState} onMode={send => setVoiceSend(() => send)} />}
     <p role="status">{paused ? "Paused" : busy ? "Saving" : recap ? "Recap" : "Ready to read"} · {state.completed.length} / {pack.steps.length} tutoring stars</p>
     <progress className="tutor-progress" value={state.completed.length} max={pack.steps.length} aria-label="Lesson progress" />
     {error && <p role="alert">{error} {onReload && <button onClick={onReload}>Resume saved lesson</button>}</p>}

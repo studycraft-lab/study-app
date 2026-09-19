@@ -2,16 +2,16 @@
 import { useEffect, useRef, useState } from "react";
 import { BrowserTutorVoice, type VoiceStatus } from "@/lib/tutor/voice/browser";
 import type { TutorState } from "@/lib/tutor/state";
-export function TutorVoiceControls({ progressId, onState, onMode, onActivity, paused }: { progressId: string; onActivity: (paused: boolean) => void; paused: boolean; onState: (state: TutorState) => void; onMode: (send: ((text: string) => void) | null) => void }) {
+export function TutorVoiceControls({ progressId, onState, onMode, onActivity, onActiveChange, paused }: { progressId: string; onActivity: (paused: boolean) => void; onActiveChange?: (active: boolean) => void; paused: boolean; onState: (state: TutorState) => void; onMode: (send: ((text: string) => void) | null) => void }) {
   const [available, setAvailable] = useState(false); const [message, setMessage] = useState("Checking live voice availability…");
   const [status, setStatus] = useState<VoiceStatus>("idle"); const [muted, setMuted] = useState(false); const [text, setText] = useState(""); const [caption, setCaption] = useState("");
-  const connection = useRef<BrowserTutorVoice | null>(null); const callbacks = useRef({ onState,onMode,onActivity });
-  useEffect(() => { callbacks.current = { onState,onMode,onActivity }; },[onState,onMode,onActivity]);
+  const connection = useRef<BrowserTutorVoice | null>(null); const callbacks = useRef({ onState,onMode,onActivity,onActiveChange });
+  useEffect(() => { callbacks.current = { onState,onMode,onActivity,onActiveChange }; },[onState,onMode,onActivity,onActiveChange]);
   useEffect(() => {
     let mounted = true;
     void fetch("/api/study/tutor/voice").then(async response => { const data = await response.json(); if (mounted) { setAvailable(response.ok && data.available); setMessage(data.reason ?? "Microphone audio goes to OpenAI. No raw recordings or full transcripts are saved by StudyCraft."); } }).catch(() => { if (mounted) setMessage("Live voice unavailable. Rehearsal still works."); });
     const voice = new BrowserTutorVoice((next,detail) => {
-      if (!mounted) return; setStatus(next); callbacks.current.onActivity(["listening","muted","autoplay-blocked","permission","connecting"].includes(next)); if (detail) setMessage(detail);
+      if (!mounted) return; setStatus(next); callbacks.current.onActivity(["listening","muted","autoplay-blocked","permission","connecting"].includes(next)); callbacks.current.onActiveChange?.(!["idle","ended","error"].includes(next)); if (detail) setMessage(detail);
       callbacks.current.onMode(["listening","speaking","muted","autoplay-blocked"].includes(next) ? value => voice.text(value) : null);
     },event => {
       if (!mounted || !event || typeof event !== "object") return;

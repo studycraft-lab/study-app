@@ -1,0 +1,40 @@
+// @vitest-environment node
+import { readFileSync } from "node:fs";
+import { PGlite } from "@electric-sql/pglite";
+import { afterAll, beforeAll, expect, it } from "vitest";
+import fixture from "../../../examples/lesson-packs/synthetic-shapes.json";
+const db = new PGlite(); let family: string; let chapter: string; let a: string; let b: string;
+beforeAll(async () => {
+  await db.exec("create role anon; create role authenticated; create role service_role bypassrls;");
+  for (const file of ["20260901010000_create_content_library.sql", "20260901030000_create_family_profiles.sql", "20260915010000_create_tutor_content.sql", "20260915030000_create_tutor_requests.sql", "20260919060000_simplify_tutor_request_workflow.sql"]) await db.exec(readFileSync(`supabase/migrations/${file}`, "utf8").replace("create extension if not exists pgcrypto;", ""));
+  family = (await db.query<{ id: string }>("select id from families limit 1")).rows[0].id;
+  [a,b] = (await db.query<{ id: string }>("insert into child_profiles(family_id,display_name,board,grade,pin_salt,pin_hash) values($1,'A','Demo',6,'s','h'),($1,'B','Demo',6,'s','h') returning id", [family])).rows.map(r => r.id);
+  await db.query("insert into courses(family_id,fingerprint,board,grade,subject) values($1,'c','Demo',6,'Geometry')", [family]);
+  chapter = (await db.query<{ id: string }>("insert into chapters(course_id,fingerprint,title) select id,'ch','Synthetic shapes' from courses returning id")).rows[0].id;
+}, 60000);
+afterAll(async () => { await db.close(); });
+it("atomically imports and publishes a request, preserves isolation and rolls back failed publication", async () => {
+  const request = async (child: string) => (await db.query<{id:string}>("select request_tutor_section($1,$2,null,'Squares','1','help') as id",[child,chapter])).rows[0].id;
+  const first = await request(a); const sibling = await request(b);
+  const upload = (id: string, payload: unknown = fixture, owner = family) => db.query<{result:{id:string;created:boolean}}>("select import_requested_tutor_pack($1,$2,$3,$4) as result",[owner,id,payload,"a".repeat(64)]);
+  await expect(upload(first,fixture,"aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa")).rejects.toThrow("Request unavailable");
+  await expect(upload(first,{...fixture,section:{...fixture.section,heading:"Wrong"}})).rejects.toThrow("heading does not match");
+  await expect(upload(first,{...fixture,source:{...fixture.source,chapterTitle:"Wrong"}})).rejects.toThrow();
+  expect((await db.query("select * from tutor_packs")).rows).toHaveLength(0);
+  const packId = (await upload(first)).rows[0].result.id;
+  expect((await upload(first)).rows[0].result.created).toBe(false);
+  expect((await db.query<{status:string}>("select status from tutor_requests where id=$1",[first])).rows[0].status).toBe("preparing");
+  const publish = () => db.query("select publish_requested_tutor_pack($1,$2)",[family,packId]);
+  await expect(publish()).rejects.toThrow("Preview");
+  await db.query("select manage_tutor_pack($1,$2,'preview')",[family,packId]);
+  await db.query("update child_profiles set grade=7 where id=$1",[a]);
+  await expect(publish()).rejects.toThrow();
+  expect((await db.query<{status:string}>("select status from tutor_packs where id=$1",[packId])).rows[0].status).toBe("draft");
+  await db.query("update child_profiles set grade=6 where id=$1",[a]); await publish();
+  expect((await db.query<{status:string}>("select status from tutor_requests where id=$1",[first])).rows[0].status).toBe("ready");
+  expect((await db.query<{status:string}>("select status from tutor_requests where id=$1",[sibling])).rows[0].status).toBe("requested");
+  await upload(sibling);
+  expect((await db.query<{status:string}>("select status from tutor_requests where id=$1",[sibling])).rows[0].status).toBe("ready");
+  await expect(upload(first)).rejects.toThrow("already has a published lesson");
+  await db.exec("set role anon"); await expect(publish()).rejects.toThrow("permission denied"); await db.exec("reset role");
+});

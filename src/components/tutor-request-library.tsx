@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import type { AvailableLesson, TutorChapter, TutorRequest, TutorSection } from "@/lib/tutor/request-store";
 import { AppHeader } from "./app-header";
-type Library = { chapters: TutorChapter[]; sections: TutorSection[]; lessons: AvailableLesson[]; requests: TutorRequest[]; progress: { id: string; heading: string; completed: boolean }[] };
+type Library = { chapters: TutorChapter[]; sections: TutorSection[]; lessons: AvailableLesson[]; requests: TutorRequest[]; progress: { id: string; pack_id: string; chapter_title: string; heading: string; completed: boolean }[] };
 function useLibrary(parent: boolean) {
   const endpoint = parent ? "/api/parent/tutor/requests" : "/api/study/tutor/library";
   const [library, setLibrary] = useState<Library | null>(null); const [error, setError] = useState(""); const [busy, setBusy] = useState(false);
@@ -18,20 +18,30 @@ function useLibrary(parent: boolean) {
   return { library, error, busy, act, refresh: () => void load().catch(e => setError(e.message)) };
 }
 export function ChildTutorLibrary() {
-  const { library, error, busy, act, refresh } = useLibrary(false);
+  const { library, error, busy, act } = useLibrary(false);
   const [chapterId, setChapter] = useState(""); const [sectionId, setSection] = useState(""); const [heading, setHeading] = useState(""); const [page, setPage] = useState(""); const [note, setNote] = useState("");
   const sections = library?.sections.filter(s => s.chapter_id === chapterId) ?? [];
-  return <main className="study-shell"><AppHeader role="child" /><Link href="/study">Back to practice</Link><h1>Tutor a textbook section</h1><p>Your requests and saved progress are private to you. Your parent prepares each lesson.</p>{error && <p role="alert">{error}</p>}<button onClick={refresh}>Refresh status</button>
-    {library && <><section><h2>Available lessons</h2>{library.lessons.length ? library.lessons.map(lesson => <p key={lesson.id}><Link href={`/study/tutor?pack=${lesson.id}`}>Learn {lesson.heading}</Link> · {lesson.chapter_title}</p>) : <p>No published lessons yet. Request a section below.</p>}</section>
-      {library.progress.length > 0 && <section><h2>Saved lessons</h2>{library.progress.map(p => <p key={p.id}><Link href={`/study/tutor?resume=${p.id}`}>{p.completed ? "Review" : "Resume"} {p.heading}</Link></p>)}</section>}
-      <form onSubmit={e => { e.preventDefault(); void act({ chapterId, sectionId: sectionId || null, heading, page, note }); }}><h2>Request help</h2><fieldset disabled={busy}><legend>Choose one section</legend><label>Chapter <select value={chapterId} onChange={e => { setChapter(e.target.value); setSection(""); setHeading(""); }} required><option value="">Choose chapter</option>{library.chapters.map(ch => <option value={ch.id} key={ch.id}>{ch.courses.subject} · {ch.title}</option>)}</select></label>
-        <label>Textbook section <select value={sectionId} onChange={e => { setSection(e.target.value); const s = sections.find(s => s.id === e.target.value); setHeading(s?.heading ?? ""); setPage(s?.printed_pages.join(", ") ?? ""); }}><option value="">Propose a heading</option>{sections.map(s => <option key={s.id} value={s.id}>{s.heading}</option>)}</select></label>
-        {!sectionId && <label>Heading from your book <input value={heading} onChange={e => setHeading(e.target.value)} maxLength={200} required /></label>}
-        <label>Printed page, if known <input value={page} onChange={e => setPage(e.target.value)} maxLength={80} /></label><label>Optional note <input value={note} onChange={e => setNote(e.target.value)} maxLength={300} /></label><button disabled={!chapterId || !heading.trim()}>Request this section</button></fieldset></form>
-      <section><h2>Your requests</h2>{library.requests.map(r => <article key={r.id}><h3>{r.proposed_heading}</h3><p>{r.status === "ready" && !r.available ? "Unavailable — your parent needs to publish an eligible lesson for this section." : r.status === "preparing" ? "Your parent is preparing this section." : r.status === "requested" ? "Requested — waiting for your parent." : r.status === "declined" ? r.reason : "Ready to learn."}</p>{r.available && <Link href={`/study/tutor?pack=${r.pack_id}`}>Start {r.proposed_heading}</Link>}</article>)}</section>
+  return <main className="study-shell tutor-library"><AppHeader role="child" /><Link className="tutor-back" href="/study">← Back to study</Link>
+    <header className="tutor-heading"><p className="eyebrow">One step at a time</p><h1>Your lessons</h1><p>Choose a lesson. We’ll save your place as you go.</p></header>
+    {error && <p role="alert">{error}</p>}
+    {!library && !error && <p role="status">Loading your lessons…</p>}
+    {library && <>
+      <section className="tutor-cards" aria-label="Your lessons">
+        {library.progress.map(p => <article className="tutor-lesson-card" key={p.id}><span className="tutor-badge">{p.completed ? "Completed" : "In progress"}</span><p className="eyebrow">{p.chapter_title}</p><h2>{p.heading}</h2><p>{p.completed ? "Revisit what you learned." : "Pick up where you left off."}</p><Link className="tutor-primary" href={`/study/tutor?resume=${p.id}`}>{p.completed ? "Review" : "Resume"} {p.heading} →</Link></article>)}
+        {library.lessons.filter(lesson => !library.progress.some(p => p.pack_id === lesson.id)).map(lesson => <article className="tutor-lesson-card" key={lesson.id}><span className="tutor-badge">Ready to start</span><p className="eyebrow">{lesson.chapter_title}</p><h2>{lesson.heading}</h2><p>Learn with diagrams and short questions.</p><Link className="tutor-primary" href={`/study/tutor?pack=${lesson.id}`}>Learn {lesson.heading} →</Link></article>)}
+        {!library.lessons.length && !library.progress.length && <div className="tutor-lesson-card"><h2>Your first lesson is on its way</h2><p>Your parent can add a lesson, or you can request a section below.</p></div>}
+      </section>
+      <details className="tutor-request-panel"><summary>Need help with another section?</summary><p>Send your parent the chapter and heading you’d like to learn.</p>
+      <form onSubmit={e => { e.preventDefault(); void act({ chapterId, sectionId: sectionId || null, heading, page, note }); }}><fieldset disabled={busy}><legend>Request a lesson</legend><label>Chapter<select value={chapterId} onChange={e => { setChapter(e.target.value); setSection(""); setHeading(""); setPage(""); }} required><option value="">Choose a chapter</option>{library.chapters.map(ch => <option value={ch.id} key={ch.id}>{ch.courses.subject} · {ch.title}</option>)}</select></label>
+        {chapterId && <><label>Section<select value={sectionId} onChange={e => { setSection(e.target.value); const s = sections.find(s => s.id === e.target.value); setHeading(s?.heading ?? ""); setPage(s?.printed_pages.join(", ") ?? ""); }}><option value="">Enter a heading from my book</option>{sections.map(s => <option key={s.id} value={s.id}>{s.heading}</option>)}</select></label>
+        {!sectionId && <label>Heading from your book<input value={heading} onChange={e => setHeading(e.target.value)} maxLength={200} required /></label>}
+        <label>Page number (optional)<input value={page} onChange={e => setPage(e.target.value)} maxLength={80} /></label><label>Anything else? (optional)<input value={note} onChange={e => setNote(e.target.value)} maxLength={300} /></label></>}
+        <button className="tutor-primary" disabled={!chapterId || !heading.trim()}>{busy ? "Sending…" : "Send request"}</button></fieldset></form></details>
+      {library.requests.length > 0 && <section className="tutor-requests"><h2>Your requests</h2>{library.requests.map(r => <article className="tutor-request-card" key={r.id}><h3>{r.proposed_heading}</h3><p>{r.status === "ready" && !r.available ? "Unavailable — your parent needs to publish an eligible lesson for this section." : r.status === "preparing" ? "Your parent is preparing this lesson." : r.status === "requested" ? "Sent to your parent." : r.status === "declined" ? r.reason : "Ready to learn."}</p>{r.available && <Link href={`/study/tutor?pack=${r.pack_id}`}>Start {r.proposed_heading}</Link>}</article>)}</section>}
     </>}
   </main>;
 }
+
 function RequestRow({ request, library, busy, act }: { request: TutorRequest; library: Library; busy: boolean; act: (body: unknown, method?: string) => Promise<void> }) {
   const [sectionId, setSection] = useState(request.section_id ?? ""); const [packId, setPack] = useState(""); const [reason, setReason] = useState("");
   return <article><h3>{request.child_profiles?.display_name}: {request.proposed_heading}</h3><p>{library.chapters.find(c => c.id === request.chapter_id)?.title} · {request.page_reference} · {request.status}</p><p>{request.note}</p>{request.status === "declined" ? <p>{request.reason}</p> : <fieldset disabled={busy}><legend>Prepare this request</legend><label>Exact teaching section <select value={sectionId} onChange={e => setSection(e.target.value)}><option value="">Narrow to a section</option>{library.sections.filter(s => s.chapter_id === request.chapter_id).map(s => <option key={s.id} value={s.id}>{s.heading}</option>)}</select></label><button disabled={!sectionId} onClick={() => void act({ id: request.id, action: "preparing", sectionId, reason: "" }, "PATCH")}>Mark preparing</button>

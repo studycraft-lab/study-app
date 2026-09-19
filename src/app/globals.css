@@ -100,3 +100,36 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
   .tutor-element { animation: none; }
   .tutor-move { transform: translate(var(--tutor-dx), var(--tutor-dy)); }
 }
+
+/* Child tutoring: one primary task per card, secondary forms on demand. */
+.tutor-entry { display:flex; align-items:center; justify-content:space-between; gap:24px; padding:28px; margin:0 auto 32px; background:var(--blue-soft); border:1px solid var(--line); border-radius:var(--radius-md); max-width:1180px; }
+.tutor-entry h2 { margin:8px 0; font-size:1.5rem; } .tutor-entry p { margin:0; color:var(--ink-soft); }
+.tutor-primary { display:inline-flex; align-items:center; justify-content:center; min-height:48px; padding:12px 20px; background:var(--navy); color:white; border:0; border-radius:12px; font-weight:800; text-decoration:none; }
+.tutor-primary:hover { opacity:.9; } .tutor-primary:disabled { opacity:.45; cursor:not-allowed; }
+.tutor-back { display:inline-block; margin-bottom:24px; color:var(--ink-soft); font-weight:700; padding:8px 0; }
+.tutor-heading { margin-bottom:32px; } .tutor-heading h1 { font-size:clamp(2rem,5vw,3rem); margin:8px 0 12px; } .tutor-heading p { color:var(--muted); }
+.tutor-cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr)); gap:24px; }
+.tutor-lesson-card { background:var(--card); padding:28px; border:1px solid var(--line); border-radius:24px; box-shadow:0 8px 24px #17264208; }
+.tutor-lesson-card h2 { margin:12px 0; font-size:1.8rem; } .tutor-lesson-card p { color:var(--muted); line-height:1.6; } .tutor-lesson-card .eyebrow { margin-top:24px; }
+.tutor-badge { display:inline-block; background:var(--sun-soft); border-radius:20px; padding:6px 12px; font-size:.8rem; font-weight:800; }
+.tutor-request-panel { margin-top:32px; border:1px solid var(--line); border-radius:18px; padding:24px; background:var(--card); }
+.tutor-request-panel summary,.tutor-help summary { cursor:pointer; font-weight:800; padding:8px 0; min-height:44px; }
+.tutor-request-panel fieldset { border:0; margin:16px 0 0; padding:0; display:grid; gap:20px; max-width:640px; }
+.tutor-request-panel legend { padding-bottom:16px; font-weight:800; }
+.tutor-request-panel label,.tutor-player form label { display:grid; gap:8px; font-weight:650; }
+.tutor-request-panel input,.tutor-request-panel select,.tutor-player input { width:100%; min-width:0; min-height:48px; border:1px solid var(--line-strong); border-radius:10px; padding:12px; background:white; color:var(--ink); font:inherit; }
+.tutor-request-panel button { justify-self:start; } .tutor-requests { margin-top:32px; } .tutor-request-card { border-bottom:1px solid var(--line); padding:16px 0; }
+.tutor-player { background:var(--card); border:1px solid var(--line); border-radius:24px; padding:clamp(18px,4vw,36px); }
+.tutor-player-heading h2 { font-size:clamp(2rem,5vw,3rem); margin:12px 0 24px; }
+.tutor-voice-notice { display:flex; flex-wrap:wrap; gap:6px 12px; padding:14px 18px; border-radius:12px; background:var(--paper-deep); color:var(--ink-soft); font-size:.9rem; margin-bottom:20px; }
+.tutor-progress { width:100%; height:8px; accent-color:var(--success); margin-bottom:28px; }
+.tutor-layout { grid-template-columns:minmax(0,1.15fr) minmax(0,1fr); gap:32px; }
+.tutor-layout svg { width:100%; height:auto; border-radius:18px; }
+.tutor-layout [aria-label="Tutor caption"] { font-size:1.1rem; line-height:1.8; margin-top:0; }
+.tutor-player fieldset { border:0; padding:16px 0; min-width:0; }
+.tutor-help { margin-top:18px; border-top:1px solid var(--line); padding-top:10px; }
+.tutor-help p { line-height:1.7; color:var(--muted); }
+.tutor-voice-panel { padding:18px; background:var(--blue-soft); border-radius:16px; margin-bottom:24px; }
+@media(max-width:700px) { .tutor-entry { align-items:stretch; flex-direction:column; padding:22px; } .tutor-layout { grid-template-columns:1fr; } .tutor-player { padding:18px; } }
+.tutor-library .role-label:empty,.tutor-lesson .role-label:empty { display:none; }
+@media(max-width:650px) { .tutor-library .app-header,.tutor-lesson .app-header { flex-direction:column; gap:12px; } .tutor-library .app-header nav,.tutor-lesson .app-header nav { width:100%; justify-content:space-between; } }

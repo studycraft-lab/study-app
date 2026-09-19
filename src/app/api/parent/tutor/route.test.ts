@@ -1,10 +1,11 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import pack from "../../../../../examples/lesson-packs/synthetic-shapes.json";
 vi.mock("server-only", () => ({}));
-const mocks = vi.hoisted(() => ({ authorized: vi.fn(), family: vi.fn(), import: vi.fn(), manage: vi.fn(), list: vi.fn(), chapters: vi.fn() }));
+const mocks = vi.hoisted(() => ({ requested: vi.fn(), publish: vi.fn(), authorized: vi.fn(), family: vi.fn(), import: vi.fn(), manage: vi.fn(), list: vi.fn(), chapters: vi.fn() }));
 vi.mock("@/lib/parent-auth", () => ({ isParentAuthorized: mocks.authorized }));
 vi.mock("@/lib/family/store", () => ({ ensureFamily: mocks.family }));
 vi.mock("@/lib/tutor/content-store", () => ({ importTutorPack: mocks.import, manageTutorPack: mocks.manage, parentTutorPacks: mocks.list, tutorChapters: mocks.chapters }));
+vi.mock("@/lib/tutor/preparation", () => ({ importRequestedPack: mocks.requested, publishRequestedPack: mocks.publish }));
 import { GET, POST, PATCH } from "./route";
 import { TutorError } from "@/lib/tutor/http";
 const chapterId = "11111111-1111-1111-1111-111111111111";
@@ -29,5 +30,12 @@ describe("parent tutoring boundary (mocked persistence)", () => {
   it("reports immutable-version collisions", async () => { mocks.import.mockRejectedValue(new TutorError("Increase contentVersion.", 409)); expect((await POST(request({ pack, chapterId, mappingConfirmed: true }))).status).toBe(409); });
   it("limits actual bytes without trusting content-length", async () => { expect((await POST(request({ pad: "x".repeat(280000) }))).status).toBe(413); expect(mocks.import).not.toHaveBeenCalled(); });
   it("rejects non-JSON uploads", async () => { expect((await POST(request({}, "text/html"))).status).toBe(415); });
-  it("scopes publication to server family", async () => { await PATCH(request({ id: chapterId, action: "publish", familyId: "other" })); expect(mocks.manage).toHaveBeenCalledWith("family-a", chapterId, "publish"); });
+  it("scopes publication to server family", async () => { await PATCH(request({ id: chapterId, action: "publish", familyId: "other" })); expect(mocks.publish).toHaveBeenCalledWith("family-a", chapterId); });
+});
+
+it("imports for the server-owned request without manual mapping", async () => {
+  mocks.requested.mockResolvedValue({id:"pack",created:true});
+  expect((await POST(request({requestId:chapterId,pack,familyId:"other"}))).status).toBe(201);
+  expect(mocks.requested).toHaveBeenCalledWith("family-a",chapterId,pack);
+  expect(mocks.import).not.toHaveBeenCalled();
 });

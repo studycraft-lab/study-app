@@ -169,3 +169,16 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 .parent-tutor .content-tabs { margin:16px 0 24px; }
 .parent-preview .tutor-player-heading h2 { display:none; }
 .parent-preview .tutor-player fieldset { border:0; padding:12px 0; }
+
+.preparation-steps { list-style: none; counter-reset: preparation; padding: 0; display: grid; gap: 1.25rem; }
+.preparation-steps > li { counter-increment: preparation; position: relative; padding: 1.25rem 1.25rem 1.25rem 4rem; border: 1px solid var(--line); border-radius: 1rem; background: var(--card); }
+.preparation-steps > li::before { content: counter(preparation); position: absolute; left: 1rem; top: 1rem; display: grid; place-items: center; width: 2rem; height: 2rem; border-radius: 50%; background: #e4eee8; color: #244536; font-weight: 700; }
+.preparation-steps h3 { margin-top: 0; }
+.request-workflow textarea { width: 100%; min-width: 0; max-width: 100%; font: .8rem/1.5 monospace; }
+.lesson-upload { display: grid; gap: .6rem; padding: 1rem; border: 1px dashed #8b9e90; border-radius: .75rem; }
+.lesson-upload input { width: 100%; min-width: 0; }
+.request-workflow blockquote { margin: 1rem 0; padding: .5rem 1rem; border-left: 3px solid #8b9e90; }
+@media (max-width: 600px) {
+  .preparation-steps > li { padding: 1rem; }
+  .preparation-steps h3 { padding-left: 2.75rem; min-height: 2rem; }
+}

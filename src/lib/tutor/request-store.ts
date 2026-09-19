@@ -4,7 +4,7 @@ import { tutorChapters } from "./content-store";
 import { TutorError } from "./http";
 import type { TutorChild } from "./progress-store";
 export type TutorChapter = { id: string; title: string; courses: { board: string; grade: number; subject: string } };
-export type TutorSection = { id: string; chapter_id: string; heading: string; external_id: string; printed_pages: string[] };
+export type TutorSection = { id: string; chapter_id: string; heading: string; external_id: string; heading_path?: string[]; printed_pages: string[] };
 export type TutorRequest = { id: string; child_id: string; chapter_id: string; section_id: string | null; proposed_heading: string; page_reference: string; note: string; status: "requested" | "preparing" | "ready" | "declined"; reason: string; pack_id: string | null; available: boolean; child_profiles?: { display_name: string } };
 export type AvailableLesson = { id: string; section_id: string; chapter_id: string; heading: string; chapter_title: string; content_version: number };
 export async function tutorRequestLibrary(familyId: string, child?: TutorChild) {
@@ -15,7 +15,7 @@ export async function tutorRequestLibrary(familyId: string, child?: TutorChild) 
   let requestQuery = client.from("tutor_requests").select(child ? "*" : "*,child_profiles(display_name)").eq("family_id", familyId).order("created_at", { ascending: false });
   if (child) requestQuery = requestQuery.eq("child_id", child.id);
   const [sectionResult, packResult, requestResult, progressResult] = await Promise.all([
-    ids.length ? client.from("tutor_sections").select("id,chapter_id,heading,external_id,printed_pages").in("chapter_id", ids) : Promise.resolve({ data: [], error: null }),
+    ids.length ? client.from("tutor_sections").select("id,chapter_id,heading,external_id,heading_path,printed_pages").in("chapter_id", ids) : Promise.resolve({ data: [], error: null }),
     ids.length ? client.from("tutor_library").select("id,section_id,chapter_id,heading,chapter_title,content_version,status").eq("family_id", familyId).in("chapter_id", ids) : Promise.resolve({ data: [], error: null }),
     requestQuery,
     child ? client.from("tutor_progress").select("id,pack_id,state").eq("child_id", child.id).order("updated_at", { ascending: false }) : Promise.resolve({ data: [], error: null }),

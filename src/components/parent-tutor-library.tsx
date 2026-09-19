@@ -2,20 +2,15 @@
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import { ParentVoicePermission } from "./tutor-voice-controls";
-import { ParentTutorRequests } from "./tutor-request-library";
+import { ParentTutorRequests } from "./parent-tutor-requests";
 import { TutorPlayer } from "./tutor-player";
 import { AppHeader } from "./app-header";
-import { MAX_PACK_BYTES, validateLessonPack } from "@/lib/tutor/validate";
-import type { LessonPack } from "@/lib/tutor/types";
+import { validateLessonPack } from "@/lib/tutor/validate";
 import type { TutorPackRow } from "@/lib/tutor/content-store";
 
-type Chapter = { id: string; title: string; courses: { board: string; grade: number; subject: string } };
 export function ParentTutorLibrary() {
   const [packs, setPacks] = useState<TutorPackRow[]>([]);
-  const [chapters, setChapters] = useState<Chapter[]>([]);
-  const [pack, setPack] = useState<LessonPack | null>(null);
-  const [chapterId, setChapterId] = useState("");
-  const [confirmed, setConfirmed] = useState(false);
+  const [preparing,setPreparing] = useState(false);
   const [preview, setPreview] = useState<TutorPackRow | null>(null);
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState("");
@@ -24,7 +19,7 @@ export function ParentTutorLibrary() {
   const load = useCallback(async () => {
     const response = await fetch("/api/parent/tutor"); const data = await response.json();
     if (!response.ok) throw new Error(data.error);
-    setPacks(data.packs); setChapters(data.chapters);
+    setPacks(data.packs); return data.packs as TutorPackRow[];
   }, []);
   useEffect(() => { load().catch(e => setError(e.message)); }, [load]);
   async function run(task: () => Promise<void>) {
@@ -38,7 +33,7 @@ export function ParentTutorLibrary() {
       const response = await fetch("/api/parent/tutor", { method: "PATCH", headers: { "content-type": "application/json" }, body: JSON.stringify({ id: row.id, action }) });
       const data = await response.json(); if (!response.ok) throw new Error(data.error);
       if (action === "preview") setPreview(row);
-      else { setPreview(null); setMessage(action === "publish" ? "Lesson published for eligible children." : "Lesson archived. Saved lessons remain available to finish."); }
+      else { setPreview(null); setPreparing(false); setMessage(action === "publish" ? "Published for your child. Linked requests are ready to open." : "Lesson archived. Saved lessons remain available to finish."); }
       await load();
     });
   }
@@ -46,42 +41,23 @@ export function ParentTutorLibrary() {
   const visiblePacks = packs.filter(row => !subject || row.payload.source.subject === subject);
   const previewRow = preview && (packs.find(row => row.id === preview.id) ?? preview);
   return <main className="parent-shell parent-tutor"><AppHeader role="parent" />
-    <header className="parent-intro"><p className="eyebrow">Parent workspace</p><h1>{preview ? preview.heading : "Tutoring lessons"}</h1><p>{preview ? "Review the lesson your child will see, then publish when it is ready." : "Manage lessons by subject and chapter. Published lessons appear in your child’s chapter."}</p></header>
+    <header className="parent-intro"><p className="eyebrow">Parent workspace</p><h1>{preview ? preview.heading : "Tutoring lessons"}</h1><p>{preview ? "Review the lesson your child will see, then publish when it is ready." : "Prepare a requested lesson in Codex, upload it here, then publish it for your child."}</p></header>
     <nav className="content-tabs" aria-label="Content type"><Link href="/parent/library">Practice questions</Link><Link href="/parent/library/tutor" aria-current="page">Tutoring lessons</Link></nav>
     {error && <p className="notice notice-error" role="alert">{error}</p>}{message && <p className="notice" role="status">{message}</p>}
     {preview && previewRow ? <section className="parent-preview" aria-label="Scripted lesson preview">
-      <div className="parent-preview-toolbar"><button className="button-quiet" onClick={() => setPreview(null)}>← Back to lessons</button><span className="tutor-badge">{previewRow.status === "published" ? "Visible to children" : previewRow.status === "draft" ? "Draft · not visible to children" : "Archived"}</span>{previewRow.status === "draft" && <button disabled={busy || !previewRow.previewed_at} onClick={() => void action(previewRow, "publish")}>Publish {preview.heading} v{preview.content_version}</button>}</div>
+      <div className="parent-preview-toolbar"><button className="button-quiet" onClick={() => {setPreview(null);setPreparing(false);}}>← Back to lessons</button><span className="tutor-badge">{previewRow.status === "published" ? "Visible to children" : previewRow.status === "draft" ? "Draft · not visible to children" : "Archived"}</span>{previewRow.status === "draft" && <button disabled={busy || !previewRow.previewed_at} onClick={() => void action(previewRow, "publish")} aria-label={`Publish ${preview.heading} v${preview.content_version}`}>Publish for child</button>}</div>
       <p className="preview-note">No voice API is used. This preview shows the diagrams, explanations and questions.</p>
       <TutorPlayer key={preview.id} pack={preview.payload} />
     </section> : <>
-    <section className="parent-tutor-panel" aria-label="Saved lessons"><div className="parent-panel-heading"><div><h2>Lesson library</h2><p>Preview a draft before publishing it for your child.</p></div>{subjects.length > 1 && <label>Subject<select value={subject} onChange={e => setSubject(e.target.value)}><option value="">All subjects</option>{subjects.map(name => <option key={name}>{name}</option>)}</select></label>}</div>
-      {!packs.length && <p>No lessons yet. Add a prepared lesson below to get started.</p>}
+    <ParentTutorRequests key={packs.map(p => `${p.id}:${p.status}`).join(",")} packs={packs} onFocus={setPreparing} onPreview={row => void action(row,"preview")} onUploaded={async id => {const updated=await load();const row=updated.find(p=>p.id===id);if(!row) throw new Error("Uploaded lesson could not be loaded. Refresh and try preview again.");await action(row,"preview");}} />
+    {!preparing && <section className="parent-tutor-panel" aria-label="Saved lessons"><div className="parent-panel-heading"><div><h2>Lesson library</h2><p>Preview a draft before publishing it for your child.</p></div>{subjects.length > 1 && <label>Subject<select value={subject} onChange={e => setSubject(e.target.value)}><option value="">All subjects</option>{subjects.map(name => <option key={name}>{name}</option>)}</select></label>}</div>
+      {!packs.length && <p>No lessons yet. Open a child’s request above to prepare one.</p>}
       {[...new Set(visiblePacks.map(row => row.chapter_id ?? row.chapter_title))].map(chapterKey => {
         const rows = visiblePacks.filter(row => (row.chapter_id ?? row.chapter_title) === chapterKey);
         const first = rows[0];
         return <section className="parent-lesson-chapter" key={chapterKey}><p className="eyebrow">{first.payload.source.subject} · {first.payload.source.board} · Grade {first.payload.source.grade}</p><h3>{first.chapter_title}</h3><div className="parent-lesson-grid">{rows.map(row => <article className="parent-lesson-card" key={row.id}><span className="tutor-badge">{row.status === "published" ? "Published" : row.status === "draft" ? "Draft" : "Archived"}</span><h4>{row.heading}</h4><p>Version {row.content_version} · {row.payload.steps.length} teaching steps</p><p>{row.status === "published" ? "Available in your child’s chapter." : row.status === "draft" ? "Only you can see this until it is published." : "Saved progress is still available to children."}</p><div className="button-row"><button disabled={busy} onClick={() => void action(row, "preview")}>Preview {row.heading} v{row.content_version}</button>{row.status === "draft" && <button className="button-secondary" disabled={busy || !row.previewed_at} onClick={() => void action(row, "publish")}>Publish {row.heading} v{row.content_version}</button>}</div>{row.status !== "archived" && <details className="tutor-help"><summary>Manage version</summary><p>Archiving hides this version from new learners. Existing progress is kept.</p><button className="button-quiet" disabled={busy} onClick={() => void action(row, "archive")}>Archive {row.heading} v{row.content_version}</button></details>}</article>)}</div></section>;
       })}
-    </section>
-    <details className="parent-tutor-panel parent-import"><summary>Add a prepared lesson</summary><p>Upload a lesson file, check its chapter, then preview it before publishing.</p>
-    <label>Lesson JSON <input type="file" accept=".json,application/json" disabled={busy} onChange={event => {
-      const file = event.target.files?.[0]; setPack(null); setConfirmed(false);
-      if (file) void run(async () => {
-        if (file.size > MAX_PACK_BYTES || !file.name.toLowerCase().endsWith(".json")) throw new Error("Choose a JSON file no larger than 256 KiB.");
-        const result = validateLessonPack(JSON.parse(await file.text()));
-        if (!result.valid) throw new Error(result.errors.join("\n"));
-        setPack(result.pack);
-      });
-    }} /></label>
-    {pack && <section aria-label="Import details"><h2>{pack.section.heading}</h2><p>{pack.source.board} · Grade {pack.source.grade} · {pack.source.chapterTitle}</p><p>Printed pages: {pack.section.printedPages.join(", ")}. PDF pages: {pack.section.pdfPages.join(", ") || "Not supplied"}.</p><p>{pack.scenes.length} scenes · {pack.steps.length} checkpoints · Source review: {pack.source.sourceStatus}</p><ul>{pack.goals.map(goal => <li key={goal}>{goal}</li>)}</ul>
-      <label>Existing chapter <select value={chapterId} onChange={e => { setChapterId(e.target.value); setConfirmed(false); }}><option value="">Choose chapter</option>{chapters.map(ch => <option key={ch.id} value={ch.id}>{ch.courses.board} · Grade {ch.courses.grade} · {ch.courses.subject} · {ch.title}</option>)}</select></label>
-      <label><input type="checkbox" checked={confirmed} onChange={e => setConfirmed(e.target.checked)} />I confirm this chapter and exact section: {pack.section.path.join(" / ")}</label>
-      <button disabled={busy || !confirmed || !chapterId} onClick={() => void run(async () => {
-        const response = await fetch("/api/parent/tutor", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ pack, chapterId, mappingConfirmed: confirmed }) });
-        const data = await response.json(); if (!response.ok) throw new Error(data.errors?.join("\n") ?? data.error);
-        setMessage(data.created ? "Draft imported. Preview it before publication." : "This version is already imported."); setPack(null); await load();
-      })}>Import draft</button></section>}
-    </details>
-    <ParentTutorRequests />
+    </section>}
     <details className="parent-tutor-panel"><summary>Voice settings</summary><ParentVoicePermission /></details>
     </>}
   </main>;

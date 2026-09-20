@@ -1,0 +1,111 @@
+{
+  "reviewVersion": "0.1.0",
+  "bankId": "python-conditional-statements-v1",
+  "bankVersion": 1,
+  "reviewedAt": "2026-09-20T00:00:00Z",
+  "reviewerMethod": "Codex page-by-page comparison of extracted handout and supplied past paper, followed by schema, hash, rubric, and deterministic grounding checks",
+  "inputs": {
+    "manifest": "ingestion-artifacts/python-conditional-statements-chapter-manifest.json",
+    "bank": "ingestion-artifacts/python-conditional-statements-question-bank.json",
+    "sourceAssetCount": 2,
+    "pageRange": "handout PDF 1–8; past-paper PDF 1–7"
+  },
+  "gates": {
+    "manifestSchema": "pass",
+    "sourceHashes": "pass",
+    "questionBankSchema": "pass",
+    "deterministicGroundingReview": "pass",
+    "manualGroundingReview": "pass",
+    "rubricBalanceReview": "pass",
+    "childPromptLanguageReview": "pass"
+  },
+  "coverage": {
+    "questionCount": 58,
+    "topics": {
+      "decisions": 3,
+      "syntax": 10,
+      "comparisons": 6,
+      "input": 3,
+      "revision": 9,
+      "tracing": 14,
+      "programs": 13
+    },
+    "types": {
+      "single_choice": 40,
+      "fill_blank": 3,
+      "multi_point": 15
+    },
+    "difficulties": {
+      "1": 43,
+      "3": 15
+    },
+    "origins": {
+      "chapter_content": 24,
+      "end_exercise": 34
+    },
+    "selectionPriorities": {
+      "1": 38,
+      "2": 20
+    },
+    "pages": {
+      "conditional-handout-p4": 6,
+      "conditional-handout-p3": 2,
+      "conditional-handout-p2": 4,
+      "past-paper-p4": 11,
+      "past-paper-p3": 7,
+      "conditional-handout-p6": 4,
+      "conditional-handout-p5": 3,
+      "past-paper-p2": 2,
+      "conditional-handout-p8": 7,
+      "conditional-handout-p7": 2,
+      "past-paper-p5": 3,
+      "past-paper-p6": 5,
+      "past-paper-p7": 7
+    },
+    "sourceProgramCoverage": [
+      "handout positive, even/odd, greater number, grade ladder",
+      "past paper code correction, if...else syntax, water meter, angle, double highest mark, award area, spy number, delivery charge, profit/loss, area/circumference, 24-hour time"
+    ],
+    "excluded": [
+      {
+        "source": "past-paper-p6",
+        "item": "Question 6(a), significance of Indian-flag colours",
+        "reason": "The supplied paper asks for the meanings but does not provide them. A source-grounded model answer would require another source."
+      }
+    ]
+  },
+  "atomicCoverageInventory": {
+    "handout": [
+      "simple if syntax and false branch",
+      "if...else syntax and two paths",
+      "if...elif...else first true branch and order",
+      "positive input program",
+      "even/odd modulo program",
+      "greater number program and equal-input caveat",
+      "grade thresholds and boundary cases"
+    ],
+    "pastPaperPython": [
+      "output of case-sensitive multiple assignment",
+      "division, floor division, multiplication and exponentiation",
+      "assignment versus comparison and inequality",
+      "bool type and condition result",
+      "invalid variable names and reasons",
+      "string comparison code correction",
+      "if...else syntax",
+      "5-mark and 7-mark programs listed in coverage"
+    ]
+  },
+  "sourceAssetReadiness": {
+    "childVisibleVisualQuestions": 0,
+    "runtimeAssetsRequired": false
+  },
+  "blockingFindings": [],
+  "advisoryNotes": [
+    "The handout prints no explicit learning-outcome list; manifest outcomes are inferred from its syntax and program pages.",
+    "The supplied handout PDF text extraction omits visual indentation in sample code; example programs and answers use valid Python indentation.",
+    "The handout greater-number program treats equal inputs as an else case; an explicit tracing item calls this out and the authored writing task handles equality.",
+    "Standalone programming desk stores drafts locally and offers example solutions; it does not execute Python.",
+    "The question bank is ready for parent import; this environment has no server credentials or parent passphrase for a live import."
+  ],
+  "decision": "accept"
+}

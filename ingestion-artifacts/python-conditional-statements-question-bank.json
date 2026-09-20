@@ -1,0 +1,3754 @@
+{
+  "schemaVersion": "0.1.0",
+  "bank": {
+    "id": "python-conditional-statements-v1",
+    "version": 1,
+    "title": "Python: Conditional Statements",
+    "board": "ICSE",
+    "subject": "Computer Studies",
+    "grade": 6,
+    "bookTitle": "Conditional Statements (class handout)",
+    "chapterNumber": 1,
+    "status": "reviewed"
+  },
+  "sources": [
+    {
+      "id": "conditional-handout-p1",
+      "pageNumber": 1,
+      "assetRef": "manifest://python-conditional-statements/conditional-handout-p1",
+      "extractionConfidence": 0.99,
+      "reviewRequired": false,
+      "regions": []
+    },
+    {
+      "id": "conditional-handout-p2",
+      "pageNumber": 2,
+      "assetRef": "manifest://python-conditional-statements/conditional-handout-p2",
+      "extractionConfidence": 0.99,
+      "reviewRequired": false,
+      "regions": []
+    },
+    {
+      "id": "conditional-handout-p3",
+      "pageNumber": 3,
+      "assetRef": "manifest://python-conditional-statements/conditional-handout-p3",
+      "extractionConfidence": 0.99,
+      "reviewRequired": false,
+      "regions": []
+    },
+    {
+      "id": "conditional-handout-p4",
+      "pageNumber": 4,
+      "assetRef": "manifest://python-conditional-statements/conditional-handout-p4",
+      "extractionConfidence": 0.99,
+      "reviewRequired": false,
+      "regions": []
+    },
+    {
+      "id": "conditional-handout-p5",
+      "pageNumber": 5,
+      "assetRef": "manifest://python-conditional-statements/conditional-handout-p5",
+      "extractionConfidence": 0.99,
+      "reviewRequired": false,
+      "regions": []
+    },
+    {
+      "id": "conditional-handout-p6",
+      "pageNumber": 6,
+      "assetRef": "manifest://python-conditional-statements/conditional-handout-p6",
+      "extractionConfidence": 0.99,
+      "reviewRequired": false,
+      "regions": []
+    },
+    {
+      "id": "conditional-handout-p7",
+      "pageNumber": 7,
+      "assetRef": "manifest://python-conditional-statements/conditional-handout-p7",
+      "extractionConfidence": 0.99,
+      "reviewRequired": false,
+      "regions": []
+    },
+    {
+      "id": "conditional-handout-p8",
+      "pageNumber": 8,
+      "assetRef": "manifest://python-conditional-statements/conditional-handout-p8",
+      "extractionConfidence": 0.99,
+      "reviewRequired": false,
+      "regions": []
+    },
+    {
+      "id": "past-paper-p1",
+      "pageNumber": 1,
+      "assetRef": "manifest://python-conditional-statements/past-paper-p1",
+      "extractionConfidence": 0.99,
+      "reviewRequired": false,
+      "regions": []
+    },
+    {
+      "id": "past-paper-p2",
+      "pageNumber": 2,
+      "assetRef": "manifest://python-conditional-statements/past-paper-p2",
+      "extractionConfidence": 0.99,
+      "reviewRequired": false,
+      "regions": []
+    },
+    {
+      "id": "past-paper-p3",
+      "pageNumber": 3,
+      "assetRef": "manifest://python-conditional-statements/past-paper-p3",
+      "extractionConfidence": 0.99,
+      "reviewRequired": false,
+      "regions": []
+    },
+    {
+      "id": "past-paper-p4",
+      "pageNumber": 4,
+      "assetRef": "manifest://python-conditional-statements/past-paper-p4",
+      "extractionConfidence": 0.99,
+      "reviewRequired": false,
+      "regions": []
+    },
+    {
+      "id": "past-paper-p5",
+      "pageNumber": 5,
+      "assetRef": "manifest://python-conditional-statements/past-paper-p5",
+      "extractionConfidence": 0.99,
+      "reviewRequired": false,
+      "regions": []
+    },
+    {
+      "id": "past-paper-p6",
+      "pageNumber": 6,
+      "assetRef": "manifest://python-conditional-statements/past-paper-p6",
+      "extractionConfidence": 0.99,
+      "reviewRequired": false,
+      "regions": []
+    },
+    {
+      "id": "past-paper-p7",
+      "pageNumber": 7,
+      "assetRef": "manifest://python-conditional-statements/past-paper-p7",
+      "extractionConfidence": 0.99,
+      "reviewRequired": false,
+      "regions": []
+    }
+  ],
+  "topics": [
+    {
+      "id": "decisions",
+      "title": "Choosing a branch",
+      "learningOutcomeIds": [
+        "decisions"
+      ]
+    },
+    {
+      "id": "syntax",
+      "title": "Syntax and indentation",
+      "learningOutcomeIds": [
+        "syntax"
+      ]
+    },
+    {
+      "id": "comparisons",
+      "title": "Comparisons and operators",
+      "learningOutcomeIds": [
+        "comparisons"
+      ]
+    },
+    {
+      "id": "input",
+      "title": "Input and data types",
+      "learningOutcomeIds": [
+        "input"
+      ]
+    },
+    {
+      "id": "tracing",
+      "title": "Trace and debug",
+      "learningOutcomeIds": [
+        "tracing"
+      ]
+    },
+    {
+      "id": "programs",
+      "title": "Write a program",
+      "learningOutcomeIds": [
+        "programs"
+      ]
+    },
+    {
+      "id": "revision",
+      "title": "Earlier Python skills",
+      "learningOutcomeIds": [
+        "revision"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-001",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "chapter_content",
+      "selectionPriority": 1,
+      "topicIds": [
+        "decisions"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Which form runs code only when its condition is True?",
+      "sourceRefs": [
+        {
+          "pageId": "conditional-handout-p4",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "if"
+          },
+          {
+            "id": "option-2",
+            "text": "if...else"
+          },
+          {
+            "id": "option-3",
+            "text": "if...elif...else"
+          },
+          {
+            "id": "option-4",
+            "text": "input()"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-1"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-002",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "chapter_content",
+      "selectionPriority": 1,
+      "topicIds": [
+        "decisions"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Which form chooses between exactly two paths?",
+      "sourceRefs": [
+        {
+          "pageId": "conditional-handout-p4",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "simple if"
+          },
+          {
+            "id": "option-2",
+            "text": "if...else"
+          },
+          {
+            "id": "option-3",
+            "text": "print()"
+          },
+          {
+            "id": "option-4",
+            "text": "assignment"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-2"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-003",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "chapter_content",
+      "selectionPriority": 1,
+      "topicIds": [
+        "decisions"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "An if...elif...else ladder stops checking when...",
+      "sourceRefs": [
+        {
+          "pageId": "conditional-handout-p3",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "conditional-handout-p4",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "every condition has run"
+          },
+          {
+            "id": "option-2",
+            "text": "the first True condition is found"
+          },
+          {
+            "id": "option-3",
+            "text": "the else block is first"
+          },
+          {
+            "id": "option-4",
+            "text": "the last condition is True"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-2"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-004",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "chapter_content",
+      "selectionPriority": 1,
+      "topicIds": [
+        "syntax"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "What must follow the condition in an if statement?",
+      "sourceRefs": [
+        {
+          "pageId": "conditional-handout-p2",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "a semicolon"
+          },
+          {
+            "id": "option-2",
+            "text": "a colon"
+          },
+          {
+            "id": "option-3",
+            "text": "a comma"
+          },
+          {
+            "id": "option-4",
+            "text": "a full stop"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-2"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-005",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "end_exercise",
+      "selectionPriority": 1,
+      "topicIds": [
+        "syntax"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "What happens to the indented block under if when its condition is False?",
+      "sourceRefs": [
+        {
+          "pageId": "conditional-handout-p2",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "past-paper-p4",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "It runs"
+          },
+          {
+            "id": "option-2",
+            "text": "It is skipped"
+          },
+          {
+            "id": "option-3",
+            "text": "It becomes a comment"
+          },
+          {
+            "id": "option-4",
+            "text": "It causes an error"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-2"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-006",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "chapter_content",
+      "selectionPriority": 1,
+      "topicIds": [
+        "syntax"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Which line is a valid Python if header?",
+      "sourceRefs": [
+        {
+          "pageId": "conditional-handout-p2",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "if num > 0:"
+          },
+          {
+            "id": "option-2",
+            "text": "if num > 0"
+          },
+          {
+            "id": "option-3",
+            "text": "if: num > 0"
+          },
+          {
+            "id": "option-4",
+            "text": "If num > 0:"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-1"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-007",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "chapter_content",
+      "selectionPriority": 1,
+      "topicIds": [
+        "syntax"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Which keyword adds another condition after if?",
+      "sourceRefs": [
+        {
+          "pageId": "conditional-handout-p3",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "else"
+          },
+          {
+            "id": "option-2",
+            "text": "elif"
+          },
+          {
+            "id": "option-3",
+            "text": "then"
+          },
+          {
+            "id": "option-4",
+            "text": "again"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-2"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-008",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "chapter_content",
+      "selectionPriority": 2,
+      "topicIds": [
+        "syntax"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Which branch runs if every condition in a ladder is False?",
+      "sourceRefs": [
+        {
+          "pageId": "conditional-handout-p4",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "if"
+          },
+          {
+            "id": "option-2",
+            "text": "first elif"
+          },
+          {
+            "id": "option-3",
+            "text": "else"
+          },
+          {
+            "id": "option-4",
+            "text": "all branches"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-3"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-009",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "end_exercise",
+      "selectionPriority": 1,
+      "topicIds": [
+        "comparisons"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Which operator means “not equal to” in Python?",
+      "sourceRefs": [
+        {
+          "pageId": "past-paper-p3",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "="
+          },
+          {
+            "id": "option-2",
+            "text": "=="
+          },
+          {
+            "id": "option-3",
+            "text": "!="
+          },
+          {
+            "id": "option-4",
+            "text": "<>"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-3"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-010",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "end_exercise",
+      "selectionPriority": 1,
+      "topicIds": [
+        "comparisons"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "In Python, = is used for...",
+      "sourceRefs": [
+        {
+          "pageId": "past-paper-p3",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "assignment"
+          },
+          {
+            "id": "option-2",
+            "text": "testing equality"
+          },
+          {
+            "id": "option-3",
+            "text": "testing inequality"
+          },
+          {
+            "id": "option-4",
+            "text": "division"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-1"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-011",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "end_exercise",
+      "selectionPriority": 1,
+      "topicIds": [
+        "comparisons"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "A Python condition evaluates to...",
+      "sourceRefs": [
+        {
+          "pageId": "past-paper-p3",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "a string"
+          },
+          {
+            "id": "option-2",
+            "text": "True or False"
+          },
+          {
+            "id": "option-3",
+            "text": "a decimal only"
+          },
+          {
+            "id": "option-4",
+            "text": "a variable name"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-2"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-012",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "chapter_content",
+      "selectionPriority": 1,
+      "topicIds": [
+        "comparisons"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "For an integer num, which condition checks whether it is even?",
+      "sourceRefs": [
+        {
+          "pageId": "conditional-handout-p6",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "num / 2 == 0"
+          },
+          {
+            "id": "option-2",
+            "text": "num % 2 == 0"
+          },
+          {
+            "id": "option-3",
+            "text": "num // 2 == 0"
+          },
+          {
+            "id": "option-4",
+            "text": "num + 2 == 0"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-2"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-013",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "end_exercise",
+      "selectionPriority": 2,
+      "topicIds": [
+        "comparisons"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "For a positive integer n, which condition checks whether n is a single digit?",
+      "sourceRefs": [
+        {
+          "pageId": "past-paper-p4",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "n > 0"
+          },
+          {
+            "id": "option-2",
+            "text": "n < 10"
+          },
+          {
+            "id": "option-3",
+            "text": "n > 10"
+          },
+          {
+            "id": "option-4",
+            "text": "n == 10"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-2"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-014",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "chapter_content",
+      "selectionPriority": 1,
+      "topicIds": [
+        "input"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "What does int(input(\"Enter a number: \")) do?",
+      "sourceRefs": [
+        {
+          "pageId": "conditional-handout-p5",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "Reads text and converts it to an integer"
+          },
+          {
+            "id": "option-2",
+            "text": "Prints an integer"
+          },
+          {
+            "id": "option-3",
+            "text": "Converts an integer to text"
+          },
+          {
+            "id": "option-4",
+            "text": "Checks if a number is positive"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-1"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-015",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "end_exercise",
+      "selectionPriority": 2,
+      "topicIds": [
+        "input"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Which is the Python type name for True and False values?",
+      "sourceRefs": [
+        {
+          "pageId": "past-paper-p3",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "boolean"
+          },
+          {
+            "id": "option-2",
+            "text": "bool"
+          },
+          {
+            "id": "option-3",
+            "text": "str"
+          },
+          {
+            "id": "option-4",
+            "text": "float"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-2"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-016",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "end_exercise",
+      "selectionPriority": 2,
+      "topicIds": [
+        "revision"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "What is printed by a,A = 5,3 followed by print(a)?",
+      "sourceRefs": [
+        {
+          "pageId": "past-paper-p2",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "3"
+          },
+          {
+            "id": "option-2",
+            "text": "5"
+          },
+          {
+            "id": "option-3",
+            "text": "5,3"
+          },
+          {
+            "id": "option-4",
+            "text": "SyntaxError"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-2"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-017",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "end_exercise",
+      "selectionPriority": 2,
+      "topicIds": [
+        "revision"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "What is printed by print(3**2)?",
+      "sourceRefs": [
+        {
+          "pageId": "past-paper-p3",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "6"
+          },
+          {
+            "id": "option-2",
+            "text": "9"
+          },
+          {
+            "id": "option-3",
+            "text": "3.0"
+          },
+          {
+            "id": "option-4",
+            "text": "32"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-2"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-018",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "end_exercise",
+      "selectionPriority": 2,
+      "topicIds": [
+        "revision"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "What is the value of 6 // 2?",
+      "sourceRefs": [
+        {
+          "pageId": "past-paper-p3",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "3"
+          },
+          {
+            "id": "option-2",
+            "text": "3.0"
+          },
+          {
+            "id": "option-3",
+            "text": "2"
+          },
+          {
+            "id": "option-4",
+            "text": "12"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-1"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-019",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "end_exercise",
+      "selectionPriority": 2,
+      "topicIds": [
+        "revision"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Is _count a valid Python variable name?",
+      "sourceRefs": [
+        {
+          "pageId": "past-paper-p4",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "Yes"
+          },
+          {
+            "id": "option-2",
+            "text": "No, it starts with an underscore"
+          },
+          {
+            "id": "option-3",
+            "text": "No, it uses lowercase"
+          },
+          {
+            "id": "option-4",
+            "text": "No, it is a keyword"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-1"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-020",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "end_exercise",
+      "selectionPriority": 2,
+      "topicIds": [
+        "revision"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Why is 2ndvalue invalid as a Python variable name?",
+      "sourceRefs": [
+        {
+          "pageId": "past-paper-p4",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "It is too long"
+          },
+          {
+            "id": "option-2",
+            "text": "It begins with a digit"
+          },
+          {
+            "id": "option-3",
+            "text": "It needs uppercase"
+          },
+          {
+            "id": "option-4",
+            "text": "It contains a keyword"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-2"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-021",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "end_exercise",
+      "selectionPriority": 2,
+      "topicIds": [
+        "revision"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Why is elif invalid as a Python variable name?",
+      "sourceRefs": [
+        {
+          "pageId": "past-paper-p4",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "It is a Python keyword"
+          },
+          {
+            "id": "option-2",
+            "text": "It starts with a letter"
+          },
+          {
+            "id": "option-3",
+            "text": "It is too short"
+          },
+          {
+            "id": "option-4",
+            "text": "It uses lowercase"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-1"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-022",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "end_exercise",
+      "selectionPriority": 2,
+      "topicIds": [
+        "revision"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Why is name#3 invalid as a Python variable name?",
+      "sourceRefs": [
+        {
+          "pageId": "past-paper-p4",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "It is too long"
+          },
+          {
+            "id": "option-2",
+            "text": "It contains #"
+          },
+          {
+            "id": "option-3",
+            "text": "It ends in 3"
+          },
+          {
+            "id": "option-4",
+            "text": "It starts with n"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-2"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-023",
+      "version": 1,
+      "type": "fill_blank",
+      "status": "active",
+      "origin": "chapter_content",
+      "selectionPriority": 1,
+      "topicIds": [
+        "tracing"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "What is printed after num = 12; if num > 0: print(\"The number is positive\")?",
+      "sourceRefs": [
+        {
+          "pageId": "conditional-handout-p5",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {},
+      "answer": {
+        "accepted": [
+          "The number is positive"
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-024",
+      "version": 1,
+      "type": "fill_blank",
+      "status": "active",
+      "origin": "chapter_content",
+      "selectionPriority": 1,
+      "topicIds": [
+        "tracing"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "What is printed after num = 7; if num % 2 == 0: print(\"Even number\"); else: print(\"Odd number\")?",
+      "sourceRefs": [
+        {
+          "pageId": "conditional-handout-p6",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {},
+      "answer": {
+        "accepted": [
+          "Odd number"
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-025",
+      "version": 1,
+      "type": "fill_blank",
+      "status": "active",
+      "origin": "chapter_content",
+      "selectionPriority": 1,
+      "topicIds": [
+        "tracing"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "For marks = 82, what grade is printed by the handout ladder (90→A, 75→B, 40→C, else Fail)?",
+      "sourceRefs": [
+        {
+          "pageId": "conditional-handout-p8",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {},
+      "answer": {
+        "accepted": [
+          "Grade B"
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-026",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "chapter_content",
+      "selectionPriority": 1,
+      "topicIds": [
+        "tracing"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "For marks = 90, which branch of the grade ladder runs?",
+      "sourceRefs": [
+        {
+          "pageId": "conditional-handout-p8",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "Grade A"
+          },
+          {
+            "id": "option-2",
+            "text": "Grade B"
+          },
+          {
+            "id": "option-3",
+            "text": "Grade C"
+          },
+          {
+            "id": "option-4",
+            "text": "Fail"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-1"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-027",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "chapter_content",
+      "selectionPriority": 1,
+      "topicIds": [
+        "tracing"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "For marks = 39, what does the grade ladder print?",
+      "sourceRefs": [
+        {
+          "pageId": "conditional-handout-p8",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "Grade A"
+          },
+          {
+            "id": "option-2",
+            "text": "Grade B"
+          },
+          {
+            "id": "option-3",
+            "text": "Grade C"
+          },
+          {
+            "id": "option-4",
+            "text": "Fail"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-4"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-028",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "chapter_content",
+      "selectionPriority": 2,
+      "topicIds": [
+        "tracing"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "In the handout’s greater-number program, what happens if a and b are equal?",
+      "sourceRefs": [
+        {
+          "pageId": "conditional-handout-p7",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "It prints a is greater"
+          },
+          {
+            "id": "option-2",
+            "text": "It prints b is greater"
+          },
+          {
+            "id": "option-3",
+            "text": "It prints both"
+          },
+          {
+            "id": "option-4",
+            "text": "It prints nothing"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-2"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "The condition a > b is False when a == b, so the else branch prints b. The message is misleading for equal inputs.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-029",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "chapter_content",
+      "selectionPriority": 1,
+      "topicIds": [
+        "tracing"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "If the first if condition and the next elif condition are both True, which branch runs?",
+      "sourceRefs": [
+        {
+          "pageId": "conditional-handout-p4",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "Both"
+          },
+          {
+            "id": "option-2",
+            "text": "Only if"
+          },
+          {
+            "id": "option-3",
+            "text": "Only elif"
+          },
+          {
+            "id": "option-4",
+            "text": "Else"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-2"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-030",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "end_exercise",
+      "selectionPriority": 1,
+      "topicIds": [
+        "syntax"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Which corrected comparison checks whether p contains the school name NHPS?",
+      "sourceRefs": [
+        {
+          "pageId": "past-paper-p4",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "if p = NHPS:"
+          },
+          {
+            "id": "option-2",
+            "text": "if p == \"NHPS\":"
+          },
+          {
+            "id": "option-3",
+            "text": "if p == NHPS"
+          },
+          {
+            "id": "option-4",
+            "text": "if p := NHPS:"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-2"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-031",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "origin": "end_exercise",
+      "selectionPriority": 1,
+      "topicIds": [
+        "syntax"
+      ],
+      "difficulty": 3,
+      "marks": 2,
+      "prompt": "Correct this program so it accepts a school name and prints \"My school\" when the answer is NHPS:\np=input(\"Enter your school name\")\nif p=NHPS\nprint(\"My school\")",
+      "sourceRefs": [
+        {
+          "pageId": "past-paper-p4",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "editor": "python"
+      },
+      "answer": {
+        "ideal": "p = input(\"Enter your school name: \")\nif p == \"NHPS\":\n    print(\"My school\")"
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "Compares p with the string \"NHPS\" using ==",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "Adds a colon to the if header",
+            "weight": 0.5,
+            "required": true
+          },
+          {
+            "id": "p3",
+            "concept": "Indents the print statement within the if block",
+            "weight": 0.5,
+            "required": true
+          }
+        ]
+      },
+      "hint": "Plan input, calculation, condition and output before writing Python.",
+      "explanation": "A correct program needs the stated inputs, accurate branch conditions, and the requested output.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-032",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "origin": "end_exercise",
+      "selectionPriority": 1,
+      "topicIds": [
+        "syntax"
+      ],
+      "difficulty": 3,
+      "marks": 2,
+      "prompt": "Write the general Python syntax for an if...else statement. Use a placeholder condition and two indented actions.",
+      "sourceRefs": [
+        {
+          "pageId": "past-paper-p4",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "conditional-handout-p2",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "editor": "python"
+      },
+      "answer": {
+        "ideal": "if condition:\n    action_when_true\nelse:\n    action_when_false"
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "Uses if with a condition and colon",
+            "weight": 0.75,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "Uses else with a colon",
+            "weight": 0.5,
+            "required": true
+          },
+          {
+            "id": "p3",
+            "concept": "Indents each action under its branch",
+            "weight": 0.75,
+            "required": true
+          }
+        ]
+      },
+      "hint": "Plan input, calculation, condition and output before writing Python.",
+      "explanation": "A correct program needs the stated inputs, accurate branch conditions, and the requested output.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-033",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "origin": "end_exercise",
+      "selectionPriority": 1,
+      "topicIds": [
+        "programs"
+      ],
+      "difficulty": 3,
+      "marks": 3,
+      "prompt": "Write a program that accepts an integer and prints \"The number is positive\" only if it is greater than zero.",
+      "sourceRefs": [
+        {
+          "pageId": "conditional-handout-p5",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "editor": "python"
+      },
+      "answer": {
+        "ideal": "num = int(input(\"Enter a number: \"))\nif num > 0:\n    print(\"The number is positive\")"
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "Reads and converts an integer",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "Checks num > 0",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p3",
+            "concept": "Prints the requested message inside the if block",
+            "weight": 1,
+            "required": true
+          }
+        ]
+      },
+      "hint": "Plan input, calculation, condition and output before writing Python.",
+      "explanation": "A correct program needs the stated inputs, accurate branch conditions, and the requested output.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-034",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "origin": "end_exercise",
+      "selectionPriority": 1,
+      "topicIds": [
+        "programs"
+      ],
+      "difficulty": 3,
+      "marks": 3,
+      "prompt": "Write a program that accepts an integer and prints \"Even number\" or \"Odd number\".",
+      "sourceRefs": [
+        {
+          "pageId": "conditional-handout-p6",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "editor": "python"
+      },
+      "answer": {
+        "ideal": "num = int(input(\"Enter a number: \"))\nif num % 2 == 0:\n    print(\"Even number\")\nelse:\n    print(\"Odd number\")"
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "Reads and converts an integer",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "Tests num % 2 == 0",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p3",
+            "concept": "Prints Even number in the True branch",
+            "weight": 0.5,
+            "required": true
+          },
+          {
+            "id": "p4",
+            "concept": "Prints Odd number in the else branch",
+            "weight": 0.5,
+            "required": true
+          }
+        ]
+      },
+      "hint": "Plan input, calculation, condition and output before writing Python.",
+      "explanation": "A correct program needs the stated inputs, accurate branch conditions, and the requested output.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-035",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "origin": "end_exercise",
+      "selectionPriority": 1,
+      "topicIds": [
+        "programs"
+      ],
+      "difficulty": 3,
+      "marks": 4,
+      "prompt": "Write a program that accepts two numbers and prints which number is greater. Handle equal numbers too.",
+      "sourceRefs": [
+        {
+          "pageId": "conditional-handout-p7",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "editor": "python"
+      },
+      "answer": {
+        "ideal": "a = int(input(\"First number: \"))\nb = int(input(\"Second number: \"))\nif a > b:\n    print(a, \"is greater\")\nelif b > a:\n    print(b, \"is greater\")\nelse:\n    print(\"The numbers are equal\")"
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "Reads two numeric inputs",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "Tests a > b and prints a",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p3",
+            "concept": "Tests b > a and prints b",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p4",
+            "concept": "Handles equality",
+            "weight": 1,
+            "required": true
+          }
+        ]
+      },
+      "hint": "Plan input, calculation, condition and output before writing Python.",
+      "explanation": "A correct program needs the stated inputs, accurate branch conditions, and the requested output.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-036",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "origin": "end_exercise",
+      "selectionPriority": 1,
+      "topicIds": [
+        "programs"
+      ],
+      "difficulty": 3,
+      "marks": 4,
+      "prompt": "Write a program that accepts marks and prints Grade A for 90 or more, Grade B for 75–89, Grade C for 40–74, and Fail below 40.",
+      "sourceRefs": [
+        {
+          "pageId": "conditional-handout-p8",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "editor": "python"
+      },
+      "answer": {
+        "ideal": "marks = int(input(\"Enter marks: \"))\nif marks >= 90:\n    print(\"Grade A\")\nelif marks >= 75:\n    print(\"Grade B\")\nelif marks >= 40:\n    print(\"Grade C\")\nelse:\n    print(\"Fail\")"
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "Reads marks as a number",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "Checks >= 90 first for A",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p3",
+            "concept": "Checks >= 75 then >= 40 for B and C",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p4",
+            "concept": "Uses else for Fail",
+            "weight": 1,
+            "required": true
+          }
+        ]
+      },
+      "hint": "Plan input, calculation, condition and output before writing Python.",
+      "explanation": "A correct program needs the stated inputs, accurate branch conditions, and the requested output.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-037",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "origin": "end_exercise",
+      "selectionPriority": 1,
+      "topicIds": [
+        "programs"
+      ],
+      "difficulty": 3,
+      "marks": 5,
+      "prompt": "A water meter has today’s and yesterday’s readings in litres. Print the difference. If usage is more than 500 litres, print \"Too much water used today, check for leakage\"; otherwise print \"Water usage is normal\".",
+      "sourceRefs": [
+        {
+          "pageId": "past-paper-p5",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "editor": "python"
+      },
+      "answer": {
+        "ideal": "today = int(input(\"Today: \"))\nyesterday = int(input(\"Yesterday: \"))\nused = today - yesterday\nprint(used)\nif used > 500:\n    print(\"Too much water used today, check for leakage\")\nelse:\n    print(\"Water usage is normal\")"
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "Reads both meter readings",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "Subtracts yesterday from today",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p3",
+            "concept": "Prints usage",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p4",
+            "concept": "Uses > 500 rather than >= 500",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p5",
+            "concept": "Prints the correct message in each branch",
+            "weight": 1,
+            "required": true
+          }
+        ]
+      },
+      "hint": "Plan input, calculation, condition and output before writing Python.",
+      "explanation": "A correct program needs the stated inputs, accurate branch conditions, and the requested output.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-038",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "origin": "end_exercise",
+      "selectionPriority": 1,
+      "topicIds": [
+        "programs"
+      ],
+      "difficulty": 3,
+      "marks": 5,
+      "prompt": "Accept an angle in degrees from 1 to 179 and display acute for less than 90, right for exactly 90, or obtuse for more than 90 and less than 180.",
+      "sourceRefs": [
+        {
+          "pageId": "past-paper-p5",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "past-paper-p6",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "editor": "python"
+      },
+      "answer": {
+        "ideal": "angle = int(input(\"Angle: \"))\nif angle < 90:\n    print(\"acute\")\nelif angle == 90:\n    print(\"right\")\nelse:\n    print(\"obtuse\")"
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "Reads a numeric angle",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "Checks angle < 90 for acute",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p3",
+            "concept": "Checks angle == 90 for right",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p4",
+            "concept": "Uses else or an equivalent condition for obtuse angles in the stated range",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p5",
+            "concept": "Prints the correct classification in each branch",
+            "weight": 1,
+            "required": true
+          }
+        ]
+      },
+      "hint": "Plan input, calculation, condition and output before writing Python.",
+      "explanation": "A correct program needs the stated inputs, accurate branch conditions, and the requested output.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-039",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "origin": "end_exercise",
+      "selectionPriority": 1,
+      "topicIds": [
+        "programs"
+      ],
+      "difficulty": 3,
+      "marks": 5,
+      "prompt": "Accept two internal-test marks, each out of 10, and print twice the higher mark. Equal marks must also work.",
+      "sourceRefs": [
+        {
+          "pageId": "past-paper-p6",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "editor": "python"
+      },
+      "answer": {
+        "ideal": "first = int(input(\"First mark: \"))\nsecond = int(input(\"Second mark: \"))\nif first >= second:\n    highest = first\nelse:\n    highest = second\nprint(highest * 2)"
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "Reads both marks",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "Chooses the higher mark",
+            "weight": 2,
+            "required": true
+          },
+          {
+            "id": "p3",
+            "concept": "Handles equal marks",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p4",
+            "concept": "Doubles and prints the selected mark",
+            "weight": 1,
+            "required": true
+          }
+        ]
+      },
+      "hint": "Plan input, calculation, condition and output before writing Python.",
+      "explanation": "A correct program needs the stated inputs, accurate branch conditions, and the requested output.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-040",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "origin": "end_exercise",
+      "selectionPriority": 1,
+      "topicIds": [
+        "programs"
+      ],
+      "difficulty": 3,
+      "marks": 5,
+      "prompt": "Accept sports or cinema as an area of excellence. Print \"Major Dhyan Chand Khel Ratna Award\" for sports, \"Dadasaheb Phalke Award\" for cinema, or \"Award information not available for this area\" otherwise.",
+      "sourceRefs": [
+        {
+          "pageId": "past-paper-p6",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "editor": "python"
+      },
+      "answer": {
+        "ideal": "area = input(\"Area: \").lower()\nif area == \"sports\":\n    print(\"Major Dhyan Chand Khel Ratna Award\")\nelif area == \"cinema\":\n    print(\"Dadasaheb Phalke Award\")\nelse:\n    print(\"Award information not available for this area\")"
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "Reads area as a string",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "Tests sports and prints its award",
+            "weight": 1.5,
+            "required": true
+          },
+          {
+            "id": "p3",
+            "concept": "Tests cinema and prints its award",
+            "weight": 1.5,
+            "required": true
+          },
+          {
+            "id": "p4",
+            "concept": "Handles other inputs",
+            "weight": 1,
+            "required": true
+          }
+        ]
+      },
+      "hint": "Plan input, calculation, condition and output before writing Python.",
+      "explanation": "A correct program needs the stated inputs, accurate branch conditions, and the requested output.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-041",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "origin": "end_exercise",
+      "selectionPriority": 1,
+      "topicIds": [
+        "programs"
+      ],
+      "difficulty": 3,
+      "marks": 5,
+      "prompt": "Accept a two-digit positive integer. A spy number has equal sum and product of its digits. Print whether the number is a spy number.",
+      "sourceRefs": [
+        {
+          "pageId": "past-paper-p6",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "editor": "python"
+      },
+      "answer": {
+        "ideal": "num = int(input(\"Two-digit number: \"))\ntens = num // 10\nones = num % 10\nif tens + ones == tens * ones:\n    print(num, \"is a spy number\")\nelse:\n    print(num, \"is not a spy number\")"
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "Reads an integer",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "Extracts tens with // 10",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p3",
+            "concept": "Extracts ones with % 10",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p4",
+            "concept": "Compares digit sum and product",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p5",
+            "concept": "Prints both outcomes",
+            "weight": 1,
+            "required": true
+          }
+        ]
+      },
+      "hint": "Plan input, calculation, condition and output before writing Python.",
+      "explanation": "A correct program needs the stated inputs, accurate branch conditions, and the requested output.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-042",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "origin": "end_exercise",
+      "selectionPriority": 1,
+      "topicIds": [
+        "programs"
+      ],
+      "difficulty": 3,
+      "marks": 7,
+      "prompt": "Accept a grocery bill amount. Delivery costs 30 if the bill is below 200 and is free otherwise. Print the bill, delivery charge, and final amount.",
+      "sourceRefs": [
+        {
+          "pageId": "past-paper-p7",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "editor": "python"
+      },
+      "answer": {
+        "ideal": "bill = int(input(\"Bill amount: \"))\nif bill < 200:\n    delivery = 30\nelse:\n    delivery = 0\nprint(\"Total Bill Amount:\", bill)\nprint(\"Delivery Charges:\", delivery)\nprint(\"Final Amount:\", bill + delivery)"
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "Reads the bill amount",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "Charges 30 only when bill < 200",
+            "weight": 2,
+            "required": true
+          },
+          {
+            "id": "p3",
+            "concept": "Uses zero delivery otherwise",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p4",
+            "concept": "Prints bill and delivery",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p5",
+            "concept": "Prints the correct final sum",
+            "weight": 2,
+            "required": true
+          }
+        ]
+      },
+      "hint": "Plan input, calculation, condition and output before writing Python.",
+      "explanation": "A correct program needs the stated inputs, accurate branch conditions, and the requested output.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-043",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "origin": "end_exercise",
+      "selectionPriority": 1,
+      "topicIds": [
+        "programs"
+      ],
+      "difficulty": 3,
+      "marks": 7,
+      "prompt": "Accept an item’s cost price and selling price. Print profit and its amount, loss and its amount, or \"No profit, no loss.\" when prices are equal.",
+      "sourceRefs": [
+        {
+          "pageId": "past-paper-p7",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "editor": "python"
+      },
+      "answer": {
+        "ideal": "cost = int(input(\"Cost price: \"))\nselling = int(input(\"Selling price: \"))\nif selling > cost:\n    print(\"Profit:\", selling - cost)\nelif selling < cost:\n    print(\"Loss:\", cost - selling)\nelse:\n    print(\"No profit, no loss.\")"
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "Reads both prices",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "Tests selling > cost",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p3",
+            "concept": "Calculates and prints selling - cost for profit",
+            "weight": 2,
+            "required": true
+          },
+          {
+            "id": "p4",
+            "concept": "Tests selling < cost and prints cost - selling for loss",
+            "weight": 2,
+            "required": true
+          },
+          {
+            "id": "p5",
+            "concept": "Handles equal prices",
+            "weight": 1,
+            "required": true
+          }
+        ]
+      },
+      "hint": "Plan input, calculation, condition and output before writing Python.",
+      "explanation": "A correct program needs the stated inputs, accurate branch conditions, and the requested output.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-044",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "origin": "end_exercise",
+      "selectionPriority": 1,
+      "topicIds": [
+        "programs"
+      ],
+      "difficulty": 3,
+      "marks": 7,
+      "prompt": "Accept a radius and the user’s choice of area or circumference. Use pi = 22/7. Print the requested result; report an unknown choice.",
+      "sourceRefs": [
+        {
+          "pageId": "past-paper-p7",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "editor": "python"
+      },
+      "answer": {
+        "ideal": "radius = float(input(\"Radius: \"))\nchoice = input(\"Area or circumference? \").lower()\npi = 22 / 7\nif choice == \"area\":\n    print(pi * radius ** 2)\nelif choice == \"circumference\":\n    print(2 * pi * radius)\nelse:\n    print(\"Unknown choice\")"
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "Reads a numeric radius and a choice",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "Uses pi = 22/7",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p3",
+            "concept": "Calculates area as pi * r ** 2",
+            "weight": 2,
+            "required": true
+          },
+          {
+            "id": "p4",
+            "concept": "Calculates circumference as 2 * pi * r",
+            "weight": 2,
+            "required": true
+          },
+          {
+            "id": "p5",
+            "concept": "Selects the requested result and handles another choice",
+            "weight": 1,
+            "required": true
+          }
+        ]
+      },
+      "hint": "Plan input, calculation, condition and output before writing Python.",
+      "explanation": "A correct program needs the stated inputs, accurate branch conditions, and the requested output.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-045",
+      "version": 1,
+      "type": "multi_point",
+      "status": "active",
+      "origin": "end_exercise",
+      "selectionPriority": 1,
+      "topicIds": [
+        "programs"
+      ],
+      "difficulty": 3,
+      "marks": 7,
+      "prompt": "Accept hour and minute in 24-hour time. Display the time in 12-hour form with a.m. or p.m.; handle midnight and noon.",
+      "sourceRefs": [
+        {
+          "pageId": "past-paper-p7",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "editor": "python"
+      },
+      "answer": {
+        "ideal": "hour = int(input(\"Hour: \"))\nminute = int(input(\"Minute: \"))\nif hour < 12:\n    period = \"a.m.\"\nelse:\n    period = \"p.m.\"\nshown_hour = hour % 12\nif shown_hour == 0:\n    shown_hour = 12\nprint(shown_hour, \":\", f\"{minute:02d}\", period)"
+      },
+      "rubric": {
+        "points": [
+          {
+            "id": "p1",
+            "concept": "Reads hour and minute",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p2",
+            "concept": "Chooses a.m. before 12 and p.m. at or after 12",
+            "weight": 2,
+            "required": true
+          },
+          {
+            "id": "p3",
+            "concept": "Converts 13–23 by using hour modulo 12",
+            "weight": 2,
+            "required": true
+          },
+          {
+            "id": "p4",
+            "concept": "Shows 12 for midnight and noon",
+            "weight": 1,
+            "required": true
+          },
+          {
+            "id": "p5",
+            "concept": "Prints hour, minute, and period",
+            "weight": 1,
+            "required": true
+          }
+        ]
+      },
+      "hint": "Plan input, calculation, condition and output before writing Python.",
+      "explanation": "A correct program needs the stated inputs, accurate branch conditions, and the requested output.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-046",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "end_exercise",
+      "selectionPriority": 1,
+      "topicIds": [
+        "tracing"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "A bill is exactly 200. How much is the delivery charge in the exam rule?",
+      "sourceRefs": [
+        {
+          "pageId": "past-paper-p7",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "0"
+          },
+          {
+            "id": "option-2",
+            "text": "30"
+          },
+          {
+            "id": "option-3",
+            "text": "200"
+          },
+          {
+            "id": "option-4",
+            "text": "230"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-1"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-047",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "end_exercise",
+      "selectionPriority": 1,
+      "topicIds": [
+        "tracing"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Water use is exactly 500 litres. Which message should appear?",
+      "sourceRefs": [
+        {
+          "pageId": "past-paper-p5",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "Too much water used today, check for leakage"
+          },
+          {
+            "id": "option-2",
+            "text": "Water usage is normal"
+          },
+          {
+            "id": "option-3",
+            "text": "Both messages"
+          },
+          {
+            "id": "option-4",
+            "text": "No message"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-2"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-048",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "end_exercise",
+      "selectionPriority": 2,
+      "topicIds": [
+        "tracing"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Cost price and selling price are both 80. What should the program print?",
+      "sourceRefs": [
+        {
+          "pageId": "past-paper-p7",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "Profit: 0"
+          },
+          {
+            "id": "option-2",
+            "text": "Loss: 0"
+          },
+          {
+            "id": "option-3",
+            "text": "No profit, no loss."
+          },
+          {
+            "id": "option-4",
+            "text": "Nothing"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-3"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-049",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "end_exercise",
+      "selectionPriority": 2,
+      "topicIds": [
+        "tracing"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "For a two-digit number 22, are the sum and product of the digits equal?",
+      "sourceRefs": [
+        {
+          "pageId": "past-paper-p6",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "Yes: both are 4"
+          },
+          {
+            "id": "option-2",
+            "text": "No: sum 4, product 2"
+          },
+          {
+            "id": "option-3",
+            "text": "No: sum 2, product 4"
+          },
+          {
+            "id": "option-4",
+            "text": "Yes: both are 22"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-1"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-050",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "end_exercise",
+      "selectionPriority": 2,
+      "topicIds": [
+        "tracing"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "What is 15:45 in 12-hour time?",
+      "sourceRefs": [
+        {
+          "pageId": "past-paper-p7",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "15:45 a.m."
+          },
+          {
+            "id": "option-2",
+            "text": "3:45 p.m."
+          },
+          {
+            "id": "option-3",
+            "text": "3:45 a.m."
+          },
+          {
+            "id": "option-4",
+            "text": "12:45 p.m."
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-2"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-051",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "chapter_content",
+      "selectionPriority": 1,
+      "topicIds": [
+        "syntax"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Why must the grade ladder test marks >= 90 before marks >= 75?",
+      "sourceRefs": [
+        {
+          "pageId": "conditional-handout-p8",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "To avoid a SyntaxError"
+          },
+          {
+            "id": "option-2",
+            "text": "Because 90 also satisfies >= 75, and the first True branch wins"
+          },
+          {
+            "id": "option-3",
+            "text": "Because else always runs"
+          },
+          {
+            "id": "option-4",
+            "text": "Because Python sorts conditions"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-2"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-052",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "chapter_content",
+      "selectionPriority": 1,
+      "topicIds": [
+        "input"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "What does input() return before conversion?",
+      "sourceRefs": [
+        {
+          "pageId": "past-paper-p4",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "int"
+          },
+          {
+            "id": "option-2",
+            "text": "float"
+          },
+          {
+            "id": "option-3",
+            "text": "str"
+          },
+          {
+            "id": "option-4",
+            "text": "bool"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-3"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-053",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "chapter_content",
+      "selectionPriority": 2,
+      "topicIds": [
+        "revision"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Which expression performs floor division?",
+      "sourceRefs": [
+        {
+          "pageId": "past-paper-p2",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "past-paper-p3",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "6 / 2"
+          },
+          {
+            "id": "option-2",
+            "text": "6 // 2"
+          },
+          {
+            "id": "option-3",
+            "text": "6 ** 2"
+          },
+          {
+            "id": "option-4",
+            "text": "6 % 2"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-2"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-054",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "chapter_content",
+      "selectionPriority": 2,
+      "topicIds": [
+        "revision"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Which variable name is valid?",
+      "sourceRefs": [
+        {
+          "pageId": "past-paper-p4",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "class"
+          },
+          {
+            "id": "option-2",
+            "text": "first_name"
+          },
+          {
+            "id": "option-3",
+            "text": "1st_name"
+          },
+          {
+            "id": "option-4",
+            "text": "my-name"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-2"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-055",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "chapter_content",
+      "selectionPriority": 2,
+      "topicIds": [
+        "comparisons"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "What does % return in num % 2?",
+      "sourceRefs": [
+        {
+          "pageId": "conditional-handout-p6",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "the quotient"
+          },
+          {
+            "id": "option-2",
+            "text": "the remainder"
+          },
+          {
+            "id": "option-3",
+            "text": "the square"
+          },
+          {
+            "id": "option-4",
+            "text": "the input type"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-2"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-056",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "chapter_content",
+      "selectionPriority": 2,
+      "topicIds": [
+        "syntax"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "Which statement about else is correct?",
+      "sourceRefs": [
+        {
+          "pageId": "conditional-handout-p4",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "It needs a condition"
+          },
+          {
+            "id": "option-2",
+            "text": "It runs when earlier conditions in the chain are False"
+          },
+          {
+            "id": "option-3",
+            "text": "It runs before if"
+          },
+          {
+            "id": "option-4",
+            "text": "It must be indented under elif"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-2"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-057",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "chapter_content",
+      "selectionPriority": 2,
+      "topicIds": [
+        "tracing"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "For marks = 75, what is printed by the handout grade ladder?",
+      "sourceRefs": [
+        {
+          "pageId": "conditional-handout-p8",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "Grade A"
+          },
+          {
+            "id": "option-2",
+            "text": "Grade B"
+          },
+          {
+            "id": "option-3",
+            "text": "Grade C"
+          },
+          {
+            "id": "option-4",
+            "text": "Fail"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-2"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    },
+    {
+      "id": "q-058",
+      "version": 1,
+      "type": "single_choice",
+      "status": "active",
+      "origin": "chapter_content",
+      "selectionPriority": 2,
+      "topicIds": [
+        "tracing"
+      ],
+      "difficulty": 1,
+      "marks": 1,
+      "prompt": "For marks = 40, what is printed by the handout grade ladder?",
+      "sourceRefs": [
+        {
+          "pageId": "conditional-handout-p8",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "response": {
+        "options": [
+          {
+            "id": "option-1",
+            "text": "Grade A"
+          },
+          {
+            "id": "option-2",
+            "text": "Grade B"
+          },
+          {
+            "id": "option-3",
+            "text": "Grade C"
+          },
+          {
+            "id": "option-4",
+            "text": "Fail"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "option-3"
+      },
+      "rubric": {
+        "exact": true
+      },
+      "hint": "Read the condition carefully and trace only the branch that runs.",
+      "explanation": "Check the condition, the indentation, and the first matching branch.",
+      "generation": {
+        "method": "codex-assisted",
+        "generatedAt": "2026-09-20T00:00:00Z",
+        "validationStatus": "verified"
+      }
+    }
+  ]
+}

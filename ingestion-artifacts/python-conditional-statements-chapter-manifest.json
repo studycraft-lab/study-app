@@ -1,0 +1,196 @@
+{
+  "manifestVersion": "0.1.0",
+  "chapter": {
+    "id": "python-conditional-statements",
+    "board": "ICSE",
+    "grade": 6,
+    "subject": "Computer Studies",
+    "bookTitle": "Conditional Statements (class handout)",
+    "chapterNumber": 1,
+    "title": "Python: Conditional Statements"
+  },
+  "sourcePolicy": {
+    "originals": "local-only",
+    "repositoryCopies": false,
+    "applicationStorage": "not-uploaded",
+    "runtimeStrategy": "none",
+    "notes": "The supplied handout and past exam are local grounding sources; all child prompts are self-contained and require no source image."
+  },
+  "assets": [
+    {
+      "id": "conditional-handout",
+      "fileName": "Conditional_Statements_1786946490.pdf",
+      "sha256": "f4bd11aa8fa49a5f972c96d368ef408d780f5a12b77043ff45093c3e44d894c2",
+      "width": 960,
+      "height": 540,
+      "pages": [
+        {
+          "id": "conditional-handout-p1",
+          "pageNumber": 1,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "conditional-handout-p2",
+          "pageNumber": 2,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "conditional-handout-p3",
+          "pageNumber": 3,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "conditional-handout-p4",
+          "pageNumber": 4,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "conditional-handout-p5",
+          "pageNumber": 5,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "conditional-handout-p6",
+          "pageNumber": 6,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "conditional-handout-p7",
+          "pageNumber": 7,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "conditional-handout-p8",
+          "pageNumber": 8,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "past-paper",
+      "fileName": "TERM_1_VI_COMPUTER_STUDIES_1787974622.pdf",
+      "sha256": "2614f6c4d3c5b6e482662fcb9382a02652a8ffc94098e24ebc6fcc0e38e3f986",
+      "width": 595,
+      "height": 842,
+      "pages": [
+        {
+          "id": "past-paper-p1",
+          "pageNumber": 1,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "past-paper-p2",
+          "pageNumber": 2,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "past-paper-p3",
+          "pageNumber": 3,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "past-paper-p4",
+          "pageNumber": 4,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "past-paper-p5",
+          "pageNumber": 5,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "past-paper-p6",
+          "pageNumber": 6,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "past-paper-p7",
+          "pageNumber": 7,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        }
+      ]
+    }
+  ],
+  "learningOutcomes": [
+    "Use indentation and a condition to write a simple if statement.",
+    "Use if...else to choose between two outcomes.",
+    "Use an if...elif...else ladder for several outcomes and explain why order matters.",
+    "Accept and convert input, then combine arithmetic, comparisons, and conditions in short programs.",
+    "Trace output, correct errors, and use valid variable names and Python data types."
+  ]
+}

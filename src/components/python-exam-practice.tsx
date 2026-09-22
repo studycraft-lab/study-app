@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { AppHeader } from "./app-header";
 import { PythonCodeEditor } from "./python-code-editor";
@@ -22,6 +22,8 @@ export type PracticeQuestion = {
 type PracticeState = { answers: Record<string, string>; checked: Record<string, boolean>; passed: Record<string, boolean> };
 const INITIAL: PracticeState = { answers: {}, checked: {}, passed: {} };
 const STORAGE_KEY = "studycraft-python-exam-practice-v2";
+const PENDING_KEY = "studycraft-python-exam-practice-pending-v1";
+type ProgressEntry = { questionId: string; answer: string; checked: boolean; passed: boolean };
 
 function readSaved(childId: string): PracticeState {
   try {
@@ -30,6 +32,19 @@ function readSaved(childId: string): PracticeState {
     if (parsed && typeof parsed === "object" && parsed.answers && parsed.checked && parsed.passed) return parsed;
   } catch { /* practice works without browser storage */ }
   return INITIAL;
+}
+function readPending(childId: string): Record<string, ProgressEntry> {
+  try {
+    const parsed = JSON.parse(localStorage.getItem(`${PENDING_KEY}:${childId}`) ?? "{}");
+    if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) return parsed;
+  } catch { /* account sync can retry after this visit */ }
+  return {};
+}
+function entryFrom(state: PracticeState, questionId: string): ProgressEntry {
+  return { questionId, answer: state.answers[questionId] ?? "", checked: Boolean(state.checked[questionId]), passed: Boolean(state.passed[questionId]) };
+}
+function withEntry(state: PracticeState, item: ProgressEntry): PracticeState {
+  return { answers: { ...state.answers, [item.questionId]: item.answer }, checked: { ...state.checked, [item.questionId]: item.checked }, passed: { ...state.passed, [item.questionId]: item.passed } };
 }
 function normalized(value: string) { return value.trim().replace(/\s+/g, " ").toLowerCase(); }
 function correct(question: PracticeQuestion, answer: string) {
@@ -69,6 +84,10 @@ export function PythonExamPractice({ questions }: { questions: PracticeQuestion[
   const [runError, setRunError] = useState("");
   const [programFeedback, setProgramFeedback] = useState<Record<string, { test: ProgramCase; output: string; error: string; passed: boolean }[]>>({});
   const [showSolution, setShowSolution] = useState(false);
+  const [syncStatus, setSyncStatus] = useState<"syncing" | "synced" | "local">("syncing");
+  const pending = useRef<Record<string, ProgressEntry>>({});
+  const timers = useRef<Record<string, ReturnType<typeof setTimeout>>>({});
+  const queue = useRef<Promise<void>>(Promise.resolve());
   const ordered = useMemo(() => examOrder(questions), [questions]);
   const programs = useMemo(() => questions.filter((item) => item.response.editor === "python").sort((a, b) => {
     const rank = (marks: number) => marks === 5 ? 0 : marks === 7 ? 1 : 2;
@@ -77,23 +96,77 @@ export function PythonExamPractice({ questions }: { questions: PracticeQuestion[
   const visible = mode === "programs" ? programs : ordered;
   const question = visible[Math.min(position, visible.length - 1)];
   useEffect(() => {
+    let active = true;
+    const scheduled = timers.current;
     void fetch("/api/study/library", { cache: "no-store" }).then(async (result) => {
       if (result.status === 401) { router.replace("/login?role=child"); return; }
       if (!result.ok) { setLoadError("Could not open practice. Please refresh the page."); return; }
-      const body = await result.json(); const id = String(body.child?.id ?? ""); setChildId(id); setState(readSaved(id)); setName(body.child?.displayName ?? ""); setReady(true);
+      const body = await result.json(); const id = String(body.child?.id ?? "");
+      const local = readSaved(id);
+      let next = local;
+      const unsynced = readPending(id);
+      try {
+        const response = await fetch("/api/study/python-progress", { cache: "no-store" });
+        if (!response.ok) throw new Error("Account progress unavailable");
+        const remote = (await response.json()).entries as ProgressEntry[];
+        const remoteIds = new Set<string>();
+        next = INITIAL;
+        for (const item of remote) { if (!questions.some((question) => question.id === item.questionId)) continue; next = withEntry(next, item); remoteIds.add(item.questionId); }
+        for (const question of questions) {
+          if (!remoteIds.has(question.id) && (question.id in local.answers || question.id in local.checked || question.id in local.passed)) {
+            const item = entryFrom(local, question.id);
+            unsynced[question.id] = item;
+          }
+        }
+        for (const item of Object.values(unsynced)) { if (questions.some((question) => question.id === item.questionId)) next = withEntry(next, item); }
+        if (active) setSyncStatus(Object.keys(unsynced).length ? "syncing" : "synced");
+      } catch { if (active) setSyncStatus("local"); }
+      if (!active) return;
+      pending.current = unsynced;
+      try { localStorage.setItem(`${STORAGE_KEY}:${id}`, JSON.stringify(next)); } catch { /* keep editing */ }
+      persistPending(id);
+      setChildId(id); setState(next); setName(body.child?.displayName ?? ""); setReady(true);
+      for (const questionId of Object.keys(unsynced)) flush(questionId, id);
     }).catch(() => setLoadError("Could not open practice. Please refresh the page."));
+    return () => { active = false; for (const timer of Object.values(scheduled)) clearTimeout(timer); };
+  // The initial account load should run once for this child session.
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [router]);
-  function save(next: PracticeState) {
+  function persistPending(id: string) {
+    try { localStorage.setItem(`${PENDING_KEY}:${id}`, JSON.stringify(pending.current)); } catch { /* keep editing */ }
+  }
+  function flush(questionId: string, id = childId) {
+    clearTimeout(timers.current[questionId]);
+    delete timers.current[questionId];
+    const item = pending.current[questionId];
+    if (!item) return;
+    queue.current = queue.current.then(async () => {
+      const response = await fetch("/api/study/python-progress", { method: "PUT", headers: { "Content-Type": "application/json" }, body: JSON.stringify(item) });
+      if (!response.ok) throw new Error("Could not sync practice");
+      if (JSON.stringify(pending.current[questionId]) === JSON.stringify(item)) {
+        delete pending.current[questionId];
+        persistPending(id);
+      }
+      setSyncStatus(Object.keys(pending.current).length ? "syncing" : "synced");
+    }).catch(() => setSyncStatus("local"));
+  }
+  function save(next: PracticeState, questionId: string, immediate = false) {
     setState(next);
     try { localStorage.setItem(`${STORAGE_KEY}:${childId}`, JSON.stringify(next)); } catch { /* practice remains usable */ }
+    pending.current[questionId] = entryFrom(next, questionId);
+    persistPending(childId);
+    setSyncStatus("syncing");
+    clearTimeout(timers.current[questionId]);
+    if (immediate) flush(questionId);
+    else timers.current[questionId] = setTimeout(() => flush(questionId), 650);
   }
   function answer(value: string) {
-    save({ ...state, answers: { ...state.answers, [question.id]: value }, checked: { ...state.checked, [question.id]: false }, passed: { ...state.passed, [question.id]: false } });
+    save({ ...state, answers: { ...state.answers, [question.id]: value }, checked: { ...state.checked, [question.id]: false }, passed: { ...state.passed, [question.id]: false } }, question.id);
     setProgramFeedback((old) => { const next = { ...old }; delete next[question.id]; return next; });
     setRunError(""); setShowSolution(false);
   }
   async function checkAnswer() {
-    if (!written) { save({ ...state, checked: { ...state.checked, [question.id]: true } }); return; }
+    if (!written) { save({ ...state, checked: { ...state.checked, [question.id]: true } }, question.id, true); return; }
     const tests = PROGRAM_TESTS[question.id];
     if (!tests?.length) { setRunError("Checks are not ready for this program."); return; }
     setRunning(true); setRunError(""); setShowSolution(false);
@@ -103,9 +176,14 @@ export function PythonExamPractice({ questions }: { questions: PracticeQuestion[
       if (results.length !== tests.length) throw new Error("Python did not finish every check. Please try again.");
       const feedback = tests.map((test, index) => ({ test, ...results[index], passed: evaluateProgramCase(test, results[index]) }));
       setProgramFeedback((old) => ({ ...old, [question.id]: feedback }));
-      save({ ...state, passed: { ...state.passed, [question.id]: feedback.every((item) => item.passed) } });
+      save({ ...state, passed: { ...state.passed, [question.id]: feedback.every((item) => item.passed) } }, question.id, true);
     } catch (error) { setRunError(error instanceof Error ? error.message : "Could not run Python. Please try again."); }
     finally { setRunning(false); }
+  }
+  function restart() {
+    save(withEntry(state, { questionId: question.id, answer: "", checked: false, passed: false }), question.id, true);
+    setProgramFeedback((old) => { const next = { ...old }; delete next[question.id]; return next; });
+    setRunError(""); setShowSolution(false); setHintOpen(false);
   }
   function changeMode(next: "programs" | "exam") { setMode(next); setPosition(0); setHintOpen(false); }
   function go(delta: number) { setPosition((old) => Math.max(0, Math.min(visible.length - 1, old + delta))); setHintOpen(false); }
@@ -117,11 +195,11 @@ export function PythonExamPractice({ questions }: { questions: PracticeQuestion[
   return <main className="study-shell python-practice-page"><AppHeader role="child" childName={name} />{!ready ? <p className="study-loading">{loadError || "Opening Python practice…"}</p> : <>
     <section className="python-hero"><p className="eyebrow">Computer Studies · Class VI</p><h1>Python Programming</h1><p>Practise the kinds of questions in the supplied computer paper: write programs, trace output, correct code, and revisit Python basics.</p><div><span>{questions.filter((item) => item.response.editor === "python").length} programming questions</span><span>{questions.length} questions in the full mix</span><span>5- and 7-mark exam tasks</span></div></section>
     <nav className="python-practice-tabs" aria-label="Practice mode"><button type="button" className={mode === "programs" ? "is-active" : ""} disabled={running} onClick={() => changeMode("programs")}>Write Python programs</button><button type="button" className={mode === "exam" ? "is-active" : ""} disabled={running} onClick={() => changeMode("exam")}>Exam-style Python mix</button></nav>
-    <section className="python-practice-summary" aria-label="Practice progress"><span>{passedCount} programs passed</span><span>{correctCount} short questions correct</span><span>Progress saved on this device</span></section>
-    {mode === "programs" && <nav className="python-program-picker" aria-label="Choose a programming question">{programs.map((item, index) => <button type="button" key={item.id} className={position === index ? "is-active" : ""} disabled={running} onClick={() => { setPosition(index); setHintOpen(false); }}>{PROGRAM_LABELS[item.id] ?? `Program ${index + 1}`} <small>{item.marks} marks</small></button>)}</nav>}
+    <section className="python-practice-summary" aria-label="Practice progress"><span>{passedCount} programs passed</span><span>{correctCount} short questions correct</span><span role="status">{syncStatus === "synced" ? "Saved to your StudyCraft account" : syncStatus === "syncing" ? "Saving to your account…" : "Saved on this device; account sync unavailable"}</span></section>
+    {mode === "programs" && <nav className="python-program-picker" aria-label="Choose a programming question">{programs.map((item, index) => <button type="button" key={item.id} className={`${position === index ? "is-active " : ""}${state.passed[item.id] ? "is-complete" : ""}`} disabled={running} onClick={() => { setPosition(index); setHintOpen(false); }}><span>{state.passed[item.id] && <span aria-hidden="true" className="python-complete-check">✓ </span>}{PROGRAM_LABELS[item.id] ?? `Program ${index + 1}`}</span><small>{item.marks} marks{state.passed[item.id] ? " · Completed" : ""}</small></button>)}</nav>}
     {question && <article className="python-exam-card"><div className="python-section-heading"><div><p className="eyebrow">{mode === "programs" ? "Program writing" : "Exam-style mix"} · Question {position + 1} of {visible.length}</p><h2>{written ? `${question.marks}-mark program` : question.topicIds[0]?.replaceAll("-", " ")}</h2></div><span>{question.marks} {question.marks === 1 ? "mark" : "marks"}</span></div><p className="python-exam-prompt">{question.prompt}</p>
       {written ? <PythonCodeEditor label="Write your Python answer" value={value} onChange={answer} disabled={running} /> : question.type === "single_choice" ? <fieldset className="choice-list"><legend className="sr-only">Choose an answer</legend>{question.response.options?.map((option) => <label key={option.id}><input type="radio" name={`answer-${question.id}`} checked={value === option.id} onChange={() => answer(option.id)} />{option.text}</label>)}</fieldset> : <label className="text-answer">Your answer<input autoComplete="off" value={value} onChange={(event) => answer(event.target.value)} /></label>}
-      <div className="python-exam-actions"><button type="button" className="button-quiet" onClick={() => setHintOpen(!hintOpen)}>{hintOpen ? "Hide hint" : "Need a hint?"}</button><button type="button" className="button" disabled={running || !value.trim()} onClick={checkAnswer}>{written ? running ? "Running Python…" : "Run checks" : "Check answer"}</button></div>{hintOpen && <p className="python-exam-hint">{question.hint}</p>}
+      <div className="python-exam-actions"><button type="button" className="button-quiet" onClick={() => setHintOpen(!hintOpen)}>{hintOpen ? "Hide hint" : "Need a hint?"}</button><button type="button" className="button" disabled={running || !value.trim()} onClick={checkAnswer}>{written ? running ? "Running Python…" : "Run checks" : "Check answer"}</button>{(value || submitted || state.passed[question.id]) && <button type="button" className="button-quiet" disabled={running} onClick={restart}>Restart this {written ? "program" : "question"}</button>}</div>{hintOpen && <p className="python-exam-hint">{question.hint}</p>}
       {runError && <p className="notice notice-error" role="alert">{runError}</p>}
       {written && programFeedback[question.id] && <div className="python-exam-feedback" role="status"><h3>{programFeedback[question.id].filter((item) => item.passed).length} of {programFeedback[question.id].length} test cases passed</h3><ul className="python-case-results">{programFeedback[question.id].map((item) => <li key={item.test.name} className={item.passed ? "is-correct" : "is-incorrect"}><strong>{item.passed ? "✓" : "×"} {item.test.name}</strong><span>Input: {item.test.input.length ? item.test.input.join(", ") : "none"}</span><span>Expected: {item.test.expected}</span><span>Your output: {item.error ? item.error : item.output.trim() || "(no output)"}</span></li>)}</ul><button type="button" className="button-quiet" onClick={() => setShowSolution(!showSolution)}>{showSolution ? "Hide one solution" : "See one solution"}</button>{showSolution && <pre><code>{question.answer.ideal}</code></pre>}</div>}
       {submitted && !written && <div className={`python-exam-feedback ${correct(question, value) ? "is-correct" : "is-incorrect"}`} role="status"><h3>{correct(question, value) ? "Correct" : "Check this one again"}</h3><p><strong>Answer:</strong> {expected(question)}</p><p>{question.explanation}</p></div>}

@@ -18,5 +18,5 @@ export function PythonCodeEditor({ value, onChange, disabled = false, label = "Y
     });
   }
 
-  return <label className="python-code-editor"><span>{label}</span><small>Use Tab to indent. Python needs a colon after each condition and an indented line inside each branch.</small><textarea ref={editor} aria-label={label} autoCapitalize="off" autoCorrect="off" spellCheck={false} disabled={disabled} rows={13} value={value} onChange={(event) => onChange(event.target.value)} onKeyDown={onKeyDown} placeholder={'num = int(input("Enter a number: "))\nif num > 0:\n    print("Positive")'} /></label>;
+  return <label className="python-code-editor"><span>{label}</span><small>Use Tab to indent. Python needs a colon after each condition and an indented line inside each branch.</small><textarea ref={editor} aria-label={label} autoCapitalize="off" autoCorrect="off" spellCheck={false} disabled={disabled} rows={13} value={value} onChange={(event) => onChange(event.target.value)} onKeyDown={onKeyDown} /></label>;
 }

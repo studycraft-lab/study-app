@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { AppHeader } from "./app-header";
-import { PythonCodeEditor } from "./python-code-editor";
 
 type Lesson = { title: string; idea: string; code: string; notes: string[]; check: { question: string; choices: string[]; correct: number; why: string } };
 const lessons: Lesson[] = [
@@ -14,12 +13,6 @@ const lessons: Lesson[] = [
   { title: "if…elif…else: several outcomes", idea: "Python checks from top to bottom and stops at the first True branch. Put the highest grade boundary first.", code: 'marks = int(input("Marks: "))\nif marks >= 90:\n    print("Grade A")\nelif marks >= 75:\n    print("Grade B")\nelif marks >= 40:\n    print("Grade C")\nelse:\n    print("Fail")', notes: ["82 meets >= 75, so it gets Grade B.", "90 also meets >= 75, but the >= 90 test comes first.", "Test boundary values such as 39, 40, 74, 75, 89 and 90."], check: { question: "What grade does marks = 75 receive?", choices: ["Grade A", "Grade B", "Grade C"], correct: 1, why: "75 is below 90 and meets the next condition, >= 75." } },
   { title: "Plan a full program", idea: "For longer exam programs, underline the inputs, calculations, decisions, and exact output. Trace an example before writing.", code: 'bill = int(input("Bill amount: "))\nif bill < 200:\n    delivery = 30\nelse:\n    delivery = 0\nprint("Final Amount:", bill + delivery)', notes: ["A bill of 180 pays 30 delivery; the final amount is 210.", "A bill of exactly 200 has free delivery. The boundary matters.", "Use meaningful variable names and print every requested value."], check: { question: "What is the final amount for a bill of ₹200?", choices: ["₹200", "₹230", "₹30"], correct: 0, why: "The charge applies only below 200, so delivery is 0." } },
 ];
-const tasks = [
-  { title: "Positive number", prompt: "Accept an integer and print Positive only when it is greater than zero.", starter: 'num = int(input("Number: "))\n', solution: 'num = int(input("Number: "))\nif num > 0:\n    print("Positive")', tests: ["12 → Positive", "0 → no output", "-3 → no output"] },
-  { title: "Even or odd", prompt: "Accept an integer and print Even or Odd.", starter: 'num = int(input("Number: "))\n', solution: 'num = int(input("Number: "))\nif num % 2 == 0:\n    print("Even")\nelse:\n    print("Odd")', tests: ["7 → Odd", "8 → Even", "0 → Even"] },
-  { title: "Grade ladder", prompt: "Accept marks. Print A for 90+, B for 75–89, C for 40–74, or Fail below 40.", starter: 'marks = int(input("Marks: "))\n', solution: 'marks = int(input("Marks: "))\nif marks >= 90:\n    print("A")\nelif marks >= 75:\n    print("B")\nelif marks >= 40:\n    print("C")\nelse:\n    print("Fail")', tests: ["90 → A", "75 → B", "40 → C", "39 → Fail"] },
-  { title: "Grocery delivery", prompt: "Accept a bill amount. Charge ₹30 delivery below ₹200; otherwise charge ₹0. Print the bill, delivery, and final amount.", starter: 'bill = int(input("Bill: "))\n', solution: 'bill = int(input("Bill: "))\nif bill < 200:\n    delivery = 30\nelse:\n    delivery = 0\nprint("Bill:", bill)\nprint("Delivery:", delivery)\nprint("Final:", bill + delivery)', tests: ["180 → delivery 30, final 210", "200 → delivery 0, final 200"] },
-];
 
 export function PythonLearningModule() {
   const router = useRouter();
@@ -28,25 +21,18 @@ export function PythonLearningModule() {
   const [loadError, setLoadError] = useState("");
   const [lesson, setLesson] = useState(0);
   const [choice, setChoice] = useState<number | null>(null);
-  const [task, setTask] = useState(0);
-  const [drafts, setDrafts] = useState<string[]>(tasks.map((item) => item.starter));
-  const [childId, setChildId] = useState("");
-  const [showSolution, setShowSolution] = useState(false);
   useEffect(() => {
     void fetch("/api/study/library", { cache: "no-store" }).then(async (result) => {
       if (result.status === 401) { router.replace("/login?role=child"); return; }
       if (!result.ok) { setLoadError("Could not open Python lessons. Please refresh the page."); return; }
-      const body = await result.json(); const id = String(body.child?.id ?? ""); setChildId(id);
-      try { const saved = localStorage.getItem(`studycraft-python-drafts-v1:${id}`); const parsed = saved ? JSON.parse(saved) : null; if (Array.isArray(parsed) && parsed.length === tasks.length && parsed.every((item) => typeof item === "string")) setDrafts(parsed); } catch { /* browser storage is optional */ }
+      const body = await result.json();
       setName(body.child?.displayName ?? ""); setReady(true);
     }).catch(() => setLoadError("Could not open Python lessons. Please refresh the page."));
   }, [router]);
-  function updateDraft(value: string) { const next = drafts.map((current, index) => index === task ? value : current); setDrafts(next); try { localStorage.setItem(`studycraft-python-drafts-v1:${childId}`, JSON.stringify(next)); } catch { /* the editor still works */ } }
-  const current = lessons[lesson]; const exercise = tasks[task];
+  const current = lessons[lesson];
   return <main className="study-shell python-learning-page"><AppHeader role="child" childName={name} />{!ready ? <p className="study-loading">{loadError || "Opening Python lessons…"}</p> : <>
-    <section className="python-hero"><p className="eyebrow">Computer Studies · Class VI</p><h1>Conditional Statements</h1><p>Learn the three shapes of a condition, then write the kinds of short programs that appear in your computer exam.</p><div><span>5 short lessons</span><span>4 writing challenges</span><span>From the supplied handout and past paper</span></div></section>
+    <section className="python-hero"><p className="eyebrow">Computer Studies · Class VI</p><h1>Conditional Statements</h1><p>Learn the three shapes of a condition, then write the kinds of short programs that appear in your computer exam.</p><div><span>5 short lessons</span><span>From the supplied handout and past paper</span></div></section>
     <section className="python-lesson" aria-labelledby="python-lesson-heading"><div className="python-section-heading"><div><p className="eyebrow">Learn · {lesson + 1} of {lessons.length}</p><h2 id="python-lesson-heading">{current.title}</h2></div><span>{lesson + 1}/{lessons.length}</span></div><nav className="python-step-nav" aria-label="Python lessons">{lessons.map((item, index) => <button type="button" aria-current={lesson === index ? "step" : undefined} className={lesson === index ? "is-active" : ""} onClick={() => { setLesson(index); setChoice(null); }} key={item.title}>{index + 1}</button>)}</nav><p className="python-idea">{current.idea}</p><pre><code>{current.code}</code></pre><ul>{current.notes.map((note) => <li key={note}>{note}</li>)}</ul><div className="python-check"><strong>Quick check</strong><p>{current.check.question}</p><div>{current.check.choices.map((answer, index) => <button type="button" key={answer} className={choice === index ? "is-selected" : ""} onClick={() => setChoice(index)}>{answer}</button>)}</div>{choice !== null && <p role="status" className={choice === current.check.correct ? "is-correct" : "is-incorrect"}>{choice === current.check.correct ? "Correct. " : "Try again. "}{current.check.why}</p>}</div><div className="python-lesson-actions"><button type="button" disabled={lesson === 0} onClick={() => { setLesson(lesson - 1); setChoice(null); }}>← Previous</button><button type="button" disabled={lesson === lessons.length - 1} onClick={() => { setLesson(lesson + 1); setChoice(null); }}>Next lesson →</button></div></section>
-    <section className="python-practice" aria-labelledby="python-practice-heading"><div className="python-section-heading"><div><p className="eyebrow">Write Python</p><h2 id="python-practice-heading">Your programming desk</h2></div><span>{task + 1}/{tasks.length}</span></div><p>Write your answer here, then compare it with the example and trace the sample inputs on paper. Your draft stays in this browser.</p><div className="python-task-tabs">{tasks.map((item, index) => <button type="button" className={task === index ? "is-active" : ""} key={item.title} onClick={() => { setTask(index); setShowSolution(false); }}>{item.title}</button>)}</div><h3>{exercise.title}</h3><p>{exercise.prompt}</p><PythonCodeEditor value={drafts[task]} onChange={updateDraft} /><div className="python-sample-tests"><strong>Try these inputs when tracing:</strong><ul>{exercise.tests.map((test) => <li key={test}>{test}</li>)}</ul></div><button type="button" className="button" onClick={() => setShowSolution(!showSolution)}>{showSolution ? "Hide example answer" : "Show example answer"}</button>{showSolution && <div className="python-solution"><strong>One possible solution</strong><pre><code>{exercise.solution}</code></pre><p>Your code can look different and still be correct if it gives the same results.</p></div>}</section>
     <section className="python-next"><h2>Ready for exam-style Python?</h2><p>Write full programs, trace output, correct code, and practise earlier Python topics.</p><Link className="button" href="/study/python/practice">Open Python Programming →</Link></section>
   </>}</main>;
 }

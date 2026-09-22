@@ -1,4 +1,4 @@
-import { cleanup, fireEvent, render, screen } from "@testing-library/react";
+import { cleanup, fireEvent, render, screen, waitFor } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import bank from "../../ingestion-artifacts/python-conditional-statements-question-bank.json";
 import { PythonExamPractice, type PracticeQuestion } from "./python-exam-practice";
@@ -34,7 +34,27 @@ describe("PythonExamPractice", () => {
     expect(screen.getByText("Which form runs code only when its condition is True?")).toBeInTheDocument();
     fireEvent.click(screen.getByLabelText("if", { exact: true }));
     fireEvent.click(screen.getByRole("button", { name: "Check answer" }));
-    expect(screen.getByRole("status")).toHaveTextContent("Correct");
+    expect(screen.getByRole("heading", { name: "Correct" })).toBeInTheDocument();
     expect(screen.getByText("1 short questions correct")).toBeInTheDocument();
+  });
+  it("loads completed programs from the account and restarts one", async () => {
+    const fetchMock = vi.spyOn(globalThis, "fetch").mockImplementation(async (input, init) => {
+      const path = String(input);
+      if (path === "/api/study/library") return Response.json({ child: { id: "asha", displayName: "Asha", grade: 6 } });
+      if (path === "/api/study/python-progress" && !init?.method) return Response.json({ entries: [{ questionId: "q-037", answer: "print(600)", checked: false, passed: true }] });
+      if (path === "/api/study/python-progress" && init?.method === "PUT") return Response.json({ item: JSON.parse(String(init.body)) });
+      throw new Error(`Unexpected fetch: ${path}`);
+    });
+    render(<PythonExamPractice questions={questions} />);
+    expect(await screen.findByText("Saved to your StudyCraft account")).toBeInTheDocument();
+    expect(screen.getByText("1 programs passed")).toBeInTheDocument();
+    const waterMeter = screen.getByRole("button", { name: /Water meter/ });
+    expect(waterMeter).toHaveClass("is-complete");
+    fireEvent.click(waterMeter);
+    expect(screen.getByRole("textbox", { name: "Write your Python answer" })).toHaveValue("print(600)");
+    fireEvent.click(screen.getByRole("button", { name: "Restart this program" }));
+    expect(screen.getByRole("textbox", { name: "Write your Python answer" })).toHaveValue("");
+    expect(screen.getByText("0 programs passed")).toBeInTheDocument();
+    await waitFor(() => expect(fetchMock).toHaveBeenCalledWith("/api/study/python-progress", expect.objectContaining({ method: "PUT", body: JSON.stringify({ questionId: "q-037", answer: "", checked: false, passed: false }) })));
   });
 });

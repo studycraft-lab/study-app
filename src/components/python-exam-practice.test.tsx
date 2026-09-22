@@ -57,4 +57,23 @@ describe("PythonExamPractice", () => {
     expect(screen.getByText("0 programs passed")).toBeInTheDocument();
     await waitFor(() => expect(fetchMock).toHaveBeenCalledWith("/api/study/python-progress", expect.objectContaining({ method: "PUT", body: JSON.stringify({ questionId: "q-037", answer: "", checked: false, passed: false }) })));
   });
+  it("resumes the exam mix at the first unfinished question", async () => {
+    vi.spyOn(globalThis, "fetch").mockImplementation(async (input) => {
+      if (String(input) === "/api/study/library") return Response.json({ child: { id: "asha", displayName: "Asha", grade: 6 } });
+      return Response.json({ entries: [
+        { questionId: "q-001", answer: "option-1", checked: true, passed: false },
+        { questionId: "q-002", answer: "option-2", checked: true, passed: false },
+        { questionId: "q-031", answer: "print('My school')", checked: false, passed: true },
+      ] });
+    });
+    render(<PythonExamPractice questions={questions} />);
+    await screen.findByText("Saved to your StudyCraft account");
+    fireEvent.click(screen.getByRole("button", { name: "Exam-style Python mix" }));
+    expect(screen.getByText(/Question 4 of 58/)).toBeInTheDocument();
+    expect(screen.getByText("An if...elif...else ladder stops checking when...")).toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", { name: "← Previous" }));
+    expect(screen.getByText(/Question 3 of 58/)).toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", { name: "Jump to next unfinished" }));
+    expect(screen.getByText(/Question 4 of 58/)).toBeInTheDocument();
+  });
 });

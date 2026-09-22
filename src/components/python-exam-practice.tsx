@@ -69,6 +69,11 @@ function examOrder(questions: PracticeQuestion[]) {
   }
   return result;
 }
+function firstUnfinished(questions: PracticeQuestion[], state: PracticeState) {
+  return questions.findIndex((item) => item.response.editor === "python"
+    ? !state.passed[item.id]
+    : !state.checked[item.id] || !correct(item, state.answers[item.id] ?? ""));
+}
 
 export function PythonExamPractice({ questions }: { questions: PracticeQuestion[] }) {
   const router = useRouter();
@@ -185,16 +190,22 @@ export function PythonExamPractice({ questions }: { questions: PracticeQuestion[
     setProgramFeedback((old) => { const next = { ...old }; delete next[question.id]; return next; });
     setRunError(""); setShowSolution(false); setHintOpen(false);
   }
-  function changeMode(next: "programs" | "exam") { setMode(next); setPosition(0); setHintOpen(false); }
+  function changeMode(next: "programs" | "exam") {
+    setMode(next);
+    const nextPosition = next === "exam" ? firstUnfinished(ordered, state) : firstUnfinished(programs, state);
+    setPosition(nextPosition < 0 ? 0 : nextPosition);
+    setHintOpen(false);
+  }
   function go(delta: number) { setPosition((old) => Math.max(0, Math.min(visible.length - 1, old + delta))); setHintOpen(false); }
   const written = question?.response.editor === "python";
   const submitted = question ? Boolean(state.checked[question.id]) : false;
   const value = question ? state.answers[question.id] ?? "" : "";
   const passedCount = questions.filter((item) => state.passed[item.id]).length;
   const correctCount = questions.filter((item) => item.response.editor !== "python" && state.checked[item.id] && correct(item, state.answers[item.id] ?? "")).length;
+  const nextUnfinished = mode === "exam" ? firstUnfinished(ordered, state) : -1;
   return <main className="study-shell python-practice-page"><AppHeader role="child" childName={name} />{!ready ? <p className="study-loading">{loadError || "Opening Python practice…"}</p> : <>
     <section className="python-hero"><p className="eyebrow">Computer Studies · Class VI</p><h1>Python Programming</h1><p>Practise the kinds of questions in the supplied computer paper: write programs, trace output, correct code, and revisit Python basics.</p><div><span>{questions.filter((item) => item.response.editor === "python").length} programming questions</span><span>{questions.length} questions in the full mix</span><span>5- and 7-mark exam tasks</span></div></section>
-    <nav className="python-practice-tabs" aria-label="Practice mode"><button type="button" className={mode === "programs" ? "is-active" : ""} disabled={running} onClick={() => changeMode("programs")}>Write Python programs</button><button type="button" className={mode === "exam" ? "is-active" : ""} disabled={running} onClick={() => changeMode("exam")}>Exam-style Python mix</button></nav>
+    <nav className="python-practice-tabs" aria-label="Practice mode"><button type="button" className={mode === "programs" ? "is-active" : ""} disabled={running} onClick={() => changeMode("programs")}>Write Python programs</button><button type="button" className={mode === "exam" ? "is-active" : ""} disabled={running} onClick={() => changeMode("exam")}>Exam-style Python mix</button>{mode === "exam" && nextUnfinished >= 0 && position !== nextUnfinished && <button type="button" disabled={running} onClick={() => { setPosition(nextUnfinished); setHintOpen(false); }}>Jump to next unfinished</button>}</nav>
     <section className="python-practice-summary" aria-label="Practice progress"><span>{passedCount} programs passed</span><span>{correctCount} short questions correct</span><span role="status">{syncStatus === "synced" ? "Saved to your StudyCraft account" : syncStatus === "syncing" ? "Saving to your account…" : "Saved on this device; account sync unavailable"}</span></section>
     {mode === "programs" && <nav className="python-program-picker" aria-label="Choose a programming question">{programs.map((item, index) => <button type="button" key={item.id} className={`${position === index ? "is-active " : ""}${state.passed[item.id] ? "is-complete" : ""}`} disabled={running} onClick={() => { setPosition(index); setHintOpen(false); }}><span>{state.passed[item.id] && <span aria-hidden="true" className="python-complete-check">✓ </span>}{PROGRAM_LABELS[item.id] ?? `Program ${index + 1}`}</span><small>{item.marks} marks{state.passed[item.id] ? " · Completed" : ""}</small></button>)}</nav>}
     {question && <article className="python-exam-card"><div className="python-section-heading"><div><p className="eyebrow">{mode === "programs" ? "Program writing" : "Exam-style mix"} · Question {position + 1} of {visible.length}</p><h2>{written ? `${question.marks}-mark program` : question.topicIds[0]?.replaceAll("-", " ")}</h2></div><span>{question.marks} {question.marks === 1 ? "mark" : "marks"}</span></div><p className="python-exam-prompt">{question.prompt}</p>

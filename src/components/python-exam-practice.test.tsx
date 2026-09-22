@@ -14,8 +14,8 @@ describe("PythonExamPractice", () => {
     vi.spyOn(globalThis, "fetch").mockResolvedValue(Response.json({ child: { id: "asha", displayName: "Asha", grade: 6 } }));
     render(<PythonExamPractice questions={[...questions, ...EXTRA_PROGRAMS]} />);
     await screen.findByRole("heading", { name: "Python Programming" });
-    fireEvent.click(screen.getByRole("button", { name: /Number sign/ }));
-    expect(screen.getByRole("heading", { name: "Number sign" })).toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", { name: /Class fundraiser/ }));
+    expect(screen.getByRole("heading", { name: "Class fundraiser" })).toBeInTheDocument();
     expect(screen.getByText(/Question \d+ of 35/)).toBeInTheDocument();
     fireEvent.click(screen.getByRole("button", { name: "Exam-style Python mix" }));
     expect(screen.getByText(/Question 1 of 78/)).toBeInTheDocument();

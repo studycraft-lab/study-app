@@ -40,7 +40,9 @@ describe("Python practice progress route", () => {
   });
 
   it("accepts progress for an added practice program", async () => {
-    const answer = { questionId: "q-059", answer: "print('Positive')", checked: false, passed: true };
+    const retired = { questionId: "q-059", answer: "print('Positive')", checked: false, passed: true };
+    expect((await PUT(new Request(url, { method: "PUT", body: JSON.stringify(retired) }))).status).toBe(400);
+    const answer = { questionId: "q-079", answer: "print('Collected:', 1000)", checked: false, passed: true };
     vi.mocked(savePythonProgress).mockResolvedValue(answer);
     const response = await PUT(new Request(url, { method: "PUT", body: JSON.stringify(answer) }));
     expect(response.status).toBe(200);

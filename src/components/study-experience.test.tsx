@@ -206,6 +206,26 @@ describe("StudyExperience", () => {
     expect(screen.getByRole("button", { name: /all subjects/i })).toBeInTheDocument();
   });
 
+  it("keeps Continue studying within the chosen subject", async () => {
+    vi.spyOn(globalThis, "fetch").mockImplementation(async (input) => String(input) === "/api/study/library"
+      ? Response.json({ child: { id: "child", displayName: "Asha", grade: 6, board: "ICSE" }, chapters: [
+        { id: "history", subject: "History", chapterTitle: "Early Vedic", questionCount: 10 },
+        { id: "geography", subject: "Geography", chapterTitle: "Major Water Bodies", questionCount: 10 },
+      ] })
+      : Response.json({ summary: { completedSessions: 0 }, topics: [], sessions: [
+        { id: "geo-session", bankId: "geography", subject: "Geography", chapterTitle: "Major Water Bodies", status: "in_progress", resumable: true, attempts: [], totalQuestions: 10 },
+        { id: "history-session", bankId: "history", subject: "History", chapterTitle: "Early Vedic", status: "in_progress", resumable: true, attempts: [], totalQuestions: 10 },
+      ] }));
+    render(<StudyExperience />);
+    await screen.findByText("Geography · Major Water Bodies");
+    fireEvent.click(screen.getByRole("button", { name: /history/i }));
+    expect(screen.getByRole("heading", { name: "History" })).toBeInTheDocument();
+    expect(screen.getByText("History · Early Vedic")).toBeInTheDocument();
+    expect(screen.queryByText("Geography · Major Water Bodies")).not.toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", { name: /all subjects/i }));
+    expect(screen.getByText("Geography · Major Water Bodies")).toBeInTheDocument();
+  });
+
   it("shows Computer Studies modules to a Class VI child before any question bank is imported", async () => {
     vi.spyOn(globalThis, "fetch").mockImplementation(async (input) => String(input) === "/api/study/library"
       ? Response.json({ child: { id: "child", displayName: "Asha", grade: 6, board: "ICSE" }, chapters: [] })

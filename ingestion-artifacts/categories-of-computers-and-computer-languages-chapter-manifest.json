@@ -1,0 +1,185 @@
+{
+  "manifestVersion": "0.1.0",
+  "chapter": {
+    "id": "categories-of-computers-and-computer-languages",
+    "board": "ICSE",
+    "grade": 6,
+    "subject": "Computer Studies",
+    "bookTitle": "Computers-6",
+    "chapterNumber": 1,
+    "title": "Categories Of Computers And Computer Languages"
+  },
+  "sourcePolicy": {
+    "originals": "local-only",
+    "repositoryCopies": false,
+    "applicationStorage": "not-uploaded",
+    "runtimeStrategy": "none",
+    "notes": "Textbook scan supplies every answer. The 2025 term paper informs question style only. All prompts are self-contained and require no runtime image."
+  },
+  "assets": [
+    {
+      "id": "chapter-scan",
+      "fileName": "Scan_20260920_190722.pdf",
+      "sha256": "aad399fd449d72fa48606564dd8fdba5c3e5dd29833873b5dca8fe4b24266c34",
+      "width": 2428,
+      "height": 3239,
+      "pages": [
+        {
+          "id": "chapter-pdf-page-1",
+          "pageNumber": 1,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "chapter-pdf-page-2",
+          "pageNumber": 2,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "chapter-pdf-page-3",
+          "pageNumber": 3,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "chapter-pdf-page-4",
+          "pageNumber": 4,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "chapter-pdf-page-5",
+          "pageNumber": 5,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "chapter-pdf-page-6",
+          "pageNumber": 6,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "chapter-pdf-page-7",
+          "pageNumber": 7,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "past-paper",
+      "fileName": "TERM_1_VI_COMPUTER_STUDIES_1787974622.pdf",
+      "sha256": "2614f6c4d3c5b6e482662fcb9382a02652a8ffc94098e24ebc6fcc0e38e3f986",
+      "width": 595,
+      "height": 842,
+      "pages": [
+        {
+          "id": "past-paper-page-1",
+          "pageNumber": 1,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "past-paper-page-2",
+          "pageNumber": 2,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "past-paper-page-3",
+          "pageNumber": 3,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "past-paper-page-4",
+          "pageNumber": 4,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "past-paper-page-5",
+          "pageNumber": 5,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "past-paper-page-6",
+          "pageNumber": 6,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "past-paper-page-7",
+          "pageNumber": 7,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        }
+      ]
+    }
+  ],
+  "learningOutcomes": [
+    "categorise computers based on size, speed and handle data",
+    "list some other special computers",
+    "explain different types of computer languages",
+    "explain why computers need translators"
+  ]
+}

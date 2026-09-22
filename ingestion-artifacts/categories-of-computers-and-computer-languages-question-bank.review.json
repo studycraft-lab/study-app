@@ -1,0 +1,105 @@
+{
+  "reviewVersion": "0.1.0",
+  "bankId": "categories-of-computers-and-computer-languages-v1",
+  "bankVersion": 1,
+  "reviewedAt": "2026-09-22T10:01:41+05:30",
+  "reviewerMethod": "Codex visual page-by-page comparison of the supplied chapter scan; 2025 paper used only for question style; repository schema, source-hash and deterministic grounding checks",
+  "inputs": {
+    "manifest": "ingestion-artifacts/categories-of-computers-and-computer-languages-chapter-manifest.json",
+    "bank": "ingestion-artifacts/categories-of-computers-and-computer-languages-question-bank.json",
+    "sourceAssetCount": 2,
+    "pageRange": "textbook printed 5–11 (PDF 1–7); past paper PDF 1–7"
+  },
+  "gates": {
+    "manifestSchema": "pass",
+    "sourceHashes": "pass",
+    "questionBankSchema": "pass",
+    "deterministicGroundingReview": "pass",
+    "manualGroundingReview": "pass",
+    "rubricBalanceReview": "pass",
+    "childPromptLanguageReview": "pass"
+  },
+  "coverage": {
+    "questionCount": 23,
+    "topics": {
+      "size-and-speed": 6,
+      "data-handling": 3,
+      "special-computers": 6,
+      "computer-languages": 4,
+      "translators": 4
+    },
+    "types": {
+      "single_choice": 17,
+      "brief_answer": 6
+    },
+    "difficulties": {
+      "2": 10,
+      "1": 13
+    },
+    "origins": {
+      "chapter_content": 18,
+      "end_exercise": 5
+    },
+    "selectionPriorities": {
+      "1": 8,
+      "2": 15
+    },
+    "pages": {
+      "page-6": 12,
+      "page-7": 6,
+      "page-8": 3,
+      "page-9": 2,
+      "page-10": 4
+    },
+    "sourceAssetReadiness": {
+      "childVisibleVisualQuestions": 0,
+      "runtimeAssetsRequired": false
+    }
+  },
+  "atomicCoverageInventory": {
+    "sizeAndSpeed": [
+      "micro and personal computers",
+      "minicomputers",
+      "mainframes",
+      "supercomputers and one Indian example"
+    ],
+    "dataHandling": [
+      "analog",
+      "digital",
+      "hybrid"
+    ],
+    "specialComputers": [
+      "gaming console",
+      "embedded computer",
+      "smartwatch",
+      "self-checkout machine",
+      "drone"
+    ],
+    "languages": [
+      "program",
+      "machine language",
+      "assembly language",
+      "high-level languages",
+      "4GL",
+      "5GL"
+    ],
+    "translators": [
+      "why translation is needed",
+      "assembler",
+      "compiler",
+      "interpreter"
+    ]
+  },
+  "omissions": [
+    {
+      "source": "textbook printed pages 10–11, end exercises",
+      "reason": "The user explicitly requested a concise computer-science bank. This bank samples the answerable exercise concepts and covers all four learning outcomes; lower-priority recall items such as the FORTRAN year and full form, and extra variants of already-tested categories, were omitted."
+    }
+  ],
+  "advisoryNotes": [
+    "Book title Computers-6 is inferred from the repeated page footer in the supplied scan.",
+    "The supplied 2025 term paper influenced MCQ and short-answer style; no factual answer depends on it."
+  ],
+  "blockingFindings": [],
+  "decision": "accept"
+}

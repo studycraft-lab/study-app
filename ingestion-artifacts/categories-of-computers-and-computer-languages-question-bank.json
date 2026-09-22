@@ -1,0 +1,1490 @@
+{
+  "bank": {
+    "board": "ICSE",
+    "bookTitle": "Computers-6",
+    "chapterNumber": 1,
+    "grade": 6,
+    "id": "categories-of-computers-and-computer-languages-v1",
+    "status": "reviewed",
+    "subject": "Computer Studies",
+    "title": "Categories Of Computers And Computer Languages",
+    "version": 1
+  },
+  "questions": [
+    {
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 2,
+      "explanation": "A mainframe supports many users simultaneously, including in banks.",
+      "generation": {
+        "generatedAt": "2026-09-22T10:00:37+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Match the defining feature to the correct term.",
+      "id": "q-001",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "Which computer is suited to serving many users at once in a bank?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "Microcomputer"
+          },
+          {
+            "id": "b",
+            "text": "Mainframe"
+          },
+          {
+            "id": "c",
+            "text": "Gaming console"
+          },
+          {
+            "id": "d",
+            "text": "Analog computer"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-6",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "size-and-speed"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "c"
+      },
+      "difficulty": 1,
+      "explanation": "Supercomputers are used for weather forecasting and space research.",
+      "generation": {
+        "generatedAt": "2026-09-22T10:00:37+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Match the defining feature to the correct term.",
+      "id": "q-002",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Which type is used for weather forecasting and space research?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "Minicomputer"
+          },
+          {
+            "id": "b",
+            "text": "Microcomputer"
+          },
+          {
+            "id": "c",
+            "text": "Supercomputer"
+          },
+          {
+            "id": "d",
+            "text": "Gaming console"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-6",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "size-and-speed"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "d"
+      },
+      "difficulty": 1,
+      "explanation": "MacBook is listed as a micro or personal computer.",
+      "generation": {
+        "generatedAt": "2026-09-22T10:00:37+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Match the defining feature to the correct term.",
+      "id": "q-003",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "Which is a textbook example of a personal computer?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "IBM Z"
+          },
+          {
+            "id": "b",
+            "text": "Frontier"
+          },
+          {
+            "id": "c",
+            "text": "IBM AS/400"
+          },
+          {
+            "id": "d",
+            "text": "MacBook"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-6",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "size-and-speed"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 2,
+      "explanation": "A hybrid computer combines analog and digital systems.",
+      "generation": {
+        "generatedAt": "2026-09-22T10:00:37+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Match the defining feature to the correct term.",
+      "id": "q-004",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "Which type combines analog and digital systems?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "Hybrid"
+          },
+          {
+            "id": "b",
+            "text": "Digital"
+          },
+          {
+            "id": "c",
+            "text": "Mainframe"
+          },
+          {
+            "id": "d",
+            "text": "Microcomputer"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-6",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "data-handling"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 1,
+      "explanation": "The scan gives a car speedometer as an analog-computer example.",
+      "generation": {
+        "generatedAt": "2026-09-22T10:00:37+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Match the defining feature to the correct term.",
+      "id": "q-005",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "A car speedometer uses a real-world speed value. Which computer category fits this example?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "Digital"
+          },
+          {
+            "id": "b",
+            "text": "Analog"
+          },
+          {
+            "id": "c",
+            "text": "Hybrid"
+          },
+          {
+            "id": "d",
+            "text": "Supercomputer"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-6",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "data-handling"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "c"
+      },
+      "difficulty": 2,
+      "explanation": "An embedded computer is fixed inside another machine to control a task.",
+      "generation": {
+        "generatedAt": "2026-09-22T10:00:37+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Match the defining feature to the correct term.",
+      "id": "q-006",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "A small computer fixed inside a washing machine to control its wash cycle is called what?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "Mainframe"
+          },
+          {
+            "id": "b",
+            "text": "Minicomputer"
+          },
+          {
+            "id": "c",
+            "text": "Embedded computer"
+          },
+          {
+            "id": "d",
+            "text": "Gaming console"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-6",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-7",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "special-computers"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 1,
+      "explanation": "Self-checkout machines let customers scan and pay without a cashier.",
+      "generation": {
+        "generatedAt": "2026-09-22T10:00:37+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Match the defining feature to the correct term.",
+      "id": "q-007",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "Which device lets customers scan and pay for items without a cashier?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "Smart speaker"
+          },
+          {
+            "id": "b",
+            "text": "Self-checkout machine"
+          },
+          {
+            "id": "c",
+            "text": "E-reader"
+          },
+          {
+            "id": "d",
+            "text": "Drone"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-7",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "special-computers"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "d"
+      },
+      "difficulty": 1,
+      "explanation": "Machine language consists of binary digits, 0 and 1.",
+      "generation": {
+        "generatedAt": "2026-09-22T10:00:37+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Match the defining feature to the correct term.",
+      "id": "q-008",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "What is machine language written in?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "English sentences"
+          },
+          {
+            "id": "b",
+            "text": "Mnemonics"
+          },
+          {
+            "id": "c",
+            "text": "Tables"
+          },
+          {
+            "id": "d",
+            "text": "Binary digits"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-8",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "computer-languages"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 1,
+      "explanation": "Assembly language uses mnemonics and is machine dependent.",
+      "generation": {
+        "generatedAt": "2026-09-22T10:00:37+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Match the defining feature to the correct term.",
+      "id": "q-009",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "Which language uses mnemonics and is machine dependent?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "Assembly language"
+          },
+          {
+            "id": "b",
+            "text": "Python"
+          },
+          {
+            "id": "c",
+            "text": "4GL"
+          },
+          {
+            "id": "d",
+            "text": "5GL"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-8",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "computer-languages"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "c"
+      },
+      "difficulty": 2,
+      "explanation": "Some 4GLs are table-driven; the scan associates 5GLs with AI research.",
+      "generation": {
+        "generatedAt": "2026-09-22T10:00:37+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Match the defining feature to the correct term.",
+      "id": "q-010",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "Which pair matches the chapter: some table-driven languages, then languages used mainly in AI research?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "1GL and 2GL"
+          },
+          {
+            "id": "b",
+            "text": "2GL and 3GL"
+          },
+          {
+            "id": "c",
+            "text": "4GL and 5GL"
+          },
+          {
+            "id": "d",
+            "text": "3GL and 4GL"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-9",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "computer-languages"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "c"
+      },
+      "difficulty": 1,
+      "explanation": "An assembler converts assembly code to machine code.",
+      "generation": {
+        "generatedAt": "2026-09-22T10:00:37+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Match the defining feature to the correct term.",
+      "id": "q-011",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Which translator converts assembly language to machine code?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "Compiler"
+          },
+          {
+            "id": "b",
+            "text": "Interpreter"
+          },
+          {
+            "id": "c",
+            "text": "Assembler"
+          },
+          {
+            "id": "d",
+            "text": "5GL"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-10",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "translators"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 1,
+      "explanation": "An interpreter translates a program step by step.",
+      "generation": {
+        "generatedAt": "2026-09-22T10:00:37+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Match the defining feature to the correct term.",
+      "id": "q-012",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Which translator works through a program step by step?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "Compiler"
+          },
+          {
+            "id": "b",
+            "text": "Interpreter"
+          },
+          {
+            "id": "c",
+            "text": "Assembler"
+          },
+          {
+            "id": "d",
+            "text": "Machine language"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-10",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "translators"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "A mainframe supports many users and is used in banks. A supercomputer performs demanding work such as weather forecasting or space research."
+      },
+      "difficulty": 2,
+      "explanation": "A mainframe supports many users and is used in banks. A supercomputer performs demanding work such as weather forecasting or space research.",
+      "generation": {
+        "generatedAt": "2026-09-22T10:00:37+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Give the defining features in two short points.",
+      "id": "q-013",
+      "marks": 2,
+      "origin": "end_exercise",
+      "prompt": "Give one difference between a mainframe and a supercomputer, with one use of each.",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "mainframe supports many users and is used in banks or government offices",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "supercomputer is used for weather forecasting, space work or research",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-6",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "size-and-speed"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "PARAM Siddhi; weather forecasting or space research."
+      },
+      "difficulty": 2,
+      "explanation": "PARAM Siddhi; weather forecasting or space research.",
+      "generation": {
+        "generatedAt": "2026-09-22T10:00:37+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Give the defining features in two short points.",
+      "id": "q-014",
+      "marks": 2,
+      "origin": "chapter_content",
+      "prompt": "Name one Indian supercomputer and give one application of supercomputers.",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "names PARAM Siddhi as an Indian supercomputer",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "names weather forecasting, space research, or research as an application",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-6",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "size-and-speed"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "An embedded computer is a small computer fixed inside another machine to control a main task. A smart washing machine contains one to control its wash cycle."
+      },
+      "difficulty": 2,
+      "explanation": "An embedded computer is a small computer fixed inside another machine to control a main task. A smart washing machine contains one to control its wash cycle.",
+      "generation": {
+        "generatedAt": "2026-09-22T10:00:37+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Give the defining features in two short points.",
+      "id": "q-015",
+      "marks": 2,
+      "origin": "end_exercise",
+      "prompt": "What is an embedded computer? Give one example.",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "defines an embedded computer as fixed inside another machine to control a task",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "gives a supported example, such as a smart washing machine or microwave",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-6",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-7",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "special-computers"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Machine language uses binary digits and runs without translation. Assembly language uses mnemonics and needs translation. Both are machine dependent low-level languages."
+      },
+      "difficulty": 2,
+      "explanation": "Machine language uses binary digits and runs without translation. Assembly language uses mnemonics and needs translation. Both are machine dependent low-level languages.",
+      "generation": {
+        "generatedAt": "2026-09-22T10:00:37+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Give the defining features in two short points.",
+      "id": "q-016",
+      "marks": 2,
+      "origin": "chapter_content",
+      "prompt": "State one difference between machine language and assembly language. What do they have in common?",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "distinguishes binary machine language from mnemonic assembly language",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "states that both are low-level or machine-dependent languages",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-8",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "computer-languages"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "A program is a set of instructions in a computer language. A translator converts a high-level program into machine language so the computer can understand it."
+      },
+      "difficulty": 2,
+      "explanation": "A program is a set of instructions in a computer language. A translator converts a high-level program into machine language so the computer can understand it.",
+      "generation": {
+        "generatedAt": "2026-09-22T10:00:37+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Give the defining features in two short points.",
+      "id": "q-017",
+      "marks": 2,
+      "origin": "chapter_content",
+      "prompt": "What is a computer program? Why does a high-level language need a translator?",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "defines a program as a set of instructions in a computer language",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "explains that a translator converts high-level code into machine language",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-7",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-9",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-10",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "translators"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "A compiler translates the whole program in one operation; an interpreter translates it step by step."
+      },
+      "difficulty": 2,
+      "explanation": "A compiler translates the whole program in one operation; an interpreter translates it step by step.",
+      "generation": {
+        "generatedAt": "2026-09-22T10:00:37+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Give the defining features in two short points.",
+      "id": "q-018",
+      "marks": 2,
+      "origin": "chapter_content",
+      "prompt": "How does a compiler differ from an interpreter?",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "compiler translates the whole program in one operation",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "interpreter translates a program step by step",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-10",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "translators"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 1,
+      "explanation": "A minicomputer is medium-sized, supports multiple users and is used in offices.",
+      "generation": {
+        "generatedAt": "2026-09-22T10:00:37+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the device or computer type by what it does.",
+      "id": "q-019",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "Which medium-sized computer supports multiple users in offices?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "Microcomputer"
+          },
+          {
+            "id": "b",
+            "text": "Minicomputer"
+          },
+          {
+            "id": "c",
+            "text": "Supercomputer"
+          },
+          {
+            "id": "d",
+            "text": "Gaming console"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-6",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "size-and-speed"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "c"
+      },
+      "difficulty": 1,
+      "explanation": "A digital computer works using 0s and 1s.",
+      "generation": {
+        "generatedAt": "2026-09-22T10:00:37+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the device or computer type by what it does.",
+      "id": "q-020",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "Which computer type works using binary digits, 0 and 1?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "Analog"
+          },
+          {
+            "id": "b",
+            "text": "Hybrid"
+          },
+          {
+            "id": "c",
+            "text": "Digital"
+          },
+          {
+            "id": "d",
+            "text": "Mainframe"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-6",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "data-handling"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 1,
+      "explanation": "A gaming console is made for video games and uses game controllers.",
+      "generation": {
+        "generatedAt": "2026-09-22T10:00:37+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the device or computer type by what it does.",
+      "id": "q-021",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "Which device is designed for video games and uses game controllers?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "Gaming console"
+          },
+          {
+            "id": "b",
+            "text": "Self-checkout machine"
+          },
+          {
+            "id": "c",
+            "text": "E-reader"
+          },
+          {
+            "id": "d",
+            "text": "Mainframe"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-6",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "special-computers"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "d"
+      },
+      "difficulty": 1,
+      "explanation": "A smartwatch tells time and tracks health.",
+      "generation": {
+        "generatedAt": "2026-09-22T10:00:37+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the device or computer type by what it does.",
+      "id": "q-022",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "Which smart device tells time and tracks health?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "E-reader"
+          },
+          {
+            "id": "b",
+            "text": "Self-checkout machine"
+          },
+          {
+            "id": "c",
+            "text": "Smart speaker"
+          },
+          {
+            "id": "d",
+            "text": "Smartwatch"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-7",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "special-computers"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 1,
+      "explanation": "A small computer inside a drone helps it fly and follow paths.",
+      "generation": {
+        "generatedAt": "2026-09-22T10:00:37+05:30",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the device or computer type by what it does.",
+      "id": "q-023",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "What helps a drone fly and follow a path?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "A bank mainframe"
+          },
+          {
+            "id": "b",
+            "text": "A small computer inside it"
+          },
+          {
+            "id": "c",
+            "text": "A gaming controller"
+          },
+          {
+            "id": "d",
+            "text": "A car speedometer"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-7",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "special-computers"
+      ],
+      "type": "single_choice",
+      "version": 1
+    }
+  ],
+  "schemaVersion": "0.1.0",
+  "sources": [
+    {
+      "assetRef": "manifest://categories-of-computers-and-computer-languages/page-5",
+      "extractionConfidence": 0.97,
+      "id": "page-5",
+      "pageNumber": 5,
+      "regions": [],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://categories-of-computers-and-computer-languages/page-6",
+      "extractionConfidence": 0.97,
+      "id": "page-6",
+      "pageNumber": 6,
+      "regions": [],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://categories-of-computers-and-computer-languages/page-7",
+      "extractionConfidence": 0.97,
+      "id": "page-7",
+      "pageNumber": 7,
+      "regions": [],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://categories-of-computers-and-computer-languages/page-8",
+      "extractionConfidence": 0.97,
+      "id": "page-8",
+      "pageNumber": 8,
+      "regions": [],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://categories-of-computers-and-computer-languages/page-9",
+      "extractionConfidence": 0.97,
+      "id": "page-9",
+      "pageNumber": 9,
+      "regions": [],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://categories-of-computers-and-computer-languages/page-10",
+      "extractionConfidence": 0.97,
+      "id": "page-10",
+      "pageNumber": 10,
+      "regions": [],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://categories-of-computers-and-computer-languages/page-11",
+      "extractionConfidence": 0.97,
+      "id": "page-11",
+      "pageNumber": 11,
+      "regions": [],
+      "reviewRequired": false
+    }
+  ],
+  "topics": [
+    {
+      "id": "computer-languages",
+      "learningOutcomeIds": [
+        "lo-3"
+      ],
+      "title": "Low-level and high-level computer languages"
+    },
+    {
+      "id": "data-handling",
+      "learningOutcomeIds": [
+        "lo-1"
+      ],
+      "title": "Analog, digital and hybrid computers"
+    },
+    {
+      "id": "size-and-speed",
+      "learningOutcomeIds": [
+        "lo-1"
+      ],
+      "title": "Computer types by size and speed"
+    },
+    {
+      "id": "special-computers",
+      "learningOutcomeIds": [
+        "lo-2"
+      ],
+      "title": "Special computers and devices"
+    },
+    {
+      "id": "translators",
+      "learningOutcomeIds": [
+        "lo-4"
+      ],
+      "title": "Language translators"
+    }
+  ]
+}

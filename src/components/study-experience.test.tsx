@@ -232,9 +232,23 @@ describe("StudyExperience", () => {
       : Response.json({ summary: { completedSessions: 0 }, topics: [], sessions: [] }));
     render(<StudyExperience />);
     const subject = await screen.findByRole("button", { name: /Computer Studies/i });
+    expect(within(subject).getByText("0 chapters · 2 Python activities")).toBeInTheDocument();
     fireEvent.click(subject);
     expect(screen.getByRole("link", { name: /Conditional Statements/i })).toHaveAttribute("href", "/study/python");
     expect(screen.getByRole("link", { name: /Python Programming/i })).toHaveAttribute("href", "/study/python/practice");
+  });
+  it("shows Computer Studies chapter progress alongside its Python activities", async () => {
+    vi.spyOn(globalThis, "fetch").mockImplementation(async (input) => String(input) === "/api/study/library"
+      ? Response.json({ child: { id: "child", displayName: "Asha", grade: 6, board: "ICSE" }, chapters: [{ id: "bank", subject: "Computer Studies", chapterTitle: "Categories of Computers", questionCount: 48, correctEver: 7 }] })
+      : Response.json({ summary: { completedSessions: 0 }, topics: [], sessions: [] }));
+    render(<StudyExperience />);
+    const subject = await screen.findByRole("button", { name: /Computer Studies/i });
+    expect(within(subject).getByText("1 chapter · 2 Python activities")).toBeInTheDocument();
+    expect(within(subject).getByText(/7 of 48 chapter questions answered correctly/)).toBeInTheDocument();
+    fireEvent.click(subject);
+    expect(screen.getByRole("button", { name: "Study Categories of Computers" })).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: "Conditional Statements" })).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: "Python Programming" })).toBeInTheDocument();
   });
   it("refreshes chapter coverage when returning from a completed exercise", async () => {
     let answered = false;

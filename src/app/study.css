@@ -320,10 +320,14 @@
 @media(max-width:560px) { .python-hero,.python-lesson,.python-practice,.python-next { border-radius:18px; } }
 .question-card > h1.python-question-prompt { font-size:clamp(1.2rem,2.3vw,1.75rem); line-height:1.45; white-space:pre-wrap; }
 .question-card:has(.python-code-editor) .expected-answer { font-family:ui-monospace,SFMono-Regular,Consolas,monospace; overflow-wrap:anywhere; white-space:pre-wrap; }
-.chapter-grid .builtin-chapter-card { background:var(--card); border:1px solid var(--line); border-top:4px solid var(--blue); border-radius:var(--radius-md); color:var(--ink); display:flex; flex-direction:column; min-height:230px; padding:26px; text-decoration:none; }
-.chapter-grid .builtin-chapter-card:nth-child(2) { border-top-color:var(--coral); }
-.chapter-grid .builtin-chapter-card:hover { border-color:var(--blue); box-shadow:var(--shadow-sm); transform:translateY(-2px); }
-.builtin-chapter-card p { color:var(--muted); line-height:1.55; margin:0 0 20px; }
+.chapter-grid .builtin-chapter-card { background:var(--card); border:1px solid rgba(23,33,43,.13); border-radius:28px 28px 28px 10px; box-shadow:0 12px 32px rgba(32,50,101,.08); color:var(--ink); display:flex; flex-direction:column; min-height:460px; overflow:hidden; padding:0; text-decoration:none; }
+.chapter-grid .builtin-chapter-card:hover { border-color:rgba(73,103,223,.46); box-shadow:0 25px 55px rgba(32,50,101,.17); transform:translateY(-7px) rotate(-.35deg); }
+.builtin-chapter-card .chapter-card-art { align-items:center; display:flex; justify-content:center; }
+.builtin-card-glyph { color:white; font:700 clamp(2.1rem,5vw,3.5rem)/1 ui-monospace,SFMono-Regular,Consolas,monospace; letter-spacing:-.08em; position:relative; text-shadow:0 8px 24px rgba(0,0,0,.25); z-index:1; }
+.builtin-chapter-card .chapter-card-body { align-items:flex-start; }
+.builtin-card-description { color:var(--muted); line-height:1.55; }
+.builtin-chapter-card .chapter-card-action { margin-top:auto; width:100%; }
+@media (max-width:560px) { .chapter-grid .builtin-chapter-card { min-height:430px; } }
 .python-practice-tabs { display:flex; flex-wrap:wrap; gap:10px; margin:28px 0 12px; }
 .python-practice-tabs button { background:white; border:1px solid var(--line); color:var(--navy); padding:13px 19px; }
 .python-practice-tabs button.is-active { background:var(--blue); border-color:var(--blue); color:white; }

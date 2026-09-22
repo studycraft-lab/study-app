@@ -38,4 +38,12 @@ describe("Python practice progress route", () => {
     expect(response.status).toBe(200);
     expect(savePythonProgress).toHaveBeenCalledWith("child-one", answer);
   });
+
+  it("accepts progress for an added practice program", async () => {
+    const answer = { questionId: "q-059", answer: "print('Positive')", checked: false, passed: true };
+    vi.mocked(savePythonProgress).mockResolvedValue(answer);
+    const response = await PUT(new Request(url, { method: "PUT", body: JSON.stringify(answer) }));
+    expect(response.status).toBe(200);
+    expect(savePythonProgress).toHaveBeenCalledWith("child-one", answer);
+  });
 });

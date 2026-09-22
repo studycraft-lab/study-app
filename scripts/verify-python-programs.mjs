@@ -2,11 +2,12 @@ import { loadPyodide } from "pyodide";
 import { readFile } from "node:fs/promises";
 const bank = JSON.parse(await readFile(new URL("../ingestion-artifacts/python-conditional-statements-question-bank.json", import.meta.url), "utf8"));
 import { PROGRAM_TESTS, evaluateProgramCase } from "../src/lib/python/program-tests.ts";
+import { EXTRA_PROGRAMS } from "../src/lib/python/extra-programs.ts";
 
 const pyodide = await loadPyodide();
 let checked = 0;
 const failures = [];
-for (const question of bank.questions.filter((item) => item.response.editor === "python")) {
+for (const question of [...bank.questions, ...EXTRA_PROGRAMS].filter((item) => item.response.editor === "python")) {
   const cases = PROGRAM_TESTS[question.id];
   if (!cases?.length) { failures.push(`${question.id}: no test cases`); continue; }
   for (const test of cases) {

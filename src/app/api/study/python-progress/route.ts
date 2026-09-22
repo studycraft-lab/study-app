@@ -1,8 +1,9 @@
 import { childFromRequest } from "@/lib/family/request";
 import { deletePythonProgress, loadPythonProgress, savePythonProgress } from "@/lib/python/progress-store";
+import { EXTRA_PROGRAMS } from "@/lib/python/extra-programs";
 import bank from "../../../../../ingestion-artifacts/python-conditional-statements-question-bank.json";
 
-const questions = new Map(bank.questions.map((question) => [question.id, question]));
+const questions = new Map([...bank.questions, ...EXTRA_PROGRAMS].map((question) => [question.id, question]));
 async function child(request: Request) {
   const profile = await childFromRequest(request);
   if (!profile) return null;

@@ -3,12 +3,23 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 import bank from "../../ingestion-artifacts/python-conditional-statements-question-bank.json";
 import { PythonExamPractice, type PracticeQuestion } from "./python-exam-practice";
 import { runPythonCases } from "@/lib/python/browser-runner";
+import { EXTRA_PROGRAMS } from "@/lib/python/extra-programs";
 vi.mock("@/lib/python/browser-runner", () => ({ runPythonCases: vi.fn() }));
 
 const questions = bank.questions as PracticeQuestion[];
 
 describe("PythonExamPractice", () => {
   afterEach(() => { cleanup(); vi.restoreAllMocks(); localStorage.clear(); });
+  it("includes the added programs in programming and exam practice", async () => {
+    vi.spyOn(globalThis, "fetch").mockResolvedValue(Response.json({ child: { id: "asha", displayName: "Asha", grade: 6 } }));
+    render(<PythonExamPractice questions={[...questions, ...EXTRA_PROGRAMS]} />);
+    await screen.findByRole("heading", { name: "Python Programming" });
+    fireEvent.click(screen.getByRole("button", { name: /Number sign/ }));
+    expect(screen.getByRole("heading", { name: "Number sign" })).toBeInTheDocument();
+    expect(screen.getByText(/Question \d+ of 35/)).toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", { name: "Exam-style Python mix" }));
+    expect(screen.getByText(/Question 1 of 78/)).toBeInTheDocument();
+  });
   it("runs a 5-mark program and reports the test results", async () => {
     vi.spyOn(globalThis, "fetch").mockResolvedValue(Response.json({ child: { id: "asha", displayName: "Asha", grade: 6 } }));
     vi.mocked(runPythonCases).mockResolvedValue([

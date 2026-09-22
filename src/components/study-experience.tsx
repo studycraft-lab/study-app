@@ -20,7 +20,7 @@ type History = { summary: { completedSessions: number; attempts: number; uniqueQ
 
 const PYTHON_ACTIVITIES = [
   { href: "/study/python", kind: "Lesson", title: "Conditional Statements", description: "Learn if, if…else, and if…elif…else with examples and quick checks.", action: "Open lesson", glyph: "if / else" },
-  { href: "/study/python/practice", kind: "Practice", title: "Python Programming", description: "Write programs and answer questions in the exam-style Python mix.", action: "Open 58 questions", glyph: ">_" },
+  { href: "/study/python/practice", kind: "Practice", title: "Python Programming", description: "Write programs and answer questions in the exam-style Python mix.", action: "Open practice", glyph: ">_" },
 ] as const;
 
 function hasResponse(question: Question, response: unknown): boolean {

@@ -283,12 +283,9 @@
 .python-code-editor textarea { background:#13213b; border:2px solid #516a99; border-radius:15px; color:#f3f7ff; font:15px/1.65 ui-monospace,SFMono-Regular,Consolas,monospace; min-height:260px; padding:19px; resize:vertical; tab-size:4; width:100%; }
 .python-code-editor textarea:focus { border-color:var(--aqua); outline:3px solid rgba(92,200,176,.3); }
 .python-learning-page { max-width:1050px; }
-.python-hero { background:linear-gradient(135deg,#142340,#254977); border-radius:28px; color:white; margin:32px 0; padding:clamp(30px,6vw,60px); }
+.python-hero { background:linear-gradient(135deg,#142340,#254977); border-radius:28px; color:white; margin:24px 0; padding:clamp(24px,4vw,42px); }
 .python-hero .eyebrow { color:var(--sun); }
-.python-hero h1 { color:white; font-size:clamp(2.5rem,5vw,4.4rem); margin:10px 0; }
-.python-hero p:not(.eyebrow) { color:#d5e5f5; max-width:650px; }
-.python-hero > div { display:flex; flex-wrap:wrap; gap:10px; margin-top:26px; }
-.python-hero > div span { background:rgba(255,255,255,.12); border-radius:999px; color:white; font-size:.78rem; padding:8px 12px; }
+.python-hero h1 { color:white; font-size:clamp(2rem,4vw,3.4rem); margin:8px 0 0; }
 .python-lesson,.python-practice,.python-next { background:var(--card); border:1px solid var(--line); border-radius:24px; box-shadow:var(--shadow-sm); margin:24px 0; padding:clamp(24px,4vw,42px); }
 .python-section-heading { align-items:start; display:flex; justify-content:space-between; gap:16px; }
 .python-section-heading h2 { margin:4px 0 14px; }

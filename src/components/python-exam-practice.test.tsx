@@ -18,12 +18,11 @@ describe("PythonExamPractice", () => {
     ]);
     render(<PythonExamPractice questions={questions} />);
     expect(await screen.findByRole("heading", { name: "Python Programming" })).toBeInTheDocument();
-    expect(screen.getByText(/15 programming questions/)).toBeInTheDocument();
     expect(screen.getByText(/water meter has today’s and yesterday’s readings/)).toBeInTheDocument();
     fireEvent.change(screen.getByRole("textbox", { name: "Write your Python answer" }), { target: { value: 'today = int(input())\nyesterday = int(input())\nused = today - yesterday\nprint(used)\nif used > 500: print("Too much water used today, check for leakage")\nelse: print("Water usage is normal")' } });
     fireEvent.click(screen.getByRole("button", { name: "Run checks" }));
     expect(await screen.findByText("3 of 3 test cases passed")).toBeInTheDocument();
-    expect(screen.getByText("1 programs passed")).toBeInTheDocument();
+    expect(screen.getByText("1 program passed")).toBeInTheDocument();
     expect(runPythonCases).toHaveBeenCalledWith(expect.stringContaining("today = int(input())"), expect.arrayContaining([expect.objectContaining({ name: "Exactly 500 litres" })]));
   });
   it("checks an exam-style objective question against its bank answer", async () => {
@@ -35,7 +34,7 @@ describe("PythonExamPractice", () => {
     fireEvent.click(screen.getByLabelText("if", { exact: true }));
     fireEvent.click(screen.getByRole("button", { name: "Check answer" }));
     expect(screen.getByRole("heading", { name: "Correct" })).toBeInTheDocument();
-    expect(screen.getByText("1 short questions correct")).toBeInTheDocument();
+    expect(screen.getByText("1 short question correct")).toBeInTheDocument();
   });
   it("loads completed programs from the account and restarts one", async () => {
     const fetchMock = vi.spyOn(globalThis, "fetch").mockImplementation(async (input, init) => {
@@ -46,8 +45,8 @@ describe("PythonExamPractice", () => {
       throw new Error(`Unexpected fetch: ${path}`);
     });
     render(<PythonExamPractice questions={questions} />);
-    expect(await screen.findByText("Saved to your StudyCraft account")).toBeInTheDocument();
-    expect(screen.getByText("1 programs passed")).toBeInTheDocument();
+    expect(await screen.findByRole("heading", { name: "Python Programming" })).toBeInTheDocument();
+    expect(screen.getByText("1 program passed")).toBeInTheDocument();
     const waterMeter = screen.getByRole("button", { name: /Water meter/ });
     expect(waterMeter).toHaveClass("is-complete");
     fireEvent.click(waterMeter);
@@ -67,7 +66,7 @@ describe("PythonExamPractice", () => {
       ] });
     });
     render(<PythonExamPractice questions={questions} />);
-    await screen.findByText("Saved to your StudyCraft account");
+    await screen.findByRole("heading", { name: "Python Programming" });
     fireEvent.click(screen.getByRole("button", { name: "Exam-style Python mix" }));
     expect(screen.getByText(/Question 4 of 58/)).toBeInTheDocument();
     expect(screen.getByText("An if...elif...else ladder stops checking when...")).toBeInTheDocument();

@@ -342,3 +342,8 @@
 .python-program-picker button { background:var(--card); border:1px solid var(--line); color:var(--navy); display:grid; font-size:.83rem; gap:5px; min-height:64px; padding:9px 12px; text-align:left; }
 .python-program-picker button.is-active { background:var(--blue-soft); border-color:var(--blue); }
 .python-program-picker small { color:var(--muted); font-size:.7rem; }
+.python-case-results { display:grid; gap:10px; list-style:none; margin:16px 0; padding:0; }
+.python-case-results li { border:1px solid var(--line); border-radius:10px; display:grid; gap:4px; padding:13px; }
+.python-case-results li.is-correct { background:var(--success-soft); }
+.python-case-results li.is-incorrect { background:var(--sun-soft); }
+.python-case-results span { font-size:.85rem; overflow-wrap:anywhere; white-space:pre-wrap; }

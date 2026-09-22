@@ -205,6 +205,17 @@ describe("StudyExperience", () => {
     expect(screen.queryByRole("button", { name: /early vedic/i })).not.toBeInTheDocument();
     expect(screen.getByRole("button", { name: /all subjects/i })).toBeInTheDocument();
   });
+
+  it("shows Computer Studies modules to a Class VI child before any question bank is imported", async () => {
+    vi.spyOn(globalThis, "fetch").mockImplementation(async (input) => String(input) === "/api/study/library"
+      ? Response.json({ child: { id: "child", displayName: "Asha", grade: 6, board: "ICSE" }, chapters: [] })
+      : Response.json({ summary: { completedSessions: 0 }, topics: [], sessions: [] }));
+    render(<StudyExperience />);
+    const subject = await screen.findByRole("button", { name: /Computer Studies/i });
+    fireEvent.click(subject);
+    expect(screen.getByRole("link", { name: /Conditional Statements/i })).toHaveAttribute("href", "/study/python");
+    expect(screen.getByRole("link", { name: /Python Programming/i })).toHaveAttribute("href", "/study/python/practice");
+  });
   it("refreshes chapter coverage when returning from a completed exercise", async () => {
     let answered = false;
     vi.spyOn(globalThis,"fetch").mockImplementation(async (input) => {

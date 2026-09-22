@@ -277,10 +277,6 @@
   .chapter-stamp { position:static; transform:rotate(5deg); }
   .constellation-finale { padding:34px 22px; }
 }
-.python-module-link { background:linear-gradient(125deg,#182b51,#264976); border-radius:20px; color:white; display:grid; gap:6px; margin:30px 0 8px; padding:22px 26px; text-decoration:none; }
-.python-module-link span { color:var(--sun); font-size:.72rem; font-weight:900; letter-spacing:.08em; text-transform:uppercase; }
-.python-module-link strong { font-size:1.35rem; }
-.python-module-link small { color:#d5e5f5; font-size:.86rem; }
 .python-code-editor { display:grid; gap:9px; margin:22px 0; }
 .python-code-editor > span { color:var(--ink); font-size:.9rem; font-weight:850; }
 .python-code-editor small { color:var(--muted); font-size:.78rem; line-height:1.5; }
@@ -324,3 +320,25 @@
 @media(max-width:560px) { .python-hero,.python-lesson,.python-practice,.python-next { border-radius:18px; } }
 .question-card > h1.python-question-prompt { font-size:clamp(1.2rem,2.3vw,1.75rem); line-height:1.45; white-space:pre-wrap; }
 .question-card:has(.python-code-editor) .expected-answer { font-family:ui-monospace,SFMono-Regular,Consolas,monospace; overflow-wrap:anywhere; white-space:pre-wrap; }
+.chapter-grid .builtin-chapter-card { background:var(--card); border:1px solid var(--line); border-top:4px solid var(--blue); border-radius:var(--radius-md); color:var(--ink); display:flex; flex-direction:column; min-height:230px; padding:26px; text-decoration:none; }
+.chapter-grid .builtin-chapter-card:nth-child(2) { border-top-color:var(--coral); }
+.chapter-grid .builtin-chapter-card:hover { border-color:var(--blue); box-shadow:var(--shadow-sm); transform:translateY(-2px); }
+.builtin-chapter-card p { color:var(--muted); line-height:1.55; margin:0 0 20px; }
+.python-practice-tabs { display:flex; flex-wrap:wrap; gap:10px; margin:28px 0 12px; }
+.python-practice-tabs button { background:white; border:1px solid var(--line); color:var(--navy); padding:13px 19px; }
+.python-practice-tabs button.is-active { background:var(--blue); border-color:var(--blue); color:white; }
+.python-practice-summary { color:var(--muted); display:flex; flex-wrap:wrap; font-size:.8rem; gap:10px 20px; margin-bottom:25px; }
+.python-exam-card { background:var(--card); border:1px solid var(--line); border-radius:24px; box-shadow:var(--shadow-sm); padding:clamp(24px,4vw,42px); }
+.python-exam-card h2 { text-transform:capitalize; }
+.python-exam-prompt { font-size:1.12rem; line-height:1.65; margin:16px 0 26px; white-space:pre-wrap; }
+.python-exam-actions { display:flex; flex-wrap:wrap; gap:10px; margin:22px 0; }
+.python-exam-hint { background:var(--blue-soft); border-radius:10px; padding:14px; }
+.python-exam-feedback { background:var(--paper); border-radius:14px; margin-top:22px; padding:19px; }
+.python-exam-feedback.is-correct { background:var(--success-soft); }
+.python-exam-feedback.is-incorrect { background:var(--sun-soft); }
+.python-exam-feedback pre { background:#13213b; border-radius:13px; color:white; font:14px/1.6 ui-monospace,SFMono-Regular,Consolas,monospace; overflow:auto; padding:19px; }
+.python-exam-feedback button { background:var(--blue); color:white; margin-top:8px; }
+.python-program-picker { display:grid; gap:8px; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); margin:8px 0 22px; }
+.python-program-picker button { background:var(--card); border:1px solid var(--line); color:var(--navy); display:grid; font-size:.83rem; gap:5px; min-height:64px; padding:9px 12px; text-align:left; }
+.python-program-picker button.is-active { background:var(--blue-soft); border-color:var(--blue); }
+.python-program-picker small { color:var(--muted); font-size:.7rem; }

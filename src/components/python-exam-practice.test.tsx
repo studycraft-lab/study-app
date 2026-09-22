@@ -23,7 +23,29 @@ describe("PythonExamPractice", () => {
     fireEvent.click(screen.getByRole("button", { name: "Run checks" }));
     expect(await screen.findByText("3 of 3 test cases passed")).toBeInTheDocument();
     expect(screen.getByText("1 program passed")).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "See one solution" })).toBeInTheDocument();
     expect(runPythonCases).toHaveBeenCalledWith(expect.stringContaining("today = int(input())"), expect.arrayContaining([expect.objectContaining({ name: "Exactly 500 litres" })]));
+  });
+  it("hides the solution until every program check passes", async () => {
+    vi.spyOn(globalThis, "fetch").mockResolvedValue(Response.json({ child: { id: "asha", displayName: "Asha", grade: 6 } }));
+    vi.mocked(runPythonCases)
+      .mockResolvedValueOnce(Array.from({ length: 3 }, () => ({ output: "0\n", error: "" })))
+      .mockResolvedValueOnce([
+        { output: "600\nToo much water used today, check for leakage\n", error: "" },
+        { output: "500\nWater usage is normal\n", error: "" },
+        { output: "450\nWater usage is normal\n", error: "" },
+      ]);
+    render(<PythonExamPractice questions={questions} />);
+    await screen.findByRole("heading", { name: "Python Programming" });
+    const editor = screen.getByRole("textbox", { name: "Write your Python answer" });
+    fireEvent.change(editor, { target: { value: "print(0)" } });
+    fireEvent.click(screen.getByRole("button", { name: "Run checks" }));
+    expect(await screen.findByText("0 of 3 test cases passed")).toBeInTheDocument();
+    expect(screen.queryByRole("button", { name: "See one solution" })).not.toBeInTheDocument();
+    fireEvent.change(editor, { target: { value: "print(600)" } });
+    fireEvent.click(screen.getByRole("button", { name: "Run checks" }));
+    expect(await screen.findByText("3 of 3 test cases passed")).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "See one solution" })).toBeInTheDocument();
   });
   it("checks an exam-style objective question against its bank answer", async () => {
     vi.spyOn(globalThis, "fetch").mockResolvedValue(Response.json({ child: { id: "asha", displayName: "Asha", grade: 6 } }));

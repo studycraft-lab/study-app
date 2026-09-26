@@ -62,4 +62,62 @@ describe("classifyRubric", () => {
     expect(JSON.parse(String(fetchImpl.mock.calls[2][1]?.body)).model).toBe("openai/gpt-5-mini");
     expect(result.meta).toMatchObject({ attempts: 3, fallbackUsed: true, model: "openai/gpt-5-mini" });
   });
+
+  it("allows enough completion tokens to grade a nine-point answer", async () => {
+    const points = Array.from({ length: 9 }, (_, index) => ({ id: `p${index + 1}`, concept: `Required point ${index + 1}` }));
+    const judgement = { points: points.map(({ id }) => ({ id, coverage: "covered", confidence: 0.9 })), feedback: "Good answer.", confidence: 0.9, spellingErrors: [], grammarErrors: [] };
+    const fetchImpl = vi.fn(async (_url: string, init?: RequestInit) => {
+      const body = JSON.parse(String(init?.body));
+      const budget = body.max_completion_tokens ?? body.max_tokens;
+      return new Response(JSON.stringify(budget < 2400
+        ? { choices: [{ finish_reason: "length", message: { content: null } }], usage: { completion_tokens: budget } }
+        : { choices: [{ finish_reason: "stop", message: { content: JSON.stringify(judgement) } }] }));
+    });
+
+    const result = await classifyRubric(
+      { question: "Answer all three parts", childAnswer: "A three-part response", groundedEvidence: "Textbook evidence", points, checkSpelling: false, checkGrammar: false },
+      { fetchImpl: fetchImpl as typeof fetch, apiKey: "test", maxAttempts: 2, retryDelayMs: 0 },
+    );
+
+    expect(result.points).toHaveLength(9);
+    expect(result.meta.attempts).toBeLessThanOrEqual(2);
+  });
+
+  it("raises the completion limit after a length-truncated response", async () => {
+    const budgets: number[] = [];
+    const fetchImpl = vi.fn(async (_url: string, init?: RequestInit) => {
+      const body = JSON.parse(String(init?.body));
+      budgets.push(body.max_completion_tokens);
+      return new Response(JSON.stringify(budgets.length === 1
+        ? { choices: [{ finish_reason: "length", message: { content: null } }] }
+        : { choices: [{ finish_reason: "stop", message: { content: JSON.stringify({ points: [{ id: "p1", coverage: "covered", confidence: 0.9 }], feedback: "Correct.", confidence: 0.9, spellingErrors: [], grammarErrors: [] }) } }] }));
+    });
+
+    const result = await classifyRubric(
+      { question: "Q", childAnswer: "A", groundedEvidence: "E", points: [{ id: "p1", concept: "C" }], checkSpelling: false, checkGrammar: false },
+      { fetchImpl: fetchImpl as typeof fetch, apiKey: "test", maxAttempts: 2, retryDelayMs: 0 },
+    );
+
+    expect(budgets).toEqual([1600, 3200]);
+    expect(result.meta.attempts).toBe(2);
+  });
+
+  it("requires and parses a judgement for every rubric point", async () => {
+    const points = ["a1", "a2", "b1", "b2", "c1", "c2"].map((id) => ({ id, concept: `Required fact ${id}` }));
+    const fetchImpl = vi.fn(async (_url: string, init?: RequestInit) => {
+      const body = JSON.parse(String(init?.body));
+      expect(body.response_format.json_schema.schema.properties.points.required).toEqual(points.map(({ id }) => id));
+      return new Response(JSON.stringify({ choices: [{ message: { content: JSON.stringify({
+        points: Object.fromEntries(points.map(({ id }) => [id, { coverage: "covered", confidence: 0.9 }])),
+        feedback: "Good answer.", confidence: 0.9, spellingErrors: [], grammarErrors: [],
+      }) } }] }));
+    });
+
+    const result = await classifyRubric(
+      { question: "Answer all parts", childAnswer: "Answer", groundedEvidence: "Evidence", points, checkSpelling: false, checkGrammar: false },
+      { fetchImpl: fetchImpl as typeof fetch, apiKey: "test", maxAttempts: 1 },
+    );
+
+    expect(result.points.map(({ id }) => id)).toEqual(points.map(({ id }) => id));
+  });
 });

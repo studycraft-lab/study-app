@@ -31,7 +31,7 @@ export type RubricClassificationInput = {
 };
 
 export class GradingUnavailableError extends Error {
-  constructor(message: string, public readonly retryable = true) {
+  constructor(message: string, public readonly retryable = true, public readonly outputLimitReached = false) {
     super(message);
     this.name = "GradingUnavailableError";
   }
@@ -45,9 +45,10 @@ function finite(value: unknown, fallback = 0): number {
 
 function parseClassification(value: unknown, pointIds: string[]) {
   const result = typeof value === "object" && value !== null ? value as Record<string, unknown> : {};
-  const points = Array.isArray(result.points) ? result.points : [];
-  const parsed = points.map((item) => typeof item === "object" && item !== null ? item as Record<string, unknown> : {});
-  const byId = new Map(parsed.map((item) => [String(item.id), item]));
+  const points = result.points;
+  const byId = Array.isArray(points)
+    ? new Map(points.map((item) => typeof item === "object" && item !== null ? item as Record<string, unknown> : {}).map((item) => [String(item.id), item]))
+    : new Map(Object.entries(typeof points === "object" && points !== null ? points as Record<string, unknown> : {}).map(([id, item]) => [id, typeof item === "object" && item !== null ? item as Record<string, unknown> : {}]));
   if (pointIds.some((id) => !byId.has(id))) throw new GradingUnavailableError("The grading response was incomplete.");
   return {
     points: pointIds.map((id) => {
@@ -73,7 +74,7 @@ type ClassificationOptions = {
   retryDelayMs?: number;
 };
 
-async function requestClassification(input: RubricClassificationInput, options: Required<Pick<ClassificationOptions, "fetchImpl" | "apiKey" | "model" | "timeoutMs">>): Promise<RubricClassification> {
+async function requestClassification(input: RubricClassificationInput, options: Required<Pick<ClassificationOptions, "fetchImpl" | "apiKey" | "model" | "timeoutMs">> & { maxCompletionTokens: number }): Promise<RubricClassification> {
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), Math.max(50, Math.min(options.timeoutMs, 60000)));
   const started = Date.now();
@@ -91,9 +92,9 @@ async function requestClassification(input: RubricClassificationInput, options: 
         model: options.model,
         temperature: 0,
         seed: 9,
-        max_tokens: 800,
+        max_completion_tokens: options.maxCompletionTokens,
         messages: [
-          { role: "system", content: "You grade a child's answer only against the supplied textbook-grounded evidence and rubric. Do not add general knowledge. Judge each point independently. Partial means the idea is present but materially incomplete. Ignore spelling or grammar unless the request explicitly asks you to check it. Return concise, encouraging feedback without revealing hidden reasoning." },
+          { role: "system", content: "You grade a child's answer only against the supplied textbook-grounded evidence and rubric. Do not add general knowledge. Judge each point independently and return a judgement for every supplied point ID, including missing points. Partial means the idea is present but materially incomplete. Ignore spelling or grammar unless the request explicitly asks you to check it. Return concise, encouraging feedback without revealing hidden reasoning." },
           { role: "user", content: JSON.stringify(input) },
         ],
         response_format: {
@@ -106,7 +107,7 @@ async function requestClassification(input: RubricClassificationInput, options: 
               additionalProperties: false,
               required: ["points", "feedback", "confidence", "spellingErrors", "grammarErrors"],
               properties: {
-                points: { type: "array", items: { type: "object", additionalProperties: false, required: ["id", "coverage", "confidence"], properties: { id: { type: "string" }, coverage: { enum: ["covered", "partial", "missing"] }, confidence: { type: "number", minimum: 0, maximum: 1 } } } },
+                points: { type: "object", additionalProperties: false, required: input.points.map((point) => point.id), properties: Object.fromEntries(input.points.map((point) => [point.id, { type: "object", additionalProperties: false, required: ["coverage", "confidence"], properties: { coverage: { enum: ["covered", "partial", "missing"] }, confidence: { type: "number", minimum: 0, maximum: 1 } } }])) },
                 feedback: { type: "string" },
                 confidence: { type: "number", minimum: 0, maximum: 1 },
                 spellingErrors: { type: "array", items: { type: "string" } },
@@ -125,7 +126,10 @@ async function requestClassification(input: RubricClassificationInput, options: 
     const choices = Array.isArray(payload.choices) ? payload.choices : [];
     const message = typeof choices[0] === "object" && choices[0] !== null ? (choices[0] as Record<string, unknown>).message : null;
     const content = typeof message === "object" && message !== null ? (message as Record<string, unknown>).content : null;
-    if (typeof content !== "string") throw new GradingUnavailableError("The grading response was empty.");
+    if (typeof content !== "string" || !content.trim()) {
+      const hitLimit = typeof choices[0] === "object" && choices[0] !== null && (choices[0] as Record<string, unknown>).finish_reason === "length";
+      throw new GradingUnavailableError(hitLimit ? "The grading response exceeded its output limit." : "The grading response was empty.", true, hitLimit);
+    }
     let parsed: unknown;
     try { parsed = JSON.parse(content); } catch { throw new GradingUnavailableError("The grading response was invalid."); }
     const classification = parseClassification(parsed, input.points.map((point) => point.id));
@@ -161,22 +165,24 @@ export async function classifyRubric(input: RubricClassificationInput, options: 
   if (!apiKey) throw new GradingUnavailableError("AI grading is not configured yet.", false);
   const model = options.model ?? process.env.OPENROUTER_MODEL ?? "deepseek/deepseek-v4-flash";
   const fallbackModel = options.fallbackModel ?? process.env.OPENROUTER_FALLBACK_MODEL;
-  const timeoutMs = options.timeoutMs ?? Number(process.env.OPENROUTER_TIMEOUT_MS || 15000);
+  const timeoutMs = options.timeoutMs ?? Number(process.env.OPENROUTER_TIMEOUT_MS || 30000);
   const maxAttempts = Math.max(1, Math.min(options.maxAttempts ?? Number(process.env.OPENROUTER_MAX_ATTEMPTS || 2), 3));
   const retryDelayMs = Math.max(0, options.retryDelayMs ?? 250);
   const fetchImpl = options.fetchImpl ?? fetch;
   const started = Date.now();
   let attempts = 0;
   let lastError = new GradingUnavailableError("AI grading is temporarily unavailable.");
+  let maxCompletionTokens = Math.min(6000, Math.max(1600, input.points.length * 400));
 
   for (let attempt = 0; attempt < maxAttempts; attempt += 1) {
     attempts += 1;
     try {
-      const result = await requestClassification(input, { fetchImpl, apiKey, model, timeoutMs });
+      const result = await requestClassification(input, { fetchImpl, apiKey, model, timeoutMs, maxCompletionTokens });
       return { ...result, meta: { ...result.meta, attempts, fallbackUsed: false, latencyMs: Date.now() - started } };
     } catch (error) {
       lastError = error instanceof GradingUnavailableError ? error : lastError;
       if (!lastError.retryable || attempt === maxAttempts - 1) break;
+      if (lastError.outputLimitReached) maxCompletionTokens = Math.min(12000, maxCompletionTokens * 2);
       await wait(retryDelayMs * (attempt + 1));
     }
   }
@@ -184,7 +190,7 @@ export async function classifyRubric(input: RubricClassificationInput, options: 
   if (fallbackModel && fallbackModel !== model && lastError.retryable) {
     attempts += 1;
     try {
-      const result = await requestClassification(input, { fetchImpl, apiKey, model: fallbackModel, timeoutMs });
+      const result = await requestClassification(input, { fetchImpl, apiKey, model: fallbackModel, timeoutMs, maxCompletionTokens });
       return { ...result, meta: { ...result.meta, attempts, fallbackUsed: true, latencyMs: Date.now() - started } };
     } catch (error) {
       lastError = error instanceof GradingUnavailableError ? error : lastError;

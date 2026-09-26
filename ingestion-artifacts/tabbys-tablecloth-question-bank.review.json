@@ -1,0 +1,309 @@
+{
+  "reviewVersion": "0.1.0",
+  "bankId": "tabbys-tablecloth",
+  "bankVersion": 1,
+  "reviewedAt": "2026-09-26T02:49:44.940092+00:00",
+  "reviewerMethod": "Codex visual comparison against all supplied chapter pages, question-by-question review of prompts, answer keys and atomic rubric concepts, comparison with the supplied 2025 paper and printed exercises, repository CLI validation and actual application import-validator check.",
+  "inputs": {
+    "manifest": "ingestion-artifacts/tabbys-tablecloth-chapter-manifest.json",
+    "bank": "ingestion-artifacts/tabbys-tablecloth-question-bank.json",
+    "sourceAssetCount": 2,
+    "pdfToPrintedPageMap": {
+      "7": 77,
+      "8": 78,
+      "9": 79,
+      "10": 80,
+      "11": 81
+    },
+    "pastPaper": "FIRST_TERM_VI_ENGLISH_LITERATURE_1787974373.pdf; 2025; format only"
+  },
+  "gates": {
+    "manifestSchema": "pass",
+    "sourceHashes": "pass",
+    "questionBankSchema": "pass",
+    "applicationImportValidator": "pass",
+    "deterministicGroundingReview": "pass",
+    "manualGroundingReview": "pass",
+    "rubricBalanceReview": "pass",
+    "childPromptLanguageReview": "pass",
+    "freshQuestionComparison": "pass"
+  },
+  "coverage": {
+    "questionCount": 13,
+    "objectiveCount": 9,
+    "extractSetCount": 4,
+    "extractSubquestionCount": 12,
+    "totalScorablePrompts": 21,
+    "objectiveMarks": 9,
+    "extractMarks": 36,
+    "totalAvailableMarks": 45,
+    "objectiveMarkShare": 0.2,
+    "topics": {
+      "concord-and-secrecy": 5,
+      "courage-and-choices": 5,
+      "discovery-and-irony": 4,
+      "cloth-and-legacy": 2
+    },
+    "types": {
+      "single_choice": 9,
+      "multi_point": 4
+    },
+    "difficulties": {
+      "1": 7,
+      "2": 6
+    },
+    "origins": {
+      "chapter_content": 13
+    },
+    "selectionPriorities": {
+      "2": 9,
+      "1": 4
+    },
+    "pages": {
+      "page-77": 4,
+      "page-78": 5,
+      "page-79": 6,
+      "page-80": 6
+    },
+    "correctOptionCounts": {
+      "d": 2,
+      "b": 2,
+      "a": 2,
+      "c": 3
+    },
+    "sourceAssetReadiness": {
+      "inlineQuotationSets": 4,
+      "runtimeAssetsRequired": false,
+      "unsupportedPlayableTypes": []
+    }
+  },
+  "atomicCoverageInventory": [
+    "Threat to Concord; Tories and secrecy; hidden message, supplies, night watch and farmers’ preparations.",
+    "Reporting strangers; failed kitchen access; basket, window and hiding; purposeful courage despite fear.",
+    "Hand injury and self-control; officers’ aims and assumptions; sneeze, cat and dramatic irony.",
+    "Warning leads to moving supplies, preparing cannons and aiming them at the enemy; officers escape towards Boston.",
+    "Confiscation and auction, uncle’s gift, daughter’s preservation, cloth used for soldiers’ wounds, service and honour.",
+    "Author and the tail/flag simile."
+  ],
+  "questionReview": [
+    {
+      "questionId": "q-001",
+      "sourcePages": [
+        "page-77"
+      ],
+      "decision": "accept",
+      "checked": [
+        "prompt and answer grounded",
+        "quotation fidelity where used",
+        "one unambiguous key or mark-balanced atomic rubric",
+        "hint and explanation grounded",
+        "fresh wording and angle"
+      ]
+    },
+    {
+      "questionId": "q-002",
+      "sourcePages": [
+        "page-77"
+      ],
+      "decision": "accept",
+      "checked": [
+        "prompt and answer grounded",
+        "quotation fidelity where used",
+        "one unambiguous key or mark-balanced atomic rubric",
+        "hint and explanation grounded",
+        "fresh wording and angle"
+      ]
+    },
+    {
+      "questionId": "q-003",
+      "sourcePages": [
+        "page-78"
+      ],
+      "decision": "accept",
+      "checked": [
+        "prompt and answer grounded",
+        "quotation fidelity where used",
+        "one unambiguous key or mark-balanced atomic rubric",
+        "hint and explanation grounded",
+        "fresh wording and angle"
+      ]
+    },
+    {
+      "questionId": "q-004",
+      "sourcePages": [
+        "page-78"
+      ],
+      "decision": "accept",
+      "checked": [
+        "prompt and answer grounded",
+        "quotation fidelity where used",
+        "one unambiguous key or mark-balanced atomic rubric",
+        "hint and explanation grounded",
+        "fresh wording and angle"
+      ]
+    },
+    {
+      "questionId": "q-005",
+      "sourcePages": [
+        "page-78"
+      ],
+      "decision": "accept",
+      "checked": [
+        "prompt and answer grounded",
+        "quotation fidelity where used",
+        "one unambiguous key or mark-balanced atomic rubric",
+        "hint and explanation grounded",
+        "fresh wording and angle"
+      ]
+    },
+    {
+      "questionId": "q-006",
+      "sourcePages": [
+        "page-79",
+        "page-79"
+      ],
+      "decision": "accept",
+      "checked": [
+        "prompt and answer grounded",
+        "quotation fidelity where used",
+        "one unambiguous key or mark-balanced atomic rubric",
+        "hint and explanation grounded",
+        "fresh wording and angle"
+      ]
+    },
+    {
+      "questionId": "q-007",
+      "sourcePages": [
+        "page-80"
+      ],
+      "decision": "accept",
+      "checked": [
+        "prompt and answer grounded",
+        "quotation fidelity where used",
+        "one unambiguous key or mark-balanced atomic rubric",
+        "hint and explanation grounded",
+        "fresh wording and angle"
+      ]
+    },
+    {
+      "questionId": "q-008",
+      "sourcePages": [
+        "page-80"
+      ],
+      "decision": "accept",
+      "checked": [
+        "prompt and answer grounded",
+        "quotation fidelity where used",
+        "one unambiguous key or mark-balanced atomic rubric",
+        "hint and explanation grounded",
+        "fresh wording and angle"
+      ]
+    },
+    {
+      "questionId": "q-009",
+      "sourcePages": [
+        "page-80"
+      ],
+      "decision": "accept",
+      "checked": [
+        "prompt and answer grounded",
+        "quotation fidelity where used",
+        "one unambiguous key or mark-balanced atomic rubric",
+        "hint and explanation grounded",
+        "fresh wording and angle"
+      ]
+    },
+    {
+      "questionId": "q-010",
+      "sourcePages": [
+        "page-77",
+        "page-79"
+      ],
+      "decision": "accept",
+      "checked": [
+        "prompt and answer grounded",
+        "quotation fidelity where used",
+        "one unambiguous key or mark-balanced atomic rubric",
+        "hint and explanation grounded",
+        "fresh wording and angle"
+      ]
+    },
+    {
+      "questionId": "q-011",
+      "sourcePages": [
+        "page-77",
+        "page-78",
+        "page-78",
+        "page-79"
+      ],
+      "decision": "accept",
+      "checked": [
+        "prompt and answer grounded",
+        "quotation fidelity where used",
+        "one unambiguous key or mark-balanced atomic rubric",
+        "hint and explanation grounded",
+        "fresh wording and angle"
+      ]
+    },
+    {
+      "questionId": "q-012",
+      "sourcePages": [
+        "page-79",
+        "page-80",
+        "page-80"
+      ],
+      "decision": "accept",
+      "checked": [
+        "prompt and answer grounded",
+        "quotation fidelity where used",
+        "one unambiguous key or mark-balanced atomic rubric",
+        "hint and explanation grounded",
+        "fresh wording and angle"
+      ]
+    },
+    {
+      "questionId": "q-013",
+      "sourcePages": [
+        "page-79",
+        "page-80"
+      ],
+      "decision": "accept",
+      "checked": [
+        "prompt and answer grounded",
+        "quotation fidelity where used",
+        "one unambiguous key or mark-balanced atomic rubric",
+        "hint and explanation grounded",
+        "fresh wording and angle"
+      ]
+    }
+  ],
+  "omissions": [
+    {
+      "source": "Printed page 80: A1–A5 and B1–B2; printed page 81: B3–B6, Discuss 1–2, RTC1(a–c), RTC2(a–c), RTC3(a–c).",
+      "reason": "Verbatim exercises and past-paper repeats were explicitly excluded. Nine fresh MCQs and four extract sets cover the major plot, motivations, irony and the cloth’s legacy. Minor recall variants and an exhaustive exercise bank are outside the agreed scope."
+    },
+    {
+      "source": "Printed page 81: Use Grammar, clauses and clause types.",
+      "reason": "The requested subject is English Literature."
+    },
+    {
+      "source": "Printed page 77: exact date, full personal/geographic labels and author biography beyond author identity.",
+      "reason": "The limited first release prioritises narrative understanding; the past paper already directly tested Tabby’s full name and home. No outside historical facts are required."
+    }
+  ],
+  "advisoryNotes": [
+    "The user selected three separate banks and an initial scope of three poem extract sets and four per prose work. These explicit scope and originality instructions override the ingestion skill’s defaults to reproduce all exercises and exhaustively inventory every fact.",
+    "The supplied paper has Section A objective (16/80 marks), Section B poetry RTC (31/80) and Section C prose RTC (33/80). These chapter banks preserve the 20:80 objective/RTC mark balance and the short-extract plus labelled subquestion style; they are not separate 80-mark mock examinations.",
+    "All RTC sets have three labelled parts. Each part is normally worth three marks; the final poem interpretation is worth four. Each mark is tied to an atomic rubric point, with semantic equivalents allowed and no spelling/grammar penalties.",
+    "The current player cannot play source_group, so each complete quotation and its subquestions are stored as one supported multi_point item with one answer box and a part-labelled rubric. The existing UI may collapse newlines; punctuation and (a)/(b)/(c) labels keep the boundaries explicit. No application code changes were made.",
+    "The bank-level mark ratio does not override the app’s ordinary practice-session selection algorithm. No 80-mark exam-session behavior is implied.",
+    "Learning outcomes in the manifest are source-derived coverage goals; the supplied pages do not print a formal learning-outcome list. Full scans remain outside the repository.",
+    "To append questions, retain bank.id and all existing question IDs, assign unused IDs to new items and increase bank.version. Increase an existing question’s version only if its content changes; historical attempts retain their snapshots.",
+    "“Had them trained on the enemy” means the cannons were aimed at the enemy; it does not mean the minutemen received training.",
+    "The text does not identify whose hand lifts the cloth, so no answer requires an invented identity.",
+    "The cloth’s 1861 use is tested without requiring the name or outside history of that war.",
+    "No claim is made that the cat consciously plans Tabby’s rescue."
+  ],
+  "blockingFindings": [],
+  "decision": "accept"
+}

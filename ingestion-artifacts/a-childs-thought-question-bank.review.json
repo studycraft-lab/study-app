@@ -1,0 +1,255 @@
+{
+  "reviewVersion": "0.1.0",
+  "bankId": "a-childs-thought",
+  "bankVersion": 1,
+  "reviewedAt": "2026-09-26T02:49:44.940092+00:00",
+  "reviewerMethod": "Codex visual comparison against all supplied chapter pages, question-by-question review of prompts, answer keys and atomic rubric concepts, comparison with the supplied 2025 paper and printed exercises, repository CLI validation and actual application import-validator check.",
+  "inputs": {
+    "manifest": "ingestion-artifacts/a-childs-thought-chapter-manifest.json",
+    "bank": "ingestion-artifacts/a-childs-thought-question-bank.json",
+    "sourceAssetCount": 2,
+    "pdfToPrintedPageMap": {
+      "5": 9,
+      "6": 10
+    },
+    "pastPaper": "FIRST_TERM_VI_ENGLISH_LITERATURE_1787974373.pdf; 2025; format only"
+  },
+  "gates": {
+    "manifestSchema": "pass",
+    "sourceHashes": "pass",
+    "questionBankSchema": "pass",
+    "applicationImportValidator": "pass",
+    "deterministicGroundingReview": "pass",
+    "manualGroundingReview": "pass",
+    "rubricBalanceReview": "pass",
+    "childPromptLanguageReview": "pass",
+    "freshQuestionComparison": "pass"
+  },
+  "coverage": {
+    "questionCount": 10,
+    "objectiveCount": 7,
+    "extractSetCount": 3,
+    "extractSubquestionCount": 9,
+    "totalScorablePrompts": 16,
+    "objectiveMarks": 7,
+    "extractMarks": 28,
+    "totalAvailableMarks": 35,
+    "objectiveMarkShare": 0.2,
+    "topics": {
+      "language-and-form": 8,
+      "dream-world": 2,
+      "waking-and-mood": 3
+    },
+    "types": {
+      "single_choice": 7,
+      "multi_point": 3
+    },
+    "difficulties": {
+      "1": 5,
+      "2": 4,
+      "3": 1
+    },
+    "origins": {
+      "chapter_content": 10
+    },
+    "selectionPriorities": {
+      "2": 7,
+      "1": 3
+    },
+    "pages": {
+      "page-9": 10,
+      "page-10": 8
+    },
+    "correctOptionCounts": {
+      "b": 2,
+      "d": 1,
+      "a": 2,
+      "c": 2
+    },
+    "sourceAssetReadiness": {
+      "inlineQuotationSets": 3,
+      "runtimeAssetsRequired": false,
+      "unsupportedPlayableTypes": []
+    }
+  },
+  "atomicCoverageInventory": [
+    "Dream figures: ladies, tower, bower, horsemen, streams, dragons and magic fruit.",
+    "Vocabulary: prowling, gallant, bower, enchanted, flank, rippling and in vain.",
+    "Personification and its effect; rhyme; the two stanzas and repeated seven-o’clock lines.",
+    "Contrast between imagined movement/adventure and the ordinary room; change of mood and continued longing."
+  ],
+  "questionReview": [
+    {
+      "questionId": "q-001",
+      "sourcePages": [
+        "page-9"
+      ],
+      "decision": "accept",
+      "checked": [
+        "prompt and answer grounded",
+        "quotation fidelity where used",
+        "one unambiguous key or mark-balanced atomic rubric",
+        "hint and explanation grounded",
+        "fresh wording and angle"
+      ]
+    },
+    {
+      "questionId": "q-002",
+      "sourcePages": [
+        "page-9",
+        "page-10"
+      ],
+      "decision": "accept",
+      "checked": [
+        "prompt and answer grounded",
+        "quotation fidelity where used",
+        "one unambiguous key or mark-balanced atomic rubric",
+        "hint and explanation grounded",
+        "fresh wording and angle"
+      ]
+    },
+    {
+      "questionId": "q-003",
+      "sourcePages": [
+        "page-9",
+        "page-10"
+      ],
+      "decision": "accept",
+      "checked": [
+        "prompt and answer grounded",
+        "quotation fidelity where used",
+        "one unambiguous key or mark-balanced atomic rubric",
+        "hint and explanation grounded",
+        "fresh wording and angle"
+      ]
+    },
+    {
+      "questionId": "q-004",
+      "sourcePages": [
+        "page-9",
+        "page-10"
+      ],
+      "decision": "accept",
+      "checked": [
+        "prompt and answer grounded",
+        "quotation fidelity where used",
+        "one unambiguous key or mark-balanced atomic rubric",
+        "hint and explanation grounded",
+        "fresh wording and angle"
+      ]
+    },
+    {
+      "questionId": "q-005",
+      "sourcePages": [
+        "page-9",
+        "page-10"
+      ],
+      "decision": "accept",
+      "checked": [
+        "prompt and answer grounded",
+        "quotation fidelity where used",
+        "one unambiguous key or mark-balanced atomic rubric",
+        "hint and explanation grounded",
+        "fresh wording and angle"
+      ]
+    },
+    {
+      "questionId": "q-006",
+      "sourcePages": [
+        "page-9",
+        "page-10"
+      ],
+      "decision": "accept",
+      "checked": [
+        "prompt and answer grounded",
+        "quotation fidelity where used",
+        "one unambiguous key or mark-balanced atomic rubric",
+        "hint and explanation grounded",
+        "fresh wording and angle"
+      ]
+    },
+    {
+      "questionId": "q-007",
+      "sourcePages": [
+        "page-9"
+      ],
+      "decision": "accept",
+      "checked": [
+        "prompt and answer grounded",
+        "quotation fidelity where used",
+        "one unambiguous key or mark-balanced atomic rubric",
+        "hint and explanation grounded",
+        "fresh wording and angle"
+      ]
+    },
+    {
+      "questionId": "q-008",
+      "sourcePages": [
+        "page-9",
+        "page-10"
+      ],
+      "decision": "accept",
+      "checked": [
+        "prompt and answer grounded",
+        "quotation fidelity where used",
+        "one unambiguous key or mark-balanced atomic rubric",
+        "hint and explanation grounded",
+        "fresh wording and angle"
+      ]
+    },
+    {
+      "questionId": "q-009",
+      "sourcePages": [
+        "page-9",
+        "page-10"
+      ],
+      "decision": "accept",
+      "checked": [
+        "prompt and answer grounded",
+        "quotation fidelity where used",
+        "one unambiguous key or mark-balanced atomic rubric",
+        "hint and explanation grounded",
+        "fresh wording and angle"
+      ]
+    },
+    {
+      "questionId": "q-010",
+      "sourcePages": [
+        "page-9",
+        "page-10"
+      ],
+      "decision": "accept",
+      "checked": [
+        "prompt and answer grounded",
+        "quotation fidelity where used",
+        "one unambiguous key or mark-balanced atomic rubric",
+        "hint and explanation grounded",
+        "fresh wording and angle"
+      ]
+    }
+  ],
+  "omissions": [
+    {
+      "source": "Printed page 10: From The Poem questions 1–7 and Appreciation questions 1–2.",
+      "reason": "Verbatim exercise reproduction was explicitly excluded by the user. Fresh extract questions cover the central imagery, contrast, personification and feelings, with vocabulary/rhyme MCQs. The three agreed extract sets replace an exhaustive exercise bank."
+    },
+    {
+      "source": "Printed page 10: author biography beyond the poet’s identity.",
+      "reason": "Dates and other works are lower-priority background for this focused literature bank."
+    }
+  ],
+  "advisoryNotes": [
+    "The user selected three separate banks and an initial scope of three poem extract sets and four per prose work. These explicit scope and originality instructions override the ingestion skill’s defaults to reproduce all exercises and exhaustively inventory every fact.",
+    "The supplied paper has Section A objective (16/80 marks), Section B poetry RTC (31/80) and Section C prose RTC (33/80). These chapter banks preserve the 20:80 objective/RTC mark balance and the short-extract plus labelled subquestion style; they are not separate 80-mark mock examinations.",
+    "All RTC sets have three labelled parts. Each part is normally worth three marks; the final poem interpretation is worth four. Each mark is tied to an atomic rubric point, with semantic equivalents allowed and no spelling/grammar penalties.",
+    "The current player cannot play source_group, so each complete quotation and its subquestions are stored as one supported multi_point item with one answer box and a part-labelled rubric. The existing UI may collapse newlines; punctuation and (a)/(b)/(c) labels keep the boundaries explicit. No application code changes were made.",
+    "The bank-level mark ratio does not override the app’s ordinary practice-session selection algorithm. No 80-mark exam-session behavior is implied.",
+    "Learning outcomes in the manifest are source-derived coverage goals; the supplied pages do not print a formal learning-outcome list. Full scans remain outside the repository.",
+    "To append questions, retain bank.id and all existing question IDs, assign unused IDs to new items and increase bank.version. Increase an existing question’s version only if its content changes; historical attempts retain their snapshots.",
+    "Read poem in column order: the second stanza starts in the left column and continues at the top of the right.",
+    "Do not treat handwritten labels as authority; “castle frowned” is explicitly identified as personification in the printed glossary.",
+    "Interpretive marking allows equivalent text-supported descriptions of mood and the castle’s effect."
+  ],
+  "blockingFindings": [],
+  "decision": "accept"
+}

@@ -1,0 +1,134 @@
+{
+  "manifestVersion": "0.1.0",
+  "chapter": {
+    "id": "a-childs-thought",
+    "title": "A Child’s Thought",
+    "board": "ICSE",
+    "subject": "English Literature",
+    "grade": 6,
+    "bookTitle": "Cordova Learning Series English - 6",
+    "chapterNumber": 1
+  },
+  "sourcePolicy": {
+    "originals": "local-only",
+    "repositoryCopies": false,
+    "applicationStorage": "not-uploaded",
+    "runtimeStrategy": "none",
+    "notes": "The chapter scan supplies the literary text and answers; the 2025 paper supplies format only. Brief extracts are included in the question prompts, so no runtime image is needed. Manifest pageNumber is the PDF page index (one-based); page IDs match printed page numbers. No formal learning-outcome list is printed; the learningOutcomes below are source-derived coverage goals."
+  },
+  "assets": [
+    {
+      "id": "chapter-scan",
+      "fileName": "Scan_20260925_174441.pdf",
+      "sha256": "c5f3f6d06a1dd0206ab4a7d2aed76afd85889a2db6e40dffc2c42a65b4bd4ace",
+      "width": 2201,
+      "height": 2816,
+      "pages": [
+        {
+          "id": "page-9",
+          "pageNumber": 5,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "page-10",
+          "pageNumber": 6,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "past-paper",
+      "fileName": "FIRST_TERM_VI_ENGLISH_LITERATURE_1787974373.pdf",
+      "sha256": "4a2cee4ef28495cb840319bf7df661690f983ccee44495c870cc8ad68da148c8",
+      "width": 595,
+      "height": 842,
+      "pages": [
+        {
+          "id": "past-paper-page-1",
+          "pageNumber": 1,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "past-paper-page-2",
+          "pageNumber": 2,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "past-paper-page-3",
+          "pageNumber": 3,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "past-paper-page-4",
+          "pageNumber": 4,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "past-paper-page-5",
+          "pageNumber": 5,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "past-paper-page-6",
+          "pageNumber": 6,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "id": "past-paper-page-7",
+          "pageNumber": 7,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        }
+      ]
+    }
+  ],
+  "learningOutcomes": [
+    "Explore the child’s dream imagery and its mix of beauty and adventure.",
+    "Explain vocabulary, personification, rhyme and repetition using textual evidence.",
+    "Trace the contrast between bedtime and waking and interpret the child’s changing feelings."
+  ]
+}

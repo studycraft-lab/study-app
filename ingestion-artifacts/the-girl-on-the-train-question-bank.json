@@ -1,0 +1,1106 @@
+{
+  "bank": {
+    "board": "ICSE",
+    "bookTitle": "Cordova Learning Series English - 6",
+    "chapterNumber": 13,
+    "grade": 6,
+    "id": "the-girl-on-the-train",
+    "status": "reviewed",
+    "subject": "English Literature",
+    "title": "The Girl On The Train",
+    "version": 1
+  },
+  "questions": [
+    {
+      "answer": {
+        "correctOptionId": "c"
+      },
+      "difficulty": 1,
+      "explanation": "The story is by Ruskin Bond.",
+      "generation": {
+        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Look for the author credited with the story.",
+      "id": "q-001",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "Who is the author of “The Girl On The Train”?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "Robert Louis Stevenson"
+          },
+          {
+            "id": "b",
+            "text": "Louisa May Alcott"
+          },
+          {
+            "id": "c",
+            "text": "Ruskin Bond"
+          },
+          {
+            "id": "d",
+            "text": "William Wordsworth"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-89",
+          "regionId": "author",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "journey-and-conversation"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 2,
+      "explanation": "The woman advised the girl to avoid speaking to strangers.",
+      "generation": {
+        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall what the woman said about people the girl did not know.",
+      "id": "q-002",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "Which action would go against the woman’s advice to the girl before departure?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "Beginning a conversation with a stranger"
+          },
+          {
+            "id": "b",
+            "text": "Remaining safely inside the compartment"
+          },
+          {
+            "id": "c",
+            "text": "Keeping her belongings safely"
+          },
+          {
+            "id": "d",
+            "text": "Listening to instructions about her journey"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-89",
+          "regionId": "opening",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "journey-and-conversation"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "d"
+      },
+      "difficulty": 1,
+      "explanation": "The girl says that her aunt is meeting her at Saharanpur.",
+      "generation": {
+        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the relative mentioned when the girl explains her plans.",
+      "id": "q-003",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "Who is expected to meet the girl at Saharanpur?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "Her father"
+          },
+          {
+            "id": "b",
+            "text": "Her brother"
+          },
+          {
+            "id": "c",
+            "text": "Her grandmother"
+          },
+          {
+            "id": "d",
+            "text": "Her aunt"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-90",
+          "regionId": "left-column",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "journey-and-conversation"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 1,
+      "explanation": "He remembers the hills covered with wild dahlias.",
+      "generation": {
+        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the flowers covering the hills in his memory.",
+      "id": "q-004",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "Which flowers appear in the narrator’s remembered picture of the hills in October?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "Red roses"
+          },
+          {
+            "id": "b",
+            "text": "Wild dahlias"
+          },
+          {
+            "id": "c",
+            "text": "White lilies"
+          },
+          {
+            "id": "d",
+            "text": "Sunflowers"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-90",
+          "regionId": "left-column",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "journey-and-conversation"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "c"
+      },
+      "difficulty": 1,
+      "explanation": "He says most tourists have gone, leaving the roads quiet and almost deserted.",
+      "generation": {
+        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Think about the visitors to the hills.",
+      "id": "q-005",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "What explains the quiet roads in the narrator’s description of Mussoorie in October?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "The railway has stopped running"
+          },
+          {
+            "id": "b",
+            "text": "Everyone is asleep at midday"
+          },
+          {
+            "id": "c",
+            "text": "Most tourists have left"
+          },
+          {
+            "id": "d",
+            "text": "The town has been abandoned permanently"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-90",
+          "regionId": "left-column",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "journey-and-conversation"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 1,
+      "explanation": "Feeling for the ledge shows him using touch to locate it.",
+      "generation": {
+        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Notice the verb “felt”.",
+      "id": "q-006",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "The narrator feels for the window ledge. Which sense helps him locate it?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "Taste"
+          },
+          {
+            "id": "b",
+            "text": "Touch"
+          },
+          {
+            "id": "c",
+            "text": "Smell"
+          },
+          {
+            "id": "d",
+            "text": "Sight"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-90",
+          "regionId": "right-column",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "senses-and-concealment"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 2,
+      "explanation": "In this conversation, “gallant” describes his courteous, flattering behaviour towards her.",
+      "generation": {
+        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Consider what he has just said about her face.",
+      "id": "q-007",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "When the girl calls the narrator “a very gallant young man”, what does she mean in this conversation?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "He is courteous and complimentary"
+          },
+          {
+            "id": "b",
+            "text": "He is an experienced train driver"
+          },
+          {
+            "id": "c",
+            "text": "He is frightened of speaking"
+          },
+          {
+            "id": "d",
+            "text": "He has won a battle"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-90",
+          "regionId": "right-column",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "connection-and-assumptions"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "d"
+      },
+      "difficulty": 2,
+      "explanation": "Giving wheels a song and a carriage a groan personifies the train.",
+      "generation": {
+        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Think about singing and groaning being given to parts of a train.",
+      "id": "q-008",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "In “the wheels took up their song, the carriage groaned and shook”, which device gives the train human-like actions?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "A list of place names"
+          },
+          {
+            "id": "b",
+            "text": "Simile"
+          },
+          {
+            "id": "c",
+            "text": "A question"
+          },
+          {
+            "id": "d",
+            "text": "Personification"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-91",
+          "regionId": "ending",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "revelation-and-irony"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 2,
+      "explanation": "The first-person account gives direct access to the narrator’s inner thoughts. His guesses about others are not the same as knowing their thoughts.",
+      "generation": {
+        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Whose thoughts are shared with us as events unfold?",
+      "id": "q-009",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "What does the story’s use of “I” allow readers to know directly?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "The narrator’s thoughts and guesses"
+          },
+          {
+            "id": "b",
+            "text": "The aunt’s private thoughts"
+          },
+          {
+            "id": "c",
+            "text": "Every passenger’s memories"
+          },
+          {
+            "id": "d",
+            "text": "The girl’s unspoken thoughts throughout the journey"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-89",
+          "regionId": "opening",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-90",
+          "regionId": "left-column",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-90",
+          "regionId": "right-column",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "connection-and-assumptions"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "(a) “I” is the unnamed narrator and “you” is the girl who has joined him. They are speaking in a train compartment.\n\n(b) “At first” could suggest that he merely failed to notice her initially and can see her now. In fact, he is blind, so the wording conceals a continuing inability to see.\n\n(c) He plans to remain in his seat. This avoids having to find his way around the compartment. Such movements might reveal that he cannot see."
+      },
+      "difficulty": 2,
+      "explanation": "The narrator’s words can sound like an ordinary failure to notice someone. This is his attempt at concealment; the story does not establish exactly what the girl thinks about it. Award the stated points for equivalent wording and defensible interpretations supported by the text; exact textbook phrasing is not required. Mark each labelled part separately and do not award the same point twice within that part.",
+      "generation": {
+        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Pay attention to “at first” and to the plan he forms immediately afterwards.",
+      "id": "q-010",
+      "marks": 9,
+      "origin": "chapter_content",
+      "prompt": "Read this extract from “The Girl On The Train” and answer all three parts.\n\n“I didn’t see you either, at first,” I said. “But I heard you come in.”\n\n(a) Who are “I” and “you” in these lines, and where are they speaking? [3]\n\n(b) Which small phrase in the reply could make the girl think that the narrator can see? Explain why it is misleading. [3]\n\n(c) What plan does the narrator make to keep his blindness hidden? Explain how the plan could reduce the risk of discovery. [3]",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Part (a): Identifies “I” as the unnamed narrator or male passenger telling the story.",
+            "id": "a1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (a): Identifies “you” as the girl travelling in the compartment.",
+            "id": "a2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (a): Locates the conversation in a train compartment.",
+            "id": "a3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): Identifies “at first” as the misleading phrase.",
+            "id": "b1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): Explains that it suggests a temporary failure to notice rather than a permanent inability to see.",
+            "id": "b2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): Contrasts that impression with the narrator’s actual blindness; does not assert that the girl certainly believes him.",
+            "id": "b3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): He plans to stay in his seat.",
+            "id": "c1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): Explains that remaining seated avoids the need to navigate or find things while moving around.",
+            "id": "c2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): Connects this caution with avoiding actions that could reveal his blindness.",
+            "id": "c3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-89",
+          "regionId": "opening",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-90",
+          "regionId": "left-column",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "senses-and-concealment",
+        "journey-and-conversation"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "(a) He remembers a time when he could see. He can draw on memory and imagination to picture the landscape, but he is now blind and is not observing the posts with his eyes.\n\n(b) He moves along the berth, feels for the window ledge, and faces the open window while pretending to study the landscape.\n\n(c) It describes a familiar appearance during a train journey, without requiring him to identify a particular visible detail. The girl accepts the remark naturally, saying that it always happens."
+      },
+      "difficulty": 2,
+      "explanation": "Memory and touch help the narrator sustain the appearance of sight. The girl’s reply reassures him, but does not prove what she knows. Award the stated points for equivalent wording and defensible interpretations supported by the text; exact textbook phrasing is not required. Mark each labelled part separately and do not award the same point twice within that part.",
+      "generation": {
+        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Separate remembered experience, physical actions and the girl’s spoken response.",
+      "id": "q-011",
+      "marks": 9,
+      "origin": "chapter_content",
+      "prompt": "Read this extract from “The Girl On The Train” and answer all three parts.\n\n“In my mind’s eye, I could see the telegraph posts flashing by.”\n\n(a) What earlier experience helps the narrator picture the scenery? How is that different from seeing it at this moment? [3]\n\n(b) Trace three actions he takes at the window to make his behaviour seem natural. [3]\n\n(c) Why is his remark about the moving trees useful for continuing his pretence? Explain using the girl’s response. [3]",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Part (a): He has memories from when he could see.",
+            "id": "a1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (a): He uses memory or imagination to form a mental picture.",
+            "id": "a2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (a): Distinguishes that mental picture from present physical sight, which he does not have.",
+            "id": "a3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): He moves along the berth towards the window.",
+            "id": "b1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): He feels for the window ledge.",
+            "id": "b2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): He faces the open window and pretends to study the landscape.",
+            "id": "b3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): His remark describes the familiar appearance of trees moving while train passengers seem still.",
+            "id": "c1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): Explains that he can make this general observation from experience without actually seeing the current scene.",
+            "id": "c2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): Uses the girl’s natural reply, “That always happens”, to show that she does not challenge the remark.",
+            "id": "c3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-90",
+          "regionId": "left-column",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-90",
+          "regionId": "right-column",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "senses-and-concealment"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "(a) He imagines that she will soon forget him, whereas he will remember the meeting for the rest of the journey and afterwards. Her forgetting is his assumption, not a fact established by the story.\n\n(b) She says people repeatedly tell her that she has a pretty face. He therefore infers that she is pretty. He cannot judge her appearance by sight because he is blind.\n\n(c) The girl is glad the journey is short because she cannot bear sitting in a train for more than two or three hours. The narrator would willingly sit there for almost any length of time to hear her talk."
+      },
+      "difficulty": 2,
+      "explanation": "The brief meeting matters greatly to the narrator. His account reveals his attachment while leaving the girl’s private feelings uncertain. Award the stated points for equivalent wording and defensible interpretations supported by the text; exact textbook phrasing is not required. Mark each labelled part separately and do not award the same point twice within that part.",
+      "generation": {
+        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Distinguish what the girl actually says from what the narrator imagines she will feel.",
+      "id": "q-012",
+      "marks": 9,
+      "origin": "chapter_content",
+      "prompt": "Read this extract from “The Girl On The Train” and answer all three parts.\n\n“As soon as she left the train, she would forget our brief encounter; but it would stay with me for the rest of the journey, and for some time after.”\n\n(a) What difference does the narrator imagine between their memories of the encounter? Is his view of the girl’s future feelings a known fact? [3]\n\n(b) After he calls her face “interesting”, what does her reply allow him to infer about her appearance? Explain why he needs her words to reach that conclusion. [3]\n\n(c) How does their conversation about a short journey reveal different attitudes to spending time together? [3]",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Part (a): He expects the girl to forget their brief meeting soon after leaving.",
+            "id": "a1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (a): He expects to remember the encounter beyond the journey.",
+            "id": "a2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (a): Recognises her future feelings as his guess or assumption, not certain knowledge.",
+            "id": "a3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): She reports that people often tell her she has a pretty face.",
+            "id": "b1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): He infers from this that her face is pretty.",
+            "id": "b2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): He relies on her words because he cannot see her.",
+            "id": "b3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): The girl welcomes the short journey.",
+            "id": "c1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): Gives her reason: she cannot bear sitting in a train for more than two or three hours.",
+            "id": "c2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): Contrasts his willingness to remain for almost any length of time because he enjoys listening to her.",
+            "id": "c3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-90",
+          "regionId": "right-column",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "connection-and-assumptions"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "(a) The girl’s eyes look beautiful, yet she cannot see. Their attractive appearance therefore tells us nothing certain about their ability to give her sight.\n\n(b) Initially the narrator thinks she failed to notice him because he was in a dark corner. The ending reveals that she too is blind, so her not knowing he was there has another explanation: she could not see him.\n\n(c) The new traveller assumes that the narrator could have observed the girl’s eyes and recognised her blindness. The narrator is himself blind and cannot make that visual observation. The question exposes the new traveller’s mistaken assumption about him."
+      },
+      "difficulty": 3,
+      "explanation": "The ending changes the meaning of earlier remarks. Do not assume that the girl knew of the narrator’s blindness or deliberately concealed her own; neither is established. Award the stated points for equivalent wording and defensible interpretations supported by the text; exact textbook phrasing is not required. Mark each labelled part separately and do not award the same point twice within that part.",
+      "generation": {
+        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Compare what each passenger assumes with what the ending actually reveals.",
+      "id": "q-013",
+      "marks": 9,
+      "origin": "chapter_content",
+      "prompt": "Read this extract from “The Girl On The Train” and answer all three parts.\n\n“She had such beautiful eyes, but they were of no use to her—she was completely blind. Didn’t you notice?”\n\n(a) What does the new traveller’s description reveal about the difference between appearance and ability? [3]\n\n(b) Return to the girl’s opening words, “I didn’t know anyone else was here.” How does the ending change our understanding of them? [3]\n\n(c) Why is “Didn’t you notice?” an ironic question to ask this particular narrator? [3]",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Part (a): Her eyes appear beautiful to the new traveller.",
+            "id": "a1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (a): She is completely blind or unable to see.",
+            "id": "a2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (a): Explains that outward beauty does not establish the ability to see.",
+            "id": "a3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): Recalls the narrator’s initial explanation that he was sitting in a dark corner.",
+            "id": "b1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): Connects the ending with the discovery that the girl is blind.",
+            "id": "b2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): Explains that her inability to see, rather than merely overlooking a corner, accounts for her not knowing he was present.",
+            "id": "b3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): The question assumes the narrator could observe the girl or her eyes.",
+            "id": "c1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): The narrator is himself blind and cannot see what the new traveller describes.",
+            "id": "c2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): Explains the mismatch: the new traveller does not realise the narrator has the same inability to see, making his assumption ironic.",
+            "id": "c3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-89",
+          "regionId": "opening",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-91",
+          "regionId": "ending",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "revelation-and-irony",
+        "connection-and-assumptions"
+      ],
+      "type": "multi_point",
+      "version": 1
+    }
+  ],
+  "schemaVersion": "0.1.0",
+  "sources": [
+    {
+      "assetRef": "manifest://the-girl-on-the-train/page-89",
+      "extractionConfidence": 0.99,
+      "id": "page-89",
+      "pageNumber": 89,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.29,
+            "width": 0.29,
+            "x": 0.68,
+            "y": 0.615
+          },
+          "id": "author",
+          "kind": "passage"
+        },
+        {
+          "bounds": {
+            "height": 0.24,
+            "width": 0.94,
+            "x": 0.01,
+            "y": 0.308
+          },
+          "id": "opening",
+          "kind": "passage"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://the-girl-on-the-train/page-90",
+      "extractionConfidence": 0.99,
+      "id": "page-90",
+      "pageNumber": 90,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.92,
+            "width": 0.495,
+            "x": 0.04,
+            "y": 0.02
+          },
+          "id": "left-column",
+          "kind": "passage"
+        },
+        {
+          "bounds": {
+            "height": 0.9,
+            "width": 0.44,
+            "x": 0.548,
+            "y": 0.025
+          },
+          "id": "right-column",
+          "kind": "passage"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://the-girl-on-the-train/page-91",
+      "extractionConfidence": 0.99,
+      "id": "page-91",
+      "pageNumber": 91,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.53,
+            "width": 0.475,
+            "x": 0.47,
+            "y": 0.045
+          },
+          "id": "ending",
+          "kind": "passage"
+        }
+      ],
+      "reviewRequired": false
+    }
+  ],
+  "topics": [
+    {
+      "id": "connection-and-assumptions",
+      "title": "Connection and assumptions"
+    },
+    {
+      "id": "journey-and-conversation",
+      "title": "Journey, setting and conversation"
+    },
+    {
+      "id": "revelation-and-irony",
+      "title": "The ending and irony"
+    },
+    {
+      "id": "senses-and-concealment",
+      "title": "Senses, imagination and concealment"
+    }
+  ]
+}

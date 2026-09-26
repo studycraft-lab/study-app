@@ -1,0 +1,884 @@
+{
+  "bank": {
+    "board": "ICSE",
+    "bookTitle": "Cordova Learning Series English - 6",
+    "chapterNumber": 1,
+    "grade": 6,
+    "id": "a-childs-thought",
+    "status": "reviewed",
+    "subject": "English Literature",
+    "title": "A Child’s Thought",
+    "version": 1
+  },
+  "questions": [
+    {
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 1,
+      "explanation": "The poem is credited to Robert Louis Stevenson.",
+      "generation": {
+        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Look for the name printed after the poem.",
+      "id": "q-001",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "Who wrote “A Child’s Thought”?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "William Wordsworth"
+          },
+          {
+            "id": "b",
+            "text": "Robert Louis Stevenson"
+          },
+          {
+            "id": "c",
+            "text": "Ruskin Bond"
+          },
+          {
+            "id": "d",
+            "text": "Louisa May Alcott"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-9",
+          "regionId": "poem",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "language-and-form"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "d"
+      },
+      "difficulty": 2,
+      "explanation": "“Prowling” means moving quietly and carefully; it makes the dragons seem watchful.",
+      "generation": {
+        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Think about the manner of movement.",
+      "id": "q-002",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "In “Castles with dragons prowling round”, what does “prowling” suggest?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "Marching noisily in a parade"
+          },
+          {
+            "id": "b",
+            "text": "Flying straight towards the sun"
+          },
+          {
+            "id": "c",
+            "text": "Sleeping without moving"
+          },
+          {
+            "id": "d",
+            "text": "Moving quietly and carefully"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-9",
+          "regionId": "poem",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-10",
+          "regionId": "glossary",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "language-and-form"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 1,
+      "explanation": "“Gallant” describes the horsemen as brave.",
+      "generation": {
+        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "The word describes a quality of the riders.",
+      "id": "q-003",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "Which word describes the horsemen as brave?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "Gallant"
+          },
+          {
+            "id": "b",
+            "text": "Rippling"
+          },
+          {
+            "id": "c",
+            "text": "Prisoned"
+          },
+          {
+            "id": "d",
+            "text": "Enchanted"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-9",
+          "regionId": "poem",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-10",
+          "regionId": "glossary",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "dream-world"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "c"
+      },
+      "difficulty": 1,
+      "explanation": "A bower is a pleasant shaded place under trees in a garden or woods.",
+      "generation": {
+        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Think of a sheltered place in a garden or wood.",
+      "id": "q-004",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "Which place best matches the meaning of “bower” in the poem?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "A bare mountain peak"
+          },
+          {
+            "id": "b",
+            "text": "A deep underground prison"
+          },
+          {
+            "id": "c",
+            "text": "A pleasant shaded place among trees"
+          },
+          {
+            "id": "d",
+            "text": "A busy town square"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-9",
+          "regionId": "poem",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-10",
+          "regionId": "glossary",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "language-and-form"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 1,
+      "explanation": "“Flank” places something at the side; the boots stand beside the door.",
+      "generation": {
+        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Use the meaning of “flank”.",
+      "id": "q-005",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "In “Boots, and not horsemen, flank the door”, how are the boots placed?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "Above the door"
+          },
+          {
+            "id": "b",
+            "text": "Beside the door"
+          },
+          {
+            "id": "c",
+            "text": "Inside the wall"
+          },
+          {
+            "id": "d",
+            "text": "Across the ceiling"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-9",
+          "regionId": "poem",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-10",
+          "regionId": "glossary",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "waking-and-mood"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 1,
+      "explanation": "“Rippling” describes the water moving in very small waves.",
+      "generation": {
+        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Notice the scale of the movement.",
+      "id": "q-006",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "What movement does “rippling” give to the blue streams?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "Moving in very small waves"
+          },
+          {
+            "id": "b",
+            "text": "Rising in a single enormous wave"
+          },
+          {
+            "id": "c",
+            "text": "Freezing into solid ice"
+          },
+          {
+            "id": "d",
+            "text": "Falling straight down a cliff"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-9",
+          "regionId": "poem",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-10",
+          "regionId": "glossary",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "language-and-form"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "c"
+      },
+      "difficulty": 2,
+      "explanation": "“Tower” and “bower” have matching end sounds and occur at the ends of neighbouring lines.",
+      "generation": {
+        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Read the word endings aloud.",
+      "id": "q-007",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "Which pair of line-ending words in the first stanza rhymes?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "Round and tower"
+          },
+          {
+            "id": "b",
+            "text": "Dreams and head"
+          },
+          {
+            "id": "c",
+            "text": "Tower and bower"
+          },
+          {
+            "id": "d",
+            "text": "Found and streams"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-9",
+          "regionId": "poem",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "language-and-form"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "(a) The ladies are imprisoned in a tower or lost in a bower. “Enchanted” suggests that the bower is under a magic spell.\n\n(b) They seem brave. They ride beside streams. Unlike the ladies, who are imprisoned or lost, the horsemen can move freely through the dream world.\n\n(c) No. It has beauty and magic, such as gardens with magical fruit, but also danger or difficulty, such as prowling dragons or imprisoned ladies."
+      },
+      "difficulty": 2,
+      "explanation": "The first stanza resembles a world of adventure: beauty and magic coexist with danger and confinement. Award the stated points for equivalent wording and defensible interpretations supported by the text; exact textbook phrasing is not required. Mark each labelled part separately and do not award the same point twice within that part.",
+      "generation": {
+        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Look at both the attractive and the troubling details in the dream.",
+      "id": "q-008",
+      "marks": 9,
+      "origin": "chapter_content",
+      "prompt": "Read this extract from “A Child’s Thought” and answer all three parts.\n\n“Fair ladies prisoned in a tower,\nOr lost in an enchanted bower;”\n\n(a) Explain the two situations in which the ladies appear. What does “enchanted” suggest about the second place? [3]\n\n(b) What impression of the horsemen is created by “gallant”? Where do they ride, and how does their situation differ from that of the ladies? [3]\n\n(c) Is this dream world entirely gentle and pleasant? Give your view and support it with two contrasting details from the first stanza. [3]",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Part (a): The ladies are imprisoned or confined in a tower.",
+            "id": "a1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (a): Alternatively, the ladies are lost in a bower or sheltered garden/wooded place.",
+            "id": "a2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (a): “Enchanted” suggests magic or a place under a spell.",
+            "id": "a3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): “Gallant” makes the horsemen seem brave or courageous.",
+            "id": "b1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): The horsemen ride by or alongside streams.",
+            "id": "b2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): Contrasts their free movement with the ladies being confined in a tower or lost.",
+            "id": "b3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): Gives a supported view recognising that the dream combines pleasant/magical features with danger or difficulty.",
+            "id": "c1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): Uses a pleasant or magical detail, such as the gardens with magic fruit, the streams or the beautiful surroundings.",
+            "id": "c2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): Uses a contrasting threatening or troubling detail, such as prowling dragons, imprisonment or being lost.",
+            "id": "c3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-9",
+          "regionId": "poem",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-10",
+          "regionId": "glossary",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "dream-world",
+        "language-and-form"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "(a) It is personification. Frowning is a human facial expression, but it is given to a castle. It makes the castle seem stern, forbidding or threatening.\n\n(b) The child hopes to find the magic land again. Instead, familiar household objects occupy the places of the castle and garden. The atmosphere changes from wonderful or adventurous to ordinary.\n\n(c) The imagined riding horsemen give way to boots standing at the door in the waking scene. The rippling streams correspond to an ordinary bath and water-can. The lively dream landscape gives way to the familiar room."
+      },
+      "difficulty": 2,
+      "explanation": "The poem pairs dream features with familiar objects. Its contrast concerns the child’s experience on waking, not a literal rebuilding of the room. Award the stated points for equivalent wording and defensible interpretations supported by the text; exact textbook phrasing is not required. Mark each labelled part separately and do not award the same point twice within that part.",
+      "generation": {
+        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Think about both the human action given to the castle and the change from adventure to household objects.",
+      "id": "q-009",
+      "marks": 9,
+      "origin": "chapter_content",
+      "prompt": "Read this extract from “A Child’s Thought” and answer all three parts.\n\n“A chair stands where the castle frowned,\nThe carpet hides the garden ground,”\n\n(a) Identify the figure of speech in “the castle frowned”. Explain the human action and the impression it gives of the castle. [3]\n\n(b) Why do the chair and carpet disappoint or surprise the child? Explain how these ordinary objects change the atmosphere of the lines. [3]\n\n(c) Elsewhere in the second stanza, horsemen are paired with boots, and streams with a bath and water-can. Explain these two contrasts and their overall effect. [3]",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Part (a): Identifies personification.",
+            "id": "a1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (a): Explains that frowning is a human facial expression attributed to a building.",
+            "id": "a2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (a): Explains a plausible effect: the castle seems stern, forbidding, threatening, serious or alive.",
+            "id": "a3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): The child expects or hopes to recover the magic land.",
+            "id": "b1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): Recognises the chair and carpet as ordinary familiar objects in place of imagined features.",
+            "id": "b2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): Explains the change from a magical/adventurous atmosphere to an ordinary or disappointing one.",
+            "id": "b3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): Contrasts riding horsemen with boots standing beside the door.",
+            "id": "c1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): Contrasts flowing/rippling streams with a bath and water-can.",
+            "id": "c2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): Explains the overall change from lively, imaginative adventure to an ordinary waking setting.",
+            "id": "c3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-9",
+          "regionId": "poem",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-10",
+          "regionId": "glossary",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "language-and-form",
+        "waking-and-mood"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "(a) “I find, so clearly” suggests vivid, easily pictured scenes. “Seek ... in vain” means looking without success. The mood changes from the pleasure or wonder of discovery to disappointment or longing.\n\n(b) The bedtime line opens and closes the first stanza. The waking line opens and closes the second. This matching structure frames the dream and the waking experience as two contrasting parts of a daily routine.\n\n(c) No. The child still seeks the magic land, and the repeated idea of seeking it in vain stresses the unsuccessful longing. The imagined world continues to matter even when it cannot be found in the waking room."
+      },
+      "difficulty": 3,
+      "explanation": "Repetition links the two stanzas while the change from finding to seeking expresses the child’s lasting attachment to the imagined world. Award the stated points for equivalent wording and defensible interpretations supported by the text; exact textbook phrasing is not required. Mark each labelled part separately and do not award the same point twice within that part.",
+      "generation": {
+        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Notice the repeated lines and the difference between finding and seeking.",
+      "id": "q-010",
+      "marks": 10,
+      "origin": "chapter_content",
+      "prompt": "Read this extract from “A Child’s Thought” and answer all three parts.\n\n“I seek the magic land in vain\nAt seven, when I wake again.”\n\n(a) How does “seek ... in vain” change the feeling created earlier by “I find, so clearly”? Explain both expressions and the change of mood. [3]\n\n(b) The child mentions seven o’clock at bedtime and on waking. How do these repeated times organise the two stanzas? [3]\n\n(c) Does the ending suggest that the child has stopped caring about the magic land? Give your view with two details, and explain what this shows about the place of imagination in the child’s life. [4]",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Part (a): Explains “I find, so clearly” as vivid or successful imagining.",
+            "id": "a1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (a): Explains “seek ... in vain” as searching without success.",
+            "id": "a2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (a): Identifies the emotional change from wonder/pleasure/confidence to disappointment, frustration or longing.",
+            "id": "a3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): The first stanza begins and ends with seven o’clock at bedtime.",
+            "id": "b1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): The second stanza begins and ends with seven o’clock on waking.",
+            "id": "b2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): Explains how the matching pattern links and contrasts the bedtime/dream and morning/waking experiences.",
+            "id": "b3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): Gives a text-supported view that the child still cares about or longs for the magic land.",
+            "id": "c1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): Uses the continuing search, “I seek”, as evidence of attachment.",
+            "id": "c2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): Uses the repetition of the unsuccessful search, “in vain”, or another distinct relevant detail as evidence of disappointment or longing.",
+            "id": "c3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): Explains that the dream world remains emotionally important or memorable beyond bedtime.",
+            "id": "c4",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-9",
+          "regionId": "poem",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-10",
+          "regionId": "glossary",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "waking-and-mood",
+        "language-and-form"
+      ],
+      "type": "multi_point",
+      "version": 1
+    }
+  ],
+  "schemaVersion": "0.1.0",
+  "sources": [
+    {
+      "assetRef": "manifest://a-childs-thought/page-9",
+      "extractionConfidence": 0.99,
+      "id": "page-9",
+      "pageNumber": 9,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.4,
+            "width": 0.94,
+            "x": 0.035,
+            "y": 0.335
+          },
+          "id": "poem",
+          "kind": "passage"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://a-childs-thought/page-10",
+      "extractionConfidence": 0.99,
+      "id": "page-10",
+      "pageNumber": 10,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.1,
+            "width": 0.9,
+            "x": 0.06,
+            "y": 0.19
+          },
+          "id": "glossary",
+          "kind": "passage"
+        }
+      ],
+      "reviewRequired": false
+    }
+  ],
+  "topics": [
+    {
+      "id": "dream-world",
+      "title": "The dream world and its characters"
+    },
+    {
+      "id": "language-and-form",
+      "title": "Vocabulary, imagery and poetic form"
+    },
+    {
+      "id": "waking-and-mood",
+      "title": "Waking, contrast and the child’s feelings"
+    }
+  ]
+}

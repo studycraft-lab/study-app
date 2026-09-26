@@ -1,0 +1,307 @@
+{
+  "reviewVersion": "0.1.0",
+  "bankId": "the-girl-on-the-train",
+  "bankVersion": 1,
+  "reviewedAt": "2026-09-26T02:49:44.940092+00:00",
+  "reviewerMethod": "Codex visual comparison against all supplied chapter pages, question-by-question review of prompts, answer keys and atomic rubric concepts, comparison with the supplied 2025 paper and printed exercises, repository CLI validation and actual application import-validator check.",
+  "inputs": {
+    "manifest": "ingestion-artifacts/the-girl-on-the-train-chapter-manifest.json",
+    "bank": "ingestion-artifacts/the-girl-on-the-train-question-bank.json",
+    "sourceAssetCount": 2,
+    "pdfToPrintedPageMap": {
+      "1": 89,
+      "2": 90,
+      "3": 91,
+      "4": 92
+    },
+    "pastPaper": "FIRST_TERM_VI_ENGLISH_LITERATURE_1787974373.pdf; 2025; format only"
+  },
+  "gates": {
+    "manifestSchema": "pass",
+    "sourceHashes": "pass",
+    "questionBankSchema": "pass",
+    "applicationImportValidator": "pass",
+    "deterministicGroundingReview": "pass",
+    "manualGroundingReview": "pass",
+    "rubricBalanceReview": "pass",
+    "childPromptLanguageReview": "pass",
+    "freshQuestionComparison": "pass"
+  },
+  "coverage": {
+    "questionCount": 13,
+    "objectiveCount": 9,
+    "extractSetCount": 4,
+    "extractSubquestionCount": 12,
+    "totalScorablePrompts": 21,
+    "objectiveMarks": 9,
+    "extractMarks": 36,
+    "totalAvailableMarks": 45,
+    "objectiveMarkShare": 0.2,
+    "topics": {
+      "journey-and-conversation": 6,
+      "senses-and-concealment": 3,
+      "connection-and-assumptions": 4,
+      "revelation-and-irony": 2
+    },
+    "types": {
+      "single_choice": 9,
+      "multi_point": 4
+    },
+    "difficulties": {
+      "1": 5,
+      "2": 7,
+      "3": 1
+    },
+    "origins": {
+      "chapter_content": 13
+    },
+    "selectionPriorities": {
+      "2": 9,
+      "1": 4
+    },
+    "pages": {
+      "page-89": 5,
+      "page-90": 11,
+      "page-91": 2
+    },
+    "correctOptionCounts": {
+      "c": 2,
+      "a": 3,
+      "d": 2,
+      "b": 2
+    },
+    "sourceAssetReadiness": {
+      "inlineQuotationSets": 4,
+      "runtimeAssetsRequired": false,
+      "unsupportedPlayableTypes": []
+    }
+  },
+  "atomicCoverageInventory": [
+    "Opening situation and safety advice; the aunt at Saharanpur; narrator and listener identification.",
+    "Concealment through wording, remaining seated, touch, memory, the window and moving-tree conversation.",
+    "October scenery, quiet roads, compliments, attraction, remembered connection and uncertain assumptions.",
+    "The girl’s blindness, reinterpretation of her first words, appearance versus ability and the final irony.",
+    "Author, first-person narration and personification."
+  ],
+  "questionReview": [
+    {
+      "questionId": "q-001",
+      "sourcePages": [
+        "page-89"
+      ],
+      "decision": "accept",
+      "checked": [
+        "prompt and answer grounded",
+        "quotation fidelity where used",
+        "one unambiguous key or mark-balanced atomic rubric",
+        "hint and explanation grounded",
+        "fresh wording and angle"
+      ]
+    },
+    {
+      "questionId": "q-002",
+      "sourcePages": [
+        "page-89"
+      ],
+      "decision": "accept",
+      "checked": [
+        "prompt and answer grounded",
+        "quotation fidelity where used",
+        "one unambiguous key or mark-balanced atomic rubric",
+        "hint and explanation grounded",
+        "fresh wording and angle"
+      ]
+    },
+    {
+      "questionId": "q-003",
+      "sourcePages": [
+        "page-90"
+      ],
+      "decision": "accept",
+      "checked": [
+        "prompt and answer grounded",
+        "quotation fidelity where used",
+        "one unambiguous key or mark-balanced atomic rubric",
+        "hint and explanation grounded",
+        "fresh wording and angle"
+      ]
+    },
+    {
+      "questionId": "q-004",
+      "sourcePages": [
+        "page-90"
+      ],
+      "decision": "accept",
+      "checked": [
+        "prompt and answer grounded",
+        "quotation fidelity where used",
+        "one unambiguous key or mark-balanced atomic rubric",
+        "hint and explanation grounded",
+        "fresh wording and angle"
+      ]
+    },
+    {
+      "questionId": "q-005",
+      "sourcePages": [
+        "page-90"
+      ],
+      "decision": "accept",
+      "checked": [
+        "prompt and answer grounded",
+        "quotation fidelity where used",
+        "one unambiguous key or mark-balanced atomic rubric",
+        "hint and explanation grounded",
+        "fresh wording and angle"
+      ]
+    },
+    {
+      "questionId": "q-006",
+      "sourcePages": [
+        "page-90"
+      ],
+      "decision": "accept",
+      "checked": [
+        "prompt and answer grounded",
+        "quotation fidelity where used",
+        "one unambiguous key or mark-balanced atomic rubric",
+        "hint and explanation grounded",
+        "fresh wording and angle"
+      ]
+    },
+    {
+      "questionId": "q-007",
+      "sourcePages": [
+        "page-90"
+      ],
+      "decision": "accept",
+      "checked": [
+        "prompt and answer grounded",
+        "quotation fidelity where used",
+        "one unambiguous key or mark-balanced atomic rubric",
+        "hint and explanation grounded",
+        "fresh wording and angle"
+      ]
+    },
+    {
+      "questionId": "q-008",
+      "sourcePages": [
+        "page-91"
+      ],
+      "decision": "accept",
+      "checked": [
+        "prompt and answer grounded",
+        "quotation fidelity where used",
+        "one unambiguous key or mark-balanced atomic rubric",
+        "hint and explanation grounded",
+        "fresh wording and angle"
+      ]
+    },
+    {
+      "questionId": "q-009",
+      "sourcePages": [
+        "page-89",
+        "page-90",
+        "page-90"
+      ],
+      "decision": "accept",
+      "checked": [
+        "prompt and answer grounded",
+        "quotation fidelity where used",
+        "one unambiguous key or mark-balanced atomic rubric",
+        "hint and explanation grounded",
+        "fresh wording and angle"
+      ]
+    },
+    {
+      "questionId": "q-010",
+      "sourcePages": [
+        "page-89",
+        "page-90"
+      ],
+      "decision": "accept",
+      "checked": [
+        "prompt and answer grounded",
+        "quotation fidelity where used",
+        "one unambiguous key or mark-balanced atomic rubric",
+        "hint and explanation grounded",
+        "fresh wording and angle"
+      ]
+    },
+    {
+      "questionId": "q-011",
+      "sourcePages": [
+        "page-90",
+        "page-90"
+      ],
+      "decision": "accept",
+      "checked": [
+        "prompt and answer grounded",
+        "quotation fidelity where used",
+        "one unambiguous key or mark-balanced atomic rubric",
+        "hint and explanation grounded",
+        "fresh wording and angle"
+      ]
+    },
+    {
+      "questionId": "q-012",
+      "sourcePages": [
+        "page-90"
+      ],
+      "decision": "accept",
+      "checked": [
+        "prompt and answer grounded",
+        "quotation fidelity where used",
+        "one unambiguous key or mark-balanced atomic rubric",
+        "hint and explanation grounded",
+        "fresh wording and angle"
+      ]
+    },
+    {
+      "questionId": "q-013",
+      "sourcePages": [
+        "page-89",
+        "page-91"
+      ],
+      "decision": "accept",
+      "checked": [
+        "prompt and answer grounded",
+        "quotation fidelity where used",
+        "one unambiguous key or mark-balanced atomic rubric",
+        "hint and explanation grounded",
+        "fresh wording and angle"
+      ]
+    }
+  ],
+  "omissions": [
+    {
+      "source": "Printed page 91: A1–A5 and B1; printed page 92: B2–B5, C1–C3, D1(a–c), D2(a–c).",
+      "reason": "The user requested original questions rather than copies. Central concepts are sampled through nine fresh MCQs and four extract sets; exhaustive exercise reproduction and near-identical variants are excluded."
+    },
+    {
+      "source": "Printed page 92: C4 imagined continuation of the conversation.",
+      "reason": "An open-ended invented continuation is outside the agreed source-grounded RTC practice and has no single source-established sequence to score."
+    },
+    {
+      "source": "Printed page 92: Use Grammar, prepositions and grammar exercises.",
+      "reason": "The requested subject is English Literature."
+    },
+    {
+      "source": "Printed page 89: author biography beyond author identity.",
+      "reason": "Background dates and other works are lower-priority than the story’s central encounter."
+    }
+  ],
+  "advisoryNotes": [
+    "The user selected three separate banks and an initial scope of three poem extract sets and four per prose work. These explicit scope and originality instructions override the ingestion skill’s defaults to reproduce all exercises and exhaustively inventory every fact.",
+    "The supplied paper has Section A objective (16/80 marks), Section B poetry RTC (31/80) and Section C prose RTC (33/80). These chapter banks preserve the 20:80 objective/RTC mark balance and the short-extract plus labelled subquestion style; they are not separate 80-mark mock examinations.",
+    "All RTC sets have three labelled parts. Each part is normally worth three marks; the final poem interpretation is worth four. Each mark is tied to an atomic rubric point, with semantic equivalents allowed and no spelling/grammar penalties.",
+    "The current player cannot play source_group, so each complete quotation and its subquestions are stored as one supported multi_point item with one answer box and a part-labelled rubric. The existing UI may collapse newlines; punctuation and (a)/(b)/(c) labels keep the boundaries explicit. No application code changes were made.",
+    "The bank-level mark ratio does not override the app’s ordinary practice-session selection algorithm. No 80-mark exam-session behavior is implied.",
+    "Learning outcomes in the manifest are source-derived coverage goals; the supplied pages do not print a formal learning-outcome list. Full scans remain outside the repository.",
+    "To append questions, retain bank.id and all existing question IDs, assign unused IDs to new items and increase bank.version. Increase an existing question’s version only if its content changes; historical attempts retain their snapshots.",
+    "The story states where the girl boards but not where the narrator boards. The unsupported past-paper prompt about the narrator’s boarding station is excluded.",
+    "Do not assert that the girl knew of the narrator’s blindness or deliberately hid her own; the text does not establish this.",
+    "The narrator’s expectation that the girl will forget him is scored as an assumption, not a fact about her future feelings."
+  ],
+  "blockingFindings": [],
+  "decision": "accept"
+}

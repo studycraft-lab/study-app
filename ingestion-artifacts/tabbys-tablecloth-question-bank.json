@@ -1,0 +1,1189 @@
+{
+  "bank": {
+    "board": "ICSE",
+    "bookTitle": "Cordova Learning Series English - 6",
+    "chapterNumber": 11,
+    "grade": 6,
+    "id": "tabbys-tablecloth",
+    "status": "reviewed",
+    "subject": "English Literature",
+    "title": "Tabby’s Tablecloth",
+    "version": 1
+  },
+  "questions": [
+    {
+      "answer": {
+        "correctOptionId": "d"
+      },
+      "difficulty": 1,
+      "explanation": "A secret message from her uncle to Deacon Cyrus Hosmer lies under the eggs.",
+      "generation": {
+        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Think about what the basket conceals.",
+      "id": "q-001",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "What turns Tabby’s ordinary-looking basket of eggs into part of a secret mission?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "A map painted on the eggs"
+          },
+          {
+            "id": "b",
+            "text": "A gun concealed among the eggs"
+          },
+          {
+            "id": "c",
+            "text": "A flag tied to the handle"
+          },
+          {
+            "id": "d",
+            "text": "A message hidden beneath the eggs"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-77",
+          "regionId": "opening",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "concord-and-secrecy"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 2,
+      "explanation": "Some Tories pass information to the enemy, so the townspeople use passwords, secret signals and hidden messages to protect their plans.",
+      "generation": {
+        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Think about the risk caused by the Tories in the town.",
+      "id": "q-002",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "Why do the people of Concord use passwords and secret signals?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "To organise entertainment for visitors"
+          },
+          {
+            "id": "b",
+            "text": "To protect their plans from people who pass information to the enemy"
+          },
+          {
+            "id": "c",
+            "text": "To teach the British officers a new game"
+          },
+          {
+            "id": "d",
+            "text": "To advertise the hiding places of supplies"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-77",
+          "regionId": "opening",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "concord-and-secrecy"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 1,
+      "explanation": "After delivering the message to Deacon Hosmer, she tells him about the strangers.",
+      "generation": {
+        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall whom she meets after speaking to the strangers.",
+      "id": "q-003",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "To whom does Tabby first report that two strangers are in town?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "Deacon Cyrus Hosmer"
+          },
+          {
+            "id": "b",
+            "text": "Mrs Bliss"
+          },
+          {
+            "id": "c",
+            "text": "Captain Brown"
+          },
+          {
+            "id": "d",
+            "text": "Her daughter"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-78",
+          "regionId": "left-column",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "concord-and-secrecy"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "c"
+      },
+      "difficulty": 1,
+      "explanation": "She hides the basket among the bushes before entering through the window.",
+      "generation": {
+        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the action just before she leaps inside.",
+      "id": "q-004",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "What does Tabby do with her basket before entering through the open window?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "Leaves it on the dining table"
+          },
+          {
+            "id": "b",
+            "text": "Gives it to Captain Brown"
+          },
+          {
+            "id": "c",
+            "text": "Hides it among the bushes"
+          },
+          {
+            "id": "d",
+            "text": "Puts it beside the cat"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-78",
+          "regionId": "right-column",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "courage-and-choices"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "c"
+      },
+      "difficulty": 1,
+      "explanation": "The old maid says that Tabby is in the way and should go home.",
+      "generation": {
+        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Mrs Bliss accepts the eggs, but someone else dismisses Tabby’s offer to help.",
+      "id": "q-005",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "Who tells Tabby that her help is not wanted in the kitchen?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "Her uncle"
+          },
+          {
+            "id": "b",
+            "text": "Deacon Hosmer"
+          },
+          {
+            "id": "c",
+            "text": "The old maid"
+          },
+          {
+            "id": "d",
+            "text": "Captain Brown"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-78",
+          "regionId": "right-column",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "courage-and-choices"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "d"
+      },
+      "difficulty": 1,
+      "explanation": "Although faint with pain, she bites her lips and does not stir.",
+      "generation": {
+        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall how she controls her reaction.",
+      "id": "q-006",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "How does Tabby prevent a cry of pain from exposing her when her hand is hurt?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "She calls out for the cat"
+          },
+          {
+            "id": "b",
+            "text": "She asks the men to leave"
+          },
+          {
+            "id": "c",
+            "text": "She pushes back her chair"
+          },
+          {
+            "id": "d",
+            "text": "She bites her lips and keeps still"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-79",
+          "regionId": "left-column",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-79",
+          "regionId": "right-column",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "courage-and-choices"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 2,
+      "explanation": "The tail-tip is compared to a flag of truce using “like”, making this a simile.",
+      "generation": {
+        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Look for an explicit comparison using “like”.",
+      "id": "q-007",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "The cat’s tail-tip is described as “waving like a flag of truce”. Which figure of speech is used?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "Personification"
+          },
+          {
+            "id": "b",
+            "text": "Simile"
+          },
+          {
+            "id": "c",
+            "text": "Metaphor"
+          },
+          {
+            "id": "d",
+            "text": "Alliteration"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-80",
+          "regionId": "left-column",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "discovery-and-irony"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 1,
+      "explanation": "They are already well on their way to Boston when Tabby reports what she heard.",
+      "generation": {
+        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall why the officers manage to escape.",
+      "id": "q-008",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "Where are the British officers heading by the time Tabby gives her warning?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "Boston"
+          },
+          {
+            "id": "b",
+            "text": "A neighbouring farm"
+          },
+          {
+            "id": "c",
+            "text": "The woods outside Concord"
+          },
+          {
+            "id": "d",
+            "text": "Saharanpur"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-80",
+          "regionId": "left-column",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "discovery-and-irony"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "c"
+      },
+      "difficulty": 1,
+      "explanation": "The text credits Louisa May Alcott and identifies this version as abridged.",
+      "generation": {
+        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Look at the author credit at the end.",
+      "id": "q-009",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "Who wrote the story presented in abridged form as “Tabby’s Tablecloth”?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "Robert Louis Stevenson"
+          },
+          {
+            "id": "b",
+            "text": "Ruskin Bond"
+          },
+          {
+            "id": "c",
+            "text": "Louisa May Alcott"
+          },
+          {
+            "id": "d",
+            "text": "William Wordsworth"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-80",
+          "regionId": "author",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "cloth-and-legacy"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "(a) They are the people of Concord, including its farmers. The officers want to discover where supplies are stored and how well the town is defended.\n\n(b) Brown seems to expect little or no resistance. Mr Bliss says the people will fight them to death. His reply warns that the townspeople are determined to resist, despite Brown’s confidence.\n\n(c) Supplies and cannons are hidden to keep them available for resistance. A guard of ten men patrols at night. The farmers are preparing for the expected conflict, so the town is not simply waiting to surrender."
+      },
+      "difficulty": 2,
+      "explanation": "Brown underestimates the townspeople. Their earlier preparations support Bliss’s warning about determined resistance. Award the stated points for equivalent wording and defensible interpretations supported by the text; exact textbook phrasing is not required. Mark each labelled part separately and do not award the same point twice within that part.",
+      "generation": {
+        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Compare Brown’s assumption with what the people of Concord have already done.",
+      "id": "q-010",
+      "marks": 9,
+      "origin": "chapter_content",
+      "prompt": "Read this extract from “Tabby’s Tablecloth” and answer all three parts.\n\n“These people won’t fight, will they?”\n\n(a) Who are “these people”? What two things have Captain Brown and the junior officer come to find out in Concord? [3]\n\n(b) How does Mr Bliss’s answer challenge Captain Brown’s expectation? [3]\n\n(c) How do the hidden supplies, the night watch and the farmers’ preparations support Mr Bliss’s warning? [3]",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Part (a): Identifies the people of Concord or its townspeople/farmers.",
+            "id": "a1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (a): The officers seek the locations of stored supplies.",
+            "id": "a2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (a): The officers seek information about how well the town is defended.",
+            "id": "a3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): Explains Brown’s expectation or hope that the people will not fight.",
+            "id": "b1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): Gives the substance of Bliss’s reply: they will fight to death.",
+            "id": "b2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): Explains that the reply presents determined or fierce resistance, contradicting Brown’s assumption.",
+            "id": "b3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): Hidden military supplies or cannons show preparation for resistance and protection of resources.",
+            "id": "c1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): The night patrol or ten-man guard shows active precautions to defend the town.",
+            "id": "c2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): The farmers are getting ready for the expected conflict, supporting their willingness to fight.",
+            "id": "c3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-77",
+          "regionId": "opening",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-79",
+          "regionId": "left-column",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "concord-and-secrecy",
+        "discovery-and-irony"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "(a) She is considering entering through the window and hiding under the table to listen. The men’s voices were too low to hear from outside, and the maid refused her offer to stay and help in the kitchen.\n\n(b) She hides her basket in the bushes, leaps through the open window, and makes herself small beneath the table so that the long cloth conceals her.\n\n(c) No. Courage need not mean feeling no fear. She wants to discover a plot that may harm her town, and she chooses to hide and listen despite knowing that she could be discovered."
+      },
+      "difficulty": 2,
+      "explanation": "Her questions reveal awareness of danger. Her determination to discover a threat leads her to act in spite of that fear. Award the stated points for equivalent wording and defensible interpretations supported by the text; exact textbook phrasing is not required. Mark each labelled part separately and do not award the same point twice within that part.",
+      "generation": {
+        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Use what she has tried, what she fears and what she decides to do.",
+      "id": "q-011",
+      "marks": 9,
+      "origin": "chapter_content",
+      "prompt": "Read this extract from “Tabby’s Tablecloth” and answer all three parts.\n\n“Do I dare to do it? What will happen to me if they find me?”\n\n(a) What risky step is Tabby considering? Give two reasons why she has not yet managed to hear the men’s plans. [3]\n\n(b) How does Tabby reach and use her hiding place? Give three steps that make the plan work. [3]\n\n(c) Does Tabby’s fear make her less courageous? Give your view and support it with her purpose and her decision. [3]",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Part (a): She is considering hiding under the dining table to overhear the men.",
+            "id": "a1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (a): Their voices were too low for her to hear from outside.",
+            "id": "a2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (a): The maid rejected her offer of kitchen help and told her to leave.",
+            "id": "a3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): She conceals her basket among the bushes.",
+            "id": "b1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): She enters by leaping through the open window.",
+            "id": "b2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): She hides under the table, making herself small beneath the long cloth.",
+            "id": "b3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): Gives a supported interpretation that acting despite fear shows courage, rather than requiring fearlessness.",
+            "id": "c1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): Connects her purpose with discovering a harmful plan or protecting her town.",
+            "id": "c2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): Uses her decision to enter and hide despite possible discovery as evidence.",
+            "id": "c3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-77",
+          "regionId": "opening",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-78",
+          "regionId": "left-column",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-78",
+          "regionId": "right-column",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-79",
+          "regionId": "left-column",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "courage-and-choices"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "(a) A sneeze has alerted them to a sound under the table. They fear an unwanted listener may be hidden there. When the cat appears, they feel reassured and think their conversation is safe.\n\n(b) The cat cannot repeat the conversation, as Bliss says. But Tabby is hidden under the table and has heard it. She can report it and later does, so his confidence is misplaced.\n\n(c) They move valuable supplies to nearby towns, get their cannons ready, and have the minutemen aim those cannons at the enemy."
+      },
+      "difficulty": 2,
+      "explanation": "The reader knows that a human listener remains hidden. Later, “had them trained on the enemy” refers to aiming the cannons, not training the minutemen. Award the stated points for equivalent wording and defensible interpretations supported by the text; exact textbook phrasing is not required. Mark each labelled part separately and do not award the same point twice within that part.",
+      "generation": {
+        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Think about what the men believe, what the reader knows and what happens after the warning.",
+      "id": "q-012",
+      "marks": 9,
+      "origin": "chapter_content",
+      "prompt": "Read this extract from “Tabby’s Tablecloth” and answer all three parts.\n\n“It’s only the old cat, gentlemen. A good beast, and luckily for us, unable to report our talk,” said Mr Bliss with a sigh of relief.\n\n(a) What does “a sigh of relief” reveal about the men’s reaction before and after the cloth is lifted? [3]\n\n(b) Why is “unable to report our talk” ironic in this situation? [3]\n\n(c) How does Tabby’s warning affect the townspeople’s handling of their supplies and cannons? Give three specific actions. [3]",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Part (a): A sneeze or unexpected noise under the table alarms them.",
+            "id": "a1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (a): Explains their concern that someone may be hidden or overhearing their secret talk.",
+            "id": "a2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (a): The cat’s appearance reassures them that their secrecy is safe.",
+            "id": "a3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): Explains that Bliss believes the cat cannot reveal the conversation.",
+            "id": "b1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): Contrasts this with Tabby being hidden there and hearing the plans.",
+            "id": "b2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): Explains that Tabby can and does give a warning, undermining his confidence.",
+            "id": "b3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): They move valuable supplies to neighbouring towns.",
+            "id": "c1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): They get the cannons ready.",
+            "id": "c2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): The minutemen train or aim the cannons on the enemy; “trained on” means aimed, not that the men receive training.",
+            "id": "c3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-79",
+          "regionId": "right-column",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-80",
+          "regionId": "left-column",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-80",
+          "regionId": "right-column",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "discovery-and-irony",
+        "concord-and-secrecy"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "(a) After the fighting, the government took over Mr Bliss’s property and sold many of his things at auction. Tabby’s uncle bought the cloth and gave it to her. Later, her daughter preserved it as a token of her mother’s bravery.\n\n(b) Its long folds concealed Tabby beneath the table. Later it was made into lint and soft squares. These were placed on soldiers’ wounds to care for the injured.\n\n(c) The cloth ends in useful service, helping wounded soldiers. Earlier, Tabby risked her own safety to protect others. Both show service and concern for people, so the cloth’s final use continues the spirit of her brave deed."
+      },
+      "difficulty": 2,
+      "explanation": "The ending connects courage with service and healing. No knowledge of the name or wider history of the 1861 war is required. Award the stated points for equivalent wording and defensible interpretations supported by the text; exact textbook phrasing is not required. Mark each labelled part separately and do not award the same point twice within that part.",
+      "generation": {
+        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Follow the cloth through its owners as well as its uses: concealment, remembrance and care for the wounded.",
+      "id": "q-013",
+      "marks": 9,
+      "origin": "chapter_content",
+      "prompt": "Read this extract from “Tabby’s Tablecloth” and answer all three parts.\n\n“In 1861, Tabby’s tablecloth saw another war and made an honourable end as a boxful of finest lint and softest squares to lay on the wounds of soldiers at war.”\n\n(a) Trace how the tablecloth passed from Mr Bliss’s house into Tabby’s family. Give three key stages before its use in 1861. [3]\n\n(b) Compare the way the cloth protected Tabby with the way it helped soldiers in 1861. [3]\n\n(c) Why is “honourable” a fitting description of this end? Connect the cloth’s later use with the values shown by Tabby. [3]",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Part (a): After the fighting, Mr Bliss’s property was taken over by the government and his belongings were auctioned.",
+            "id": "a1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (a): Tabby’s uncle bought the tablecloth at the auction and gave it to her.",
+            "id": "a2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (a): Her daughter later preserved it as a token of her mother’s bravery.",
+            "id": "a3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): The cloth hid or protected Tabby from discovery under the table.",
+            "id": "b1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): It was later made into lint and soft cloth squares.",
+            "id": "b2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): Those pieces were used to dress or care for soldiers’ wounds.",
+            "id": "b3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): Explains that helping the wounded is a worthwhile, caring or honourable final use.",
+            "id": "c1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): Connects Tabby’s earlier risk-taking with protecting her community or serving others.",
+            "id": "c2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): Makes a clear link between the cloth’s later service and the courage, care or protection represented by Tabby’s actions.",
+            "id": "c3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-79",
+          "regionId": "left-column",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-80",
+          "regionId": "right-column",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "cloth-and-legacy",
+        "courage-and-choices"
+      ],
+      "type": "multi_point",
+      "version": 1
+    }
+  ],
+  "schemaVersion": "0.1.0",
+  "sources": [
+    {
+      "assetRef": "manifest://tabbys-tablecloth/page-77",
+      "extractionConfidence": 0.99,
+      "id": "page-77",
+      "pageNumber": 77,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.25,
+            "width": 0.3,
+            "x": 0.67,
+            "y": 0.64
+          },
+          "id": "author",
+          "kind": "passage"
+        },
+        {
+          "bounds": {
+            "height": 0.555,
+            "width": 0.65,
+            "x": 0.01,
+            "y": 0.35
+          },
+          "id": "opening",
+          "kind": "passage"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://tabbys-tablecloth/page-78",
+      "extractionConfidence": 0.99,
+      "id": "page-78",
+      "pageNumber": 78,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.56,
+            "width": 0.48,
+            "x": 0.045,
+            "y": 0.354
+          },
+          "id": "left-column",
+          "kind": "passage"
+        },
+        {
+          "bounds": {
+            "height": 0.9,
+            "width": 0.445,
+            "x": 0.55,
+            "y": 0.025
+          },
+          "id": "right-column",
+          "kind": "passage"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://tabbys-tablecloth/page-79",
+      "extractionConfidence": 0.99,
+      "id": "page-79",
+      "pageNumber": 79,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.48,
+            "width": 0.473,
+            "x": 0.006,
+            "y": 0.437
+          },
+          "id": "left-column",
+          "kind": "passage"
+        },
+        {
+          "bounds": {
+            "height": 0.48,
+            "width": 0.473,
+            "x": 0.5,
+            "y": 0.437
+          },
+          "id": "right-column",
+          "kind": "passage"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://tabbys-tablecloth/page-80",
+      "extractionConfidence": 0.99,
+      "id": "page-80",
+      "pageNumber": 80,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.035,
+            "width": 0.265,
+            "x": 0.708,
+            "y": 0.55
+          },
+          "id": "author",
+          "kind": "passage"
+        },
+        {
+          "bounds": {
+            "height": 0.56,
+            "width": 0.493,
+            "x": 0.025,
+            "y": 0.025
+          },
+          "id": "left-column",
+          "kind": "passage"
+        },
+        {
+          "bounds": {
+            "height": 0.516,
+            "width": 0.455,
+            "x": 0.525,
+            "y": 0.027
+          },
+          "id": "right-column",
+          "kind": "passage"
+        }
+      ],
+      "reviewRequired": false
+    }
+  ],
+  "topics": [
+    {
+      "id": "cloth-and-legacy",
+      "title": "The tablecloth and its legacy"
+    },
+    {
+      "id": "concord-and-secrecy",
+      "title": "Concord, secret messages and preparations"
+    },
+    {
+      "id": "courage-and-choices",
+      "title": "Tabby’s courage, choices and resourcefulness"
+    },
+    {
+      "id": "discovery-and-irony",
+      "title": "Discovery, danger and irony"
+    }
+  ]
+}

@@ -77,6 +77,7 @@
 .question-card::before { background:linear-gradient(90deg,var(--blue),var(--aqua),var(--sun),var(--coral)); content:""; height:7px; left:0; position:absolute; right:0; top:0; }
 .question-meta { color:var(--muted); display:flex; font-size:.73rem; font-weight:900; justify-content:space-between; letter-spacing:.09em; text-transform:uppercase; }
 .question-card > h1 { font-size:clamp(2rem,4.5vw,3.45rem); line-height:1.08; margin:24px 0 36px; }
+.question-card > h1.question-prompt-long { font-size:clamp(1.45rem,2.8vw,2.05rem); line-height:1.32; max-width:48rem; }
 .choice-list { border:0; display:grid; gap:12px; margin:0; padding:0; }
 .choice-list label { align-items:center; background:white; border:1.5px solid var(--line); border-radius:15px; cursor:pointer; display:flex; gap:13px; min-height:54px; padding:15px 17px; transition:background var(--speed),border var(--speed),transform var(--speed); }
 .choice-list label:hover { background:#f8f9ff; border-color:rgba(73,103,223,.46); transform:translateX(3px); }
@@ -85,6 +86,11 @@
 .text-answer { color:var(--ink-soft); display:grid; font-size:.84rem; font-weight:850; gap:8px; margin-top:20px; }
 .text-answer input,.text-answer textarea,.matching-list select,.question-feedback-panel textarea { background:white; border:1.5px solid var(--line-strong); border-radius:14px; color:var(--ink); font:inherit; min-height:50px; padding:14px; }
 .text-answer textarea { line-height:1.55; resize:vertical; width:100%; }
+.multipart-answers { display:grid; gap:18px; }
+.multipart-answer { background:var(--paper); border:1px solid var(--line); border-radius:16px; margin:0; padding:18px; }
+.multipart-question { align-items:start; color:var(--ink); display:grid; font-size:1rem; font-weight:650; gap:12px; grid-template-columns:auto 1fr; line-height:1.5; }
+.multipart-question b { background:var(--blue-soft); border-radius:999px; color:var(--navy); font-size:.7rem; letter-spacing:.06em; padding:6px 9px; text-transform:uppercase; white-space:nowrap; }
+.multipart-answer textarea { margin-top:4px; }
 .matching-list { display:grid; gap:14px; }
 .matching-list label { align-items:center; background:rgba(255,255,255,.58); border-radius:14px; display:grid; gap:12px; grid-template-columns:minmax(120px,1fr) minmax(180px,1fr); padding:10px; }
 .question-actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:34px; }

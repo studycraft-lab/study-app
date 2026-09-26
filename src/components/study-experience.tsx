@@ -17,16 +17,55 @@ type Status = "pending" | "correct" | "partial" | "review" | "incorrect";
 type HistoryAttempt = { id: string; question_id?: string; question_prompt: string; response?: unknown; correct: boolean; earned_marks: number; max_marks: number; feedback: Omit<Feedback, "attemptId"> };
 type HistorySession = { id: string; bankId: string; subject: string; chapterTitle: string; status: string; startedAt: string; totalQuestions: number; resumable: boolean; attempts: HistoryAttempt[] };
 type History = { summary: { completedSessions: number; attempts: number; uniqueQuestions: number; accuracy: number; mastery: number; dueReview: number }; topics: { topicId: string; attempts: number; accuracy: number; mastery: number }[]; sessions: HistorySession[] };
+type PromptPart = { label: string; text: string };
+type MultipartPrompt = { stem: string; parts: PromptPart[] };
 
 const PYTHON_ACTIVITIES = [
   { href: "/study/python", kind: "Lesson", title: "Conditional Statements", description: "Learn if, if…else, and if…elif…else with examples and quick checks.", action: "Open lesson", glyph: "if / else" },
   { href: "/study/python/practice", kind: "Practice", title: "Python Programming", description: "Write programs and answer questions in the exam-style Python mix.", action: "Open practice", glyph: ">_" },
 ] as const;
+const MULTIPART_QUESTION_TYPES = new Set(["brief_answer", "multi_point", "compare"]);
+
+function splitMultipartPrompt(prompt: string): MultipartPrompt | null {
+  const markers = [...prompt.matchAll(/\(([a-h])\)\s*/gi)];
+  if (markers.length < 2 || markers[0][1].toLowerCase() !== "a") return null;
+
+  const parts = markers.map((marker, index) => ({
+    label: marker[1].toLowerCase(),
+    text: prompt.slice((marker.index ?? 0) + marker[0].length, markers[index + 1]?.index ?? prompt.length).trim(),
+  }));
+  const labelsAreSequential = parts.every((part, index) => part.label.charCodeAt(0) === 97 + index);
+  const stem = prompt.slice(0, markers[0].index).trim();
+  return stem && labelsAreSequential && parts.every((part) => part.text) ? { stem, parts } : null;
+}
+
+function multipartAnswers(value: unknown, parts: PromptPart[]): Record<string, string> {
+  if (typeof value !== "string" || !value.trim()) return {};
+  const markers = [...value.matchAll(/^\(([a-h])\)\s*/gim)];
+  if (!markers.length) return { [parts[0].label]: value };
+  return Object.fromEntries(markers.map((marker, index) => [
+    marker[1].toLowerCase(),
+    value.slice((marker.index ?? 0) + marker[0].length, markers[index + 1]?.index ?? value.length).trim(),
+  ]));
+}
+
+function serializeMultipartAnswers(parts: PromptPart[], answers: Record<string, string>): string {
+  return parts.map((part) => `(${part.label}) ${answers[part.label] ?? ""}`.trimEnd()).join("\n\n");
+}
+
+function multipartPromptFor(question: Question): MultipartPrompt | null {
+  return MULTIPART_QUESTION_TYPES.has(question.type) ? splitMultipartPrompt(question.prompt) : null;
+}
 
 function hasResponse(question: Question, response: unknown): boolean {
   if (question.type === "multiple_select") return Array.isArray(response) && response.length > 0;
   if (question.type === "matching") return Object.keys((response as Record<string, string>) ?? {}).length === (question.response.left?.length ?? 0);
   if (question.type === "true_false_correct") return typeof (response as { value?: unknown })?.value === "boolean";
+  const multipart = multipartPromptFor(question);
+  if (multipart) {
+    const answers = multipartAnswers(response, multipart.parts);
+    return multipart.parts.every((part) => answers[part.label]?.trim());
+  }
   return typeof response === "string" && response.trim().length > 0;
 }
 
@@ -259,7 +298,7 @@ export function StudyExperience({ tutorEnabled = false }: { tutorEnabled?: boole
       <div className="focus-ambient" aria-hidden="true"><i /><i /><i /><i /></div>
       <div className="focus-progress-copy"><span>{reviewingId ? "Reviewing your answer" : `Question ${currentIndex + 1} of ${questions.length}`}</span><strong>{answeredCount} answered</strong></div>
       <div className="progress-rail constellation-progress" aria-label="Question progress">{questions.map((question, index) => { const status = statuses[question.id] ?? "pending"; const active = question.id === current.id; const label = `Question ${index + 1}: ${status}${active ? ", current" : ""}`; const symbol = status === "correct" ? "✓" : status === "partial" ? "½" : status === "review" ? "?" : status === "incorrect" ? "×" : index + 1; return feedbackByQuestion[question.id] ? <button type="button" key={question.id} className={`progress-step is-${status}${active ? " is-current" : ""}`} aria-label={`${label}; review answer`} onClick={() => openReview(question.id)}>{symbol}</button> : <span key={question.id} className={`progress-step is-${status}${active ? " is-current" : ""}`} aria-label={label}>{symbol}</span>; })}</div>
-      <article className="question-card" key={`${current.id}-${shownFeedback ? "revealed" : "answer"}`}><div className="question-meta"><span>Question {currentIndex + 1} · {current.type.replaceAll("_", " ")}</span><span>{current.marks} {current.marks === 1 ? "mark" : "marks"}</span></div><h1 className={current.response.editor === "python" ? "python-question-prompt" : undefined}>{current.prompt}</h1>
+      <article className="question-card" key={`${current.id}-${shownFeedback ? "revealed" : "answer"}`}><div className="question-meta"><span>Question {currentIndex + 1} · {current.type.replaceAll("_", " ")}</span><span>{current.marks} {current.marks === 1 ? "mark" : "marks"}</span></div><QuestionPrompt question={current} />
         {!reviewingId && <div className="question-feedback"><button type="button" className="question-feedback-link" onClick={() => setFeedbackOpen((existing) => ({ ...existing, [current.id]: !existing[current.id] }))}>{reportedQuestions[current.id] ? "Feedback sent" : "Give feedback"}</button>{feedbackOpen[current.id] && !reportedQuestions[current.id] && <div className="question-feedback-panel"><label>What seems wrong? <span>(optional)</span><textarea rows={2} value={reportNotes[current.id] ?? ""} onChange={(event) => setReportNotes((existing) => ({ ...existing, [current.id]: event.target.value }))} placeholder="For example: the wording is confusing" /></label><div className="button-row"><button type="button" onClick={reportCurrentQuestion} disabled={busy}>{busy ? "Sending…" : "Report question"}</button><button type="button" className="button-quiet" onClick={() => setFeedbackOpen((existing) => ({ ...existing, [current.id]: false }))}>Cancel</button></div></div>}</div>}
         <QuestionInput question={current} value={shownResponse} onChange={setResponse} disabled={Boolean(shownFeedback) || Boolean(reviewingId)} />
         {!shownFeedback ? <div className="question-actions"><button className="answer-submit" onClick={checkAnswer} disabled={!hasResponse(current, response) || busy}>{busy ? "Checking…" : "Check answer"}<span aria-hidden="true">→</span></button><button className="button-quiet" onClick={dontKnow} disabled={busy}>I don’t know</button></div> : <div className={`answer-feedback ${shownFeedback.gradingPending || shownFeedback.reviewRequired ? "is-review" : shownFeedback.correct ? "is-correct" : shownFeedback.earnedMarks > 0 ? "is-partial" : "is-wrong"}`} role="status">
@@ -281,11 +320,27 @@ export function StudyExperience({ tutorEnabled = false }: { tutorEnabled?: boole
   </main>;
 }
 
+function QuestionPrompt({ question }: { question: Question }) {
+  const multipart = multipartPromptFor(question);
+  const className = [
+    question.response.editor === "python" ? "python-question-prompt" : "",
+    question.prompt.length > 140 || multipart ? "question-prompt-long" : "",
+  ].filter(Boolean).join(" ") || undefined;
+  return <h1 className={className}>{multipart?.stem ?? question.prompt}</h1>;
+}
+
 function QuestionInput({ question, value, onChange, disabled }: { question: Question; value: unknown; onChange: (value: unknown) => void; disabled: boolean }) {
   if (question.type === "single_choice" || question.type === "multiple_select") return <fieldset disabled={disabled} className="choice-list"><legend className="sr-only">Answer choices</legend>{question.response.options?.map((option) => { const checked = question.type === "single_choice" ? value === option.id : Array.isArray(value) && value.includes(option.id); return <label key={option.id}><input type={question.type === "single_choice" ? "radio" : "checkbox"} name="answer" checked={checked} onChange={() => question.type === "single_choice" ? onChange(option.id) : onChange(checked ? (value as string[]).filter((id) => id !== option.id) : [...(Array.isArray(value) ? value : []), option.id])} />{option.text}</label>; })}</fieldset>;
   if (question.type === "fill_blank" || question.type === "one_word") return <label className="text-answer">Your answer<input autoComplete="off" disabled={disabled} value={typeof value === "string" ? value : ""} onChange={(event) => onChange(event.target.value)} /></label>;
   if (question.response.editor === "python") return <PythonCodeEditor value={typeof value === "string" ? value : ""} onChange={onChange} disabled={disabled} />;
-  if (question.type === "brief_answer" || question.type === "multi_point" || question.type === "compare") return <label className="text-answer">Your answer<textarea autoComplete="off" disabled={disabled} rows={question.type === "brief_answer" ? 4 : 7} value={typeof value === "string" ? value : ""} onChange={(event) => onChange(event.target.value)} placeholder="Write the important points in your own words." /></label>;
+  if (question.type === "brief_answer" || question.type === "multi_point" || question.type === "compare") {
+    const multipart = multipartPromptFor(question);
+    if (multipart) {
+      const answers = multipartAnswers(value, multipart.parts);
+      return <div className="multipart-answers">{multipart.parts.map((part) => <label className="text-answer multipart-answer" key={part.label}><span className="multipart-question"><b>Part {part.label}</b><span>{part.text}</span></span><textarea autoComplete="off" disabled={disabled} rows={4} value={answers[part.label] ?? ""} onChange={(event) => onChange(serializeMultipartAnswers(multipart.parts, { ...answers, [part.label]: event.target.value }))} placeholder={`Write your answer to part (${part.label}).`} /></label>)}</div>;
+    }
+    return <label className="text-answer">Your answer<textarea autoComplete="off" disabled={disabled} rows={question.type === "brief_answer" ? 4 : 7} value={typeof value === "string" ? value : ""} onChange={(event) => onChange(event.target.value)} placeholder="Write the important points in your own words." /></label>;
+  }
   if (question.type === "true_false_correct") { const answer = (typeof value === "object" && value !== null ? value : {}) as { value?: boolean; correction?: string }; return <div className="true-false"><div className="choice-list"><label><input type="radio" disabled={disabled} checked={answer.value === true} onChange={() => onChange({ value: true, correction: "" })} />True</label><label><input type="radio" disabled={disabled} checked={answer.value === false} onChange={() => onChange({ value: false, correction: "" })} />False</label></div>{answer.value === false && <label className="text-answer">Correct the statement<input disabled={disabled} value={answer.correction ?? ""} onChange={(event) => onChange({ ...answer, correction: event.target.value })} /></label>}</div>; }
   if (question.type === "matching") { const matches = (typeof value === "object" && value !== null ? value : {}) as Record<string, string>; return <div className="matching-list">{question.response.left?.map((left) => <label key={left.id}><span>{left.text}</span><select disabled={disabled} value={matches[left.id] ?? ""} onChange={(event) => onChange({ ...matches, [left.id]: event.target.value })}><option value="">Choose a match</option>{question.response.right?.map((right) => <option key={right.id} value={right.id}>{right.text}</option>)}</select></label>)}</div>; }
   return null;

@@ -187,6 +187,44 @@ describe("StudyExperience", () => {
     expect(screen.getByText("samiti allowed tribal opinions")).toBeInTheDocument();
   });
 
+  it("chunks a multipart literature prompt into separately labelled answer areas", async () => {
+    const multipart = [{
+      id: "literature-extract",
+      type: "multi_point",
+      prompt: "Read this extract from “Tabby’s Tablecloth” and answer all three parts. “These people won’t fight, will they?” (a) Who are “these people”? What two things have Captain Brown and the junior officer come to find out in Concord? [3] (b) How does Mr Bliss’s answer challenge Captain Brown’s expectation? [3] (c) How do the hidden supplies, the night watch and the farmers’ preparations support Mr Bliss’s warning? [3]",
+      marks: 9,
+      response: {},
+    }];
+    let submittedResponse: unknown;
+    vi.spyOn(globalThis, "fetch").mockImplementation(async (input, init) => {
+      const url = String(input);
+      if (url === "/api/study/library") return Response.json({ child: { id: "child", displayName: "Asha", grade: 6, board: "ICSE" }, chapters: [{ id: "bank", subject: "English Literature", chapterTitle: "Tabby’s Tablecloth", questionCount: 1 }] });
+      if (url === "/api/study/history") return Response.json({ summary: { completedSessions: 0 }, topics: [], sessions: [] });
+      if (url.startsWith("/api/study/questions")) return Response.json({ questions: multipart });
+      if (url === "/api/study/sessions") return Response.json({ sessionId: "session" }, { status: 201 });
+      if (url === "/api/study/answer") {
+        submittedResponse = JSON.parse(String(init?.body)).response;
+        return Response.json({ correct: true, earnedMarks: 9, expectedAnswer: "All three parts", explanation: "Correct.", sourcePages: [], attemptId: "attempt" });
+      }
+      throw new Error(`Unexpected request: ${url}`);
+    });
+
+    render(<StudyExperience />);
+    fireEvent.click(await screen.findByRole("button", { name: /english literature/i }));
+    fireEvent.click(await screen.findByRole("button", { name: /study tabby’s tablecloth/i }));
+
+    const prompt = await screen.findByRole("heading", { level: 1, name: /read this extract.*these people won’t fight/i });
+    expect(prompt).toHaveClass("question-prompt-long");
+    expect(screen.getAllByRole("textbox")).toHaveLength(3);
+    fireEvent.change(screen.getByLabelText(/part a.*who are “these people”/i), { target: { value: "Concord’s farmers." } });
+    fireEvent.change(screen.getByLabelText(/part b.*how does mr bliss/i), { target: { value: "He says they will fight." } });
+    fireEvent.change(screen.getByLabelText(/part c.*how do the hidden supplies/i), { target: { value: "Their preparations prove the warning." } });
+    fireEvent.click(screen.getByRole("button", { name: /check answer/i }));
+
+    await screen.findByText("✓ Correct");
+    expect(submittedResponse).toBe("(a) Concord’s farmers.\n\n(b) He says they will fight.\n\n(c) Their preparations prove the warning.");
+  });
+
   it("requires a subject choice before showing chapters from multiple subjects", async () => {
     vi.spyOn(globalThis, "fetch").mockImplementation(async (input) => String(input) === "/api/study/library"
       ? new Response(JSON.stringify({ child: { id: "child", displayName: "Asha", grade: 6, board: "ICSE" }, chapters: [

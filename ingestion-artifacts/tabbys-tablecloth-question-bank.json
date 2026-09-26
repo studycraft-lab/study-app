@@ -8,7 +8,7 @@
     "status": "reviewed",
     "subject": "English Literature",
     "title": "Tabby’s Tablecloth",
-    "version": 2
+    "version": 3
   },
   "questions": [
     {
@@ -571,14 +571,14 @@
       "explanation": "The officers want intelligence about Concord, but the town has already taken precautions. Award equivalent details and a defensible reading of Brown’s reaction; do not require one exact emotion word.",
       "generation": {
         "method": "codex-assisted",
-        "generatedAt": "2026-09-26T13:07:15.016417+00:00",
+        "generatedAt": "2026-09-26T13:27:06+00:00",
         "validationStatus": "pending"
       },
       "hint": "Separate the officers’ purpose, Brown’s reaction and the town’s earlier preparations.",
       "id": "q-010",
       "marks": 9,
       "origin": "chapter_content",
-      "prompt": "Read this extract from “Tabby’s Tablecloth” and answer all three parts.\n\n“These people won’t fight, will they?”\n\n(a) Who are “these people”? What two things have Captain Brown and the junior officer come to find out in Concord? [3]\n\n(b) What does Mr Bliss say in reply? How does Captain Brown react, and what does his reaction suggest? [3]\n\n(c) Give three preparations mentioned earlier in the story that support Mr Bliss’s warning. [3]",
+      "prompt": "Read this extract from “Tabby’s Tablecloth” and answer all three parts.\n\n“These people won’t fight, will they?”\n\n(a) Who are “these people”, and what are the officers trying to discover in Concord? [3]\n\n(b) What does Mr Bliss say in reply? How does Captain Brown react, and what does his reaction suggest? [3]\n\n(c) How had the people of Concord already prepared for a possible fight with the British? [3]",
       "response": {},
       "rubric": {
         "grammarAffectsScore": false,
@@ -672,42 +672,42 @@
         "discovery-and-irony"
       ],
       "type": "multi_point",
-      "version": 2
+      "version": 3
     },
     {
       "answer": {
-        "ideal": "(a) Tabby is considering entering through the window and hiding under the table to hear the men. Their voices are too low for her to hear outside, and the maid has refused her offer to remain in the kitchen.\n\n(b) She leaps through the open window, goes under the dining table and makes herself small beneath the long tablecloth. She also hides her basket in the bushes beforehand; this is useful extra detail, not a required mark.\n\n(c) No: fear does not cancel courage. Tabby wants to discover a plan that could harm her town and decides to hide and listen despite the risk of being found. Another well-supported view may also earn credit."
+        "ideal": "(a) The strangers' foreign accents make Tabby suspicious. She wants to learn what they are planning. Seeing the cat come out from beneath the long tablecloth gives her an idea for a hiding place.\n\n(b) She enters through the open window, hides under the dining table and makes herself small beneath the long tablecloth so the men cannot see her.\n\n(c) Tabby is courageous despite her fear. She wants to learn whether the men's plans threaten Concord, and she chooses to hide and listen even though she might be discovered. Another well-supported view may also earn credit."
       },
       "difficulty": 2,
-      "explanation": "Part (b) scores the route and concealment named in the question; hiding the basket is optional extra detail. For part (c), accept a defensible view supported by purpose and action, including equivalent wording.",
+      "explanation": "Part (a) asks for three direct story details. Part (b) scores how Tabby enters and conceals herself; hiding the basket is optional extra detail. For part (c), accept a defensible view supported by her purpose and action, including equivalent wording.",
       "generation": {
         "method": "codex-assisted",
-        "generatedAt": "2026-09-26T13:07:15.016423+00:00",
+        "generatedAt": "2026-09-26T13:27:06+00:00",
         "validationStatus": "pending"
       },
-      "hint": "Use what she has tried, what she fears and what she decides to do.",
+      "hint": "Recall why the strangers trouble Tabby, what the cat shows her, and what she chooses to do despite her fear.",
       "id": "q-011",
       "marks": 9,
       "origin": "chapter_content",
-      "prompt": "Read this extract from “Tabby’s Tablecloth” and answer all three parts.\n\n“Do I dare to do it? What will happen to me if they find me?”\n\n(a) What risky step is Tabby considering? Give two reasons why she has not yet managed to hear the men’s plans. [3]\n\n(b) How does Tabby reach and use her hiding place? Give three steps that make the plan work. [3]\n\n(c) Does Tabby’s fear make her less courageous? Give your view and support it with her purpose and her decision. [3]",
+      "prompt": "Read this extract from “Tabby’s Tablecloth” and answer all three parts.\n\n“Do I dare to do it? What will happen to me if they find me?”\n\n(a) What makes Tabby suspicious of the strangers? What does she hope to learn from them? What gives her an idea for a hiding place? [3]\n\n(b) How does Tabby get into the room and keep out of sight while she listens? [3]\n\n(c) What does this moment show about Tabby’s courage? Support your answer with details from the story. [3]",
       "response": {},
       "rubric": {
         "grammarAffectsScore": false,
         "points": [
           {
-            "concept": "Part (a): She is considering hiding under the dining table to overhear the men.",
+            "concept": "Part (a): The strangers' foreign accents make Tabby suspicious.",
             "id": "a1",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (a): Their voices were too low for her to hear from outside.",
+            "concept": "Part (a): She hopes to learn what the strangers are planning or discussing.",
             "id": "a2",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (a): The maid rejected her offer of kitchen help and told her to leave.",
+            "concept": "Part (a): Seeing the cat emerge from beneath the long tablecloth gives her the hiding idea.",
             "id": "a3",
             "required": true,
             "weight": 1
@@ -732,7 +732,7 @@
           },
           {
             "id": "c1",
-            "concept": "Part (c): States a defensible view on whether being afraid makes Tabby less courageous.",
+            "concept": "Part (c): States a defensible view of Tabby's courage despite her fear.",
             "weight": 1,
             "required": true
           },
@@ -804,7 +804,7 @@
         "courage-and-choices"
       ],
       "type": "multi_point",
-      "version": 2
+      "version": 3
     },
     {
       "answer": {
@@ -814,14 +814,14 @@
       "explanation": "The men feel safe because they see only the cat, but Tabby can report what she heard. Her warning still gives Concord time to protect supplies and ready its cannons, even though the officers escape.",
       "generation": {
         "method": "codex-assisted",
-        "generatedAt": "2026-09-26T13:07:15.016426+00:00",
+        "generatedAt": "2026-09-26T13:27:06+00:00",
         "validationStatus": "pending"
       },
       "hint": "Think about what the men believe, what the reader knows and what happens after the warning.",
       "id": "q-012",
       "marks": 9,
       "origin": "chapter_content",
-      "prompt": "Read this extract from “Tabby’s Tablecloth” and answer all three parts.\n\n“It’s only the old cat, gentlemen. A good beast, and luckily for us, unable to report our talk,” said Mr Bliss with a sigh of relief.\n\n(a) What does “a sigh of relief” reveal about the men’s reaction before and after the cloth is lifted? [3]\n\n(b) Why is “unable to report our talk” ironic in this situation? [3]\n\n(c) The officers escape. Why does Tabby’s warning still matter? Give three results. [3]",
+      "prompt": "Read this extract from “Tabby’s Tablecloth” and answer all three parts.\n\n“It’s only the old cat, gentlemen. A good beast, and luckily for us, unable to report our talk,” said Mr Bliss with a sigh of relief.\n\n(a) What does “a sigh of relief” reveal about the men’s reaction before and after the cloth is lifted? [3]\n\n(b) Why is “unable to report our talk” ironic in this situation? [3]\n\n(c) The officers escape. Why does Tabby’s warning still matter, and what do the townspeople do afterwards? [3]",
       "response": {},
       "rubric": {
         "grammarAffectsScore": false,
@@ -926,7 +926,7 @@
         "concord-and-secrecy"
       ],
       "type": "multi_point",
-      "version": 2
+      "version": 3
     },
     {
       "answer": {
@@ -936,14 +936,14 @@
       "explanation": "The ending invites a link between Tabby’s earlier risk for her community and the cloth’s later care for wounded soldiers. Award a clear comparison, without requiring a particular moral phrase.",
       "generation": {
         "method": "codex-assisted",
-        "generatedAt": "2026-09-26T13:07:15.016428+00:00",
+        "generatedAt": "2026-09-26T13:27:06+00:00",
         "validationStatus": "pending"
       },
       "hint": "Follow the cloth through its owners as well as its uses: concealment, remembrance and care for the wounded.",
       "id": "q-013",
       "marks": 9,
       "origin": "chapter_content",
-      "prompt": "Read this extract from “Tabby’s Tablecloth” and answer all three parts.\n\n“In 1861, Tabby’s tablecloth saw another war and made an honourable end as a boxful of finest lint and softest squares to lay on the wounds of soldiers at war.”\n\n(a) Trace how the tablecloth passed from Mr Bliss’s house into Tabby’s family. Give three key stages before its use in 1861. [3]\n\n(b) Compare the way the cloth protected Tabby with the way it helped soldiers in 1861. [3]\n\n(c) Why is “honourable” a fitting description of this end? Connect the cloth’s later use with the values shown by Tabby. [3]",
+      "prompt": "Read this extract from “Tabby’s Tablecloth” and answer all three parts.\n\n“In 1861, Tabby’s tablecloth saw another war and made an honourable end as a boxful of finest lint and softest squares to lay on the wounds of soldiers at war.”\n\n(a) How did the tablecloth pass from Mr Bliss’s house to Tabby, and how was it preserved in her family? [3]\n\n(b) Compare the way the cloth protected Tabby with the way it helped soldiers in 1861. [3]\n\n(c) Why is “honourable” a fitting description of this end? Connect the cloth’s later use with the values shown by Tabby. [3]",
       "response": {},
       "rubric": {
         "grammarAffectsScore": false,
@@ -1037,7 +1037,7 @@
         "courage-and-choices"
       ],
       "type": "multi_point",
-      "version": 2
+      "version": 3
     }
   ],
   "schemaVersion": "0.1.0",

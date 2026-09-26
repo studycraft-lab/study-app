@@ -34,4 +34,4 @@ The feedback that showed 1/9 cannot be audited from the screenshot alone because
 
 ## Release boundary
 
-The canonical `ingestion-artifacts/tabbys-tablecloth-question-bank.json` is now v2 with `reviewed` status. This proposal snapshot uses the same bank ID and question versions, but retains its original `draft` status. The bank has not been imported into StudyCraft. The existing source manifest stays valid. Printed-page exercises remain outside this compact, exam-style set, consistent with the documented v1 scope.
+The canonical `ingestion-artifacts/tabbys-tablecloth-question-bank.json` advanced to reviewed v3 after the user's feedback on q-011's wording. This v2 proposal snapshot remains unchanged as a record of the earlier revision. The canonical bank has not been imported into StudyCraft. The existing source manifest stays valid. Printed-page exercises remain outside this compact, exam-style set, consistent with the documented v1 scope.

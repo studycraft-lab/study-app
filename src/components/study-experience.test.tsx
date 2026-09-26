@@ -216,7 +216,10 @@ describe("StudyExperience", () => {
     const prompt = await screen.findByRole("heading", { level: 1, name: /read this extract.*these people won’t fight/i });
     expect(prompt).toHaveClass("question-prompt-long");
     expect(screen.getAllByRole("textbox")).toHaveLength(3);
-    fireEvent.change(screen.getByLabelText(/part a.*who are “these people”/i), { target: { value: "Concord’s farmers." } });
+    const partA = screen.getByLabelText(/part a.*who are “these people”/i);
+    fireEvent.change(partA, { target: { value: "Concord’s " } });
+    expect(partA).toHaveValue("Concord’s ");
+    fireEvent.change(partA, { target: { value: "Concord’s farmers." } });
     fireEvent.change(screen.getByLabelText(/part b.*how does mr bliss/i), { target: { value: "He says they will fight." } });
     fireEvent.change(screen.getByLabelText(/part c.*how do the hidden supplies/i), { target: { value: "Their preparations prove the warning." } });
     fireEvent.click(screen.getByRole("button", { name: /check answer/i }));

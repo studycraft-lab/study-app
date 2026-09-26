@@ -41,16 +41,16 @@ function splitMultipartPrompt(prompt: string): MultipartPrompt | null {
 
 function multipartAnswers(value: unknown, parts: PromptPart[]): Record<string, string> {
   if (typeof value !== "string" || !value.trim()) return {};
-  const markers = [...value.matchAll(/^\(([a-h])\)\s*/gim)];
+  const markers = [...value.matchAll(/^\(([a-h])\)[ \t]?/gim)];
   if (!markers.length) return { [parts[0].label]: value };
-  return Object.fromEntries(markers.map((marker, index) => [
-    marker[1].toLowerCase(),
-    value.slice((marker.index ?? 0) + marker[0].length, markers[index + 1]?.index ?? value.length).trim(),
-  ]));
+  return Object.fromEntries(markers.map((marker, index) => {
+    const rawAnswer = value.slice((marker.index ?? 0) + marker[0].length, markers[index + 1]?.index ?? value.length);
+    return [marker[1].toLowerCase(), rawAnswer.endsWith("\n\n") ? rawAnswer.slice(0, -2) : rawAnswer];
+  }));
 }
 
 function serializeMultipartAnswers(parts: PromptPart[], answers: Record<string, string>): string {
-  return parts.map((part) => `(${part.label}) ${answers[part.label] ?? ""}`.trimEnd()).join("\n\n");
+  return parts.map((part) => `(${part.label}) ${answers[part.label] ?? ""}`).join("\n\n");
 }
 
 function multipartPromptFor(question: Question): MultipartPrompt | null {

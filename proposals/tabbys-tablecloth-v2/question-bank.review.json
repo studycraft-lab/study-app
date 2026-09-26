@@ -1,0 +1,70 @@
+{
+  "reviewVersion": "0.1.0",
+  "bankId": "tabbys-tablecloth",
+  "bankVersion": 2,
+  "reviewedAt": "2026-09-26T13:06:12Z",
+  "reviewerMethod": "Visual comparison of the cited chapter pages, independent audit of the existing bank, comparison with the supplied 2025 English Literature paper, source-hash verification, schema validation and deterministic grounding review.",
+  "releaseStatus": "proposal-only; not imported",
+  "inputs": {
+    "manifest": "ingestion-artifacts/tabbys-tablecloth-chapter-manifest.json",
+    "bank": "proposals/tabbys-tablecloth-v2/question-bank.json",
+    "chapterAsset": "Scan_20260925_174441.pdf",
+    "pastPaper": "FIRST_TERM_VI_ENGLISH_LITERATURE_1787974373.pdf",
+    "sourceAssetCount": 2
+  },
+  "gates": {
+    "manifestSchema": "pass",
+    "sourceHashes": "pass",
+    "questionBankSchema": "pass",
+    "deterministicGroundingReview": "pass",
+    "manualGroundingReview": "pass",
+    "rubricBalanceReview": "pass",
+    "examComplexityComparison": "pass"
+  },
+  "coverage": {
+    "questionCount": 13,
+    "objectiveCount": 9,
+    "extractSetCount": 4,
+    "extractSubquestionCount": 12,
+    "totalScorablePrompts": 21,
+    "objectiveMarks": 9,
+    "extractMarks": 36,
+    "topics": {
+      "cloth-and-legacy": 2,
+      "concord-and-secrecy": 6,
+      "courage-and-choices": 5,
+      "discovery-and-irony": 4
+    },
+    "types": {
+      "single_choice": 9,
+      "multi_point": 4
+    }
+  },
+  "questionReview": [
+    { "questionId": "q-001", "decision": "revise-distractors", "sourcePages": ["page-77"], "finding": "Key retained; distractors made more plausible without creating a second correct option." },
+    { "questionId": "q-002", "decision": "retain", "sourcePages": ["page-77"] },
+    { "questionId": "q-003", "decision": "retain", "sourcePages": ["page-78"] },
+    { "questionId": "q-004", "decision": "revise-distractors", "sourcePages": ["page-78"], "finding": "Key retained; options remain distinct from the basket-in-bushes fact." },
+    { "questionId": "q-005", "decision": "replace", "sourcePages": ["page-78"], "finding": "Replaces minor maid identification with Deacon Hosmer’s purpose for the egg errand." },
+    { "questionId": "q-006", "decision": "revise-distractors", "sourcePages": ["page-79"] },
+    { "questionId": "q-007", "decision": "retain", "sourcePages": ["page-80"] },
+    { "questionId": "q-008", "decision": "revise-distractors", "sourcePages": ["page-80"], "finding": "Removes unrelated place-name distractor." },
+    { "questionId": "q-009", "decision": "retain", "sourcePages": ["page-80"] },
+    { "questionId": "q-010", "decision": "revise-parts-and-rubric", "sourcePages": ["page-77", "page-79"], "finding": "Distinct reply, reaction and inference marks; earlier preparations no longer named in the prompt." },
+    { "questionId": "q-011", "decision": "revise-rubric", "sourcePages": ["page-78", "page-79"], "finding": "Part (b) now assesses window, table and cloth; basket is optional detail. Part (c) accepts supported views with purpose and action." },
+    { "questionId": "q-012", "decision": "revise-part-c", "sourcePages": ["page-79", "page-80"], "finding": "Cannon preparation and aiming count as one result, not two." },
+    { "questionId": "q-013", "decision": "refine-rubric", "sourcePages": ["page-79", "page-80"], "finding": "Separates later care, earlier risk and the thematic connection." }
+  ],
+  "omissions": [
+    { "source": "Printed pages 80–81 end exercises", "reason": "The original compact bank intentionally excluded verbatim exercise reproduction; this proposal preserves its 13-question, exam-style scope. A full exercise bank would be a separate expansion." },
+    { "source": "Printed page 81 grammar section", "reason": "This bank is for English Literature, not language grammar." }
+  ],
+  "advisoryNotes": [
+    "The supplied paper uses a 15-mark Tabby extract set with five separate three-mark parts. This proposal keeps four demanding three-by-three extract sets; it does not claim to be an 80-mark mock exam.",
+    "The child player currently uses one answer box for each nine-mark multi_point set because source_group is not playable. If labels are rendered as 'Part aWho', that UI formatting should be fixed separately from the bank.",
+    "A screenshot of partial credit does not contain the submitted answer, so the exact 1/9 decision could not be audited.",
+    "The bank remains draft and has not been imported; release requires an intentional content decision."
+  ],
+  "blockingFindings": [],
+  "decision": "accept"
+}

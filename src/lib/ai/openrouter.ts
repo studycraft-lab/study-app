@@ -165,7 +165,8 @@ export async function classifyRubric(input: RubricClassificationInput, options: 
   if (!apiKey) throw new GradingUnavailableError("AI grading is not configured yet.", false);
   const model = options.model ?? process.env.OPENROUTER_MODEL ?? "deepseek/deepseek-v4-flash";
   const fallbackModel = options.fallbackModel ?? process.env.OPENROUTER_FALLBACK_MODEL;
-  const timeoutMs = options.timeoutMs ?? Number(process.env.OPENROUTER_TIMEOUT_MS || 30000);
+  const configuredTimeoutMs = Number(process.env.OPENROUTER_TIMEOUT_MS || 30000);
+  const timeoutMs = options.timeoutMs ?? Math.max(Number.isFinite(configuredTimeoutMs) ? configuredTimeoutMs : 30000, input.points.length >= 6 ? 60000 : 0);
   const maxAttempts = Math.max(1, Math.min(options.maxAttempts ?? Number(process.env.OPENROUTER_MAX_ATTEMPTS || 2), 3));
   const retryDelayMs = Math.max(0, options.retryDelayMs ?? 250);
   const fetchImpl = options.fetchImpl ?? fetch;

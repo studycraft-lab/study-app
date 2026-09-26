@@ -52,7 +52,7 @@ The first parent uses `PARENT_IMPORT_PASSPHRASE` as the family password. After p
 | `OPENROUTER_API_KEY` | Yes for fuzzy/subjective grading | Server-only OpenRouter credential. |
 | `OPENROUTER_MODEL` | No | Defaults to `deepseek/deepseek-v4-flash`. |
 | `OPENROUTER_FALLBACK_MODEL` | No | Optional model used only after bounded primary-model retries fail. |
-| `OPENROUTER_TIMEOUT_MS` | No | Defaults to 30000 ms. |
+| `OPENROUTER_TIMEOUT_MS` | No | Defaults to 30000 ms; rubrics with six or more points get at least 60000 ms. |
 | `OPENROUTER_MAX_ATTEMPTS` | No | Primary-model attempts, capped at 3; defaults to 2. |
 | `NEXT_PUBLIC_APP_URL` | No | OpenRouter HTTP referrer; public by design. |
 | `PARENT_SESSION_SECRET` | No | Dedicated parent-cookie signing secret. |

@@ -1,10 +1,11 @@
-import { describe, expect, it, vi } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
 
 vi.mock("server-only", () => ({}));
 
 import { classifyRubric } from "./openrouter";
 
 describe("classifyRubric", () => {
+  afterEach(() => vi.unstubAllEnvs());
   it("requests grounded structured grading and records usage", async () => {
     const fetchImpl = vi.fn(async (_url: string, init?: RequestInit) => {
       const body = JSON.parse(String(init?.body));
@@ -119,5 +120,24 @@ describe("classifyRubric", () => {
     );
 
     expect(result.points.map(({ id }) => id)).toEqual(points.map(({ id }) => id));
+  });
+
+  it("allows a long rubric to complete despite a short configured timeout", async () => {
+    vi.stubEnv("OPENROUTER_TIMEOUT_MS", "50");
+    const points = Array.from({ length: 6 }, (_, index) => ({ id: `p${index + 1}`, concept: `Point ${index + 1}` }));
+    const fetchImpl = vi.fn((_url: string, init?: RequestInit) => new Promise<Response>((resolve, reject) => {
+      const timer = setTimeout(() => resolve(new Response(JSON.stringify({ choices: [{ message: { content: JSON.stringify({
+        points: Object.fromEntries(points.map(({ id }) => [id, { coverage: "covered", confidence: 0.9 }])),
+        feedback: "Complete.", confidence: 0.9, spellingErrors: [], grammarErrors: [],
+      }) } }] }))), 80);
+      init?.signal?.addEventListener("abort", () => { clearTimeout(timer); reject(new DOMException("Aborted", "AbortError")); });
+    }));
+
+    const result = await classifyRubric(
+      { question: "Long answer", childAnswer: "Answer", groundedEvidence: "Evidence", points, checkSpelling: false, checkGrammar: false },
+      { fetchImpl: fetchImpl as typeof fetch, apiKey: "test", maxAttempts: 1 },
+    );
+
+    expect(result.points).toHaveLength(6);
   });
 });

@@ -1,6 +1,6 @@
-# Tabby’s Tablecloth: proposed question bank v2
+# Tabby’s Tablecloth: v2 proposal snapshot
 
-This is a **proposal**, not the live bank. The importable JSON is [question-bank.json](question-bank.json). It keeps the existing 13-question shape: nine one-mark multiple-choice items and four nine-mark reference-to-context sets, each with three three-mark parts. The four extract themes and their level of challenge remain.
+This is the reviewed **v2 proposal snapshot**. Its content has been promoted to the [canonical bank](../../ingestion-artifacts/tabbys-tablecloth-question-bank.json), which is the importable file. It keeps the existing 13-question shape: nine one-mark multiple-choice items and four nine-mark reference-to-context sets, each with three three-mark parts. The four extract themes and their level of challenge remain.
 
 ## Evidence and calibration
 
@@ -34,4 +34,4 @@ The feedback that showed 1/9 cannot be audited from the screenshot alone because
 
 ## Release boundary
 
-The existing `ingestion-artifacts/tabbys-tablecloth-question-bank.json` remains v1. This v2 file uses the same bank ID, increases the bank version to 2, and increments only changed question versions. Its bank status is `draft`; it has not been imported into StudyCraft. The existing source manifest stays valid. Printed-page exercises remain outside this compact, exam-style set, consistent with the documented v1 scope.
+The canonical `ingestion-artifacts/tabbys-tablecloth-question-bank.json` is now v2 with `reviewed` status. This proposal snapshot uses the same bank ID and question versions, but retains its original `draft` status. The bank has not been imported into StudyCraft. The existing source manifest stays valid. Printed-page exercises remain outside this compact, exam-style set, consistent with the documented v1 scope.

@@ -8,7 +8,7 @@
     "status": "reviewed",
     "subject": "English Literature",
     "title": "Tabby’s Tablecloth",
-    "version": 1
+    "version": 2
   },
   "questions": [
     {
@@ -18,9 +18,9 @@
       "difficulty": 1,
       "explanation": "A secret message from her uncle to Deacon Cyrus Hosmer lies under the eggs.",
       "generation": {
-        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
         "method": "codex-assisted",
-        "validationStatus": "verified"
+        "generatedAt": "2026-09-26T13:07:15.016075+00:00",
+        "validationStatus": "pending"
       },
       "hint": "Think about what the basket conceals.",
       "id": "q-001",
@@ -31,15 +31,15 @@
         "options": [
           {
             "id": "a",
-            "text": "A map painted on the eggs"
+            "text": "A note tied to the basket handle"
           },
           {
             "id": "b",
-            "text": "A gun concealed among the eggs"
+            "text": "A list of supplies wrapped around the eggs"
           },
           {
             "id": "c",
-            "text": "A flag tied to the handle"
+            "text": "A password written inside the basket"
           },
           {
             "id": "d",
@@ -69,7 +69,7 @@
         "concord-and-secrecy"
       ],
       "type": "single_choice",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -198,9 +198,9 @@
       "difficulty": 1,
       "explanation": "She hides the basket among the bushes before entering through the window.",
       "generation": {
-        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
         "method": "codex-assisted",
-        "validationStatus": "verified"
+        "generatedAt": "2026-09-26T13:07:15.016405+00:00",
+        "validationStatus": "pending"
       },
       "hint": "Recall the action just before she leaps inside.",
       "id": "q-004",
@@ -211,11 +211,11 @@
         "options": [
           {
             "id": "a",
-            "text": "Leaves it on the dining table"
+            "text": "Leaves it beside Mrs Bliss’s back door"
           },
           {
             "id": "b",
-            "text": "Gives it to Captain Brown"
+            "text": "Carries it beneath the dining table"
           },
           {
             "id": "c",
@@ -223,7 +223,7 @@
           },
           {
             "id": "d",
-            "text": "Puts it beside the cat"
+            "text": "Places it on the open windowsill"
           }
         ]
       },
@@ -249,41 +249,41 @@
         "courage-and-choices"
       ],
       "type": "single_choice",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
-        "correctOptionId": "c"
+        "correctOptionId": "b"
       },
       "difficulty": 1,
-      "explanation": "The old maid says that Tabby is in the way and should go home.",
+      "explanation": "The eggs provide a natural reason to visit while Tabby watches Mr Bliss and the two strangers.",
       "generation": {
-        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
         "method": "codex-assisted",
-        "validationStatus": "verified"
+        "generatedAt": "2026-09-26T13:07:15.016409+00:00",
+        "validationStatus": "pending"
       },
-      "hint": "Mrs Bliss accepts the eggs, but someone else dismisses Tabby’s offer to help.",
+      "hint": "Recall why Deacon wants Tabby to visit the Tory household.",
       "id": "q-005",
       "marks": 1,
       "origin": "chapter_content",
-      "prompt": "Who tells Tabby that her help is not wanted in the kitchen?",
+      "prompt": "Why does Deacon Hosmer send Tabby back to Mrs Bliss’s house with eggs?",
       "response": {
         "options": [
           {
             "id": "a",
-            "text": "Her uncle"
+            "text": "To ask Mrs Bliss about the town’s night patrol"
           },
           {
             "id": "b",
-            "text": "Deacon Hosmer"
+            "text": "To give Tabby a reason to observe Mr Bliss and the strangers"
           },
           {
             "id": "c",
-            "text": "The old maid"
+            "text": "To hide another message beneath Mrs Bliss’s table"
           },
           {
             "id": "d",
-            "text": "Captain Brown"
+            "text": "To invite the visitors to Deacon Hosmer’s home"
           }
         ]
       },
@@ -294,7 +294,7 @@
       "sourceRefs": [
         {
           "pageId": "page-78",
-          "regionId": "right-column",
+          "regionId": "left-column",
           "supports": [
             "prompt",
             "answer",
@@ -306,10 +306,11 @@
       ],
       "status": "active",
       "topicIds": [
+        "concord-and-secrecy",
         "courage-and-choices"
       ],
       "type": "single_choice",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -318,9 +319,9 @@
       "difficulty": 1,
       "explanation": "Although faint with pain, she bites her lips and does not stir.",
       "generation": {
-        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
         "method": "codex-assisted",
-        "validationStatus": "verified"
+        "generatedAt": "2026-09-26T13:07:15.016412+00:00",
+        "validationStatus": "pending"
       },
       "hint": "Recall how she controls her reaction.",
       "id": "q-006",
@@ -331,19 +332,19 @@
         "options": [
           {
             "id": "a",
-            "text": "She calls out for the cat"
+            "text": "Covers her mouth with the tablecloth"
           },
           {
             "id": "b",
-            "text": "She asks the men to leave"
+            "text": "Pretends that the cat scratched her"
           },
           {
             "id": "c",
-            "text": "She pushes back her chair"
+            "text": "Pulls her hand away and calls for help"
           },
           {
             "id": "d",
-            "text": "She bites her lips and keeps still"
+            "text": "Bites her lips and keeps still"
           }
         ]
       },
@@ -380,7 +381,7 @@
         "courage-and-choices"
       ],
       "type": "single_choice",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -449,9 +450,9 @@
       "difficulty": 1,
       "explanation": "They are already well on their way to Boston when Tabby reports what she heard.",
       "generation": {
-        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
         "method": "codex-assisted",
-        "validationStatus": "verified"
+        "generatedAt": "2026-09-26T13:07:15.016415+00:00",
+        "validationStatus": "pending"
       },
       "hint": "Recall why the officers manage to escape.",
       "id": "q-008",
@@ -466,15 +467,15 @@
           },
           {
             "id": "b",
-            "text": "A neighbouring farm"
+            "text": "The fields outside Concord"
           },
           {
             "id": "c",
-            "text": "The woods outside Concord"
+            "text": "Mr Bliss’s dining room"
           },
           {
             "id": "d",
-            "text": "Saharanpur"
+            "text": "Deacon Hosmer’s house"
           }
         ]
       },
@@ -500,7 +501,7 @@
         "discovery-and-irony"
       ],
       "type": "single_choice",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
@@ -564,20 +565,20 @@
     },
     {
       "answer": {
-        "ideal": "(a) They are the people of Concord, including its farmers. The officers want to discover where supplies are stored and how well the town is defended.\n\n(b) Brown seems to expect little or no resistance. Mr Bliss says the people will fight them to death. His reply warns that the townspeople are determined to resist, despite Brown’s confidence.\n\n(c) Supplies and cannons are hidden to keep them available for resistance. A guard of ten men patrols at night. The farmers are preparing for the expected conflict, so the town is not simply waiting to surrender."
+        "ideal": "(a) They are the people of Concord, including its farmers. The officers seek the locations of the stored supplies and information about the town’s defences.\n\n(b) Mr Bliss says the people will fight the officers to death. Brown swears and stamps his foot. His reaction suggests anger, frustration or alarm at the thought of resistance.\n\n(c) The people have hidden supplies and cannons, a guard of ten men patrols at night, and the farmers are preparing for the expected conflict."
       },
       "difficulty": 2,
-      "explanation": "Brown underestimates the townspeople. Their earlier preparations support Bliss’s warning about determined resistance. Award the stated points for equivalent wording and defensible interpretations supported by the text; exact textbook phrasing is not required. Mark each labelled part separately and do not award the same point twice within that part.",
+      "explanation": "The officers want intelligence about Concord, but the town has already taken precautions. Award equivalent details and a defensible reading of Brown’s reaction; do not require one exact emotion word.",
       "generation": {
-        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
         "method": "codex-assisted",
-        "validationStatus": "verified"
+        "generatedAt": "2026-09-26T13:07:15.016417+00:00",
+        "validationStatus": "pending"
       },
-      "hint": "Compare Brown’s assumption with what the people of Concord have already done.",
+      "hint": "Separate the officers’ purpose, Brown’s reaction and the town’s earlier preparations.",
       "id": "q-010",
       "marks": 9,
       "origin": "chapter_content",
-      "prompt": "Read this extract from “Tabby’s Tablecloth” and answer all three parts.\n\n“These people won’t fight, will they?”\n\n(a) Who are “these people”? What two things have Captain Brown and the junior officer come to find out in Concord? [3]\n\n(b) How does Mr Bliss’s answer challenge Captain Brown’s expectation? [3]\n\n(c) How do the hidden supplies, the night watch and the farmers’ preparations support Mr Bliss’s warning? [3]",
+      "prompt": "Read this extract from “Tabby’s Tablecloth” and answer all three parts.\n\n“These people won’t fight, will they?”\n\n(a) Who are “these people”? What two things have Captain Brown and the junior officer come to find out in Concord? [3]\n\n(b) What does Mr Bliss say in reply? How does Captain Brown react, and what does his reaction suggest? [3]\n\n(c) Give three preparations mentioned earlier in the story that support Mr Bliss’s warning. [3]",
       "response": {},
       "rubric": {
         "grammarAffectsScore": false,
@@ -601,40 +602,40 @@
             "weight": 1
           },
           {
-            "concept": "Part (b): Explains Brown’s expectation or hope that the people will not fight.",
             "id": "b1",
-            "required": true,
-            "weight": 1
+            "concept": "Part (b): Mr Bliss says the people will fight the British to death or resist fiercely.",
+            "weight": 1,
+            "required": true
           },
           {
-            "concept": "Part (b): Gives the substance of Bliss’s reply: they will fight to death.",
             "id": "b2",
-            "required": true,
-            "weight": 1
+            "concept": "Part (b): Captain Brown swears and stamps his foot in response.",
+            "weight": 1,
+            "required": true
           },
           {
-            "concept": "Part (b): Explains that the reply presents determined or fierce resistance, contradicting Brown’s assumption.",
             "id": "b3",
-            "required": true,
-            "weight": 1
+            "concept": "Part (b): Infers anger, frustration, alarm or a comparable text-supported reaction to the expected resistance.",
+            "weight": 1,
+            "required": true
           },
           {
-            "concept": "Part (c): Hidden military supplies or cannons show preparation for resistance and protection of resources.",
             "id": "c1",
-            "required": true,
-            "weight": 1
+            "concept": "Part (c): The people have hidden supplies, including cannons, to protect them.",
+            "weight": 1,
+            "required": true
           },
           {
-            "concept": "Part (c): The night patrol or ten-man guard shows active precautions to defend the town.",
             "id": "c2",
-            "required": true,
-            "weight": 1
+            "concept": "Part (c): A guard of ten men patrols the town at night.",
+            "weight": 1,
+            "required": true
           },
           {
-            "concept": "Part (c): The farmers are getting ready for the expected conflict, supporting their willingness to fight.",
             "id": "c3",
-            "required": true,
-            "weight": 1
+            "concept": "Part (c): The farmers are preparing for the expected fighting.",
+            "weight": 1,
+            "required": true
           }
         ],
         "spellingAffectsScore": false,
@@ -671,18 +672,18 @@
         "discovery-and-irony"
       ],
       "type": "multi_point",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
-        "ideal": "(a) She is considering entering through the window and hiding under the table to listen. The men’s voices were too low to hear from outside, and the maid refused her offer to stay and help in the kitchen.\n\n(b) She hides her basket in the bushes, leaps through the open window, and makes herself small beneath the table so that the long cloth conceals her.\n\n(c) No. Courage need not mean feeling no fear. She wants to discover a plot that may harm her town, and she chooses to hide and listen despite knowing that she could be discovered."
+        "ideal": "(a) Tabby is considering entering through the window and hiding under the table to hear the men. Their voices are too low for her to hear outside, and the maid has refused her offer to remain in the kitchen.\n\n(b) She leaps through the open window, goes under the dining table and makes herself small beneath the long tablecloth. She also hides her basket in the bushes beforehand; this is useful extra detail, not a required mark.\n\n(c) No: fear does not cancel courage. Tabby wants to discover a plan that could harm her town and decides to hide and listen despite the risk of being found. Another well-supported view may also earn credit."
       },
       "difficulty": 2,
-      "explanation": "Her questions reveal awareness of danger. Her determination to discover a threat leads her to act in spite of that fear. Award the stated points for equivalent wording and defensible interpretations supported by the text; exact textbook phrasing is not required. Mark each labelled part separately and do not award the same point twice within that part.",
+      "explanation": "Part (b) scores the route and concealment named in the question; hiding the basket is optional extra detail. For part (c), accept a defensible view supported by purpose and action, including equivalent wording.",
       "generation": {
-        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
         "method": "codex-assisted",
-        "validationStatus": "verified"
+        "generatedAt": "2026-09-26T13:07:15.016423+00:00",
+        "validationStatus": "pending"
       },
       "hint": "Use what she has tried, what she fears and what she decides to do.",
       "id": "q-011",
@@ -712,40 +713,40 @@
             "weight": 1
           },
           {
-            "concept": "Part (b): She conceals her basket among the bushes.",
             "id": "b1",
-            "required": true,
-            "weight": 1
+            "concept": "Part (b): She enters the room through the open window.",
+            "weight": 1,
+            "required": true
           },
           {
-            "concept": "Part (b): She enters by leaping through the open window.",
             "id": "b2",
-            "required": true,
-            "weight": 1
+            "concept": "Part (b): She gets beneath the dining table.",
+            "weight": 1,
+            "required": true
           },
           {
-            "concept": "Part (b): She hides under the table, making herself small beneath the long cloth.",
             "id": "b3",
-            "required": true,
-            "weight": 1
+            "concept": "Part (b): She makes herself small and uses the tablecloth’s long folds to stay out of sight.",
+            "weight": 1,
+            "required": true
           },
           {
-            "concept": "Part (c): Gives a supported interpretation that acting despite fear shows courage, rather than requiring fearlessness.",
             "id": "c1",
-            "required": true,
-            "weight": 1
+            "concept": "Part (c): States a defensible view on whether being afraid makes Tabby less courageous.",
+            "weight": 1,
+            "required": true
           },
           {
-            "concept": "Part (c): Connects her purpose with discovering a harmful plan or protecting her town.",
             "id": "c2",
-            "required": true,
-            "weight": 1
+            "concept": "Part (c): Explains her purpose: to discover the men’s harmful plans or protect Concord.",
+            "weight": 1,
+            "required": true
           },
           {
-            "concept": "Part (c): Uses her decision to enter and hide despite possible discovery as evidence.",
             "id": "c3",
-            "required": true,
-            "weight": 1
+            "concept": "Part (c): Uses her decision to hide and listen despite possible discovery as evidence.",
+            "weight": 1,
+            "required": true
           }
         ],
         "spellingAffectsScore": false,
@@ -803,24 +804,24 @@
         "courage-and-choices"
       ],
       "type": "multi_point",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
-        "ideal": "(a) A sneeze has alerted them to a sound under the table. They fear an unwanted listener may be hidden there. When the cat appears, they feel reassured and think their conversation is safe.\n\n(b) The cat cannot repeat the conversation, as Bliss says. But Tabby is hidden under the table and has heard it. She can report it and later does, so his confidence is misplaced.\n\n(c) They move valuable supplies to nearby towns, get their cannons ready, and have the minutemen aim those cannons at the enemy."
+        "ideal": "(a) The unexpected sneeze alarms the men, who fear a listener under the table. Seeing the cat reassures them.\n\n(b) The cat cannot repeat their conversation, but Tabby is also hidden under the table and hears their plans. She later reports them, so Mr Bliss’s confidence is mistaken.\n\n(c) The warning gives the townspeople time to act. They move valuable supplies to nearby towns and prepare or aim their cannons at the enemy."
       },
       "difficulty": 2,
-      "explanation": "The reader knows that a human listener remains hidden. Later, “had them trained on the enemy” refers to aiming the cannons, not training the minutemen. Award the stated points for equivalent wording and defensible interpretations supported by the text; exact textbook phrasing is not required. Mark each labelled part separately and do not award the same point twice within that part.",
+      "explanation": "The men feel safe because they see only the cat, but Tabby can report what she heard. Her warning still gives Concord time to protect supplies and ready its cannons, even though the officers escape.",
       "generation": {
-        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
         "method": "codex-assisted",
-        "validationStatus": "verified"
+        "generatedAt": "2026-09-26T13:07:15.016426+00:00",
+        "validationStatus": "pending"
       },
       "hint": "Think about what the men believe, what the reader knows and what happens after the warning.",
       "id": "q-012",
       "marks": 9,
       "origin": "chapter_content",
-      "prompt": "Read this extract from “Tabby’s Tablecloth” and answer all three parts.\n\n“It’s only the old cat, gentlemen. A good beast, and luckily for us, unable to report our talk,” said Mr Bliss with a sigh of relief.\n\n(a) What does “a sigh of relief” reveal about the men’s reaction before and after the cloth is lifted? [3]\n\n(b) Why is “unable to report our talk” ironic in this situation? [3]\n\n(c) How does Tabby’s warning affect the townspeople’s handling of their supplies and cannons? Give three specific actions. [3]",
+      "prompt": "Read this extract from “Tabby’s Tablecloth” and answer all three parts.\n\n“It’s only the old cat, gentlemen. A good beast, and luckily for us, unable to report our talk,” said Mr Bliss with a sigh of relief.\n\n(a) What does “a sigh of relief” reveal about the men’s reaction before and after the cloth is lifted? [3]\n\n(b) Why is “unable to report our talk” ironic in this situation? [3]\n\n(c) The officers escape. Why does Tabby’s warning still matter? Give three results. [3]",
       "response": {},
       "rubric": {
         "grammarAffectsScore": false,
@@ -862,22 +863,22 @@
             "weight": 1
           },
           {
-            "concept": "Part (c): They move valuable supplies to neighbouring towns.",
             "id": "c1",
-            "required": true,
-            "weight": 1
+            "concept": "Part (c): The warning gives the townspeople time to take precautions before the attack.",
+            "weight": 1,
+            "required": true
           },
           {
-            "concept": "Part (c): They get the cannons ready.",
             "id": "c2",
-            "required": true,
-            "weight": 1
+            "concept": "Part (c): The townspeople move valuable supplies to nearby towns.",
+            "weight": 1,
+            "required": true
           },
           {
-            "concept": "Part (c): The minutemen train or aim the cannons on the enemy; “trained on” means aimed, not that the men receive training.",
             "id": "c3",
-            "required": true,
-            "weight": 1
+            "concept": "Part (c): They prepare their cannons and/or aim them at the enemy; one clear artillery-readiness idea earns this mark.",
+            "weight": 1,
+            "required": true
           }
         ],
         "spellingAffectsScore": false,
@@ -925,18 +926,18 @@
         "concord-and-secrecy"
       ],
       "type": "multi_point",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
         "ideal": "(a) After the fighting, the government took over Mr Bliss’s property and sold many of his things at auction. Tabby’s uncle bought the cloth and gave it to her. Later, her daughter preserved it as a token of her mother’s bravery.\n\n(b) Its long folds concealed Tabby beneath the table. Later it was made into lint and soft squares. These were placed on soldiers’ wounds to care for the injured.\n\n(c) The cloth ends in useful service, helping wounded soldiers. Earlier, Tabby risked her own safety to protect others. Both show service and concern for people, so the cloth’s final use continues the spirit of her brave deed."
       },
       "difficulty": 2,
-      "explanation": "The ending connects courage with service and healing. No knowledge of the name or wider history of the 1861 war is required. Award the stated points for equivalent wording and defensible interpretations supported by the text; exact textbook phrasing is not required. Mark each labelled part separately and do not award the same point twice within that part.",
+      "explanation": "The ending invites a link between Tabby’s earlier risk for her community and the cloth’s later care for wounded soldiers. Award a clear comparison, without requiring a particular moral phrase.",
       "generation": {
-        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
         "method": "codex-assisted",
-        "validationStatus": "verified"
+        "generatedAt": "2026-09-26T13:07:15.016428+00:00",
+        "validationStatus": "pending"
       },
       "hint": "Follow the cloth through its owners as well as its uses: concealment, remembrance and care for the wounded.",
       "id": "q-013",
@@ -984,22 +985,22 @@
             "weight": 1
           },
           {
-            "concept": "Part (c): Explains that helping the wounded is a worthwhile, caring or honourable final use.",
             "id": "c1",
-            "required": true,
-            "weight": 1
+            "concept": "Part (c): The cloth’s final use directly helps wounded soldiers, making it a worthy and caring end.",
+            "weight": 1,
+            "required": true
           },
           {
-            "concept": "Part (c): Connects Tabby’s earlier risk-taking with protecting her community or serving others.",
             "id": "c2",
-            "required": true,
-            "weight": 1
+            "concept": "Part (c): Tabby earlier took a personal risk to help protect her town.",
+            "weight": 1,
+            "required": true
           },
           {
-            "concept": "Part (c): Makes a clear link between the cloth’s later service and the courage, care or protection represented by Tabby’s actions.",
             "id": "c3",
-            "required": true,
-            "weight": 1
+            "concept": "Part (c): Explains the shared value: the cloth serves people in danger in both episodes, so its later use continues the spirit of Tabby’s act.",
+            "weight": 1,
+            "required": true
           }
         ],
         "spellingAffectsScore": false,
@@ -1036,7 +1037,7 @@
         "courage-and-choices"
       ],
       "type": "multi_point",
-      "version": 1
+      "version": 2
     }
   ],
   "schemaVersion": "0.1.0",

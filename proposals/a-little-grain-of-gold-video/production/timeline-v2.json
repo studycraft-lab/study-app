@@ -1,0 +1,3822 @@
+{
+  "scenes": [
+    {
+      "id": 1,
+      "title": "Welcome to the poem",
+      "poem": "",
+      "start": 0,
+      "end": 40.873208333333324
+    },
+    {
+      "id": 2,
+      "title": "A wonderful arrival",
+      "poem": "I had gone a-begging from door to door in the village path when thy golden chariot appeared in the distance like a gorgeous dream and I wondered who was this king of all kings!",
+      "start": 40.873208333333324,
+      "end": 98.56045833333333
+    },
+    {
+      "id": 3,
+      "title": "Great expectations",
+      "poem": "My hopes rose high and me thought my evil days were at an end, and I stood waiting for alms to be given unasked and for wealth scattered on all sides in the dust.",
+      "start": 98.56045833333333,
+      "end": 150.31833333333333
+    },
+    {
+      "id": 4,
+      "title": "The king stops",
+      "poem": "The chariot stopped where I stood. Thy glance fell on me and thou camest down with a smile. I felt that the luck of my life had come at last.",
+      "start": 150.31833333333333,
+      "end": 195.27233333333334
+    },
+    {
+      "id": 5,
+      "title": "An unexpected question",
+      "poem": "Then of a sudden thou didst hold out thy right hand and say “What hast thou to give to me?”",
+      "start": 195.27233333333334,
+      "end": 238.877625
+    },
+    {
+      "id": 6,
+      "title": "Confusion and hesitation",
+      "poem": "Ah, what a kingly jest was it to open thy palm to a beggar to beg! I was confused and stood undecided,",
+      "start": 238.877625,
+      "end": 281.97225
+    },
+    {
+      "id": 7,
+      "title": "The smallest gift",
+      "poem": "and then from my wallet I slowly took out the least little grain of corn and gave it to thee.",
+      "start": 281.97225,
+      "end": 334.75283333333334
+    },
+    {
+      "id": 8,
+      "title": "A discovery at day’s end",
+      "poem": "But how great my surprise when at the day’s end I emptied my bag on the floor to find a least little grain of gold among the poor heap.",
+      "start": 334.75283333333334,
+      "end": 382.5287083333333
+    },
+    {
+      "id": 9,
+      "title": "Regret",
+      "poem": "I bitterly wept and wished that I had the heart to give thee my all.",
+      "start": 382.5287083333333,
+      "end": 444.39187499999997
+    },
+    {
+      "id": 10,
+      "title": "A deeper reading",
+      "poem": "",
+      "start": 444.39187499999997,
+      "end": 518.4717916666666
+    },
+    {
+      "id": 11,
+      "title": "The poet’s choices",
+      "poem": "",
+      "start": 518.4717916666666,
+      "end": 562.8409583333331
+    },
+    {
+      "id": 12,
+      "title": "Check your understanding",
+      "poem": "",
+      "start": 562.8409583333331,
+      "end": 637.6101666666665
+    },
+    {
+      "id": 13,
+      "title": "Carry the message with you",
+      "poem": "",
+      "start": 637.6101666666665,
+      "end": 675.4180833333331
+    }
+  ],
+  "beats": [
+    {
+      "scene": 1,
+      "mode": "transition",
+      "seconds": 1.1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 0,
+      "start": 0,
+      "end": 1.1
+    },
+    {
+      "scene": 1,
+      "mode": "explain",
+      "text": "Imagine you are hoping someone will help you.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 1,
+      "start": 1.1,
+      "speech_end": 4.090333333333334,
+      "end": 4.140333333333333,
+      "audio_group": 1,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 1,
+      "mode": "explain",
+      "text": "But when that person arrives, they ask you for something instead.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 2,
+      "start": 4.140333333333333,
+      "speech_end": 8.290333333333333,
+      "end": 8.390333333333334,
+      "audio_group": 1,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 1,
+      "mode": "explain",
+      "text": "How would you feel?",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 3,
+      "start": 8.390333333333334,
+      "speech_end": 9.42,
+      "end": 9.919958333333332,
+      "audio_group": 1,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 1,
+      "mode": "explain",
+      "text": "Today, we are reading ‘A Little Grain of Gold’ by Rabindranath Tagore.",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 4,
+      "start": 9.919958333333332,
+      "speech_end": 14.788958333333332,
+      "end": 14.863958333333333,
+      "audio_group": 2,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 1,
+      "mode": "explain",
+      "text": "We will read it a little at a time, picture what happens, and explore what the story means.",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 5,
+      "start": 14.863958333333333,
+      "speech_end": 20.458624999999998,
+      "end": 20.998624999999997,
+      "audio_group": 2,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 1,
+      "mode": "explain",
+      "text": "The speaker is the person telling the story.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 6,
+      "start": 20.998624999999997,
+      "speech_end": 24.117624999999997,
+      "end": 24.217624999999998,
+      "audio_group": 3,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 1,
+      "mode": "explain",
+      "text": "Here, he is a man who survives by asking others for help.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 7,
+      "start": 24.217624999999998,
+      "speech_end": 28.542624999999997,
+      "end": 28.592624999999998,
+      "audio_group": 3,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 1,
+      "mode": "explain",
+      "text": "When he says ‘I’, we hear this character's voice.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 8,
+      "start": 28.592624999999998,
+      "speech_end": 31.53729166666666,
+      "end": 32.097249999999995,
+      "audio_group": 3,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 1,
+      "mode": "explain",
+      "text": "You will notice some old-fashioned words.",
+      "paragraph": 3,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 9,
+      "start": 32.097249999999995,
+      "speech_end": 35.01258333333333,
+      "end": 35.112583333333326,
+      "audio_group": 4,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 1,
+      "mode": "explain",
+      "text": "‘Thou’ and ‘thee’ mean ‘you’.",
+      "paragraph": 3,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 10,
+      "start": 35.112583333333326,
+      "speech_end": 36.487583333333326,
+      "end": 36.53758333333333,
+      "audio_group": 4,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 1,
+      "mode": "explain",
+      "text": "‘Thy’ means ‘your’.",
+      "paragraph": 3,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 11,
+      "start": 36.53758333333333,
+      "speech_end": 37.78758333333333,
+      "end": 37.862583333333326,
+      "audio_group": 4,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 1,
+      "mode": "explain",
+      "text": "Keep those meanings in mind as we begin.",
+      "paragraph": 3,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 12,
+      "start": 37.862583333333326,
+      "speech_end": 40.353249999999996,
+      "end": 40.873208333333324,
+      "audio_group": 4,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 2,
+      "mode": "transition",
+      "seconds": 1.1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 13,
+      "start": 40.873208333333324,
+      "end": 41.973208333333325
+    },
+    {
+      "scene": 2,
+      "mode": "read",
+      "text": "I had gone a-begging from door to door",
+      "phrase": 0,
+      "span": [
+        0,
+        38
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 14,
+      "start": 41.973208333333325,
+      "speech_end": 44.97087499999999,
+      "end": 45.070874999999994,
+      "audio_group": 6,
+      "native_speed": 0.77,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 2,
+      "mode": "read",
+      "text": "in the village path",
+      "phrase": 1,
+      "span": [
+        39,
+        58
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 15,
+      "start": 45.070874999999994,
+      "speech_end": 46.72087499999999,
+      "end": 46.84587499999999,
+      "audio_group": 6,
+      "native_speed": 0.77,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 2,
+      "mode": "read",
+      "text": "when thy golden chariot appeared in the distance",
+      "phrase": 2,
+      "span": [
+        59,
+        107
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 16,
+      "start": 46.84587499999999,
+      "speech_end": 50.14587499999999,
+      "end": 50.22087499999999,
+      "audio_group": 6,
+      "native_speed": 0.77,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 2,
+      "mode": "read",
+      "text": "like a gorgeous dream",
+      "phrase": 3,
+      "span": [
+        108,
+        129
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 17,
+      "start": 50.22087499999999,
+      "speech_end": 52.27087499999999,
+      "end": 52.39587499999999,
+      "audio_group": 6,
+      "native_speed": 0.77,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 2,
+      "mode": "read",
+      "text": "and I wondered who was this king of all kings!",
+      "phrase": 4,
+      "span": [
+        130,
+        176
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 18,
+      "start": 52.39587499999999,
+      "speech_end": 55.71187499999999,
+      "end": 55.941874999999996,
+      "audio_group": 6,
+      "native_speed": 0.77,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 2,
+      "mode": "hold",
+      "seconds": 2,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 19,
+      "start": 55.941874999999996,
+      "end": 57.941874999999996
+    },
+    {
+      "scene": 2,
+      "mode": "explain",
+      "text": "The speaker has been going from house to house, asking for help.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 20,
+      "start": 57.941874999999996,
+      "speech_end": 62.510875,
+      "end": 62.585874999999994,
+      "audio_group": 8,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 2,
+      "mode": "explain",
+      "text": "‘A-begging’ simply means begging.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 21,
+      "start": 62.585874999999994,
+      "speech_end": 64.960875,
+      "end": 65.085875,
+      "audio_group": 8,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 2,
+      "mode": "explain",
+      "text": "Suddenly, he sees a magnificent golden chariot.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 22,
+      "start": 65.085875,
+      "speech_end": 68.985875,
+      "end": 69.085875,
+      "audio_group": 8,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 2,
+      "mode": "explain",
+      "text": "A chariot is a vehicle pulled by horses.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 23,
+      "start": 69.085875,
+      "speech_end": 71.893875,
+      "end": 72.42383333333333,
+      "audio_group": 8,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 2,
+      "mode": "explain",
+      "text": "‘Gorgeous’ means very beautiful.",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 24,
+      "start": 72.42383333333333,
+      "speech_end": 75.2715,
+      "end": 75.3465,
+      "audio_group": 9,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 2,
+      "mode": "explain",
+      "text": "The chariot seems so wonderful that he compares it to a beautiful dream.",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 25,
+      "start": 75.3465,
+      "speech_end": 80.4965,
+      "end": 80.6215,
+      "audio_group": 9,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 2,
+      "mode": "explain",
+      "text": "Notice the word ‘like’: it helps us spot a simile, a comparison between two different things.",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 26,
+      "start": 80.6215,
+      "speech_end": 86.65183333333333,
+      "end": 87.20183333333333,
+      "audio_group": 9,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 2,
+      "mode": "explain",
+      "text": "The speaker wonders who this ‘king of all kings’ could be.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 27,
+      "start": 87.20183333333333,
+      "speech_end": 91.09583333333333,
+      "end": 91.17083333333332,
+      "audio_group": 10,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 2,
+      "mode": "explain",
+      "text": "That phrase makes the visitor seem greater than an ordinary king.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 28,
+      "start": 91.17083333333332,
+      "speech_end": 95.69583333333333,
+      "end": 95.77083333333333,
+      "audio_group": 10,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 2,
+      "mode": "explain",
+      "text": "We will return to its deeper meaning later.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 29,
+      "start": 95.77083333333333,
+      "speech_end": 98.06049999999999,
+      "end": 98.56045833333333,
+      "audio_group": 10,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 3,
+      "mode": "transition",
+      "seconds": 1.1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 30,
+      "start": 98.56045833333333,
+      "end": 99.66045833333332
+    },
+    {
+      "scene": 3,
+      "mode": "read",
+      "text": "My hopes rose high",
+      "phrase": 0,
+      "span": [
+        0,
+        18
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 31,
+      "start": 99.66045833333332,
+      "speech_end": 101.81179166666666,
+      "end": 101.91179166666666,
+      "audio_group": 12,
+      "native_speed": 0.79,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 3,
+      "mode": "read",
+      "text": "and me thought my evil days were at an end,",
+      "phrase": 1,
+      "span": [
+        19,
+        62
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 32,
+      "start": 101.91179166666666,
+      "speech_end": 105.13679166666665,
+      "end": 105.21179166666666,
+      "audio_group": 12,
+      "native_speed": 0.79,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 3,
+      "mode": "read",
+      "text": "and I stood waiting for alms to be given unasked",
+      "phrase": 2,
+      "span": [
+        63,
+        111
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 33,
+      "start": 105.21179166666666,
+      "speech_end": 108.98679166666666,
+      "end": 109.11179166666666,
+      "audio_group": 12,
+      "native_speed": 0.79,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 3,
+      "mode": "read",
+      "text": "and for wealth scattered on all sides in the dust.",
+      "phrase": 3,
+      "span": [
+        112,
+        162
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 34,
+      "start": 109.11179166666666,
+      "speech_end": 112.56712499999999,
+      "end": 112.797125,
+      "audio_group": 12,
+      "native_speed": 0.79,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 3,
+      "mode": "hold",
+      "seconds": 2,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 35,
+      "start": 112.797125,
+      "end": 114.797125
+    },
+    {
+      "scene": 3,
+      "mode": "explain",
+      "text": "Seeing the king, the speaker hopes his difficult life is about to change.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 36,
+      "start": 114.797125,
+      "speech_end": 119.79479166666665,
+      "end": 119.84479166666667,
+      "audio_group": 14,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 3,
+      "mode": "explain",
+      "text": "‘Me thought’ means ‘it seemed to me’.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 37,
+      "start": 119.84479166666667,
+      "speech_end": 121.96979166666667,
+      "end": 122.04479166666665,
+      "audio_group": 14,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 3,
+      "mode": "explain",
+      "text": "His ‘evil days’ are his days of suffering and hardship.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 38,
+      "start": 122.04479166666665,
+      "speech_end": 126.14479166666666,
+      "end": 126.21979166666667,
+      "audio_group": 14,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 3,
+      "mode": "explain",
+      "text": "The phrase does not mean that he is an evil person.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 39,
+      "start": 126.21979166666667,
+      "speech_end": 129.517125,
+      "end": 130.03708333333333,
+      "audio_group": 14,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 3,
+      "mode": "explain",
+      "text": "‘Alms’ are gifts, such as food or money, given to people in need.",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 40,
+      "start": 130.03708333333333,
+      "speech_end": 135.37741666666665,
+      "end": 135.50241666666665,
+      "audio_group": 15,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 3,
+      "mode": "explain",
+      "text": "‘Unasked’ means without his even having to ask.",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 41,
+      "start": 135.50241666666665,
+      "speech_end": 138.48508333333334,
+      "end": 139.01504166666666,
+      "audio_group": 15,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 3,
+      "mode": "explain",
+      "text": "He imagines so much wealth that it will be scattered everywhere.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 42,
+      "start": 139.01504166666666,
+      "speech_end": 143.02670833333332,
+      "end": 143.12670833333334,
+      "audio_group": 16,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 3,
+      "mode": "explain",
+      "text": "This is what he hopes for; it has not happened.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 43,
+      "start": 143.12670833333334,
+      "speech_end": 146.47670833333333,
+      "end": 146.57670833333333,
+      "audio_group": 16,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 3,
+      "mode": "explain",
+      "text": "At this point, he is thinking about what he will receive.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 44,
+      "start": 146.57670833333333,
+      "speech_end": 149.788375,
+      "end": 150.31833333333333,
+      "audio_group": 16,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 4,
+      "mode": "transition",
+      "seconds": 1.1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 45,
+      "start": 150.31833333333333,
+      "end": 151.41833333333332
+    },
+    {
+      "scene": 4,
+      "mode": "read",
+      "text": "The chariot stopped where I stood.",
+      "phrase": 0,
+      "span": [
+        0,
+        34
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 46,
+      "start": 151.41833333333332,
+      "speech_end": 154.13733333333332,
+      "end": 154.21233333333333,
+      "audio_group": 18,
+      "native_speed": 0.8,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 4,
+      "mode": "read",
+      "text": "Thy glance fell on me",
+      "phrase": 1,
+      "span": [
+        35,
+        56
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 47,
+      "start": 154.21233333333333,
+      "speech_end": 155.88733333333332,
+      "end": 155.9873333333333,
+      "audio_group": 18,
+      "native_speed": 0.8,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 4,
+      "mode": "read",
+      "text": "and thou camest down with a smile.",
+      "phrase": 2,
+      "span": [
+        57,
+        91
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 48,
+      "start": 155.9873333333333,
+      "speech_end": 158.91233333333332,
+      "end": 159.01233333333332,
+      "audio_group": 18,
+      "native_speed": 0.8,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 4,
+      "mode": "read",
+      "text": "I felt that the luck of my life had come at last.",
+      "phrase": 3,
+      "span": [
+        92,
+        141
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 49,
+      "start": 159.01233333333332,
+      "speech_end": 162.08499999999998,
+      "end": 162.285,
+      "audio_group": 18,
+      "native_speed": 0.8,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 4,
+      "mode": "hold",
+      "seconds": 2,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 50,
+      "start": 162.285,
+      "end": 164.285
+    },
+    {
+      "scene": 4,
+      "mode": "explain",
+      "text": "The chariot stops exactly where the speaker is standing.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 51,
+      "start": 164.285,
+      "speech_end": 168.129,
+      "end": 168.204,
+      "audio_group": 20,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 4,
+      "mode": "explain",
+      "text": "The king looks at him, comes down, and smiles.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 52,
+      "start": 168.204,
+      "speech_end": 171.385,
+      "end": 171.895,
+      "audio_group": 20,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 4,
+      "mode": "explain",
+      "text": "‘Thy glance fell on me’ means ‘you looked at me’.",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 53,
+      "start": 171.895,
+      "speech_end": 174.514,
+      "end": 174.639,
+      "audio_group": 21,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 4,
+      "mode": "explain",
+      "text": "Nothing literally falls!",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 54,
+      "start": 174.639,
+      "speech_end": 176.43900000000002,
+      "end": 176.514,
+      "audio_group": 21,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 4,
+      "mode": "explain",
+      "text": "‘Thou camest down’ means ‘you came down’.",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 55,
+      "start": 176.514,
+      "speech_end": 178.82833333333335,
+      "end": 179.36833333333334,
+      "audio_group": 21,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 4,
+      "mode": "explain",
+      "text": "The king's friendly attention makes the speaker even more hopeful.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 56,
+      "start": 179.36833333333334,
+      "speech_end": 184.48733333333334,
+      "end": 184.56233333333333,
+      "audio_group": 22,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 4,
+      "mode": "explain",
+      "text": "He feels that his great moment of good fortune has finally arrived.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 57,
+      "start": 184.56233333333333,
+      "speech_end": 189.41233333333335,
+      "end": 189.53733333333335,
+      "audio_group": 22,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 4,
+      "mode": "explain",
+      "text": "So far, everything seems to support his expectation of receiving a gift.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 58,
+      "start": 189.53733333333335,
+      "speech_end": 194.79233333333335,
+      "end": 195.27233333333334,
+      "audio_group": 22,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 5,
+      "mode": "transition",
+      "seconds": 1.1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 59,
+      "start": 195.27233333333334,
+      "end": 196.37233333333333
+    },
+    {
+      "scene": 5,
+      "mode": "read",
+      "text": "Then of a sudden thou didst hold out thy right hand",
+      "phrase": 0,
+      "span": [
+        0,
+        51
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 60,
+      "start": 196.37233333333333,
+      "speech_end": 200.245,
+      "end": 200.32,
+      "audio_group": 24,
+      "native_speed": 0.73,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 5,
+      "mode": "read",
+      "text": "and say",
+      "phrase": 1,
+      "span": [
+        52,
+        59
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 61,
+      "start": 200.32,
+      "speech_end": 201.345,
+      "end": 201.47,
+      "audio_group": 24,
+      "native_speed": 0.73,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 5,
+      "mode": "read",
+      "text": "“What hast thou to give to me?”",
+      "phrase": 2,
+      "span": [
+        60,
+        91
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 62,
+      "start": 201.47,
+      "speech_end": 203.60633333333334,
+      "end": 203.68633333333332,
+      "audio_group": 24,
+      "native_speed": 0.73,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 5,
+      "mode": "hold",
+      "seconds": 3,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 63,
+      "start": 203.68633333333332,
+      "end": 206.68633333333332
+    },
+    {
+      "scene": 5,
+      "mode": "explain",
+      "text": "Suddenly, the king holds out his hand.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 64,
+      "start": 206.68633333333332,
+      "speech_end": 209.42533333333333,
+      "end": 209.52533333333332,
+      "audio_group": 26,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 5,
+      "mode": "explain",
+      "text": "‘Thou didst’ means ‘you did’, and ‘hast’ means ‘have’.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 65,
+      "start": 209.52533333333332,
+      "speech_end": 213.32533333333333,
+      "end": 213.40033333333332,
+      "audio_group": 26,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 5,
+      "mode": "explain",
+      "text": "His question means, ‘What do you have to give me?’",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 66,
+      "start": 213.40033333333332,
+      "speech_end": 215.90099999999998,
+      "end": 216.4309583333333,
+      "audio_group": 26,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 5,
+      "mode": "explain",
+      "text": "Stop and think: why is this so surprising?",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 67,
+      "start": 216.4309583333333,
+      "speech_end": 219.3749583333333,
+      "end": 219.88495833333332,
+      "audio_group": 27,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 5,
+      "mode": "think",
+      "seconds": 5,
+      "text": "",
+      "paragraph": 1,
+      "question": 0,
+      "id": 68,
+      "start": 219.88495833333332,
+      "end": 224.88495833333332
+    },
+    {
+      "scene": 5,
+      "mode": "explain",
+      "text": "The speaker expected the rich king to give something to him.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 69,
+      "start": 224.88495833333332,
+      "speech_end": 228.8539583333333,
+      "end": 228.92895833333333,
+      "audio_group": 29,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 5,
+      "mode": "explain",
+      "text": "Instead, the king asks him to give.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 70,
+      "start": 228.92895833333333,
+      "speech_end": 231.9789583333333,
+      "end": 232.05395833333333,
+      "audio_group": 29,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 5,
+      "mode": "explain",
+      "text": "Their expected roles have been reversed.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 71,
+      "start": 232.05395833333333,
+      "speech_end": 234.77895833333332,
+      "end": 234.8539583333333,
+      "audio_group": 29,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 5,
+      "mode": "explain",
+      "text": "This surprising contrast is an example of irony.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 72,
+      "start": 234.8539583333333,
+      "speech_end": 238.36762499999998,
+      "end": 238.877625,
+      "audio_group": 29,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 6,
+      "mode": "transition",
+      "seconds": 1.1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 73,
+      "start": 238.877625,
+      "end": 239.977625
+    },
+    {
+      "scene": 6,
+      "mode": "read",
+      "text": "Ah, what a kingly jest was it",
+      "phrase": 0,
+      "span": [
+        0,
+        29
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 74,
+      "start": 239.977625,
+      "speech_end": 242.721625,
+      "end": 242.79662499999998,
+      "audio_group": 31,
+      "native_speed": 0.76,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 6,
+      "mode": "read",
+      "text": "to open thy palm to a beggar to beg!",
+      "phrase": 1,
+      "span": [
+        30,
+        66
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 75,
+      "start": 242.79662499999998,
+      "speech_end": 246.021625,
+      "end": 246.121625,
+      "audio_group": 31,
+      "native_speed": 0.76,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 6,
+      "mode": "read",
+      "text": "I was confused and stood undecided,",
+      "phrase": 2,
+      "span": [
+        67,
+        102
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 76,
+      "start": 246.121625,
+      "speech_end": 249.17229166666667,
+      "end": 249.25229166666665,
+      "audio_group": 31,
+      "native_speed": 0.76,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 6,
+      "mode": "hold",
+      "seconds": 1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 77,
+      "start": 249.25229166666665,
+      "end": 250.25229166666665
+    },
+    {
+      "scene": 6,
+      "mode": "explain",
+      "text": "A ‘jest’ is a joke.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 78,
+      "start": 250.25229166666665,
+      "speech_end": 252.37129166666665,
+      "end": 252.44629166666664,
+      "audio_group": 33,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 6,
+      "mode": "explain",
+      "text": "‘Kingly’ means royal, or belonging to a king.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 79,
+      "start": 252.44629166666664,
+      "speech_end": 255.99629166666665,
+      "end": 256.07129166666664,
+      "audio_group": 33,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 6,
+      "mode": "explain",
+      "text": "The speaker thinks this must be a strange royal joke: a king asking a beggar for something!",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 80,
+      "start": 256.07129166666664,
+      "speech_end": 262.261625,
+      "end": 262.811625,
+      "audio_group": 33,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 6,
+      "mode": "explain",
+      "text": "That is the speaker's reaction.",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 81,
+      "start": 262.811625,
+      "speech_end": 265.43429166666664,
+      "end": 265.48429166666665,
+      "audio_group": 34,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 6,
+      "mode": "explain",
+      "text": "The poem does not say that the king is laughing at him.",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 82,
+      "start": 265.48429166666665,
+      "speech_end": 268.40095833333334,
+      "end": 268.92091666666664,
+      "audio_group": 34,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 6,
+      "mode": "explain",
+      "text": "‘Undecided’ means he cannot make up his mind.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 83,
+      "start": 268.92091666666664,
+      "speech_end": 272.31125,
+      "end": 272.38624999999996,
+      "audio_group": 35,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 6,
+      "mode": "explain",
+      "text": "He pauses, unsure what to do.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 84,
+      "start": 272.38624999999996,
+      "speech_end": 275.21124999999995,
+      "end": 275.28625,
+      "audio_group": 35,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 6,
+      "mode": "explain",
+      "text": "His hope has changed into confusion.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 85,
+      "start": 275.28625,
+      "speech_end": 278.06125,
+      "end": 278.13624999999996,
+      "audio_group": 35,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 6,
+      "mode": "explain",
+      "text": "The sentence continues with the choice he finally makes.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 86,
+      "start": 278.13624999999996,
+      "speech_end": 281.42224999999996,
+      "end": 281.97225,
+      "audio_group": 35,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 7,
+      "mode": "transition",
+      "seconds": 1.1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 87,
+      "start": 281.97225,
+      "end": 283.07225
+    },
+    {
+      "scene": 7,
+      "mode": "read",
+      "text": "and then from my wallet",
+      "phrase": 0,
+      "span": [
+        0,
+        23
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 88,
+      "start": 283.07225,
+      "speech_end": 285.01625,
+      "end": 285.14125,
+      "audio_group": 37,
+      "native_speed": 0.73,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 7,
+      "mode": "read",
+      "text": "I slowly took out the least little grain of corn",
+      "phrase": 1,
+      "span": [
+        24,
+        72
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 89,
+      "start": 285.14125,
+      "speech_end": 288.84125,
+      "end": 288.99125,
+      "audio_group": 37,
+      "native_speed": 0.73,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 7,
+      "mode": "read",
+      "text": "and gave it to thee.",
+      "phrase": 2,
+      "span": [
+        73,
+        93
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 90,
+      "start": 288.99125,
+      "speech_end": 290.28291666666667,
+      "end": 290.48291666666665,
+      "audio_group": 37,
+      "native_speed": 0.73,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 7,
+      "mode": "hold",
+      "seconds": 2,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 91,
+      "start": 290.48291666666665,
+      "end": 292.48291666666665
+    },
+    {
+      "scene": 7,
+      "mode": "explain",
+      "text": "Here, ‘wallet’ means a small bag or pouch.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 92,
+      "start": 292.48291666666665,
+      "speech_end": 296.2055833333333,
+      "end": 296.30558333333335,
+      "audio_group": 39,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 7,
+      "mode": "explain",
+      "text": "‘Corn’ refers to grain.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 93,
+      "start": 296.30558333333335,
+      "speech_end": 298.2305833333333,
+      "end": 298.30558333333335,
+      "audio_group": 39,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 7,
+      "mode": "explain",
+      "text": "He takes out the smallest little grain and gives it to the king.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 94,
+      "start": 298.30558333333335,
+      "speech_end": 301.44291666666663,
+      "end": 301.962875,
+      "audio_group": 39,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 7,
+      "mode": "explain",
+      "text": "Which words tell us that he is reluctant to give?",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 95,
+      "start": 301.962875,
+      "speech_end": 304.906875,
+      "end": 305.40683333333334,
+      "audio_group": 40,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 7,
+      "mode": "think",
+      "seconds": 5,
+      "text": "",
+      "paragraph": 1,
+      "question": 0,
+      "id": 96,
+      "start": 305.40683333333334,
+      "end": 310.40683333333334
+    },
+    {
+      "scene": 7,
+      "mode": "explain",
+      "text": "‘Slowly’ suggests hesitation.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 97,
+      "start": 310.40683333333334,
+      "speech_end": 313.1545,
+      "end": 313.2545,
+      "audio_group": 42,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 7,
+      "mode": "explain",
+      "text": "‘Least little’ stresses how tiny his gift is.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 98,
+      "start": 313.2545,
+      "speech_end": 316.5295,
+      "end": 316.60450000000003,
+      "audio_group": 42,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 7,
+      "mode": "explain",
+      "text": "He does give something, but he holds back almost everything.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 99,
+      "start": 316.60450000000003,
+      "speech_end": 320.02816666666666,
+      "end": 320.5681666666667,
+      "audio_group": 42,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 7,
+      "mode": "explain",
+      "text": "We can understand that someone with very little may worry about losing it.",
+      "paragraph": 3,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 100,
+      "start": 320.5681666666667,
+      "speech_end": 325.5871666666667,
+      "end": 325.6621666666667,
+      "audio_group": 43,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 7,
+      "mode": "explain",
+      "text": "The poem asks us to notice this particular choice: he hopes to receive generously, but finds it difficult to give generously.",
+      "paragraph": 3,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 101,
+      "start": 325.6621666666667,
+      "speech_end": 334.24283333333335,
+      "end": 334.75283333333334,
+      "audio_group": 43,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 8,
+      "mode": "transition",
+      "seconds": 1.1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 102,
+      "start": 334.75283333333334,
+      "end": 335.85283333333336
+    },
+    {
+      "scene": 8,
+      "mode": "read",
+      "text": "But how great my surprise",
+      "phrase": 0,
+      "span": [
+        0,
+        25
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 103,
+      "start": 335.85283333333336,
+      "speech_end": 338.37550000000005,
+      "end": 338.45050000000003,
+      "audio_group": 45,
+      "native_speed": 0.77,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 8,
+      "mode": "read",
+      "text": "when at the day’s end I emptied my bag on the floor",
+      "phrase": 1,
+      "span": [
+        26,
+        77
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 104,
+      "start": 338.45050000000003,
+      "speech_end": 342.20050000000003,
+      "end": 342.30050000000006,
+      "audio_group": 45,
+      "native_speed": 0.77,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 8,
+      "mode": "read",
+      "text": "to find a least little grain of gold",
+      "phrase": 2,
+      "span": [
+        78,
+        114
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 105,
+      "start": 342.30050000000006,
+      "speech_end": 344.80050000000006,
+      "end": 344.9005,
+      "audio_group": 45,
+      "native_speed": 0.77,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 8,
+      "mode": "read",
+      "text": "among the poor heap.",
+      "phrase": 3,
+      "span": [
+        115,
+        135
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 106,
+      "start": 344.9005,
+      "speech_end": 346.13550000000004,
+      "end": 346.38545833333336,
+      "audio_group": 45,
+      "native_speed": 0.77,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 8,
+      "mode": "hold",
+      "seconds": 3,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 107,
+      "start": 346.38545833333336,
+      "end": 349.38545833333336
+    },
+    {
+      "scene": 8,
+      "mode": "explain",
+      "text": "At the end of the day, the speaker empties his bag and discovers a tiny grain of gold among his few possessions.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 108,
+      "start": 349.38545833333336,
+      "speech_end": 357.2507916666667,
+      "end": 357.3257916666667,
+      "audio_group": 47,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 8,
+      "mode": "explain",
+      "text": "That small collection is the ‘poor heap’.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 109,
+      "start": 357.3257916666667,
+      "speech_end": 359.7747916666667,
+      "end": 360.30475,
+      "audio_group": 47,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 8,
+      "mode": "explain",
+      "text": "Remember ‘the least little grain of corn’?",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 110,
+      "start": 360.30475,
+      "speech_end": 362.94875,
+      "end": 363.04875000000004,
+      "audio_group": 48,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 8,
+      "mode": "explain",
+      "text": "Now we hear ‘a least little grain of gold’.",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 111,
+      "start": 363.04875000000004,
+      "speech_end": 365.94875,
+      "end": 366.02375,
+      "audio_group": 48,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 8,
+      "mode": "explain",
+      "text": "The repeated words connect his tiny gift with the precious thing he finds.",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 112,
+      "start": 366.02375,
+      "speech_end": 370.5660833333333,
+      "end": 371.10608333333334,
+      "audio_group": 48,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 8,
+      "mode": "explain",
+      "text": "The poem suggests that what he gave has returned to him in a more precious form.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 113,
+      "start": 371.10608333333334,
+      "speech_end": 376.92508333333336,
+      "end": 377.00008333333335,
+      "audio_group": 49,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 8,
+      "mode": "explain",
+      "text": "We are told about his discovery; we are not shown the moment of any transformation.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 114,
+      "start": 377.00008333333335,
+      "speech_end": 382.02875,
+      "end": 382.5287083333333,
+      "audio_group": 49,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 9,
+      "mode": "transition",
+      "seconds": 1.1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 115,
+      "start": 382.5287083333333,
+      "end": 383.62870833333335
+    },
+    {
+      "scene": 9,
+      "mode": "read",
+      "text": "I bitterly wept",
+      "phrase": 0,
+      "span": [
+        0,
+        15
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 116,
+      "start": 383.62870833333335,
+      "speech_end": 385.27270833333336,
+      "end": 385.39770833333336,
+      "audio_group": 51,
+      "native_speed": 0.68,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 9,
+      "mode": "read",
+      "text": "and wished that I had the heart",
+      "phrase": 1,
+      "span": [
+        16,
+        47
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 117,
+      "start": 385.39770833333336,
+      "speech_end": 387.34770833333334,
+      "end": 387.42270833333333,
+      "audio_group": 51,
+      "native_speed": 0.68,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 9,
+      "mode": "read",
+      "text": "to give thee my all.",
+      "phrase": 2,
+      "span": [
+        48,
+        68
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 118,
+      "start": 387.42270833333333,
+      "speech_end": 388.727375,
+      "end": 388.94733333333335,
+      "audio_group": 51,
+      "native_speed": 0.68,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 9,
+      "mode": "hold",
+      "seconds": 4,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 119,
+      "start": 388.94733333333335,
+      "end": 392.94733333333335
+    },
+    {
+      "scene": 9,
+      "mode": "explain",
+      "text": "‘Bitterly wept’ means cried with deep sorrow.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 120,
+      "start": 392.94733333333335,
+      "speech_end": 396.82,
+      "end": 396.89500000000004,
+      "audio_group": 53,
+      "native_speed": 0.79,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 9,
+      "mode": "explain",
+      "text": "‘Had the heart’ means had the willingness or generosity.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 121,
+      "start": 396.89500000000004,
+      "speech_end": 400.97,
+      "end": 401.045,
+      "audio_group": 53,
+      "native_speed": 0.79,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 9,
+      "mode": "explain",
+      "text": "‘My all’ means everything I had.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 122,
+      "start": 401.045,
+      "speech_end": 403.2726666666667,
+      "end": 403.792625,
+      "audio_group": 53,
+      "native_speed": 0.79,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 9,
+      "mode": "explain",
+      "text": "Why does he feel sad after finding something valuable?",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 123,
+      "start": 403.792625,
+      "speech_end": 407.80329166666667,
+      "end": 408.31329166666666,
+      "audio_group": 54,
+      "native_speed": 0.79,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 9,
+      "mode": "think",
+      "seconds": 5,
+      "text": "",
+      "paragraph": 1,
+      "question": 0,
+      "id": 124,
+      "start": 408.31329166666666,
+      "end": 413.31329166666666
+    },
+    {
+      "scene": 9,
+      "mode": "explain",
+      "text": "He realises that he held back.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 125,
+      "start": 413.31329166666666,
+      "speech_end": 416.28229166666665,
+      "end": 416.40729166666665,
+      "audio_group": 56,
+      "native_speed": 0.79,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 9,
+      "mode": "explain",
+      "text": "On the story's surface, he may wish he had given more because even his tiny gift brought something precious.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 126,
+      "start": 416.40729166666665,
+      "speech_end": 424.65729166666665,
+      "end": 424.78229166666665,
+      "audio_group": 56,
+      "native_speed": 0.79,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 9,
+      "mode": "explain",
+      "text": "More deeply, he regrets missing the chance to give wholeheartedly.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 127,
+      "start": 424.78229166666665,
+      "speech_end": 429.462625,
+      "end": 429.9625833333333,
+      "audio_group": 56,
+      "native_speed": 0.79,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 9,
+      "mode": "explain",
+      "text": "Notice what he wishes for: the heart to give.",
+      "paragraph": 3,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 128,
+      "start": 429.9625833333333,
+      "speech_end": 434.01025,
+      "end": 434.08525,
+      "audio_group": 57,
+      "native_speed": 0.79,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 9,
+      "mode": "explain",
+      "text": "His regret concerns his attitude as well as the size of his gift.",
+      "paragraph": 3,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 129,
+      "start": 434.08525,
+      "speech_end": 439.56025,
+      "end": 439.63525,
+      "audio_group": 57,
+      "native_speed": 0.79,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 9,
+      "mode": "explain",
+      "text": "The ending leaves us thinking about the opportunity he has missed.",
+      "paragraph": 3,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 130,
+      "start": 439.63525,
+      "speech_end": 443.87191666666666,
+      "end": 444.39187499999997,
+      "audio_group": 57,
+      "native_speed": 0.79,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 10,
+      "mode": "transition",
+      "seconds": 1.1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 131,
+      "start": 444.39187499999997,
+      "end": 445.491875
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "The textbook invites us to read this poem as a parable.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 132,
+      "start": 445.491875,
+      "speech_end": 449.635875,
+      "end": 449.73587499999996,
+      "audio_group": 59,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "A parable is a simple story that teaches a moral or spiritual lesson.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 133,
+      "start": 449.73587499999996,
+      "speech_end": 454.77187499999997,
+      "end": 455.251875,
+      "audio_group": 59,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "In this spiritual reading, the ‘king of all kings’ represents God.",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 134,
+      "start": 455.251875,
+      "speech_end": 460.37087499999996,
+      "end": 460.445875,
+      "audio_group": 60,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "The speaker can represent a human being who asks for blessings but struggles to give.",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 135,
+      "start": 460.445875,
+      "speech_end": 466.595875,
+      "end": 466.67087499999997,
+      "audio_group": 60,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "The king's request can be understood as an invitation to generosity and trust.",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 136,
+      "start": 466.67087499999997,
+      "speech_end": 471.955875,
+      "end": 472.465875,
+      "audio_group": 60,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "A symbol is something in a story that also suggests a bigger idea.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 137,
+      "start": 472.465875,
+      "speech_end": 477.86354166666666,
+      "end": 477.93854166666665,
+      "audio_group": 61,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "The small grain can represent what we are willing to offer.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 138,
+      "start": 477.93854166666665,
+      "speech_end": 482.06354166666665,
+      "end": 482.13854166666664,
+      "audio_group": 61,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "The gold can represent the precious value of giving, including spiritual richness.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 139,
+      "start": 482.13854166666664,
+      "speech_end": 487.80454166666664,
+      "end": 488.36449999999996,
+      "audio_group": 61,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "Does this mean that giving a pencil will make a gold pencil appear?",
+      "paragraph": 3,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 140,
+      "start": 488.36449999999996,
+      "speech_end": 492.85849999999994,
+      "end": 492.98349999999994,
+      "audio_group": 62,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "No.",
+      "paragraph": 3,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 141,
+      "start": 492.98349999999994,
+      "speech_end": 493.85849999999994,
+      "end": 493.95849999999996,
+      "audio_group": 62,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "This is a story with a deeper meaning, not a promise of material rewards.",
+      "paragraph": 3,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 142,
+      "start": 493.95849999999996,
+      "speech_end": 499.38349999999997,
+      "end": 499.48349999999994,
+      "audio_group": 62,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "Its lesson is to give sincerely, without treating kindness as a bargain.",
+      "paragraph": 3,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 143,
+      "start": 499.48349999999994,
+      "speech_end": 504.4071666666666,
+      "end": 504.94716666666665,
+      "audio_group": 62,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "For us, generosity can include sharing our time, helping someone understand a lesson, or offering something we can spare.",
+      "paragraph": 4,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 144,
+      "start": 504.94716666666665,
+      "speech_end": 514.0161666666667,
+      "end": 514.0911666666666,
+      "audio_group": 63,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "The poem asks us to think about the willingness behind the gift.",
+      "paragraph": 4,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 145,
+      "start": 514.0911666666666,
+      "speech_end": 517.9818333333333,
+      "end": 518.4717916666666,
+      "audio_group": 63,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 11,
+      "mode": "transition",
+      "seconds": 1.1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 146,
+      "start": 518.4717916666666,
+      "end": 519.5717916666666
+    },
+    {
+      "scene": 11,
+      "mode": "explain",
+      "text": "Let's notice three choices that make the poem effective.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 147,
+      "start": 519.5717916666666,
+      "speech_end": 523.1984583333333,
+      "end": 523.7084583333333,
+      "audio_group": 65,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 11,
+      "mode": "explain",
+      "text": "First, the simile ‘like a gorgeous dream’ compares the golden chariot to a wonderful dream, using ‘like’.",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 148,
+      "start": 523.7084583333333,
+      "speech_end": 531.5524583333333,
+      "end": 531.6524583333332,
+      "audio_group": 66,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 11,
+      "mode": "explain",
+      "text": "It helps us imagine the speaker's wonder.",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 149,
+      "start": 531.6524583333332,
+      "speech_end": 533.9697916666667,
+      "end": 534.4297499999999,
+      "audio_group": 66,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 11,
+      "mode": "explain",
+      "text": "Second, the king asks the beggar for a gift.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 150,
+      "start": 534.4297499999999,
+      "speech_end": 537.9487499999999,
+      "end": 538.0487499999999,
+      "audio_group": 67,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 11,
+      "mode": "explain",
+      "text": "This reversal of what we expect creates irony and makes us stop and think.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 151,
+      "start": 538.0487499999999,
+      "speech_end": 543.1337499999998,
+      "end": 543.6237083333332,
+      "audio_group": 67,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 11,
+      "mode": "explain",
+      "text": "Third, the words ‘least little grain’ connect the small gift with the small piece of gold.",
+      "paragraph": 3,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 152,
+      "start": 543.6237083333332,
+      "speech_end": 550.0677083333331,
+      "end": 550.1427083333332,
+      "audio_group": 68,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 11,
+      "mode": "explain",
+      "text": "Their repetition helps us understand the speaker's regret.",
+      "paragraph": 3,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 153,
+      "start": 550.1427083333332,
+      "speech_end": 553.6290416666665,
+      "end": 554.1189999999998,
+      "audio_group": 68,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 11,
+      "mode": "explain",
+      "text": "The title brings us back to that tiny piece of gold.",
+      "paragraph": 4,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 154,
+      "start": 554.1189999999998,
+      "speech_end": 557.8129999999998,
+      "end": 557.8879999999998,
+      "audio_group": 69,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 11,
+      "mode": "explain",
+      "text": "It is small in size, but it leads to a big discovery about giving.",
+      "paragraph": 4,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 155,
+      "start": 557.8879999999998,
+      "speech_end": 562.3109999999998,
+      "end": 562.8409583333331,
+      "audio_group": 69,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 12,
+      "mode": "transition",
+      "seconds": 1.1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 156,
+      "start": 562.8409583333331,
+      "end": 563.9409583333331
+    },
+    {
+      "scene": 12,
+      "mode": "explain",
+      "text": "Let's check our understanding.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 157,
+      "start": 563.9409583333331,
+      "speech_end": 566.0599583333332,
+      "end": 566.1849583333332,
+      "audio_group": 71,
+      "native_speed": 0.84,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 12,
+      "mode": "explain",
+      "text": "Say your answer aloud, or pause the video if you need more time.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 158,
+      "start": 566.1849583333332,
+      "speech_end": 570.2342916666664,
+      "end": 570.7442916666664,
+      "audio_group": 71,
+      "native_speed": 0.84,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 12,
+      "mode": "explain",
+      "text": "One: where did the chariot stop, and who came down?",
+      "paragraph": 1,
+      "question": 1,
+      "paragraph_end": true,
+      "id": 159,
+      "start": 570.7442916666664,
+      "speech_end": 574.0296249999998,
+      "end": 574.5195833333331,
+      "audio_group": 72,
+      "native_speed": 0.84,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 12,
+      "mode": "think",
+      "seconds": 5,
+      "text": "",
+      "paragraph": 1,
+      "question": 1,
+      "id": 160,
+      "start": 574.5195833333331,
+      "end": 579.5195833333331
+    },
+    {
+      "scene": 12,
+      "mode": "explain",
+      "text": "It stopped where the speaker was standing, and the king came down with a smile.",
+      "paragraph": 2,
+      "question": 1,
+      "paragraph_end": true,
+      "id": 161,
+      "start": 579.5195833333331,
+      "speech_end": 583.9569166666664,
+      "end": 584.4768749999998,
+      "audio_group": 74,
+      "native_speed": 0.84,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 12,
+      "mode": "explain",
+      "text": "Two: explain ‘kingly jest’.",
+      "paragraph": 3,
+      "question": 2,
+      "paragraph_end": false,
+      "id": 162,
+      "start": 584.4768749999998,
+      "speech_end": 587.2245416666665,
+      "end": 587.3245416666665,
+      "audio_group": 75,
+      "native_speed": 0.84,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 12,
+      "mode": "explain",
+      "text": "Why did the speaker think the request was a joke?",
+      "paragraph": 3,
+      "question": 2,
+      "paragraph_end": true,
+      "id": 163,
+      "start": 587.3245416666665,
+      "speech_end": 589.8528749999998,
+      "end": 590.3928749999999,
+      "audio_group": 75,
+      "native_speed": 0.84,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 12,
+      "mode": "think",
+      "seconds": 5,
+      "text": "",
+      "paragraph": 3,
+      "question": 2,
+      "id": 164,
+      "start": 590.3928749999999,
+      "end": 595.3928749999999
+    },
+    {
+      "scene": 12,
+      "mode": "explain",
+      "text": "It means a royal joke.",
+      "paragraph": 4,
+      "question": 2,
+      "paragraph_end": false,
+      "id": 165,
+      "start": 595.3928749999999,
+      "speech_end": 597.7618749999999,
+      "end": 597.8368749999998,
+      "audio_group": 77,
+      "native_speed": 0.84,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 12,
+      "mode": "explain",
+      "text": "He was confused because he expected the wealthy king to give him something, but the king asked him for a gift instead.",
+      "paragraph": 4,
+      "question": 2,
+      "paragraph_end": true,
+      "id": 166,
+      "start": 597.8368749999998,
+      "speech_end": 605.0782083333332,
+      "end": 605.5882083333332,
+      "audio_group": 77,
+      "native_speed": 0.84,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 12,
+      "mode": "explain",
+      "text": "Three: why was the speaker both surprised and sorrowful at the end?",
+      "paragraph": 5,
+      "question": 3,
+      "paragraph_end": true,
+      "id": 167,
+      "start": 605.5882083333332,
+      "speech_end": 610.0255416666665,
+      "end": 610.5055416666665,
+      "audio_group": 78,
+      "native_speed": 0.84,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 12,
+      "mode": "think",
+      "seconds": 5,
+      "text": "",
+      "paragraph": 5,
+      "question": 3,
+      "id": 168,
+      "start": 610.5055416666665,
+      "end": 615.5055416666665
+    },
+    {
+      "scene": 12,
+      "mode": "explain",
+      "text": "He was surprised to find a tiny grain of gold.",
+      "paragraph": 6,
+      "question": 3,
+      "paragraph_end": false,
+      "id": 169,
+      "start": 615.5055416666665,
+      "speech_end": 619.2995416666665,
+      "end": 619.3745416666666,
+      "audio_group": 80,
+      "native_speed": 0.84,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 12,
+      "mode": "explain",
+      "text": "He was sorrowful because he had given so little and wished he had been generous enough to give his all.",
+      "paragraph": 6,
+      "question": 3,
+      "paragraph_end": true,
+      "id": 170,
+      "start": 619.3745416666666,
+      "speech_end": 624.9988749999999,
+      "end": 625.5288333333332,
+      "audio_group": 80,
+      "native_speed": 0.84,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 12,
+      "mode": "explain",
+      "text": "When you write an answer, explain the idea and support it with a phrase from the poem.",
+      "paragraph": 7,
+      "question": 3,
+      "paragraph_end": false,
+      "id": 171,
+      "start": 625.5288333333332,
+      "speech_end": 631.5264999999998,
+      "end": 631.6014999999999,
+      "audio_group": 81,
+      "native_speed": 0.84,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 12,
+      "mode": "explain",
+      "text": "For the final question, ‘the least little grain’ and ‘had the heart to give’ are useful evidence.",
+      "paragraph": 7,
+      "question": 3,
+      "paragraph_end": true,
+      "id": 172,
+      "start": 631.6014999999999,
+      "speech_end": 637.0701666666665,
+      "end": 637.6101666666665,
+      "audio_group": 81,
+      "native_speed": 0.84,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 13,
+      "mode": "transition",
+      "seconds": 1.1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 173,
+      "start": 637.6101666666665,
+      "end": 638.7101666666665
+    },
+    {
+      "scene": 13,
+      "mode": "explain",
+      "text": "Follow the speaker's feelings one last time.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 174,
+      "start": 638.7101666666665,
+      "speech_end": 642.0541666666666,
+      "end": 642.1291666666665,
+      "audio_group": 83,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 13,
+      "mode": "explain",
+      "text": "He hopes to receive.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 175,
+      "start": 642.1291666666665,
+      "speech_end": 643.7791666666665,
+      "end": 643.8541666666665,
+      "audio_group": 83,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 13,
+      "mode": "explain",
+      "text": "He is confused by the king's request.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 176,
+      "start": 643.8541666666665,
+      "speech_end": 646.8541666666665,
+      "end": 646.9291666666666,
+      "audio_group": 83,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 13,
+      "mode": "explain",
+      "text": "He gives reluctantly, discovers the gold with surprise, and finally feels regret.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 177,
+      "start": 646.9291666666666,
+      "speech_end": 652.5754999999998,
+      "end": 653.0654583333331,
+      "audio_group": 83,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 13,
+      "mode": "explain",
+      "text": "Tagore uses this small encounter to ask a large question: when we have a chance to give, how willing is our heart?",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 178,
+      "start": 653.0654583333331,
+      "speech_end": 660.8094583333332,
+      "end": 661.2994166666665,
+      "audio_group": 84,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 13,
+      "mode": "explain",
+      "text": "Think of one kind thing you could do today without expecting a reward.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 179,
+      "start": 661.2994166666665,
+      "speech_end": 666.4434166666665,
+      "end": 666.5434166666665,
+      "audio_group": 85,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 13,
+      "mode": "explain",
+      "text": "That is a useful way to carry the poem's message into your own life.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 180,
+      "start": 666.5434166666665,
+      "speech_end": 670.8780833333332,
+      "end": 671.4180833333331,
+      "audio_group": 85,
+      "native_speed": 0.83,
+      "alignment": "model phoneme durations"
+    },
+    {
+      "scene": 13,
+      "mode": "end",
+      "seconds": 4,
+      "text": "",
+      "paragraph": 2,
+      "question": 0,
+      "id": 181,
+      "start": 671.4180833333331,
+      "end": 675.4180833333331
+    }
+  ],
+  "voice": "af_heart",
+  "source": "/Users/aquaraga/Documents/ChatGPT/EdTech/proposals/a-little-grain-of-gold-video/plan-and-script.md",
+  "narration_engine": "Kokoro 1.0 via kokoro-onnx 0.6.1",
+  "voice_description": "neural English tutor voice (American)",
+  "duration": 675.4180833333331,
+  "captions": [
+    {
+      "start": 1.3153333333333335,
+      "end": 4.090333333333334,
+      "text": "Imagine you are hoping someone will help you.",
+      "beat": 1
+    },
+    {
+      "start": 4.140333333333333,
+      "end": 8.290333333333333,
+      "text": "But when that person arrives, they ask you for something instead.",
+      "beat": 2
+    },
+    {
+      "start": 8.390333333333334,
+      "end": 9.420000000000002,
+      "text": "How would you feel?",
+      "beat": 3
+    },
+    {
+      "start": 10.088958333333332,
+      "end": 14.788958333333333,
+      "text": "Today, we are reading ‘A Little Grain of Gold’ by Rabindranath Tagore.",
+      "beat": 4
+    },
+    {
+      "start": 14.863958333333333,
+      "end": 20.458624999999998,
+      "text": "We will read it a little at a time, picture what happens, and explore what the story means.",
+      "beat": 5
+    },
+    {
+      "start": 21.142624999999995,
+      "end": 24.117624999999997,
+      "text": "The speaker is the person telling the story.",
+      "beat": 6
+    },
+    {
+      "start": 24.217624999999998,
+      "end": 28.542624999999997,
+      "text": "Here, he is a man who survives by asking others for help.",
+      "beat": 7
+    },
+    {
+      "start": 28.592624999999998,
+      "end": 31.537291666666665,
+      "text": "When he says ‘I’, we hear this character's voice.",
+      "beat": 8
+    },
+    {
+      "start": 32.28758333333333,
+      "end": 35.01258333333333,
+      "text": "You will notice some old-fashioned words.",
+      "beat": 9
+    },
+    {
+      "start": 35.112583333333326,
+      "end": 36.487583333333326,
+      "text": "‘Thou’ and ‘thee’ mean ‘you’.",
+      "beat": 10
+    },
+    {
+      "start": 36.53758333333333,
+      "end": 37.78758333333333,
+      "text": "‘Thy’ means ‘your’.",
+      "beat": 11
+    },
+    {
+      "start": 37.862583333333326,
+      "end": 40.353249999999996,
+      "text": "Keep those meanings in mind as we begin.",
+      "beat": 12
+    },
+    {
+      "start": 42.170874999999995,
+      "end": 44.97087499999999,
+      "text": "I had gone a-begging from door to door",
+      "beat": 14
+    },
+    {
+      "start": 45.070874999999994,
+      "end": 46.72087499999999,
+      "text": "in the village path",
+      "beat": 15
+    },
+    {
+      "start": 46.84587499999999,
+      "end": 50.14587499999999,
+      "text": "when thy golden chariot appeared in the distance",
+      "beat": 16
+    },
+    {
+      "start": 50.22087499999999,
+      "end": 52.27087499999999,
+      "text": "like a gorgeous dream",
+      "beat": 17
+    },
+    {
+      "start": 52.39587499999999,
+      "end": 55.71187499999999,
+      "text": "and I wondered who was this king of all kings!",
+      "beat": 18
+    },
+    {
+      "start": 58.085874999999994,
+      "end": 62.51087499999999,
+      "text": "The speaker has been going from house to house, asking for help.",
+      "beat": 20
+    },
+    {
+      "start": 62.585874999999994,
+      "end": 64.96087499999999,
+      "text": "‘A-begging’ simply means begging.",
+      "beat": 21
+    },
+    {
+      "start": 65.085875,
+      "end": 68.98587500000001,
+      "text": "Suddenly, he sees a magnificent golden chariot.",
+      "beat": 22
+    },
+    {
+      "start": 69.085875,
+      "end": 71.89387500000001,
+      "text": "A chariot is a vehicle pulled by horses.",
+      "beat": 23
+    },
+    {
+      "start": 72.5965,
+      "end": 75.2715,
+      "text": "‘Gorgeous’ means very beautiful.",
+      "beat": 24
+    },
+    {
+      "start": 75.3465,
+      "end": 80.49650000000001,
+      "text": "The chariot seems so wonderful that he compares it to a beautiful dream.",
+      "beat": 25
+    },
+    {
+      "start": 80.6215,
+      "end": 86.1930036231884,
+      "text": "Notice the word ‘like’: it helps us spot a simile, a comparison between two different",
+      "beat": 26
+    },
+    {
+      "start": 86.1930036231884,
+      "end": 86.65183333333333,
+      "text": "things.",
+      "beat": 26
+    },
+    {
+      "start": 87.34583333333333,
+      "end": 91.09583333333333,
+      "text": "The speaker wonders who this ‘king of all kings’ could be.",
+      "beat": 27
+    },
+    {
+      "start": 91.17083333333332,
+      "end": 95.69583333333333,
+      "text": "That phrase makes the visitor seem greater than an ordinary king.",
+      "beat": 28
+    },
+    {
+      "start": 95.77083333333333,
+      "end": 98.06049999999999,
+      "text": "We will return to its deeper meaning later.",
+      "beat": 29
+    },
+    {
+      "start": 99.81179166666665,
+      "end": 101.81179166666665,
+      "text": "My hopes rose high",
+      "beat": 31
+    },
+    {
+      "start": 101.91179166666666,
+      "end": 105.13679166666665,
+      "text": "and me thought my evil days were at an end,",
+      "beat": 32
+    },
+    {
+      "start": 105.21179166666666,
+      "end": 108.98679166666666,
+      "text": "and I stood waiting for alms to be given unasked",
+      "beat": 33
+    },
+    {
+      "start": 109.11179166666666,
+      "end": 112.56712499999999,
+      "text": "and for wealth scattered on all sides in the dust.",
+      "beat": 34
+    },
+    {
+      "start": 114.96979166666667,
+      "end": 119.79479166666667,
+      "text": "Seeing the king, the speaker hopes his difficult life is about to change.",
+      "beat": 36
+    },
+    {
+      "start": 119.84479166666667,
+      "end": 121.96979166666667,
+      "text": "‘Me thought’ means ‘it seemed to me’.",
+      "beat": 37
+    },
+    {
+      "start": 122.04479166666665,
+      "end": 126.14479166666665,
+      "text": "His ‘evil days’ are his days of suffering and hardship.",
+      "beat": 38
+    },
+    {
+      "start": 126.21979166666667,
+      "end": 129.517125,
+      "text": "The phrase does not mean that he is an evil person.",
+      "beat": 39
+    },
+    {
+      "start": 130.27741666666665,
+      "end": 135.37741666666665,
+      "text": "‘Alms’ are gifts, such as food or money, given to people in need.",
+      "beat": 40
+    },
+    {
+      "start": 135.50241666666665,
+      "end": 138.4850833333333,
+      "text": "‘Unasked’ means without his even having to ask.",
+      "beat": 41
+    },
+    {
+      "start": 139.22670833333333,
+      "end": 143.02670833333335,
+      "text": "He imagines so much wealth that it will be scattered everywhere.",
+      "beat": 42
+    },
+    {
+      "start": 143.12670833333334,
+      "end": 146.47670833333333,
+      "text": "This is what he hopes for; it has not happened.",
+      "beat": 43
+    },
+    {
+      "start": 146.57670833333333,
+      "end": 149.788375,
+      "text": "At this point, he is thinking about what he will receive.",
+      "beat": 44
+    },
+    {
+      "start": 151.58733333333333,
+      "end": 154.13733333333334,
+      "text": "The chariot stopped where I stood.",
+      "beat": 46
+    },
+    {
+      "start": 154.21233333333333,
+      "end": 155.88733333333334,
+      "text": "Thy glance fell on me",
+      "beat": 47
+    },
+    {
+      "start": 155.9873333333333,
+      "end": 158.91233333333332,
+      "text": "and thou camest down with a smile.",
+      "beat": 48
+    },
+    {
+      "start": 159.01233333333332,
+      "end": 162.08499999999998,
+      "text": "I felt that the luck of my life had come at last.",
+      "beat": 49
+    },
+    {
+      "start": 164.429,
+      "end": 168.129,
+      "text": "The chariot stops exactly where the speaker is standing.",
+      "beat": 51
+    },
+    {
+      "start": 168.204,
+      "end": 171.38500000000002,
+      "text": "The king looks at him, comes down, and smiles.",
+      "beat": 52
+    },
+    {
+      "start": 172.03900000000002,
+      "end": 174.514,
+      "text": "‘Thy glance fell on me’ means ‘you looked at me’.",
+      "beat": 53
+    },
+    {
+      "start": 174.639,
+      "end": 176.43900000000002,
+      "text": "Nothing literally falls!",
+      "beat": 54
+    },
+    {
+      "start": 176.514,
+      "end": 178.82833333333335,
+      "text": "‘Thou camest down’ means ‘you came down’.",
+      "beat": 55
+    },
+    {
+      "start": 179.51233333333334,
+      "end": 184.48733333333334,
+      "text": "The king's friendly attention makes the speaker even more hopeful.",
+      "beat": 56
+    },
+    {
+      "start": 184.56233333333333,
+      "end": 189.41233333333332,
+      "text": "He feels that his great moment of good fortune has finally arrived.",
+      "beat": 57
+    },
+    {
+      "start": 189.53733333333335,
+      "end": 194.79233333333335,
+      "text": "So far, everything seems to support his expectation of receiving a gift.",
+      "beat": 58
+    },
+    {
+      "start": 196.57,
+      "end": 200.245,
+      "text": "Then of a sudden thou didst hold out thy right hand",
+      "beat": 60
+    },
+    {
+      "start": 200.32,
+      "end": 201.345,
+      "text": "and say",
+      "beat": 61
+    },
+    {
+      "start": 201.47,
+      "end": 203.60633333333334,
+      "text": "“What hast thou to give to me?”",
+      "beat": 62
+    },
+    {
+      "start": 206.8803333333333,
+      "end": 209.4253333333333,
+      "text": "Suddenly, the king holds out his hand.",
+      "beat": 64
+    },
+    {
+      "start": 209.52533333333332,
+      "end": 213.32533333333333,
+      "text": "‘Thou didst’ means ‘you did’, and ‘hast’ means ‘have’.",
+      "beat": 65
+    },
+    {
+      "start": 213.40033333333332,
+      "end": 215.90099999999998,
+      "text": "His question means, ‘What do you have to give me?’",
+      "beat": 66
+    },
+    {
+      "start": 216.59995833333332,
+      "end": 219.37495833333332,
+      "text": "Stop and think: why is this so surprising?",
+      "beat": 67
+    },
+    {
+      "start": 225.02895833333332,
+      "end": 228.8539583333333,
+      "text": "The speaker expected the rich king to give something to him.",
+      "beat": 69
+    },
+    {
+      "start": 228.92895833333333,
+      "end": 231.97895833333334,
+      "text": "Instead, the king asks him to give.",
+      "beat": 70
+    },
+    {
+      "start": 232.05395833333333,
+      "end": 234.77895833333332,
+      "text": "Their expected roles have been reversed.",
+      "beat": 71
+    },
+    {
+      "start": 234.8539583333333,
+      "end": 238.36762499999998,
+      "text": "This surprising contrast is an example of irony.",
+      "beat": 72
+    },
+    {
+      "start": 240.246625,
+      "end": 242.721625,
+      "text": "Ah, what a kingly jest was it",
+      "beat": 74
+    },
+    {
+      "start": 242.79662499999998,
+      "end": 246.02162499999997,
+      "text": "to open thy palm to a beggar to beg!",
+      "beat": 75
+    },
+    {
+      "start": 246.121625,
+      "end": 249.17229166666667,
+      "text": "I was confused and stood undecided,",
+      "beat": 76
+    },
+    {
+      "start": 250.42129166666666,
+      "end": 252.37129166666665,
+      "text": "A ‘jest’ is a joke.",
+      "beat": 78
+    },
+    {
+      "start": 252.44629166666664,
+      "end": 255.99629166666665,
+      "text": "‘Kingly’ means royal, or belonging to a king.",
+      "beat": 79
+    },
+    {
+      "start": 256.07129166666664,
+      "end": 262.261625,
+      "text": "The speaker thinks this must be a strange royal joke: a king asking a beggar for something!",
+      "beat": 80
+    },
+    {
+      "start": 262.9592916666667,
+      "end": 265.4342916666667,
+      "text": "That is the speaker's reaction.",
+      "beat": 81
+    },
+    {
+      "start": 265.48429166666665,
+      "end": 268.40095833333334,
+      "text": "The poem does not say that the king is laughing at him.",
+      "beat": 82
+    },
+    {
+      "start": 269.11125,
+      "end": 272.31125,
+      "text": "‘Undecided’ means he cannot make up his mind.",
+      "beat": 83
+    },
+    {
+      "start": 272.38624999999996,
+      "end": 275.21124999999995,
+      "text": "He pauses, unsure what to do.",
+      "beat": 84
+    },
+    {
+      "start": 275.28625,
+      "end": 278.06125,
+      "text": "His hope has changed into confusion.",
+      "beat": 85
+    },
+    {
+      "start": 278.13624999999996,
+      "end": 281.42224999999996,
+      "text": "The sentence continues with the choice he finally makes.",
+      "beat": 86
+    },
+    {
+      "start": 283.31625,
+      "end": 285.01625,
+      "text": "and then from my wallet",
+      "beat": 88
+    },
+    {
+      "start": 285.14125,
+      "end": 288.84125,
+      "text": "I slowly took out the least little grain of corn",
+      "beat": 89
+    },
+    {
+      "start": 288.99125,
+      "end": 290.28291666666667,
+      "text": "and gave it to thee.",
+      "beat": 90
+    },
+    {
+      "start": 292.63058333333333,
+      "end": 296.2055833333333,
+      "text": "Here, ‘wallet’ means a small bag or pouch.",
+      "beat": 92
+    },
+    {
+      "start": 296.30558333333335,
+      "end": 298.23058333333336,
+      "text": "‘Corn’ refers to grain.",
+      "beat": 93
+    },
+    {
+      "start": 298.30558333333335,
+      "end": 301.4429166666667,
+      "text": "He takes out the smallest little grain and gives it to the king.",
+      "beat": 94
+    },
+    {
+      "start": 302.106875,
+      "end": 304.906875,
+      "text": "Which words tell us that he is reluctant to give?",
+      "beat": 95
+    },
+    {
+      "start": 310.5795,
+      "end": 313.1545,
+      "text": "‘Slowly’ suggests hesitation.",
+      "beat": 97
+    },
+    {
+      "start": 313.2545,
+      "end": 316.5295,
+      "text": "‘Least little’ stresses how tiny his gift is.",
+      "beat": 98
+    },
+    {
+      "start": 316.60450000000003,
+      "end": 320.0281666666667,
+      "text": "He does give something, but he holds back almost everything.",
+      "beat": 99
+    },
+    {
+      "start": 320.7121666666667,
+      "end": 325.5871666666667,
+      "text": "We can understand that someone with very little may worry about losing it.",
+      "beat": 100
+    },
+    {
+      "start": 325.6621666666667,
+      "end": 331.6132741935484,
+      "text": "The poem asks us to notice this particular choice: he hopes to receive generously, but",
+      "beat": 101
+    },
+    {
+      "start": 331.6132741935484,
+      "end": 334.24283333333335,
+      "text": "finds it difficult to give generously.",
+      "beat": 101
+    },
+    {
+      "start": 335.9755,
+      "end": 338.3755,
+      "text": "But how great my surprise",
+      "beat": 103
+    },
+    {
+      "start": 338.45050000000003,
+      "end": 342.20050000000003,
+      "text": "when at the day’s end I emptied my bag on the floor",
+      "beat": 104
+    },
+    {
+      "start": 342.30050000000006,
+      "end": 344.80050000000006,
+      "text": "to find a least little grain of gold",
+      "beat": 105
+    },
+    {
+      "start": 344.9005,
+      "end": 346.13550000000004,
+      "text": "among the poor heap.",
+      "beat": 106
+    },
+    {
+      "start": 349.55079166666667,
+      "end": 355.8634042792793,
+      "text": "At the end of the day, the speaker empties his bag and discovers a tiny grain of gold among",
+      "beat": 108
+    },
+    {
+      "start": 355.8634042792793,
+      "end": 357.25079166666666,
+      "text": "his few possessions.",
+      "beat": 108
+    },
+    {
+      "start": 357.3257916666667,
+      "end": 359.7747916666667,
+      "text": "That small collection is the ‘poor heap’.",
+      "beat": 109
+    },
+    {
+      "start": 360.47375,
+      "end": 362.94875,
+      "text": "Remember ‘the least little grain of corn’?",
+      "beat": 110
+    },
+    {
+      "start": 363.04875000000004,
+      "end": 365.94875,
+      "text": "Now we hear ‘a least little grain of gold’.",
+      "beat": 111
+    },
+    {
+      "start": 366.02375,
+      "end": 370.5660833333333,
+      "text": "The repeated words connect his tiny gift with the precious thing he finds.",
+      "beat": 112
+    },
+    {
+      "start": 371.25008333333335,
+      "end": 376.92508333333336,
+      "text": "The poem suggests that what he gave has returned to him in a more precious form.",
+      "beat": 113
+    },
+    {
+      "start": 377.00008333333335,
+      "end": 382.02875,
+      "text": "We are told about his discovery; we are not shown the moment of any transformation.",
+      "beat": 114
+    },
+    {
+      "start": 383.8727083333334,
+      "end": 385.27270833333336,
+      "text": "I bitterly wept",
+      "beat": 116
+    },
+    {
+      "start": 385.39770833333336,
+      "end": 387.34770833333334,
+      "text": "and wished that I had the heart",
+      "beat": 117
+    },
+    {
+      "start": 387.42270833333333,
+      "end": 388.727375,
+      "text": "to give thee my all.",
+      "beat": 118
+    },
+    {
+      "start": 393.14500000000004,
+      "end": 396.82000000000005,
+      "text": "‘Bitterly wept’ means cried with deep sorrow.",
+      "beat": 120
+    },
+    {
+      "start": 396.89500000000004,
+      "end": 400.97,
+      "text": "‘Had the heart’ means had the willingness or generosity.",
+      "beat": 121
+    },
+    {
+      "start": 401.045,
+      "end": 403.2726666666667,
+      "text": "‘My all’ means everything I had.",
+      "beat": 122
+    },
+    {
+      "start": 403.986625,
+      "end": 407.80329166666667,
+      "text": "Why does he feel sad after finding something valuable?",
+      "beat": 123
+    },
+    {
+      "start": 413.48229166666664,
+      "end": 416.28229166666665,
+      "text": "He realises that he held back.",
+      "beat": 125
+    },
+    {
+      "start": 416.40729166666665,
+      "end": 423.1923383956386,
+      "text": "On the story's surface, he may wish he had given more because even his tiny gift brought",
+      "beat": 126
+    },
+    {
+      "start": 423.1923383956386,
+      "end": 424.65729166666665,
+      "text": "something precious.",
+      "beat": 126
+    },
+    {
+      "start": 424.78229166666665,
+      "end": 429.462625,
+      "text": "More deeply, he regrets missing the chance to give wholeheartedly.",
+      "beat": 127
+    },
+    {
+      "start": 430.18525,
+      "end": 434.01025,
+      "text": "Notice what he wishes for: the heart to give.",
+      "beat": 128
+    },
+    {
+      "start": 434.08525,
+      "end": 439.56025,
+      "text": "His regret concerns his attitude as well as the size of his gift.",
+      "beat": 129
+    },
+    {
+      "start": 439.63525,
+      "end": 443.87191666666666,
+      "text": "The ending leaves us thinking about the opportunity he has missed.",
+      "beat": 130
+    },
+    {
+      "start": 445.635875,
+      "end": 449.635875,
+      "text": "The textbook invites us to read this poem as a parable.",
+      "beat": 132
+    },
+    {
+      "start": 449.73587499999996,
+      "end": 454.77187499999997,
+      "text": "A parable is a simple story that teaches a moral or spiritual lesson.",
+      "beat": 133
+    },
+    {
+      "start": 455.445875,
+      "end": 460.370875,
+      "text": "In this spiritual reading, the ‘king of all kings’ represents God.",
+      "beat": 134
+    },
+    {
+      "start": 460.445875,
+      "end": 466.595875,
+      "text": "The speaker can represent a human being who asks for blessings but struggles to give.",
+      "beat": 135
+    },
+    {
+      "start": 466.67087499999997,
+      "end": 471.955875,
+      "text": "The king's request can be understood as an invitation to generosity and trust.",
+      "beat": 136
+    },
+    {
+      "start": 472.61354166666666,
+      "end": 477.86354166666666,
+      "text": "A symbol is something in a story that also suggests a bigger idea.",
+      "beat": 137
+    },
+    {
+      "start": 477.93854166666665,
+      "end": 482.06354166666665,
+      "text": "The small grain can represent what we are willing to offer.",
+      "beat": 138
+    },
+    {
+      "start": 482.13854166666664,
+      "end": 487.80454166666664,
+      "text": "The gold can represent the precious value of giving, including spiritual richness.",
+      "beat": 139
+    },
+    {
+      "start": 488.53349999999995,
+      "end": 492.85849999999994,
+      "text": "Does this mean that giving a pencil will make a gold pencil appear?",
+      "beat": 140
+    },
+    {
+      "start": 492.98349999999994,
+      "end": 493.85849999999994,
+      "text": "No.",
+      "beat": 141
+    },
+    {
+      "start": 493.95849999999996,
+      "end": 499.38349999999997,
+      "text": "This is a story with a deeper meaning, not a promise of material rewards.",
+      "beat": 142
+    },
+    {
+      "start": 499.48349999999994,
+      "end": 504.4071666666666,
+      "text": "Its lesson is to give sincerely, without treating kindness as a bargain.",
+      "beat": 143
+    },
+    {
+      "start": 505.11616666666663,
+      "end": 511.6428333333333,
+      "text": "For us, generosity can include sharing our time, helping someone understand a lesson, or",
+      "beat": 144
+    },
+    {
+      "start": 511.6428333333333,
+      "end": 514.0161666666665,
+      "text": "offering something we can spare.",
+      "beat": 144
+    },
+    {
+      "start": 514.0911666666666,
+      "end": 517.9818333333333,
+      "text": "The poem asks us to think about the willingness behind the gift.",
+      "beat": 145
+    },
+    {
+      "start": 519.7657916666666,
+      "end": 523.1984583333333,
+      "text": "Let's notice three choices that make the poem effective.",
+      "beat": 147
+    },
+    {
+      "start": 523.9024583333332,
+      "end": 530.5962083333333,
+      "text": "First, the simile ‘like a gorgeous dream’ compares the golden chariot to a wonderful dream,",
+      "beat": 148
+    },
+    {
+      "start": 530.5962083333333,
+      "end": 531.5524583333332,
+      "text": "using ‘like’.",
+      "beat": 148
+    },
+    {
+      "start": 531.6524583333332,
+      "end": 533.9697916666665,
+      "text": "It helps us imagine the speaker's wonder.",
+      "beat": 149
+    },
+    {
+      "start": 534.5987499999999,
+      "end": 537.9487499999999,
+      "text": "Second, the king asks the beggar for a gift.",
+      "beat": 150
+    },
+    {
+      "start": 538.0487499999999,
+      "end": 543.13375,
+      "text": "This reversal of what we expect creates irony and makes us stop and think.",
+      "beat": 151
+    },
+    {
+      "start": 543.8177083333331,
+      "end": 550.0677083333331,
+      "text": "Third, the words ‘least little grain’ connect the small gift with the small piece of gold.",
+      "beat": 152
+    },
+    {
+      "start": 550.1427083333332,
+      "end": 553.6290416666665,
+      "text": "Their repetition helps us understand the speaker's regret.",
+      "beat": 153
+    },
+    {
+      "start": 554.2629999999998,
+      "end": 557.8129999999998,
+      "text": "The title brings us back to that tiny piece of gold.",
+      "beat": 154
+    },
+    {
+      "start": 557.8879999999998,
+      "end": 562.3109999999998,
+      "text": "It is small in size, but it leads to a big discovery about giving.",
+      "beat": 155
+    },
+    {
+      "start": 564.1099583333331,
+      "end": 566.0599583333332,
+      "text": "Let's check our understanding.",
+      "beat": 157
+    },
+    {
+      "start": 566.1849583333332,
+      "end": 570.2342916666665,
+      "text": "Say your answer aloud, or pause the video if you need more time.",
+      "beat": 158
+    },
+    {
+      "start": 570.9382916666664,
+      "end": 574.0296249999997,
+      "text": "One: where did the chariot stop, and who came down?",
+      "beat": 159
+    },
+    {
+      "start": 579.6422499999998,
+      "end": 583.9569166666664,
+      "text": "It stopped where the speaker was standing, and the king came down with a smile.",
+      "beat": 161
+    },
+    {
+      "start": 584.6245416666665,
+      "end": 587.2245416666665,
+      "text": "Two: explain ‘kingly jest’.",
+      "beat": 162
+    },
+    {
+      "start": 587.3245416666665,
+      "end": 589.8528749999998,
+      "text": "Why did the speaker think the request was a joke?",
+      "beat": 163
+    },
+    {
+      "start": 595.5618749999999,
+      "end": 597.7618749999999,
+      "text": "It means a royal joke.",
+      "beat": 165
+    },
+    {
+      "start": 597.8368749999998,
+      "end": 603.2833479344728,
+      "text": "He was confused because he expected the wealthy king to give him something, but the king",
+      "beat": 166
+    },
+    {
+      "start": 603.2833479344728,
+      "end": 605.0782083333331,
+      "text": "asked him for a gift instead.",
+      "beat": 166
+    },
+    {
+      "start": 605.7822083333332,
+      "end": 610.0255416666665,
+      "text": "Three: why was the speaker both surprised and sorrowful at the end?",
+      "beat": 167
+    },
+    {
+      "start": 615.6495416666666,
+      "end": 619.2995416666665,
+      "text": "He was surprised to find a tiny grain of gold.",
+      "beat": 169
+    },
+    {
+      "start": 619.3745416666666,
+      "end": 624.2820482026143,
+      "text": "He was sorrowful because he had given so little and wished he had been generous enough to",
+      "beat": 170
+    },
+    {
+      "start": 624.2820482026143,
+      "end": 624.9988749999999,
+      "text": "give his all.",
+      "beat": 170
+    },
+    {
+      "start": 625.6264999999999,
+      "end": 631.5264999999998,
+      "text": "When you write an answer, explain the idea and support it with a phrase from the poem.",
+      "beat": 171
+    },
+    {
+      "start": 631.6014999999999,
+      "end": 636.5574791666666,
+      "text": "For the final question, ‘the least little grain’ and ‘had the heart to give’ are useful",
+      "beat": 172
+    },
+    {
+      "start": 636.5574791666666,
+      "end": 637.0701666666665,
+      "text": "evidence.",
+      "beat": 172
+    },
+    {
+      "start": 638.9041666666665,
+      "end": 642.0541666666664,
+      "text": "Follow the speaker's feelings one last time.",
+      "beat": 174
+    },
+    {
+      "start": 642.1291666666665,
+      "end": 643.7791666666665,
+      "text": "He hopes to receive.",
+      "beat": 175
+    },
+    {
+      "start": 643.8541666666665,
+      "end": 646.8541666666665,
+      "text": "He is confused by the king's request.",
+      "beat": 176
+    },
+    {
+      "start": 646.9291666666666,
+      "end": 652.5754999999999,
+      "text": "He gives reluctantly, discovers the gold with surprise, and finally feels regret.",
+      "beat": 177
+    },
+    {
+      "start": 653.1881249999998,
+      "end": 659.1233226401177,
+      "text": "Tagore uses this small encounter to ask a large question: when we have a chance to give,",
+      "beat": 178
+    },
+    {
+      "start": 659.1233226401177,
+      "end": 660.809458333333,
+      "text": "how willing is our heart?",
+      "beat": 178
+    },
+    {
+      "start": 661.4684166666665,
+      "end": 666.4434166666665,
+      "text": "Think of one kind thing you could do today without expecting a reward.",
+      "beat": 179
+    },
+    {
+      "start": 666.5434166666665,
+      "end": 670.8780833333332,
+      "text": "That is a useful way to carry the poem's message into your own life.",
+      "beat": 180
+    }
+  ]
+}

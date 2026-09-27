@@ -1,0 +1,18 @@
+{
+  "selected_voice": "A / af_heart",
+  "script_coverage": "complete",
+  "poem_passages": 8,
+  "duration_seconds": 675.4180833333331,
+  "caption_cues": 164,
+  "thinking_pauses": 6,
+  "source_and_timing_checks": "passed",
+  "alignment": "model phoneme durations",
+  "time_stretching": false,
+  "user_selected_voice": "A — American English voice",
+  "video_duration_seconds": 675.458333,
+  "audio_duration_seconds": 675.418083,
+  "resolution": "1920x1080",
+  "audio_peak_dbfs": -1.5,
+  "full_file_decode": "passed without errors",
+  "video_size_bytes": 18046327
+}

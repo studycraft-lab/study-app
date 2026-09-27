@@ -1,0 +1,3666 @@
+{
+  "scenes": [
+    {
+      "id": 1,
+      "title": "Welcome to the poem",
+      "poem": "",
+      "start": 0,
+      "end": 50.00469387755101
+    },
+    {
+      "id": 2,
+      "title": "A wonderful arrival",
+      "poem": "I had gone a-begging from door to door in the village path when thy golden chariot appeared in the distance like a gorgeous dream and I wondered who was this king of all kings!",
+      "start": 50.00469387755101,
+      "end": 114.77893424036279
+    },
+    {
+      "id": 3,
+      "title": "Great expectations",
+      "poem": "My hopes rose high and me thought my evil days were at an end, and I stood waiting for alms to be given unasked and for wealth scattered on all sides in the dust.",
+      "start": 114.77893424036279,
+      "end": 176.21070294784576
+    },
+    {
+      "id": 4,
+      "title": "The king stops",
+      "poem": "The chariot stopped where I stood. Thy glance fell on me and thou camest down with a smile. I felt that the luck of my life had come at last.",
+      "start": 176.21070294784576,
+      "end": 229.28351473922902
+    },
+    {
+      "id": 5,
+      "title": "An unexpected question",
+      "poem": "Then of a sudden thou didst hold out thy right hand and say “What hast thou to give to me?”",
+      "start": 229.28351473922902,
+      "end": 279.49428571428564
+    },
+    {
+      "id": 6,
+      "title": "Confusion and hesitation",
+      "poem": "Ah, what a kingly jest was it to open thy palm to a beggar to beg! I was confused and stood undecided,",
+      "start": 279.49428571428564,
+      "end": 327.46092970521534
+    },
+    {
+      "id": 7,
+      "title": "The smallest gift",
+      "poem": "and then from my wallet I slowly took out the least little grain of corn and gave it to thee.",
+      "start": 327.46092970521534,
+      "end": 388.7999092970521
+    },
+    {
+      "id": 8,
+      "title": "A discovery at day’s end",
+      "poem": "But how great my surprise when at the day’s end I emptied my bag on the floor to find a least little grain of gold among the poor heap.",
+      "start": 388.7999092970521,
+      "end": 445.1248752834466
+    },
+    {
+      "id": 9,
+      "title": "Regret",
+      "poem": "I bitterly wept and wished that I had the heart to give thee my all.",
+      "start": 445.1248752834466,
+      "end": 509.6742403628118
+    },
+    {
+      "id": 10,
+      "title": "A deeper reading",
+      "poem": "",
+      "start": 509.6742403628118,
+      "end": 594.8084353741499
+    },
+    {
+      "id": 11,
+      "title": "The poet’s choices",
+      "poem": "",
+      "start": 594.8084353741499,
+      "end": 647.2138321995466
+    },
+    {
+      "id": 12,
+      "title": "Check your understanding",
+      "poem": "",
+      "start": 647.2138321995466,
+      "end": 736.3776190476194
+    },
+    {
+      "id": 13,
+      "title": "Carry the message with you",
+      "poem": "",
+      "start": 736.3776190476194,
+      "end": 779.3360997732431
+    }
+  ],
+  "beats": [
+    {
+      "scene": 1,
+      "mode": "transition",
+      "seconds": 1.1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 0,
+      "start": 0,
+      "end": 1.1
+    },
+    {
+      "scene": 1,
+      "mode": "explain",
+      "text": "Imagine you are hoping someone will help you.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 1,
+      "audio": "/private/tmp/grain-of-gold-production/audio/001.trim.wav",
+      "raw_duration": 3.0695691609977325,
+      "start": 1.1,
+      "speech_end": 4.828140589569161,
+      "end": 4.988140589569161
+    },
+    {
+      "scene": 1,
+      "mode": "explain",
+      "text": "But when that person arrives, they ask you for something instead.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 2,
+      "audio": "/private/tmp/grain-of-gold-production/audio/002.trim.wav",
+      "raw_duration": 4.566258503401361,
+      "start": 4.988140589569161,
+      "speech_end": 10.537165532879818,
+      "end": 10.697165532879819
+    },
+    {
+      "scene": 1,
+      "mode": "explain",
+      "text": "How would you feel?",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 3,
+      "audio": "/private/tmp/grain-of-gold-production/audio/003.trim.wav",
+      "raw_duration": 1.205532879818594,
+      "start": 10.697165532879819,
+      "speech_end": 12.145736961451247,
+      "end": 12.525736961451248
+    },
+    {
+      "scene": 1,
+      "mode": "explain",
+      "text": "Today, we are reading ‘A Little Grain of Gold’ by Rabindranath Tagore.",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 4,
+      "audio": "/private/tmp/grain-of-gold-production/audio/004.trim.wav",
+      "raw_duration": 4.6190702947845805,
+      "start": 12.525736961451248,
+      "speech_end": 18.143492063492065,
+      "end": 18.303492063492065
+    },
+    {
+      "scene": 1,
+      "mode": "explain",
+      "text": "We will read it a little at a time, picture what happens, and explore what the story means.",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 5,
+      "audio": "/private/tmp/grain-of-gold-production/audio/005.trim.wav",
+      "raw_duration": 6.133356009070295,
+      "start": 18.303492063492065,
+      "speech_end": 25.774761904761906,
+      "end": 26.154761904761905
+    },
+    {
+      "scene": 1,
+      "mode": "explain",
+      "text": "The speaker is the person telling the story.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 6,
+      "audio": "/private/tmp/grain-of-gold-production/audio/006.trim.wav",
+      "raw_duration": 2.6206349206349207,
+      "start": 26.154761904761905,
+      "speech_end": 29.33482993197279,
+      "end": 29.494829931972788
+    },
+    {
+      "scene": 1,
+      "mode": "explain",
+      "text": "Here, he is a man who survives by asking others for help.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 7,
+      "audio": "/private/tmp/grain-of-gold-production/audio/007.trim.wav",
+      "raw_duration": 4.455759637188208,
+      "start": 29.494829931972788,
+      "speech_end": 34.90920634920635,
+      "end": 35.06920634920635
+    },
+    {
+      "scene": 1,
+      "mode": "explain",
+      "text": "When he says ‘I’, we hear this character's voice.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 8,
+      "audio": "/private/tmp/grain-of-gold-production/audio/008.trim.wav",
+      "raw_duration": 3.3246485260770977,
+      "start": 35.06920634920635,
+      "speech_end": 39.11755102040816,
+      "end": 39.49755102040816
+    },
+    {
+      "scene": 1,
+      "mode": "explain",
+      "text": "You will notice some old-fashioned words.",
+      "paragraph": 3,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 9,
+      "audio": "/private/tmp/grain-of-gold-production/audio/009.trim.wav",
+      "raw_duration": 2.704126984126984,
+      "start": 39.49755102040816,
+      "speech_end": 42.78056689342403,
+      "end": 42.940566893424034
+    },
+    {
+      "scene": 1,
+      "mode": "explain",
+      "text": "‘Thou’ and ‘thee’ mean ‘you’.",
+      "paragraph": 3,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 10,
+      "audio": "/private/tmp/grain-of-gold-production/audio/010.trim.wav",
+      "raw_duration": 1.463922902494331,
+      "start": 42.940566893424034,
+      "speech_end": 44.71190476190476,
+      "end": 44.87190476190476
+    },
+    {
+      "scene": 1,
+      "mode": "explain",
+      "text": "‘Thy’ means ‘your’.",
+      "paragraph": 3,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 11,
+      "audio": "/private/tmp/grain-of-gold-production/audio/011.trim.wav",
+      "raw_duration": 1.1178684807256236,
+      "start": 44.87190476190476,
+      "speech_end": 46.217573696145124,
+      "end": 46.37757369614512
+    },
+    {
+      "scene": 1,
+      "mode": "explain",
+      "text": "Keep those meanings in mind as we begin.",
+      "paragraph": 3,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 12,
+      "audio": "/private/tmp/grain-of-gold-production/audio/012.trim.wav",
+      "raw_duration": 2.6767120181405897,
+      "start": 46.37757369614512,
+      "speech_end": 49.62469387755102,
+      "end": 50.00469387755101
+    },
+    {
+      "scene": 2,
+      "mode": "transition",
+      "seconds": 1.1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 13,
+      "start": 50.00469387755101,
+      "end": 51.104693877551014
+    },
+    {
+      "scene": 2,
+      "mode": "read",
+      "text": "I had gone a-begging from door to door",
+      "phrase": 0,
+      "span": [
+        0,
+        38
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 14,
+      "audio": "/private/tmp/grain-of-gold-production/audio/014.trim.wav",
+      "raw_duration": 2.6266666666666665,
+      "start": 51.104693877551014,
+      "speech_end": 54.297188208616774,
+      "end": 54.45718820861677
+    },
+    {
+      "scene": 2,
+      "mode": "read",
+      "text": "in the village path",
+      "phrase": 1,
+      "span": [
+        39,
+        58
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 15,
+      "audio": "/private/tmp/grain-of-gold-production/audio/015.trim.wav",
+      "raw_duration": 1.3399546485260772,
+      "start": 54.45718820861677,
+      "speech_end": 56.08108843537414,
+      "end": 56.24108843537414
+    },
+    {
+      "scene": 2,
+      "mode": "read",
+      "text": "when thy golden chariot appeared in the distance",
+      "phrase": 2,
+      "span": [
+        59,
+        107
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 16,
+      "audio": "/private/tmp/grain-of-gold-production/audio/016.trim.wav",
+      "raw_duration": 3.3137414965986394,
+      "start": 56.24108843537414,
+      "speech_end": 60.27088435374149,
+      "end": 60.43088435374148
+    },
+    {
+      "scene": 2,
+      "mode": "read",
+      "text": "like a gorgeous dream",
+      "phrase": 3,
+      "span": [
+        108,
+        129
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 17,
+      "audio": "/private/tmp/grain-of-gold-production/audio/017.trim.wav",
+      "raw_duration": 1.689795918367347,
+      "start": 60.43088435374148,
+      "speech_end": 62.474852607709735,
+      "end": 62.63485260770974
+    },
+    {
+      "scene": 2,
+      "mode": "read",
+      "text": "and I wondered who was this king of all kings!",
+      "phrase": 4,
+      "span": [
+        130,
+        176
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 18,
+      "audio": "/private/tmp/grain-of-gold-production/audio/018.trim.wav",
+      "raw_duration": 3.2970748299319728,
+      "start": 62.63485260770974,
+      "speech_end": 66.64263038548752,
+      "end": 66.80263038548752
+    },
+    {
+      "scene": 2,
+      "mode": "hold",
+      "seconds": 2,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 19,
+      "start": 66.80263038548752,
+      "end": 68.80263038548752
+    },
+    {
+      "scene": 2,
+      "mode": "explain",
+      "text": "The speaker has been going from house to house, asking for help.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 20,
+      "audio": "/private/tmp/grain-of-gold-production/audio/020.trim.wav",
+      "raw_duration": 4.37124716553288,
+      "start": 68.80263038548752,
+      "speech_end": 74.11160997732425,
+      "end": 74.27160997732426
+    },
+    {
+      "scene": 2,
+      "mode": "explain",
+      "text": "‘A-begging’ simply means begging.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 21,
+      "audio": "/private/tmp/grain-of-gold-production/audio/021.trim.wav",
+      "raw_duration": 2.014512471655329,
+      "start": 74.27160997732426,
+      "speech_end": 76.7153514739229,
+      "end": 76.8753514739229
+    },
+    {
+      "scene": 2,
+      "mode": "explain",
+      "text": "Suddenly, he sees a magnificent golden chariot.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 22,
+      "audio": "/private/tmp/grain-of-gold-production/audio/022.trim.wav",
+      "raw_duration": 3.6166439909297052,
+      "start": 76.8753514739229,
+      "speech_end": 81.27394557823129,
+      "end": 81.43394557823129
+    },
+    {
+      "scene": 2,
+      "mode": "explain",
+      "text": "A chariot is a vehicle pulled by horses.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 23,
+      "audio": "/private/tmp/grain-of-gold-production/audio/023.trim.wav",
+      "raw_duration": 2.746122448979592,
+      "start": 81.43394557823129,
+      "speech_end": 84.76891156462585,
+      "end": 85.14891156462585
+    },
+    {
+      "scene": 2,
+      "mode": "explain",
+      "text": "‘Gorgeous’ means very beautiful.",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 24,
+      "audio": "/private/tmp/grain-of-gold-production/audio/024.trim.wav",
+      "raw_duration": 2.0621315192743763,
+      "start": 85.14891156462585,
+      "speech_end": 87.6422902494331,
+      "end": 87.8022902494331
+    },
+    {
+      "scene": 2,
+      "mode": "explain",
+      "text": "The chariot seems so wonderful that he compares it to a beautiful dream.",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 25,
+      "audio": "/private/tmp/grain-of-gold-production/audio/025.trim.wav",
+      "raw_duration": 4.815600907029478,
+      "start": 87.8022902494331,
+      "speech_end": 93.65866213151926,
+      "end": 93.81866213151926
+    },
+    {
+      "scene": 2,
+      "mode": "explain",
+      "text": "Notice the word ‘like’: it helps us spot a simile, a comparison between two different things.",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 26,
+      "audio": "/private/tmp/grain-of-gold-production/audio/026.trim.wav",
+      "raw_duration": 6.4081179138322,
+      "start": 93.81866213151926,
+      "speech_end": 101.6151700680272,
+      "end": 101.99517006802719
+    },
+    {
+      "scene": 2,
+      "mode": "explain",
+      "text": "The speaker wonders who this ‘king of all kings’ could be.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 27,
+      "audio": "/private/tmp/grain-of-gold-production/audio/027.trim.wav",
+      "raw_duration": 3.275011337868481,
+      "start": 101.99517006802719,
+      "speech_end": 105.96902494331064,
+      "end": 106.12902494331064
+    },
+    {
+      "scene": 2,
+      "mode": "explain",
+      "text": "That phrase makes the visitor seem greater than an ordinary king.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 28,
+      "audio": "/private/tmp/grain-of-gold-production/audio/028.trim.wav",
+      "raw_duration": 3.8846938775510202,
+      "start": 106.12902494331064,
+      "speech_end": 110.85217687074828,
+      "end": 111.01217687074828
+    },
+    {
+      "scene": 2,
+      "mode": "explain",
+      "text": "We will return to its deeper meaning later.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 29,
+      "audio": "/private/tmp/grain-of-gold-production/audio/029.trim.wav",
+      "raw_duration": 2.7854875283446714,
+      "start": 111.01217687074828,
+      "speech_end": 114.39893424036279,
+      "end": 114.77893424036279
+    },
+    {
+      "scene": 3,
+      "mode": "transition",
+      "seconds": 1.1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 30,
+      "start": 114.77893424036279,
+      "end": 115.87893424036278
+    },
+    {
+      "scene": 3,
+      "mode": "read",
+      "text": "My hopes rose high",
+      "phrase": 0,
+      "span": [
+        0,
+        18
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 31,
+      "audio": "/private/tmp/grain-of-gold-production/audio/031.trim.wav",
+      "raw_duration": 1.626031746031746,
+      "start": 115.87893424036278,
+      "speech_end": 117.84566893424034,
+      "end": 118.00566893424033
+    },
+    {
+      "scene": 3,
+      "mode": "read",
+      "text": "and me thought my evil days were at an end,",
+      "phrase": 1,
+      "span": [
+        19,
+        62
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 32,
+      "audio": "/private/tmp/grain-of-gold-production/audio/032.trim.wav",
+      "raw_duration": 3.2721541950113378,
+      "start": 118.00566893424033,
+      "speech_end": 121.98605442176867,
+      "end": 122.14605442176868
+    },
+    {
+      "scene": 3,
+      "mode": "read",
+      "text": "and I stood waiting for alms to be given unasked",
+      "phrase": 2,
+      "span": [
+        63,
+        111
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 33,
+      "audio": "/private/tmp/grain-of-gold-production/audio/033.trim.wav",
+      "raw_duration": 3.688253968253968,
+      "start": 122.14605442176868,
+      "speech_end": 126.63514739229022,
+      "end": 126.79514739229022
+    },
+    {
+      "scene": 3,
+      "mode": "read",
+      "text": "and for wealth scattered on all sides in the dust.",
+      "phrase": 3,
+      "span": [
+        112,
+        162
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 34,
+      "audio": "/private/tmp/grain-of-gold-production/audio/034.trim.wav",
+      "raw_duration": 3.6015192743764173,
+      "start": 126.79514739229022,
+      "speech_end": 131.1736961451247,
+      "end": 131.3336961451247
+    },
+    {
+      "scene": 3,
+      "mode": "hold",
+      "seconds": 2,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 35,
+      "start": 131.3336961451247,
+      "end": 133.3336961451247
+    },
+    {
+      "scene": 3,
+      "mode": "explain",
+      "text": "Seeing the king, the speaker hopes his difficult life is about to change.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 36,
+      "audio": "/private/tmp/grain-of-gold-production/audio/036.trim.wav",
+      "raw_duration": 4.965895691609977,
+      "start": 133.3336961451247,
+      "speech_end": 139.37646258503398,
+      "end": 139.53646258503397
+    },
+    {
+      "scene": 3,
+      "mode": "explain",
+      "text": "‘Me thought’ means ‘it seemed to me’.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 37,
+      "audio": "/private/tmp/grain-of-gold-production/audio/037.trim.wav",
+      "raw_duration": 2.11687074829932,
+      "start": 139.53646258503397,
+      "speech_end": 142.1023809523809,
+      "end": 142.2623809523809
+    },
+    {
+      "scene": 3,
+      "mode": "explain",
+      "text": "His ‘evil days’ are his days of suffering and hardship.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 38,
+      "audio": "/private/tmp/grain-of-gold-production/audio/038.trim.wav",
+      "raw_duration": 3.4363492063492065,
+      "start": 142.2623809523809,
+      "speech_end": 146.42986394557818,
+      "end": 146.5898639455782
+    },
+    {
+      "scene": 3,
+      "mode": "explain",
+      "text": "The phrase does not mean that he is an evil person.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 39,
+      "audio": "/private/tmp/grain-of-gold-production/audio/039.trim.wav",
+      "raw_duration": 3.4233333333333333,
+      "start": 146.5898639455782,
+      "speech_end": 150.75283446712015,
+      "end": 151.13283446712015
+    },
+    {
+      "scene": 3,
+      "mode": "explain",
+      "text": "‘Alms’ are gifts, such as food or money, given to people in need.",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 40,
+      "audio": "/private/tmp/grain-of-gold-production/audio/040.trim.wav",
+      "raw_duration": 4.842312925170068,
+      "start": 151.13283446712015,
+      "speech_end": 157.02614512471652,
+      "end": 157.18614512471652
+    },
+    {
+      "scene": 3,
+      "mode": "explain",
+      "text": "‘Unasked’ means without his even having to ask.",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 41,
+      "audio": "/private/tmp/grain-of-gold-production/audio/041.trim.wav",
+      "raw_duration": 3.2259637188208616,
+      "start": 157.18614512471652,
+      "speech_end": 161.10965986394555,
+      "end": 161.48965986394555
+    },
+    {
+      "scene": 3,
+      "mode": "explain",
+      "text": "He imagines so much wealth that it will be scattered everywhere.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 42,
+      "audio": "/private/tmp/grain-of-gold-production/audio/042.trim.wav",
+      "raw_duration": 4.300612244897959,
+      "start": 161.48965986394555,
+      "speech_end": 166.7243990929705,
+      "end": 166.88439909297048
+    },
+    {
+      "scene": 3,
+      "mode": "explain",
+      "text": "This is what he hopes for; it has not happened.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 43,
+      "audio": "/private/tmp/grain-of-gold-production/audio/043.trim.wav",
+      "raw_duration": 3.2216326530612247,
+      "start": 166.88439909297048,
+      "speech_end": 170.79707482993194,
+      "end": 170.95707482993194
+    },
+    {
+      "scene": 3,
+      "mode": "explain",
+      "text": "At this point, he is thinking about what he will receive.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 44,
+      "audio": "/private/tmp/grain-of-gold-production/audio/044.trim.wav",
+      "raw_duration": 4.011859410430839,
+      "start": 170.95707482993194,
+      "speech_end": 175.83070294784577,
+      "end": 176.21070294784576
+    },
+    {
+      "scene": 4,
+      "mode": "transition",
+      "seconds": 1.1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 45,
+      "start": 176.21070294784576,
+      "end": 177.31070294784575
+    },
+    {
+      "scene": 4,
+      "mode": "read",
+      "text": "The chariot stopped where I stood.",
+      "phrase": 0,
+      "span": [
+        0,
+        34
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 46,
+      "audio": "/private/tmp/grain-of-gold-production/audio/046.trim.wav",
+      "raw_duration": 2.3539002267573697,
+      "start": 177.31070294784575,
+      "speech_end": 180.16999999999996,
+      "end": 180.32999999999996
+    },
+    {
+      "scene": 4,
+      "mode": "read",
+      "text": "Thy glance fell on me",
+      "phrase": 1,
+      "span": [
+        35,
+        56
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 47,
+      "audio": "/private/tmp/grain-of-gold-production/audio/047.trim.wav",
+      "raw_duration": 1.7695238095238095,
+      "start": 180.32999999999996,
+      "speech_end": 182.46972789115642,
+      "end": 182.62972789115642
+    },
+    {
+      "scene": 4,
+      "mode": "read",
+      "text": "and thou camest down with a smile.",
+      "phrase": 2,
+      "span": [
+        57,
+        91
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 48,
+      "audio": "/private/tmp/grain-of-gold-production/audio/048.trim.wav",
+      "raw_duration": 2.5992063492063493,
+      "start": 182.62972789115642,
+      "speech_end": 185.78238095238092,
+      "end": 185.94238095238092
+    },
+    {
+      "scene": 4,
+      "mode": "read",
+      "text": "I felt that the luck of my life had come at last.",
+      "phrase": 3,
+      "span": [
+        92,
+        141
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 49,
+      "audio": "/private/tmp/grain-of-gold-production/audio/049.trim.wav",
+      "raw_duration": 3.840861678004535,
+      "start": 185.94238095238092,
+      "speech_end": 190.62129251700676,
+      "end": 190.78129251700676
+    },
+    {
+      "scene": 4,
+      "mode": "hold",
+      "seconds": 2,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 50,
+      "start": 190.78129251700676,
+      "end": 192.78129251700676
+    },
+    {
+      "scene": 4,
+      "mode": "explain",
+      "text": "The chariot stops exactly where the speaker is standing.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 51,
+      "audio": "/private/tmp/grain-of-gold-production/audio/051.trim.wav",
+      "raw_duration": 3.7292290249433107,
+      "start": 192.78129251700676,
+      "speech_end": 197.31088435374144,
+      "end": 197.47088435374147
+    },
+    {
+      "scene": 4,
+      "mode": "explain",
+      "text": "The king looks at him, comes down, and smiles.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 52,
+      "audio": "/private/tmp/grain-of-gold-production/audio/052.trim.wav",
+      "raw_duration": 3.706462585034014,
+      "start": 197.47088435374147,
+      "speech_end": 201.97358276643988,
+      "end": 202.35358276643987
+    },
+    {
+      "scene": 4,
+      "mode": "explain",
+      "text": "‘Thy glance fell on me’ means ‘you looked at me’.",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 53,
+      "audio": "/private/tmp/grain-of-gold-production/audio/053.trim.wav",
+      "raw_duration": 2.977891156462585,
+      "start": 202.35358276643987,
+      "speech_end": 205.96918367346936,
+      "end": 206.12918367346936
+    },
+    {
+      "scene": 4,
+      "mode": "explain",
+      "text": "Nothing literally falls!",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 54,
+      "audio": "/private/tmp/grain-of-gold-production/audio/054.trim.wav",
+      "raw_duration": 1.6707482993197278,
+      "start": 206.12918367346936,
+      "speech_end": 208.14995464852603,
+      "end": 208.30995464852606
+    },
+    {
+      "scene": 4,
+      "mode": "explain",
+      "text": "‘Thou camest down’ means ‘you came down’.",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 55,
+      "audio": "/private/tmp/grain-of-gold-production/audio/055.trim.wav",
+      "raw_duration": 2.6603401360544217,
+      "start": 208.30995464852606,
+      "speech_end": 211.53873015873015,
+      "end": 211.91873015873014
+    },
+    {
+      "scene": 4,
+      "mode": "explain",
+      "text": "The king's friendly attention makes the speaker even more hopeful.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 56,
+      "audio": "/private/tmp/grain-of-gold-production/audio/056.trim.wav",
+      "raw_duration": 3.9278231292517005,
+      "start": 211.91873015873014,
+      "speech_end": 216.68709750566893,
+      "end": 216.84709750566893
+    },
+    {
+      "scene": 4,
+      "mode": "explain",
+      "text": "He feels that his great moment of good fortune has finally arrived.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 57,
+      "audio": "/private/tmp/grain-of-gold-production/audio/057.trim.wav",
+      "raw_duration": 4.597868480725624,
+      "start": 216.84709750566893,
+      "speech_end": 222.43888888888887,
+      "end": 222.5988888888889
+    },
+    {
+      "scene": 4,
+      "mode": "explain",
+      "text": "So far, everything seems to support his expectation of receiving a gift.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 58,
+      "audio": "/private/tmp/grain-of-gold-production/audio/058.trim.wav",
+      "raw_duration": 5.176371882086168,
+      "start": 222.5988888888889,
+      "speech_end": 228.90351473922902,
+      "end": 229.28351473922902
+    },
+    {
+      "scene": 5,
+      "mode": "transition",
+      "seconds": 1.1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 59,
+      "start": 229.28351473922902,
+      "end": 230.383514739229
+    },
+    {
+      "scene": 5,
+      "mode": "read",
+      "text": "Then of a sudden thou didst hold out thy right hand",
+      "phrase": 0,
+      "span": [
+        0,
+        51
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 60,
+      "audio": "/private/tmp/grain-of-gold-production/audio/060.trim.wav",
+      "raw_duration": 3.7371201814058956,
+      "start": 230.383514739229,
+      "speech_end": 234.92850340136053,
+      "end": 235.08850340136053
+    },
+    {
+      "scene": 5,
+      "mode": "read",
+      "text": "and say",
+      "phrase": 1,
+      "span": [
+        52,
+        59
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 61,
+      "audio": "/private/tmp/grain-of-gold-production/audio/061.trim.wav",
+      "raw_duration": 0.7207709750566893,
+      "start": 235.08850340136053,
+      "speech_end": 235.94943310657595,
+      "end": 236.10943310657595
+    },
+    {
+      "scene": 5,
+      "mode": "read",
+      "text": "“What hast thou to give to me?”",
+      "phrase": 2,
+      "span": [
+        60,
+        91
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 62,
+      "audio": "/private/tmp/grain-of-gold-production/audio/062.trim.wav",
+      "raw_duration": 2.1340589569160997,
+      "start": 236.10943310657595,
+      "speech_end": 238.69172335600905,
+      "end": 238.85172335600905
+    },
+    {
+      "scene": 5,
+      "mode": "hold",
+      "seconds": 3,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 63,
+      "start": 238.85172335600905,
+      "end": 241.85172335600905
+    },
+    {
+      "scene": 5,
+      "mode": "explain",
+      "text": "Suddenly, the king holds out his hand.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 64,
+      "audio": "/private/tmp/grain-of-gold-production/audio/064.trim.wav",
+      "raw_duration": 2.9127891156462584,
+      "start": 241.85172335600905,
+      "speech_end": 245.3937414965986,
+      "end": 245.5537414965986
+    },
+    {
+      "scene": 5,
+      "mode": "explain",
+      "text": "‘Thou didst’ means ‘you did’, and ‘hast’ means ‘have’.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 65,
+      "audio": "/private/tmp/grain-of-gold-production/audio/065.trim.wav",
+      "raw_duration": 3.3346938775510204,
+      "start": 245.5537414965986,
+      "speech_end": 249.60623582766436,
+      "end": 249.76623582766436
+    },
+    {
+      "scene": 5,
+      "mode": "explain",
+      "text": "His question means, ‘What do you have to give me?’",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 66,
+      "audio": "/private/tmp/grain-of-gold-production/audio/066.trim.wav",
+      "raw_duration": 3.353151927437642,
+      "start": 249.76623582766436,
+      "speech_end": 253.83766439909294,
+      "end": 254.21766439909294
+    },
+    {
+      "scene": 5,
+      "mode": "explain",
+      "text": "Stop and think: why is this so surprising?",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 67,
+      "audio": "/private/tmp/grain-of-gold-production/audio/067.trim.wav",
+      "raw_duration": 3.2344671201814057,
+      "start": 254.21766439909294,
+      "speech_end": 258.1543990929705,
+      "end": 258.5343990929705
+    },
+    {
+      "scene": 5,
+      "mode": "think",
+      "seconds": 5,
+      "text": "",
+      "paragraph": 1,
+      "question": 0,
+      "id": 68,
+      "start": 258.5343990929705,
+      "end": 263.5343990929705
+    },
+    {
+      "scene": 5,
+      "mode": "explain",
+      "text": "The speaker expected the rich king to give something to him.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 69,
+      "audio": "/private/tmp/grain-of-gold-production/audio/069.trim.wav",
+      "raw_duration": 3.508503401360544,
+      "start": 263.5343990929705,
+      "speech_end": 267.7938095238095,
+      "end": 267.95380952380947
+    },
+    {
+      "scene": 5,
+      "mode": "explain",
+      "text": "Instead, the king asks him to give.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 70,
+      "audio": "/private/tmp/grain-of-gold-production/audio/070.trim.wav",
+      "raw_duration": 2.5043764172335603,
+      "start": 267.95380952380947,
+      "speech_end": 270.9955102040816,
+      "end": 271.15551020408157
+    },
+    {
+      "scene": 5,
+      "mode": "explain",
+      "text": "Their expected roles have been reversed.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 71,
+      "audio": "/private/tmp/grain-of-gold-production/audio/071.trim.wav",
+      "raw_duration": 2.597052154195011,
+      "start": 271.15551020408157,
+      "speech_end": 274.31151927437634,
+      "end": 274.47151927437636
+    },
+    {
+      "scene": 5,
+      "mode": "explain",
+      "text": "This surprising contrast is an example of irony.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 72,
+      "audio": "/private/tmp/grain-of-gold-production/audio/072.trim.wav",
+      "raw_duration": 3.8176190476190475,
+      "start": 274.47151927437636,
+      "speech_end": 279.11428571428564,
+      "end": 279.49428571428564
+    },
+    {
+      "scene": 6,
+      "mode": "transition",
+      "seconds": 1.1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 73,
+      "start": 279.49428571428564,
+      "end": 280.59428571428566
+    },
+    {
+      "scene": 6,
+      "mode": "read",
+      "text": "Ah, what a kingly jest was it",
+      "phrase": 0,
+      "span": [
+        0,
+        29
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 74,
+      "audio": "/private/tmp/grain-of-gold-production/audio/074.trim.wav",
+      "raw_duration": 2.6191609977324264,
+      "start": 280.59428571428566,
+      "speech_end": 283.78328798185936,
+      "end": 283.9432879818594
+    },
+    {
+      "scene": 6,
+      "mode": "read",
+      "text": "to open thy palm to a beggar to beg!",
+      "phrase": 1,
+      "span": [
+        30,
+        66
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 75,
+      "audio": "/private/tmp/grain-of-gold-production/audio/075.trim.wav",
+      "raw_duration": 2.460861678004535,
+      "start": 283.9432879818594,
+      "speech_end": 286.933514739229,
+      "end": 287.093514739229
+    },
+    {
+      "scene": 6,
+      "mode": "read",
+      "text": "I was confused and stood undecided,",
+      "phrase": 2,
+      "span": [
+        67,
+        102
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 76,
+      "audio": "/private/tmp/grain-of-gold-production/audio/076.trim.wav",
+      "raw_duration": 2.9491609977324265,
+      "start": 287.093514739229,
+      "speech_end": 290.6799319727891,
+      "end": 290.8399319727891
+    },
+    {
+      "scene": 6,
+      "mode": "hold",
+      "seconds": 1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 77,
+      "start": 290.8399319727891,
+      "end": 291.8399319727891
+    },
+    {
+      "scene": 6,
+      "mode": "explain",
+      "text": "A ‘jest’ is a joke.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 78,
+      "audio": "/private/tmp/grain-of-gold-production/audio/078.trim.wav",
+      "raw_duration": 1.4057369614512472,
+      "start": 291.8399319727891,
+      "speech_end": 293.5337188208616,
+      "end": 293.69371882086165
+    },
+    {
+      "scene": 6,
+      "mode": "explain",
+      "text": "‘Kingly’ means royal, or belonging to a king.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 79,
+      "audio": "/private/tmp/grain-of-gold-production/audio/079.trim.wav",
+      "raw_duration": 3.0637868480725623,
+      "start": 293.69371882086165,
+      "speech_end": 297.411179138322,
+      "end": 297.57117913832195
+    },
+    {
+      "scene": 6,
+      "mode": "explain",
+      "text": "The speaker thinks this must be a strange royal joke: a king asking a beggar for something!",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 80,
+      "audio": "/private/tmp/grain-of-gold-production/audio/080.trim.wav",
+      "raw_duration": 6.064512471655329,
+      "start": 297.57117913832195,
+      "speech_end": 304.95287981859406,
+      "end": 305.33287981859405
+    },
+    {
+      "scene": 6,
+      "mode": "explain",
+      "text": "That is the speaker's reaction.",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 81,
+      "audio": "/private/tmp/grain-of-gold-production/audio/081.trim.wav",
+      "raw_duration": 2.056122448979592,
+      "start": 305.33287981859405,
+      "speech_end": 307.82904761904757,
+      "end": 307.98904761904754
+    },
+    {
+      "scene": 6,
+      "mode": "explain",
+      "text": "The poem does not say that the king is laughing at him.",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 82,
+      "audio": "/private/tmp/grain-of-gold-production/audio/082.trim.wav",
+      "raw_duration": 3.334829931972789,
+      "start": 307.98904761904754,
+      "speech_end": 312.0398412698412,
+      "end": 312.4198412698412
+    },
+    {
+      "scene": 6,
+      "mode": "explain",
+      "text": "‘Undecided’ means he cannot make up his mind.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 83,
+      "audio": "/private/tmp/grain-of-gold-production/audio/083.trim.wav",
+      "raw_duration": 3.264557823129252,
+      "start": 312.4198412698412,
+      "speech_end": 316.3852834467119,
+      "end": 316.54528344671195
+    },
+    {
+      "scene": 6,
+      "mode": "explain",
+      "text": "He pauses, unsure what to do.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 84,
+      "audio": "/private/tmp/grain-of-gold-production/audio/084.trim.wav",
+      "raw_duration": 2.4474603174603176,
+      "start": 316.54528344671195,
+      "speech_end": 319.51385487528336,
+      "end": 319.6738548752834
+    },
+    {
+      "scene": 6,
+      "mode": "explain",
+      "text": "His hope has changed into confusion.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 85,
+      "audio": "/private/tmp/grain-of-gold-production/audio/085.trim.wav",
+      "raw_duration": 2.574331065759637,
+      "start": 319.6738548752834,
+      "speech_end": 322.7996598639455,
+      "end": 322.9596598639455
+    },
+    {
+      "scene": 6,
+      "mode": "explain",
+      "text": "The sentence continues with the choice he finally makes.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 86,
+      "audio": "/private/tmp/grain-of-gold-production/audio/086.trim.wav",
+      "raw_duration": 3.392312925170068,
+      "start": 322.9596598639455,
+      "speech_end": 327.08092970521534,
+      "end": 327.46092970521534
+    },
+    {
+      "scene": 7,
+      "mode": "transition",
+      "seconds": 1.1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 87,
+      "start": 327.46092970521534,
+      "end": 328.56092970521536
+    },
+    {
+      "scene": 7,
+      "mode": "read",
+      "text": "and then from my wallet",
+      "phrase": 0,
+      "span": [
+        0,
+        23
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 88,
+      "audio": "/private/tmp/grain-of-gold-production/audio/088.trim.wav",
+      "raw_duration": 1.728888888888889,
+      "start": 328.56092970521536,
+      "speech_end": 330.6506122448979,
+      "end": 330.8106122448979
+    },
+    {
+      "scene": 7,
+      "mode": "read",
+      "text": "I slowly took out the least little grain of corn",
+      "phrase": 1,
+      "span": [
+        24,
+        72
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 89,
+      "audio": "/private/tmp/grain-of-gold-production/audio/089.trim.wav",
+      "raw_duration": 3.5858049886621317,
+      "start": 330.8106122448979,
+      "speech_end": 335.16845804988657,
+      "end": 335.3284580498866
+    },
+    {
+      "scene": 7,
+      "mode": "read",
+      "text": "and gave it to thee.",
+      "phrase": 2,
+      "span": [
+        73,
+        93
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 90,
+      "audio": "/private/tmp/grain-of-gold-production/audio/090.trim.wav",
+      "raw_duration": 1.4329251700680272,
+      "start": 335.3284580498866,
+      "speech_end": 337.0654648526077,
+      "end": 337.2254648526077
+    },
+    {
+      "scene": 7,
+      "mode": "hold",
+      "seconds": 2,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 91,
+      "start": 337.2254648526077,
+      "end": 339.2254648526077
+    },
+    {
+      "scene": 7,
+      "mode": "explain",
+      "text": "Here, ‘wallet’ means a small bag or pouch.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 92,
+      "audio": "/private/tmp/grain-of-gold-production/audio/092.trim.wav",
+      "raw_duration": 3.2356916099773243,
+      "start": 339.2254648526077,
+      "speech_end": 343.16167800453513,
+      "end": 343.3216780045351
+    },
+    {
+      "scene": 7,
+      "mode": "explain",
+      "text": "‘Corn’ refers to grain.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 93,
+      "audio": "/private/tmp/grain-of-gold-production/audio/093.trim.wav",
+      "raw_duration": 1.601156462585034,
+      "start": 343.3216780045351,
+      "speech_end": 345.25709750566887,
+      "end": 345.4170975056689
+    },
+    {
+      "scene": 7,
+      "mode": "explain",
+      "text": "He takes out the smallest little grain and gives it to the king.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 94,
+      "audio": "/private/tmp/grain-of-gold-production/audio/094.trim.wav",
+      "raw_duration": 3.9409297052154195,
+      "start": 345.4170975056689,
+      "speech_end": 350.2059183673469,
+      "end": 350.5859183673469
+    },
+    {
+      "scene": 7,
+      "mode": "explain",
+      "text": "Which words tell us that he is reluctant to give?",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 95,
+      "audio": "/private/tmp/grain-of-gold-production/audio/095.trim.wav",
+      "raw_duration": 3.0816780045351475,
+      "start": 350.5859183673469,
+      "speech_end": 354.3253287981859,
+      "end": 354.7053287981859
+    },
+    {
+      "scene": 7,
+      "mode": "think",
+      "seconds": 5,
+      "text": "",
+      "paragraph": 1,
+      "question": 0,
+      "id": 96,
+      "start": 354.7053287981859,
+      "end": 359.7053287981859
+    },
+    {
+      "scene": 7,
+      "mode": "explain",
+      "text": "‘Slowly’ suggests hesitation.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 97,
+      "audio": "/private/tmp/grain-of-gold-production/audio/097.trim.wav",
+      "raw_duration": 2.0648526077097507,
+      "start": 359.7053287981859,
+      "speech_end": 362.2016326530612,
+      "end": 362.3616326530612
+    },
+    {
+      "scene": 7,
+      "mode": "explain",
+      "text": "‘Least little’ stresses how tiny his gift is.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 98,
+      "audio": "/private/tmp/grain-of-gold-production/audio/098.trim.wav",
+      "raw_duration": 3.1570068027210882,
+      "start": 362.3616326530612,
+      "speech_end": 366.198798185941,
+      "end": 366.358798185941
+    },
+    {
+      "scene": 7,
+      "mode": "explain",
+      "text": "He does give something, but he holds back almost everything.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 99,
+      "audio": "/private/tmp/grain-of-gold-production/audio/099.trim.wav",
+      "raw_duration": 4.212607709750567,
+      "start": 366.358798185941,
+      "speech_end": 371.4794331065759,
+      "end": 371.8594331065759
+    },
+    {
+      "scene": 7,
+      "mode": "explain",
+      "text": "We can understand that someone with very little may worry about losing it.",
+      "paragraph": 3,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 100,
+      "audio": "/private/tmp/grain-of-gold-production/audio/100.trim.wav",
+      "raw_duration": 4.842108843537415,
+      "start": 371.8594331065759,
+      "speech_end": 377.7530385487528,
+      "end": 377.9130385487528
+    },
+    {
+      "scene": 7,
+      "mode": "explain",
+      "text": "The poem asks us to notice this particular choice: he hopes to receive generously, but finds it difficult to give generously.",
+      "paragraph": 3,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 101,
+      "audio": "/private/tmp/grain-of-gold-production/audio/101.trim.wav",
+      "raw_duration": 8.632925170068027,
+      "start": 377.9130385487528,
+      "speech_end": 388.41990929705213,
+      "end": 388.7999092970521
+    },
+    {
+      "scene": 8,
+      "mode": "transition",
+      "seconds": 1.1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 102,
+      "start": 388.7999092970521,
+      "end": 389.89990929705215
+    },
+    {
+      "scene": 8,
+      "mode": "read",
+      "text": "But how great my surprise",
+      "phrase": 0,
+      "span": [
+        0,
+        25
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 103,
+      "audio": "/private/tmp/grain-of-gold-production/audio/103.trim.wav",
+      "raw_duration": 2.1855102040816328,
+      "start": 389.89990929705215,
+      "speech_end": 392.5569160997732,
+      "end": 392.71691609977324
+    },
+    {
+      "scene": 8,
+      "mode": "read",
+      "text": "when at the day’s end I emptied my bag on the floor",
+      "phrase": 1,
+      "span": [
+        26,
+        77
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 104,
+      "audio": "/private/tmp/grain-of-gold-production/audio/104.trim.wav",
+      "raw_duration": 3.5489569160997734,
+      "start": 392.71691609977324,
+      "speech_end": 397.0338775510204,
+      "end": 397.1938775510204
+    },
+    {
+      "scene": 8,
+      "mode": "read",
+      "text": "to find a least little grain of gold",
+      "phrase": 2,
+      "span": [
+        78,
+        114
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 105,
+      "audio": "/private/tmp/grain-of-gold-production/audio/105.trim.wav",
+      "raw_duration": 2.860657596371882,
+      "start": 397.1938775510204,
+      "speech_end": 400.66648526077097,
+      "end": 400.826485260771
+    },
+    {
+      "scene": 8,
+      "mode": "read",
+      "text": "among the poor heap.",
+      "phrase": 3,
+      "span": [
+        115,
+        135
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 106,
+      "audio": "/private/tmp/grain-of-gold-production/audio/106.trim.wav",
+      "raw_duration": 1.2714285714285714,
+      "start": 400.826485260771,
+      "speech_end": 402.3563038548753,
+      "end": 402.5163038548753
+    },
+    {
+      "scene": 8,
+      "mode": "hold",
+      "seconds": 3,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 107,
+      "start": 402.5163038548753,
+      "end": 405.5163038548753
+    },
+    {
+      "scene": 8,
+      "mode": "explain",
+      "text": "At the end of the day, the speaker empties his bag and discovers a tiny grain of gold among his few possessions.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 108,
+      "audio": "/private/tmp/grain-of-gold-production/audio/108.trim.wav",
+      "raw_duration": 7.431541950113378,
+      "start": 405.5163038548753,
+      "speech_end": 414.56333333333333,
+      "end": 414.7233333333333
+    },
+    {
+      "scene": 8,
+      "mode": "explain",
+      "text": "That small collection is the ‘poor heap’.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 109,
+      "audio": "/private/tmp/grain-of-gold-production/audio/109.trim.wav",
+      "raw_duration": 2.39140589569161,
+      "start": 414.7233333333333,
+      "speech_end": 417.622902494331,
+      "end": 418.002902494331
+    },
+    {
+      "scene": 8,
+      "mode": "explain",
+      "text": "Remember ‘the least little grain of corn’?",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 110,
+      "audio": "/private/tmp/grain-of-gold-production/audio/110.trim.wav",
+      "raw_duration": 2.7091609977324262,
+      "start": 418.002902494331,
+      "speech_end": 421.2972562358276,
+      "end": 421.45725623582763
+    },
+    {
+      "scene": 8,
+      "mode": "explain",
+      "text": "Now we hear ‘a least little grain of gold’.",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 111,
+      "audio": "/private/tmp/grain-of-gold-production/audio/111.trim.wav",
+      "raw_duration": 2.8448072562358275,
+      "start": 421.45725623582763,
+      "speech_end": 424.9145804988662,
+      "end": 425.07458049886617
+    },
+    {
+      "scene": 8,
+      "mode": "explain",
+      "text": "The repeated words connect his tiny gift with the precious thing he finds.",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 112,
+      "audio": "/private/tmp/grain-of-gold-production/audio/112.trim.wav",
+      "raw_duration": 4.736621315192743,
+      "start": 425.07458049886617,
+      "speech_end": 430.83587301587295,
+      "end": 431.21587301587294
+    },
+    {
+      "scene": 8,
+      "mode": "explain",
+      "text": "The poem suggests that what he gave has returned to him in a more precious form.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 113,
+      "audio": "/private/tmp/grain-of-gold-production/audio/113.trim.wav",
+      "raw_duration": 5.0738095238095235,
+      "start": 431.21587301587294,
+      "speech_end": 437.38780045351467,
+      "end": 437.54780045351464
+    },
+    {
+      "scene": 8,
+      "mode": "explain",
+      "text": "We are told about his discovery; we are not shown the moment of any transformation.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 114,
+      "audio": "/private/tmp/grain-of-gold-production/audio/114.trim.wav",
+      "raw_duration": 5.914875283446712,
+      "start": 437.54780045351464,
+      "speech_end": 444.7448752834466,
+      "end": 445.1248752834466
+    },
+    {
+      "scene": 9,
+      "mode": "transition",
+      "seconds": 1.1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 115,
+      "start": 445.1248752834466,
+      "end": 446.22487528344664
+    },
+    {
+      "scene": 9,
+      "mode": "read",
+      "text": "I bitterly wept",
+      "phrase": 0,
+      "span": [
+        0,
+        15
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 116,
+      "audio": "/private/tmp/grain-of-gold-production/audio/116.trim.wav",
+      "raw_duration": 1.1711337868480725,
+      "start": 446.22487528344664,
+      "speech_end": 447.6451927437641,
+      "end": 447.8051927437641
+    },
+    {
+      "scene": 9,
+      "mode": "read",
+      "text": "and wished that I had the heart",
+      "phrase": 1,
+      "span": [
+        16,
+        47
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 117,
+      "audio": "/private/tmp/grain-of-gold-production/audio/117.trim.wav",
+      "raw_duration": 2.256145124716553,
+      "start": 447.8051927437641,
+      "speech_end": 450.53956916099764,
+      "end": 450.69956916099767
+    },
+    {
+      "scene": 9,
+      "mode": "read",
+      "text": "to give thee my all.",
+      "phrase": 2,
+      "span": [
+        48,
+        68
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 118,
+      "audio": "/private/tmp/grain-of-gold-production/audio/118.trim.wav",
+      "raw_duration": 1.4337868480725624,
+      "start": 450.69956916099767,
+      "speech_end": 452.4341269841269,
+      "end": 452.59412698412694
+    },
+    {
+      "scene": 9,
+      "mode": "hold",
+      "seconds": 4,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 119,
+      "start": 452.59412698412694,
+      "end": 456.59412698412694
+    },
+    {
+      "scene": 9,
+      "mode": "explain",
+      "text": "‘Bitterly wept’ means cried with deep sorrow.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 120,
+      "audio": "/private/tmp/grain-of-gold-production/audio/120.trim.wav",
+      "raw_duration": 2.80859410430839,
+      "start": 456.59412698412694,
+      "speech_end": 459.997052154195,
+      "end": 460.15705215419496
+    },
+    {
+      "scene": 9,
+      "mode": "explain",
+      "text": "‘Had the heart’ means had the willingness or generosity.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 121,
+      "audio": "/private/tmp/grain-of-gold-production/audio/121.trim.wav",
+      "raw_duration": 3.4472562358276644,
+      "start": 460.15705215419496,
+      "speech_end": 464.34882086167795,
+      "end": 464.508820861678
+    },
+    {
+      "scene": 9,
+      "mode": "explain",
+      "text": "‘My all’ means everything I had.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 122,
+      "audio": "/private/tmp/grain-of-gold-production/audio/122.trim.wav",
+      "raw_duration": 2.2287074829931974,
+      "start": 464.508820861678,
+      "speech_end": 467.20707482993197,
+      "end": 467.58707482993196
+    },
+    {
+      "scene": 9,
+      "mode": "explain",
+      "text": "Why does he feel sad after finding something valuable?",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 123,
+      "audio": "/private/tmp/grain-of-gold-production/audio/123.trim.wav",
+      "raw_duration": 3.8505895691609977,
+      "start": 467.58707482993196,
+      "speech_end": 472.2614739229025,
+      "end": 472.6414739229025
+    },
+    {
+      "scene": 9,
+      "mode": "think",
+      "seconds": 5,
+      "text": "",
+      "paragraph": 1,
+      "question": 0,
+      "id": 124,
+      "start": 472.6414739229025,
+      "end": 477.6414739229025
+    },
+    {
+      "scene": 9,
+      "mode": "explain",
+      "text": "He realises that he held back.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 125,
+      "audio": "/private/tmp/grain-of-gold-production/audio/125.trim.wav",
+      "raw_duration": 2.199546485260771,
+      "start": 477.6414739229025,
+      "speech_end": 480.3087755102041,
+      "end": 480.46877551020407
+    },
+    {
+      "scene": 9,
+      "mode": "explain",
+      "text": "On the story's surface, he may wish he had given more because even his tiny gift brought something precious.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 126,
+      "audio": "/private/tmp/grain-of-gold-production/audio/126.trim.wav",
+      "raw_duration": 7.0646031746031746,
+      "start": 480.46877551020407,
+      "speech_end": 489.07589569160996,
+      "end": 489.23589569161
+    },
+    {
+      "scene": 9,
+      "mode": "explain",
+      "text": "More deeply, he regrets missing the chance to give wholeheartedly.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 127,
+      "audio": "/private/tmp/grain-of-gold-production/audio/127.trim.wav",
+      "raw_duration": 4.161360544217687,
+      "start": 489.23589569161,
+      "speech_end": 494.2926077097506,
+      "end": 494.6726077097506
+    },
+    {
+      "scene": 9,
+      "mode": "explain",
+      "text": "Notice what he wishes for: the heart to give.",
+      "paragraph": 3,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 128,
+      "audio": "/private/tmp/grain-of-gold-production/audio/128.trim.wav",
+      "raw_duration": 3.0237414965986393,
+      "start": 494.6726077097506,
+      "speech_end": 498.3477551020408,
+      "end": 498.50775510204085
+    },
+    {
+      "scene": 9,
+      "mode": "explain",
+      "text": "His regret concerns his attitude as well as the size of his gift.",
+      "paragraph": 3,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 129,
+      "audio": "/private/tmp/grain-of-gold-production/audio/129.trim.wav",
+      "raw_duration": 4.49233560090703,
+      "start": 498.50775510204085,
+      "speech_end": 503.97192743764174,
+      "end": 504.13192743764176
+    },
+    {
+      "scene": 9,
+      "mode": "explain",
+      "text": "The ending leaves us thinking about the opportunity he has missed.",
+      "paragraph": 3,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 130,
+      "audio": "/private/tmp/grain-of-gold-production/audio/130.trim.wav",
+      "raw_duration": 4.2444444444444445,
+      "start": 504.13192743764176,
+      "speech_end": 509.2942403628118,
+      "end": 509.6742403628118
+    },
+    {
+      "scene": 10,
+      "mode": "transition",
+      "seconds": 1.1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 131,
+      "start": 509.6742403628118,
+      "end": 510.77424036281184
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "The textbook invites us to read this poem as a parable.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 132,
+      "audio": "/private/tmp/grain-of-gold-production/audio/132.trim.wav",
+      "raw_duration": 3.7731972789115646,
+      "start": 510.77424036281184,
+      "speech_end": 515.3565759637189,
+      "end": 515.5165759637189
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "A parable is a simple story that teaches a moral or spiritual lesson.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 133,
+      "audio": "/private/tmp/grain-of-gold-production/audio/133.trim.wav",
+      "raw_duration": 4.573424036281179,
+      "start": 515.5165759637189,
+      "speech_end": 521.0787981859411,
+      "end": 521.4587981859411
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "In this spiritual reading, the ‘king of all kings’ represents God.",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 134,
+      "audio": "/private/tmp/grain-of-gold-production/audio/134.trim.wav",
+      "raw_duration": 4.327664399092971,
+      "start": 521.4587981859411,
+      "speech_end": 526.7204535147392,
+      "end": 526.8804535147393
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "The speaker can represent a human being who asks for blessings but struggles to give.",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 135,
+      "audio": "/private/tmp/grain-of-gold-production/audio/135.trim.wav",
+      "raw_duration": 5.593310657596372,
+      "start": 526.8804535147393,
+      "speech_end": 533.6826303854876,
+      "end": 533.8426303854876
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "The king's request can be understood as an invitation to generosity and trust.",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 136,
+      "audio": "/private/tmp/grain-of-gold-production/audio/136.trim.wav",
+      "raw_duration": 5.264285714285714,
+      "start": 533.8426303854876,
+      "speech_end": 540.2582086167802,
+      "end": 540.6382086167802
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "A symbol is something in a story that also suggests a bigger idea.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 137,
+      "audio": "/private/tmp/grain-of-gold-production/audio/137.trim.wav",
+      "raw_duration": 4.672199546485261,
+      "start": 540.6382086167802,
+      "speech_end": 546.322471655329,
+      "end": 546.4824716553289
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "The small grain can represent what we are willing to offer.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 138,
+      "audio": "/private/tmp/grain-of-gold-production/audio/138.trim.wav",
+      "raw_duration": 3.9431972789115646,
+      "start": 546.4824716553289,
+      "speech_end": 551.2756235827666,
+      "end": 551.4356235827665
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "The gold can represent the precious value of giving, including spiritual richness.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 139,
+      "audio": "/private/tmp/grain-of-gold-production/audio/139.trim.wav",
+      "raw_duration": 5.822018140589569,
+      "start": 551.4356235827665,
+      "speech_end": 558.5277551020409,
+      "end": 558.9077551020409
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "Does this mean that giving a pencil will make a gold pencil appear?",
+      "paragraph": 3,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 140,
+      "audio": "/private/tmp/grain-of-gold-production/audio/140.trim.wav",
+      "raw_duration": 4.387936507936508,
+      "start": 558.9077551020409,
+      "speech_end": 564.2411791383221,
+      "end": 564.4011791383222
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "No.",
+      "paragraph": 3,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 141,
+      "audio": "/private/tmp/grain-of-gold-production/audio/141.trim.wav",
+      "raw_duration": 0.4924943310657596,
+      "start": 564.4011791383222,
+      "speech_end": 564.9881405895693,
+      "end": 565.1481405895694
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "This is a story with a deeper meaning, not a promise of material rewards.",
+      "paragraph": 3,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 142,
+      "audio": "/private/tmp/grain-of-gold-production/audio/142.trim.wav",
+      "raw_duration": 5.045079365079365,
+      "start": 565.1481405895694,
+      "speech_end": 571.2801814058959,
+      "end": 571.4401814058959
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "Its lesson is to give sincerely, without treating kindness as a bargain.",
+      "paragraph": 3,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 143,
+      "audio": "/private/tmp/grain-of-gold-production/audio/143.trim.wav",
+      "raw_duration": 5.063015873015873,
+      "start": 571.4401814058959,
+      "speech_end": 577.600113378685,
+      "end": 577.980113378685
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "For us, generosity can include sharing our time, helping someone understand a lesson, or offering something we can spare.",
+      "paragraph": 4,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 144,
+      "audio": "/private/tmp/grain-of-gold-production/audio/144.trim.wav",
+      "raw_duration": 9.303922902494332,
+      "start": 577.980113378685,
+      "speech_end": 589.3078004535149,
+      "end": 589.467800453515
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "The poem asks us to think about the willingness behind the gift.",
+      "paragraph": 4,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 145,
+      "audio": "/private/tmp/grain-of-gold-production/audio/145.trim.wav",
+      "raw_duration": 4.076281179138322,
+      "start": 589.467800453515,
+      "speech_end": 594.4284353741499,
+      "end": 594.8084353741499
+    },
+    {
+      "scene": 11,
+      "mode": "transition",
+      "seconds": 1.1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 146,
+      "start": 594.8084353741499,
+      "end": 595.9084353741499
+    },
+    {
+      "scene": 11,
+      "mode": "explain",
+      "text": "Let's notice three choices that make the poem effective.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 147,
+      "audio": "/private/tmp/grain-of-gold-production/audio/147.trim.wav",
+      "raw_duration": 3.6582993197278912,
+      "start": 595.9084353741499,
+      "speech_end": 600.3545804988664,
+      "end": 600.7345804988664
+    },
+    {
+      "scene": 11,
+      "mode": "explain",
+      "text": "First, the simile ‘like a gorgeous dream’ compares the golden chariot to a wonderful dream, using ‘like’.",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 148,
+      "audio": "/private/tmp/grain-of-gold-production/audio/148.trim.wav",
+      "raw_duration": 7.192312925170068,
+      "start": 600.7345804988664,
+      "speech_end": 609.4876417233562,
+      "end": 609.6476417233562
+    },
+    {
+      "scene": 11,
+      "mode": "explain",
+      "text": "It helps us imagine the speaker's wonder.",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 149,
+      "audio": "/private/tmp/grain-of-gold-production/audio/149.trim.wav",
+      "raw_duration": 2.894625850340136,
+      "start": 609.6476417233562,
+      "speech_end": 613.1665306122451,
+      "end": 613.5465306122451
+    },
+    {
+      "scene": 11,
+      "mode": "explain",
+      "text": "Second, the king asks the beggar for a gift.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 150,
+      "audio": "/private/tmp/grain-of-gold-production/audio/150.trim.wav",
+      "raw_duration": 3.0497278911564627,
+      "start": 613.5465306122451,
+      "speech_end": 617.2501587301589,
+      "end": 617.4101587301589
+    },
+    {
+      "scene": 11,
+      "mode": "explain",
+      "text": "This reversal of what we expect creates irony and makes us stop and think.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 151,
+      "audio": "/private/tmp/grain-of-gold-production/audio/151.trim.wav",
+      "raw_duration": 5.458140589569161,
+      "start": 617.4101587301589,
+      "speech_end": 624.0615419501135,
+      "end": 624.4415419501136
+    },
+    {
+      "scene": 11,
+      "mode": "explain",
+      "text": "Third, the words ‘least little grain’ connect the small gift with the small piece of gold.",
+      "paragraph": 3,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 152,
+      "audio": "/private/tmp/grain-of-gold-production/audio/152.trim.wav",
+      "raw_duration": 5.627301587301587,
+      "start": 624.4415419501136,
+      "speech_end": 631.2998639455784,
+      "end": 631.4598639455784
+    },
+    {
+      "scene": 11,
+      "mode": "explain",
+      "text": "Their repetition helps us understand the speaker's regret.",
+      "paragraph": 3,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 153,
+      "audio": "/private/tmp/grain-of-gold-production/audio/153.trim.wav",
+      "raw_duration": 3.729954648526077,
+      "start": 631.4598639455784,
+      "speech_end": 635.9960544217688,
+      "end": 636.3760544217688
+    },
+    {
+      "scene": 11,
+      "mode": "explain",
+      "text": "The title brings us back to that tiny piece of gold.",
+      "paragraph": 4,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 154,
+      "audio": "/private/tmp/grain-of-gold-production/audio/154.trim.wav",
+      "raw_duration": 3.5797278911564625,
+      "start": 636.3760544217688,
+      "speech_end": 640.732358276644,
+      "end": 640.8923582766441
+    },
+    {
+      "scene": 11,
+      "mode": "explain",
+      "text": "It is small in size, but it leads to a big discovery about giving.",
+      "paragraph": 4,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 155,
+      "audio": "/private/tmp/grain-of-gold-production/audio/155.trim.wav",
+      "raw_duration": 4.882698412698413,
+      "start": 640.8923582766441,
+      "speech_end": 646.8338321995466,
+      "end": 647.2138321995466
+    },
+    {
+      "scene": 12,
+      "mode": "transition",
+      "seconds": 1.1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 156,
+      "start": 647.2138321995466,
+      "end": 648.3138321995466
+    },
+    {
+      "scene": 12,
+      "mode": "explain",
+      "text": "Let's check our understanding.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 157,
+      "audio": "/private/tmp/grain-of-gold-production/audio/157.trim.wav",
+      "raw_duration": 2.126938775510204,
+      "start": 648.3138321995466,
+      "speech_end": 650.8922222222224,
+      "end": 651.0522222222223
+    },
+    {
+      "scene": 12,
+      "mode": "explain",
+      "text": "Say your answer aloud, or pause the video if you need more time.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 158,
+      "audio": "/private/tmp/grain-of-gold-production/audio/158.trim.wav",
+      "raw_duration": 4.472539682539683,
+      "start": 651.0522222222223,
+      "speech_end": 656.4945124716554,
+      "end": 656.8745124716554
+    },
+    {
+      "scene": 12,
+      "mode": "explain",
+      "text": "One: where did the chariot stop, and who came down?",
+      "paragraph": 1,
+      "question": 1,
+      "paragraph_end": true,
+      "id": 159,
+      "audio": "/private/tmp/grain-of-gold-production/audio/159.trim.wav",
+      "raw_duration": 3.9875510204081634,
+      "start": 656.8745124716554,
+      "speech_end": 661.7207936507938,
+      "end": 662.1007936507938
+    },
+    {
+      "scene": 12,
+      "mode": "think",
+      "seconds": 5,
+      "text": "",
+      "paragraph": 1,
+      "question": 1,
+      "id": 160,
+      "start": 662.1007936507938,
+      "end": 667.1007936507938
+    },
+    {
+      "scene": 12,
+      "mode": "explain",
+      "text": "It stopped where the speaker was standing, and the king came down with a smile.",
+      "paragraph": 2,
+      "question": 1,
+      "paragraph_end": true,
+      "id": 161,
+      "audio": "/private/tmp/grain-of-gold-production/audio/161.trim.wav",
+      "raw_duration": 5.0410430839002265,
+      "start": 667.1007936507938,
+      "speech_end": 673.2325623582768,
+      "end": 673.6125623582768
+    },
+    {
+      "scene": 12,
+      "mode": "explain",
+      "text": "Two: explain ‘kingly jest’.",
+      "paragraph": 3,
+      "question": 2,
+      "paragraph_end": false,
+      "id": 162,
+      "audio": "/private/tmp/grain-of-gold-production/audio/162.trim.wav",
+      "raw_duration": 1.9719047619047618,
+      "start": 673.6125623582768,
+      "speech_end": 676.0032879818596,
+      "end": 676.1632879818596
+    },
+    {
+      "scene": 12,
+      "mode": "explain",
+      "text": "Why did the speaker think the request was a joke?",
+      "paragraph": 3,
+      "question": 2,
+      "paragraph_end": true,
+      "id": 163,
+      "audio": "/private/tmp/grain-of-gold-production/audio/163.trim.wav",
+      "raw_duration": 3.144965986394558,
+      "start": 676.1632879818596,
+      "speech_end": 679.9882766439912,
+      "end": 680.3682766439912
+    },
+    {
+      "scene": 12,
+      "mode": "think",
+      "seconds": 5,
+      "text": "",
+      "paragraph": 3,
+      "question": 2,
+      "id": 164,
+      "start": 680.3682766439912,
+      "end": 685.3682766439912
+    },
+    {
+      "scene": 12,
+      "mode": "explain",
+      "text": "It means a royal joke.",
+      "paragraph": 4,
+      "question": 2,
+      "paragraph_end": false,
+      "id": 165,
+      "audio": "/private/tmp/grain-of-gold-production/audio/165.trim.wav",
+      "raw_duration": 1.6436507936507936,
+      "start": 685.3682766439912,
+      "speech_end": 687.3610204081635,
+      "end": 687.5210204081635
+    },
+    {
+      "scene": 12,
+      "mode": "explain",
+      "text": "He was confused because he expected the wealthy king to give him something, but the king asked him for a gift instead.",
+      "paragraph": 4,
+      "question": 2,
+      "paragraph_end": true,
+      "id": 166,
+      "audio": "/private/tmp/grain-of-gold-production/audio/166.trim.wav",
+      "raw_duration": 7.7726530612244895,
+      "start": 687.5210204081635,
+      "speech_end": 696.989546485261,
+      "end": 697.369546485261
+    },
+    {
+      "scene": 12,
+      "mode": "explain",
+      "text": "Three: why was the speaker both surprised and sorrowful at the end?",
+      "paragraph": 5,
+      "question": 3,
+      "paragraph_end": true,
+      "id": 167,
+      "audio": "/private/tmp/grain-of-gold-production/audio/167.trim.wav",
+      "raw_duration": 4.726916099773242,
+      "start": 697.369546485261,
+      "speech_end": 703.1177097505672,
+      "end": 703.4977097505672
+    },
+    {
+      "scene": 12,
+      "mode": "think",
+      "seconds": 5,
+      "text": "",
+      "paragraph": 5,
+      "question": 3,
+      "id": 168,
+      "start": 703.4977097505672,
+      "end": 708.4977097505672
+    },
+    {
+      "scene": 12,
+      "mode": "explain",
+      "text": "He was surprised to find a tiny grain of gold.",
+      "paragraph": 6,
+      "question": 3,
+      "paragraph_end": false,
+      "id": 169,
+      "audio": "/private/tmp/grain-of-gold-production/audio/169.trim.wav",
+      "raw_duration": 3.5707936507936506,
+      "start": 708.4977097505672,
+      "speech_end": 712.8416780045354,
+      "end": 713.0016780045355
+    },
+    {
+      "scene": 12,
+      "mode": "explain",
+      "text": "He was sorrowful because he had given so little and wished he had been generous enough to give his all.",
+      "paragraph": 6,
+      "question": 3,
+      "paragraph_end": true,
+      "id": 170,
+      "audio": "/private/tmp/grain-of-gold-production/audio/170.trim.wav",
+      "raw_duration": 6.348662131519275,
+      "start": 713.0016780045355,
+      "speech_end": 720.7288208616784,
+      "end": 721.1088208616784
+    },
+    {
+      "scene": 12,
+      "mode": "explain",
+      "text": "When you write an answer, explain the idea and support it with a phrase from the poem.",
+      "paragraph": 7,
+      "question": 3,
+      "paragraph_end": false,
+      "id": 171,
+      "audio": "/private/tmp/grain-of-gold-production/audio/171.trim.wav",
+      "raw_duration": 5.948775510204082,
+      "start": 721.1088208616784,
+      "speech_end": 728.3410204081637,
+      "end": 728.5010204081636
+    },
+    {
+      "scene": 12,
+      "mode": "explain",
+      "text": "For the final question, ‘the least little grain’ and ‘had the heart to give’ are useful evidence.",
+      "paragraph": 7,
+      "question": 3,
+      "paragraph_end": true,
+      "id": 172,
+      "audio": "/private/tmp/grain-of-gold-production/audio/172.trim.wav",
+      "raw_duration": 6.160249433106576,
+      "start": 728.5010204081636,
+      "speech_end": 735.9976190476194,
+      "end": 736.3776190476194
+    },
+    {
+      "scene": 13,
+      "mode": "transition",
+      "seconds": 1.1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 173,
+      "start": 736.3776190476194,
+      "end": 737.4776190476194
+    },
+    {
+      "scene": 13,
+      "mode": "explain",
+      "text": "Follow the speaker's feelings one last time.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 174,
+      "audio": "/private/tmp/grain-of-gold-production/audio/174.trim.wav",
+      "raw_duration": 3.0610657596371884,
+      "start": 737.4776190476194,
+      "speech_end": 741.1938548752838,
+      "end": 741.3538548752838
+    },
+    {
+      "scene": 13,
+      "mode": "explain",
+      "text": "He hopes to receive.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 175,
+      "audio": "/private/tmp/grain-of-gold-production/audio/175.trim.wav",
+      "raw_duration": 1.4113151927437642,
+      "start": 741.3538548752838,
+      "speech_end": 743.0608163265309,
+      "end": 743.220816326531
+    },
+    {
+      "scene": 13,
+      "mode": "explain",
+      "text": "He is confused by the king's request.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 176,
+      "audio": "/private/tmp/grain-of-gold-production/audio/176.trim.wav",
+      "raw_duration": 2.675736961451247,
+      "start": 743.220816326531,
+      "speech_end": 746.4667800453519,
+      "end": 746.6267800453519
+    },
+    {
+      "scene": 13,
+      "mode": "explain",
+      "text": "He gives reluctantly, discovers the gold with surprise, and finally feels regret.",
+      "paragraph": 0,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 177,
+      "audio": "/private/tmp/grain-of-gold-production/audio/177.trim.wav",
+      "raw_duration": 5.878662131519274,
+      "start": 746.6267800453519,
+      "speech_end": 753.7780725623587,
+      "end": 754.1580725623587
+    },
+    {
+      "scene": 13,
+      "mode": "explain",
+      "text": "Tagore uses this small encounter to ask a large question: when we have a chance to give, how willing is our heart?",
+      "paragraph": 1,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 178,
+      "audio": "/private/tmp/grain-of-gold-production/audio/178.trim.wav",
+      "raw_duration": 7.648843537414966,
+      "start": 754.1580725623587,
+      "speech_end": 763.473764172336,
+      "end": 763.853764172336
+    },
+    {
+      "scene": 13,
+      "mode": "explain",
+      "text": "Think of one kind thing you could do today without expecting a reward.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": false,
+      "id": 179,
+      "audio": "/private/tmp/grain-of-gold-production/audio/179.trim.wav",
+      "raw_duration": 4.285374149659864,
+      "start": 763.853764172336,
+      "speech_end": 769.0621088435378,
+      "end": 769.2221088435379
+    },
+    {
+      "scene": 13,
+      "mode": "explain",
+      "text": "That is a useful way to carry the poem's message into your own life.",
+      "paragraph": 2,
+      "question": 0,
+      "paragraph_end": true,
+      "id": 180,
+      "audio": "/private/tmp/grain-of-gold-production/audio/180.trim.wav",
+      "raw_duration": 4.717437641723356,
+      "start": 769.2221088435379,
+      "speech_end": 774.9560997732431,
+      "end": 775.3360997732431
+    },
+    {
+      "scene": 13,
+      "mode": "end",
+      "seconds": 4,
+      "text": "",
+      "paragraph": 2,
+      "question": 0,
+      "id": 181,
+      "start": 775.3360997732431,
+      "end": 779.3360997732431
+    }
+  ],
+  "voice": "Rishi",
+  "source": "/Users/aquaraga/Documents/ChatGPT/EdTech/proposals/a-little-grain-of-gold-video/plan-and-script.md",
+  "duration": 779.3360997732431,
+  "captions": [
+    {
+      "start": 1.1,
+      "end": 4.828140589569161,
+      "text": "Imagine you are hoping someone will help you.",
+      "beat": 1
+    },
+    {
+      "start": 4.988140589569161,
+      "end": 10.537165532879818,
+      "text": "But when that person arrives, they ask you for something instead.",
+      "beat": 2
+    },
+    {
+      "start": 10.697165532879819,
+      "end": 12.145736961451247,
+      "text": "How would you feel?",
+      "beat": 3
+    },
+    {
+      "start": 12.525736961451248,
+      "end": 18.143492063492065,
+      "text": "Today, we are reading ‘A Little Grain of Gold’ by Rabindranath Tagore.",
+      "beat": 4
+    },
+    {
+      "start": 18.303492063492065,
+      "end": 25.774761904761906,
+      "text": "We will read it a little at a time, picture what happens, and explore what the story means.",
+      "beat": 5
+    },
+    {
+      "start": 26.154761904761905,
+      "end": 29.33482993197279,
+      "text": "The speaker is the person telling the story.",
+      "beat": 6
+    },
+    {
+      "start": 29.494829931972788,
+      "end": 34.90920634920635,
+      "text": "Here, he is a man who survives by asking others for help.",
+      "beat": 7
+    },
+    {
+      "start": 35.06920634920635,
+      "end": 39.11755102040816,
+      "text": "When he says ‘I’, we hear this character's voice.",
+      "beat": 8
+    },
+    {
+      "start": 39.49755102040816,
+      "end": 42.78056689342403,
+      "text": "You will notice some old-fashioned words.",
+      "beat": 9
+    },
+    {
+      "start": 42.940566893424034,
+      "end": 44.71190476190476,
+      "text": "‘Thou’ and ‘thee’ mean ‘you’.",
+      "beat": 10
+    },
+    {
+      "start": 44.87190476190476,
+      "end": 46.217573696145124,
+      "text": "‘Thy’ means ‘your’.",
+      "beat": 11
+    },
+    {
+      "start": 46.37757369614512,
+      "end": 49.62469387755102,
+      "text": "Keep those meanings in mind as we begin.",
+      "beat": 12
+    },
+    {
+      "start": 51.104693877551014,
+      "end": 54.297188208616774,
+      "text": "I had gone a-begging from door to door",
+      "beat": 14
+    },
+    {
+      "start": 54.45718820861677,
+      "end": 56.08108843537414,
+      "text": "in the village path",
+      "beat": 15
+    },
+    {
+      "start": 56.24108843537414,
+      "end": 60.27088435374149,
+      "text": "when thy golden chariot appeared in the distance",
+      "beat": 16
+    },
+    {
+      "start": 60.43088435374148,
+      "end": 62.474852607709735,
+      "text": "like a gorgeous dream",
+      "beat": 17
+    },
+    {
+      "start": 62.63485260770974,
+      "end": 66.64263038548752,
+      "text": "and I wondered who was this king of all kings!",
+      "beat": 18
+    },
+    {
+      "start": 68.80263038548752,
+      "end": 74.11160997732425,
+      "text": "The speaker has been going from house to house, asking for help.",
+      "beat": 20
+    },
+    {
+      "start": 74.27160997732426,
+      "end": 76.7153514739229,
+      "text": "‘A-begging’ simply means begging.",
+      "beat": 21
+    },
+    {
+      "start": 76.8753514739229,
+      "end": 81.27394557823129,
+      "text": "Suddenly, he sees a magnificent golden chariot.",
+      "beat": 22
+    },
+    {
+      "start": 81.43394557823129,
+      "end": 84.76891156462585,
+      "text": "A chariot is a vehicle pulled by horses.",
+      "beat": 23
+    },
+    {
+      "start": 85.14891156462585,
+      "end": 87.6422902494331,
+      "text": "‘Gorgeous’ means very beautiful.",
+      "beat": 24
+    },
+    {
+      "start": 87.8022902494331,
+      "end": 93.65866213151926,
+      "text": "The chariot seems so wonderful that he compares it to a beautiful dream.",
+      "beat": 25
+    },
+    {
+      "start": 93.81866213151926,
+      "end": 100.67013880299594,
+      "text": "Notice the word ‘like’: it helps us spot a simile, a comparison between two different",
+      "beat": 26
+    },
+    {
+      "start": 100.67013880299594,
+      "end": 101.6151700680272,
+      "text": "things.",
+      "beat": 26
+    },
+    {
+      "start": 101.99517006802719,
+      "end": 105.96902494331064,
+      "text": "The speaker wonders who this ‘king of all kings’ could be.",
+      "beat": 27
+    },
+    {
+      "start": 106.12902494331064,
+      "end": 110.85217687074828,
+      "text": "That phrase makes the visitor seem greater than an ordinary king.",
+      "beat": 28
+    },
+    {
+      "start": 111.01217687074828,
+      "end": 114.39893424036279,
+      "text": "We will return to its deeper meaning later.",
+      "beat": 29
+    },
+    {
+      "start": 115.87893424036278,
+      "end": 117.84566893424034,
+      "text": "My hopes rose high",
+      "beat": 31
+    },
+    {
+      "start": 118.00566893424033,
+      "end": 121.98605442176867,
+      "text": "and me thought my evil days were at an end,",
+      "beat": 32
+    },
+    {
+      "start": 122.14605442176868,
+      "end": 126.63514739229022,
+      "text": "and I stood waiting for alms to be given unasked",
+      "beat": 33
+    },
+    {
+      "start": 126.79514739229022,
+      "end": 131.1736961451247,
+      "text": "and for wealth scattered on all sides in the dust.",
+      "beat": 34
+    },
+    {
+      "start": 133.3336961451247,
+      "end": 139.37646258503398,
+      "text": "Seeing the king, the speaker hopes his difficult life is about to change.",
+      "beat": 36
+    },
+    {
+      "start": 139.53646258503397,
+      "end": 142.1023809523809,
+      "text": "‘Me thought’ means ‘it seemed to me’.",
+      "beat": 37
+    },
+    {
+      "start": 142.2623809523809,
+      "end": 146.42986394557818,
+      "text": "His ‘evil days’ are his days of suffering and hardship.",
+      "beat": 38
+    },
+    {
+      "start": 146.5898639455782,
+      "end": 150.75283446712015,
+      "text": "The phrase does not mean that he is an evil person.",
+      "beat": 39
+    },
+    {
+      "start": 151.13283446712015,
+      "end": 157.02614512471652,
+      "text": "‘Alms’ are gifts, such as food or money, given to people in need.",
+      "beat": 40
+    },
+    {
+      "start": 157.18614512471652,
+      "end": 161.10965986394555,
+      "text": "‘Unasked’ means without his even having to ask.",
+      "beat": 41
+    },
+    {
+      "start": 161.48965986394555,
+      "end": 166.7243990929705,
+      "text": "He imagines so much wealth that it will be scattered everywhere.",
+      "beat": 42
+    },
+    {
+      "start": 166.88439909297048,
+      "end": 170.79707482993194,
+      "text": "This is what he hopes for; it has not happened.",
+      "beat": 43
+    },
+    {
+      "start": 170.95707482993194,
+      "end": 175.83070294784577,
+      "text": "At this point, he is thinking about what he will receive.",
+      "beat": 44
+    },
+    {
+      "start": 177.31070294784575,
+      "end": 180.16999999999996,
+      "text": "The chariot stopped where I stood.",
+      "beat": 46
+    },
+    {
+      "start": 180.32999999999996,
+      "end": 182.46972789115642,
+      "text": "Thy glance fell on me",
+      "beat": 47
+    },
+    {
+      "start": 182.62972789115642,
+      "end": 185.78238095238092,
+      "text": "and thou camest down with a smile.",
+      "beat": 48
+    },
+    {
+      "start": 185.94238095238092,
+      "end": 190.62129251700676,
+      "text": "I felt that the luck of my life had come at last.",
+      "beat": 49
+    },
+    {
+      "start": 192.78129251700676,
+      "end": 197.31088435374144,
+      "text": "The chariot stops exactly where the speaker is standing.",
+      "beat": 51
+    },
+    {
+      "start": 197.47088435374147,
+      "end": 201.97358276643988,
+      "text": "The king looks at him, comes down, and smiles.",
+      "beat": 52
+    },
+    {
+      "start": 202.35358276643987,
+      "end": 205.96918367346936,
+      "text": "‘Thy glance fell on me’ means ‘you looked at me’.",
+      "beat": 53
+    },
+    {
+      "start": 206.12918367346936,
+      "end": 208.14995464852603,
+      "text": "Nothing literally falls!",
+      "beat": 54
+    },
+    {
+      "start": 208.30995464852606,
+      "end": 211.53873015873015,
+      "text": "‘Thou camest down’ means ‘you came down’.",
+      "beat": 55
+    },
+    {
+      "start": 211.91873015873014,
+      "end": 216.68709750566893,
+      "text": "The king's friendly attention makes the speaker even more hopeful.",
+      "beat": 56
+    },
+    {
+      "start": 216.84709750566893,
+      "end": 222.43888888888887,
+      "text": "He feels that his great moment of good fortune has finally arrived.",
+      "beat": 57
+    },
+    {
+      "start": 222.5988888888889,
+      "end": 228.90351473922902,
+      "text": "So far, everything seems to support his expectation of receiving a gift.",
+      "beat": 58
+    },
+    {
+      "start": 230.383514739229,
+      "end": 234.92850340136053,
+      "text": "Then of a sudden thou didst hold out thy right hand",
+      "beat": 60
+    },
+    {
+      "start": 235.08850340136053,
+      "end": 235.94943310657595,
+      "text": "and say",
+      "beat": 61
+    },
+    {
+      "start": 236.10943310657595,
+      "end": 238.69172335600905,
+      "text": "“What hast thou to give to me?”",
+      "beat": 62
+    },
+    {
+      "start": 241.85172335600905,
+      "end": 245.3937414965986,
+      "text": "Suddenly, the king holds out his hand.",
+      "beat": 64
+    },
+    {
+      "start": 245.5537414965986,
+      "end": 249.60623582766436,
+      "text": "‘Thou didst’ means ‘you did’, and ‘hast’ means ‘have’.",
+      "beat": 65
+    },
+    {
+      "start": 249.76623582766436,
+      "end": 253.83766439909294,
+      "text": "His question means, ‘What do you have to give me?’",
+      "beat": 66
+    },
+    {
+      "start": 254.21766439909294,
+      "end": 258.1543990929705,
+      "text": "Stop and think: why is this so surprising?",
+      "beat": 67
+    },
+    {
+      "start": 263.5343990929705,
+      "end": 267.7938095238095,
+      "text": "The speaker expected the rich king to give something to him.",
+      "beat": 69
+    },
+    {
+      "start": 267.95380952380947,
+      "end": 270.9955102040816,
+      "text": "Instead, the king asks him to give.",
+      "beat": 70
+    },
+    {
+      "start": 271.15551020408157,
+      "end": 274.31151927437634,
+      "text": "Their expected roles have been reversed.",
+      "beat": 71
+    },
+    {
+      "start": 274.47151927437636,
+      "end": 279.11428571428564,
+      "text": "This surprising contrast is an example of irony.",
+      "beat": 72
+    },
+    {
+      "start": 280.59428571428566,
+      "end": 283.78328798185936,
+      "text": "Ah, what a kingly jest was it",
+      "beat": 74
+    },
+    {
+      "start": 283.9432879818594,
+      "end": 286.933514739229,
+      "text": "to open thy palm to a beggar to beg!",
+      "beat": 75
+    },
+    {
+      "start": 287.093514739229,
+      "end": 290.6799319727891,
+      "text": "I was confused and stood undecided,",
+      "beat": 76
+    },
+    {
+      "start": 291.8399319727891,
+      "end": 293.5337188208616,
+      "text": "A ‘jest’ is a joke.",
+      "beat": 78
+    },
+    {
+      "start": 293.69371882086165,
+      "end": 297.411179138322,
+      "text": "‘Kingly’ means royal, or belonging to a king.",
+      "beat": 79
+    },
+    {
+      "start": 297.57117913832195,
+      "end": 304.95287981859406,
+      "text": "The speaker thinks this must be a strange royal joke: a king asking a beggar for something!",
+      "beat": 80
+    },
+    {
+      "start": 305.33287981859405,
+      "end": 307.82904761904757,
+      "text": "That is the speaker's reaction.",
+      "beat": 81
+    },
+    {
+      "start": 307.98904761904754,
+      "end": 312.0398412698412,
+      "text": "The poem does not say that the king is laughing at him.",
+      "beat": 82
+    },
+    {
+      "start": 312.4198412698412,
+      "end": 316.3852834467119,
+      "text": "‘Undecided’ means he cannot make up his mind.",
+      "beat": 83
+    },
+    {
+      "start": 316.54528344671195,
+      "end": 319.51385487528336,
+      "text": "He pauses, unsure what to do.",
+      "beat": 84
+    },
+    {
+      "start": 319.6738548752834,
+      "end": 322.7996598639455,
+      "text": "His hope has changed into confusion.",
+      "beat": 85
+    },
+    {
+      "start": 322.9596598639455,
+      "end": 327.08092970521534,
+      "text": "The sentence continues with the choice he finally makes.",
+      "beat": 86
+    },
+    {
+      "start": 328.56092970521536,
+      "end": 330.6506122448979,
+      "text": "and then from my wallet",
+      "beat": 88
+    },
+    {
+      "start": 330.8106122448979,
+      "end": 335.16845804988657,
+      "text": "I slowly took out the least little grain of corn",
+      "beat": 89
+    },
+    {
+      "start": 335.3284580498866,
+      "end": 337.0654648526077,
+      "text": "and gave it to thee.",
+      "beat": 90
+    },
+    {
+      "start": 339.2254648526077,
+      "end": 343.16167800453513,
+      "text": "Here, ‘wallet’ means a small bag or pouch.",
+      "beat": 92
+    },
+    {
+      "start": 343.3216780045351,
+      "end": 345.25709750566887,
+      "text": "‘Corn’ refers to grain.",
+      "beat": 93
+    },
+    {
+      "start": 345.4170975056689,
+      "end": 350.2059183673469,
+      "text": "He takes out the smallest little grain and gives it to the king.",
+      "beat": 94
+    },
+    {
+      "start": 350.5859183673469,
+      "end": 354.3253287981859,
+      "text": "Which words tell us that he is reluctant to give?",
+      "beat": 95
+    },
+    {
+      "start": 359.7053287981859,
+      "end": 362.2016326530612,
+      "text": "‘Slowly’ suggests hesitation.",
+      "beat": 97
+    },
+    {
+      "start": 362.3616326530612,
+      "end": 366.198798185941,
+      "text": "‘Least little’ stresses how tiny his gift is.",
+      "beat": 98
+    },
+    {
+      "start": 366.358798185941,
+      "end": 371.4794331065759,
+      "text": "He does give something, but he holds back almost everything.",
+      "beat": 99
+    },
+    {
+      "start": 371.8594331065759,
+      "end": 377.7530385487528,
+      "text": "We can understand that someone with very little may worry about losing it.",
+      "beat": 100
+    },
+    {
+      "start": 377.9130385487528,
+      "end": 385.022951085196,
+      "text": "The poem asks us to notice this particular choice: he hopes to receive generously, but",
+      "beat": 101
+    },
+    {
+      "start": 385.022951085196,
+      "end": 388.41990929705213,
+      "text": "finds it difficult to give generously.",
+      "beat": 101
+    },
+    {
+      "start": 389.89990929705215,
+      "end": 392.5569160997732,
+      "text": "But how great my surprise",
+      "beat": 103
+    },
+    {
+      "start": 392.71691609977324,
+      "end": 397.0338775510204,
+      "text": "when at the day’s end I emptied my bag on the floor",
+      "beat": 104
+    },
+    {
+      "start": 397.1938775510204,
+      "end": 400.66648526077097,
+      "text": "to find a least little grain of gold",
+      "beat": 105
+    },
+    {
+      "start": 400.826485260771,
+      "end": 402.3563038548753,
+      "text": "among the poor heap.",
+      "beat": 106
+    },
+    {
+      "start": 405.5163038548753,
+      "end": 412.69411236670976,
+      "text": "At the end of the day, the speaker empties his bag and discovers a tiny grain of gold among",
+      "beat": 108
+    },
+    {
+      "start": 412.69411236670976,
+      "end": 414.56333333333333,
+      "text": "his few possessions.",
+      "beat": 108
+    },
+    {
+      "start": 414.7233333333333,
+      "end": 417.622902494331,
+      "text": "That small collection is the ‘poor heap’.",
+      "beat": 109
+    },
+    {
+      "start": 418.002902494331,
+      "end": 421.2972562358276,
+      "text": "Remember ‘the least little grain of corn’?",
+      "beat": 110
+    },
+    {
+      "start": 421.45725623582763,
+      "end": 424.9145804988662,
+      "text": "Now we hear ‘a least little grain of gold’.",
+      "beat": 111
+    },
+    {
+      "start": 425.07458049886617,
+      "end": 430.83587301587295,
+      "text": "The repeated words connect his tiny gift with the precious thing he finds.",
+      "beat": 112
+    },
+    {
+      "start": 431.21587301587294,
+      "end": 437.38780045351467,
+      "text": "The poem suggests that what he gave has returned to him in a more precious form.",
+      "beat": 113
+    },
+    {
+      "start": 437.54780045351464,
+      "end": 444.7448752834466,
+      "text": "We are told about his discovery; we are not shown the moment of any transformation.",
+      "beat": 114
+    },
+    {
+      "start": 446.22487528344664,
+      "end": 447.6451927437641,
+      "text": "I bitterly wept",
+      "beat": 116
+    },
+    {
+      "start": 447.8051927437641,
+      "end": 450.53956916099764,
+      "text": "and wished that I had the heart",
+      "beat": 117
+    },
+    {
+      "start": 450.69956916099767,
+      "end": 452.4341269841269,
+      "text": "to give thee my all.",
+      "beat": 118
+    },
+    {
+      "start": 456.59412698412694,
+      "end": 459.997052154195,
+      "text": "‘Bitterly wept’ means cried with deep sorrow.",
+      "beat": 120
+    },
+    {
+      "start": 460.15705215419496,
+      "end": 464.34882086167795,
+      "text": "‘Had the heart’ means had the willingness or generosity.",
+      "beat": 121
+    },
+    {
+      "start": 464.508820861678,
+      "end": 467.20707482993197,
+      "text": "‘My all’ means everything I had.",
+      "beat": 122
+    },
+    {
+      "start": 467.58707482993196,
+      "end": 472.2614739229025,
+      "text": "Why does he feel sad after finding something valuable?",
+      "beat": 123
+    },
+    {
+      "start": 477.6414739229025,
+      "end": 480.3087755102041,
+      "text": "He realises that he held back.",
+      "beat": 125
+    },
+    {
+      "start": 480.46877551020407,
+      "end": 487.29511220580184,
+      "text": "On the story's surface, he may wish he had given more because even his tiny gift brought",
+      "beat": 126
+    },
+    {
+      "start": 487.29511220580184,
+      "end": 489.07589569160996,
+      "text": "something precious.",
+      "beat": 126
+    },
+    {
+      "start": 489.23589569161,
+      "end": 494.2926077097506,
+      "text": "More deeply, he regrets missing the chance to give wholeheartedly.",
+      "beat": 127
+    },
+    {
+      "start": 494.6726077097506,
+      "end": 498.3477551020408,
+      "text": "Notice what he wishes for: the heart to give.",
+      "beat": 128
+    },
+    {
+      "start": 498.50775510204085,
+      "end": 503.97192743764174,
+      "text": "His regret concerns his attitude as well as the size of his gift.",
+      "beat": 129
+    },
+    {
+      "start": 504.13192743764176,
+      "end": 509.2942403628118,
+      "text": "The ending leaves us thinking about the opportunity he has missed.",
+      "beat": 130
+    },
+    {
+      "start": 510.77424036281184,
+      "end": 515.3565759637189,
+      "text": "The textbook invites us to read this poem as a parable.",
+      "beat": 132
+    },
+    {
+      "start": 515.5165759637189,
+      "end": 521.0787981859411,
+      "text": "A parable is a simple story that teaches a moral or spiritual lesson.",
+      "beat": 133
+    },
+    {
+      "start": 521.4587981859411,
+      "end": 526.7204535147392,
+      "text": "In this spiritual reading, the ‘king of all kings’ represents God.",
+      "beat": 134
+    },
+    {
+      "start": 526.8804535147393,
+      "end": 533.6826303854876,
+      "text": "The speaker can represent a human being who asks for blessings but struggles to give.",
+      "beat": 135
+    },
+    {
+      "start": 533.8426303854876,
+      "end": 540.2582086167802,
+      "text": "The king's request can be understood as an invitation to generosity and trust.",
+      "beat": 136
+    },
+    {
+      "start": 540.6382086167802,
+      "end": 546.322471655329,
+      "text": "A symbol is something in a story that also suggests a bigger idea.",
+      "beat": 137
+    },
+    {
+      "start": 546.4824716553289,
+      "end": 551.2756235827666,
+      "text": "The small grain can represent what we are willing to offer.",
+      "beat": 138
+    },
+    {
+      "start": 551.4356235827665,
+      "end": 558.5277551020409,
+      "text": "The gold can represent the precious value of giving, including spiritual richness.",
+      "beat": 139
+    },
+    {
+      "start": 558.9077551020409,
+      "end": 564.2411791383221,
+      "text": "Does this mean that giving a pencil will make a gold pencil appear?",
+      "beat": 140
+    },
+    {
+      "start": 564.4011791383222,
+      "end": 564.9881405895693,
+      "text": "No.",
+      "beat": 141
+    },
+    {
+      "start": 565.1481405895694,
+      "end": 571.2801814058959,
+      "text": "This is a story with a deeper meaning, not a promise of material rewards.",
+      "beat": 142
+    },
+    {
+      "start": 571.4401814058959,
+      "end": 577.600113378685,
+      "text": "Its lesson is to give sincerely, without treating kindness as a bargain.",
+      "beat": 143
+    },
+    {
+      "start": 577.980113378685,
+      "end": 586.0333909084469,
+      "text": "For us, generosity can include sharing our time, helping someone understand a lesson, or",
+      "beat": 144
+    },
+    {
+      "start": 586.0333909084469,
+      "end": 589.3078004535149,
+      "text": "offering something we can spare.",
+      "beat": 144
+    },
+    {
+      "start": 589.467800453515,
+      "end": 594.4284353741499,
+      "text": "The poem asks us to think about the willingness behind the gift.",
+      "beat": 145
+    },
+    {
+      "start": 595.9084353741499,
+      "end": 600.3545804988664,
+      "text": "Let's notice three choices that make the poem effective.",
+      "beat": 147
+    },
+    {
+      "start": 600.7345804988664,
+      "end": 608.2027886995779,
+      "text": "First, the simile ‘like a gorgeous dream’ compares the golden chariot to a wonderful dream,",
+      "beat": 148
+    },
+    {
+      "start": 608.2027886995779,
+      "end": 609.4876417233562,
+      "text": "using ‘like’.",
+      "beat": 148
+    },
+    {
+      "start": 609.6476417233562,
+      "end": 613.1665306122451,
+      "text": "It helps us imagine the speaker's wonder.",
+      "beat": 149
+    },
+    {
+      "start": 613.5465306122451,
+      "end": 617.2501587301589,
+      "text": "Second, the king asks the beggar for a gift.",
+      "beat": 150
+    },
+    {
+      "start": 617.4101587301589,
+      "end": 624.0615419501135,
+      "text": "This reversal of what we expect creates irony and makes us stop and think.",
+      "beat": 151
+    },
+    {
+      "start": 624.4415419501136,
+      "end": 631.2998639455784,
+      "text": "Third, the words ‘least little grain’ connect the small gift with the small piece of gold.",
+      "beat": 152
+    },
+    {
+      "start": 631.4598639455784,
+      "end": 635.9960544217688,
+      "text": "Their repetition helps us understand the speaker's regret.",
+      "beat": 153
+    },
+    {
+      "start": 636.3760544217688,
+      "end": 640.732358276644,
+      "text": "The title brings us back to that tiny piece of gold.",
+      "beat": 154
+    },
+    {
+      "start": 640.8923582766441,
+      "end": 646.8338321995466,
+      "text": "It is small in size, but it leads to a big discovery about giving.",
+      "beat": 155
+    },
+    {
+      "start": 648.3138321995466,
+      "end": 650.8922222222224,
+      "text": "Let's check our understanding.",
+      "beat": 157
+    },
+    {
+      "start": 651.0522222222223,
+      "end": 656.4945124716554,
+      "text": "Say your answer aloud, or pause the video if you need more time.",
+      "beat": 158
+    },
+    {
+      "start": 656.8745124716554,
+      "end": 661.7207936507938,
+      "text": "One: where did the chariot stop, and who came down?",
+      "beat": 159
+    },
+    {
+      "start": 667.1007936507938,
+      "end": 673.2325623582768,
+      "text": "It stopped where the speaker was standing, and the king came down with a smile.",
+      "beat": 161
+    },
+    {
+      "start": 673.6125623582768,
+      "end": 676.0032879818596,
+      "text": "Two: explain ‘kingly jest’.",
+      "beat": 162
+    },
+    {
+      "start": 676.1632879818596,
+      "end": 679.9882766439912,
+      "text": "Why did the speaker think the request was a joke?",
+      "beat": 163
+    },
+    {
+      "start": 685.3682766439912,
+      "end": 687.3610204081635,
+      "text": "It means a royal joke.",
+      "beat": 165
+    },
+    {
+      "start": 687.5210204081635,
+      "end": 694.4546654882428,
+      "text": "He was confused because he expected the wealthy king to give him something, but the king",
+      "beat": 166
+    },
+    {
+      "start": 694.4546654882428,
+      "end": 696.989546485261,
+      "text": "asked him for a gift instead.",
+      "beat": 166
+    },
+    {
+      "start": 697.369546485261,
+      "end": 703.1177097505672,
+      "text": "Three: why was the speaker both surprised and sorrowful at the end?",
+      "beat": 167
+    },
+    {
+      "start": 708.4977097505672,
+      "end": 712.8416780045354,
+      "text": "He was surprised to find a tiny grain of gold.",
+      "beat": 169
+    },
+    {
+      "start": 713.0016780045355,
+      "end": 719.4979485481512,
+      "text": "He was sorrowful because he had given so little and wished he had been generous enough to",
+      "beat": 170
+    },
+    {
+      "start": 719.4979485481512,
+      "end": 720.7288208616783,
+      "text": "give his all.",
+      "beat": 170
+    },
+    {
+      "start": 721.1088208616784,
+      "end": 728.3410204081637,
+      "text": "When you write an answer, explain the idea and support it with a phrase from the poem.",
+      "beat": 171
+    },
+    {
+      "start": 728.5010204081636,
+      "end": 734.9686741363216,
+      "text": "For the final question, ‘the least little grain’ and ‘had the heart to give’ are useful",
+      "beat": 172
+    },
+    {
+      "start": 734.9686741363216,
+      "end": 735.9976190476194,
+      "text": "evidence.",
+      "beat": 172
+    },
+    {
+      "start": 737.4776190476194,
+      "end": 741.1938548752838,
+      "text": "Follow the speaker's feelings one last time.",
+      "beat": 174
+    },
+    {
+      "start": 741.3538548752838,
+      "end": 743.0608163265309,
+      "text": "He hopes to receive.",
+      "beat": 175
+    },
+    {
+      "start": 743.220816326531,
+      "end": 746.4667800453519,
+      "text": "He is confused by the king's request.",
+      "beat": 176
+    },
+    {
+      "start": 746.6267800453519,
+      "end": 753.7780725623587,
+      "text": "He gives reluctantly, discovers the gold with surprise, and finally feels regret.",
+      "beat": 177
+    },
+    {
+      "start": 754.1580725623587,
+      "end": 761.183020333817,
+      "text": "Tagore uses this small encounter to ask a large question: when we have a chance to give,",
+      "beat": 178
+    },
+    {
+      "start": 761.183020333817,
+      "end": 763.473764172336,
+      "text": "how willing is our heart?",
+      "beat": 178
+    },
+    {
+      "start": 763.853764172336,
+      "end": 769.0621088435378,
+      "text": "Think of one kind thing you could do today without expecting a reward.",
+      "beat": 179
+    },
+    {
+      "start": 769.2221088435379,
+      "end": 774.9560997732431,
+      "text": "That is a useful way to carry the poem's message into your own life.",
+      "beat": 180
+    }
+  ]
+}

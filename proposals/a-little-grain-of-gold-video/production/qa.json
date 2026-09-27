@@ -1,0 +1,18 @@
+{
+  "approved_script_coverage": "complete",
+  "poem_passages": 8,
+  "speech_segments": 154,
+  "caption_cues": 164,
+  "thinking_pauses": 6,
+  "duration_seconds": 779.336,
+  "timing_checks": "passed",
+  "video_resolution": "1920x1080",
+  "video_fps": 24,
+  "video_duration_seconds": 779.375,
+  "audio_duration_seconds": 779.336104,
+  "audio_peak_dbfs": -1.5,
+  "full_audio_video_decode": "passed without errors",
+  "visual_review": "13 representative scenes plus encoded pause and explanation frames",
+  "voice": "synthetic English (India), macOS Rishi",
+  "file_size_bytes": 21559850
+}

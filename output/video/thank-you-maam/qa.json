@@ -1,0 +1,28 @@
+{
+  "source": {
+    "filename": "Scan_20260927_165049.pdf",
+    "sha256": "88c466b90488c9d5eccc3c672e052c0046f4e1e5bfaa568b7eb166bef26d6aef",
+    "printed_pages": "109-112"
+  },
+  "video": {
+    "duration_seconds": 505.683,
+    "width": 1920,
+    "height": 1080,
+    "frame_rate": 24,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "audio_sample_rate": 24000,
+    "scenes": 10,
+    "questions": 10,
+    "thinking_pause_seconds_each": 7,
+    "caption_cues": 107
+  },
+  "checks": {
+    "source_hash_verified": true,
+    "script_reviewed_against_scan": true,
+    "selected_keywords_exactly_present_in_scan": true,
+    "sample_frames_visually_reviewed": true,
+    "video_decoded_without_errors": true,
+    "audio_listened_to_end_to_end": false
+  }
+}

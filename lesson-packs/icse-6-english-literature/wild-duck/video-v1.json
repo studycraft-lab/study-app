@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "video-1.0",
+  "slug": "wild-duck",
+  "contentVersion": 1,
+  "title": "Wild Duck",
+  "description": "Revise the complete story, its key words, and the choices the boy and his father make through ten spoken questions.",
+  "source": {
+    "board": "ICSE",
+    "grade": 6,
+    "subject": "English Literature",
+    "chapterTitle": "Wild Duck",
+    "chapterNumber": 9,
+    "documentName": "Scan_20260927_164834.pdf",
+    "sha256": "3812578ab59babd19e716b4ca6b8efd9b256a93c04ea941aa25929ed725fba57",
+    "reviewed": true
+  },
+  "durationSeconds": 500.289333,
+  "chapters": [
+    { "title": "A lake, a father, a son", "start": 0.0 },
+    { "title": "The sky changes", "start": 50.385 },
+    { "title": "Two ways of looking", "start": 99.819 },
+    { "title": "Finding the duck", "start": 153.781 },
+    { "title": "Alive, but injured", "start": 200.675 },
+    { "title": "Care at home", "start": 242.193 },
+    { "title": "The missing gun", "start": 288.335 },
+    { "title": "Remember the language", "start": 339.932 },
+    { "title": "Tell the story back", "start": 389.513 },
+    { "title": "One last thought", "start": 435.255 }
+  ],
+  "assets": {
+    "lesson.mp4": { "file": "wild-duck.mp4", "sha256": "24c32d79767708db1935d14fe16f53003c4ffbf9f2cb7d4b415a3e36a6243760", "contentType": "video/mp4" },
+    "poster.jpg": { "file": "poster.jpg", "sha256": "50af64f033e13fca3b03894f166578b40d7bcd1375e79ef48fd27dcd50a5ed57", "contentType": "image/jpeg" },
+    "captions.en.vtt": { "file": "wild-duck.en.vtt", "sha256": "02aac60776a870d11b486e8d50b939cd2465762c18d5bf6f3c533f6050866a4f", "contentType": "text/vtt" }
+  },
+  "narration": "Offline Kokoro af_heart voice with ten seven-second thinking pauses."
+}

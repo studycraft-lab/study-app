@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "video-1.0",
+  "slug": "thank-you-maam",
+  "contentVersion": 1,
+  "title": "Thank You, Ma’am",
+  "description": "Revise Roger and Mrs Jones's story, exact chapter words, and the choices that build trust through ten spoken questions.",
+  "source": {
+    "board": "ICSE",
+    "grade": 6,
+    "subject": "English Literature",
+    "chapterTitle": "Thank You, Ma’am",
+    "chapterNumber": 16,
+    "documentName": "Scan_20260927_165049.pdf",
+    "sha256": "88c466b90488c9d5eccc3c672e052c0046f4e1e5bfaa568b7eb166bef26d6aef",
+    "reviewed": true
+  },
+  "durationSeconds": 505.682667,
+  "chapters": [
+    { "title": "A purse at eleven", "start": 0.0 },
+    { "title": "Mrs Jones and Roger", "start": 46.831 },
+    { "title": "The open door", "start": 98.337 },
+    { "title": "Blue suede shoes", "start": 145.339 },
+    { "title": "She remembers being young", "start": 190.883 },
+    { "title": "Trust and the unattended purse", "start": 241.632 },
+    { "title": "Food without prying", "start": 287.816 },
+    { "title": "Ten dollars and a warning", "start": 337.989 },
+    { "title": "More than “thank you”", "start": 381.813 },
+    { "title": "Words and choices to remember", "start": 428.701 }
+  ],
+  "assets": {
+    "lesson.mp4": { "file": "thank-you-maam.mp4", "sha256": "ab9654838c43d55722981ffe051660b95eeeeb8b2b504e850a276d12ff4a7648", "contentType": "video/mp4" },
+    "poster.jpg": { "file": "poster.jpg", "sha256": "8284be99592df6042e8ac62b95a11d83b917031ff88badd978f568ce8fc6d09e", "contentType": "image/jpeg" },
+    "captions.en.vtt": { "file": "thank-you-maam.en.vtt", "sha256": "7969423522e956380b546ffbb57e7bde49f41edf39e892f712b5cd8ac7b73c05", "contentType": "text/vtt" }
+  },
+  "narration": "Offline Kokoro af_heart voice with ten seven-second thinking pauses."
+}

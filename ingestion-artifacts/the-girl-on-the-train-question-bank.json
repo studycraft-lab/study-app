@@ -8,7 +8,7 @@
     "status": "reviewed",
     "subject": "English Literature",
     "title": "The Girl On The Train",
-    "version": 1
+    "version": 2
   },
   "questions": [
     {
@@ -495,35 +495,35 @@
       "answer": {
         "correctOptionId": "a"
       },
-      "difficulty": 2,
-      "explanation": "The first-person account gives direct access to the narrator’s inner thoughts. His guesses about others are not the same as knowing their thoughts.",
+      "difficulty": 1,
+      "explanation": "The narrator cannot see her slippers, but he hears them slapping against her heels.",
       "generation": {
-        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "generatedAt": "2026-09-27T06:04:26Z",
         "method": "codex-assisted",
         "validationStatus": "verified"
       },
-      "hint": "Whose thoughts are shared with us as events unfold?",
+      "hint": "Think about the sense the narrator uses when the girl boards the train.",
       "id": "q-009",
       "marks": 1,
       "origin": "chapter_content",
-      "prompt": "What does the story’s use of “I” allow readers to know directly?",
+      "prompt": "How does the narrator know that the girl is wearing slippers?",
       "response": {
         "options": [
           {
             "id": "a",
-            "text": "The narrator’s thoughts and guesses"
+            "text": "He hears them slap against her heels."
           },
           {
             "id": "b",
-            "text": "The aunt’s private thoughts"
+            "text": "He sees them beneath her seat."
           },
           {
             "id": "c",
-            "text": "Every passenger’s memories"
+            "text": "The girl tells him she has put them on."
           },
           {
             "id": "d",
-            "text": "The girl’s unspoken thoughts throughout the journey"
+            "text": "Her aunt tells him before the train leaves."
           }
         ]
       },
@@ -542,107 +542,85 @@
             "hint",
             "explanation"
           ]
-        },
-        {
-          "pageId": "page-90",
-          "regionId": "left-column",
-          "supports": [
-            "prompt",
-            "answer",
-            "rubric",
-            "hint",
-            "explanation"
-          ]
-        },
-        {
-          "pageId": "page-90",
-          "regionId": "right-column",
-          "supports": [
-            "prompt",
-            "answer",
-            "rubric",
-            "hint",
-            "explanation"
-          ]
         }
       ],
       "status": "active",
       "topicIds": [
-        "connection-and-assumptions"
+        "senses-and-concealment"
       ],
       "type": "single_choice",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
-        "ideal": "(a) “I” is the unnamed narrator and “you” is the girl who has joined him. They are speaking in a train compartment.\n\n(b) “At first” could suggest that he merely failed to notice her initially and can see her now. In fact, he is blind, so the wording conceals a continuing inability to see.\n\n(c) He plans to remain in his seat. This avoids having to find his way around the compartment. Such movements might reveal that he cannot see."
+        "ideal": "(a) “I” is the unnamed narrator, “you” is the girl, and they are in a train compartment.\n\n(b) He wants to hide that he is blind. He decides to remain in his seat because moving around might reveal that he cannot see.\n\n(c) The girl will get down at Saharanpur, where her aunt will meet her. The narrator is going to Dehradun and then Mussoorie."
       },
       "difficulty": 2,
-      "explanation": "The narrator’s words can sound like an ordinary failure to notice someone. This is his attempt at concealment; the story does not establish exactly what the girl thinks about it. Award the stated points for equivalent wording and defensible interpretations supported by the text; exact textbook phrasing is not required. Mark each labelled part separately and do not award the same point twice within that part.",
+      "explanation": "The narrator tries to keep his blindness secret while the two passengers discuss their destinations.",
       "generation": {
-        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "generatedAt": "2026-09-27T06:04:26Z",
         "method": "codex-assisted",
         "validationStatus": "verified"
       },
-      "hint": "Pay attention to “at first” and to the plan he forms immediately afterwards.",
+      "hint": "Recall who is travelling together, what the narrator is hiding, and where each passenger is going.",
       "id": "q-010",
       "marks": 9,
       "origin": "chapter_content",
-      "prompt": "Read this extract from “The Girl On The Train” and answer all three parts.\n\n“I didn’t see you either, at first,” I said. “But I heard you come in.”\n\n(a) Who are “I” and “you” in these lines, and where are they speaking? [3]\n\n(b) Which small phrase in the reply could make the girl think that the narrator can see? Explain why it is misleading. [3]\n\n(c) What plan does the narrator make to keep his blindness hidden? Explain how the plan could reduce the risk of discovery. [3]",
+      "prompt": "Read this extract from “The Girl On The Train” and answer all three parts.\n\n“I didn’t see you either, at first,” I said. “But I heard you come in.”\n\n(a) Who are “I” and “you” in these lines, and where are they speaking? [3]\n\n(b) What is the narrator trying to hide from the girl? What does he decide to do, and why? [3]\n\n(c) Where is the girl getting down, who will meet her there, and where is the narrator going? [3]",
       "response": {},
       "rubric": {
         "grammarAffectsScore": false,
         "points": [
           {
-            "concept": "Part (a): Identifies “I” as the unnamed narrator or male passenger telling the story.",
+            "concept": "Part (a): “I” is the narrator or male passenger telling the story.",
             "id": "a1",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (a): Identifies “you” as the girl travelling in the compartment.",
+            "concept": "Part (a): “You” is the girl travelling with him.",
             "id": "a2",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (a): Locates the conversation in a train compartment.",
+            "concept": "Part (a): They are in a train compartment.",
             "id": "a3",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (b): Identifies “at first” as the misleading phrase.",
+            "concept": "Part (b): The narrator wants to conceal that he is blind or cannot see.",
             "id": "b1",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (b): Explains that it suggests a temporary failure to notice rather than a permanent inability to see.",
+            "concept": "Part (b): He decides to remain in his seat.",
             "id": "b2",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (b): Contrasts that impression with the narrator’s actual blindness; does not assert that the girl certainly believes him.",
+            "concept": "Part (b): He thinks moving around might reveal his blindness.",
             "id": "b3",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (c): He plans to stay in his seat.",
+            "concept": "Part (c): The girl will get down at Saharanpur.",
             "id": "c1",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (c): Explains that remaining seated avoids the need to navigate or find things while moving around.",
+            "concept": "Part (c): Her aunt will meet her there.",
             "id": "c2",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (c): Connects this caution with avoiding actions that could reveal his blindness.",
+            "concept": "Part (c): The narrator is going to Dehradun and then Mussoorie; accept either destination if only one is stated.",
             "id": "c3",
             "required": true,
             "weight": 1
@@ -682,42 +660,42 @@
         "journey-and-conversation"
       ],
       "type": "multi_point",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
-        "ideal": "(a) He remembers a time when he could see. He can draw on memory and imagination to picture the landscape, but he is now blind and is not observing the posts with his eyes.\n\n(b) He moves along the berth, feels for the window ledge, and faces the open window while pretending to study the landscape.\n\n(c) It describes a familiar appearance during a train journey, without requiring him to identify a particular visible detail. The girl accepts the remark naturally, saying that it always happens."
+        "ideal": "(a) “Mind’s eye” means imagination. The narrator remembers what he saw before he became blind, so he can picture the telegraph posts without seeing them now.\n\n(b) He moves along the berth, feels for the window ledge, and faces the open window as though studying the landscape.\n\n(c) He says the trees seem to move while the passengers seem to stand still. The girl replies, “That always happens.”"
       },
       "difficulty": 2,
-      "explanation": "Memory and touch help the narrator sustain the appearance of sight. The girl’s reply reassures him, but does not prove what she knows. Award the stated points for equivalent wording and defensible interpretations supported by the text; exact textbook phrasing is not required. Mark each labelled part separately and do not award the same point twice within that part.",
+      "explanation": "The narrator relies on memory and touch, then makes a familiar observation about a view from a moving train.",
       "generation": {
-        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "generatedAt": "2026-09-27T06:04:26Z",
         "method": "codex-assisted",
         "validationStatus": "verified"
       },
-      "hint": "Separate remembered experience, physical actions and the girl’s spoken response.",
+      "hint": "Think about memory, what he does at the window, and the girl’s short reply.",
       "id": "q-011",
       "marks": 9,
       "origin": "chapter_content",
-      "prompt": "Read this extract from “The Girl On The Train” and answer all three parts.\n\n“In my mind’s eye, I could see the telegraph posts flashing by.”\n\n(a) What earlier experience helps the narrator picture the scenery? How is that different from seeing it at this moment? [3]\n\n(b) Trace three actions he takes at the window to make his behaviour seem natural. [3]\n\n(c) Why is his remark about the moving trees useful for continuing his pretence? Explain using the girl’s response. [3]",
+      "prompt": "Read this extract from “The Girl On The Train” and answer all three parts.\n\n“In my mind’s eye, I could see the telegraph posts flashing by.”\n\n(a) What does “mind’s eye” mean here? How can the narrator picture the posts although he cannot see them now? [3]\n\n(b) What does the narrator do when the girl asks him to look out of the window? [3]\n\n(c) What does he say about the trees and the passengers? How does the girl reply? [3]",
       "response": {},
       "rubric": {
         "grammarAffectsScore": false,
         "points": [
           {
-            "concept": "Part (a): He has memories from when he could see.",
+            "concept": "Part (a): “Mind’s eye” means imagination or forming a mental picture.",
             "id": "a1",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (a): He uses memory or imagination to form a mental picture.",
+            "concept": "Part (a): The narrator remembers a time when he could see.",
             "id": "a2",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (a): Distinguishes that mental picture from present physical sight, which he does not have.",
+            "concept": "Part (a): He is now blind and is not seeing the posts with his eyes.",
             "id": "a3",
             "required": true,
             "weight": 1
@@ -741,19 +719,19 @@
             "weight": 1
           },
           {
-            "concept": "Part (c): His remark describes the familiar appearance of trees moving while train passengers seem still.",
+            "concept": "Part (c): He says the trees seem to move.",
             "id": "c1",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (c): Explains that he can make this general observation from experience without actually seeing the current scene.",
+            "concept": "Part (c): He says the passengers seem to be standing still.",
             "id": "c2",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (c): Uses the girl’s natural reply, “That always happens”, to show that she does not challenge the remark.",
+            "concept": "Part (c): The girl says that this always happens.",
             "id": "c3",
             "required": true,
             "weight": 1
@@ -792,78 +770,78 @@
         "senses-and-concealment"
       ],
       "type": "multi_point",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
-        "ideal": "(a) He imagines that she will soon forget him, whereas he will remember the meeting for the rest of the journey and afterwards. Her forgetting is his assumption, not a fact established by the story.\n\n(b) She says people repeatedly tell her that she has a pretty face. He therefore infers that she is pretty. He cannot judge her appearance by sight because he is blind.\n\n(c) The girl is glad the journey is short because she cannot bear sitting in a train for more than two or three hours. The narrator would willingly sit there for almost any length of time to hear her talk."
+        "ideal": "(a) The narrator imagines that the girl will forget him soon, while he will remember her because he enjoys listening to her talk.\n\n(b) The girl says people keep telling her she has a pretty face. The narrator realises she must be pretty and says that an interesting face can also be pretty.\n\n(c) She cannot bear sitting in a train for more than two or three hours. He would sit there for almost any length of time because he likes listening to her."
       },
       "difficulty": 2,
-      "explanation": "The brief meeting matters greatly to the narrator. His account reveals his attachment while leaving the girl’s private feelings uncertain. Award the stated points for equivalent wording and defensible interpretations supported by the text; exact textbook phrasing is not required. Mark each labelled part separately and do not award the same point twice within that part.",
+      "explanation": "The narrator enjoys the conversation more than the girl enjoys being on a train; her reply also tells him about her appearance.",
       "generation": {
-        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "generatedAt": "2026-09-27T06:04:26Z",
         "method": "codex-assisted",
         "validationStatus": "verified"
       },
-      "hint": "Distinguish what the girl actually says from what the narrator imagines she will feel.",
+      "hint": "Recall what each passenger says about the meeting, the girl’s face and the length of the journey.",
       "id": "q-012",
       "marks": 9,
       "origin": "chapter_content",
-      "prompt": "Read this extract from “The Girl On The Train” and answer all three parts.\n\n“As soon as she left the train, she would forget our brief encounter; but it would stay with me for the rest of the journey, and for some time after.”\n\n(a) What difference does the narrator imagine between their memories of the encounter? Is his view of the girl’s future feelings a known fact? [3]\n\n(b) After he calls her face “interesting”, what does her reply allow him to infer about her appearance? Explain why he needs her words to reach that conclusion. [3]\n\n(c) How does their conversation about a short journey reveal different attitudes to spending time together? [3]",
+      "prompt": "Read this extract from “The Girl On The Train” and answer all three parts.\n\n“As soon as she left the train, she would forget our brief encounter; but it would stay with me for the rest of the journey, and for some time after.”\n\n(a) What does the narrator think will happen after the girl leaves? Why will he remember their meeting? [3]\n\n(b) What does the girl say people tell her about her face? What does the narrator realise and say in reply? [3]\n\n(c) Why is the girl glad that her journey is short? Why would the narrator have liked it to last longer? [3]",
       "response": {},
       "rubric": {
         "grammarAffectsScore": false,
         "points": [
           {
-            "concept": "Part (a): He expects the girl to forget their brief meeting soon after leaving.",
+            "concept": "Part (a): The narrator thinks the girl will soon forget the meeting.",
             "id": "a1",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (a): He expects to remember the encounter beyond the journey.",
+            "concept": "Part (a): He expects to remember her after she leaves.",
             "id": "a2",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (a): Recognises her future feelings as his guess or assumption, not certain knowledge.",
+            "concept": "Part (a): He remembers her because he enjoys her voice or conversation.",
             "id": "a3",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (b): She reports that people often tell her she has a pretty face.",
+            "concept": "Part (b): The girl says people often tell her she has a pretty face.",
             "id": "b1",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (b): He infers from this that her face is pretty.",
+            "concept": "Part (b): The narrator realises or infers that she is pretty.",
             "id": "b2",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (b): He relies on her words because he cannot see her.",
+            "concept": "Part (b): He replies that an interesting face can also be pretty.",
             "id": "b3",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (c): The girl welcomes the short journey.",
+            "concept": "Part (c): The girl cannot bear sitting in a train for more than two or three hours.",
             "id": "c1",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (c): Gives her reason: she cannot bear sitting in a train for more than two or three hours.",
+            "concept": "Part (c): The narrator would willingly remain for almost any length of time.",
             "id": "c2",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (c): Contrasts his willingness to remain for almost any length of time because he enjoys listening to her.",
+            "concept": "Part (c): He wants to keep listening to the girl talk.",
             "id": "c3",
             "required": true,
             "weight": 1
@@ -891,78 +869,78 @@
         "connection-and-assumptions"
       ],
       "type": "multi_point",
-      "version": 1
+      "version": 2
     },
     {
       "answer": {
-        "ideal": "(a) The girl’s eyes look beautiful, yet she cannot see. Their attractive appearance therefore tells us nothing certain about their ability to give her sight.\n\n(b) Initially the narrator thinks she failed to notice him because he was in a dark corner. The ending reveals that she too is blind, so her not knowing he was there has another explanation: she could not see him.\n\n(c) The new traveller assumes that the narrator could have observed the girl’s eyes and recognised her blindness. The narrator is himself blind and cannot make that visual observation. The question exposes the new traveller’s mistaken assumption about him."
+        "ideal": "(a) The narrator asks whether the girl had long or short hair. The new traveller cannot remember her hair because he noticed her eyes instead.\n\n(b) He says that her eyes were beautiful but of no use to her: she was completely blind.\n\n(c) The narrator had thought she failed to notice him because he was sitting in a dark corner. At the end he learns that she was blind, so she could not see him."
       },
       "difficulty": 3,
-      "explanation": "The ending changes the meaning of earlier remarks. Do not assume that the girl knew of the narrator’s blindness or deliberately concealed her own; neither is established. Award the stated points for equivalent wording and defensible interpretations supported by the text; exact textbook phrasing is not required. Mark each labelled part separately and do not award the same point twice within that part.",
+      "explanation": "The new passenger’s remark reveals why the girl did not see the narrator and answers the narrator’s question about her appearance.",
       "generation": {
-        "generatedAt": "2026-09-26T02:44:32.973160+00:00",
+        "generatedAt": "2026-09-27T06:04:26Z",
         "method": "codex-assisted",
         "validationStatus": "verified"
       },
-      "hint": "Compare what each passenger assumes with what the ending actually reveals.",
+      "hint": "Recall the question about her hair, the new passenger’s reply, and the girl’s words when she entered.",
       "id": "q-013",
       "marks": 9,
       "origin": "chapter_content",
-      "prompt": "Read this extract from “The Girl On The Train” and answer all three parts.\n\n“She had such beautiful eyes, but they were of no use to her—she was completely blind. Didn’t you notice?”\n\n(a) What does the new traveller’s description reveal about the difference between appearance and ability? [3]\n\n(b) Return to the girl’s opening words, “I didn’t know anyone else was here.” How does the ending change our understanding of them? [3]\n\n(c) Why is “Didn’t you notice?” an ironic question to ask this particular narrator? [3]",
+      "prompt": "Read this extract from “The Girl On The Train” and answer all three parts.\n\n“Didn’t you notice?”\n\n(a) What does the narrator ask the new traveller about the girl? Why can the traveller not answer? [3]\n\n(b) What does the new traveller say about the girl’s eyes and her sight? [3]\n\n(c) At the beginning, why did the narrator think the girl had not noticed him? What does he learn at the end that explains it? [3]",
       "response": {},
       "rubric": {
         "grammarAffectsScore": false,
         "points": [
           {
-            "concept": "Part (a): Her eyes appear beautiful to the new traveller.",
+            "concept": "Part (a): The narrator asks whether the girl’s hair was long or short.",
             "id": "a1",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (a): She is completely blind or unable to see.",
+            "concept": "Part (a): The new traveller says he cannot remember her hair.",
             "id": "a2",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (a): Explains that outward beauty does not establish the ability to see.",
+            "concept": "Part (a): He had noticed her eyes rather than her hair.",
             "id": "a3",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (b): Recalls the narrator’s initial explanation that he was sitting in a dark corner.",
+            "concept": "Part (b): The girl’s eyes looked beautiful.",
             "id": "b1",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (b): Connects the ending with the discovery that the girl is blind.",
+            "concept": "Part (b): The traveller says her eyes were of no use to her.",
             "id": "b2",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (b): Explains that her inability to see, rather than merely overlooking a corner, accounts for her not knowing he was present.",
+            "concept": "Part (b): The girl was completely blind.",
             "id": "b3",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (c): The question assumes the narrator could observe the girl or her eyes.",
+            "concept": "Part (c): The narrator had thought he was sitting in a dark corner.",
             "id": "c1",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (c): The narrator is himself blind and cannot see what the new traveller describes.",
+            "concept": "Part (c): He learns that the girl was blind.",
             "id": "c2",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (c): Explains the mismatch: the new traveller does not realise the narrator has the same inability to see, making his assumption ironic.",
+            "concept": "Part (c): Because she could not see, she did not know he was in the compartment.",
             "id": "c3",
             "required": true,
             "weight": 1
@@ -1002,7 +980,7 @@
         "connection-and-assumptions"
       ],
       "type": "multi_point",
-      "version": 1
+      "version": 2
     }
   ],
   "schemaVersion": "0.1.0",

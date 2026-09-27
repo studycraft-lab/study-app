@@ -1,9 +1,9 @@
 {
   "reviewVersion": "0.1.0",
   "bankId": "the-girl-on-the-train",
-  "bankVersion": 1,
-  "reviewedAt": "2026-09-26T02:49:44.940092+00:00",
-  "reviewerMethod": "Codex visual comparison against all supplied chapter pages, question-by-question review of prompts, answer keys and atomic rubric concepts, comparison with the supplied 2025 paper and printed exercises, repository CLI validation and actual application import-validator check.",
+  "bankVersion": 2,
+  "reviewedAt": "2026-09-27T06:04:26Z",
+  "reviewerMethod": "Visual page-by-page check of supplied chapter scan and 2025 paper; independently checked revised quotations, model answers, rubric points, source references, marks and distractors; manifest/source-hash, schema and grounding CLI checks.",
   "inputs": {
     "manifest": "ingestion-artifacts/the-girl-on-the-train-chapter-manifest.json",
     "bank": "ingestion-artifacts/the-girl-on-the-train-question-bank.json",
@@ -39,8 +39,8 @@
     "objectiveMarkShare": 0.2,
     "topics": {
       "journey-and-conversation": 6,
-      "senses-and-concealment": 3,
-      "connection-and-assumptions": 4,
+      "senses-and-concealment": 4,
+      "connection-and-assumptions": 3,
       "revelation-and-irony": 2
     },
     "types": {
@@ -48,8 +48,8 @@
       "multi_point": 4
     },
     "difficulties": {
-      "1": 5,
-      "2": 7,
+      "1": 6,
+      "2": 6,
       "3": 1
     },
     "origins": {
@@ -61,7 +61,7 @@
     },
     "pages": {
       "page-89": 5,
-      "page-90": 11,
+      "page-90": 9,
       "page-91": 2
     },
     "correctOptionCounts": {
@@ -199,11 +199,9 @@
     {
       "questionId": "q-009",
       "sourcePages": [
-        "page-89",
-        "page-90",
-        "page-90"
+        "page-89"
       ],
-      "decision": "accept",
+      "decision": "replace-mcq",
       "checked": [
         "prompt and answer grounded",
         "quotation fidelity where used",
@@ -218,7 +216,7 @@
         "page-89",
         "page-90"
       ],
-      "decision": "accept",
+      "decision": "revise-prompt-and-rubric",
       "checked": [
         "prompt and answer grounded",
         "quotation fidelity where used",
@@ -233,7 +231,7 @@
         "page-90",
         "page-90"
       ],
-      "decision": "accept",
+      "decision": "revise-prompt-and-rubric",
       "checked": [
         "prompt and answer grounded",
         "quotation fidelity where used",
@@ -247,7 +245,7 @@
       "sourcePages": [
         "page-90"
       ],
-      "decision": "accept",
+      "decision": "revise-prompt-and-rubric",
       "checked": [
         "prompt and answer grounded",
         "quotation fidelity where used",
@@ -262,7 +260,7 @@
         "page-89",
         "page-91"
       ],
-      "decision": "accept",
+      "decision": "revise-prompt-and-rubric",
       "checked": [
         "prompt and answer grounded",
         "quotation fidelity where used",
@@ -300,8 +298,10 @@
     "To append questions, retain bank.id and all existing question IDs, assign unused IDs to new items and increase bank.version. Increase an existing question’s version only if its content changes; historical attempts retain their snapshots.",
     "The story states where the girl boards but not where the narrator boards. The unsupported past-paper prompt about the narrator’s boarding station is excluded.",
     "Do not assert that the girl knew of the narrator’s blindness or deliberately hid her own; the text does not establish this.",
-    "The narrator’s expectation that the girl will forget him is scored as an assumption, not a fact about her future feelings."
+    "v2 avoids abstract prose prompts about misleading wording, appearance versus ability and irony. It asks about identities, actions, speech, destinations and the ending. The narrator’s belief that the girl will forget him is presented as his thought, not an established fact."
   ],
   "blockingFindings": [],
-  "decision": "accept"
+  "decision": "accept",
+  "reviewScope": "v2 preserves the bank size and marks while revising the extract questions to match the supplied paper’s direct Grade VI wording. Poem analysis retains a supported figure-of-speech and mood question.",
+  "releaseStatus": "reviewed local bank; app import status not established"
 }

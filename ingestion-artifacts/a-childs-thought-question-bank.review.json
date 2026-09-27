@@ -1,9 +1,9 @@
 {
   "reviewVersion": "0.1.0",
   "bankId": "a-childs-thought",
-  "bankVersion": 1,
-  "reviewedAt": "2026-09-26T02:49:44.940092+00:00",
-  "reviewerMethod": "Codex visual comparison against all supplied chapter pages, question-by-question review of prompts, answer keys and atomic rubric concepts, comparison with the supplied 2025 paper and printed exercises, repository CLI validation and actual application import-validator check.",
+  "bankVersion": 2,
+  "reviewedAt": "2026-09-27T06:04:26Z",
+  "reviewerMethod": "Visual page-by-page check of supplied chapter scan and 2025 paper; independently checked revised quotations, model answers, rubric points, source references, marks and distractors; manifest/source-hash, schema and grounding CLI checks.",
   "inputs": {
     "manifest": "ingestion-artifacts/a-childs-thought-chapter-manifest.json",
     "bank": "ingestion-artifacts/a-childs-thought-question-bank.json",
@@ -188,7 +188,7 @@
         "page-9",
         "page-10"
       ],
-      "decision": "accept",
+      "decision": "revise-prompt-and-rubric",
       "checked": [
         "prompt and answer grounded",
         "quotation fidelity where used",
@@ -203,7 +203,7 @@
         "page-9",
         "page-10"
       ],
-      "decision": "accept",
+      "decision": "revise-prompt-and-rubric",
       "checked": [
         "prompt and answer grounded",
         "quotation fidelity where used",
@@ -218,7 +218,7 @@
         "page-9",
         "page-10"
       ],
-      "decision": "accept",
+      "decision": "revise-prompt-and-rubric",
       "checked": [
         "prompt and answer grounded",
         "quotation fidelity where used",
@@ -248,8 +248,11 @@
     "To append questions, retain bank.id and all existing question IDs, assign unused IDs to new items and increase bank.version. Increase an existing question’s version only if its content changes; historical attempts retain their snapshots.",
     "Read poem in column order: the second stanza starts in the left column and continues at the top of the right.",
     "Do not treat handwritten labels as authority; “castle frowned” is explicitly identified as personification in the printed glossary.",
-    "Interpretive marking allows equivalent text-supported descriptions of mood and the castle’s effect."
+    "Interpretive marking allows equivalent text-supported descriptions of mood and the castle’s effect.",
+    "v2 asks directly about the imagined figures and waking-room changes. The personification and bedtime-to-morning mood questions remain at the level of the supplied poetry paper."
   ],
   "blockingFindings": [],
-  "decision": "accept"
+  "decision": "accept",
+  "reviewScope": "v2 preserves the bank size and marks while revising the extract questions to match the supplied paper’s direct Grade VI wording. Poem analysis retains a supported figure-of-speech and mood question.",
+  "releaseStatus": "reviewed local bank; app import status not established"
 }

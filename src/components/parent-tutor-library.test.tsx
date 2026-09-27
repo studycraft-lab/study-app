@@ -24,7 +24,7 @@ it("requires preview before publication and accurately labels the free scripted 
   await waitFor(() => expect(screen.getByRole("button", { name: "Publish Squares v1" })).toBeEnabled());
 });
 it("reports unauthorized reads without exposing content", async () => {
-  vi.mocked(fetch).mockResolvedValue(Response.json({ error: "Parent sign-in required." }, { status: 401 }));
+  vi.mocked(fetch).mockImplementation(async () => Response.json({ error: "Parent sign-in required." }, { status: 401 }));
   render(<ParentTutorLibrary />);
   expect(await screen.findByRole("alert")).toHaveTextContent("Parent sign-in required");
   expect(screen.queryByRole("button", { name: /Publish/ })).not.toBeInTheDocument();

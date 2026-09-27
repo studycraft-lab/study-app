@@ -4,7 +4,8 @@ import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 import type { AvailableLesson, TutorChapter, TutorRequest, TutorSection } from "@/lib/tutor/request-store";
 import { AppHeader } from "./app-header";
-type Library = { chapters: TutorChapter[]; sections: TutorSection[]; lessons: AvailableLesson[]; requests: TutorRequest[]; progress: { id: string; pack_id: string; chapter_id: string; chapter_title: string; heading: string; completed: boolean }[] };
+import { videoTime, type VideoLesson } from "@/lib/tutor/video-types";
+type Library = { chapters: TutorChapter[]; sections: TutorSection[]; lessons: AvailableLesson[]; videos?: VideoLesson[]; requests: TutorRequest[]; progress: { id: string; pack_id: string; chapter_id: string; chapter_title: string; heading: string; completed: boolean }[] };
 function useLibrary(parent: boolean) {
   const endpoint = parent ? "/api/parent/tutor/requests" : "/api/study/tutor/library";
   const [library, setLibrary] = useState<Library | null>(null); const [error, setError] = useState(""); const [busy, setBusy] = useState(false);
@@ -25,6 +26,7 @@ export function ChildTutorLibrary({ chapterFilter }: { chapterFilter?: string })
   const [chapterId, setChapter] = useState(chapterFilter ?? ""); const [sectionId, setSection] = useState(""); const [heading, setHeading] = useState(""); const [page, setPage] = useState(""); const [note, setNote] = useState("");
   const selectedChapter = library?.chapters.find(ch => ch.id === chapterFilter);
   const visibleLessons = library?.lessons.filter(l => !chapterFilter || l.chapter_id === chapterFilter) ?? [];
+  const visibleVideos = library?.videos?.filter(l => !chapterFilter || l.chapter_id === chapterFilter) ?? [];
   const visibleProgress = library?.progress.filter(p => !chapterFilter || p.chapter_id === chapterFilter) ?? [];
   const visibleRequests = library?.requests.filter(r => !chapterFilter || r.chapter_id === chapterFilter) ?? [];
   const sections = library?.sections.filter(s => s.chapter_id === chapterId) ?? [];
@@ -40,16 +42,17 @@ export function ChildTutorLibrary({ chapterFilter }: { chapterFilter?: string })
     finally { setRestartingId(null); }
   }
   return <main className="study-shell tutor-library"><AppHeader role="child" /><Link className="tutor-back" href="/study">← Back to study</Link>
-    <header className="tutor-heading"><p className="eyebrow">{selectedChapter?.courses.subject ?? "One step at a time"}</p><h1>{selectedChapter?.title ?? "Your lessons"}</h1><p>Choose a lesson. We’ll save your place as you go.</p></header>
+    <header className="tutor-heading"><p className="eyebrow">{selectedChapter?.courses.subject ?? "One step at a time"}</p><h1>{selectedChapter?.title ?? "Your lessons"}</h1><p>Choose a lesson and learn at your own pace.</p></header>
     {error && <p role="alert">{error}</p>}
     {restartError && <p role="alert">{restartError}</p>}
     {!library && !error && <p role="status">Loading your lessons…</p>}
     {library && <>
       {!chapterFilter && <nav className="tutor-chapter-index" aria-label="Browse tutoring chapters">{[...new Set(library.chapters.map(ch => ch.courses.subject))].map(subject => <section key={subject}><h2>{subject}</h2>{library.chapters.filter(ch => ch.courses.subject === subject).map(ch => <Link key={ch.id} href={`/study/tutor/library?chapter=${ch.id}`}>{ch.title} →</Link>)}</section>)}</nav>}
       {(chapterFilter || !library.chapters.length) && <section className="tutor-cards" aria-label="Your lessons">
+        {visibleVideos.map(lesson => <article className="tutor-lesson-card" key={lesson.id}><span className="tutor-badge">Video lesson · {videoTime(lesson.duration_seconds)}</span><h2>{lesson.title}</h2><p>{lesson.description}</p><Link className="tutor-primary" href={`/study/tutor/video/${lesson.id}`}>Watch {lesson.title} →</Link></article>)}
         {visibleProgress.map(p => <article className="tutor-lesson-card" key={p.id}><span className="tutor-badge">{p.completed ? "Completed" : "In progress"}</span><p className="eyebrow">{p.chapter_title}</p><h2>{p.heading}</h2><p>{p.completed ? "Revisit what you learned." : "Pick up where you left off."}</p><div className="tutor-card-actions"><Link className="tutor-primary" href={`/study/tutor?resume=${p.id}`}>{p.completed ? "Review" : "Resume"} {p.heading} →</Link><button type="button" className="button-quiet" disabled={restartingId !== null} onClick={() => void restart(p.id, p.heading)}>{restartingId === p.id ? "Restarting…" : `Restart ${p.heading}`}</button></div></article>)}
         {visibleLessons.filter(lesson => !visibleProgress.some(p => p.pack_id === lesson.id)).map(lesson => <article className="tutor-lesson-card" key={lesson.id}><span className="tutor-badge">Ready to start</span><p className="eyebrow">{lesson.chapter_title}</p><h2>{lesson.heading}</h2><p>Learn with diagrams and short questions.</p><Link className="tutor-primary" href={`/study/tutor?pack=${lesson.id}`}>Learn {lesson.heading} →</Link></article>)}
-        {!visibleLessons.length && !visibleProgress.length && <div className="tutor-lesson-card"><h2>Your first lesson is on its way</h2><p>Your parent can add a lesson, or you can request a section below.</p></div>}
+        {!visibleLessons.length && !visibleProgress.length && !visibleVideos.length && <div className="tutor-lesson-card"><h2>Your first lesson is on its way</h2><p>Your parent can add a lesson, or you can request a section below.</p></div>}
       </section>}
       <details className="tutor-request-panel"><summary>Need help with another section?</summary><p>Send your parent the chapter and heading you’d like to learn.</p>
       <form onSubmit={e => { e.preventDefault(); void act({ chapterId, sectionId: sectionId || null, heading, page, note }); }}><fieldset disabled={busy}><legend>Request a lesson</legend><label>Chapter<select value={chapterId} onChange={e => { setChapter(e.target.value); setSection(""); setHeading(""); setPage(""); }} required><option value="">Choose a chapter</option>{library.chapters.map(ch => <option value={ch.id} key={ch.id}>{ch.courses.subject} · {ch.title}</option>)}</select></label>

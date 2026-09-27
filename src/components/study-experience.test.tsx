@@ -18,6 +18,17 @@ async function chooseHistoryChapter() {
 describe("StudyExperience", () => {
   afterEach(() => { cleanup(); vi.restoreAllMocks(); window.history.replaceState({}, "", "/"); });
 
+  it("opens a video-only chapter without offering a zero-question exercise", async () => {
+    vi.spyOn(globalThis, "fetch").mockImplementation(async input => String(input) === "/api/study/library"
+      ? Response.json({ child: { id: "child", grade: 6, board: "ICSE" }, chapters: [{ id: "video-poem", tutorChapterId: "poem", lessonOnly: true, subject: "English Literature", chapterTitle: "A Little Grain of Gold", questionCount: 0 }] })
+      : Response.json({ sessions: [], summary: {} }));
+    render(<StudyExperience tutorEnabled />);
+    fireEvent.click(await screen.findByRole("button", { name: /English Literature/ }));
+    expect(await screen.findByRole("link", { name: "Learn A Little Grain of Gold" })).toHaveAttribute("href", "/study/tutor/library?chapter=poem");
+    expect(screen.queryByText(/Start 0-question/)).not.toBeInTheDocument();
+    expect(screen.queryByRole("button", { name: "Study A Little Grain of Gold" })).not.toBeInTheDocument();
+  });
+
   it("uses an existing child session and gives immediate cited feedback", async () => {
     vi.spyOn(globalThis, "fetch").mockImplementation(async (input) => {
       const url = String(input);

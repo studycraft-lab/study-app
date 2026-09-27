@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "video-1.0",
+  "slug": "a-little-grain-of-gold",
+  "contentVersion": 1,
+  "title": "A Little Grain of Gold",
+  "description": "Read the poem with your tutor, explore its meanings and imagery, and discover its message about generosity.",
+  "source": {
+    "board": "ICSE",
+    "grade": 6,
+    "subject": "English Literature",
+    "chapterTitle": "A Little Grain of Gold",
+    "chapterNumber": null,
+    "documentName": "Scan_20260927_112154.pdf",
+    "sha256": "7a1a11dda3e6bb90f04064c23e5879a71382012d8e8d6de71062556732e6e64e",
+    "reviewed": true
+  },
+  "durationSeconds": 675.418,
+  "chapters": [
+    {
+      "title": "Welcome to the poem",
+      "start": 0
+    },
+    {
+      "title": "A wonderful arrival",
+      "start": 40.873
+    },
+    {
+      "title": "Great expectations",
+      "start": 98.56
+    },
+    {
+      "title": "The king stops",
+      "start": 150.318
+    },
+    {
+      "title": "An unexpected question",
+      "start": 195.272
+    },
+    {
+      "title": "Confusion and hesitation",
+      "start": 238.878
+    },
+    {
+      "title": "The smallest gift",
+      "start": 281.972
+    },
+    {
+      "title": "A discovery at day\u2019s end",
+      "start": 334.753
+    },
+    {
+      "title": "Regret",
+      "start": 382.529
+    },
+    {
+      "title": "A deeper reading",
+      "start": 444.392
+    },
+    {
+      "title": "The poet\u2019s choices",
+      "start": 518.472
+    },
+    {
+      "title": "Check your understanding",
+      "start": 562.841
+    },
+    {
+      "title": "Carry the message with you",
+      "start": 637.61
+    }
+  ],
+  "assets": {
+    "lesson.mp4": {
+      "file": "a-little-grain-of-gold.mp4",
+      "sha256": "d1536579bc1f86ddd56d3c748fb29a81f4547fe129e56bdab6eb41ba4436d7e6",
+      "contentType": "video/mp4"
+    },
+    "poster.jpg": {
+      "file": "poster.jpg",
+      "sha256": "865b2d5066b0d7da5007a101a17941924fceb55d8a4311fdd5561201ccf479d6",
+      "contentType": "image/jpeg"
+    },
+    "captions.en.vtt": {
+      "file": "a-little-grain-of-gold.en.vtt",
+      "sha256": "050b9668c4292338012c03a69a4080fe2b637ca2fbe2fe6789c19d3152aebae0",
+      "contentType": "text/vtt"
+    }
+  },
+  "narration": "Approved Voice A, warm American English; complete revised video (revision 2)."
+}

@@ -1,0 +1,13 @@
+import { beforeEach, expect, it, vi } from "vitest";
+vi.mock("server-only", () => ({}));
+const mocks = vi.hoisted(() => ({ auth: vi.fn(), family: vi.fn(), list: vi.fn(), playback: vi.fn(), status: vi.fn() }));
+vi.mock("@/lib/parent-auth", () => ({ isParentAuthorized: mocks.auth }));
+vi.mock("@/lib/family/store", () => ({ ensureFamily: mocks.family }));
+vi.mock("@/lib/tutor/video-store", () => ({ videoLessons: mocks.list, videoPlayback: mocks.playback, setVideoStatus: mocks.status }));
+import { GET, PATCH } from "./route";
+const id = "11111111-1111-1111-1111-111111111111";
+const request = () => new Request("http://localhost/api/parent/tutor/video", { method: "PATCH", headers: { "content-type": "application/json" }, body: JSON.stringify({ id, status: "archived", familyId: "other" }) });
+beforeEach(() => { vi.clearAllMocks(); vi.stubEnv("TUTOR_ENABLED", "true"); mocks.auth.mockReturnValue(true); mocks.family.mockResolvedValue({ id: "family" }); mocks.list.mockResolvedValue([]); });
+it.each([GET, PATCH])("requires parent authentication", async handler => { mocks.auth.mockReturnValue(false); expect((await handler(request())).status).toBe(401); expect(mocks.family).not.toHaveBeenCalled(); });
+it("scopes hide/publish actions to the server's family", async () => { expect((await PATCH(request())).status).toBe(200); expect(mocks.status).toHaveBeenCalledWith("family", id, "archived"); });
+it("lists only family videos", async () => { expect((await GET(request())).status).toBe(200); expect(mocks.list).toHaveBeenCalledWith("family"); });

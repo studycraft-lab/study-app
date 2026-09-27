@@ -189,3 +189,13 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
   .preparation-steps > li { padding: 1rem; }
   .preparation-steps h3 { padding-left: 2.75rem; min-height: 2rem; }
 }
+.video-lesson { max-width:1100px; margin:0 auto; }
+.video-lesson video { display:block; width:100%; aspect-ratio:16/9; background:#152725; border-radius:18px; margin-top:24px; }
+.video-lesson-tip { color:var(--muted); line-height:1.7; margin:18px 0 30px; }
+.video-lesson-chapters { border:1px solid var(--line); border-radius:20px; padding:clamp(18px,3vw,28px); background:var(--card); }
+.video-lesson-chapters h2 { margin-top:0; }
+.video-lesson-chapters ol { list-style:none; padding:0; margin:0; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; }
+.video-lesson-chapters button { width:100%; display:flex; gap:14px; align-items:baseline; text-align:left; padding:14px; min-height:48px; background:transparent; border:1px solid transparent; border-radius:10px; color:var(--ink); font:inherit; }
+.video-lesson-chapters button span { font-variant-numeric:tabular-nums; color:var(--muted); font-size:.9em; }
+.video-lesson-chapters button:hover,.video-lesson-chapters button[aria-current] { background:var(--blue-soft); border-color:var(--line); }
+@media(max-width:650px) { .video-lesson-chapters ol { grid-template-columns:1fr; } .video-lesson video { border-radius:10px; } }

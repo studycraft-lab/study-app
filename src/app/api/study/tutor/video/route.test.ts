@@ -1,0 +1,14 @@
+import { beforeEach, expect, it, vi } from "vitest";
+vi.mock("server-only", () => ({}));
+const mocks = vi.hoisted(() => ({ child: vi.fn(), playback: vi.fn() }));
+vi.mock("@/lib/family/request", () => ({ childFromRequest: mocks.child }));
+vi.mock("@/lib/tutor/video-store", () => ({ videoPlayback: mocks.playback }));
+import { GET } from "./route";
+const id = "11111111-1111-1111-1111-111111111111";
+const child = { id: "child", familyId: "family", board: "ICSE", grade: 6 };
+const request = () => new Request(`http://localhost/api/study/tutor/video?id=${id}&familyId=other`);
+beforeEach(() => { vi.clearAllMocks(); vi.stubEnv("TUTOR_ENABLED", "true"); mocks.child.mockResolvedValue(child); mocks.playback.mockResolvedValue({ videoUrl: "signed" }); });
+it("rejects anonymous playback", async () => { mocks.child.mockResolvedValue(null); expect((await GET(request())).status).toBe(401); expect(mocks.playback).not.toHaveBeenCalled(); });
+it("uses server identity and prevents signed-URL caching", async () => { const response = await GET(request()); expect(response.status).toBe(200); expect(mocks.playback).toHaveBeenCalledWith("family", id, child); expect(response.headers.get("cache-control")).toContain("no-store"); });
+it("honours the tutor flag", async () => { vi.stubEnv("TUTOR_ENABLED", "false"); expect((await GET(request())).status).toBe(503); expect(mocks.playback).not.toHaveBeenCalled(); });
+it("rejects an arbitrary asset path", async () => { expect((await GET(new Request("http://localhost/api/study/tutor/video?id=other/file.mp4"))).status).toBe(400); expect(mocks.playback).not.toHaveBeenCalled(); });

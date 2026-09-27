@@ -5,6 +5,7 @@ import { ParentVoicePermission } from "./tutor-voice-controls";
 import { ParentTutorRequests } from "./parent-tutor-requests";
 import { TutorPlayer } from "./tutor-player";
 import { AppHeader } from "./app-header";
+import { ParentVideoLessons } from "./parent-video-lessons";
 import { validateLessonPack } from "@/lib/tutor/validate";
 import type { TutorPackRow } from "@/lib/tutor/content-store";
 
@@ -49,6 +50,7 @@ export function ParentTutorLibrary() {
       <p className="preview-note">No voice API is used. This preview shows the diagrams, explanations and questions.</p>
       <TutorPlayer key={preview.id} pack={preview.payload} />
     </section> : <>
+    {!preparing && !error && <ParentVideoLessons />}
     <ParentTutorRequests key={packs.map(p => `${p.id}:${p.status}`).join(",")} packs={packs} onFocus={setPreparing} onPreview={row => void action(row,"preview")} onUploaded={async id => {const updated=await load();const row=updated.find(p=>p.id===id);if(!row) throw new Error("Uploaded lesson could not be loaded. Refresh and try preview again.");await action(row,"preview");}} />
     {!preparing && <section className="parent-tutor-panel" aria-label="Saved lessons"><div className="parent-panel-heading"><div><h2>Lesson library</h2><p>Preview a draft before publishing it for your child.</p></div>{subjects.length > 1 && <label>Subject<select value={subject} onChange={e => setSubject(e.target.value)}><option value="">All subjects</option>{subjects.map(name => <option key={name}>{name}</option>)}</select></label>}</div>
       {!packs.length && <p>No lessons yet. Open a child’s request above to prepare one.</p>}

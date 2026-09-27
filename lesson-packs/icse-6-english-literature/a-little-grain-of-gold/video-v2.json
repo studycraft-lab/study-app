@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "video-1.0",
+  "slug": "a-little-grain-of-gold",
+  "contentVersion": 2,
+  "title": "A Little Grain of Gold",
+  "description": "Read the poem with your tutor, explore its meanings and imagery, and discover its message about generosity.",
+  "source": {
+    "board": "ICSE",
+    "grade": 6,
+    "subject": "English Literature",
+    "chapterTitle": "A Little Grain of Gold",
+    "chapterNumber": null,
+    "documentName": "Scan_20260927_112154.pdf",
+    "sha256": "7a1a11dda3e6bb90f04064c23e5879a71382012d8e8d6de71062556732e6e64e",
+    "reviewed": true
+  },
+  "durationSeconds": 611.14,
+  "chapters": [
+    {
+      "title": "Welcome to the poem",
+      "start": 0.0
+    },
+    {
+      "title": "A wonderful arrival",
+      "start": 40.7
+    },
+    {
+      "title": "Great expectations",
+      "start": 92.2
+    },
+    {
+      "title": "The king stops",
+      "start": 138.1
+    },
+    {
+      "title": "An unexpected question",
+      "start": 179.44
+    },
+    {
+      "title": "Confusion and hesitation",
+      "start": 220.06
+    },
+    {
+      "title": "The smallest gift",
+      "start": 257.52
+    },
+    {
+      "title": "A discovery at day’s end",
+      "start": 305.78
+    },
+    {
+      "title": "Regret",
+      "start": 348.6
+    },
+    {
+      "title": "A deeper reading",
+      "start": 400.22
+    },
+    {
+      "title": "The poet’s choices",
+      "start": 464.76
+    },
+    {
+      "title": "Check your understanding",
+      "start": 505.7
+    },
+    {
+      "title": "Carry the message with you",
+      "start": 577.32
+    }
+  ],
+  "assets": {
+    "lesson.mp4": {
+      "file": "a-little-grain-of-gold.mp4",
+      "sha256": "a21c7d9fe92d2e8cf937b29d4b40c903ab5ea3ffb995a8bb606e79c4e45c3484",
+      "contentType": "video/mp4"
+    },
+    "poster.jpg": {
+      "file": "poster.jpg",
+      "sha256": "d00e45430571f318cb2ff5021426ea8aae270f6e504cd045193524809faf0ec8",
+      "contentType": "image/jpeg"
+    },
+    "captions.en.vtt": {
+      "file": "a-little-grain-of-gold.en.vtt",
+      "sha256": "f4bc228cda42d4ed514ce2ce36c60ab9c38a5aeed5338de5a2efa0805478cca1",
+      "contentType": "text/vtt"
+    }
+  },
+  "narration": "Expressive American tutor delivery selected by the user; full Runway Niki soundtrack (production revision 3)."
+}

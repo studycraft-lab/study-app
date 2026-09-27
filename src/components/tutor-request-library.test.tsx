@@ -5,6 +5,14 @@ vi.mock("./app-header", () => ({ AppHeader: () => <header>Child</header> }));
 const router = vi.hoisted(() => ({ push: vi.fn() }));
 vi.mock("next/navigation", () => ({ useRouter: () => router }));
 afterEach(() => { cleanup(); vi.restoreAllMocks(); router.push.mockClear(); });
+it("shows video lessons within their chapter without an empty-state message", async () => {
+  vi.stubGlobal("fetch", vi.fn().mockResolvedValue(Response.json({ chapters: [{ id: "poem", title: "A Little Grain of Gold", courses: { subject: "English Literature" } }], sections: [], requests: [], progress: [], lessons: [], videos: [{ id: "video", chapter_id: "poem", title: "A Little Grain of Gold", duration_seconds: 675.4, description: "Read with your tutor." }, { id: "foreign", chapter_id: "other", title: "Other chapter" }] })));
+  render(<ChildTutorLibrary chapterFilter="poem" />);
+  expect(await screen.findByRole("link", { name: /Watch A Little Grain of Gold/ })).toHaveAttribute("href", "/study/tutor/video/video");
+  expect(screen.getByText("Video lesson · 11:15")).toBeVisible();
+  expect(screen.queryByText("Your first lesson is on its way")).not.toBeInTheDocument();
+  expect(screen.queryByText("Other chapter")).not.toBeInTheDocument();
+});
 it("offers published lessons directly and explains unavailable and declined requests", async () => {
   vi.stubGlobal("fetch", vi.fn().mockResolvedValue(Response.json({ chapters: [],sections: [],progress: [{ id: "saved",pack_id: "pack",chapter_title: "Shapes",heading: "Squares",completed: false }], lessons: [{ id: "pack",heading: "Squares",chapter_title: "Shapes" }],requests: [{ id: "one",proposed_heading: "Plastids",status: "ready",available: false,pack_id: "archived" },{ id: "two",proposed_heading: "All Biology",status: "declined",reason: "Let's choose one short section.",available: false }] })));
   render(<ChildTutorLibrary />);

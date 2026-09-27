@@ -3,6 +3,7 @@ import { adminClient } from "@/lib/supabase/admin";
 import { tutorChapters } from "./content-store";
 import { TutorError } from "./http";
 import type { TutorChild } from "./progress-store";
+import { videoLessons } from "./video-store";
 export type TutorChapter = { id: string; title: string; courses: { board: string; grade: number; subject: string } };
 export type TutorSection = { id: string; chapter_id: string; heading: string; external_id: string; heading_path?: string[]; printed_pages: string[] };
 export type TutorRequest = { id: string; child_id: string; chapter_id: string; section_id: string | null; proposed_heading: string; page_reference: string; note: string; status: "requested" | "preparing" | "ready" | "declined"; reason: string; pack_id: string | null; available: boolean; child_profiles?: { display_name: string } };
@@ -25,7 +26,8 @@ export async function tutorRequestLibrary(familyId: string, child?: TutorChild) 
   const lessons = allPacks.filter(p => p.status === "published");
   const progress = (progressResult.data ?? []).flatMap(row => { const pack = allPacks.find(p => p.id === row.pack_id && p.status !== "draft"); return pack ? [{ id: String(row.id), pack_id: pack.id, chapter_id: pack.chapter_id, chapter_title: pack.chapter_title, heading: pack.heading, completed: row.state?.phase === "completed" }] : []; });
   const requests = (requestResult.data ?? []) as unknown as TutorRequest[];
-  return { chapters, progress, sections: (sectionResult.data ?? []) as TutorSection[], lessons, requests: requests.map(r => ({ ...r, available: r.status === "ready" && lessons.some(p => p.id === r.pack_id && p.section_id === r.section_id && p.chapter_id === r.chapter_id) })) };
+  const videos = await videoLessons(familyId, child);
+  return { chapters, progress, videos, sections: (sectionResult.data ?? []) as TutorSection[], lessons, requests: requests.map(r => ({ ...r, available: r.status === "ready" && lessons.some(p => p.id === r.pack_id && p.section_id === r.section_id && p.chapter_id === r.chapter_id) })) };
 }
 function requestError(error: { message: string; code?: string } | null) {
   if (!error) return;

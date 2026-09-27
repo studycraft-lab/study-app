@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "video-1.0",
+  "slug": "a-childs-thought",
+  "contentVersion": 1,
+  "title": "A Child’s Thought",
+  "description": "Explore Stevenson’s magical dream world with your tutor, then discover how the images and feelings change when the child wakes.",
+  "source": {
+    "board": "ICSE",
+    "grade": 6,
+    "subject": "English Literature",
+    "chapterTitle": "A Child’s Thought",
+    "chapterNumber": 1,
+    "documentName": "Scan_20260925_174441.pdf",
+    "sha256": "c5f3f6d06a1dd0206ab4a7d2aed76afd85889a2db6e40dffc2c42a65b4bd4ace",
+    "reviewed": true
+  },
+  "durationSeconds": 534.82,
+  "chapters": [
+    {
+      "title": "A whole world inside your head",
+      "start": 0
+    },
+    {
+      "title": "Pictures at bedtime",
+      "start": 31.9
+    },
+    {
+      "title": "Beauty, magic, and adventure",
+      "start": 63.96
+    },
+    {
+      "title": "The land of dreams",
+      "start": 132.78
+    },
+    {
+      "title": "Morning changes the picture",
+      "start": 176.72
+    },
+    {
+      "title": "The ordinary room returns",
+      "start": 233.3
+    },
+    {
+      "title": "Looking for the magic",
+      "start": 284.88
+    },
+    {
+      "title": "The two worlds",
+      "start": 328.14
+    },
+    {
+      "title": "The poet’s choices",
+      "start": 364.04
+    },
+    {
+      "title": "Check your understanding",
+      "start": 419.38
+    },
+    {
+      "title": "Carry the idea with you",
+      "start": 499.96
+    }
+  ],
+  "assets": {
+    "lesson.mp4": {
+      "file": "a-childs-thought.mp4",
+      "sha256": "898f019e3e71daa30c1d5e3647e482e3452e017bfe7cd4d37db297181cf52d1e",
+      "contentType": "video/mp4"
+    },
+    "poster.jpg": {
+      "file": "poster.jpg",
+      "sha256": "141514f62c37afc4f3cff932cfa3c9f76ceb38be36c43949a1a7494c1efaff53",
+      "contentType": "image/jpeg"
+    },
+    "captions.en.vtt": {
+      "file": "a-childs-thought.en.vtt",
+      "sha256": "eecd88b7ca86fe5cb5a44ae50f2ea790a25526e569a3dc3269ab284447cea118",
+      "contentType": "text/vtt"
+    }
+  },
+  "narration": "Expressive American tutor delivery selected by the user; full Runway Niki soundtrack (production revision 1)."
+}

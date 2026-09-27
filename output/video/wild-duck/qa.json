@@ -1,0 +1,28 @@
+{
+  "source": {
+    "filename": "Scan_20260927_164834.pdf",
+    "sha256": "3812578ab59babd19e716b4ca6b8efd9b256a93c04ea941aa25929ed725fba57",
+    "printed_pages": "66-69"
+  },
+  "video": {
+    "duration_seconds": 500.289,
+    "width": 1920,
+    "height": 1080,
+    "frame_rate": 24,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "audio_sample_rate": 24000,
+    "scenes": 10,
+    "questions": 10,
+    "thinking_pause_seconds_each": 7,
+    "caption_cues": 114
+  },
+  "checks": {
+    "source_hash_verified": true,
+    "script_reviewed_against_scan": true,
+    "sample_frames_visually_reviewed": true,
+    "video_decoded_without_errors": true,
+    "audio_listened_to_end_to_end": false
+  },
+  "note": "The chapter question bank is still in preparation; this revision is grounded directly in the supplied chapter scan."
+}

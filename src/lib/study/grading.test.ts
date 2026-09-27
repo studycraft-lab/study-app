@@ -125,6 +125,18 @@ describe("gradeSubmittedQuestion", () => {
     });
   });
 
+  it("does not request parent review for feedback praising one covered point in a partial answer", async () => {
+    const classifier = vi.fn(async () => ({
+      points: [{ id: "p1", coverage: "covered" as const, confidence: 0.95 }, { id: "p2", coverage: "partial" as const, confidence: 0.95 }, { id: "p3", coverage: "covered" as const, confidence: 0.95 }],
+      feedback: "You correctly identified the speaker and the visitors' purpose. Add who the people are.",
+      confidence: 0.95, spellingErrors: [], grammarErrors: [],
+      meta: { provider: "openrouter" as const, model: "test", promptTokens: 10, completionTokens: 5, totalTokens: 15, cost: 0.001, latencyMs: 20 },
+    }));
+    await expect(gradeSubmittedQuestion(bank, "q-006", "The councils controlled him.", classifier)).resolves.toMatchObject({
+      earnedMarks: 1.75, reviewRequired: false, verdict: "partial",
+    });
+  });
+
   it("applies language penalties only when the rubric enables them", async () => {
     const spellingBank = structuredClone(bank);
     spellingBank.questions[0].rubric.spellingAffectsScore = true;

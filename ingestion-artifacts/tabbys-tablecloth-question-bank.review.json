@@ -1,10 +1,10 @@
 {
   "reviewVersion": "0.1.0",
   "bankId": "tabbys-tablecloth",
-  "bankVersion": 4,
-  "reviewedAt": "2026-09-26T20:34:27Z",
+  "bankVersion": 5,
+  "reviewedAt": "2026-09-27T09:03:00+05:30",
   "reviewerMethod": "Visual review of printed chapter pages 77–81, comparison with all prose questions in the supplied 2025 English Literature paper, question-by-question rubric review, source-hash verification, schema validation and deterministic grounding review.",
-  "reviewScope": "v4 retains the nine objective questions and rewrites all four extract sets as direct prose questions with three independently scorable marks per part.",
+  "reviewScope": "v5 clarifies q-010(a)'s scoring: 'farmers in Concord' fully identifies the people meant. The other questions and marks remain as reviewed in v4.",
   "releaseStatus": "reviewed local bank; not imported",
   "inputs": {
     "manifest": "ingestion-artifacts/tabbys-tablecloth-chapter-manifest.json",
@@ -51,7 +51,7 @@
     { "questionId": "q-007", "decision": "retain", "sourcePages": ["page-80"] },
     { "questionId": "q-008", "decision": "retain", "sourcePages": ["page-80"] },
     { "questionId": "q-009", "decision": "retain", "sourcePages": ["page-80"] },
-    { "questionId": "q-010", "decision": "revise-prompt-and-rubric", "sourcePages": ["page-77", "page-79"], "finding": "Asks directly about speaker, visitors' purpose, Bliss's reply, Brown's actions and Concord's hiding places and patrol." },
+    { "questionId": "q-010", "decision": "clarify-rubric", "sourcePages": ["page-77", "page-79"], "finding": "The phrase 'farmers in Concord' is a complete answer for who 'these people' means; it does not require the extra word 'townspeople'." },
     { "questionId": "q-011", "decision": "revise-prompt-and-rubric", "sourcePages": ["page-77", "page-78", "page-79"], "finding": "Asks about the British visitors, Bliss's Tory allegiance, Tabby's hiding and her response when Brown hurts her hand. The former 'foreign accents' mark is removed because the supplied chapter pages do not state it." },
     { "questionId": "q-012", "decision": "revise-prompt-and-rubric", "sourcePages": ["page-79", "page-80"], "finding": "Replaces sigh and irony analysis with identity, Tabby's escape and the effects of her warning; avoids repeating the paper's cat-rescue question or requiring a minor escape step." },
     { "questionId": "q-013", "decision": "revise-prompt-and-rubric", "sourcePages": ["page-79", "page-80"], "finding": "Asks how the cloth reached Tabby, why her family kept it and how it was used for Tabby and wounded soldiers." }
@@ -66,7 +66,7 @@
     "The supplied 2025 prose questions use direct prompts about people, events, motives and consequences. V4 follows that style in all four extract sets while retaining three marks per part and avoiding near-copies of last year's Tabby subquestions.",
     "The 2025 paper's objective section names foreign accents as a clue, but the supplied abridged chapter scan does not. No active v4 answer requires that unsupported detail.",
     "A screenshot of partial credit does not contain the submitted answer, so the exact 1/9 decision could not be audited.",
-    "The canonical local bank is reviewed but has not been imported into StudyCraft."
+    "This v5 bank revision has been reviewed locally; app import status is not established by this review."
   ],
   "blockingFindings": [],
   "decision": "accept"

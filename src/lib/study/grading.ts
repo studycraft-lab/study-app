@@ -29,8 +29,10 @@ function withObjectiveVerdict<T extends { correct: boolean; earnedMarks: number 
   };
 }
 
-function feedbackClaimsCorrect(feedback: string): boolean {
-  return /\b(great job|correctly identified|answer is correct|fully correct|correct answer)\b/iu.test(feedback);
+function feedbackClaimsCorrect(feedback: string, pointCount: number): boolean {
+  if (/\b(?:your|the) (?:whole |entire )?answer is (?:fully |completely )?correct\b|\bfully correct\b|\b(?:all|every) (?:required |key )?(?:points|parts|facts|ideas) (?:are |were )?(?:correct|covered|present)\b/iu.test(feedback)) return true;
+  if (pointCount === 1 && /\bcorrectly identified\b/iu.test(feedback)) return true;
+  return pointCount === 2 && /\bcorrectly identified both\b/iu.test(feedback);
 }
 
 export async function gradeSubmittedQuestion(bankValue: unknown, questionId: string, response: unknown, classifier: Classifier = classifyRubric) {
@@ -60,7 +62,7 @@ export async function gradeSubmittedQuestion(bankValue: unknown, questionId: str
     const judgement = classification.points.find((point) => point.id === "answer")!;
     const correct = judgement.coverage === "covered";
     const earnedMarks = correct ? Number(question.marks ?? 0) : objective.earnedMarks;
-    const contradictoryFeedback = !correct && feedbackClaimsCorrect(classification.feedback);
+    const contradictoryFeedback = !correct && feedbackClaimsCorrect(classification.feedback, 1);
     const reviewRequired = classification.confidence < 0.7 || contradictoryFeedback;
     return {
       ...objective,
@@ -108,7 +110,7 @@ export async function gradeSubmittedQuestion(bankValue: unknown, questionId: str
   const earnedMarks = rounded(Math.max(0, contentMarks - spellingPenalty - grammarPenalty));
   const threshold = typeof rubric.uncertainBelowConfidence === "number" ? rubric.uncertainBelowConfidence : 0.7;
   const correct = earnedMarks >= maximum;
-  const contradictoryFeedback = !correct && feedbackClaimsCorrect(classification.feedback);
+  const contradictoryFeedback = !correct && feedbackClaimsCorrect(classification.feedback, points.length);
   const reviewRequired = classification.confidence < threshold || contradictoryFeedback;
   const verdict = reviewRequired ? "review" : correct ? "correct" : earnedMarks > 0 ? "partial" : "incorrect";
   return {

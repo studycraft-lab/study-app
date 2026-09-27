@@ -8,7 +8,7 @@
     "status": "reviewed",
     "subject": "English Literature",
     "title": "Tabby’s Tablecloth",
-    "version": 4
+    "version": 5
   },
   "questions": [
     {
@@ -565,7 +565,7 @@
     },
     {
       "answer": {
-        "ideal": "(a) Captain Brown asks the question. He means the people of Concord, especially the farmers. The British visitors have come to find out where supplies are hidden and how well the town is defended.\n\n(b) Mr Bliss says the people will fight the British to the death. Brown swears and stamps his foot, bringing his heel down on Tabby’s hand.\n\n(c) Supplies such as gunpowder, axes and guns are hidden in houses. The cannons are hidden in the woods. A guard of ten men patrols Concord at night."
+        "ideal": "(a) Captain Brown asks the question. He means the farmers or other people of Concord. The British visitors have come to find out where supplies are hidden and how well the town is defended.\n\n(b) Mr Bliss says the people will fight the British to the death. Brown swears and stamps his foot, bringing his heel down on Tabby’s hand.\n\n(c) Supplies such as gunpowder, axes and guns are hidden in houses. The cannons are hidden in the woods. A guard of ten men patrols Concord at night."
       },
       "difficulty": 2,
       "explanation": "The three parts ask for the speaker and purpose of the visit, Brown’s actions after Bliss’s reply, and Concord’s hiding places and night patrol. Accept accurate equivalent wording rather than exact textbook phrases.",
@@ -590,7 +590,7 @@
             "weight": 1
           },
           {
-            "concept": "Part (a): ‘These people’ are the people of Concord, including its farmers.",
+            "concept": "Part (a): ‘These people’ means Concord's farmers or townspeople. Saying ‘farmers in Concord’ fully covers this point.",
             "id": "a2",
             "required": true,
             "weight": 1
@@ -672,7 +672,7 @@
         "discovery-and-irony"
       ],
       "type": "multi_point",
-      "version": 4
+      "version": 5
     },
     {
       "answer": {

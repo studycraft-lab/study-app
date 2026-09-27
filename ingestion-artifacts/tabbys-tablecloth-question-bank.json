@@ -8,7 +8,7 @@
     "status": "reviewed",
     "subject": "English Literature",
     "title": "Tabby’s Tablecloth",
-    "version": 3
+    "version": 4
   },
   "questions": [
     {
@@ -565,75 +565,75 @@
     },
     {
       "answer": {
-        "ideal": "(a) They are the people of Concord, including its farmers. The officers seek the locations of the stored supplies and information about the town’s defences.\n\n(b) Mr Bliss says the people will fight the officers to death. Brown swears and stamps his foot. His reaction suggests anger, frustration or alarm at the thought of resistance.\n\n(c) The people have hidden supplies and cannons, a guard of ten men patrols at night, and the farmers are preparing for the expected conflict."
+        "ideal": "(a) Captain Brown asks the question. He means the people of Concord, especially the farmers. The British visitors have come to find out where supplies are hidden and how well the town is defended.\n\n(b) Mr Bliss says the people will fight the British to the death. Brown swears and stamps his foot, bringing his heel down on Tabby’s hand.\n\n(c) Supplies such as gunpowder, axes and guns are hidden in houses. The cannons are hidden in the woods. A guard of ten men patrols Concord at night."
       },
       "difficulty": 2,
-      "explanation": "The officers want intelligence about Concord, but the town has already taken precautions. Award equivalent details and a defensible reading of Brown’s reaction; do not require one exact emotion word.",
+      "explanation": "The three parts ask for the speaker and purpose of the visit, Brown’s actions after Bliss’s reply, and Concord’s hiding places and night patrol. Accept accurate equivalent wording rather than exact textbook phrases.",
       "generation": {
         "method": "codex-assisted",
-        "generatedAt": "2026-09-26T13:27:06+00:00",
+        "generatedAt": "2026-09-26T20:29:53+00:00",
         "validationStatus": "pending"
       },
-      "hint": "Separate the officers’ purpose, Brown’s reaction and the town’s earlier preparations.",
+      "hint": "Recall who is speaking, what Brown does next, and where Concord keeps its supplies and cannons.",
       "id": "q-010",
       "marks": 9,
       "origin": "chapter_content",
-      "prompt": "Read this extract from “Tabby’s Tablecloth” and answer all three parts.\n\n“These people won’t fight, will they?”\n\n(a) Who are “these people”, and what are the officers trying to discover in Concord? [3]\n\n(b) What does Mr Bliss say in reply? How does Captain Brown react, and what does his reaction suggest? [3]\n\n(c) How had the people of Concord already prepared for a possible fight with the British? [3]",
+      "prompt": "Read this extract from “Tabby’s Tablecloth” and answer all three parts.\n\n“These people won’t fight, will they?”\n\n(a) Who asks this question? Who are “these people”, and why have the visitors come to Concord? [3]\n\n(b) What does Mr Bliss say will happen if the British attack? What does Captain Brown do next? [3]\n\n(c) Where had the townspeople hidden their supplies and cannons? How did they watch the town at night? [3]",
       "response": {},
       "rubric": {
         "grammarAffectsScore": false,
         "points": [
           {
-            "concept": "Part (a): Identifies the people of Concord or its townspeople/farmers.",
+            "concept": "Part (a): Captain Brown asks the question.",
             "id": "a1",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (a): The officers seek the locations of stored supplies.",
+            "concept": "Part (a): ‘These people’ are the people of Concord, including its farmers.",
             "id": "a2",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (a): The officers seek information about how well the town is defended.",
+            "concept": "Part (a): The visitors have come to learn where Concord’s supplies are hidden and/or how well the town is defended, so the British can attack or seize them.",
             "id": "a3",
             "required": true,
             "weight": 1
           },
           {
             "id": "b1",
-            "concept": "Part (b): Mr Bliss says the people will fight the British to death or resist fiercely.",
+            "concept": "Part (b): Mr Bliss says the people of Concord will fight the British to the death or resist fiercely.",
             "weight": 1,
             "required": true
           },
           {
             "id": "b2",
-            "concept": "Part (b): Captain Brown swears and stamps his foot in response.",
+            "concept": "Part (b): Captain Brown swears or responds angrily.",
             "weight": 1,
             "required": true
           },
           {
             "id": "b3",
-            "concept": "Part (b): Infers anger, frustration, alarm or a comparable text-supported reaction to the expected resistance.",
+            "concept": "Part (b): Captain Brown stamps his foot, bringing his heel down on Tabby’s hand.",
             "weight": 1,
             "required": true
           },
           {
             "id": "c1",
-            "concept": "Part (c): The people have hidden supplies, including cannons, to protect them.",
+            "concept": "Part (c): Gunpowder, axes, guns or other supplies are hidden in houses in Concord.",
             "weight": 1,
             "required": true
           },
           {
             "id": "c2",
-            "concept": "Part (c): A guard of ten men patrols the town at night.",
+            "concept": "Part (c): The cannons are hidden in the woods.",
             "weight": 1,
             "required": true
           },
           {
             "id": "c3",
-            "concept": "Part (c): The farmers are preparing for the expected fighting.",
+            "concept": "Part (c): A guard patrols the town at night; the exact number ten is optional.",
             "weight": 1,
             "required": true
           }
@@ -672,79 +672,79 @@
         "discovery-and-irony"
       ],
       "type": "multi_point",
-      "version": 3
+      "version": 4
     },
     {
       "answer": {
-        "ideal": "(a) The strangers' foreign accents make Tabby suspicious. She wants to learn what they are planning. Seeing the cat come out from beneath the long tablecloth gives her an idea for a hiding place.\n\n(b) She enters through the open window, hides under the dining table and makes herself small beneath the long tablecloth so the men cannot see her.\n\n(c) Tabby is courageous despite her fear. She wants to learn whether the men's plans threaten Concord, and she chooses to hide and listen even though she might be discovered. Another well-supported view may also earn credit."
+        "ideal": "(a) Tabby knows the two visitors are British soldiers and Mr Bliss is a Tory. She suspects they are making plans that could harm Concord, so she wants to hear their conversation.\n\n(b) She jumps through the open window, hides under the dining table and makes herself small beneath the long tablecloth so the men cannot see her.\n\n(c) Captain Brown stamps his foot and his heel lands on Tabby’s hand. The pain nearly makes her cry out, but she bites her lips and stays still so the men do not discover her."
       },
       "difficulty": 2,
-      "explanation": "Part (a) asks for three direct story details. Part (b) scores how Tabby enters and conceals herself; hiding the basket is optional extra detail. For part (c), accept a defensible view supported by her purpose and action, including equivalent wording.",
+      "explanation": "Tabby’s suspicion comes from the visitors being British soldiers and Mr Bliss being a Tory. The answer then follows her entry, hiding place and effort to stay silent when Brown hurts her hand. Do not require a claim about foreign accents; the supplied chapter pages do not state that clue.",
       "generation": {
         "method": "codex-assisted",
-        "generatedAt": "2026-09-26T13:27:06+00:00",
+        "generatedAt": "2026-09-26T20:29:53+00:00",
         "validationStatus": "pending"
       },
-      "hint": "Recall why the strangers trouble Tabby, what the cat shows her, and what she chooses to do despite her fear.",
+      "hint": "Recall who the visitors and Mr Bliss are, how Tabby hides, and what she does when her hand is hurt.",
       "id": "q-011",
       "marks": 9,
       "origin": "chapter_content",
-      "prompt": "Read this extract from “Tabby’s Tablecloth” and answer all three parts.\n\n“Do I dare to do it? What will happen to me if they find me?”\n\n(a) What makes Tabby suspicious of the strangers? What does she hope to learn from them? What gives her an idea for a hiding place? [3]\n\n(b) How does Tabby get into the room and keep out of sight while she listens? [3]\n\n(c) What does this moment show about Tabby’s courage? Support your answer with details from the story. [3]",
+      "prompt": "Read this extract from “Tabby’s Tablecloth” and answer all three parts.\n\n“Do I dare to do it? What will happen to me if they find me?”\n\n(a) What does Tabby know about the two visitors and Mr Bliss? Why does she want to listen to them? [3]\n\n(b) How does Tabby enter the dining room, and where does she hide? [3]\n\n(c) What happens to Tabby when Captain Brown stamps his foot? How does she avoid giving herself away? [3]",
       "response": {},
       "rubric": {
         "grammarAffectsScore": false,
         "points": [
           {
-            "concept": "Part (a): The strangers' foreign accents make Tabby suspicious.",
+            "concept": "Part (a): Tabby knows the two visitors are British soldiers.",
             "id": "a1",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (a): She hopes to learn what the strangers are planning or discussing.",
+            "concept": "Part (a): Tabby knows Mr Bliss is a Tory who may help the British.",
             "id": "a2",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (a): Seeing the cat emerge from beneath the long tablecloth gives her the hiding idea.",
+            "concept": "Part (a): She wants to learn their plans because she suspects they may harm Concord.",
             "id": "a3",
             "required": true,
             "weight": 1
           },
           {
             "id": "b1",
-            "concept": "Part (b): She enters the room through the open window.",
+            "concept": "Part (b): She enters through the open window.",
             "weight": 1,
             "required": true
           },
           {
             "id": "b2",
-            "concept": "Part (b): She gets beneath the dining table.",
+            "concept": "Part (b): She hides under the dining table.",
             "weight": 1,
             "required": true
           },
           {
             "id": "b3",
-            "concept": "Part (b): She makes herself small and uses the tablecloth’s long folds to stay out of sight.",
+            "concept": "Part (b): She makes herself small beneath the long tablecloth, which keeps her out of sight.",
             "weight": 1,
             "required": true
           },
           {
             "id": "c1",
-            "concept": "Part (c): States a defensible view of Tabby's courage despite her fear.",
+            "concept": "Part (c): Captain Brown’s heel lands on Tabby’s hand when he stamps his foot.",
             "weight": 1,
             "required": true
           },
           {
             "id": "c2",
-            "concept": "Part (c): Explains her purpose: to discover the men’s harmful plans or protect Concord.",
+            "concept": "Part (c): The pain nearly makes Tabby cry out.",
             "weight": 1,
             "required": true
           },
           {
             "id": "c3",
-            "concept": "Part (c): Uses her decision to hide and listen despite possible discovery as evidence.",
+            "concept": "Part (c): She bites her lips and stays still or otherwise keeps silent to avoid discovery.",
             "weight": 1,
             "required": true
           }
@@ -804,79 +804,79 @@
         "courage-and-choices"
       ],
       "type": "multi_point",
-      "version": 3
+      "version": 4
     },
     {
       "answer": {
-        "ideal": "(a) The unexpected sneeze alarms the men, who fear a listener under the table. Seeing the cat reassures them.\n\n(b) The cat cannot repeat their conversation, but Tabby is also hidden under the table and hears their plans. She later reports them, so Mr Bliss’s confidence is mistaken.\n\n(c) The warning gives the townspeople time to act. They move valuable supplies to nearby towns and prepare or aim their cannons at the enemy."
+        "ideal": "(a) Mr Bliss speaks to Captain Brown and the other, junior British officer.\n\n(b) After the men leave, Tabby escapes through the window and tells the people of Concord what she heard. The British officers are already well on their way to Boston, so they escape.\n\n(c) Her warning gives the people time to move valuable supplies to nearby towns and get their cannons ready. They are not taken by surprise when the British attack."
       },
       "difficulty": 2,
-      "explanation": "The men feel safe because they see only the cat, but Tabby can report what she heard. Her warning still gives Concord time to protect supplies and ready its cannons, even though the officers escape.",
+      "explanation": "The extract identifies Mr Bliss and the two British officers. After they leave, Tabby escapes and warns Concord; the officers are already heading to Boston. The warning lets the town move supplies, ready cannons and avoid surprise.",
       "generation": {
         "method": "codex-assisted",
-        "generatedAt": "2026-09-26T13:27:06+00:00",
+        "generatedAt": "2026-09-26T20:29:53+00:00",
         "validationStatus": "pending"
       },
-      "hint": "Think about what the men believe, what the reader knows and what happens after the warning.",
+      "hint": "Name the speaker and visitors, then follow Tabby from the window to her warning.",
       "id": "q-012",
       "marks": 9,
       "origin": "chapter_content",
-      "prompt": "Read this extract from “Tabby’s Tablecloth” and answer all three parts.\n\n“It’s only the old cat, gentlemen. A good beast, and luckily for us, unable to report our talk,” said Mr Bliss with a sigh of relief.\n\n(a) What does “a sigh of relief” reveal about the men’s reaction before and after the cloth is lifted? [3]\n\n(b) Why is “unable to report our talk” ironic in this situation? [3]\n\n(c) The officers escape. Why does Tabby’s warning still matter, and what do the townspeople do afterwards? [3]",
+      "prompt": "Read this extract from “Tabby’s Tablecloth” and answer all three parts.\n\n“It’s only the old cat, gentlemen. A good beast, and luckily for us, unable to report our talk,” said Mr Bliss with a sigh of relief.\n\n(a) Who says these words? Who are the two “gentlemen” he is speaking to? [3]\n\n(b) What does Tabby do after the men leave? Why are the British officers able to escape? [3]\n\n(c) How does Tabby’s warning help the people of Concord? [3]",
       "response": {},
       "rubric": {
         "grammarAffectsScore": false,
         "points": [
           {
-            "concept": "Part (a): A sneeze or unexpected noise under the table alarms them.",
+            "concept": "Part (a): Mr Bliss says these words.",
             "id": "a1",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (a): Explains their concern that someone may be hidden or overhearing their secret talk.",
+            "concept": "Part (a): One of the gentlemen is Captain Brown.",
             "id": "a2",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (a): The cat’s appearance reassures them that their secrecy is safe.",
+            "concept": "Part (a): The other gentleman is a junior British officer; his personal name is not required.",
             "id": "a3",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (b): Explains that Bliss believes the cat cannot reveal the conversation.",
+            "concept": "Part (b): Tabby escapes from Mr Bliss’s house through the window; mentioning that she creeps out from under the table is optional.",
             "id": "b1",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (b): Contrasts this with Tabby being hidden there and hearing the plans.",
+            "concept": "Part (b): She tells the people of Concord what she heard or gives them a warning.",
             "id": "b2",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (b): Explains that Tabby can and does give a warning, undermining his confidence.",
+            "concept": "Part (b): The British officers escape because they are already well on their way to Boston when she tells her story.",
             "id": "b3",
             "required": true,
             "weight": 1
           },
           {
             "id": "c1",
-            "concept": "Part (c): The warning gives the townspeople time to take precautions before the attack.",
+            "concept": "Part (c): The people have time to move valuable supplies to nearby towns.",
             "weight": 1,
             "required": true
           },
           {
             "id": "c2",
-            "concept": "Part (c): The townspeople move valuable supplies to nearby towns.",
+            "concept": "Part (c): They get their cannons ready or aim them at the enemy; either wording earns this mark.",
             "weight": 1,
             "required": true
           },
           {
             "id": "c3",
-            "concept": "Part (c): They prepare their cannons and/or aim them at the enemy; one clear artillery-readiness idea earns this mark.",
+            "concept": "Part (c): They are not taken by surprise and can defend the town when the British attack.",
             "weight": 1,
             "required": true
           }
@@ -926,79 +926,79 @@
         "concord-and-secrecy"
       ],
       "type": "multi_point",
-      "version": 3
+      "version": 4
     },
     {
       "answer": {
-        "ideal": "(a) After the fighting, the government took over Mr Bliss’s property and sold many of his things at auction. Tabby’s uncle bought the cloth and gave it to her. Later, her daughter preserved it as a token of her mother’s bravery.\n\n(b) Its long folds concealed Tabby beneath the table. Later it was made into lint and soft squares. These were placed on soldiers’ wounds to care for the injured.\n\n(c) The cloth ends in useful service, helping wounded soldiers. Earlier, Tabby risked her own safety to protect others. Both show service and concern for people, so the cloth’s final use continues the spirit of her brave deed."
+        "ideal": "(a) After the fighting, the government took over Mr Bliss’s property and sold many of his belongings at an auction. Tabby’s uncle bought the tablecloth there.\n\n(b) Her uncle said the cloth belonged to Tabby because her quick eyes and ears had warned Concord, so the town was not taken by surprise. Tabby’s daughter later preserved it as a token of her mother’s bravery.\n\n(c) The long tablecloth hid Tabby while she listened beneath Mr Bliss’s table. In 1861 it was made into lint and soft squares, which were used to cover or dress soldiers’ wounds."
       },
       "difficulty": 2,
-      "explanation": "The ending invites a link between Tabby’s earlier risk for her community and the cloth’s later care for wounded soldiers. Award a clear comparison, without requiring a particular moral phrase.",
+      "explanation": "The questions follow the cloth from the auction to Tabby’s family, then ask for its two uses. Score the stated events and accept equivalent descriptions of bandages or dressings for the wounded soldiers.",
       "generation": {
         "method": "codex-assisted",
-        "generatedAt": "2026-09-26T13:27:06+00:00",
+        "generatedAt": "2026-09-26T20:29:53+00:00",
         "validationStatus": "pending"
       },
-      "hint": "Follow the cloth through its owners as well as its uses: concealment, remembrance and care for the wounded.",
+      "hint": "Follow what happened to Mr Bliss’s property, why Tabby received the cloth, and how it helped people in both periods.",
       "id": "q-013",
       "marks": 9,
       "origin": "chapter_content",
-      "prompt": "Read this extract from “Tabby’s Tablecloth” and answer all three parts.\n\n“In 1861, Tabby’s tablecloth saw another war and made an honourable end as a boxful of finest lint and softest squares to lay on the wounds of soldiers at war.”\n\n(a) How did the tablecloth pass from Mr Bliss’s house to Tabby, and how was it preserved in her family? [3]\n\n(b) Compare the way the cloth protected Tabby with the way it helped soldiers in 1861. [3]\n\n(c) Why is “honourable” a fitting description of this end? Connect the cloth’s later use with the values shown by Tabby. [3]",
+      "prompt": "Read this extract from “Tabby’s Tablecloth” and answer all three parts.\n\n“In 1861, Tabby’s tablecloth saw another war and made an honourable end as a boxful of finest lint and softest squares to lay on the wounds of soldiers at war.”\n\n(a) What happened to Mr Bliss’s property after the fighting? How did Tabby’s uncle get the tablecloth? [3]\n\n(b) Why did her uncle say the tablecloth belonged to Tabby? What did her daughter do with it later? [3]\n\n(c) How did the tablecloth help Tabby when she was hiding? How was it used to help soldiers in 1861? [3]",
       "response": {},
       "rubric": {
         "grammarAffectsScore": false,
         "points": [
           {
-            "concept": "Part (a): After the fighting, Mr Bliss’s property was taken over by the government and his belongings were auctioned.",
+            "concept": "Part (a): The government took over Mr Bliss’s property after the fighting.",
             "id": "a1",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (a): Tabby’s uncle bought the tablecloth at the auction and gave it to her.",
+            "concept": "Part (a): Many of Mr Bliss’s belongings were sold at an auction.",
             "id": "a2",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (a): Her daughter later preserved it as a token of her mother’s bravery.",
+            "concept": "Part (a): Tabby’s uncle bought the tablecloth at the auction.",
             "id": "a3",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (b): The cloth hid or protected Tabby from discovery under the table.",
+            "concept": "Part (b): Tabby’s quick observation and listening enabled her to warn the town.",
             "id": "b1",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (b): It was later made into lint and soft cloth squares.",
+            "concept": "Part (b): Her warning kept the townspeople from being taken by surprise or helped them resist the British attack.",
             "id": "b2",
             "required": true,
             "weight": 1
           },
           {
-            "concept": "Part (b): Those pieces were used to dress or care for soldiers’ wounds.",
+            "concept": "Part (b): Tabby’s daughter preserved the cloth as a token of her mother’s bravery.",
             "id": "b3",
             "required": true,
             "weight": 1
           },
           {
             "id": "c1",
-            "concept": "Part (c): The cloth’s final use directly helps wounded soldiers, making it a worthy and caring end.",
+            "concept": "Part (c): The long tablecloth concealed Tabby beneath Mr Bliss’s dining table.",
             "weight": 1,
             "required": true
           },
           {
             "id": "c2",
-            "concept": "Part (c): Tabby earlier took a personal risk to help protect her town.",
+            "concept": "Part (c): In 1861 the cloth was made into lint and soft squares or bandage-like pieces.",
             "weight": 1,
             "required": true
           },
           {
             "id": "c3",
-            "concept": "Part (c): Explains the shared value: the cloth serves people in danger in both episodes, so its later use continues the spirit of Tabby’s act.",
+            "concept": "Part (c): Those pieces were placed on or used to dress wounded soldiers’ injuries.",
             "weight": 1,
             "required": true
           }
@@ -1037,7 +1037,7 @@
         "courage-and-choices"
       ],
       "type": "multi_point",
-      "version": 3
+      "version": 4
     }
   ],
   "schemaVersion": "0.1.0",

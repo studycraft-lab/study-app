@@ -16,19 +16,19 @@ The operator command accepts a reviewed manifest, a directory containing its MP4
 
 ```sh
 node --env-file=.env.local --import tsx scripts/import-video-lesson.mts \
-  lesson-packs/icse-6-english-literature/a-little-grain-of-gold/video-v1.json \
+  lesson-packs/icse-6-english-literature/a-little-grain-of-gold/video-v2.json \
   /path/to/approved/media COURSE_ID
 ```
 
 Imports default to draft. Preview the video and publish it from the parent library. `--publish` is available for an operator importing already approved content. The manifest hash identifies an immutable version: changed content requires a higher `contentVersion`. Media is not committed to Git. A bucket can also be created and files uploaded through the authenticated Supabase dashboard when local credentials are unavailable; registration must use the same manifest and fixed filenames `lesson.mp4`, `poster.jpg`, `captions.en.vtt`.
 
-## A Little Grain of Gold, version 1
+## A Little Grain of Gold, version 2
 
-The manifest records the source PDF identity and approved revision-2 media digests. The lesson is 11:15, uses the selected American Voice A, reads all eight poem passages, and includes explanatory illustrations and 13 timed sections. The newer Runway comparison sample is not the complete lesson soundtrack. The source scan and video production working files remain local.
+The current manifest records the source PDF identity and revision-3 media digests. The lesson is 10:11 and uses the expressive American Runway delivery selected by the user. The full soundtrack was regenerated, with phrase highlights and captions aligned to the recorded speech. It reads all eight poem passages, preserves six five-second thinking pauses, and includes explanatory illustrations and 13 timed sections. Version 1 records the earlier Voice A draft and was not published. The source scan and video production working files remain local.
 
 The local migration is `20260927070106_create_tutor_video_lessons.sql`; the production MCP ledger assigned `20260927071201`. As with the older tutoring migrations, reconcile ledger versions before a future CLI push; do not replay the entire migration history.
 
-Validation: lint, TypeScript, production build, and 337 tests passed (one optional CLI test skipped). On local Node 26, tests require `NODE_OPTIONS=--no-experimental-webstorage`; CI uses Node 22. Browser verification of the actual media in the shared player confirmed playback, seeking to 6:22, and a 390px layout with no horizontal overflow. This used a temporary local fixture, not a production child login. The temporary fixture is removed before deployment.
+Validation: lint, TypeScript, production build, and the full CI test suite passed (one optional CLI test skipped). On local Node 26, tests require `NODE_OPTIONS=--no-experimental-webstorage`; CI uses Node 22. Browser verification of the earlier media in the shared player confirmed playback, seeking to 6:22, and a 390px layout with no horizontal overflow. The Runway replacement was checked separately for complete decoding, script coverage, timed captions, and representative rendered frames. This used a temporary local fixture, not a production child login. The temporary fixture is removed before deployment.
 
 ## Second cut: questions during playback
 

@@ -1,0 +1,155 @@
+{
+  "assets": [
+    {
+      "fileName": "Scan_20260927_164834.pdf",
+      "height": 3264,
+      "id": "chapter-scan",
+      "pages": [
+        {
+          "bounds": {
+            "height": 1,
+            "width": 1,
+            "x": 0,
+            "y": 0
+          },
+          "id": "page-66",
+          "pageNumber": 1
+        },
+        {
+          "bounds": {
+            "height": 1,
+            "width": 1,
+            "x": 0,
+            "y": 0
+          },
+          "id": "page-67",
+          "pageNumber": 2
+        },
+        {
+          "bounds": {
+            "height": 1,
+            "width": 1,
+            "x": 0,
+            "y": 0
+          },
+          "id": "page-68",
+          "pageNumber": 3
+        },
+        {
+          "bounds": {
+            "height": 1,
+            "width": 1,
+            "x": 0,
+            "y": 0
+          },
+          "id": "page-69",
+          "pageNumber": 4
+        }
+      ],
+      "sha256": "3812578ab59babd19e716b4ca6b8efd9b256a93c04ea941aa25929ed725fba57",
+      "width": 2443
+    },
+    {
+      "fileName": "FIRST_TERM_VI_ENGLISH_LITERATURE_1787974373.pdf",
+      "height": 842,
+      "id": "past-paper",
+      "pages": [
+        {
+          "bounds": {
+            "height": 1,
+            "width": 1,
+            "x": 0,
+            "y": 0
+          },
+          "id": "past-paper-page-1",
+          "pageNumber": 1
+        },
+        {
+          "bounds": {
+            "height": 1,
+            "width": 1,
+            "x": 0,
+            "y": 0
+          },
+          "id": "past-paper-page-2",
+          "pageNumber": 2
+        },
+        {
+          "bounds": {
+            "height": 1,
+            "width": 1,
+            "x": 0,
+            "y": 0
+          },
+          "id": "past-paper-page-3",
+          "pageNumber": 3
+        },
+        {
+          "bounds": {
+            "height": 1,
+            "width": 1,
+            "x": 0,
+            "y": 0
+          },
+          "id": "past-paper-page-4",
+          "pageNumber": 4
+        },
+        {
+          "bounds": {
+            "height": 1,
+            "width": 1,
+            "x": 0,
+            "y": 0
+          },
+          "id": "past-paper-page-5",
+          "pageNumber": 5
+        },
+        {
+          "bounds": {
+            "height": 1,
+            "width": 1,
+            "x": 0,
+            "y": 0
+          },
+          "id": "past-paper-page-6",
+          "pageNumber": 6
+        },
+        {
+          "bounds": {
+            "height": 1,
+            "width": 1,
+            "x": 0,
+            "y": 0
+          },
+          "id": "past-paper-page-7",
+          "pageNumber": 7
+        }
+      ],
+      "sha256": "4a2cee4ef28495cb840319bf7df661690f983ccee44495c870cc8ad68da148c8",
+      "width": 595
+    }
+  ],
+  "chapter": {
+    "board": "ICSE",
+    "bookTitle": "Cordova Learning Series English - 6",
+    "chapterNumber": 9,
+    "grade": 6,
+    "id": "wild-duck",
+    "subject": "English Literature",
+    "title": "Wild Duck"
+  },
+  "learningOutcomes": [
+    "Retell how the father and boy wait for the teal and what each does when the flock arrives.",
+    "Describe the wounded duck and explain how the boy responds to it.",
+    "Explain how caring for the duck changes the boy and affects his father.",
+    "Answer the printed literary exercises using details from the story."
+  ],
+  "manifestVersion": "0.1.0",
+  "sourcePolicy": {
+    "applicationStorage": "not-uploaded",
+    "notes": "The scan supplies the literary text and end exercises. The supplied 2025 paper supplies question style only. The chapter pages do not print a formal learning-outcome list; the outcomes below are source-derived coverage goals. Short quotations appear directly in playable questions.",
+    "originals": "local-only",
+    "repositoryCopies": false,
+    "runtimeStrategy": "none"
+  }
+}

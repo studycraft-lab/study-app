@@ -1,0 +1,284 @@
+{
+  "advisoryNotes": [
+    "The 2025 paper is used for direct Grade VI prose-question style and three-mark subparts, not as a factual source for these later chapters.",
+    "Exact ideal-answer wording is not required; each independent rubric idea earns its mark. No spelling or grammar penalties apply.",
+    "The original copyrighted scans remain local. Short quotations in active questions are included in the prompt, so no runtime source image is required."
+  ],
+  "atomicCoverageInventory": [
+    "Page 109: Roger tries to snatch Mrs Jones’s purse at about eleven o’clock at night.",
+    "Page 109: the strap breaks and the combined weight makes Roger fall backwards.",
+    "Page 109: Mrs Jones picks Roger up, shakes him and makes him return her purse.",
+    "Page 109–110: Roger apologises and asks to be released; Mrs Jones takes him home.",
+    "Page 110: Roger is about fourteen or fifteen, frail and willow-wild.",
+    "Page 110: Mrs Jones asks Roger to wash his face and leaves the door open.",
+    "Page 110: Roger looks at the door but goes to the sink instead of fleeing.",
+    "Page 110: Roger wants blue suede shoes and Mrs Jones says he could have asked.",
+    "Page 110: Mrs Jones says she too wanted things she could not get and has done things she will not tell Roger.",
+    "Page 111: Mrs Jones leaves her purse unwatched; Roger sits where she can see him because he does not want mistrust.",
+    "Page 111: she prepares lima beans, meat and cocoa for Roger.",
+    "Page 111: she avoids embarrassing personal questions and talks about her hotel beauty-shop job.",
+    "Page 111: Mrs Jones gives Roger ten dollars and warns him not to steal purses.",
+    "Page 111: Roger barely manages to say thank you and never sees her again.",
+    "Pages 109–112: inline and printed exercises test vocabulary, facts, character, trust and reference to context."
+  ],
+  "bankId": "thank-you-maam",
+  "bankVersion": 1,
+  "blockingFindings": [],
+  "coverage": {
+    "briefAnswerCount": 7,
+    "difficulties": {
+      "1": 12,
+      "2": 9,
+      "3": 2
+    },
+    "extractSetCount": 4,
+    "objectiveCount": 12,
+    "origins": {
+      "chapter_content": 9,
+      "end_exercise": 14
+    },
+    "pages": {
+      "page-109": 10,
+      "page-110": 11,
+      "page-111": 16,
+      "page-112": 7
+    },
+    "questionCount": 23,
+    "selectionPriorities": {
+      "1": 14,
+      "2": 9
+    },
+    "sourceAssetReadiness": {
+      "inlineQuotationSets": 4,
+      "runtimeAssetsRequired": false,
+      "unsupportedPlayableTypes": []
+    },
+    "topics": {
+      "attempt": 5,
+      "care": 6,
+      "ending": 4,
+      "language": 2,
+      "response": 4,
+      "trust": 2
+    },
+    "totalMarks": 69,
+    "types": {
+      "brief_answer": 7,
+      "fill_blank": 4,
+      "multi_point": 4,
+      "single_choice": 8
+    }
+  },
+  "decision": "accept",
+  "gates": {
+    "deterministicGroundingReview": "pass",
+    "examComplexityComparison": "pass",
+    "manifestSchema": "pass",
+    "manualGroundingReview": "pass",
+    "questionBankSchema": "pass",
+    "rubricBalanceReview": "pass",
+    "sourceHashes": "pass"
+  },
+  "inputs": {
+    "bank": "ingestion-artifacts/thank-you-maam-question-bank.json",
+    "chapterAsset": "Scan_20260927_165049.pdf",
+    "manifest": "ingestion-artifacts/thank-you-maam-chapter-manifest.json",
+    "pastPaper": "FIRST_TERM_VI_ENGLISH_LITERATURE_1787974373.pdf",
+    "sourceAssetCount": 2
+  },
+  "omissions": [
+    {
+      "reason": "The bank is for English Literature; the grammar lesson is a separate subject area.",
+      "source": "Printed page 112: Use Grammar — direct and indirect speech."
+    }
+  ],
+  "questionReview": [
+    {
+      "decision": "accept",
+      "questionId": "q-001",
+      "sourcePages": [
+        "page-111",
+        "page-109"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-002",
+      "sourcePages": [
+        "page-111",
+        "page-109"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-003",
+      "sourcePages": [
+        "page-111",
+        "page-110"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-004",
+      "sourcePages": [
+        "page-111",
+        "page-110"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-005",
+      "sourcePages": [
+        "page-109",
+        "page-111"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-006",
+      "sourcePages": [
+        "page-109"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-007",
+      "sourcePages": [
+        "page-110"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-008",
+      "sourcePages": [
+        "page-111"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-009",
+      "sourcePages": [
+        "page-111"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-010",
+      "sourcePages": [
+        "page-111"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-011",
+      "sourcePages": [
+        "page-110"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-012",
+      "sourcePages": [
+        "page-111",
+        "page-109"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-013",
+      "sourcePages": [
+        "page-111",
+        "page-109"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-014",
+      "sourcePages": [
+        "page-112",
+        "page-110"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-015",
+      "sourcePages": [
+        "page-112",
+        "page-109",
+        "page-110",
+        "page-111"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-016",
+      "sourcePages": [
+        "page-112",
+        "page-111"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-017",
+      "sourcePages": [
+        "page-112",
+        "page-110",
+        "page-111"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-018",
+      "sourcePages": [
+        "page-112",
+        "page-110",
+        "page-111"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-019",
+      "sourcePages": [
+        "page-112",
+        "page-109",
+        "page-110"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-020",
+      "sourcePages": [
+        "page-112",
+        "page-110",
+        "page-111"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-021",
+      "sourcePages": [
+        "page-110",
+        "page-111"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-022",
+      "sourcePages": [
+        "page-109"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-023",
+      "sourcePages": [
+        "page-109"
+      ]
+    }
+  ],
+  "releaseStatus": "reviewed local bank; not imported",
+  "reviewScope": "First reviewed bank. Includes the answerable literary end exercises and additional exam-style questions. Grammar sections are outside English Literature.",
+  "reviewVersion": "0.1.0",
+  "reviewedAt": "2026-09-27T12:44:58Z",
+  "reviewerMethod": "Visual review of all supplied chapter pages and 2025 paper; question-by-question checks of answer keys, rubric points, citations, and age-appropriate wording; schema, source-hash and deterministic grounding checks."
+}

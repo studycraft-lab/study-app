@@ -1,0 +1,1826 @@
+{
+  "bank": {
+    "board": "ICSE",
+    "bookTitle": "Cordova Learning Series English - 6",
+    "chapterNumber": 9,
+    "grade": 6,
+    "id": "wild-duck",
+    "status": "reviewed",
+    "subject": "English Literature",
+    "title": "Wild Duck",
+    "version": 1
+  },
+  "questions": [
+    {
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 1,
+      "explanation": "They were waiting for the wild birds to fly over the lake.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the detail described in the story.",
+      "id": "q-001",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "What were the man and the boy waiting for near the red volcanic hill?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "A flock of teal"
+          },
+          {
+            "id": "b",
+            "text": "A fishing boat"
+          },
+          {
+            "id": "c",
+            "text": "A rainstorm"
+          },
+          {
+            "id": "d",
+            "text": "A herd of animals"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-68",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-66",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "preparation"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 1,
+      "explanation": "The question was about the boy’s gun.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the detail described in the story.",
+      "id": "q-002",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "When the man asked “You loaded?”, what did he want to know?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "Whether the boat was packed"
+          },
+          {
+            "id": "b",
+            "text": "Whether the boy’s gun was loaded"
+          },
+          {
+            "id": "c",
+            "text": "Whether the ducks had landed"
+          },
+          {
+            "id": "d",
+            "text": "Whether the paddle was ready"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-68",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-66",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "preparation"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "c"
+      },
+      "difficulty": 1,
+      "explanation": "The moving birds required the boy to aim ahead; the man said he had to manage with one shot.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the detail described in the story.",
+      "id": "q-003",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Why did the man tell the boy to imagine the birds’ flight path?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "So the boy could count them"
+          },
+          {
+            "id": "b",
+            "text": "So the boy could draw them later"
+          },
+          {
+            "id": "c",
+            "text": "So the boy could aim ahead and manage with one shot"
+          },
+          {
+            "id": "d",
+            "text": "So the boy could row towards them"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-68",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-66",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "preparation"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 1,
+      "explanation": "He was spellbound as masses of birds covered the sky.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the detail described in the story.",
+      "id": "q-004",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Why did the boy exclaim that there must be millions of birds?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "He was fascinated by the enormous flock"
+          },
+          {
+            "id": "b",
+            "text": "He wanted the birds to leave"
+          },
+          {
+            "id": "c",
+            "text": "He was counting the birds one by one"
+          },
+          {
+            "id": "d",
+            "text": "He was frightened of the lake"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-68",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-66",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "flock"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 1,
+      "explanation": "The boy said he wanted to look after the living duck.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the detail described in the story.",
+      "id": "q-005",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Why did the man tell the boy to look after the injured duck?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "The man wanted to keep hunting"
+          },
+          {
+            "id": "b",
+            "text": "The boy wanted to take the duck home and care for it"
+          },
+          {
+            "id": "c",
+            "text": "The duck had already flown away"
+          },
+          {
+            "id": "d",
+            "text": "The boy asked the man to sell it"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-68",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-67",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "care"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "c"
+      },
+      "difficulty": 1,
+      "explanation": "They sat in a motionless boat on the lake.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the detail described in the story.",
+      "id": "q-006",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "Where did the man and the boy wait for the birds?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "On a hill"
+          },
+          {
+            "id": "b",
+            "text": "In a field"
+          },
+          {
+            "id": "c",
+            "text": "In a small boat on a lake"
+          },
+          {
+            "id": "d",
+            "text": "Beside a road"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-66",
+          "regionId": "story",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "preparation"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 1,
+      "explanation": "The father begins firing before the boy raises his rifle.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the detail described in the story.",
+      "id": "q-007",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "Who fires first when the flock passes above the boat?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "The boy"
+          },
+          {
+            "id": "b",
+            "text": "The father"
+          },
+          {
+            "id": "c",
+            "text": "Both at the same time"
+          },
+          {
+            "id": "d",
+            "text": "A hunter on the shore"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-67",
+          "regionId": "story",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "injury"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "d"
+      },
+      "difficulty": 1,
+      "explanation": "Its damaged wing meant it could never fly again.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the detail described in the story.",
+      "id": "q-008",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "What could the injured duck never do again?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "Swim"
+          },
+          {
+            "id": "b",
+            "text": "Eat"
+          },
+          {
+            "id": "c",
+            "text": "Waddle"
+          },
+          {
+            "id": "d",
+            "text": "Fly"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-68",
+          "regionId": "story",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "care"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "c"
+      },
+      "difficulty": 1,
+      "explanation": "The boy tells his father that he threw the gun away.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the detail described in the story.",
+      "id": "q-009",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "What did the boy later do with his gun?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "He gave it to his father"
+          },
+          {
+            "id": "b",
+            "text": "He repaired it"
+          },
+          {
+            "id": "c",
+            "text": "He threw it away"
+          },
+          {
+            "id": "d",
+            "text": "He left it in the boat"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-68",
+          "regionId": "story",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "change"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 1,
+      "explanation": "The comparison uses “like”, making it a simile.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the detail described in the story.",
+      "id": "q-010",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "The wounded duck’s wing is compared to the ragged sail of a toy boat. What figure of speech is this?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "Simile"
+          },
+          {
+            "id": "b",
+            "text": "Rhyme"
+          },
+          {
+            "id": "c",
+            "text": "Alliteration"
+          },
+          {
+            "id": "d",
+            "text": "Personification"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-67",
+          "regionId": "story",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "language"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "The birds are moving very quickly in huge flocks. The boy must aim ahead of their flight and may have only one shot."
+      },
+      "difficulty": 2,
+      "explanation": "The birds are moving very quickly in huge flocks. The boy must aim ahead of their flight and may have only one shot.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer using the relevant story details.",
+      "id": "q-011",
+      "marks": 3,
+      "origin": "end_exercise",
+      "prompt": "Why does the man tell the boy to be quick and shoot fast?",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "The birds are flying or moving fast.",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "The boy must aim ahead of their flight path.",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "The man says the boy must manage with a single shot.",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-68",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-66",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "preparation"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "The immense flocks of teal sweeping across the sky leave him spellbound. He loves watching birds."
+      },
+      "difficulty": 2,
+      "explanation": "The immense flocks of teal sweeping across the sky leave him spellbound. He loves watching birds.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer using the relevant story details.",
+      "id": "q-012",
+      "marks": 3,
+      "origin": "end_exercise",
+      "prompt": "What leaves the boy spellbound, and what is his passion?",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "A huge flock or ribbon of birds appears.",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "The birds cover much of the sky or move in masses.",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Watching birds is the boy’s passion.",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-68",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-66",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "flock"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Huge clouds of teal sweep across the sky. They move in changing formations and blot out some of the light."
+      },
+      "difficulty": 2,
+      "explanation": "Huge clouds of teal sweep across the sky. They move in changing formations and blot out some of the light.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer using the relevant story details.",
+      "id": "q-013",
+      "marks": 3,
+      "origin": "end_exercise",
+      "prompt": "Describe what the boy sees when half the sky is covered by teal.",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "There are huge numbers or clouds of teal.",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "The flock moves in changing shapes or formations.",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "The birds cover half the sky or blot out the light.",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-68",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-66",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-67",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "flock"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "He sees a large duck floating behind the bulrushes. One wing is broken and points upwards like a ragged sail."
+      },
+      "difficulty": 2,
+      "explanation": "He sees a large duck floating behind the bulrushes. One wing is broken and points upwards like a ragged sail.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer using the relevant story details.",
+      "id": "q-014",
+      "marks": 3,
+      "origin": "end_exercise",
+      "prompt": "What does the boy see floating on the water when he looks for the bird he shot?",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "He sees the wounded duck floating on the water.",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "It is behind the bulrushes.",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Its broken wing points upward or looks like a ragged sail.",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-68",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-67",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "injury"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "He bandages its broken wing, learns to feed it and spends hours watching it waddle in the backyard."
+      },
+      "difficulty": 2,
+      "explanation": "He bandages its broken wing, learns to feed it and spends hours watching it waddle in the backyard.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer using the relevant story details.",
+      "id": "q-015",
+      "marks": 3,
+      "origin": "end_exercise",
+      "prompt": "How does the boy look after the injured duck at home?",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "He bandages the duck’s wing.",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "He learns to feed the duck.",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "He spends time watching or caring for it in the backyard.",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-69",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-68",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "care"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "He has wounded a living bird. Seeing its broken wing and helplessness frightens him and makes him regret what he has done."
+      },
+      "difficulty": 2,
+      "explanation": "He has wounded a living bird. Seeing its broken wing and helplessness frightens him and makes him regret what he has done.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer using the relevant story details.",
+      "id": "q-016",
+      "marks": 3,
+      "origin": "end_exercise",
+      "prompt": "Why does the boy say that shooting the duck made him feel sick?",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "He realizes he has wounded the duck.",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "He sees that it is helpless or has a broken wing.",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "He feels frightened, guilty or sorry about the harm he caused.",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-69",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-67",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-68",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "change"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "After injuring the duck and caring for it, he no longer wants to shoot birds. He throws away the gun despite his father’s surprise."
+      },
+      "difficulty": 3,
+      "explanation": "After injuring the duck and caring for it, he no longer wants to shoot birds. He throws away the gun despite his father’s surprise.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer using the relevant story details.",
+      "id": "q-017",
+      "marks": 3,
+      "origin": "end_exercise",
+      "prompt": "Why does the boy decide to throw away his gun?",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Shooting left the duck injured and unable to fly.",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Caring for it changed how he felt about the bird.",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "He no longer wants to shoot birds, so he throws the gun away.",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-69",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-67",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-68",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "change"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "He is first shocked that his son has thrown away the gun. A moment later he feels peaceful, because he is relieved that the gun is gone."
+      },
+      "difficulty": 2,
+      "explanation": "He is first shocked that his son has thrown away the gun. A moment later he feels peaceful, because he is relieved that the gun is gone.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer using the relevant story details.",
+      "id": "q-018",
+      "marks": 3,
+      "origin": "end_exercise",
+      "prompt": "How does the man first react to his son’s decision? How does he feel a moment later, and why?",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "He is first shocked by his son’s decision.",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "He then feels a sense of peace.",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "He is relieved that the gun has been thrown away.",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-69",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-68",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "change"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "(a) The father says it to his son while they are in a boat on the lake.\n\n(b) The teal are flying high. The father has fired his gun at them but failed to bring one down.\n\n(c) The boy aims steadily at the bird leading a formation and fires. The bird falls from the sky."
+      },
+      "difficulty": 2,
+      "explanation": "Score the three labelled parts separately using the cited story events.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall who is involved, what happens and why it matters.",
+      "id": "q-019",
+      "marks": 9,
+      "origin": "end_exercise",
+      "prompt": "Read this extract from “Wild Duck” and answer all three parts.\n\n“Too high, they’re flying much too high.”\n\n(a) Who says this, to whom, and where are they? [3]\n\n(b) Which birds are flying high? What has the speaker just tried to do? [3]\n\n(c) What does the boy do next, and what happens to the bird he aims at? [3]",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Part (a): The speaker is the man or father.",
+            "id": "a1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (a): He is speaking to his son or the boy.",
+            "id": "a2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (a): They are in a boat on a lake.",
+            "id": "a3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): The high-flying birds are teal or wild ducks.",
+            "id": "b1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): The father has fired his gun at the flock.",
+            "id": "b2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): He has missed because the birds are too high.",
+            "id": "b3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): The boy aims patiently or steadily at one bird.",
+            "id": "c1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): He chooses the leader of a formation and fires.",
+            "id": "c2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): The bird falls or plummets.",
+            "id": "c3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-69",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-67",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "injury"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "(a) The father speaks to his son in their boat on the lake.\n\n(b) “It” is the bird the boy shot. It fell into the water behind the bulrushes.\n\n(c) The boy finds a wounded duck with a broken wing, scoops it out of the water and brings it into the boat."
+      },
+      "difficulty": 2,
+      "explanation": "Score the three labelled parts separately using the cited story events.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall who is involved, what happens and why it matters.",
+      "id": "q-020",
+      "marks": 9,
+      "origin": "end_exercise",
+      "prompt": "Read this extract from “Wild Duck” and answer all three parts.\n\n“It fell just behind the bulrushes. Go round that way.”\n\n(a) Who speaks these words, to whom, and where? [3]\n\n(b) What does “it” refer to? How did it come to be there? [3]\n\n(c) What does the boy find, and what does he do with it? [3]",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Part (a): The speaker is the father.",
+            "id": "a1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (a): He speaks to his son.",
+            "id": "a2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (a): They are in a boat on the lake.",
+            "id": "a3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): “It” is the duck or bird.",
+            "id": "b1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): The boy shot it.",
+            "id": "b2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): It fell into the water behind the bulrushes.",
+            "id": "b3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): The boy finds the wounded duck.",
+            "id": "c1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): He sees its broken wing.",
+            "id": "c2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): He scoops it up from the water into the boat.",
+            "id": "c3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-69",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-67",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "injury"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "(a) The boy finds the duck. He has shot it, breaking its wing so it cannot fly.\n\n(b) He is frightened by what he has done, but is relieved when the duck lifts its head and he realizes it is alive.\n\n(c) He takes it home, bandages its wing and learns to feed and care for it."
+      },
+      "difficulty": 2,
+      "explanation": "Score the three labelled parts separately using the cited story events.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall who is involved, what happens and why it matters.",
+      "id": "q-021",
+      "marks": 9,
+      "origin": "end_exercise",
+      "prompt": "Read this extract from “Wild Duck” and answer all three parts.\n\n“The duck was big, helpless.”\n\n(a) Why is the duck helpless? Who finds it? [3]\n\n(b) How does the boy react when he touches the duck and sees it move? [3]\n\n(c) What does the boy decide to do for the duck afterwards? [3]",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Part (a): The boy finds the duck.",
+            "id": "a1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (a): He has shot or wounded it.",
+            "id": "a2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (a): Its wing is broken and it cannot fly.",
+            "id": "a3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): The boy is frightened or upset by the injury.",
+            "id": "b1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): The duck lifts its head, showing it is alive.",
+            "id": "b2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): The boy feels relieved that it is not dead.",
+            "id": "b3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): He takes the duck home.",
+            "id": "c1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): He bandages its wing.",
+            "id": "c2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): He learns to feed or care for it.",
+            "id": "c3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-69",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-67",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-68",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "care"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "(a) The boy tells his father that he has thrown away his gun.\n\n(b) The duck’s wing was broken. The boy brought it home and looked after it, but it could never fly again.\n\n(c) The father is shocked at first. He then feels peaceful and relieved that the gun is gone."
+      },
+      "difficulty": 3,
+      "explanation": "Score the three labelled parts separately using the cited story events.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall who is involved, what happens and why it matters.",
+      "id": "q-022",
+      "marks": 9,
+      "origin": "chapter_content",
+      "prompt": "Read this extract from “Wild Duck” and answer all three parts.\n\n“I threw it away”\n\n(a) Who says this, and what has he thrown away? [3]\n\n(b) What happened to the duck after he shot it? [3]\n\n(c) How does the man react at first, and how does he feel by the end? [3]",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Part (a): The boy is speaking.",
+            "id": "a1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (a): He is speaking to his father.",
+            "id": "a2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (a): He has thrown away his gun.",
+            "id": "a3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): The duck’s wing is broken.",
+            "id": "b1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): The boy takes it home and cares for it.",
+            "id": "b2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): It can never fly again.",
+            "id": "b3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): The father is shocked.",
+            "id": "c1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): He becomes calm or peaceful.",
+            "id": "c2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): He feels relieved that the gun is gone.",
+            "id": "c3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-68",
+          "regionId": "story",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "change"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "c"
+      },
+      "difficulty": 1,
+      "explanation": "“Ragged” describes the toy-boat sail used to compare the broken wing.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the detail described in the story.",
+      "id": "q-023",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Which word used for the injured duck’s wing means old and torn?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "Glided"
+          },
+          {
+            "id": "b",
+            "text": "Scooped"
+          },
+          {
+            "id": "c",
+            "text": "Ragged"
+          },
+          {
+            "id": "d",
+            "text": "Plummeted"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-67",
+          "regionId": "story",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "language"
+      ],
+      "type": "single_choice",
+      "version": 1
+    }
+  ],
+  "schemaVersion": "0.1.0",
+  "sources": [
+    {
+      "assetRef": "manifest://wild-duck/page-66",
+      "extractionConfidence": 0.98,
+      "id": "page-66",
+      "pageNumber": 66,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.68,
+            "width": 0.96,
+            "x": 0.02,
+            "y": 0.28
+          },
+          "id": "story",
+          "kind": "passage"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://wild-duck/page-67",
+      "extractionConfidence": 0.98,
+      "id": "page-67",
+      "pageNumber": 67,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.94,
+            "width": 0.96,
+            "x": 0.02,
+            "y": 0.02
+          },
+          "id": "story",
+          "kind": "passage"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://wild-duck/page-68",
+      "extractionConfidence": 0.98,
+      "id": "page-68",
+      "pageNumber": 68,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.65,
+            "width": 0.96,
+            "x": 0.02,
+            "y": 0.31
+          },
+          "id": "exercise",
+          "kind": "exercise"
+        },
+        {
+          "bounds": {
+            "height": 0.3,
+            "width": 0.96,
+            "x": 0.02,
+            "y": 0.02
+          },
+          "id": "story",
+          "kind": "passage"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://wild-duck/page-69",
+      "extractionConfidence": 0.98,
+      "id": "page-69",
+      "pageNumber": 69,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.46,
+            "width": 0.96,
+            "x": 0.02,
+            "y": 0.02
+          },
+          "id": "exercise",
+          "kind": "exercise"
+        }
+      ],
+      "reviewRequired": false
+    }
+  ],
+  "topics": [
+    {
+      "id": "care",
+      "title": "Caring for the duck"
+    },
+    {
+      "id": "change",
+      "title": "Change of heart"
+    },
+    {
+      "id": "flock",
+      "title": "The flock of teal"
+    },
+    {
+      "id": "injury",
+      "title": "The shot and injured duck"
+    },
+    {
+      "id": "language",
+      "title": "Language in the story"
+    },
+    {
+      "id": "preparation",
+      "title": "Preparing for the birds"
+    }
+  ]
+}

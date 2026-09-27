@@ -1,0 +1,282 @@
+{
+  "advisoryNotes": [
+    "The 2025 paper is used for direct Grade VI prose-question style and three-mark subparts, not as a factual source for these later chapters.",
+    "Exact ideal-answer wording is not required; each independent rubric idea earns its mark. No spelling or grammar penalties apply.",
+    "The original copyrighted scans remain local. Short quotations in active questions are included in the prompt, so no runtime source image is required."
+  ],
+  "atomicCoverageInventory": [
+    "Page 66: father and son wait with guns in a motionless boat on a lake near a red volcanic hill.",
+    "Page 66: the father expects fast-moving clouds of birds and tells the boy to shoot quickly.",
+    "Page 66: the father asks whether the boy’s gun is loaded and tells him to aim ahead with one shot.",
+    "Page 66: the boy is spellbound by huge flocks of teal; watching birds is his passion.",
+    "Page 66–67: the flock changes shape, fills the sky and blots out light.",
+    "Page 67: father fires repeatedly, misses and says the teal are too high.",
+    "Page 67: the boy aims at a leader and shoots it; another bird takes its place.",
+    "Page 67: the bird falls behind bulrushes; the boy paddles to recover it.",
+    "Page 67: the duck floats with a broken wing compared to a ragged toy-boat sail.",
+    "Page 67: the boy is frightened by the injury but relieved when the duck lifts its head.",
+    "Page 67–68: the boy wants to take the duck home and look after it.",
+    "Page 68: he bandages and feeds the duck, which can never fly again.",
+    "Page 68: the boy throws away his gun and says shooting the duck made him sick.",
+    "Page 68: the father is initially shocked, then relieved and peaceful that the gun is gone.",
+    "Pages 66–69: inline and printed exercises test details, vocabulary, motives and reference to context."
+  ],
+  "bankId": "wild-duck",
+  "bankVersion": 1,
+  "blockingFindings": [],
+  "coverage": {
+    "briefAnswerCount": 8,
+    "difficulties": {
+      "1": 11,
+      "2": 10,
+      "3": 2
+    },
+    "extractSetCount": 4,
+    "objectiveCount": 11,
+    "origins": {
+      "chapter_content": 6,
+      "end_exercise": 17
+    },
+    "pages": {
+      "page-66": 8,
+      "page-67": 11,
+      "page-68": 17,
+      "page-69": 7
+    },
+    "questionCount": 23,
+    "selectionPriorities": {
+      "1": 17,
+      "2": 6
+    },
+    "sourceAssetReadiness": {
+      "inlineQuotationSets": 4,
+      "runtimeAssetsRequired": false,
+      "unsupportedPlayableTypes": []
+    },
+    "topics": {
+      "care": 4,
+      "change": 5,
+      "flock": 3,
+      "injury": 4,
+      "language": 2,
+      "preparation": 5
+    },
+    "totalMarks": 71,
+    "types": {
+      "brief_answer": 8,
+      "multi_point": 4,
+      "single_choice": 11
+    }
+  },
+  "decision": "accept",
+  "gates": {
+    "deterministicGroundingReview": "pass",
+    "examComplexityComparison": "pass",
+    "manifestSchema": "pass",
+    "manualGroundingReview": "pass",
+    "questionBankSchema": "pass",
+    "rubricBalanceReview": "pass",
+    "sourceHashes": "pass"
+  },
+  "inputs": {
+    "bank": "ingestion-artifacts/wild-duck-question-bank.json",
+    "chapterAsset": "Scan_20260927_164834.pdf",
+    "manifest": "ingestion-artifacts/wild-duck-chapter-manifest.json",
+    "pastPaper": "FIRST_TERM_VI_ENGLISH_LITERATURE_1787974373.pdf",
+    "sourceAssetCount": 2
+  },
+  "omissions": [
+    {
+      "reason": "The bank is for English Literature; the grammar lesson is a separate subject area.",
+      "source": "Printed page 69: Use Grammar — transitive and intransitive verbs."
+    }
+  ],
+  "questionReview": [
+    {
+      "decision": "accept",
+      "questionId": "q-001",
+      "sourcePages": [
+        "page-68",
+        "page-66"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-002",
+      "sourcePages": [
+        "page-68",
+        "page-66"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-003",
+      "sourcePages": [
+        "page-68",
+        "page-66"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-004",
+      "sourcePages": [
+        "page-68",
+        "page-66"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-005",
+      "sourcePages": [
+        "page-68",
+        "page-67"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-006",
+      "sourcePages": [
+        "page-66"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-007",
+      "sourcePages": [
+        "page-67"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-008",
+      "sourcePages": [
+        "page-68"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-009",
+      "sourcePages": [
+        "page-68"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-010",
+      "sourcePages": [
+        "page-67"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-011",
+      "sourcePages": [
+        "page-68",
+        "page-66"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-012",
+      "sourcePages": [
+        "page-68",
+        "page-66"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-013",
+      "sourcePages": [
+        "page-68",
+        "page-66",
+        "page-67"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-014",
+      "sourcePages": [
+        "page-68",
+        "page-67"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-015",
+      "sourcePages": [
+        "page-69",
+        "page-68"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-016",
+      "sourcePages": [
+        "page-69",
+        "page-67",
+        "page-68"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-017",
+      "sourcePages": [
+        "page-69",
+        "page-67",
+        "page-68"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-018",
+      "sourcePages": [
+        "page-69",
+        "page-68"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-019",
+      "sourcePages": [
+        "page-69",
+        "page-67"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-020",
+      "sourcePages": [
+        "page-69",
+        "page-67"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-021",
+      "sourcePages": [
+        "page-69",
+        "page-67",
+        "page-68"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-022",
+      "sourcePages": [
+        "page-68"
+      ]
+    },
+    {
+      "decision": "accept",
+      "questionId": "q-023",
+      "sourcePages": [
+        "page-67"
+      ]
+    }
+  ],
+  "releaseStatus": "reviewed local bank; not imported",
+  "reviewScope": "First reviewed bank. Includes the answerable literary end exercises and additional exam-style questions. Grammar sections are outside English Literature.",
+  "reviewVersion": "0.1.0",
+  "reviewedAt": "2026-09-27T12:44:58Z",
+  "reviewerMethod": "Visual review of all supplied chapter pages and 2025 paper; question-by-question checks of answer keys, rubric points, citations, and age-appropriate wording; schema, source-hash and deterministic grounding checks."
+}

@@ -1,0 +1,20 @@
+{
+  "source": "/Users/aquaraga/Downloads/Scan_20260925_174441.pdf",
+  "sha256": "c5f3f6d06a1dd0206ab4a7d2aed76afd85889a2db6e40dffc2c42a65b4bd4ace",
+  "pdfPages": [
+    5,
+    6
+  ],
+  "printedPages": [
+    9,
+    10
+  ],
+  "sourceRead": "Visual inspection in column order; printed glossary checked; handwritten annotations excluded",
+  "poemLines": 20,
+  "stanzas": 2,
+  "readingPassages": 6,
+  "thinkingPauses": 6,
+  "sections": 11,
+  "approxSpokenWords": 1332,
+  "status": "approved by user; full expressive Runway video produced and uploaded"
+}

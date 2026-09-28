@@ -1,0 +1,22 @@
+{
+  "status": "produced_and_uploaded_playback_signin_pending",
+  "durationSeconds": 534.82,
+  "resolution": "1920x1080",
+  "fps": 24,
+  "poemLines": 20,
+  "sections": 11,
+  "fiveSecondThinkingPauses": 6,
+  "captionCues": 142,
+  "voice": "Runway Niki, eleven_v3",
+  "audioClips": 23,
+  "sourceLinesMatch": true,
+  "wholeFileDecode": "passed",
+  "narrationReview": "All six poem passages independently transcribed with no word differences. Explanations checked; remaining ASR differences are spelling, number rendering, and minor tense/word-boundary recognition, with no missing passages. No claim of manual listening.",
+  "mediaAssetHashes": "verified before upload and after independent download",
+  "chapterId": "72c023a0-10a8-42ef-a356-cb6bfed85171",
+  "lessonId": "5b8110c3-2995-4862-8567-aac58135396b",
+  "assetPrefix": "a-childs-thought-v1",
+  "manifestHash": "f43cb6801d8d821415fd388e800ddba9a33d19ebd29337039bc0c512e7148815",
+  "preview": "https://studycraft-iota.vercel.app/parent/library/tutor/video/5b8110c3-2995-4862-8567-aac58135396b",
+  "child": "https://studycraft-iota.vercel.app/study/tutor/video/5b8110c3-2995-4862-8567-aac58135396b"
+}

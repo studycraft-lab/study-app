@@ -1,0 +1,3274 @@
+{
+  "scenes": [
+    {
+      "id": 1,
+      "title": "A whole world inside your head",
+      "poem": "",
+      "lines": [],
+      "start": 0.0,
+      "end": 31.900000000000002
+    },
+    {
+      "id": 2,
+      "title": "Pictures at bedtime",
+      "poem": "At seven, when I go to bed,\nI find such pictures in my head;",
+      "lines": [
+        "At seven, when I go to bed,",
+        "I find such pictures in my head;"
+      ],
+      "start": 31.900000000000002,
+      "end": 63.96000000000001
+    },
+    {
+      "id": 3,
+      "title": "Beauty, magic, and adventure",
+      "poem": "Castles with dragons prowling round,\nGardens where magic fruits are found;\nFair ladies prisoned in a tower,\nOr lost in an enchanted bower;",
+      "lines": [
+        "Castles with dragons prowling round,",
+        "Gardens where magic fruits are found;",
+        "Fair ladies prisoned in a tower,",
+        "Or lost in an enchanted bower;"
+      ],
+      "start": 63.96000000000001,
+      "end": 132.78
+    },
+    {
+      "id": 4,
+      "title": "The land of dreams",
+      "poem": "While gallant horsemen ride by streams\nThat border all this land of dreams\nI find, so clearly in my head\nAt seven, when I go to bed.",
+      "lines": [
+        "While gallant horsemen ride by streams",
+        "That border all this land of dreams",
+        "I find, so clearly in my head",
+        "At seven, when I go to bed."
+      ],
+      "start": 132.78,
+      "end": 176.71999999999997
+    },
+    {
+      "id": 5,
+      "title": "Morning changes the picture",
+      "poem": "At seven, when I wake again,\nThe magic land I seek in vain;\nA chair stands where the castle frowned,\nThe carpet hides the garden ground,",
+      "lines": [
+        "At seven, when I wake again,",
+        "The magic land I seek in vain;",
+        "A chair stands where the castle frowned,",
+        "The carpet hides the garden ground,"
+      ],
+      "start": 176.71999999999997,
+      "end": 233.29999999999995
+    },
+    {
+      "id": 6,
+      "title": "The ordinary room returns",
+      "poem": "No fairies trip across the floor,\nBoots, and not horsemen, flank the door,\nAnd where the blue streams rippling ran\nIs now a bath and water-can;",
+      "lines": [
+        "No fairies trip across the floor,",
+        "Boots, and not horsemen, flank the door,",
+        "And where the blue streams rippling ran",
+        "Is now a bath and water-can;"
+      ],
+      "start": 233.29999999999995,
+      "end": 284.87999999999994
+    },
+    {
+      "id": 7,
+      "title": "Looking for the magic",
+      "poem": "I seek the magic land in vain\nAt seven, when I wake again.",
+      "lines": [
+        "I seek the magic land in vain",
+        "At seven, when I wake again."
+      ],
+      "start": 284.87999999999994,
+      "end": 328.13999999999993
+    },
+    {
+      "id": 8,
+      "title": "The two worlds",
+      "poem": "",
+      "lines": [],
+      "start": 328.13999999999993,
+      "end": 364.03999999999996
+    },
+    {
+      "id": 9,
+      "title": "The poet’s choices",
+      "poem": "",
+      "lines": [],
+      "start": 364.03999999999996,
+      "end": 419.38
+    },
+    {
+      "id": 10,
+      "title": "Check your understanding",
+      "poem": "",
+      "lines": [],
+      "start": 419.38,
+      "end": 499.96000000000004
+    },
+    {
+      "id": 11,
+      "title": "Carry the idea with you",
+      "poem": "",
+      "lines": [],
+      "start": 499.96000000000004,
+      "end": 534.82
+    }
+  ],
+  "beats": [
+    {
+      "scene": 1,
+      "mode": "transition",
+      "seconds": 1.1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 0,
+      "start": 0.0,
+      "end": 1.1
+    },
+    {
+      "scene": 1,
+      "mode": "explain",
+      "text": "Have you ever imagined a whole adventure while lying in bed?",
+      "paragraph": 0,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 1,
+      "start": 1.1,
+      "speech_end": 4.1899999999999995,
+      "end": 4.880000000000001,
+      "audio_group": 1,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 1,
+      "mode": "explain",
+      "text": "Perhaps your ordinary room seemed to disappear, and a completely different world took its place.",
+      "paragraph": 0,
+      "paragraph_end": true,
+      "question": 0,
+      "id": 2,
+      "start": 4.880000000000001,
+      "speech_end": 9.67,
+      "end": 10.24,
+      "audio_group": 1,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 1,
+      "mode": "explain",
+      "text": "In ‘A Child’s Thought’, Robert Louis Stevenson lets us enter a child’s imagination.",
+      "paragraph": 1,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 3,
+      "start": 10.24,
+      "speech_end": 15.2,
+      "end": 16.04,
+      "audio_group": 1,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 1,
+      "mode": "explain",
+      "text": "At bedtime, the child pictures a magical world.",
+      "paragraph": 1,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 4,
+      "start": 16.04,
+      "speech_end": 19.29,
+      "end": 19.64,
+      "audio_group": 1,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 1,
+      "mode": "explain",
+      "text": "When morning comes, something changes.",
+      "paragraph": 1,
+      "paragraph_end": true,
+      "question": 0,
+      "id": 5,
+      "start": 19.64,
+      "speech_end": 21.73,
+      "end": 22.56,
+      "audio_group": 1,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 1,
+      "mode": "explain",
+      "text": "Let’s read a little at a time.",
+      "paragraph": 2,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 6,
+      "start": 22.56,
+      "speech_end": 23.98,
+      "end": 24.64,
+      "audio_group": 1,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 1,
+      "mode": "explain",
+      "text": "As we listen, keep one question in mind: what can the child find in imagination that cannot be found in the room?",
+      "paragraph": 2,
+      "paragraph_end": true,
+      "question": 0,
+      "id": 7,
+      "start": 24.64,
+      "speech_end": 31.880000000000003,
+      "end": 31.900000000000002,
+      "audio_group": 1,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 2,
+      "mode": "transition",
+      "seconds": 1.1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 8,
+      "start": 31.900000000000002,
+      "end": 33.0
+    },
+    {
+      "scene": 2,
+      "mode": "read",
+      "text": "At seven, when I go to bed,",
+      "phrase": 0,
+      "span": [
+        0,
+        27
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 9,
+      "start": 33.0,
+      "speech_end": 34.77,
+      "end": 35.14,
+      "audio_group": 3,
+      "native_speed": 0.82,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 2,
+      "mode": "read",
+      "text": "I find such pictures in my head;",
+      "phrase": 1,
+      "span": [
+        28,
+        60
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 10,
+      "start": 35.14,
+      "speech_end": 36.76,
+      "end": 37.480000000000004,
+      "audio_group": 3,
+      "native_speed": 0.82,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 2,
+      "mode": "hold",
+      "seconds": 2,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 11,
+      "start": 37.480000000000004,
+      "end": 39.480000000000004
+    },
+    {
+      "scene": 2,
+      "mode": "explain",
+      "text": "The child is speaking directly to us, using the word ‘I’.",
+      "paragraph": 0,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 12,
+      "start": 39.480000000000004,
+      "speech_end": 43.07000000000001,
+      "end": 43.92,
+      "audio_group": 5,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 2,
+      "mode": "explain",
+      "text": "Seven is bedtime here.",
+      "paragraph": 0,
+      "paragraph_end": true,
+      "question": 0,
+      "id": 13,
+      "start": 43.92,
+      "speech_end": 45.78,
+      "end": 45.96000000000001,
+      "audio_group": 5,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 2,
+      "mode": "explain",
+      "text": "These ‘pictures’ are scenes in the child’s mind.",
+      "paragraph": 1,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 14,
+      "start": 45.96000000000001,
+      "speech_end": 48.720000000000006,
+      "end": 48.900000000000006,
+      "audio_group": 5,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 2,
+      "mode": "explain",
+      "text": "They are not photographs hanging on the wall!",
+      "paragraph": 1,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 15,
+      "start": 48.900000000000006,
+      "speech_end": 51.25,
+      "end": 51.540000000000006,
+      "audio_group": 5,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 2,
+      "mode": "explain",
+      "text": "The phrase ‘in my head’ tells us where to look: inside the imagination.",
+      "paragraph": 1,
+      "paragraph_end": true,
+      "question": 0,
+      "id": 16,
+      "start": 51.540000000000006,
+      "speech_end": 55.7,
+      "end": 56.580000000000005,
+      "audio_group": 5,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 2,
+      "mode": "explain",
+      "text": "The word ‘find’ makes these pictures sound like discoveries.",
+      "paragraph": 2,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 17,
+      "start": 56.580000000000005,
+      "speech_end": 60.260000000000005,
+      "end": 60.92,
+      "audio_group": 5,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 2,
+      "mode": "explain",
+      "text": "The child is about to tell us what this inner world contains.",
+      "paragraph": 2,
+      "paragraph_end": true,
+      "question": 0,
+      "id": 18,
+      "start": 60.92,
+      "speech_end": 63.64,
+      "end": 63.96000000000001,
+      "audio_group": 5,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 3,
+      "mode": "transition",
+      "seconds": 1.1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 19,
+      "start": 63.96000000000001,
+      "end": 65.06
+    },
+    {
+      "scene": 3,
+      "mode": "read",
+      "text": "Castles with dragons prowling round,",
+      "phrase": 0,
+      "span": [
+        0,
+        36
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 20,
+      "start": 65.06,
+      "speech_end": 67.60000000000001,
+      "end": 67.68,
+      "audio_group": 7,
+      "native_speed": 0.82,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 3,
+      "mode": "read",
+      "text": "Gardens where magic fruits are found;",
+      "phrase": 1,
+      "span": [
+        37,
+        74
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 21,
+      "start": 67.68,
+      "speech_end": 69.68,
+      "end": 69.74000000000001,
+      "audio_group": 7,
+      "native_speed": 0.82,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 3,
+      "mode": "read",
+      "text": "Fair ladies prisoned in a tower,",
+      "phrase": 2,
+      "span": [
+        75,
+        107
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 22,
+      "start": 69.74000000000001,
+      "speech_end": 71.78,
+      "end": 72.02,
+      "audio_group": 7,
+      "native_speed": 0.82,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 3,
+      "mode": "read",
+      "text": "Or lost in an enchanted bower;",
+      "phrase": 3,
+      "span": [
+        108,
+        138
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 23,
+      "start": 72.02,
+      "speech_end": 74.04,
+      "end": 74.34,
+      "audio_group": 7,
+      "native_speed": 0.82,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 3,
+      "mode": "hold",
+      "seconds": 2,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 24,
+      "start": 74.34,
+      "end": 76.34
+    },
+    {
+      "scene": 3,
+      "mode": "explain",
+      "text": "What a busy imagination!",
+      "paragraph": 0,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 25,
+      "start": 76.34,
+      "speech_end": 78.32000000000001,
+      "end": 78.58,
+      "audio_group": 9,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 3,
+      "mode": "explain",
+      "text": "We have castles, dragons, magical gardens, and ladies in mysterious places.",
+      "paragraph": 0,
+      "paragraph_end": true,
+      "question": 0,
+      "id": 26,
+      "start": 78.58,
+      "speech_end": 83.58,
+      "end": 84.44,
+      "audio_group": 9,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 3,
+      "mode": "explain",
+      "text": "‘Prowling’ means moving quietly and carefully.",
+      "paragraph": 1,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 27,
+      "start": 84.44,
+      "speech_end": 87.66,
+      "end": 87.84,
+      "audio_group": 9,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 3,
+      "mode": "explain",
+      "text": "The dragons seem watchful.",
+      "paragraph": 1,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 28,
+      "start": 87.84,
+      "speech_end": 89.82000000000001,
+      "end": 90.0,
+      "audio_group": 9,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 3,
+      "mode": "explain",
+      "text": "The magic fruit adds wonder to the gardens.",
+      "paragraph": 1,
+      "paragraph_end": true,
+      "question": 0,
+      "id": 29,
+      "start": 90.0,
+      "speech_end": 92.56,
+      "end": 93.2,
+      "audio_group": 9,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 3,
+      "mode": "explain",
+      "text": "Here, ‘fair’ means beautiful.",
+      "paragraph": 2,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 30,
+      "start": 93.2,
+      "speech_end": 95.52000000000001,
+      "end": 95.82,
+      "audio_group": 9,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 3,
+      "mode": "explain",
+      "text": "‘Prisoned’ means imprisoned, or kept captive.",
+      "paragraph": 2,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 31,
+      "start": 95.82,
+      "speech_end": 99.04,
+      "end": 99.16,
+      "audio_group": 9,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 3,
+      "mode": "explain",
+      "text": "The ladies may be shut in a tower, or lost in an ‘enchanted bower’.",
+      "paragraph": 2,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 32,
+      "start": 99.16,
+      "speech_end": 103.47,
+      "end": 103.86,
+      "audio_group": 9,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 3,
+      "mode": "explain",
+      "text": "A bower is a pleasant shaded place under trees, and ‘enchanted’ means under a magic spell.",
+      "paragraph": 2,
+      "paragraph_end": true,
+      "question": 0,
+      "id": 33,
+      "start": 103.86,
+      "speech_end": 109.91,
+      "end": 110.53999999999999,
+      "audio_group": 9,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 3,
+      "mode": "explain",
+      "text": "Which details make this world seem different from an ordinary garden?",
+      "paragraph": 3,
+      "paragraph_end": true,
+      "question": 0,
+      "id": 34,
+      "start": 110.53999999999999,
+      "speech_end": 113.76,
+      "end": 113.78,
+      "audio_group": 9,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 3,
+      "mode": "think",
+      "seconds": 5,
+      "text": "",
+      "paragraph": 3,
+      "question": 0,
+      "id": 35,
+      "start": 113.78,
+      "end": 118.78
+    },
+    {
+      "scene": 3,
+      "mode": "explain",
+      "text": "The dragons, magic fruit, and enchanted bower belong to a world of fantasy.",
+      "paragraph": 4,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 36,
+      "start": 118.78,
+      "speech_end": 123.1,
+      "end": 123.98,
+      "audio_group": 11,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 3,
+      "mode": "explain",
+      "text": "It combines beauty with adventure and a hint of danger.",
+      "paragraph": 4,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 37,
+      "start": 123.98,
+      "speech_end": 127.03,
+      "end": 127.6,
+      "audio_group": 11,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 3,
+      "mode": "explain",
+      "text": "The poem gives us ingredients for an exciting story, without telling us a whole rescue or battle.",
+      "paragraph": 4,
+      "paragraph_end": true,
+      "question": 0,
+      "id": 38,
+      "start": 127.6,
+      "speech_end": 132.76,
+      "end": 132.78,
+      "audio_group": 11,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 4,
+      "mode": "transition",
+      "seconds": 1.1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 39,
+      "start": 132.78,
+      "end": 133.88
+    },
+    {
+      "scene": 4,
+      "mode": "read",
+      "text": "While gallant horsemen ride by streams",
+      "phrase": 0,
+      "span": [
+        0,
+        38
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 40,
+      "start": 133.88,
+      "speech_end": 135.96,
+      "end": 136.74,
+      "audio_group": 13,
+      "native_speed": 0.82,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 4,
+      "mode": "read",
+      "text": "That border all this land of dreams",
+      "phrase": 1,
+      "span": [
+        39,
+        74
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 41,
+      "start": 136.74,
+      "speech_end": 138.2,
+      "end": 138.2,
+      "audio_group": 13,
+      "native_speed": 0.82,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 4,
+      "mode": "read",
+      "text": "I find, so clearly in my head",
+      "phrase": 2,
+      "span": [
+        75,
+        104
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 42,
+      "start": 138.2,
+      "speech_end": 140.51999999999998,
+      "end": 140.51999999999998,
+      "audio_group": 13,
+      "native_speed": 0.82,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 4,
+      "mode": "read",
+      "text": "At seven, when I go to bed.",
+      "phrase": 3,
+      "span": [
+        105,
+        132
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 43,
+      "start": 140.51999999999998,
+      "speech_end": 142.34,
+      "end": 142.35999999999999,
+      "audio_group": 13,
+      "native_speed": 0.82,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 4,
+      "mode": "hold",
+      "seconds": 3,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 44,
+      "start": 142.35999999999999,
+      "end": 145.35999999999999
+    },
+    {
+      "scene": 4,
+      "mode": "explain",
+      "text": "‘Gallant’ means brave.",
+      "paragraph": 0,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 45,
+      "start": 145.35999999999999,
+      "speech_end": 147.14,
+      "end": 147.49999999999997,
+      "audio_group": 15,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 4,
+      "mode": "explain",
+      "text": "The horsemen ride beside streams—small, narrow rivers.",
+      "paragraph": 0,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 46,
+      "start": 147.49999999999997,
+      "speech_end": 151.17999999999998,
+      "end": 151.61999999999998,
+      "audio_group": 15,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 4,
+      "mode": "explain",
+      "text": "These streams ‘border’ the dream land: they run along its edges.",
+      "paragraph": 0,
+      "paragraph_end": true,
+      "question": 0,
+      "id": 47,
+      "start": 151.61999999999998,
+      "speech_end": 155.45999999999998,
+      "end": 156.11999999999998,
+      "audio_group": 15,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 4,
+      "mode": "explain",
+      "text": "The final two lines bring us back to the child in bed.",
+      "paragraph": 1,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 48,
+      "start": 156.11999999999998,
+      "speech_end": 159.16,
+      "end": 159.6,
+      "audio_group": 15,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 4,
+      "mode": "explain",
+      "text": "The words ‘so clearly’ show how vivid the pictures are.",
+      "paragraph": 1,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 49,
+      "start": 159.6,
+      "speech_end": 163.17,
+      "end": 163.83999999999997,
+      "audio_group": 15,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 4,
+      "mode": "explain",
+      "text": "Something can feel very clear in your imagination without being physically in front of you.",
+      "paragraph": 1,
+      "paragraph_end": true,
+      "question": 0,
+      "id": 50,
+      "start": 163.83999999999997,
+      "speech_end": 168.17,
+      "end": 168.71999999999997,
+      "audio_group": 15,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 4,
+      "mode": "explain",
+      "text": "Notice that the stanza ends with the same bedtime line that began it.",
+      "paragraph": 2,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 51,
+      "start": 168.71999999999997,
+      "speech_end": 172.30999999999997,
+      "end": 172.51999999999998,
+      "audio_group": 15,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 4,
+      "mode": "explain",
+      "text": "We have travelled around the dream world and returned to the moment when the child imagines it.",
+      "paragraph": 2,
+      "paragraph_end": true,
+      "question": 0,
+      "id": 52,
+      "start": 172.51999999999998,
+      "speech_end": 176.7,
+      "end": 176.71999999999997,
+      "audio_group": 15,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 5,
+      "mode": "transition",
+      "seconds": 1.1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 53,
+      "start": 176.71999999999997,
+      "end": 177.81999999999996
+    },
+    {
+      "scene": 5,
+      "mode": "read",
+      "text": "At seven, when I wake again,",
+      "phrase": 0,
+      "span": [
+        0,
+        28
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 54,
+      "start": 177.81999999999996,
+      "speech_end": 179.13999999999996,
+      "end": 179.81999999999996,
+      "audio_group": 17,
+      "native_speed": 0.82,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 5,
+      "mode": "read",
+      "text": "The magic land I seek in vain;",
+      "phrase": 1,
+      "span": [
+        29,
+        59
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 55,
+      "start": 179.81999999999996,
+      "speech_end": 182.03999999999996,
+      "end": 182.03999999999996,
+      "audio_group": 17,
+      "native_speed": 0.82,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 5,
+      "mode": "read",
+      "text": "A chair stands where the castle frowned,",
+      "phrase": 2,
+      "span": [
+        60,
+        100
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 56,
+      "start": 182.03999999999996,
+      "speech_end": 184.13999999999996,
+      "end": 184.57999999999996,
+      "audio_group": 17,
+      "native_speed": 0.82,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 5,
+      "mode": "read",
+      "text": "The carpet hides the garden ground,",
+      "phrase": 3,
+      "span": [
+        101,
+        136
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 57,
+      "start": 184.57999999999996,
+      "speech_end": 186.19999999999996,
+      "end": 186.21999999999997,
+      "audio_group": 17,
+      "native_speed": 0.82,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 5,
+      "mode": "hold",
+      "seconds": 2,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 58,
+      "start": 186.21999999999997,
+      "end": 188.21999999999997
+    },
+    {
+      "scene": 5,
+      "mode": "explain",
+      "text": "Now the child wakes.",
+      "paragraph": 0,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 59,
+      "start": 188.21999999999997,
+      "speech_end": 189.49999999999997,
+      "end": 190.73999999999998,
+      "audio_group": 19,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 5,
+      "mode": "explain",
+      "text": "‘Seek’ means look for, and ‘in vain’ means without success.",
+      "paragraph": 0,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 60,
+      "start": 190.73999999999998,
+      "speech_end": 195.01999999999998,
+      "end": 195.79999999999998,
+      "audio_group": 19,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 5,
+      "mode": "explain",
+      "text": "The child looks for the magical land but cannot find it.",
+      "paragraph": 0,
+      "paragraph_end": true,
+      "question": 0,
+      "id": 61,
+      "start": 195.79999999999998,
+      "speech_end": 198.73999999999998,
+      "end": 199.71999999999997,
+      "audio_group": 19,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 5,
+      "mode": "explain",
+      "text": "What occupies the places where the castle and garden seemed to be?",
+      "paragraph": 1,
+      "paragraph_end": true,
+      "question": 0,
+      "id": 62,
+      "start": 199.71999999999997,
+      "speech_end": 202.83999999999997,
+      "end": 202.85999999999996,
+      "audio_group": 19,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 5,
+      "mode": "think",
+      "seconds": 5,
+      "text": "",
+      "paragraph": 1,
+      "question": 0,
+      "id": 63,
+      "start": 202.85999999999996,
+      "end": 207.85999999999996
+    },
+    {
+      "scene": 5,
+      "mode": "explain",
+      "text": "A chair is there instead of the castle, and a carpet covers the place of the garden.",
+      "paragraph": 2,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 64,
+      "start": 207.85999999999996,
+      "speech_end": 212.20999999999995,
+      "end": 213.01999999999995,
+      "audio_group": 21,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 5,
+      "mode": "explain",
+      "text": "These are familiar objects in the waking room.",
+      "paragraph": 2,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 65,
+      "start": 213.01999999999995,
+      "speech_end": 215.30999999999995,
+      "end": 215.89999999999995,
+      "audio_group": 21,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 5,
+      "mode": "explain",
+      "text": "The poem is comparing two ways the child experiences the same surroundings.",
+      "paragraph": 2,
+      "paragraph_end": true,
+      "question": 0,
+      "id": 66,
+      "start": 215.89999999999995,
+      "speech_end": 220.16999999999996,
+      "end": 220.83999999999995,
+      "audio_group": 21,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 5,
+      "mode": "explain",
+      "text": "The garden is not really hidden underneath the carpet!",
+      "paragraph": 3,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 67,
+      "start": 220.83999999999995,
+      "speech_end": 223.51999999999995,
+      "end": 224.15999999999997,
+      "audio_group": 21,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 5,
+      "mode": "explain",
+      "text": "The imagined landscape has given way to the ordinary room.",
+      "paragraph": 3,
+      "paragraph_end": true,
+      "question": 0,
+      "id": 68,
+      "start": 224.15999999999997,
+      "speech_end": 227.63999999999996,
+      "end": 228.43999999999994,
+      "audio_group": 21,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 5,
+      "mode": "explain",
+      "text": "Keep an eye on ‘the castle frowned’.",
+      "paragraph": 4,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 69,
+      "start": 228.43999999999994,
+      "speech_end": 230.69999999999996,
+      "end": 231.25999999999996,
+      "audio_group": 21,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 5,
+      "mode": "explain",
+      "text": "We will come back to that interesting description.",
+      "paragraph": 4,
+      "paragraph_end": true,
+      "question": 0,
+      "id": 70,
+      "start": 231.25999999999996,
+      "speech_end": 232.98999999999995,
+      "end": 233.29999999999995,
+      "audio_group": 21,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 6,
+      "mode": "transition",
+      "seconds": 1.1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 71,
+      "start": 233.29999999999995,
+      "end": 234.39999999999995
+    },
+    {
+      "scene": 6,
+      "mode": "read",
+      "text": "No fairies trip across the floor,",
+      "phrase": 0,
+      "span": [
+        0,
+        33
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 72,
+      "start": 234.39999999999995,
+      "speech_end": 236.17999999999995,
+      "end": 236.23999999999995,
+      "audio_group": 23,
+      "native_speed": 0.82,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 6,
+      "mode": "read",
+      "text": "Boots, and not horsemen, flank the door,",
+      "phrase": 1,
+      "span": [
+        34,
+        74
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 73,
+      "start": 236.23999999999995,
+      "speech_end": 238.29999999999995,
+      "end": 239.17999999999995,
+      "audio_group": 23,
+      "native_speed": 0.82,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 6,
+      "mode": "read",
+      "text": "And where the blue streams rippling ran",
+      "phrase": 2,
+      "span": [
+        75,
+        114
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 74,
+      "start": 239.17999999999995,
+      "speech_end": 240.93999999999994,
+      "end": 240.93999999999994,
+      "audio_group": 23,
+      "native_speed": 0.82,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 6,
+      "mode": "read",
+      "text": "Is now a bath and water-can;",
+      "phrase": 3,
+      "span": [
+        115,
+        143
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 75,
+      "start": 240.93999999999994,
+      "speech_end": 243.04999999999995,
+      "end": 243.27999999999994,
+      "audio_group": 23,
+      "native_speed": 0.82,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 6,
+      "mode": "hold",
+      "seconds": 2,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 76,
+      "start": 243.27999999999994,
+      "end": 245.27999999999994
+    },
+    {
+      "scene": 6,
+      "mode": "explain",
+      "text": "There are no fairies moving across the floor.",
+      "paragraph": 0,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 77,
+      "start": 245.27999999999994,
+      "speech_end": 247.97999999999993,
+      "end": 248.29999999999995,
+      "audio_group": 25,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 6,
+      "mode": "explain",
+      "text": "Here, ‘trip’ means move lightly, with quick little steps.",
+      "paragraph": 0,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 78,
+      "start": 248.29999999999995,
+      "speech_end": 251.21999999999994,
+      "end": 251.67999999999995,
+      "audio_group": 25,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 6,
+      "mode": "explain",
+      "text": "It does not mean that the fairies stumble and fall.",
+      "paragraph": 0,
+      "paragraph_end": true,
+      "question": 0,
+      "id": 79,
+      "start": 251.67999999999995,
+      "speech_end": 253.98999999999995,
+      "end": 254.55999999999995,
+      "audio_group": 25,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 6,
+      "mode": "explain",
+      "text": "‘Flank’ means be at the side of something.",
+      "paragraph": 1,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 80,
+      "start": 254.55999999999995,
+      "speech_end": 256.7699999999999,
+      "end": 257.05999999999995,
+      "audio_group": 25,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 6,
+      "mode": "explain",
+      "text": "Boots stand beside the door where the child had imagined horsemen.",
+      "paragraph": 1,
+      "paragraph_end": true,
+      "question": 0,
+      "id": 81,
+      "start": 257.05999999999995,
+      "speech_end": 260.49999999999994,
+      "end": 261.28999999999996,
+      "audio_group": 25,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 6,
+      "mode": "explain",
+      "text": "‘Rippling’ describes water moving in small waves.",
+      "paragraph": 2,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 82,
+      "start": 261.28999999999996,
+      "speech_end": 264.03,
+      "end": 264.49999999999994,
+      "audio_group": 25,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 6,
+      "mode": "explain",
+      "text": "The beautiful blue streams are gone from the child’s view.",
+      "paragraph": 2,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 83,
+      "start": 264.49999999999994,
+      "speech_end": 267.37999999999994,
+      "end": 267.5799999999999,
+      "audio_group": 25,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 6,
+      "mode": "explain",
+      "text": "In their place are a bath and a water-can, a container for water.",
+      "paragraph": 2,
+      "paragraph_end": true,
+      "question": 0,
+      "id": 84,
+      "start": 267.5799999999999,
+      "speech_end": 271.80999999999995,
+      "end": 272.05999999999995,
+      "audio_group": 25,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 6,
+      "mode": "explain",
+      "text": "The change is striking: a whole flowing landscape has become ordinary things in a room.",
+      "paragraph": 3,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 85,
+      "start": 272.05999999999995,
+      "speech_end": 277.9599999999999,
+      "end": 278.2199999999999,
+      "audio_group": 25,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 6,
+      "mode": "explain",
+      "text": "The repeated negatives—‘No fairies’ and ‘not horsemen’—draw attention to what the child misses.",
+      "paragraph": 3,
+      "paragraph_end": true,
+      "question": 0,
+      "id": 86,
+      "start": 278.2199999999999,
+      "speech_end": 284.63999999999993,
+      "end": 284.87999999999994,
+      "audio_group": 25,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 7,
+      "mode": "transition",
+      "seconds": 1.1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 87,
+      "start": 284.87999999999994,
+      "end": 285.97999999999996
+    },
+    {
+      "scene": 7,
+      "mode": "read",
+      "text": "I seek the magic land in vain",
+      "phrase": 0,
+      "span": [
+        0,
+        29
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 88,
+      "start": 285.97999999999996,
+      "speech_end": 287.65999999999997,
+      "end": 287.65999999999997,
+      "audio_group": 27,
+      "native_speed": 0.82,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 7,
+      "mode": "read",
+      "text": "At seven, when I wake again.",
+      "phrase": 1,
+      "span": [
+        30,
+        58
+      ],
+      "paragraph": -1,
+      "question": 0,
+      "id": 89,
+      "start": 287.65999999999997,
+      "speech_end": 290.2,
+      "end": 290.21999999999997,
+      "audio_group": 27,
+      "native_speed": 0.82,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 7,
+      "mode": "hold",
+      "seconds": 3,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 90,
+      "start": 290.21999999999997,
+      "end": 293.21999999999997
+    },
+    {
+      "scene": 7,
+      "mode": "explain",
+      "text": "Why does the child keep looking for the magic land?",
+      "paragraph": 0,
+      "paragraph_end": true,
+      "question": 0,
+      "id": 91,
+      "start": 293.21999999999997,
+      "speech_end": 295.44,
+      "end": 295.61999999999995,
+      "audio_group": 29,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 7,
+      "mode": "think",
+      "seconds": 5,
+      "text": "",
+      "paragraph": 0,
+      "question": 0,
+      "id": 92,
+      "start": 295.61999999999995,
+      "end": 300.61999999999995
+    },
+    {
+      "scene": 7,
+      "mode": "explain",
+      "text": "The imagined world was vivid and exciting, and the child wants to find it again.",
+      "paragraph": 1,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 93,
+      "start": 300.61999999999995,
+      "speech_end": 305.13999999999993,
+      "end": 306.03999999999996,
+      "audio_group": 31,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 7,
+      "mode": "explain",
+      "text": "But ‘in vain’ tells us that the search is unsuccessful.",
+      "paragraph": 1,
+      "paragraph_end": true,
+      "question": 0,
+      "id": 94,
+      "start": 306.03999999999996,
+      "speech_end": 309.36999999999995,
+      "end": 310.43999999999994,
+      "audio_group": 31,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 7,
+      "mode": "explain",
+      "text": "The child seems disappointed and longs for the dream world.",
+      "paragraph": 2,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 95,
+      "start": 310.43999999999994,
+      "speech_end": 313.53999999999996,
+      "end": 314.4599999999999,
+      "audio_group": 31,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 7,
+      "mode": "explain",
+      "text": "That is an interpretation supported by the repeated search and the contrast with the ordinary room.",
+      "paragraph": 2,
+      "paragraph_end": true,
+      "question": 0,
+      "id": 96,
+      "start": 314.4599999999999,
+      "speech_end": 319.87999999999994,
+      "end": 320.81999999999994,
+      "audio_group": 31,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 7,
+      "mode": "explain",
+      "text": "The poem does not say that imagination has disappeared forever.",
+      "paragraph": 3,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 97,
+      "start": 320.81999999999994,
+      "speech_end": 324.0799999999999,
+      "end": 324.75999999999993,
+      "audio_group": 31,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 7,
+      "mode": "explain",
+      "text": "It describes what the child cannot find on waking at this moment.",
+      "paragraph": 3,
+      "paragraph_end": true,
+      "question": 0,
+      "id": 98,
+      "start": 324.75999999999993,
+      "speech_end": 327.81999999999994,
+      "end": 328.13999999999993,
+      "audio_group": 31,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 8,
+      "mode": "transition",
+      "seconds": 1.1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 99,
+      "start": 328.13999999999993,
+      "end": 329.23999999999995
+    },
+    {
+      "scene": 8,
+      "mode": "explain",
+      "text": "Let’s connect the two halves.",
+      "paragraph": 0,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 100,
+      "start": 329.23999999999995,
+      "speech_end": 330.47999999999996,
+      "end": 331.4,
+      "audio_group": 33,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 8,
+      "mode": "explain",
+      "text": "In the first stanza, the child finds the dream world clearly in the mind.",
+      "paragraph": 0,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 101,
+      "start": 331.4,
+      "speech_end": 335.41999999999996,
+      "end": 336.13999999999993,
+      "audio_group": 33,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 8,
+      "mode": "explain",
+      "text": "In the second, the child seeks it in the room and cannot find it.",
+      "paragraph": 0,
+      "paragraph_end": true,
+      "question": 0,
+      "id": 102,
+      "start": 336.13999999999993,
+      "speech_end": 339.81999999999994,
+      "end": 340.78,
+      "audio_group": 33,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 8,
+      "mode": "explain",
+      "text": "Castle and chair.",
+      "paragraph": 1,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 103,
+      "start": 340.78,
+      "speech_end": 341.78,
+      "end": 342.63999999999993,
+      "audio_group": 33,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 8,
+      "mode": "explain",
+      "text": "Garden and carpet.",
+      "paragraph": 1,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 104,
+      "start": 342.63999999999993,
+      "speech_end": 343.35999999999996,
+      "end": 344.11999999999995,
+      "audio_group": 33,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 8,
+      "mode": "explain",
+      "text": "Horsemen and boots.",
+      "paragraph": 1,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 105,
+      "start": 344.11999999999995,
+      "speech_end": 344.81999999999994,
+      "end": 345.69999999999993,
+      "audio_group": 33,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 8,
+      "mode": "explain",
+      "text": "Streams and a bath with a water-can.",
+      "paragraph": 1,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 106,
+      "start": 345.69999999999993,
+      "speech_end": 347.48999999999995,
+      "end": 348.79999999999995,
+      "audio_group": 33,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 8,
+      "mode": "explain",
+      "text": "These paired details make the contrast easy to picture.",
+      "paragraph": 1,
+      "paragraph_end": true,
+      "question": 0,
+      "id": 107,
+      "start": 348.79999999999995,
+      "speech_end": 351.98999999999995,
+      "end": 352.41999999999996,
+      "audio_group": 33,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 8,
+      "mode": "explain",
+      "text": "The poem explores the power of a child’s imagination and the disappointment of returning to ordinary surroundings.",
+      "paragraph": 2,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 108,
+      "start": 352.41999999999996,
+      "speech_end": 358.75999999999993,
+      "end": 359.25999999999993,
+      "audio_group": 33,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 8,
+      "mode": "explain",
+      "text": "The title, ‘A Child’s Thought’, keeps our attention on the child’s inner experience.",
+      "paragraph": 2,
+      "paragraph_end": true,
+      "question": 0,
+      "id": 109,
+      "start": 359.25999999999993,
+      "speech_end": 363.59999999999997,
+      "end": 364.03999999999996,
+      "audio_group": 33,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 9,
+      "mode": "transition",
+      "seconds": 1.1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 110,
+      "start": 364.03999999999996,
+      "end": 365.14
+    },
+    {
+      "scene": 9,
+      "mode": "explain",
+      "text": "First, personification.",
+      "paragraph": 0,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 111,
+      "start": 365.14,
+      "speech_end": 367.02,
+      "end": 367.68,
+      "audio_group": 35,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 9,
+      "mode": "explain",
+      "text": "In ‘the castle frowned’, the castle receives a human action.",
+      "paragraph": 0,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 112,
+      "start": 367.68,
+      "speech_end": 371.24,
+      "end": 371.86,
+      "audio_group": 35,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 9,
+      "mode": "explain",
+      "text": "People can frown; buildings cannot literally do that.",
+      "paragraph": 0,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 113,
+      "start": 371.86,
+      "speech_end": 374.7,
+      "end": 375.5,
+      "audio_group": 35,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 9,
+      "mode": "explain",
+      "text": "The phrase makes the castle seem stern or forbidding, as though it has a personality.",
+      "paragraph": 0,
+      "paragraph_end": true,
+      "question": 0,
+      "id": 114,
+      "start": 375.5,
+      "speech_end": 379.55,
+      "end": 381.14,
+      "audio_group": 35,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 9,
+      "mode": "explain",
+      "text": "Second, listen to the rhyme: ‘bed’ and ‘head’; ‘round’ and ‘found’; ‘tower’ and ‘bower’.",
+      "paragraph": 1,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 115,
+      "start": 381.14,
+      "speech_end": 387.94,
+      "end": 388.24,
+      "audio_group": 35,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 9,
+      "mode": "explain",
+      "text": "These matching sounds give the verse a pleasing musical pattern.",
+      "paragraph": 1,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 116,
+      "start": 388.24,
+      "speech_end": 391.76,
+      "end": 392.06,
+      "audio_group": 35,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 9,
+      "mode": "explain",
+      "text": "We find rhyming pairs in the second stanza too, such as ‘floor’ and ‘door’.",
+      "paragraph": 1,
+      "paragraph_end": true,
+      "question": 0,
+      "id": 117,
+      "start": 392.06,
+      "speech_end": 397.03,
+      "end": 398.15999999999997,
+      "audio_group": 35,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 9,
+      "mode": "explain",
+      "text": "Third, repetition.",
+      "paragraph": 2,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 118,
+      "start": 398.15999999999997,
+      "speech_end": 399.68,
+      "end": 400.0,
+      "audio_group": 35,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 9,
+      "mode": "explain",
+      "text": "‘At seven’ returns, but bedtime becomes waking time.",
+      "paragraph": 2,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 119,
+      "start": 400.0,
+      "speech_end": 403.87,
+      "end": 404.15999999999997,
+      "audio_group": 35,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 9,
+      "mode": "explain",
+      "text": "The first stanza begins and ends with going to bed.",
+      "paragraph": 2,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 120,
+      "start": 404.15999999999997,
+      "speech_end": 407.28,
+      "end": 407.41999999999996,
+      "audio_group": 35,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 9,
+      "mode": "explain",
+      "text": "The second begins and ends with waking again.",
+      "paragraph": 2,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 121,
+      "start": 407.41999999999996,
+      "speech_end": 409.86,
+      "end": 410.36,
+      "audio_group": 35,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 9,
+      "mode": "explain",
+      "text": "Each stanza has ten lines.",
+      "paragraph": 2,
+      "paragraph_end": true,
+      "question": 0,
+      "id": 122,
+      "start": 410.36,
+      "speech_end": 412.31,
+      "end": 412.76,
+      "audio_group": 35,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 9,
+      "mode": "explain",
+      "text": "This balanced shape helps us notice what changes: the world the child experiences, and the child’s feelings about it.",
+      "paragraph": 3,
+      "paragraph_end": true,
+      "question": 0,
+      "id": 123,
+      "start": 412.76,
+      "speech_end": 419.36,
+      "end": 419.38,
+      "audio_group": 35,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 10,
+      "mode": "transition",
+      "seconds": 1.1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 124,
+      "start": 419.38,
+      "end": 420.48
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "Let’s check our understanding.",
+      "paragraph": 0,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 125,
+      "start": 420.48,
+      "speech_end": 421.69,
+      "end": 422.48,
+      "audio_group": 37,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "Say your answer aloud, or pause the video if you need more time.",
+      "paragraph": 0,
+      "paragraph_end": true,
+      "question": 0,
+      "id": 126,
+      "start": 422.48,
+      "speech_end": 425.86,
+      "end": 427.58000000000004,
+      "audio_group": 37,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "One.",
+      "paragraph": 1,
+      "paragraph_end": false,
+      "question": 1,
+      "id": 127,
+      "start": 427.58000000000004,
+      "speech_end": 428.06,
+      "end": 428.74,
+      "audio_group": 37,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "Name two things in the child’s imaginary world.",
+      "paragraph": 1,
+      "paragraph_end": false,
+      "question": 1,
+      "id": 128,
+      "start": 428.74,
+      "speech_end": 431.0,
+      "end": 431.66,
+      "audio_group": 37,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "Where does the child find these pictures?",
+      "paragraph": 1,
+      "paragraph_end": true,
+      "question": 1,
+      "id": 129,
+      "start": 431.66,
+      "speech_end": 433.21000000000004,
+      "end": 433.36,
+      "audio_group": 37,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 10,
+      "mode": "think",
+      "seconds": 5,
+      "text": "",
+      "paragraph": 1,
+      "question": 1,
+      "id": 130,
+      "start": 433.36,
+      "end": 438.36
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "You could name castles, dragons, magical gardens, ladies in a tower or bower, horsemen, or streams.",
+      "paragraph": 2,
+      "paragraph_end": false,
+      "question": 1,
+      "id": 131,
+      "start": 438.36,
+      "speech_end": 445.62,
+      "end": 446.48,
+      "audio_group": 39,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "The child finds the pictures in the mind at bedtime.",
+      "paragraph": 2,
+      "paragraph_end": true,
+      "question": 1,
+      "id": 132,
+      "start": 446.48,
+      "speech_end": 448.96000000000004,
+      "end": 450.14,
+      "audio_group": 39,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "Two.",
+      "paragraph": 3,
+      "paragraph_end": false,
+      "question": 2,
+      "id": 133,
+      "start": 450.14,
+      "speech_end": 450.36,
+      "end": 451.14,
+      "audio_group": 39,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "What figure of speech is used in ‘the castle frowned’?",
+      "paragraph": 3,
+      "paragraph_end": false,
+      "question": 2,
+      "id": 134,
+      "start": 451.14,
+      "speech_end": 453.96000000000004,
+      "end": 454.78000000000003,
+      "audio_group": 39,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "Explain how it works.",
+      "paragraph": 3,
+      "paragraph_end": true,
+      "question": 2,
+      "id": 135,
+      "start": 454.78000000000003,
+      "speech_end": 455.78000000000003,
+      "end": 455.8,
+      "audio_group": 39,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 10,
+      "mode": "think",
+      "seconds": 5,
+      "text": "",
+      "paragraph": 3,
+      "question": 2,
+      "id": 136,
+      "start": 455.8,
+      "end": 460.8
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "It is personification.",
+      "paragraph": 4,
+      "paragraph_end": false,
+      "question": 2,
+      "id": 137,
+      "start": 460.8,
+      "speech_end": 461.38,
+      "end": 462.7,
+      "audio_group": 41,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "A castle is given the human action of frowning, making it seem stern or forbidding.",
+      "paragraph": 4,
+      "paragraph_end": false,
+      "question": 2,
+      "id": 138,
+      "start": 462.7,
+      "speech_end": 467.58,
+      "end": 468.18,
+      "audio_group": 41,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "A complete answer gives the name of the device and explains the words.",
+      "paragraph": 4,
+      "paragraph_end": true,
+      "question": 2,
+      "id": 139,
+      "start": 468.18,
+      "speech_end": 471.84000000000003,
+      "end": 472.82,
+      "audio_group": 41,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "Three.",
+      "paragraph": 5,
+      "paragraph_end": false,
+      "question": 3,
+      "id": 140,
+      "start": 472.82,
+      "speech_end": 473.18,
+      "end": 474.06,
+      "audio_group": 41,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "How do the child’s feelings change on waking?",
+      "paragraph": 5,
+      "paragraph_end": false,
+      "question": 3,
+      "id": 141,
+      "start": 474.06,
+      "speech_end": 476.06,
+      "end": 477.08000000000004,
+      "audio_group": 41,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "Support your answer with a phrase from the poem.",
+      "paragraph": 5,
+      "paragraph_end": true,
+      "question": 3,
+      "id": 142,
+      "start": 477.08000000000004,
+      "speech_end": 479.02,
+      "end": 479.04,
+      "audio_group": 41,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 10,
+      "mode": "think",
+      "seconds": 5,
+      "text": "",
+      "paragraph": 5,
+      "question": 3,
+      "id": 143,
+      "start": 479.04,
+      "end": 484.04
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "At bedtime, the child seems delighted by the vivid magical pictures.",
+      "paragraph": 6,
+      "paragraph_end": false,
+      "question": 3,
+      "id": 144,
+      "start": 484.04,
+      "speech_end": 488.02000000000004,
+      "end": 488.84000000000003,
+      "audio_group": 43,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "On waking, the child seems disappointed and wishes to find that world again.",
+      "paragraph": 6,
+      "paragraph_end": false,
+      "question": 3,
+      "id": 145,
+      "start": 488.84000000000003,
+      "speech_end": 493.0,
+      "end": 493.8,
+      "audio_group": 43,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 10,
+      "mode": "explain",
+      "text": "The phrase ‘seek the magic land in vain’ supports this answer: the child looks for it without success.",
+      "paragraph": 6,
+      "paragraph_end": true,
+      "question": 3,
+      "id": 146,
+      "start": 493.8,
+      "speech_end": 499.79,
+      "end": 499.96000000000004,
+      "audio_group": 43,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 11,
+      "mode": "transition",
+      "seconds": 1.1,
+      "text": "",
+      "paragraph": -1,
+      "question": 0,
+      "id": 147,
+      "start": 499.96000000000004,
+      "end": 501.06000000000006
+    },
+    {
+      "scene": 11,
+      "mode": "explain",
+      "text": "Stevenson lets us experience a familiar feeling: an imaginary world can seem wonderfully real, even though it exists in our minds.",
+      "paragraph": 0,
+      "paragraph_end": true,
+      "question": 0,
+      "id": 148,
+      "start": 501.06000000000006,
+      "speech_end": 508.68000000000006,
+      "end": 509.46000000000004,
+      "audio_group": 45,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 11,
+      "mode": "explain",
+      "text": "Remember the contrast between bedtime and morning, the ordinary objects that replace the dream scenes, and the child’s unsuccessful search for the magic land.",
+      "paragraph": 1,
+      "paragraph_end": true,
+      "question": 0,
+      "id": 149,
+      "start": 509.46000000000004,
+      "speech_end": 518.08,
+      "end": 519.1800000000001,
+      "audio_group": 45,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 11,
+      "mode": "explain",
+      "text": "For a small creative challenge, choose one ordinary object in your room.",
+      "paragraph": 2,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 150,
+      "start": 519.1800000000001,
+      "speech_end": 523.1600000000001,
+      "end": 524.0000000000001,
+      "audio_group": 45,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 11,
+      "mode": "explain",
+      "text": "What might it become in an imaginary adventure?",
+      "paragraph": 2,
+      "paragraph_end": false,
+      "question": 0,
+      "id": 151,
+      "start": 524.0000000000001,
+      "speech_end": 526.1500000000001,
+      "end": 527.0600000000001,
+      "audio_group": 45,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 11,
+      "mode": "explain",
+      "text": "Keep that picture in your head—and perhaps turn it into a line of your own.",
+      "paragraph": 2,
+      "paragraph_end": true,
+      "question": 0,
+      "id": 152,
+      "start": 527.0600000000001,
+      "speech_end": 530.8000000000001,
+      "end": 530.82,
+      "audio_group": 45,
+      "native_speed": 0.9,
+      "alignment": "forced alignment to approved script"
+    },
+    {
+      "scene": 11,
+      "mode": "end",
+      "seconds": 4,
+      "text": "",
+      "paragraph": 2,
+      "question": 0,
+      "id": 153,
+      "start": 530.82,
+      "end": 534.82
+    }
+  ],
+  "source": "/Users/aquaraga/Documents/ChatGPT/EdTech/proposals/a-childs-thought-video/plan-and-script.md",
+  "voice": "Niki",
+  "narration_engine": "Runway eleven_v3",
+  "voice_description": "expressive American English tutor, Runway Niki",
+  "production_revision": 1,
+  "duration": 534.82,
+  "captions": [
+    {
+      "start": 1.2600000000000002,
+      "end": 4.1899999999999995,
+      "text": "Have you ever imagined a whole adventure while lying in bed?",
+      "beat": 1
+    },
+    {
+      "start": 4.880000000000001,
+      "end": 8.92,
+      "text": "Perhaps your ordinary room seemed to disappear, and a completely different world took its",
+      "beat": 2
+    },
+    {
+      "start": 8.92,
+      "end": 9.67,
+      "text": "place.",
+      "beat": 2
+    },
+    {
+      "start": 10.24,
+      "end": 15.2,
+      "text": "In ‘A Child’s Thought’, Robert Louis Stevenson lets us enter a child’s imagination.",
+      "beat": 3
+    },
+    {
+      "start": 16.04,
+      "end": 19.29,
+      "text": "At bedtime, the child pictures a magical world.",
+      "beat": 4
+    },
+    {
+      "start": 19.64,
+      "end": 21.73,
+      "text": "When morning comes, something changes.",
+      "beat": 5
+    },
+    {
+      "start": 22.56,
+      "end": 23.98,
+      "text": "Let’s read a little at a time.",
+      "beat": 6
+    },
+    {
+      "start": 24.64,
+      "end": 30.720000000000002,
+      "text": "As we listen, keep one question in mind: what can the child find in imagination that cannot",
+      "beat": 7
+    },
+    {
+      "start": 30.720000000000002,
+      "end": 31.880000000000003,
+      "text": "be found in the room?",
+      "beat": 7
+    },
+    {
+      "start": 33.66,
+      "end": 34.77,
+      "text": "At seven, when I go to bed,",
+      "beat": 9
+    },
+    {
+      "start": 35.14,
+      "end": 36.76,
+      "text": "I find such pictures in my head;",
+      "beat": 10
+    },
+    {
+      "start": 39.86000000000001,
+      "end": 43.07000000000001,
+      "text": "The child is speaking directly to us, using the word ‘I’.",
+      "beat": 12
+    },
+    {
+      "start": 43.92,
+      "end": 45.78,
+      "text": "Seven is bedtime here.",
+      "beat": 13
+    },
+    {
+      "start": 45.96000000000001,
+      "end": 48.720000000000006,
+      "text": "These ‘pictures’ are scenes in the child’s mind.",
+      "beat": 14
+    },
+    {
+      "start": 48.900000000000006,
+      "end": 51.25,
+      "text": "They are not photographs hanging on the wall!",
+      "beat": 15
+    },
+    {
+      "start": 51.540000000000006,
+      "end": 55.7,
+      "text": "The phrase ‘in my head’ tells us where to look: inside the imagination.",
+      "beat": 16
+    },
+    {
+      "start": 56.580000000000005,
+      "end": 60.260000000000005,
+      "text": "The word ‘find’ makes these pictures sound like discoveries.",
+      "beat": 17
+    },
+    {
+      "start": 60.92,
+      "end": 63.64,
+      "text": "The child is about to tell us what this inner world contains.",
+      "beat": 18
+    },
+    {
+      "start": 65.32000000000001,
+      "end": 67.60000000000001,
+      "text": "Castles with dragons prowling round,",
+      "beat": 20
+    },
+    {
+      "start": 67.68,
+      "end": 69.68,
+      "text": "Gardens where magic fruits are found;",
+      "beat": 21
+    },
+    {
+      "start": 69.74000000000001,
+      "end": 71.78,
+      "text": "Fair ladies prisoned in a tower,",
+      "beat": 22
+    },
+    {
+      "start": 72.02,
+      "end": 74.04,
+      "text": "Or lost in an enchanted bower;",
+      "beat": 23
+    },
+    {
+      "start": 76.60000000000001,
+      "end": 78.32000000000001,
+      "text": "What a busy imagination!",
+      "beat": 25
+    },
+    {
+      "start": 78.58,
+      "end": 83.58,
+      "text": "We have castles, dragons, magical gardens, and ladies in mysterious places.",
+      "beat": 26
+    },
+    {
+      "start": 84.44,
+      "end": 87.66,
+      "text": "‘Prowling’ means moving quietly and carefully.",
+      "beat": 27
+    },
+    {
+      "start": 87.84,
+      "end": 89.82000000000001,
+      "text": "The dragons seem watchful.",
+      "beat": 28
+    },
+    {
+      "start": 90.0,
+      "end": 92.56,
+      "text": "The magic fruit adds wonder to the gardens.",
+      "beat": 29
+    },
+    {
+      "start": 93.2,
+      "end": 95.52000000000001,
+      "text": "Here, ‘fair’ means beautiful.",
+      "beat": 30
+    },
+    {
+      "start": 95.82,
+      "end": 99.04,
+      "text": "‘Prisoned’ means imprisoned, or kept captive.",
+      "beat": 31
+    },
+    {
+      "start": 99.16,
+      "end": 103.47,
+      "text": "The ladies may be shut in a tower, or lost in an ‘enchanted bower’.",
+      "beat": 32
+    },
+    {
+      "start": 103.86,
+      "end": 109.91,
+      "text": "A bower is a pleasant shaded place under trees, and ‘enchanted’ means under a magic spell.",
+      "beat": 33
+    },
+    {
+      "start": 110.53999999999999,
+      "end": 113.76,
+      "text": "Which details make this world seem different from an ordinary garden?",
+      "beat": 34
+    },
+    {
+      "start": 119.5,
+      "end": 123.1,
+      "text": "The dragons, magic fruit, and enchanted bower belong to a world of fantasy.",
+      "beat": 36
+    },
+    {
+      "start": 123.98,
+      "end": 127.03,
+      "text": "It combines beauty with adventure and a hint of danger.",
+      "beat": 37
+    },
+    {
+      "start": 127.6,
+      "end": 132.32,
+      "text": "The poem gives us ingredients for an exciting story, without telling us a whole rescue or",
+      "beat": 38
+    },
+    {
+      "start": 132.32,
+      "end": 132.76,
+      "text": "battle.",
+      "beat": 38
+    },
+    {
+      "start": 134.04,
+      "end": 135.96,
+      "text": "While gallant horsemen ride by streams",
+      "beat": 40
+    },
+    {
+      "start": 136.74,
+      "end": 138.2,
+      "text": "That border all this land of dreams",
+      "beat": 41
+    },
+    {
+      "start": 138.2,
+      "end": 140.51999999999998,
+      "text": "I find, so clearly in my head",
+      "beat": 42
+    },
+    {
+      "start": 140.51999999999998,
+      "end": 142.34,
+      "text": "At seven, when I go to bed.",
+      "beat": 43
+    },
+    {
+      "start": 145.76,
+      "end": 147.14,
+      "text": "‘Gallant’ means brave.",
+      "beat": 45
+    },
+    {
+      "start": 147.49999999999997,
+      "end": 151.17999999999998,
+      "text": "The horsemen ride beside streams—small, narrow rivers.",
+      "beat": 46
+    },
+    {
+      "start": 151.61999999999998,
+      "end": 155.45999999999998,
+      "text": "These streams ‘border’ the dream land: they run along its edges.",
+      "beat": 47
+    },
+    {
+      "start": 156.11999999999998,
+      "end": 159.16,
+      "text": "The final two lines bring us back to the child in bed.",
+      "beat": 48
+    },
+    {
+      "start": 159.6,
+      "end": 163.17,
+      "text": "The words ‘so clearly’ show how vivid the pictures are.",
+      "beat": 49
+    },
+    {
+      "start": 163.83999999999997,
+      "end": 168.17,
+      "text": "Something can feel very clear in your imagination without being physically in front of you.",
+      "beat": 50
+    },
+    {
+      "start": 168.71999999999997,
+      "end": 172.30999999999997,
+      "text": "Notice that the stanza ends with the same bedtime line that began it.",
+      "beat": 51
+    },
+    {
+      "start": 172.51999999999998,
+      "end": 176.45999999999998,
+      "text": "We have travelled around the dream world and returned to the moment when the child imagines",
+      "beat": 52
+    },
+    {
+      "start": 176.45999999999998,
+      "end": 176.7,
+      "text": "it.",
+      "beat": 52
+    },
+    {
+      "start": 177.91999999999996,
+      "end": 179.13999999999996,
+      "text": "At seven, when I wake again,",
+      "beat": 54
+    },
+    {
+      "start": 179.81999999999996,
+      "end": 182.03999999999996,
+      "text": "The magic land I seek in vain;",
+      "beat": 55
+    },
+    {
+      "start": 182.03999999999996,
+      "end": 184.13999999999996,
+      "text": "A chair stands where the castle frowned,",
+      "beat": 56
+    },
+    {
+      "start": 184.57999999999996,
+      "end": 186.19999999999996,
+      "text": "The carpet hides the garden ground,",
+      "beat": 57
+    },
+    {
+      "start": 188.43999999999997,
+      "end": 189.49999999999997,
+      "text": "Now the child wakes.",
+      "beat": 59
+    },
+    {
+      "start": 190.73999999999998,
+      "end": 195.01999999999998,
+      "text": "‘Seek’ means look for, and ‘in vain’ means without success.",
+      "beat": 60
+    },
+    {
+      "start": 195.79999999999998,
+      "end": 198.73999999999998,
+      "text": "The child looks for the magical land but cannot find it.",
+      "beat": 61
+    },
+    {
+      "start": 199.71999999999997,
+      "end": 202.83999999999997,
+      "text": "What occupies the places where the castle and garden seemed to be?",
+      "beat": 62
+    },
+    {
+      "start": 208.33999999999995,
+      "end": 212.20999999999995,
+      "text": "A chair is there instead of the castle, and a carpet covers the place of the garden.",
+      "beat": 64
+    },
+    {
+      "start": 213.01999999999995,
+      "end": 215.30999999999995,
+      "text": "These are familiar objects in the waking room.",
+      "beat": 65
+    },
+    {
+      "start": 215.89999999999995,
+      "end": 220.16999999999996,
+      "text": "The poem is comparing two ways the child experiences the same surroundings.",
+      "beat": 66
+    },
+    {
+      "start": 220.83999999999995,
+      "end": 223.51999999999995,
+      "text": "The garden is not really hidden underneath the carpet!",
+      "beat": 67
+    },
+    {
+      "start": 224.15999999999997,
+      "end": 227.63999999999996,
+      "text": "The imagined landscape has given way to the ordinary room.",
+      "beat": 68
+    },
+    {
+      "start": 228.43999999999994,
+      "end": 230.69999999999996,
+      "text": "Keep an eye on ‘the castle frowned’.",
+      "beat": 69
+    },
+    {
+      "start": 231.25999999999996,
+      "end": 232.98999999999995,
+      "text": "We will come back to that interesting description.",
+      "beat": 70
+    },
+    {
+      "start": 234.67999999999995,
+      "end": 236.17999999999995,
+      "text": "No fairies trip across the floor,",
+      "beat": 72
+    },
+    {
+      "start": 236.23999999999995,
+      "end": 238.29999999999995,
+      "text": "Boots, and not horsemen, flank the door,",
+      "beat": 73
+    },
+    {
+      "start": 239.17999999999995,
+      "end": 240.93999999999994,
+      "text": "And where the blue streams rippling ran",
+      "beat": 74
+    },
+    {
+      "start": 240.93999999999994,
+      "end": 243.04999999999995,
+      "text": "Is now a bath and water-can;",
+      "beat": 75
+    },
+    {
+      "start": 245.51999999999995,
+      "end": 247.97999999999993,
+      "text": "There are no fairies moving across the floor.",
+      "beat": 77
+    },
+    {
+      "start": 248.29999999999995,
+      "end": 251.21999999999994,
+      "text": "Here, ‘trip’ means move lightly, with quick little steps.",
+      "beat": 78
+    },
+    {
+      "start": 251.67999999999995,
+      "end": 253.98999999999995,
+      "text": "It does not mean that the fairies stumble and fall.",
+      "beat": 79
+    },
+    {
+      "start": 254.55999999999995,
+      "end": 256.7699999999999,
+      "text": "‘Flank’ means be at the side of something.",
+      "beat": 80
+    },
+    {
+      "start": 257.05999999999995,
+      "end": 260.49999999999994,
+      "text": "Boots stand beside the door where the child had imagined horsemen.",
+      "beat": 81
+    },
+    {
+      "start": 261.28999999999996,
+      "end": 264.03,
+      "text": "‘Rippling’ describes water moving in small waves.",
+      "beat": 82
+    },
+    {
+      "start": 264.49999999999994,
+      "end": 267.37999999999994,
+      "text": "The beautiful blue streams are gone from the child’s view.",
+      "beat": 83
+    },
+    {
+      "start": 267.5799999999999,
+      "end": 271.80999999999995,
+      "text": "In their place are a bath and a water-can, a container for water.",
+      "beat": 84
+    },
+    {
+      "start": 272.05999999999995,
+      "end": 277.9599999999999,
+      "text": "The change is striking: a whole flowing landscape has become ordinary things in a room.",
+      "beat": 85
+    },
+    {
+      "start": 278.2199999999999,
+      "end": 284.25999999999993,
+      "text": "The repeated negatives—‘No fairies’ and ‘not horsemen’—draw attention to what the child",
+      "beat": 86
+    },
+    {
+      "start": 284.25999999999993,
+      "end": 284.63999999999993,
+      "text": "misses.",
+      "beat": 86
+    },
+    {
+      "start": 286.11999999999995,
+      "end": 287.65999999999997,
+      "text": "I seek the magic land in vain",
+      "beat": 88
+    },
+    {
+      "start": 287.65999999999997,
+      "end": 290.2,
+      "text": "At seven, when I wake again.",
+      "beat": 89
+    },
+    {
+      "start": 293.38,
+      "end": 295.44,
+      "text": "Why does the child keep looking for the magic land?",
+      "beat": 91
+    },
+    {
+      "start": 300.78,
+      "end": 305.13999999999993,
+      "text": "The imagined world was vivid and exciting, and the child wants to find it again.",
+      "beat": 93
+    },
+    {
+      "start": 306.03999999999996,
+      "end": 309.36999999999995,
+      "text": "But ‘in vain’ tells us that the search is unsuccessful.",
+      "beat": 94
+    },
+    {
+      "start": 310.43999999999994,
+      "end": 313.53999999999996,
+      "text": "The child seems disappointed and longs for the dream world.",
+      "beat": 95
+    },
+    {
+      "start": 314.4599999999999,
+      "end": 318.97999999999996,
+      "text": "That is an interpretation supported by the repeated search and the contrast with the",
+      "beat": 96
+    },
+    {
+      "start": 318.97999999999996,
+      "end": 319.87999999999994,
+      "text": "ordinary room.",
+      "beat": 96
+    },
+    {
+      "start": 320.81999999999994,
+      "end": 324.0799999999999,
+      "text": "The poem does not say that imagination has disappeared forever.",
+      "beat": 97
+    },
+    {
+      "start": 324.75999999999993,
+      "end": 327.81999999999994,
+      "text": "It describes what the child cannot find on waking at this moment.",
+      "beat": 98
+    },
+    {
+      "start": 329.37999999999994,
+      "end": 330.47999999999996,
+      "text": "Let’s connect the two halves.",
+      "beat": 100
+    },
+    {
+      "start": 331.4,
+      "end": 335.41999999999996,
+      "text": "In the first stanza, the child finds the dream world clearly in the mind.",
+      "beat": 101
+    },
+    {
+      "start": 336.13999999999993,
+      "end": 339.81999999999994,
+      "text": "In the second, the child seeks it in the room and cannot find it.",
+      "beat": 102
+    },
+    {
+      "start": 340.78,
+      "end": 341.78,
+      "text": "Castle and chair.",
+      "beat": 103
+    },
+    {
+      "start": 342.63999999999993,
+      "end": 343.35999999999996,
+      "text": "Garden and carpet.",
+      "beat": 104
+    },
+    {
+      "start": 344.11999999999995,
+      "end": 344.81999999999994,
+      "text": "Horsemen and boots.",
+      "beat": 105
+    },
+    {
+      "start": 345.69999999999993,
+      "end": 347.48999999999995,
+      "text": "Streams and a bath with a water-can.",
+      "beat": 106
+    },
+    {
+      "start": 348.79999999999995,
+      "end": 351.98999999999995,
+      "text": "These paired details make the contrast easy to picture.",
+      "beat": 107
+    },
+    {
+      "start": 352.41999999999996,
+      "end": 357.34,
+      "text": "The poem explores the power of a child’s imagination and the disappointment of returning to",
+      "beat": 108
+    },
+    {
+      "start": 357.34,
+      "end": 358.75999999999993,
+      "text": "ordinary surroundings.",
+      "beat": 108
+    },
+    {
+      "start": 359.25999999999993,
+      "end": 363.59999999999997,
+      "text": "The title, ‘A Child’s Thought’, keeps our attention on the child’s inner experience.",
+      "beat": 109
+    },
+    {
+      "start": 365.47999999999996,
+      "end": 367.02,
+      "text": "First, personification.",
+      "beat": 111
+    },
+    {
+      "start": 367.68,
+      "end": 371.24,
+      "text": "In ‘the castle frowned’, the castle receives a human action.",
+      "beat": 112
+    },
+    {
+      "start": 371.86,
+      "end": 374.7,
+      "text": "People can frown; buildings cannot literally do that.",
+      "beat": 113
+    },
+    {
+      "start": 375.5,
+      "end": 379.55,
+      "text": "The phrase makes the castle seem stern or forbidding, as though it has a personality.",
+      "beat": 114
+    },
+    {
+      "start": 381.14,
+      "end": 387.94,
+      "text": "Second, listen to the rhyme: ‘bed’ and ‘head’; ‘round’ and ‘found’; ‘tower’ and ‘bower’.",
+      "beat": 115
+    },
+    {
+      "start": 388.24,
+      "end": 391.76,
+      "text": "These matching sounds give the verse a pleasing musical pattern.",
+      "beat": 116
+    },
+    {
+      "start": 392.06,
+      "end": 397.03,
+      "text": "We find rhyming pairs in the second stanza too, such as ‘floor’ and ‘door’.",
+      "beat": 117
+    },
+    {
+      "start": 398.15999999999997,
+      "end": 399.68,
+      "text": "Third, repetition.",
+      "beat": 118
+    },
+    {
+      "start": 400.0,
+      "end": 403.87,
+      "text": "‘At seven’ returns, but bedtime becomes waking time.",
+      "beat": 119
+    },
+    {
+      "start": 404.15999999999997,
+      "end": 407.28,
+      "text": "The first stanza begins and ends with going to bed.",
+      "beat": 120
+    },
+    {
+      "start": 407.41999999999996,
+      "end": 409.86,
+      "text": "The second begins and ends with waking again.",
+      "beat": 121
+    },
+    {
+      "start": 410.36,
+      "end": 412.31,
+      "text": "Each stanza has ten lines.",
+      "beat": 122
+    },
+    {
+      "start": 412.76,
+      "end": 418.15999999999997,
+      "text": "This balanced shape helps us notice what changes: the world the child experiences, and the",
+      "beat": 123
+    },
+    {
+      "start": 418.15999999999997,
+      "end": 419.36,
+      "text": "child’s feelings about it.",
+      "beat": 123
+    },
+    {
+      "start": 420.62,
+      "end": 421.69,
+      "text": "Let’s check our understanding.",
+      "beat": 125
+    },
+    {
+      "start": 422.48,
+      "end": 425.86,
+      "text": "Say your answer aloud, or pause the video if you need more time.",
+      "beat": 126
+    },
+    {
+      "start": 427.58000000000004,
+      "end": 428.06,
+      "text": "One.",
+      "beat": 127
+    },
+    {
+      "start": 428.74,
+      "end": 431.0,
+      "text": "Name two things in the child’s imaginary world.",
+      "beat": 128
+    },
+    {
+      "start": 431.66,
+      "end": 433.21000000000004,
+      "text": "Where does the child find these pictures?",
+      "beat": 129
+    },
+    {
+      "start": 438.54,
+      "end": 444.98,
+      "text": "You could name castles, dragons, magical gardens, ladies in a tower or bower, horsemen, or",
+      "beat": 131
+    },
+    {
+      "start": 444.98,
+      "end": 445.62,
+      "text": "streams.",
+      "beat": 131
+    },
+    {
+      "start": 446.48,
+      "end": 448.96000000000004,
+      "text": "The child finds the pictures in the mind at bedtime.",
+      "beat": 132
+    },
+    {
+      "start": 450.14,
+      "end": 450.36,
+      "text": "Two.",
+      "beat": 133
+    },
+    {
+      "start": 451.14,
+      "end": 453.96000000000004,
+      "text": "What figure of speech is used in ‘the castle frowned’?",
+      "beat": 134
+    },
+    {
+      "start": 454.78000000000003,
+      "end": 455.78000000000003,
+      "text": "Explain how it works.",
+      "beat": 135
+    },
+    {
+      "start": 460.94,
+      "end": 461.38,
+      "text": "It is personification.",
+      "beat": 137
+    },
+    {
+      "start": 462.7,
+      "end": 467.58,
+      "text": "A castle is given the human action of frowning, making it seem stern or forbidding.",
+      "beat": 138
+    },
+    {
+      "start": 468.18,
+      "end": 471.84000000000003,
+      "text": "A complete answer gives the name of the device and explains the words.",
+      "beat": 139
+    },
+    {
+      "start": 472.82,
+      "end": 473.18,
+      "text": "Three.",
+      "beat": 140
+    },
+    {
+      "start": 474.06,
+      "end": 476.06,
+      "text": "How do the child’s feelings change on waking?",
+      "beat": 141
+    },
+    {
+      "start": 477.08000000000004,
+      "end": 479.02,
+      "text": "Support your answer with a phrase from the poem.",
+      "beat": 142
+    },
+    {
+      "start": 484.22,
+      "end": 488.02000000000004,
+      "text": "At bedtime, the child seems delighted by the vivid magical pictures.",
+      "beat": 144
+    },
+    {
+      "start": 488.84000000000003,
+      "end": 493.0,
+      "text": "On waking, the child seems disappointed and wishes to find that world again.",
+      "beat": 145
+    },
+    {
+      "start": 493.8,
+      "end": 498.98,
+      "text": "The phrase ‘seek the magic land in vain’ supports this answer: the child looks for it",
+      "beat": 146
+    },
+    {
+      "start": 499.02000000000004,
+      "end": 499.79,
+      "text": "without success.",
+      "beat": 146
+    },
+    {
+      "start": 501.6000000000001,
+      "end": 506.26000000000005,
+      "text": "Stevenson lets us experience a familiar feeling: an imaginary world can seem wonderfully",
+      "beat": 148
+    },
+    {
+      "start": 506.26000000000005,
+      "end": 508.68000000000006,
+      "text": "real, even though it exists in our minds.",
+      "beat": 148
+    },
+    {
+      "start": 509.46000000000004,
+      "end": 514.08,
+      "text": "Remember the contrast between bedtime and morning, the ordinary objects that replace the",
+      "beat": 149
+    },
+    {
+      "start": 514.08,
+      "end": 518.08,
+      "text": "dream scenes, and the child’s unsuccessful search for the magic land.",
+      "beat": 149
+    },
+    {
+      "start": 519.1800000000001,
+      "end": 523.1600000000001,
+      "text": "For a small creative challenge, choose one ordinary object in your room.",
+      "beat": 150
+    },
+    {
+      "start": 524.0000000000001,
+      "end": 526.1500000000001,
+      "text": "What might it become in an imaginary adventure?",
+      "beat": 151
+    },
+    {
+      "start": 527.0600000000001,
+      "end": 530.8000000000001,
+      "text": "Keep that picture in your head—and perhaps turn it into a line of your own.",
+      "beat": 152
+    }
+  ]
+}

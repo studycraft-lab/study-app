@@ -1,0 +1,31 @@
+{
+  "source_type": "user-supplied textbook screenshots",
+  "files": [
+    {
+      "filename": "Screenshot 2026-09-01 at 12.44.53 AM.png",
+      "pages": "45",
+      "sha256": "2e040b5a554971f7f5e4ec76b14d3d9fe1a7ef979f794c3d5f594a62de6cb97f"
+    },
+    {
+      "filename": "Screenshot 2026-09-01 at 12.45.01 AM.png",
+      "pages": "46–47",
+      "sha256": "004fb14d004358fab6d50de314951a1a11b10c103c42887816a9024604abd272"
+    },
+    {
+      "filename": "Screenshot 2026-09-01 at 12.45.27 AM.png",
+      "pages": "48–49",
+      "sha256": "11dcf47ad95a2e52dd35cbdc72e5ccf584bb69fa391e7d25332c18b6baea1477"
+    },
+    {
+      "filename": "Screenshot 2026-09-01 at 12.45.40 AM.png",
+      "pages": "50–51",
+      "sha256": "f60cf140892edbb807c8b403ae7d3c5fe350c0d51c52e09c44b46d1f11455450"
+    },
+    {
+      "filename": "Screenshot 2026-09-01 at 12.45.51 AM.png",
+      "pages": "52–53",
+      "sha256": "f5035a8abb3591ce2e800a315990d084623b5b12df65bd54a416ca70d99566ed"
+    }
+  ],
+  "note": "The finished video uses original diagrams; source page images are not reproduced."
+}

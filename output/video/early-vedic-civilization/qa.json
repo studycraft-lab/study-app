@@ -1,0 +1,14 @@
+{
+  "source_pages": "User-supplied textbook screenshots, pages 45–53",
+  "video_duration_seconds": 352.955,
+  "video_codec": "H.264",
+  "audio_codec": "AAC",
+  "dimensions": "1920x1080",
+  "frame_rate": 24,
+  "scene_count": 8,
+  "spoken_caption_cues": 65,
+  "recall_pauses": 3,
+  "visual_review": "Full-resolution frames from all eight scenes and encoded samples at 01:30, 05:04 and 05:51 were inspected for legibility and timing.",
+  "audio_review": "Local speech recognition recovered the narration sequence and key terms; it transcribed some Sanskrit names phonetically. Manual listening was not performed.",
+  "editorial_review": "Dates and broad social descriptions are attributed to the supplied textbook. The map is marked schematic, and social experiences are not represented as universal."
+}

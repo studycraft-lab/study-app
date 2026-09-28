@@ -1,0 +1,155 @@
+{
+  "assets": [
+    {
+      "fileName": "Scan_20260927_165049.pdf",
+      "height": 3239,
+      "id": "chapter-scan",
+      "pages": [
+        {
+          "bounds": {
+            "height": 1,
+            "width": 1,
+            "x": 0,
+            "y": 0
+          },
+          "id": "page-109",
+          "pageNumber": 1
+        },
+        {
+          "bounds": {
+            "height": 1,
+            "width": 1,
+            "x": 0,
+            "y": 0
+          },
+          "id": "page-110",
+          "pageNumber": 2
+        },
+        {
+          "bounds": {
+            "height": 1,
+            "width": 1,
+            "x": 0,
+            "y": 0
+          },
+          "id": "page-111",
+          "pageNumber": 3
+        },
+        {
+          "bounds": {
+            "height": 1,
+            "width": 1,
+            "x": 0,
+            "y": 0
+          },
+          "id": "page-112",
+          "pageNumber": 4
+        }
+      ],
+      "sha256": "88c466b90488c9d5eccc3c672e052c0046f4e1e5bfaa568b7eb166bef26d6aef",
+      "width": 2414
+    },
+    {
+      "fileName": "FIRST_TERM_VI_ENGLISH_LITERATURE_1787974373.pdf",
+      "height": 842,
+      "id": "past-paper",
+      "pages": [
+        {
+          "bounds": {
+            "height": 1,
+            "width": 1,
+            "x": 0,
+            "y": 0
+          },
+          "id": "past-paper-page-1",
+          "pageNumber": 1
+        },
+        {
+          "bounds": {
+            "height": 1,
+            "width": 1,
+            "x": 0,
+            "y": 0
+          },
+          "id": "past-paper-page-2",
+          "pageNumber": 2
+        },
+        {
+          "bounds": {
+            "height": 1,
+            "width": 1,
+            "x": 0,
+            "y": 0
+          },
+          "id": "past-paper-page-3",
+          "pageNumber": 3
+        },
+        {
+          "bounds": {
+            "height": 1,
+            "width": 1,
+            "x": 0,
+            "y": 0
+          },
+          "id": "past-paper-page-4",
+          "pageNumber": 4
+        },
+        {
+          "bounds": {
+            "height": 1,
+            "width": 1,
+            "x": 0,
+            "y": 0
+          },
+          "id": "past-paper-page-5",
+          "pageNumber": 5
+        },
+        {
+          "bounds": {
+            "height": 1,
+            "width": 1,
+            "x": 0,
+            "y": 0
+          },
+          "id": "past-paper-page-6",
+          "pageNumber": 6
+        },
+        {
+          "bounds": {
+            "height": 1,
+            "width": 1,
+            "x": 0,
+            "y": 0
+          },
+          "id": "past-paper-page-7",
+          "pageNumber": 7
+        }
+      ],
+      "sha256": "4a2cee4ef28495cb840319bf7df661690f983ccee44495c870cc8ad68da148c8",
+      "width": 595
+    }
+  ],
+  "chapter": {
+    "board": "ICSE",
+    "bookTitle": "Cordova Learning Series English - 6",
+    "chapterNumber": 16,
+    "grade": 6,
+    "id": "thank-you-maam",
+    "subject": "English Literature",
+    "title": "Thank You, Ma’am"
+  },
+  "learningOutcomes": [
+    "Retell Roger’s attempted theft and Mrs Jones’s immediate response.",
+    "Describe how Mrs Jones treats Roger at home and how he responds to her trust.",
+    "Explain how the meal, the money for shoes and the final exchange develop the story.",
+    "Answer the printed literary exercises with direct details or supported interpretations."
+  ],
+  "manifestVersion": "0.1.0",
+  "sourcePolicy": {
+    "applicationStorage": "not-uploaded",
+    "notes": "The scan supplies the literary text and end exercises. The supplied 2025 paper supplies question style only. The chapter pages do not print a formal learning-outcome list; the outcomes below are source-derived coverage goals. Short quotations appear directly in playable questions.",
+    "originals": "local-only",
+    "repositoryCopies": false,
+    "runtimeStrategy": "none"
+  }
+}

@@ -1,0 +1,1779 @@
+{
+  "bank": {
+    "board": "ICSE",
+    "bookTitle": "Cordova Learning Series English - 6",
+    "chapterNumber": 16,
+    "grade": 6,
+    "id": "thank-you-maam",
+    "status": "reviewed",
+    "subject": "English Literature",
+    "title": "Thank You, Ma’am",
+    "version": 1
+  },
+  "questions": [
+    {
+      "answer": {
+        "accepted": [
+          "strap"
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "The missing phrase is strap.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Use the word or phrase from the story.",
+      "id": "q-001",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "As Roger tried to snatch the purse, its long ____ broke with a single tug.",
+      "response": {},
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-111",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-109",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "attempt"
+      ],
+      "type": "fill_blank",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "pick up"
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "The missing phrase is pick up.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Use the word or phrase from the story.",
+      "id": "q-002",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Mrs Jones bent down enough to let Roger ____ her purse.",
+      "response": {},
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-111",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-109",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "attempt"
+      ],
+      "type": "fill_blank",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "jerked"
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "The missing phrase is jerked.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Use the word or phrase from the story.",
+      "id": "q-003",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Mrs Jones stooped and ____ Roger around in front of her.",
+      "response": {},
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-111",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-110",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "response"
+      ],
+      "type": "fill_blank",
+      "version": 1
+    },
+    {
+      "answer": {
+        "accepted": [
+          "presentable"
+        ]
+      },
+      "difficulty": 1,
+      "explanation": "The missing phrase is presentable.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Use the word or phrase from the story.",
+      "id": "q-004",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Mrs Jones wanted Roger to wash his face and comb his hair so that he would look ____.",
+      "response": {},
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-111",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-110",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "care"
+      ],
+      "type": "fill_blank",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 1,
+      "explanation": "The page credits James Mercer Langston Hughes.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the detail described in the story.",
+      "id": "q-005",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "Who wrote the story adapted as “Thank You, Ma’am”?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "Ruskin Bond"
+          },
+          {
+            "id": "b",
+            "text": "Langston Hughes"
+          },
+          {
+            "id": "c",
+            "text": "Romesh Gunesekera"
+          },
+          {
+            "id": "d",
+            "text": "Robert Louis Stevenson"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-109",
+          "regionId": "story",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-111",
+          "regionId": "story",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "language"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 1,
+      "explanation": "The opening says it was about eleven o’clock at night.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the detail described in the story.",
+      "id": "q-006",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "At about what time does Roger try to snatch the purse?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "Eleven o’clock at night"
+          },
+          {
+            "id": "b",
+            "text": "Seven o’clock in the morning"
+          },
+          {
+            "id": "c",
+            "text": "Midday"
+          },
+          {
+            "id": "d",
+            "text": "Six o’clock in the evening"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-109",
+          "regionId": "story",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "attempt"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "c"
+      },
+      "difficulty": 1,
+      "explanation": "Roger says he wants blue suede shoes.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the detail described in the story.",
+      "id": "q-007",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "What does Roger say he wants to buy?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "A warm coat"
+          },
+          {
+            "id": "b",
+            "text": "A new school bag"
+          },
+          {
+            "id": "c",
+            "text": "A pair of blue suede shoes"
+          },
+          {
+            "id": "d",
+            "text": "A train ticket"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-110",
+          "regionId": "story",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "care"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 1,
+      "explanation": "She tells Roger about her job in a hotel beauty shop.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the detail described in the story.",
+      "id": "q-008",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "Where does Mrs Jones say she works?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "At a school"
+          },
+          {
+            "id": "b",
+            "text": "In a hotel beauty shop"
+          },
+          {
+            "id": "c",
+            "text": "At a shoe factory"
+          },
+          {
+            "id": "d",
+            "text": "At a hospital"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-111",
+          "regionId": "story",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "care"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 1,
+      "explanation": "She heats lima beans and meat, and also makes cocoa.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the detail described in the story.",
+      "id": "q-009",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "What does Mrs Jones prepare for Roger to eat?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "Lima beans and meat"
+          },
+          {
+            "id": "b",
+            "text": "Bread and jam"
+          },
+          {
+            "id": "c",
+            "text": "Cake and ice cream"
+          },
+          {
+            "id": "d",
+            "text": "Fish and rice"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-111",
+          "regionId": "story",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "care"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "c"
+      },
+      "difficulty": 1,
+      "explanation": "She gives Roger ten dollars.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the detail described in the story.",
+      "id": "q-010",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "How much money does Mrs Jones give Roger for shoes?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "Two dollars"
+          },
+          {
+            "id": "b",
+            "text": "Five dollars"
+          },
+          {
+            "id": "c",
+            "text": "Ten dollars"
+          },
+          {
+            "id": "d",
+            "text": "Twenty dollars"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-111",
+          "regionId": "story",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "ending"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 1,
+      "explanation": "Roger looks at the open door but goes to the sink as instructed.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the detail described in the story.",
+      "id": "q-011",
+      "marks": 1,
+      "origin": "chapter_content",
+      "prompt": "What does Roger do when Mrs Jones leaves the door open and releases him?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "He runs away at once"
+          },
+          {
+            "id": "b",
+            "text": "He goes to the sink to wash his face"
+          },
+          {
+            "id": "c",
+            "text": "He takes the purse again"
+          },
+          {
+            "id": "d",
+            "text": "He calls the police"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-110",
+          "regionId": "story",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "trust"
+      ],
+      "type": "single_choice",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "He tugs the purse from behind and its strap breaks. The combined weight of the purse and the boy makes him lose his balance and fall backwards."
+      },
+      "difficulty": 2,
+      "explanation": "He tugs the purse from behind and its strap breaks. The combined weight of the purse and the boy makes him lose his balance and fall backwards.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer using the relevant story details.",
+      "id": "q-012",
+      "marks": 3,
+      "origin": "end_exercise",
+      "prompt": "How does Roger fall on his back when he tries to take Mrs Jones’s purse?",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Roger pulls or tugs at the purse from behind.",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "The purse strap breaks.",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "The weight makes him lose his balance and fall on his back.",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-111",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-109",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "attempt"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "She tells Roger to pick up and return her purse. She keeps hold of him while he does so, making him face his attempted theft."
+      },
+      "difficulty": 2,
+      "explanation": "She tells Roger to pick up and return her purse. She keeps hold of him while he does so, making him face his attempted theft.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer using the relevant story details.",
+      "id": "q-013",
+      "marks": 3,
+      "origin": "end_exercise",
+      "prompt": "What does Mrs Jones tell Roger to do after he falls? How does she make sure he does it, and what is she trying to teach him?",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Mrs Jones tells Roger to pick up and return her purse.",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "She keeps hold of Roger while he does it.",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "She makes him take responsibility for trying to steal from her.",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-111",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-109",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "response"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "She says that she too wanted things she could not get and has done things she would not tell him about. Roger’s mouth opens in surprise and then he frowns."
+      },
+      "difficulty": 2,
+      "explanation": "She says that she too wanted things she could not get and has done things she would not tell him about. Roger’s mouth opens in surprise and then he frowns.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer using the relevant story details.",
+      "id": "q-014",
+      "marks": 3,
+      "origin": "end_exercise",
+      "prompt": "What does Mrs Jones tell Roger about her younger days? How does he react?",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Mrs Jones says she wanted things she could not get when she was young.",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "She says she has done things she will not tell Roger about.",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Roger opens his mouth in surprise and then frowns.",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-112",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-110",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "response"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "Mrs Jones is firm but caring. She stops Roger after the attempted theft, then gives him food and money for the shoes."
+      },
+      "difficulty": 2,
+      "explanation": "Mrs Jones is firm but caring. She stops Roger after the attempted theft, then gives him food and money for the shoes.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer using the relevant story details.",
+      "id": "q-015",
+      "marks": 3,
+      "origin": "end_exercise",
+      "prompt": "What kind of person is Mrs Jones? Support your answer with two things she does for Roger.",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Describes Mrs Jones as firm, caring, generous or understanding.",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Uses a firm action such as catching Roger or telling him not to steal.",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Uses a caring action such as feeding him, trusting him or giving him money for shoes.",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-112",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-109",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-110",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-111",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "care"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "She leaves her purse unattended. Roger sits on the far side of the room where she can see him, because he does not want her to mistrust him."
+      },
+      "difficulty": 2,
+      "explanation": "She leaves her purse unattended. Roger sits on the far side of the room where she can see him, because he does not want her to mistrust him.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer using the relevant story details.",
+      "id": "q-016",
+      "marks": 3,
+      "origin": "end_exercise",
+      "prompt": "What does Mrs Jones leave unattended when she goes behind the screen? Where does Roger sit, and why?",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Mrs Jones leaves her purse unattended.",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Roger sits where she can easily see him.",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "He does not want to be mistrusted and wants to show he can be trusted.",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-112",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-111",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "trust"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "He does not run away when the door is open, tries not to be mistrusted and thanks her after she feeds him and gives him ten dollars. The story does not tell us what he does in later life."
+      },
+      "difficulty": 3,
+      "explanation": "He does not run away when the door is open, tries not to be mistrusted and thanks her after she feeds him and gives him ten dollars. The story does not tell us what he does in later life.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer using the relevant story details.",
+      "id": "q-017",
+      "marks": 3,
+      "origin": "end_exercise",
+      "prompt": "What shows that Roger may have learned a lesson from Mrs Jones?",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Roger does not run away despite the open door.",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "He tries to act in a way that earns Mrs Jones’s trust.",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "He thanks her after her kindness or is affected by her warning against stealing.",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-112",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-110",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-111",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "ending"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "He might have wanted to thank her more fully or apologise. She trusted and fed him, gave him money for shoes, and warned him not to steal again."
+      },
+      "difficulty": 3,
+      "explanation": "The text does not state Roger’s unspoken words. Accept any plausible message supported by two distinct story details.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Answer using the relevant story details.",
+      "id": "q-018",
+      "marks": 3,
+      "origin": "end_exercise",
+      "prompt": "What else might Roger have wanted to say to Mrs Jones at the end? Give two details that support your view.",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Offers a plausible message such as fuller thanks, an apology or a promise to behave better.",
+            "id": "p1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Supports it with Mrs Jones’s trust, food or gentle treatment.",
+            "id": "p2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Supports it with her gift of ten dollars or her warning not to steal again.",
+            "id": "p3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-112",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-110",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-111",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "ending"
+      ],
+      "type": "brief_answer",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "(a) Roger says this to Mrs Jones after trying to snatch her purse.\n\n(b) He asks her to release him. She is holding him, and he wants to get away after being caught.\n\n(c) Mrs Jones takes Roger to her home, tells him to wash his face and gives him food."
+      },
+      "difficulty": 2,
+      "explanation": "Score the three labelled parts separately using the cited story events.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall who is involved, what happens and why it matters.",
+      "id": "q-019",
+      "marks": 9,
+      "origin": "end_exercise",
+      "prompt": "Read this extract from “Thank You, Ma’am” and answer all three parts.\n\n“I just want you to turn me loose.”\n\n(a) Who says this, to whom, and what has he just done? [3]\n\n(b) What does “turn me loose” mean? Why does the boy ask for it? [3]\n\n(c) What does the woman do with the boy instead of letting him go? [3]",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Part (a): The speaker is Roger.",
+            "id": "a1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (a): He speaks to Mrs Jones.",
+            "id": "a2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (a): He has just tried to snatch her purse.",
+            "id": "a3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): It means to let him go or release him.",
+            "id": "b1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): Mrs Jones is holding him.",
+            "id": "b2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): He wants to escape after being caught or fears what will happen.",
+            "id": "b3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): Mrs Jones takes Roger home.",
+            "id": "c1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): She asks him to wash his face.",
+            "id": "c2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): She offers or gives him a meal.",
+            "id": "c3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-112",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-109",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-110",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "response"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "(a) The woman is Mrs Luella Bates Washington Jones and the boy is Roger. They are in her home.\n\n(b) She avoids questions about his home and family or other personal matters so that he will not feel embarrassed.\n\n(c) She tells him about her work in a hotel beauty shop. She also gives him a meal."
+      },
+      "difficulty": 2,
+      "explanation": "Score the three labelled parts separately using the cited story events.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall who is involved, what happens and why it matters.",
+      "id": "q-020",
+      "marks": 9,
+      "origin": "end_exercise",
+      "prompt": "Read this extract from “Thank You, Ma’am” and answer all three parts.\n\n“The woman did not ask the boy anything”\n\n(a) Who are the woman and the boy? Where are they at this point? [3]\n\n(b) What kinds of questions does the woman avoid, and why? [3]\n\n(c) What does she talk about instead, and what does she give the boy? [3]",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Part (a): The woman is Mrs Jones.",
+            "id": "a1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (a): The boy is Roger.",
+            "id": "a2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (a): They are in her home or kitchenette.",
+            "id": "a3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): She does not question him about where he lives.",
+            "id": "b1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): She does not question him about his family or personal circumstances.",
+            "id": "b2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): She avoids embarrassing him.",
+            "id": "b3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): She talks about her work.",
+            "id": "c1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): Her job is in a hotel beauty shop.",
+            "id": "c2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): She gives Roger a meal.",
+            "id": "c3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-112",
+          "regionId": "exercise",
+          "supports": [
+            "prompt"
+          ]
+        },
+        {
+          "pageId": "page-110",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-111",
+          "regionId": "story",
+          "supports": [
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "care"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "(a) Mrs Jones says this to Roger. He had tried to snatch her purse.\n\n(b) Roger wanted blue suede shoes. Mrs Jones later gives him ten dollars to buy them.\n\n(c) She tells him not to steal her purse or anyone else’s again. Such wrongdoing will bring trouble, not the shoes he wants."
+      },
+      "difficulty": 2,
+      "explanation": "Score the three labelled parts separately using the cited story events.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall who is involved, what happens and why it matters.",
+      "id": "q-021",
+      "marks": 9,
+      "origin": "chapter_content",
+      "prompt": "Read this extract from “Thank You, Ma’am” and answer all three parts.\n\n“You could have asked me.”\n\n(a) Who says this to whom? What had the boy tried to do? [3]\n\n(b) What does Roger say he wanted? What does Mrs Jones give him later? [3]\n\n(c) What warning does Mrs Jones give Roger before he leaves? [3]",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Part (a): Mrs Jones is speaking.",
+            "id": "a1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (a): She speaks to Roger.",
+            "id": "a2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (a): He had tried to snatch her purse.",
+            "id": "a3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): Roger wanted a pair of shoes.",
+            "id": "b1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): They were blue suede shoes.",
+            "id": "b2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): Mrs Jones gives him ten dollars to buy them.",
+            "id": "b3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): She warns Roger not to snatch or steal purses again.",
+            "id": "c1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): Her warning includes other people’s purses, not only her own.",
+            "id": "c2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): She says such acts bring trouble or figuratively “burn your feet”.",
+            "id": "c3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-110",
+          "regionId": "story",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        },
+        {
+          "pageId": "page-111",
+          "regionId": "story",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "ending"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "ideal": "(a) Roger pulls Mrs Jones’s purse at about eleven o’clock at night.\n\n(b) The strap breaks, and the combined weight of Roger and the purse makes him lose his balance and fall backwards.\n\n(c) Mrs Jones picks Roger up by his shirt, shakes him and tells him to pick up and return her purse."
+      },
+      "difficulty": 2,
+      "explanation": "Score the three labelled parts separately using the cited story events.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall who is involved, what happens and why it matters.",
+      "id": "q-022",
+      "marks": 9,
+      "origin": "chapter_content",
+      "prompt": "Read this extract from “Thank You, Ma’am” and answer all three parts.\n\n“The strap broke with a single tug”\n\n(a) Who pulls the purse, whose purse is it, and when does this happen? [3]\n\n(b) Why does the boy fall instead of running away with the purse? [3]\n\n(c) What does Mrs Jones do immediately after the boy falls? [3]",
+      "response": {},
+      "rubric": {
+        "grammarAffectsScore": false,
+        "points": [
+          {
+            "concept": "Part (a): Roger is the boy who pulls the purse.",
+            "id": "a1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (a): It belongs to Mrs Jones.",
+            "id": "a2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (a): This happens at about eleven o’clock at night.",
+            "id": "a3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): The purse strap breaks.",
+            "id": "b1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): The weight of Roger and the purse throws him off balance.",
+            "id": "b2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (b): He falls backwards instead of escaping.",
+            "id": "b3",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): Mrs Jones picks Roger up by his shirt front.",
+            "id": "c1",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): She shakes him.",
+            "id": "c2",
+            "required": true,
+            "weight": 1
+          },
+          {
+            "concept": "Part (c): She tells him to pick up and return the purse.",
+            "id": "c3",
+            "required": true,
+            "weight": 1
+          }
+        ],
+        "spellingAffectsScore": false,
+        "uncertainBelowConfidence": 0.7
+      },
+      "selectionPriority": 2,
+      "sourceRefs": [
+        {
+          "pageId": "page-109",
+          "regionId": "story",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "attempt"
+      ],
+      "type": "multi_point",
+      "version": 1
+    },
+    {
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 1,
+      "explanation": "Mrs Jones stoops, or bends down, so Roger can pick up her purse.",
+      "generation": {
+        "generatedAt": "2026-09-27T12:44:58Z",
+        "method": "codex-assisted",
+        "validationStatus": "verified"
+      },
+      "hint": "Recall the detail described in the story.",
+      "id": "q-023",
+      "marks": 1,
+      "origin": "end_exercise",
+      "prompt": "Which phrase has the same meaning as “to stoop” in the story?",
+      "response": {
+        "options": [
+          {
+            "id": "a",
+            "text": "To catch"
+          },
+          {
+            "id": "b",
+            "text": "To bend down"
+          },
+          {
+            "id": "c",
+            "text": "To run away"
+          },
+          {
+            "id": "d",
+            "text": "To shake"
+          }
+        ]
+      },
+      "rubric": {
+        "exact": true
+      },
+      "selectionPriority": 1,
+      "sourceRefs": [
+        {
+          "pageId": "page-109",
+          "regionId": "story",
+          "supports": [
+            "prompt",
+            "answer",
+            "rubric",
+            "hint",
+            "explanation"
+          ]
+        }
+      ],
+      "status": "active",
+      "topicIds": [
+        "language"
+      ],
+      "type": "single_choice",
+      "version": 1
+    }
+  ],
+  "schemaVersion": "0.1.0",
+  "sources": [
+    {
+      "assetRef": "manifest://thank-you-maam/page-109",
+      "extractionConfidence": 0.98,
+      "id": "page-109",
+      "pageNumber": 109,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.69,
+            "width": 0.96,
+            "x": 0.02,
+            "y": 0.27
+          },
+          "id": "story",
+          "kind": "passage"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://thank-you-maam/page-110",
+      "extractionConfidence": 0.98,
+      "id": "page-110",
+      "pageNumber": 110,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.95,
+            "width": 0.96,
+            "x": 0.02,
+            "y": 0.02
+          },
+          "id": "story",
+          "kind": "passage"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://thank-you-maam/page-111",
+      "extractionConfidence": 0.98,
+      "id": "page-111",
+      "pageNumber": 111,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.33,
+            "width": 0.96,
+            "x": 0.02,
+            "y": 0.64
+          },
+          "id": "exercise",
+          "kind": "exercise"
+        },
+        {
+          "bounds": {
+            "height": 0.62,
+            "width": 0.96,
+            "x": 0.02,
+            "y": 0.02
+          },
+          "id": "story",
+          "kind": "passage"
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "assetRef": "manifest://thank-you-maam/page-112",
+      "extractionConfidence": 0.98,
+      "id": "page-112",
+      "pageNumber": 112,
+      "regions": [
+        {
+          "bounds": {
+            "height": 0.55,
+            "width": 0.96,
+            "x": 0.02,
+            "y": 0.02
+          },
+          "id": "exercise",
+          "kind": "exercise"
+        }
+      ],
+      "reviewRequired": false
+    }
+  ],
+  "topics": [
+    {
+      "id": "attempt",
+      "title": "The attempted theft"
+    },
+    {
+      "id": "care",
+      "title": "Care and conversation"
+    },
+    {
+      "id": "ending",
+      "title": "Gift and parting"
+    },
+    {
+      "id": "language",
+      "title": "Author and story details"
+    },
+    {
+      "id": "response",
+      "title": "Mrs Jones’s response"
+    },
+    {
+      "id": "trust",
+      "title": "Roger’s choice to earn trust"
+    }
+  ]
+}

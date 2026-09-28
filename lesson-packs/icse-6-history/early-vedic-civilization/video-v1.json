@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "video-1.0",
+  "slug": "early-vedic-civilization",
+  "contentVersion": 1,
+  "title": "The Early Vedic Civilization",
+  "description": "Revise the Early Vedic period through a map, timeline, community diagrams and three spoken recall checks.",
+  "source": {
+    "board": "ICSE",
+    "grade": 6,
+    "subject": "History",
+    "chapterTitle": "The Early Vedic Civilization",
+    "chapterNumber": 5,
+    "documentName": "User-supplied textbook screenshots, pages 45–53",
+    "sha256": "05fc698dfba9450aaa53cfbf1a3fb7d76c6dbd06527277e0189b4b5953cc7347",
+    "sourceManifest": "proposals/early-vedic-video/source-manifest.json",
+    "reviewed": true
+  },
+  "durationSeconds": 352.955333,
+  "chapters": [
+    {
+      "title": "The chapter in three questions",
+      "start": 0.0
+    },
+    {
+      "title": "Place and time",
+      "start": 37.921
+    },
+    {
+      "title": "How do we know?",
+      "start": 91.074
+    },
+    {
+      "title": "How was a community organised?",
+      "start": 132.515
+    },
+    {
+      "title": "Life in a village",
+      "start": 182.655
+    },
+    {
+      "title": "Work and social groups",
+      "start": 221.972
+    },
+    {
+      "title": "Beliefs and practices",
+      "start": 263.119
+    },
+    {
+      "title": "Your one-minute recap",
+      "start": 313.205
+    }
+  ],
+  "assets": {
+    "lesson.mp4": {
+      "file": "early-vedic-civilization.mp4",
+      "sha256": "ea34d3aa10761c7f94d6dab0b047aeb9d29542f91b1d33c027091950e2ddaa33",
+      "contentType": "video/mp4"
+    },
+    "poster.jpg": {
+      "file": "poster.jpg",
+      "sha256": "8aeb2ab679424beda17bff3ab4d33700a7191c1af8e9d3c1b46e3d3939c68e75",
+      "contentType": "image/jpeg"
+    },
+    "captions.en.vtt": {
+      "file": "early-vedic-civilization.en.vtt",
+      "sha256": "c3df2d3c948ea5a5e89cedd264844e7c91012138cc88418fbae921cc2b12f2c6",
+      "contentType": "text/vtt"
+    }
+  },
+  "narration": "Original enthusiastic English tutor voice; the Indian-voice experiment was not selected."
+}

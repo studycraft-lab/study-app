@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "video-1.0",
+  "slug": "major-landforms-part-2",
+  "contentVersion": 1,
+  "title": "Major Landforms of the Earth — Part 2: Plateaus, Valleys, Plains and People",
+  "description": "Detailed revision of plateau types, valleys, plains, minor landforms and their effect on people, with five recall questions.",
+  "source": {
+    "board": "ICSE",
+    "grade": 6,
+    "subject": "Geography",
+    "chapterTitle": "Major Landforms of the Earth",
+    "chapterNumber": 3,
+    "documentName": "User-supplied textbook screenshots, pages 30–39",
+    "sha256": "8b21dbaff9db42e51ed0d1835ab15021daa7c6b043bf152b5f7c5f6c68db00dd",
+    "sourceManifest": "proposals/major-landforms-video/source-manifest.json",
+    "reviewed": true
+  },
+  "durationSeconds": 701.864667,
+  "chapters": [
+    {
+      "title": "A plateau is raised and fairly level",
+      "start": 0.0
+    },
+    {
+      "title": "Plateaus built by uplift or lava",
+      "start": 62.781
+    },
+    {
+      "title": "Plateaus shaped by erosion or location",
+      "start": 136.118
+    },
+    {
+      "title": "Basins and valleys: lower land",
+      "start": 200.879
+    },
+    {
+      "title": "Why valleys can be V, U or rift shaped",
+      "start": 275.737
+    },
+    {
+      "title": "Three ways to make a plain",
+      "start": 337.106
+    },
+    {
+      "title": "Why plains attract people",
+      "start": 420.05
+    },
+    {
+      "title": "Island, peninsula and isthmus",
+      "start": 482.495
+    },
+    {
+      "title": "Landforms shape lives and history",
+      "start": 559.048
+    },
+    {
+      "title": "Build a landform explanation",
+      "start": 625.643
+    }
+  ],
+  "assets": {
+    "lesson.mp4": {
+      "file": "major-landforms-part-2.mp4",
+      "sha256": "4dc903d1360dca96d4e3ff4aaa2d11e6a4a8805cc82224a2c0ed5fbdd9e5ba2e",
+      "contentType": "video/mp4"
+    },
+    "poster.jpg": {
+      "file": "poster.jpg",
+      "sha256": "20d7e1c08f064e9d33abb271abf54566b9b8a8edff9dd43cf887c00e1b4c2f53",
+      "contentType": "image/jpeg"
+    },
+    "captions.en.vtt": {
+      "file": "major-landforms-part-2.en.vtt",
+      "sha256": "8c4464cdddffa812a91a34dd5f5789e4472e82970145f01f4907b5ac5c2a1372",
+      "contentType": "text/vtt"
+    }
+  },
+  "narration": "The same enthusiastic English tutor voice used for the approved Early Vedic video."
+}

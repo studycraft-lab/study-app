@@ -1,0 +1,118 @@
+{
+  "title": "Major Landforms · Part 1",
+  "subtitle": "Class 6 Geography · continents and mountains",
+  "source": "User-supplied textbook screenshots, pages 26–30 and 37–39",
+  "editorial_note": "Covers the chapter's definitions, world map and mountain formation. Textbook-specific examples are identified as such where geological classifications may be simplified.",
+  "scenes": [
+    {
+      "title": "The land keeps changing",
+      "layout": "forces",
+      "items": [["LANDFORM", "A feature of Earth's solid surface"], ["INTERNAL", "Uplift, folding and faulting"], ["EXTERNAL", "Weathering, erosion and deposition"]],
+      "beats": [
+        "Look at a mountain, a valley and a plain. They seem permanent, yet Earth's surface keeps changing. A landform is a feature of the solid surface, and the arrangement of landforms in an area is its topography. Land covers about twenty-nine percent of Earth's surface, with water covering most of the rest.",
+        "Two sets of processes shape this surface. Internal, or endogenous, forces act from within Earth. They can lift or lower parts of the crust, fold rock layers, produce faults and feed volcanoes. They help build major relief features such as mountains and plateaus.",
+        "External, or exogenous, forces work at the surface. Moving water, ice and wind wear rock away through erosion and carry material elsewhere. When that material settles, deposition builds new surfaces. People also reshape land. Keep this pair in mind: internal forces create relief, while external forces wear it down and rebuild it."
+      ]
+    },
+    {
+      "title": "Seven continents on one map",
+      "layout": "world",
+      "items": [["SEVEN", "Asia · Africa · North America · South America"], ["THREE MORE", "Antarctica · Europe · Australia"], ["OCEANS", "Separate the great land masses"]],
+      "beats": [
+        "A continent is a very large land mass, mostly surrounded by ocean. The seven are Asia, Africa, North America, South America, Antarctica, Europe and Australia. Find each on the world map before memorising descriptions. The book also recalls Pangaea, the ancient joined land mass, to show that the continents have moved over immense time.",
+        "Read the map from west to east. The two Americas lie between the Pacific and Atlantic Oceans. Europe and Africa lie east of the Atlantic. Asia stretches far across the Northern Hemisphere, with the Pacific on its east; Australia lies to its southeast. Antarctica circles the far south.",
+        "The important skill is location and relationship, not just reciting seven names. Trace the Atlantic between the Americas and Europe and Africa. Then trace the Indian Ocean south of Asia and east of Africa. Use these positions to check the continent descriptions that follow."
+      ],
+      "question": "On a world map, which ocean lies between the Americas and Europe and Africa?",
+      "answer": "The Atlantic Ocean."
+    },
+    {
+      "title": "Asia, Africa and Europe",
+      "layout": "continents",
+      "items": [["ASIA", "Largest · joined to Europe"], ["AFRICA", "Second largest · Sahara"], ["EUROPE", "Indented coast · many ports"]],
+      "beats": [
+        "Asia is the largest continent and occupies roughly a third of the world's land area in the textbook's account. It joins Europe in the Eurasian land mass. The Ural Mountains, Black Sea and Caspian Sea help mark their conventional division. The Arctic is to Asia's north, the Pacific east and the Indian Ocean south.",
+        "Africa is second largest. The Mediterranean Sea lies between Africa and Europe. The Indian Ocean is to Africa's east and the Atlantic to its west. The Sahara, across northern Africa, is the world's largest hot desert; on your map, find it above the equator and below the Mediterranean coast.",
+        "Europe is smaller, with a very irregular or indented coastline. Its bays and peninsulas create many places for harbours and ports. The Arctic is to its north and the Atlantic to its west. When you compare these three continents, use both size and position to make the answer meaningful."
+      ]
+    },
+    {
+      "title": "The Americas, Antarctica and Australia",
+      "layout": "continents",
+      "items": [["AMERICAS", "Pacific west · Atlantic east"], ["ANTARCTICA", "Frozen continent in the far south"], ["AUSTRALIA", "Smallest · island continent"]],
+      "beats": [
+        "North America is the third largest continent. The Pacific lies to its west and the Atlantic to its east. A narrow land link, the Isthmus of Panama, joins it to South America. South America is fourth largest, is roughly triangular, and has the same ocean pattern: Pacific west, Atlantic east.",
+        "Antarctica is a vast frozen land mass around the South Pole. Its ice, harsh climate and surrounding seas make ordinary settlement very difficult, but scientists work at research stations there. Do not confuse its ice-covered land with the Arctic, which is an ocean region around the North Pole.",
+        "Australia is the smallest continent and is often called an island continent because water surrounds it. It lies south of the main Asian land mass. Now close the map and rebuild it: the Americas to the west, Europe and Africa near the Atlantic's east, Asia farther east, Australia southeast, Antarctica below."
+      ],
+      "question": "What narrow land link joins North and South America?",
+      "answer": "The Isthmus of Panama. An isthmus is a narrow land bridge."
+    },
+    {
+      "title": "Why do mountains rise?",
+      "layout": "plates",
+      "items": [["PLATES", "Large moving blocks of Earth's crust"], ["COMPRESSION", "Layers may fold under pressure"], ["FAULTS", "Crust can fracture and move"]],
+      "beats": [
+        "A mountain is a great rise in Earth's crust, often appearing in a long chain called a range. To understand how mountains form, picture the crust broken into enormous tectonic plates. They move very slowly over the mantle. Their movement can squeeze, fracture or lift rock, and some plate boundaries also allow molten rock to rise.",
+        "Where crustal layers are squeezed together, compression can bend them into folds. Where rock breaks, the fracture is a fault, and blocks of land can move up or down. At some boundaries one plate moves beneath another; that downward movement is called subduction.",
+        "These are internal processes. The mountains we see today also have a long external history: rain, rivers, ice and wind wear peaks and slopes down. So height and shape tell us something about both construction and erosion. Next, compare the three mountain types in your chapter: fold, block and volcanic."
+      ]
+    },
+    {
+      "title": "Fold mountains: layers under pressure",
+      "layout": "fold",
+      "items": [["BEFORE", "Rock layers are roughly level"], ["SQUEEZE", "Compression bends the layers"], ["RESULT", "Folded ridges and ranges"]],
+      "beats": [
+        "Watch the diagram of horizontal rock layers. If powerful forces push from opposite sides, the layers are compressed. They bend rather than staying flat. That folding can lift long belts of rock into fold mountains. The key words for an answer are layers of crust, compression, folding and uplift.",
+        "Do not mistake a folded drawing for a single hill. Real fold mountain systems extend over large distances and form ranges. The Himalayas in Asia, Andes in South America, Rockies in North America and Alps in Europe are examples named in the chapter's discussion of young fold mountains.",
+        "Try explaining the diagram without the labels: point to the two inward arrows, follow one coloured layer as it bends, and identify the raised ridge. A diagram answer is stronger when its words match the movement shown. Compression makes folds; it does not mean the rocks simply pile up like loose sand."
+      ],
+      "question": "What force bends the rock layers that form a fold mountain?",
+      "answer": "Compression: pressure pushing the layers together."
+    },
+    {
+      "title": "Old and young fold mountains",
+      "layout": "compare",
+      "items": [["OLD FOLDS", "Long erosion · lower, gentler slopes"], ["YOUNG FOLDS", "Higher, steeper, more rugged"], ["EXAMPLES", "Aravallis versus Himalayas"]],
+      "beats": [
+        "The chapter separates old and young fold mountains by their long history of formation and erosion. Old fold ranges have been worn down for much longer, so they are generally lower and gentler. The Aravallis in India, Appalachians in North America and Urals in Russia are the book's examples.",
+        "Young fold mountains formed more recently in geological time. Their ridges are often higher, steeper and more rugged. The Himalayas, Andes, Rockies and Alps are familiar examples; the textbook also lists the Atlas Mountains and Great Dividing Range. Young does not mean new in a human lifetime: even millions of years is young in geology.",
+        "A common mistake is to answer only with names. Explain the reason for the difference: a longer time of weathering and erosion tends to lower and soften older ranges. Then give one old and one young example, and if shown photographs, look at slope and height with that process in mind."
+      ]
+    },
+    {
+      "title": "Block mountains and rift valleys",
+      "layout": "fault",
+      "items": [["FAULT", "A fracture in crustal rock"], ["BLOCK", "Land beside a fault stands high"], ["RIFT", "A central block drops lower"]],
+      "beats": [
+        "Fold mountains bend. Block mountains form when the crust fractures along faults. In the chapter's diagram, the land between two faults sinks, while the blocks on either side remain higher. Those steep-edged higher blocks are block mountains, and the lower central strip is a rift valley.",
+        "Trace one layer across the diagram. It is broken and displaced at the faults, instead of being smoothly bent as in a fold mountain. That difference is the most important comparison. A fault is the break; a block mountain is a raised or standing section; a rift valley is a down-dropped section.",
+        "The textbook gives the Vosges and Black Forest in Europe and the Vindhyas in India as block mountain examples. Learn at least one and practise drawing the two faults with a lower middle block. Label the block mountains, rift valley and faults, then explain which part moved."
+      ],
+      "question": "In the block-mountain diagram, what is the lower strip between two faults called?",
+      "answer": "A rift valley. The higher blocks beside it are block mountains."
+    },
+    {
+      "title": "Volcanic mountains from molten rock",
+      "layout": "volcano",
+      "items": [["MAGMA", "Molten rock below the surface"], ["VENT", "Passage and surface opening"], ["CRATER", "Depression around the opening"]],
+      "beats": [
+        "Now picture a different process. Molten rock below the surface is magma. It can rise through a crack and passage called a vent. When it reaches the surface, we call it lava. Repeated eruptions of lava, ash, cinder and dust can build a volcanic mountain, often shaped like a cone.",
+        "In the labelled cross-section, find the magma chamber deep below, the vent leading upward, and the crater, the bowl-like opening near the summit. These are three different parts. The crater is not the whole mountain, and lava is not the same word as magma beneath the surface.",
+        "The chapter names Fuji in Japan, Mayon in the Philippines, Kilimanjaro in Tanzania and Vesuvius in Italy. Not every volcano has the same shape or activity, but the diagram gives you a clear model. Practise drawing it from memory, with arrows showing molten material rising."
+      ]
+    },
+    {
+      "title": "Why mountains matter: final check",
+      "layout": "mountains",
+      "items": [["WATER", "Snow, glaciers, rivers, hydropower"], ["LIFE", "Forests, wildlife, minerals, tourism"], ["CLIMATE", "Barriers affect winds and rain"]],
+      "beats": [
+        "Mountains are more than peaks on a map. Glaciers and snow help feed rivers. Reservoirs supply irrigation water and can generate hydroelectricity. Mountain valleys and terraces support some farming. Forests provide habitats, fuel and other materials; mineral deposits support industry, and scenery attracts visitors and recreation.",
+        "Mountains also influence climate. The Himalayas help block cold winds from Central Asia and affect the path of moist monsoon winds. Slopes, altitude and exposure make life and farming different from the plains. These benefits come with challenges, including difficult transport, fragile habitats and natural hazards.",
+        "Before part two, test the whole chain. Name the seven continents on a map. Tell me how compression differs from faulting, then label magma, vent and crater. Finally give three distinct reasons mountains matter. If a label or cause feels uncertain, replay that diagram and explain it aloud."
+      ],
+      "question": "Explain one clear difference between a fold mountain and a block mountain.",
+      "answer": "Fold mountains form when layers bend under compression; block mountains form when crust fractures and blocks move along faults."
+    }
+  ]
+}

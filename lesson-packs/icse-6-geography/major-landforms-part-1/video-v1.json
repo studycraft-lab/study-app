@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "video-1.0",
+  "slug": "major-landforms-part-1",
+  "contentVersion": 1,
+  "title": "Major Landforms of the Earth — Part 1: Continents and Mountains",
+  "description": "Detailed revision of Earth's changing surface, the seven continents and fold, block and volcanic mountains, with five recall questions.",
+  "source": {
+    "board": "ICSE",
+    "grade": 6,
+    "subject": "Geography",
+    "chapterTitle": "Major Landforms of the Earth",
+    "chapterNumber": 3,
+    "documentName": "User-supplied textbook screenshots, pages 26–30 and 37–39",
+    "sha256": "8b21dbaff9db42e51ed0d1835ab15021daa7c6b043bf152b5f7c5f6c68db00dd",
+    "sourceManifest": "proposals/major-landforms-video/source-manifest.json",
+    "reviewed": true
+  },
+  "durationSeconds": 671.318,
+  "chapters": [
+    {
+      "title": "The land keeps changing",
+      "start": 0.0
+    },
+    {
+      "title": "Seven continents on one map",
+      "start": 59.42
+    },
+    {
+      "title": "Asia, Africa and Europe",
+      "start": 134.3
+    },
+    {
+      "title": "The Americas, Antarctica and Australia",
+      "start": 193.855
+    },
+    {
+      "title": "Why do mountains rise?",
+      "start": 270.643
+    },
+    {
+      "title": "Fold mountains: layers under pressure",
+      "start": 328.282
+    },
+    {
+      "title": "Old and young fold mountains",
+      "start": 401.55
+    },
+    {
+      "title": "Block mountains and rift valleys",
+      "start": 463.333
+    },
+    {
+      "title": "Volcanic mountains from molten rock",
+      "start": 534.378
+    },
+    {
+      "title": "Why mountains matter: final check",
+      "start": 588.583
+    }
+  ],
+  "assets": {
+    "lesson.mp4": {
+      "file": "major-landforms-part-1.mp4",
+      "sha256": "d110612927a58e27ccc3342997acc2a129f2f5691a305913ced14e8dbbdb6ba2",
+      "contentType": "video/mp4"
+    },
+    "poster.jpg": {
+      "file": "poster.jpg",
+      "sha256": "bdcc7d6876334c0dac1693b1cf1f1041f573e8a352f16b3b60fa124159667595",
+      "contentType": "image/jpeg"
+    },
+    "captions.en.vtt": {
+      "file": "major-landforms-part-1.en.vtt",
+      "sha256": "7d0fe9e7a9684f6de1d09cf32b773139964968ebe2b6f058b269b3dc2173c400",
+      "contentType": "text/vtt"
+    }
+  },
+  "narration": "The same enthusiastic English tutor voice used for the approved Early Vedic video."
+}

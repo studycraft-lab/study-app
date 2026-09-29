@@ -1,0 +1,252 @@
+{
+  "title": "Major Landforms · Part 2",
+  "subtitle": "Class 6 Geography · plateaus, valleys, plains and people",
+  "source": "User-supplied textbook screenshots, pages 30–39",
+  "editorial_note": "Covers all five plateau categories, basins and valley formation, all three plain categories, minor landforms and human connections from the supplied chapter.",
+  "scenes": [
+    {
+      "title": "A plateau is raised and fairly level",
+      "layout": "plateau",
+      "items": [
+        [
+          "HIGH",
+          "Raised above surrounding land"
+        ],
+        [
+          "LEVEL",
+          "Broad, fairly flat top"
+        ],
+        [
+          "EDGES",
+          "Often descend steeply"
+        ]
+      ],
+      "beats": [
+        "Welcome to part two. Mountains rise into peaks, but a plateau is an uplifted area with a broad, fairly level top and often steep edges. It is sometimes called a tableland or a plain in the air. On a cross-section, look for height plus a flat top; flatness alone would describe a plain as well.",
+        "The Tibetan, East African and Colorado Plateaus are world examples. In India, the Deccan and Chota Nagpur Plateaus are important. The chapter describes the Deccan as a large fertile region, while Chota Nagpur is known for mineral wealth. Plateaus can support farming, mining, grazing and settlement in different places.",
+        "To describe a plateau properly, state its shape, its relative height, and one example. Then ask how it formed, because the chapter divides plateaus in five ways: tectonic, volcanic, dissected, intermontane and piedmont. The categories use formation, appearance and location, so they are not five identical kinds of label."
+      ]
+    },
+    {
+      "title": "Plateaus built by uplift or lava",
+      "layout": "plateau-types",
+      "items": [
+        [
+          "TECTONIC",
+          "Crustal movement lifts a broad area"
+        ],
+        [
+          "VOLCANIC",
+          "Successive lava sheets build a tableland"
+        ],
+        [
+          "EXAMPLES",
+          "South Africa · Deccan · Columbia"
+        ]
+      ],
+      "beats": [
+        "A tectonic plateau forms when movements within Earth's crust raise a broad section of land. Imagine a wide block lifting while its upper surface remains relatively level. The textbook names the South African Plateau and the Turkish-Iranian Plateau as examples of this type.",
+        "A volcanic plateau forms differently. Lava spreads over a broad region in repeated flows. Each layer cools and hardens; many layers can make a high, extensive tableland. That is different from a volcanic mountain, where erupted material piles up around a vent into a cone.",
+        "The chapter gives the Columbia Plateau in North America and parts of the Deccan and Malwa Plateaus in India as volcanic examples. If an exam asks you to compare tectonic and volcanic plateaus, write the process first, then an example. Uplift of a crustal area is one process; stacked lava flows are the other."
+      ],
+      "question": "What builds a volcanic plateau: one tall cone or broad layers of lava?",
+      "answer": "Broad successive layers of lava that cool and harden."
+    },
+    {
+      "title": "Plateaus shaped by erosion or location",
+      "layout": "plateau-types",
+      "items": [
+        [
+          "DISSECTED",
+          "Cut by rivers into gorges"
+        ],
+        [
+          "INTERMONTANE",
+          "Surrounded by mountains"
+        ],
+        [
+          "PIEDMONT",
+          "Between mountain and plain or sea"
+        ]
+      ],
+      "beats": [
+        "A dissected plateau began as a raised surface but has been cut by erosion. Rivers can carve canyons, gorges and steep valleys into it, leaving an irregular surface. The Colorado Plateau, crossed by the Grand Canyon, and the Brazilian Plateau are the chapter's examples. Dissected describes what erosion has done to the surface.",
+        "Intermontane means between mountains. Such a plateau is enclosed by ranges. The textbook's main example is the Tibetan Plateau, with the Himalayas to its south and the Kunlun Mountains to its north. Use a simple map or cross-section to show the plateau lying between the ranges.",
+        "Piedmont refers to the foot of a mountain. A piedmont plateau lies between a mountain region and a lower plain or ocean. The chapter names Patagonia in South America and the Piedmont Plateau of North America. Compare all three labels: dissected describes cutting by erosion, intermontane describes enclosure, and piedmont describes position at the mountain foot."
+      ]
+    },
+    {
+      "title": "Basins and valleys: lower land",
+      "layout": "basin",
+      "items": [
+        [
+          "BASIN",
+          "Depression enclosed by higher land"
+        ],
+        [
+          "VALLEY",
+          "Low land between hills or mountains"
+        ],
+        [
+          "CAUSE",
+          "Water, ice or crustal movement"
+        ]
+      ],
+      "beats": [
+        "A basin is a depressed area surrounded by higher land. Some basins collect rivers that do not reach the sea; this is inland drainage. The Tarim and Tsaidam Basins in Asia and the Chad Basin in Africa are examples in the chapter. On a map, a basin is an area, not just one narrow channel.",
+        "A valley is low land between hills or mountains. Some valleys contain rivers; some do not. Erosion by running water or moving ice can cut valleys, while movement of the crust can create a rift valley. To identify the cause, study the cross-section and any nearby faults or glacier evidence.",
+        "Both basin and valley describe low ground, but shape and setting differ. A basin is a broader depression enclosed by higher land. A valley is usually a long low corridor. Explain the difference aloud and draw both from the side; a labelled drawing will help you remember far better than a bare definition."
+      ],
+      "question": "Which is a broad enclosed depression: a basin or a valley?",
+      "answer": "A basin. A valley is a low corridor between higher land."
+    },
+    {
+      "title": "Why valleys can be V, U or rift shaped",
+      "layout": "valleys",
+      "items": [
+        [
+          "V-SHAPED",
+          "River cuts down into land"
+        ],
+        [
+          "U-SHAPED",
+          "Glacier widens and deepens"
+        ],
+        [
+          "RIFT",
+          "Land drops between faults"
+        ]
+      ],
+      "beats": [
+        "A river can cut downward into its bed and carry rock away. In a cross-section, this often produces a V-shaped valley with sloping sides. The chapter names the Rhine Valley and Damodar Valley as river-valley examples. Look for the narrow bottom and the river that continues to erode it.",
+        "A glacier is moving ice. It scrapes and widens a valley, producing a broader floor and steep sides that resemble a U. The textbook notes glacial valleys in the Alps and Himalayas. A V and a U are useful simplified cross-sections: real valleys vary, but the shape helps you connect an erosional agent to its result.",
+        "A rift valley has another origin. Movement along roughly parallel faults lets a block of crust drop lower than the land beside it. The chapter gives the Narmada Valley in India and Nile Valley in Egypt as examples. In a diagram, draw two faults and the lowered middle; do not use river erosion to explain that particular structure."
+      ]
+    },
+    {
+      "title": "Three ways to make a plain",
+      "layout": "plains",
+      "items": [
+        [
+          "STRUCTURAL",
+          "Uplift of a broad low surface"
+        ],
+        [
+          "EROSIONAL",
+          "Long wearing-down of high land"
+        ],
+        [
+          "DEPOSITIONAL",
+          "Sediment builds a new surface"
+        ]
+      ],
+      "beats": [
+        "A plain is a broad, nearly flat area of relatively low land. The textbook says plains are usually below about two hundred metres above sea level. Many large river plains formed from alluvium, the fine material deposited by rivers and their tributaries. But the chapter distinguishes three origins, not just river deposition.",
+        "A structural plain can form when a broad section of the sea floor or continental shelf rises above sea level. Coastal sediments can later add to that flat surface. An erosional plain forms when wind, rivers, rain or ice wear higher land down over a long time. A very level erosion surface is sometimes called a peneplain.",
+        "A depositional plain forms when transported sediment is laid down. Rivers build alluvial plains, while moving ice, wind and waves can also deposit material. Coastal plains occur beside seas; the eastern and western coastal plains of India are examples. For a comparison answer, use three verbs: uplift, wear down and lay down."
+      ],
+      "question": "Which process builds an alluvial plain by laying down river sediment?",
+      "answer": "Deposition. The resulting plain is a depositional plain."
+    },
+    {
+      "title": "Why plains attract people",
+      "layout": "people",
+      "items": [
+        [
+          "FOOD",
+          "Fertile soil and large-scale farming"
+        ],
+        [
+          "SETTLEMENT",
+          "Towns and large populations"
+        ],
+        [
+          "ROUTES",
+          "Roads, railways and airports"
+        ]
+      ],
+      "beats": [
+        "Plains often support large populations because level land makes cultivation and building easier. River deposits can provide fertile soil for crops such as rice, wheat and sugar cane. The Indo-Gangetic, Mississippi and Yangtze Plains are examples of broad regions where agriculture and settlement have grown.",
+        "Flat ground also makes it easier to build roads, railways and airports, and to expand towns and industries. That does not mean every plain is equally fertile or free from risk. Floods, water shortages and soil damage still matter; the benefits depend on water, climate and how people use the land.",
+        "Now connect geography to history. Many ancient civilizations grew near river plains because water, farmland and transport routes could support large communities. A strong answer explains that chain rather than saying only that plains are flat. Compare it with a steep mountain slope: what changes for fields, roads and settlements?"
+      ]
+    },
+    {
+      "title": "Island, peninsula and isthmus",
+      "layout": "minor",
+      "items": [
+        [
+          "ISLAND",
+          "Water on all sides"
+        ],
+        [
+          "PENINSULA",
+          "Water on three sides"
+        ],
+        [
+          "ISTHMUS",
+          "Narrow land bridge"
+        ]
+      ],
+      "beats": [
+        "Three smaller landforms are easy to confuse until you draw the water. An island has water on all sides. Sri Lanka, Madagascar, Lakshadweep, and the Andaman and Nicobar Islands are examples in or near the Indian Ocean region. An island is separated from a larger land mass by water.",
+        "A peninsula projects from a larger land mass and has water on three sides. India is a familiar example: the Arabian Sea lies to its west, the Bay of Bengal to its east, and the Indian Ocean to its south. The Malay Peninsula is another example. The land connection at the back is what distinguishes it from an island.",
+        "An isthmus is a narrow strip of land with water on both sides that joins two larger land masses. The Isthmus of Panama links North and South America; the Isthmus of Suez links Africa and Asia. Use a simple sketch: island detached, peninsula attached and projecting, isthmus a thin connector."
+      ],
+      "question": "Which landform joins two larger land masses with a narrow strip of land?",
+      "answer": "An isthmus, such as Panama or Suez."
+    },
+    {
+      "title": "Landforms shape lives and history",
+      "layout": "india",
+      "items": [
+        [
+          "CLIMATE",
+          "Height and barriers affect weather"
+        ],
+        [
+          "ROUTES",
+          "Passes and coasts guide movement"
+        ],
+        [
+          "RIVERS",
+          "Water supports settlement"
+        ]
+      ],
+      "beats": [
+        "Landforms influence where people live and work. Height often brings cooler conditions. Steep slopes make roads, houses and large fields harder to build; flatter plains usually make these easier. Rocks and soils affect building and farming. Earthquakes and volcanic eruptions can cause serious harm, so the benefits of a landscape must be considered with its hazards.",
+        "India gives several examples. The Himalayas form a major northern barrier and influence climate, while passes have provided routes for travellers, trade and movements of people. Coasts have connected seafaring communities with other regions. Rivers and fertile plains helped settled life and ancient civilizations grow.",
+        "The Deccan Plateau, Vindhyas and Satpuras also shaped routes across the subcontinent. These are connections between geography and history, not claims that a single mountain or river decided everything. The chapter asks us to conserve landforms too: mining, roads and dams change them, so careful use matters for habitats and people."
+      ]
+    },
+    {
+      "title": "Build a landform explanation",
+      "layout": "recap",
+      "items": [
+        [
+          "SHAPE",
+          "What does it look like?"
+        ],
+        [
+          "PROCESS",
+          "How did it form?"
+        ],
+        [
+          "EXAMPLE",
+          "Where can you find one?"
+        ],
+        [
+          "VALUE",
+          "How does it affect life?"
+        ]
+      ],
+      "beats": [
+        "Finish with four questions for every landform. What is its shape? What process made it? Where is a named example? How does it affect life? Try this for a plateau, a valley and a plain. Use the diagrams before looking at your notes; explain the arrows and labels out loud.",
+        "For plateaus, compare tectonic uplift with lava flows and identify dissected, intermontane and piedmont by appearance or position. For valleys, distinguish V-shaped river erosion, U-shaped glacial erosion and a rift between faults. For plains, explain uplift, wearing down or deposition.",
+        "Finally, use a map to locate a plateau, a river plain, an island, a peninsula and an isthmus. If you can define, draw, locate and explain each, you have revised this chapter in detail. Return to a question you missed and retry it before reading the exercise answer."
+      ],
+      "question": "Why is a plateau different from a plain if both can look flat?",
+      "answer": "A plateau is raised above surrounding land, often with steep edges; a plain is broad, nearly level and relatively low."
+    }
+  ]
+}

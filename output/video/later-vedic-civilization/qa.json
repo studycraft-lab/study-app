@@ -1,0 +1,15 @@
+{
+  "durationSeconds": 398.844667,
+  "dimensions": [
+    1600,
+    900
+  ],
+  "codecs": [
+    "h264",
+    "aac"
+  ],
+  "bytes": 9168982,
+  "chapterCount": 8,
+  "captionCount": 72,
+  "underTenMinutes": true
+}

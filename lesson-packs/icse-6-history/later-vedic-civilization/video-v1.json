@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "video-1.0",
+  "slug": "later-vedic-civilization",
+  "contentVersion": 1,
+  "title": "The Later Vedic Civilization",
+  "description": "Compare Early and Later Vedic life through evidence, kingdoms, society, learning, beliefs and work.",
+  "source": {
+    "board": "ICSE",
+    "grade": 6,
+    "subject": "History",
+    "chapterTitle": "The Later Vedic Civilization",
+    "chapterNumber": 6,
+    "documentName": "User-supplied textbook screenshots, pages 54–62",
+    "sha256": "e83f3863da44e7ea6dc679c3a9c5e172cc1fbaf3fe2b5b986286e68de06e0e73",
+    "sourceManifest": "ingestion-artifacts/later-vedic-chapter-manifest.json",
+    "reviewed": true
+  },
+  "durationSeconds": 398.844667,
+  "chapters": [
+    {
+      "title": "What changed after the Early Vedic period?",
+      "start": 0.0
+    },
+    {
+      "title": "How do we know about this period?",
+      "start": 54.182
+    },
+    {
+      "title": "From tribes to kingdoms",
+      "start": 95.329
+    },
+    {
+      "title": "Society and the position of women",
+      "start": 154.42
+    },
+    {
+      "title": "Learning and the four ashramas",
+      "start": 199.658
+    },
+    {
+      "title": "Belief, ritual and the epics",
+      "start": 255.051
+    },
+    {
+      "title": "Farming, iron and trade",
+      "start": 302.603
+    },
+    {
+      "title": "Rebuild the chapter from memory",
+      "start": 342.688
+    }
+  ],
+  "assets": {
+    "lesson.mp4": {
+      "file": "later-vedic-civilization.mp4",
+      "sha256": "009eb8d1253d953b18e45554744ca4ea837f0b8b2923cc2492b79621c5e04ffe",
+      "contentType": "video/mp4"
+    },
+    "poster.jpg": {
+      "file": "poster.jpg",
+      "sha256": "7bdb964abe8bd08da212a6cff8908ed82295ce5aac40e7819ca4cdda48d12dda",
+      "contentType": "image/jpeg"
+    },
+    "captions.en.vtt": {
+      "file": "later-vedic-civilization.en.vtt",
+      "sha256": "f737c33b3447a578ec67eed9ea2ff941a0f26fcb7e051f6b0e54fa879b1d7de0",
+      "contentType": "text/vtt"
+    }
+  },
+  "narration": "The same enthusiastic English tutor voice used for the approved Early Vedic video."
+}

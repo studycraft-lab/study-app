@@ -1,0 +1,13 @@
+{
+  "source": "The Egyptian Civilization, user-supplied textbook screenshots, pages 18–26",
+  "policy": "Original page images stay outside the repository; the video uses original diagrams and narration.",
+  "fingerprintAlgorithm": "SHA-256 of the five ordered screenshot SHA-256 hex strings concatenated as UTF-8",
+  "fingerprint": "4540f3729d3de101917db9a749d96ad46fb8c80adbc0d3916beb233fb5b3793c",
+  "assets": [
+    {"fileName": "Screenshot 2026-09-07 at 4.09.31 PM.png", "pages": "18", "sha256": "f2e6c713a4df7e2765b8d135b8982b758521ba4c372eb7916f8520cde871cfa8"},
+    {"fileName": "Screenshot 2026-09-07 at 4.09.42 PM.png", "pages": "19–20", "sha256": "4a4728a435244a2f3873fd8457cb51beb4c0ff2d732d50056d3494d1336d4206"},
+    {"fileName": "Screenshot 2026-09-07 at 4.09.53 PM.png", "pages": "21–22", "sha256": "d137a3108516bdb7dace4a236b765c0ee9e53f1035d9e084e0cce2507bfaab34"},
+    {"fileName": "Screenshot 2026-09-07 at 4.10.03 PM.png", "pages": "23–24", "sha256": "2581123a925bcd8820795059a0893bfa049329ac958bdcd6430a9d4533dc22cf"},
+    {"fileName": "Screenshot 2026-09-07 at 4.10.12 PM.png", "pages": "25–26", "sha256": "2b61250f5d89474b69a3e4819c5e2c5af9e8f62c5a677926062ed77b688b0482"}
+  ]
+}

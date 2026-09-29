@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "video-1.0",
+  "slug": "egyptian-civilization",
+  "contentVersion": 1,
+  "title": "The Egyptian Civilization",
+  "description": "Follow the Nile through Egyptian farming, cities, society, writing and beliefs.",
+  "source": {
+    "board": "ICSE",
+    "grade": 6,
+    "subject": "History",
+    "chapterTitle": "The Egyptian Civilization",
+    "chapterNumber": 2,
+    "documentName": "User-supplied textbook screenshots, pages 18–26",
+    "sha256": "4540f3729d3de101917db9a749d96ad46fb8c80adbc0d3916beb233fb5b3793c",
+    "sourceManifest": "proposals/egyptian-civilization-video/source-manifest.json",
+    "reviewed": true
+  },
+  "durationSeconds": 391.336,
+  "chapters": [
+    {
+      "title": "Why did Egypt grow beside the Nile?",
+      "start": 0.0
+    },
+    {
+      "title": "Time, rulers and evidence",
+      "start": 55.341
+    },
+    {
+      "title": "Cities, houses and monuments",
+      "start": 99.909
+    },
+    {
+      "title": "People and daily life",
+      "start": 151.244
+    },
+    {
+      "title": "Work, craft and exchange",
+      "start": 195.74
+    },
+    {
+      "title": "Writing, calendars and knowledge",
+      "start": 246.056
+    },
+    {
+      "title": "Beliefs, mummies and tombs",
+      "start": 288.158
+    },
+    {
+      "title": "Your Nile-to-tomb recap",
+      "start": 338.763
+    }
+  ],
+  "assets": {
+    "lesson.mp4": {
+      "file": "egyptian-civilization.mp4",
+      "sha256": "52edb3e21b133a752f8f660158dbbc6b6ffaa754c791d1af1c5cb66b149c49a1",
+      "contentType": "video/mp4"
+    },
+    "poster.jpg": {
+      "file": "poster.jpg",
+      "sha256": "cd85929578e895f3309d1c6a9e9cf65a33fcfd20b4e6dcff283736fe60036bee",
+      "contentType": "image/jpeg"
+    },
+    "captions.en.vtt": {
+      "file": "egyptian-civilization.en.vtt",
+      "sha256": "4a8d42156e25968917d012f2a2b68ca7f71173cb17feffae6d00d96722180339",
+      "contentType": "text/vtt"
+    }
+  },
+  "narration": "The same enthusiastic English tutor voice used for the approved Early Vedic video."
+}

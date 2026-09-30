@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "video-1.0",
+  "slug": "major-water-bodies-part-2",
+  "contentVersion": 1,
+  "title": "Major Water Bodies — Part 2: Lakes, Rivers and Water Pollution",
+  "description": "Detailed revision of lakes, world rivers, river courses, water pollution and protection, with five recall questions.",
+  "source": {
+    "board": "ICSE",
+    "grade": 6,
+    "subject": "Geography",
+    "chapterTitle": "Major Water Bodies",
+    "chapterNumber": 4,
+    "documentName": "User-supplied textbook screenshots, pages 43–51",
+    "sha256": "713cc966bb69016c59bed6ceb16fa746326b88b4b1b64cfb63d8d391e85fba24",
+    "sourceManifest": "proposals/major-water-bodies-video/source-manifest.json",
+    "reviewed": true
+  },
+  "durationSeconds": 674.678667,
+  "chapters": [
+    {
+      "title": "What makes a lake?",
+      "start": 0.0
+    },
+    {
+      "title": "Baikal and the Great Lakes",
+      "start": 58.643
+    },
+    {
+      "title": "Locate four more lakes",
+      "start": 131.766
+    },
+    {
+      "title": "A river has a source and mouth",
+      "start": 188.643
+    },
+    {
+      "title": "Upper, middle and lower course",
+      "start": 259.853
+    },
+    {
+      "title": "Rivers across the Americas and Europe",
+      "start": 315.547
+    },
+    {
+      "title": "Rivers in Africa, Asia and Australia",
+      "start": 388.244
+    },
+    {
+      "title": "Rivers and human life",
+      "start": 450.279
+    },
+    {
+      "title": "Where water pollution comes from",
+      "start": 528.752
+    },
+    {
+      "title": "Oil spills and protecting water",
+      "start": 591.128
+    }
+  ],
+  "assets": {
+    "lesson.mp4": {
+      "file": "major-water-bodies-part-2.mp4",
+      "sha256": "cf69fc1ff15ffe225bc1ba081849e2acc87ac44d39df2b892caedf4202f65adc",
+      "contentType": "video/mp4"
+    },
+    "poster.jpg": {
+      "file": "poster.jpg",
+      "sha256": "888f45eff41bf89f41414784629324790c230d2d97844e0848fb8f9e47dc3bc5",
+      "contentType": "image/jpeg"
+    },
+    "captions.en.vtt": {
+      "file": "major-water-bodies-part-2.en.vtt",
+      "sha256": "d651a4fa2add7ef964f6629ce0edb94eef946ce498ba38ce05218447f97c73e6",
+      "contentType": "text/vtt"
+    }
+  },
+  "narration": "The same enthusiastic English tutor voice used for the approved Early Vedic video."
+}

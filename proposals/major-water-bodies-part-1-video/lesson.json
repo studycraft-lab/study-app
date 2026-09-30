@@ -1,0 +1,118 @@
+{
+  "title": "Major Water Bodies · Part 1",
+  "subtitle": "Class 6 Geography · oceans and coastal water bodies",
+  "source": "User-supplied textbook screenshots, pages 40–43 and 47–50",
+  "editorial_note": "Source-grounded revision. Rankings and shipping superlatives are framed as textbook descriptions where they may change or depend on definitions.",
+  "scenes": [
+    {
+      "title": "Water covers most of Earth",
+      "layout": "water-cycle",
+      "items": [["SURFACE", "About 71% is covered by water"], ["SALT WATER", "Oceans hold most of Earth's water"], ["FRESH WATER", "Rivers and lakes matter for life"]],
+      "beats": [
+        "Look at Earth from space and you see why it is called the blue planet. Water covers about seventy-one percent of its surface. It occurs in connected oceans and seas, and in smaller rivers and lakes. These water bodies are not interchangeable: their size, shape, location and kind of water differ.",
+        "Oceans contain about ninety-seven percent of Earth's water. Most ocean water is salty, so a large amount of water on the planet does not mean unlimited drinking water. Fresh water in rivers and lakes supports people, animals, farming and many habitats, but it must be protected from pollution.",
+        "This chapter asks you to do more than recite names. Locate each water body on a map, describe how it differs from others, and connect water with trade, climate, civilization and daily life. We begin with the five oceans and follow their edges toward seas, bays, gulfs and straits."
+      ]
+    },
+    {
+      "title": "Locate the five oceans",
+      "layout": "water-map",
+      "items": [["PACIFIC", "Between Asia–Australia and the Americas"], ["ATLANTIC", "Between the Americas and Europe–Africa"], ["THREE MORE", "Indian · Arctic · Southern"]],
+      "beats": [
+        "The five named oceans are the Pacific, Atlantic, Indian, Arctic and Southern Oceans. On a globe they connect, yet their names help us locate regions. Start with the Pacific on both sides of a flat world map: it lies between Asia and Australia on one side and the Americas on the other.",
+        "The Atlantic separates the Americas from Europe and Africa. The Indian Ocean lies south of Asia, east of Africa and west of Australia. The Arctic surrounds the North Pole. The Southern Ocean circles Antarctica. Point to each one as I speak, rather than trying to memorize a list without positions.",
+        "A flat map can trick you: the Pacific appears cut into two pieces at its left and right edges, though it is one ocean. Trace the water around the globe with your finger. Notice how the Southern Ocean joins the southern parts of the Pacific, Atlantic and Indian Oceans."
+      ],
+      "question": "Which ocean lies between the Americas and Europe and Africa?",
+      "answer": "The Atlantic Ocean. Find the Americas on one side and Europe and Africa on the other."
+    },
+    {
+      "title": "The Pacific: vast and deep",
+      "layout": "ocean-depth",
+      "items": [["LARGEST", "About one-third of Earth's surface"], ["RING OF FIRE", "Volcanoes and young mountain belts"], ["MARIANA", "A very deep ocean trench"]],
+      "beats": [
+        "The Pacific is the largest ocean. The chapter describes it as almost circular and covering over one-third of the globe. On the map, its enormous width is easier to see if you remember that the two map edges meet. Its basin contains many islands as well as deep ocean floor.",
+        "Around much of its margin, moving tectonic plates are associated with volcanoes, earthquakes and mountain belts. This active zone is often called the Ring of Fire. The name is a clue to location, not a literal ring of flames. Relate it to the plate movements from your landforms chapter.",
+        "The Mariana Trench, near the western Pacific, contains the deepest known point in the ocean, close to eleven kilometres below sea level. A trench is a long, narrow depression on the seabed. The chapter also names the Philippine, Japan and Kuril trenches. Remember the contrast: a vast surface above a very deep floor."
+      ]
+    },
+    {
+      "title": "The Atlantic: routes and ridge",
+      "layout": "ridge",
+      "items": [["S SHAPE", "Between two pairs of continents"], ["TRADE", "Many sea routes cross it"], ["RIDGE", "Underwater mountain chain"]],
+      "beats": [
+        "The Atlantic is the second largest ocean. The chapter likens its outline to the letter S. Europe and Africa lie along its eastern side; North and South America lie along its western side. Find those continents first, then the Atlantic's shape becomes easier to understand.",
+        "Many long-established shipping routes link ports around the Atlantic. The textbook describes it as the busiest ocean for trade and transport. Its coastline has numerous bays, gulfs and natural harbour sites. That helps explain why people have crossed it for trade, travel and exploration over many centuries.",
+        "Beneath the middle of the Atlantic runs the Mid-Atlantic Ridge, a long submerged mountain system. Parts rise above sea level to form islands; Iceland is a volcanic example. A ridge is raised seabed, while a trench is a deep depression. Compare this cross-section with the Pacific trench in the previous scene."
+      ],
+      "question": "Is the Mid-Atlantic Ridge a mountain chain above the sea or mostly beneath it?",
+      "answer": "It is mostly beneath the sea. Some peaks emerge as islands, including Iceland."
+    },
+    {
+      "title": "The Indian Ocean and its arms",
+      "layout": "water-map",
+      "items": [["SHAPE", "Roughly triangular"], ["INDIA", "At the ocean's northern end"], ["TWO ARMS", "Arabian Sea · Bay of Bengal"]],
+      "beats": [
+        "The Indian Ocean is roughly triangular. Asia closes its northern side, Africa borders it to the west, and Australia lies toward the east. Most of its area is in the Southern Hemisphere. The chapter notes that India lies at its northern end, which is why this ocean carries the country's name.",
+        "Look closely at the water beside India. The Arabian Sea is west of the peninsula; the Bay of Bengal is east. Both connect to the Indian Ocean. Locating them helps you place India on a world map and gives a simple way to remember the peninsula's three water-facing sides.",
+        "The Indian Ocean links coasts of Africa, Asia and Australia. Sea routes across it have carried people, goods and ideas. The ocean also supplies moisture that later falls as rain over land. Keep the geography concrete: name the bordering continents and then point to the Arabian Sea and Bay of Bengal."
+      ]
+    },
+    {
+      "title": "Arctic north, Southern south",
+      "layout": "polar",
+      "items": [["ARCTIC", "Around the North Pole"], ["SOUTHERN", "Around Antarctica"], ["COMPARE", "Ocean around pole · ocean around land"]],
+      "beats": [
+        "The Arctic Ocean lies north of North America, Europe and Asia, mostly within the Arctic Circle. It is the smallest and shallowest of the five oceans. Sea ice covers much of it for long periods, although that cover changes with the seasons and climate. The North Pole is in an ocean region.",
+        "The Southern Ocean, also called the Antarctic Ocean, surrounds Antarctica. It is where the southern waters of the Pacific, Atlantic and Indian Oceans meet. The South Pole, unlike the North Pole, sits on the land mass of Antarctica. That distinction is more useful than memorizing a rank by size.",
+        "Picture two polar diagrams. At the top of the world, draw ocean with continents around it. At the bottom, draw Antarctica with ocean around it. That one reversal stops a common mix-up. Both are cold, but the positions of land and sea are different."
+      ],
+      "question": "Which polar ocean surrounds a continent, and which polar ocean is bordered by continents?",
+      "answer": "The Southern Ocean surrounds Antarctica. The Arctic Ocean is bordered by North America, Europe and Asia."
+    },
+    {
+      "title": "Why oceans matter",
+      "layout": "water-cycle",
+      "items": [["LIFE", "Habitats and food"], ["CONNECTION", "Trade and travel routes"], ["CLIMATE", "Moisture, rain and coastal effects"]],
+      "beats": [
+        "Oceans support an enormous variety of aquatic life and provide food for many people. They also contain mineral and energy resources. People use their coastlines and sea routes for travel and international trade. These benefits depend on healthy water and careful use, because damage can spread far beyond one shore.",
+        "Oceans help shape climate. Water evaporates from the sea, adding water vapour to the air. That vapour can later condense and fall as rain. Large water bodies also tend to moderate temperatures near coasts. Connect these ideas: ocean, evaporation, air movement, rainfall and living conditions on land.",
+        "Moving seawater carries energy too. Tides are the regular rise and fall of sea level, and in suitable places their movement can be used to generate electricity. When you explain importance, give different kinds of reasons: a food or habitat reason, a transport reason and a climate or energy reason."
+      ]
+    },
+    {
+      "title": "Seas beside continents",
+      "layout": "coast",
+      "items": [["SEA", "Smaller, shallower part of an ocean"], ["EXAMPLES", "Caribbean · Bering · Arabian"], ["LOCATION", "Often beside a continent"]],
+      "beats": [
+        "A sea is generally a smaller, shallower part of an ocean, often close to a continent's edge. On a world map, find the Caribbean Sea near Central America, the Bering Sea between Alaska and northeastern Asia, the Arabian Sea beside western India and the North Sea near northwestern Europe.",
+        "The Mediterranean Sea lies between Europe and Africa and opens to the Atlantic through the Strait of Gibraltar. Seas have long provided routes for voyages and exchange between coastlines. Their locations help explain why particular regions came into contact, although maps alone cannot tell the full human story.",
+        "Some large saltwater bodies have 'sea' in their names even though they are cut off from an open ocean. The chapter mentions the Caspian Sea, Black Sea and Aral Sea as inland seas. Focus on the map relationship: is the water at an ocean edge, enclosed by land, or joined by a narrow passage?"
+      ],
+      "question": "Name one sea at the edge of an ocean and one inland sea from the chapter.",
+      "answer": "For example, the Arabian Sea borders the Indian Ocean, and the Caspian Sea is an inland sea."
+    },
+    {
+      "title": "Bays and gulfs: read the coast",
+      "layout": "coast",
+      "items": [["BAY", "Broad coastal indentation"], ["GULF", "Often deeper and more enclosed"], ["EXAMPLES", "Bay of Bengal · Persian Gulf"]],
+      "beats": [
+        "A bay is a broad, curved inlet where water enters the coastline. The Bay of Bengal east of India, Hudson Bay in North America and the Bay of Biscay near Europe are examples. Draw a coastline with a wide opening and a gentle curve: that picture helps more than the word alone.",
+        "A gulf is commonly a more deeply indented and enclosed arm of the sea, often with a narrower opening. Examples in the chapter include the Persian Gulf, Gulf of Mexico and Gulf of Carpentaria north of Australia. These labels are conventional, so compare shapes as a guide rather than expecting a perfect rule for every name.",
+        "To answer the textbook comparison, state that both are inlets of water into land. Then contrast a bay's broader opening with a gulf's usually deeper indentation and greater enclosure. Locate the Bay of Bengal and Persian Gulf on a map; examples anchor the shape in a real place."
+      ]
+    },
+    {
+      "title": "A strait joins water bodies",
+      "layout": "strait",
+      "items": [["NARROW", "A slim stretch of water"], ["CONNECTS", "Two larger water bodies"], ["EXAMPLES", "Gibraltar · Palk Strait"]],
+      "beats": [
+        "A strait is a narrow stretch of water connecting two larger water bodies. Think of a watery passage between two pieces of land. The Strait of Gibraltar connects the Mediterranean Sea with the Atlantic Ocean. Trace that short connection on a map near southern Spain and northern Morocco.",
+        "Closer to India, the Palk Strait lies between India and Sri Lanka. The chapter's map shows it connecting the Bay of Bengal side with the Gulf of Mannar side. A strait can be an important route for ships, but its narrowness can also make navigation and access sensitive.",
+        "End part one by comparing four shapes aloud: a sea is part of a larger ocean, a bay or gulf is an inlet along a coast, and a strait is a narrow connection. Point to one example of each. Next, we move inland to lakes and rivers, then follow water into human life and pollution."
+      ],
+      "question": "What does a strait connect, and which strait lies between India and Sri Lanka?",
+      "answer": "A strait connects two larger water bodies. The Palk Strait lies between India and Sri Lanka."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "title": "Major Water Bodies",
+  "board": "ICSE",
+  "grade": 6,
+  "subject": "Geography",
+  "chapterNumber": 4,
+  "pageRange": [
+    40,
+    51
+  ],
+  "sourcePolicy": "Original textbook screenshots remain local only; video diagrams are newly drawn.",
+  "sourceManifest": "ingestion-artifacts/major-water-bodies-chapter-manifest.json",
+  "canonicalChapterManifestSha256": "713cc966bb69016c59bed6ceb16fa746326b88b4b1b64cfb63d8d391e85fba24",
+  "assets": [
+    {
+      "fileName": "Screenshot 2026-09-03 at 7.02.04 PM.png",
+      "sha256": "0d9e3a58f71992eb54f0789e554ee95459e4bd9b33627f96a861e2d13d7b6189",
+      "pages": [
+        40
+      ]
+    },
+    {
+      "fileName": "Screenshot 2026-09-03 at 7.02.16 PM.png",
+      "sha256": "03a48491d1d313bffcfca40c2954b3474c180c89acea52bc3d06da10d227ba35",
+      "pages": [
+        41,
+        42
+      ]
+    },
+    {
+      "fileName": "Screenshot 2026-09-03 at 7.02.27 PM.png",
+      "sha256": "19313e064d5c4222a570c52845d8037f929b5abbbb0c3296d6428200a9d1ce01",
+      "pages": [
+        43,
+        44
+      ]
+    },
+    {
+      "fileName": "Screenshot 2026-09-03 at 7.03.05 PM.png",
+      "sha256": "eec6ff01c033c64fbec2760ab0690ea008f50c662c60233edb42df0216f5c205",
+      "pages": [
+        45,
+        46
+      ]
+    },
+    {
+      "fileName": "Screenshot 2026-09-03 at 7.03.17 PM.png",
+      "sha256": "d6121b661777f3d6600886a80f99ba30599c33a53cedae7108dc4ef74a983e02",
+      "pages": [
+        47,
+        48
+      ]
+    },
+    {
+      "fileName": "Screenshot 2026-09-03 at 7.03.29 PM.png",
+      "sha256": "9b2184b5f240f7480cbf07c25366bef45bd3e67d7e90183176391e324e499380",
+      "pages": [
+        49,
+        50
+      ]
+    },
+    {
+      "fileName": "Screenshot 2026-09-03 at 7.03.42 PM.png",
+      "sha256": "7f3c794ee83f27777dd0edce7894c1693986bec33966c07f28a0c67833da6023",
+      "pages": [
+        51
+      ]
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "title": "Major Water Bodies · Part 2",
+  "subtitle": "Class 6 Geography · lakes, rivers and water pollution",
+  "source": "User-supplied textbook screenshots, pages 43–51",
+  "editorial_note": "Source-grounded revision. Avoids disputed river-length rankings and explains the textbook's saline/brackish lake examples with care.",
+  "scenes": [
+    {
+      "title": "What makes a lake?",
+      "layout": "lake",
+      "items": [
+        [
+          "LAKE",
+          "Water surrounded by land"
+        ],
+        [
+          "POND",
+          "Usually smaller and shallower"
+        ],
+        [
+          "RESERVOIR",
+          "A human-made storage lake"
+        ]
+      ],
+      "beats": [
+        "We have travelled across oceans and seas. Now imagine a body of water enclosed by land on every side. That is a lake. Lakes are generally larger and deeper than ponds. Some contain fresh water, others contain salty or brackish water, so never assume every lake can provide drinking water.",
+        "A reservoir is a human-made lake used to store water, often behind a dam. The chapter mentions the Bhakra Nangal project as an example. Natural lakes and reservoirs can support drinking-water supplies, irrigation, fishing, transport in some places, recreation and habitats for plants and animals.",
+        "Some large enclosed saltwater bodies are called inland seas, including the Caspian and Aral Seas. The name 'sea' does not automatically mean open connection to an ocean. When you classify a water body, ask whether land surrounds it, whether it connects to an ocean and what kind of water it holds."
+      ]
+    },
+    {
+      "title": "Baikal and the Great Lakes",
+      "layout": "lake",
+      "items": [
+        [
+          "BAIKAL",
+          "Deep lake in Siberia"
+        ],
+        [
+          "GREAT LAKES",
+          "Five lakes in North America"
+        ],
+        [
+          "USES",
+          "Fresh water · transport · recreation"
+        ]
+      ],
+      "beats": [
+        "Lake Baikal in Siberia is one of the most remarkable lakes in the chapter. It is the world's deepest lake and an ancient freshwater basin. The textbook gives a depth of about seventeen hundred metres and says it holds a very large share of Earth's unfrozen surface fresh water.",
+        "On the border region of the United States and Canada lie the five Great Lakes: Superior, Michigan, Huron, Erie and Ontario. Say their names aloud, then find the group on a map of North America. Together they form a vast freshwater system, though each lake has its own size and location.",
+        "The Great Lakes support shipping, fishing and recreation, as well as communities and wildlife. Do not treat them as five isolated dots. Their connected waterways help move goods, and the Saint Lawrence River links the system to the Atlantic. This is a good example of how lakes can shape development."
+      ],
+      "question": "Which lake in Siberia is famous for its great depth, and how many Great Lakes are there?",
+      "answer": "Lake Baikal is famous for its depth, and there are five Great Lakes."
+    },
+    {
+      "title": "Locate four more lakes",
+      "layout": "lake-map",
+      "items": [
+        [
+          "ONEGA",
+          "Northwestern Russia"
+        ],
+        [
+          "TITICACA",
+          "Andes between Peru and Bolivia"
+        ],
+        [
+          "VICTORIA",
+          "East Africa · linked to the Nile"
+        ]
+      ],
+      "beats": [
+        "Lake Onega lies in northwestern Russia and is one of Europe's largest lakes. Lake Titicaca lies high in the Andes on the border of Peru and Bolivia. Their positions are very different: one belongs on your Europe and Russia map, while the other belongs in western South America.",
+        "Lake Victoria is Africa's largest lake by surface area and an important reservoir for the Nile system. It borders Tanzania, Uganda and Kenya. Fishing supports many communities there. Place it in East Africa before memorizing its name; map location gives a fact somewhere to live in your mind.",
+        "Chilika Lake in Odisha, eastern India, is a coastal lagoon with brackish water, where fresh and salty water mix. It is connected to the Bay of Bengal and is important for fishers and migratory birds. The chapter calls it a saltwater lake; the more precise description is a brackish lagoon."
+      ]
+    },
+    {
+      "title": "A river has a source and mouth",
+      "layout": "river",
+      "items": [
+        [
+          "SOURCE",
+          "Where a river begins"
+        ],
+        [
+          "CHANNEL",
+          "Its path across the land"
+        ],
+        [
+          "MOUTH",
+          "Where it enters larger water"
+        ]
+      ],
+      "beats": [
+        "A river is flowing water in a channel, usually moving from higher land toward lower land. Its source is where it begins, often in hills or mountains. Its mouth is where it ends by entering a lake, sea or another river. Draw an arrow from source to mouth before learning any river name.",
+        "Rainfall, snowmelt, springs and smaller streams can feed a river. As it flows, it may cut into rock, carry material and later lay sediment down. This is why a river is both a water supply and a land-shaping force. Follow one blue line on a map from its beginning to its end.",
+        "A tributary is a smaller stream or river joining a larger one. The larger river and its tributaries make a river system. If you say a river flows through a country, also try to state its direction and where it reaches the sea. Those details turn a label into a geographical explanation."
+      ],
+      "question": "What are the source and the mouth of a river?",
+      "answer": "The source is where the river begins. The mouth is where it ends in a larger body of water."
+    },
+    {
+      "title": "Upper, middle and lower course",
+      "layout": "courses",
+      "items": [
+        [
+          "UPPER",
+          "Steep slope · faster flow"
+        ],
+        [
+          "MIDDLE",
+          "Gentler slope · wider channel"
+        ],
+        [
+          "LOWER",
+          "Near the mouth · deposition"
+        ]
+      ],
+      "beats": [
+        "The river's course has three broad stages. In its upper course near the source, land is often steep and the water flows quickly. Downward erosion can cut a narrow V-shaped valley. Imagine a mountain stream with a strong current and rock being carried away.",
+        "In the middle course, the slope becomes gentler. The channel often grows wider, and the river may bend across lower land. Erosion and transport continue, but the shape differs from the steep upper course. Read the textbook's river profile from left to right as a changing journey, not three separate rivers.",
+        "In the lower course near the mouth, the gradient is usually very gentle. Flow is often slower, and fine sediment can settle out, building floodplains and sometimes a delta. A delta forms where deposited sediment builds land at some river mouths. Use three clues to compare stages: slope, speed and landform."
+      ]
+    },
+    {
+      "title": "Rivers across the Americas and Europe",
+      "layout": "river-map",
+      "items": [
+        [
+          "AMERICAS",
+          "Amazon · Mackenzie · Saint Lawrence"
+        ],
+        [
+          "EUROPE",
+          "Rhine · Danube"
+        ],
+        [
+          "MAP SKILL",
+          "Find continent, direction and mouth"
+        ]
+      ],
+      "beats": [
+        "The Amazon crosses northern South America and reaches the Atlantic Ocean. The chapter gives it a length close to the Nile's, but river-length rankings can depend on how the source is measured. The useful geographical facts here are its continent, huge river system and outlet to the Atlantic.",
+        "In North America, the Mackenzie is a major Canadian river system flowing north toward the Arctic Ocean. The Saint Lawrence flows from the Great Lakes region east to the Atlantic. Notice how lakes and rivers connect: a route across inland water can lead outward to the sea.",
+        "In Europe, the Rhine rises in the Alps and flows northwest through a busy region toward the North Sea. The Danube crosses or borders many countries before reaching the Black Sea. Locate both on a map. A good answer explains route and importance, rather than relying only on a memorized length."
+      ],
+      "question": "Which North American river links the Great Lakes region with the Atlantic Ocean?",
+      "answer": "The Saint Lawrence River links the Great Lakes region with the Atlantic."
+    },
+    {
+      "title": "Rivers in Africa, Asia and Australia",
+      "layout": "river-map",
+      "items": [
+        [
+          "AFRICA",
+          "Nile · Mediterranean Sea"
+        ],
+        [
+          "ASIA",
+          "Indus · Ganga · Huang He · Yangtze · Ob"
+        ],
+        [
+          "AUSTRALIA",
+          "Murray · southern Australia"
+        ]
+      ],
+      "beats": [
+        "The Nile flows north through northeastern Africa into the Mediterranean Sea. The textbook identifies it as the world's longest river. What matters for this chapter is its route and its relationship with settlement and farming. Water and fertile river land helped communities grow beside it over many centuries.",
+        "In Asia, locate the Indus and Ganga in the Indian subcontinent. The Indus is linked to the Indus Valley civilization; the Ganga rises in the Himalayas and flows across northern India into Bangladesh. In China, the Huang He, or Yellow River, is connected with early Chinese civilization, while the Yangtze is a major east-flowing river.",
+        "The Ob is a major river in Siberia, flowing north. Australia's Murray rises in the Australian Alps and runs through the southeast. These names cover a wide map, so learn them in groups by continent. For each river, recall one route or human connection, then use an atlas to locate it."
+      ]
+    },
+    {
+      "title": "Rivers and human life",
+      "layout": "water-cycle",
+      "items": [
+        [
+          "FARMING",
+          "Water and fertile floodplain soil"
+        ],
+        [
+          "SETTLEMENT",
+          "Supply for people and animals"
+        ],
+        [
+          "MOVEMENT",
+          "Transport, trade and power"
+        ]
+      ],
+      "beats": [
+        "Rivers matter because they supply water for people, livestock and farming. Their valleys and plains can contain fertile soil, helping crops grow. In suitable places, rivers carry boats and goods, connect communities and support trade. River water can also generate hydroelectricity where a power plant uses its movement.",
+        "The chapter connects the Indus with the Indus Valley civilization and the Huang He with early Chinese civilization. Rivers did not create civilizations by themselves, but water, farming land and routes for movement made large settlements possible. Explain the chain of causes instead of saying only that people lived near water.",
+        "Rivers can also support fishing and recreation. Yet their benefits require clean water and healthy surroundings. A river that receives waste may become dangerous for the same people who depend on it. That brings us to the chapter's final theme: why water bodies become polluted and how to protect them."
+      ],
+      "question": "Give two different ways a river can help a settlement develop.",
+      "answer": "For example, it can supply water for people and farming, and provide a route for transport and trade."
+    },
+    {
+      "title": "Where water pollution comes from",
+      "layout": "pollution",
+      "items": [
+        [
+          "WASTEWATER",
+          "Untreated household or industrial waste"
+        ],
+        [
+          "RUNOFF",
+          "Fertilizers washed from fields"
+        ],
+        [
+          "HEAT",
+          "Warm discharge can stress aquatic life"
+        ]
+      ],
+      "beats": [
+        "Water pollution occurs when harmful waste enters an ocean, sea, river or lake. Untreated liquid waste from homes can carry germs into water used by other people. This can spread serious disease. Industrial discharge may add harmful substances, so keeping such waste out of natural water is a public-health need.",
+        "Surface runoff is water that flows across land after rain or snowmelt. It can wash fertilizers and other substances from fields into rivers and lakes. Extra nutrients may cause heavy algal growth. As algae die and decompose, oxygen in the water can fall, making it hard for fish and other organisms to survive.",
+        "The chapter also discusses warm liquid released by thermal power plants. Warmer water holds less dissolved oxygen and can disrupt aquatic life. The core pattern is the same across these examples: identify the source of pollution, trace how it reaches the water and explain the effect on living things."
+      ]
+    },
+    {
+      "title": "Oil spills and protecting water",
+      "layout": "pollution",
+      "items": [
+        [
+          "OIL SPILL",
+          "Leaked oil spreads on seawater"
+        ],
+        [
+          "HARM",
+          "Fish, birds and coasts can suffer"
+        ],
+        [
+          "ACTION",
+          "Reduce waste · treat discharge"
+        ]
+      ],
+      "beats": [
+        "An oil spill happens when oil leaks into the sea, for example from a damaged tanker. The oil can spread across the surface and harm marine habitats. Birds may have their feathers coated, and fish and other animals can be poisoned or struggle to survive. Cleanup is difficult once the oil has spread.",
+        "Plastic waste also harms marine life. Animals can become entangled in it or swallow pieces, and larger plastics eventually break into tiny fragments. The chapter asks us to think about how much waste we create. Reducing unnecessary plastic, collecting waste and preventing litter from reaching drains are practical first steps.",
+        "We can protect water by treating sewage and industrial discharge, using farm chemicals carefully, responding quickly to spills and conserving water at home and school. Finish by defining a lake and river, tracing a river from source to mouth, and explaining one cause and effect of pollution. Which idea will you teach someone else?"
+      ],
+      "question": "Choose one cause of water pollution, describe how it reaches water, and name one harm it can cause.",
+      "answer": "For example, farm runoff carries fertilizer into rivers; excess nutrients can lower oxygen and harm fish."
+    }
+  ]
+}

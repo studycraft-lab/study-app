@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "public/pyodide/**",
+    // Standalone video-render scripts are production artifacts, not app code.
+    "proposals/**/render.cjs",
     "next-env.d.ts",
   ]),
 ]);

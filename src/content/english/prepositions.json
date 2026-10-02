@@ -1,0 +1,510 @@
+{
+  "slug": "prepositions",
+  "version": 1,
+  "grade": 6,
+  "subject": "English Language",
+  "title": "Prepositions",
+  "batchSize": 5,
+  "introduction": "Learn the relationship a preposition shows, then answer five at a time.",
+  "rules": [
+    {
+      "title": "Time: at, on, in, since, for",
+      "body": "Use at for a clock time, on for a day or date, and in for a month or year. Since gives a starting point; for gives a duration.",
+      "example": "at 8 o’clock · on Monday · in July · since 2020 · for an hour"
+    },
+    {
+      "title": "Place: in, on, between, among",
+      "body": "In means inside; on means touching a surface. Between links distinct people or things; among places something in a group.",
+      "example": "in the box · on the table · between two windows · among the children"
+    },
+    {
+      "title": "Movement: across, through, over",
+      "body": "Across goes from one side to another. Through goes in and out of an enclosed space. Over goes above, and can also mean crossing a barrier.",
+      "example": "across the road · through the tunnel · over the wall"
+    },
+    {
+      "title": "Useful pairs and fixed phrases",
+      "body": "By can name the doer; with can name the tool. Beside means next to; besides means in addition to. Learn patterns such as interested in and good at.",
+      "example": "written by the poet · cut with scissors · interested in music"
+    }
+  ],
+  "worked": {
+    "prompt": "I have been waiting ___ an hour.",
+    "answer": "for",
+    "explanation": "An hour is a length of time, so use for."
+  },
+  "questions": [
+    {
+      "id": "prep-01",
+      "number": 1,
+      "kind": "fill",
+      "prompt": "The children are playing ___ the garden.",
+      "origin": "worksheet",
+      "answer": "in",
+      "accepted": [],
+      "reviewOnMismatch": false,
+      "explanation": "“in” is the expected preposition here."
+    },
+    {
+      "id": "prep-02",
+      "number": 2,
+      "kind": "fill",
+      "prompt": "The book is lying ___ the table.",
+      "origin": "worksheet",
+      "answer": "on",
+      "accepted": [],
+      "reviewOnMismatch": false,
+      "explanation": "“on” is the expected preposition here."
+    },
+    {
+      "id": "prep-03",
+      "number": 3,
+      "kind": "fill",
+      "prompt": "We reached school ___ 8 o’clock.",
+      "origin": "worksheet",
+      "answer": "at",
+      "accepted": [],
+      "reviewOnMismatch": false,
+      "explanation": "“at” is the expected preposition here."
+    },
+    {
+      "id": "prep-04",
+      "number": 4,
+      "kind": "fill",
+      "prompt": "My birthday is ___ July.",
+      "origin": "worksheet",
+      "answer": "in",
+      "accepted": [],
+      "reviewOnMismatch": false,
+      "explanation": "“in” is the expected preposition here."
+    },
+    {
+      "id": "prep-05",
+      "number": 5,
+      "kind": "fill",
+      "prompt": "The cat jumped ___ the wall.",
+      "origin": "worksheet",
+      "answer": "over",
+      "accepted": [
+        "onto"
+      ],
+      "reviewOnMismatch": true,
+      "explanation": "“over” is the expected preposition here."
+    },
+    {
+      "id": "prep-06",
+      "number": 6,
+      "kind": "fill",
+      "prompt": "She walked ___ the bridge carefully.",
+      "origin": "worksheet",
+      "answer": "across",
+      "accepted": [
+        "over"
+      ],
+      "reviewOnMismatch": false,
+      "explanation": "“across” is the expected preposition here."
+    },
+    {
+      "id": "prep-07",
+      "number": 7,
+      "kind": "fill",
+      "prompt": "Father returned ___ Mumbai yesterday.",
+      "origin": "worksheet",
+      "answer": "from",
+      "accepted": [
+        "to"
+      ],
+      "reviewOnMismatch": true,
+      "explanation": "“from” is the expected preposition here."
+    },
+    {
+      "id": "prep-08",
+      "number": 8,
+      "kind": "fill",
+      "prompt": "The teacher divided the sweets ___ the children.",
+      "origin": "worksheet",
+      "answer": "among",
+      "accepted": [
+        "between"
+      ],
+      "reviewOnMismatch": false,
+      "explanation": "“among” is the expected preposition here."
+    },
+    {
+      "id": "prep-09",
+      "number": 9,
+      "kind": "fill",
+      "prompt": "Riya sat ___ her two friends.",
+      "origin": "worksheet",
+      "answer": "between",
+      "accepted": [],
+      "reviewOnMismatch": false,
+      "explanation": "“between” is the expected preposition here."
+    },
+    {
+      "id": "prep-10",
+      "number": 10,
+      "kind": "fill",
+      "prompt": "The boy hid ___ the curtain.",
+      "origin": "worksheet",
+      "answer": "behind",
+      "accepted": [],
+      "reviewOnMismatch": false,
+      "explanation": "“behind” is the expected preposition here."
+    },
+    {
+      "id": "prep-11",
+      "number": 11,
+      "kind": "fill",
+      "prompt": "The train passed ___ the tunnel.",
+      "origin": "worksheet",
+      "answer": "through",
+      "accepted": [],
+      "reviewOnMismatch": false,
+      "explanation": "“through” is the expected preposition here."
+    },
+    {
+      "id": "prep-12",
+      "number": 12,
+      "kind": "fill",
+      "prompt": "I have been waiting ___ an hour.",
+      "origin": "worksheet",
+      "answer": "for",
+      "accepted": [],
+      "reviewOnMismatch": false,
+      "explanation": "“for” is the expected preposition here."
+    },
+    {
+      "id": "prep-13",
+      "number": 13,
+      "kind": "fill",
+      "prompt": "The picture is hanging ___ the wall.",
+      "origin": "worksheet",
+      "answer": "on",
+      "accepted": [],
+      "reviewOnMismatch": false,
+      "explanation": "“on” is the expected preposition here."
+    },
+    {
+      "id": "prep-14",
+      "number": 14,
+      "kind": "fill",
+      "prompt": "He went to the library ___ his sister.",
+      "origin": "worksheet",
+      "answer": "with",
+      "accepted": [],
+      "reviewOnMismatch": false,
+      "explanation": "“with” is the expected preposition here."
+    },
+    {
+      "id": "prep-15",
+      "number": 15,
+      "kind": "fill",
+      "prompt": "The bird flew ___ the window.",
+      "origin": "worksheet",
+      "answer": "through",
+      "accepted": [
+        "out of"
+      ],
+      "reviewOnMismatch": false,
+      "explanation": "“through” is the expected preposition here."
+    },
+    {
+      "id": "prep-16",
+      "number": 16,
+      "kind": "fill",
+      "prompt": "We travelled ___ bus to the museum.",
+      "origin": "worksheet",
+      "answer": "by",
+      "accepted": [],
+      "reviewOnMismatch": false,
+      "explanation": "“by” is the expected preposition here."
+    },
+    {
+      "id": "prep-17",
+      "number": 17,
+      "kind": "fill",
+      "prompt": "The teacher was pleased ___ my work.",
+      "origin": "worksheet",
+      "answer": "with",
+      "accepted": [
+        "by"
+      ],
+      "reviewOnMismatch": false,
+      "explanation": "“with” is the expected preposition here."
+    },
+    {
+      "id": "prep-18",
+      "number": 18,
+      "kind": "fill",
+      "prompt": "There is a small garden ___ our house.",
+      "origin": "worksheet",
+      "answer": "behind",
+      "accepted": [
+        "near",
+        "beside",
+        "next to",
+        "in front of",
+        "around"
+      ],
+      "reviewOnMismatch": true,
+      "explanation": "“behind” is the expected preposition here."
+    },
+    {
+      "id": "prep-19",
+      "number": 19,
+      "kind": "fill",
+      "prompt": "She is good ___ drawing.",
+      "origin": "worksheet",
+      "answer": "at",
+      "accepted": [],
+      "reviewOnMismatch": false,
+      "explanation": "“at” is the expected preposition here."
+    },
+    {
+      "id": "prep-20",
+      "number": 20,
+      "kind": "fill",
+      "prompt": "The dog ran ___ the road and disappeared.",
+      "origin": "worksheet",
+      "answer": "across",
+      "accepted": [
+        "along",
+        "down",
+        "up"
+      ],
+      "reviewOnMismatch": true,
+      "explanation": "“across” is the expected preposition here."
+    },
+    {
+      "id": "prep-21",
+      "number": 21,
+      "kind": "fill",
+      "prompt": "(a) The book is lying __________ the table.",
+      "origin": "past_paper",
+      "answer": "on",
+      "accepted": [],
+      "reviewOnMismatch": false,
+      "explanation": "“on” is the expected preposition here."
+    },
+    {
+      "id": "prep-22",
+      "number": 22,
+      "kind": "fill",
+      "prompt": "(b) The city is famous __________ its historical landmarks.",
+      "origin": "past_paper",
+      "answer": "for",
+      "accepted": [],
+      "reviewOnMismatch": false,
+      "explanation": "“for” is the expected preposition here."
+    },
+    {
+      "id": "prep-23",
+      "number": 23,
+      "kind": "fill",
+      "prompt": "(c) The concert starts __________ eight o'clock.",
+      "origin": "past_paper",
+      "answer": "at",
+      "accepted": [],
+      "reviewOnMismatch": false,
+      "explanation": "“at” is the expected preposition here."
+    },
+    {
+      "id": "prep-24",
+      "number": 24,
+      "kind": "fill",
+      "prompt": "(d) The hotel is located __________ the beach.",
+      "origin": "past_paper",
+      "answer": "on",
+      "accepted": [
+        "by",
+        "near",
+        "beside",
+        "at"
+      ],
+      "reviewOnMismatch": true,
+      "explanation": "“on” is the expected preposition here."
+    },
+    {
+      "id": "prep-25",
+      "number": 25,
+      "kind": "fill",
+      "prompt": "(e) She is interested __________ learning new languages.",
+      "origin": "past_paper",
+      "answer": "in",
+      "accepted": [],
+      "reviewOnMismatch": false,
+      "explanation": "“in” is the expected preposition here."
+    },
+    {
+      "id": "prep-26",
+      "number": 26,
+      "kind": "fill",
+      "prompt": "(f) The package was delivered __________ the wrong address.",
+      "origin": "past_paper",
+      "answer": "to",
+      "accepted": [],
+      "reviewOnMismatch": false,
+      "explanation": "“to” is the expected preposition here."
+    },
+    {
+      "id": "prep-27",
+      "number": 27,
+      "kind": "fill",
+      "prompt": "(g) The book is divided _______ three sections.",
+      "origin": "past_paper",
+      "answer": "into",
+      "accepted": [],
+      "reviewOnMismatch": false,
+      "explanation": "“into” is the expected preposition here."
+    },
+    {
+      "id": "prep-28",
+      "number": 28,
+      "kind": "fill",
+      "prompt": "(h) The team is preparing ______ the big game.",
+      "origin": "past_paper",
+      "answer": "for",
+      "accepted": [],
+      "reviewOnMismatch": false,
+      "explanation": "“for” is the expected preposition here."
+    },
+    {
+      "id": "prep-29",
+      "number": 29,
+      "kind": "fill",
+      "prompt": "(i) The company specializes __________ renewable energy.",
+      "origin": "past_paper",
+      "answer": "in",
+      "accepted": [],
+      "reviewOnMismatch": false,
+      "explanation": "“in” is the expected preposition here."
+    },
+    {
+      "id": "prep-30",
+      "number": 30,
+      "kind": "fill",
+      "prompt": "(j) The keys are hidden __________ the vase.",
+      "origin": "past_paper",
+      "answer": "under",
+      "accepted": [
+        "in",
+        "inside",
+        "behind",
+        "beside"
+      ],
+      "reviewOnMismatch": true,
+      "explanation": "“under” is the expected preposition here."
+    },
+    {
+      "id": "prep-31",
+      "number": 31,
+      "kind": "fill",
+      "prompt": "I have lived in Bengaluru ___ 2020.",
+      "origin": "original",
+      "answer": "since",
+      "accepted": [],
+      "reviewOnMismatch": false,
+      "explanation": "Since marks the starting point."
+    },
+    {
+      "id": "prep-32",
+      "number": 32,
+      "kind": "fill",
+      "prompt": "We waited ___ two hours.",
+      "origin": "original",
+      "answer": "for",
+      "accepted": [],
+      "reviewOnMismatch": false,
+      "explanation": "For gives the length of time."
+    },
+    {
+      "id": "prep-33",
+      "number": 33,
+      "kind": "fill",
+      "prompt": "The flag hangs ___ the two windows.",
+      "origin": "original",
+      "answer": "between",
+      "accepted": [],
+      "reviewOnMismatch": false,
+      "explanation": "Between relates distinct positions."
+    },
+    {
+      "id": "prep-34",
+      "number": 34,
+      "kind": "fill",
+      "prompt": "The teacher distributed the certificates ___ the thirty students.",
+      "origin": "original",
+      "answer": "among",
+      "accepted": [],
+      "reviewOnMismatch": false,
+      "explanation": "Among refers to a group."
+    },
+    {
+      "id": "prep-35",
+      "number": 35,
+      "kind": "fill",
+      "prompt": "The poem was written ___ the poet.",
+      "origin": "original",
+      "answer": "by",
+      "accepted": [],
+      "reviewOnMismatch": false,
+      "explanation": "By names the agent of a passive verb."
+    },
+    {
+      "id": "prep-36",
+      "number": 36,
+      "kind": "fill",
+      "prompt": "She cut the paper ___ a pair of scissors.",
+      "origin": "original",
+      "answer": "with",
+      "accepted": [],
+      "reviewOnMismatch": false,
+      "explanation": "With names the instrument."
+    },
+    {
+      "id": "prep-37",
+      "number": 37,
+      "kind": "fill",
+      "prompt": "The lantern hung ___ the table without touching it.",
+      "origin": "original",
+      "answer": "above",
+      "accepted": [],
+      "reviewOnMismatch": false,
+      "explanation": "Above indicates a higher position."
+    },
+    {
+      "id": "prep-38",
+      "number": 38,
+      "kind": "fill",
+      "prompt": "Please reply ___ two days; the deadline is before then.",
+      "origin": "original",
+      "answer": "within",
+      "accepted": [],
+      "reviewOnMismatch": false,
+      "explanation": "Within means before the period ends."
+    },
+    {
+      "id": "prep-39",
+      "number": 39,
+      "kind": "fill",
+      "prompt": "___ my notebook, I brought a ruler.",
+      "origin": "original",
+      "answer": "Besides",
+      "accepted": [],
+      "reviewOnMismatch": false,
+      "explanation": "Besides means in addition to."
+    },
+    {
+      "id": "prep-40",
+      "number": 40,
+      "kind": "fill",
+      "prompt": "Riya stood ___ her brother, at his side.",
+      "origin": "original",
+      "answer": "beside",
+      "accepted": [],
+      "reviewOnMismatch": false,
+      "explanation": "Beside means next to."
+    }
+  ]
+}

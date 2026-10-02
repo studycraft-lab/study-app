@@ -1,0 +1,780 @@
+{
+  "slug": "conjunctions",
+  "version": 1,
+  "grade": 6,
+  "subject": "English Language",
+  "title": "Conjunctions",
+  "batchSize": 5,
+  "introduction": "Join ideas clearly, then practise five questions at a time.",
+  "rules": [
+    {
+      "title": "Join ideas and show meaning",
+      "body": "And adds; but or although contrasts; because gives a reason; so that shows purpose. Use because before a clause and because of before a noun phrase.",
+      "example": "She stayed home because she was ill. · Although she was ill, she studied."
+    },
+    {
+      "title": "Time, place and condition",
+      "body": "When, while, until and as soon as tell us about time. Wherever refers to place. If introduces a condition; unless means if not.",
+      "example": "Wait until I return. · Unless you hurry, you will miss the bus."
+    },
+    {
+      "title": "Paired conjunctions",
+      "body": "Use either…or and neither…nor as pairs. Keep the joined parts in the same grammatical form.",
+      "example": "She will choose either pasta or noodles. · Neither Ravi nor Meera was late."
+    },
+    {
+      "title": "The inversion pairs",
+      "body": "After no sooner, use than. After hardly, scarcely or barely, use when. These often use inverted word order.",
+      "example": "No sooner had I arrived than it rained. · Hardly had I arrived when it rained."
+    }
+  ],
+  "worked": {
+    "prompt": "The road was slippery. The driver managed to control the car.",
+    "answer": "Although the road was slippery, the driver managed to control the car.",
+    "explanation": "Although shows that the second event happened despite the first."
+  },
+  "questions": [
+    {
+      "id": "conj-01",
+      "number": 1,
+      "kind": "join",
+      "prompt": "The road was slippery. The driver managed to control the car.",
+      "origin": "worksheet",
+      "answer": "Although the road was slippery, the driver managed to control the car.",
+      "accepted": [],
+      "explanation": "Use a suitable connector while keeping the original meaning. Do not use and, but or so."
+    },
+    {
+      "id": "conj-02",
+      "number": 2,
+      "kind": "join",
+      "prompt": "The book is fascinating. It contains several historical illustrations.",
+      "origin": "worksheet",
+      "answer": "The book, which contains several historical illustrations, is fascinating.",
+      "accepted": [],
+      "explanation": "Use a suitable connector while keeping the original meaning. Do not use and, but or so."
+    },
+    {
+      "id": "conj-03",
+      "number": 3,
+      "kind": "join",
+      "prompt": "You must apologise. The teacher will not forgive your mistake.",
+      "origin": "worksheet",
+      "answer": "Unless you apologise, the teacher will not forgive your mistake.",
+      "accepted": [],
+      "explanation": "Use a suitable connector while keeping the original meaning. Do not use and, but or so."
+    },
+    {
+      "id": "conj-04",
+      "number": 4,
+      "kind": "join",
+      "prompt": "You eat too much. You will feel sick.",
+      "origin": "worksheet",
+      "answer": "If you eat too much, you will feel sick.",
+      "accepted": [],
+      "explanation": "Use a suitable connector while keeping the original meaning. Do not use and, but or so."
+    },
+    {
+      "id": "conj-05",
+      "number": 5,
+      "kind": "join",
+      "prompt": "The chef will prepare pasta. The chef will prepare noodles.",
+      "origin": "worksheet",
+      "answer": "The chef will prepare either pasta or noodles.",
+      "accepted": [
+        "Either the chef will prepare pasta or noodles."
+      ],
+      "explanation": "Use a suitable connector while keeping the original meaning. Do not use and, but or so."
+    },
+    {
+      "id": "conj-06",
+      "number": 6,
+      "kind": "join",
+      "prompt": "The detective found no evidence at the crime scene. He found no witnesses to the incident.",
+      "origin": "worksheet",
+      "answer": "The detective found neither evidence at the crime scene nor witnesses to the incident.",
+      "accepted": [],
+      "explanation": "Use a suitable connector while keeping the original meaning. Do not use and, but or so."
+    },
+    {
+      "id": "conj-07",
+      "number": 7,
+      "kind": "join",
+      "prompt": "The athlete crossed the finish line. The crowd began cheering immediately.",
+      "origin": "worksheet",
+      "answer": "Hardly had the athlete crossed the finish line when the crowd began cheering.",
+      "accepted": [],
+      "explanation": "Use a suitable connector while keeping the original meaning. Do not use and, but or so."
+    },
+    {
+      "id": "conj-08",
+      "number": 8,
+      "kind": "join",
+      "prompt": "The principal announced the results. The students started celebrating immediately.",
+      "origin": "worksheet",
+      "answer": "No sooner had the principal announced the results than the students started celebrating.",
+      "accepted": [],
+      "explanation": "Use a suitable connector while keeping the original meaning. Do not use and, but or so."
+    },
+    {
+      "id": "conj-09",
+      "number": 9,
+      "kind": "join",
+      "prompt": "The weather was very cold. The children continued playing outside.",
+      "origin": "worksheet",
+      "answer": "Although the weather was very cold, the children continued playing outside.",
+      "accepted": [],
+      "explanation": "Use a suitable connector while keeping the original meaning. Do not use and, but or so."
+    },
+    {
+      "id": "conj-10",
+      "number": 10,
+      "kind": "join",
+      "prompt": "The shopkeeper did not have the blue dress. He did not have the green dress.",
+      "origin": "worksheet",
+      "answer": "The shopkeeper had neither the blue dress nor the green dress.",
+      "accepted": [],
+      "explanation": "Use a suitable connector while keeping the original meaning. Do not use and, but or so."
+    },
+    {
+      "id": "conj-11",
+      "number": 11,
+      "kind": "fill",
+      "prompt": "___ you work carefully, you may make avoidable mistakes.",
+      "origin": "original",
+      "answer": "Unless",
+      "accepted": [],
+      "explanation": "Unless means if not."
+    },
+    {
+      "id": "conj-12",
+      "number": 12,
+      "kind": "fill",
+      "prompt": "We stayed indoors ___ the storm had passed.",
+      "origin": "original",
+      "answer": "until",
+      "accepted": [],
+      "explanation": "Until marks the end of a period."
+    },
+    {
+      "id": "conj-13",
+      "number": 13,
+      "kind": "fill",
+      "prompt": "___ the bell rang, the pupils entered the hall immediately.",
+      "origin": "original",
+      "answer": "As soon as",
+      "accepted": [],
+      "explanation": "As soon as shows immediate sequence."
+    },
+    {
+      "id": "conj-14",
+      "number": 14,
+      "kind": "fill",
+      "prompt": "___ he was exhausted, he completed the race.",
+      "origin": "original",
+      "answer": "Although",
+      "accepted": [],
+      "explanation": "Although introduces a contrast."
+    },
+    {
+      "id": "conj-15",
+      "number": 15,
+      "kind": "fill",
+      "prompt": "The library closed early ___ the librarian was ill.",
+      "origin": "original",
+      "answer": "because",
+      "accepted": [],
+      "explanation": "Because introduces a reason."
+    },
+    {
+      "id": "conj-16",
+      "number": 16,
+      "kind": "fill",
+      "prompt": "I shall call you ___ I reach home.",
+      "origin": "original",
+      "answer": "when",
+      "accepted": [],
+      "explanation": "When links actions in time."
+    },
+    {
+      "id": "conj-17",
+      "number": 17,
+      "kind": "fill",
+      "prompt": "___ you travel, carry your identity card.",
+      "origin": "original",
+      "answer": "Wherever",
+      "accepted": [],
+      "explanation": "Wherever means in any place that."
+    },
+    {
+      "id": "conj-18",
+      "number": 18,
+      "kind": "fill",
+      "prompt": "She spoke softly ___ the baby could sleep.",
+      "origin": "original",
+      "answer": "so that",
+      "accepted": [],
+      "explanation": "So that introduces purpose."
+    },
+    {
+      "id": "conj-19",
+      "number": 19,
+      "kind": "fill",
+      "prompt": "He read quietly ___ his sister practised the piano.",
+      "origin": "original",
+      "answer": "while",
+      "accepted": [],
+      "explanation": "While shows simultaneous action."
+    },
+    {
+      "id": "conj-20",
+      "number": 20,
+      "kind": "fill",
+      "prompt": "You may choose ___ tea or coffee.",
+      "origin": "original",
+      "answer": "either",
+      "accepted": [],
+      "explanation": "Either pairs with or."
+    },
+    {
+      "id": "conj-21",
+      "number": 21,
+      "kind": "choice",
+      "prompt": "Neither the captain ___ the coach was satisfied.",
+      "origin": "original",
+      "answer": "nor",
+      "options": [
+        {
+          "id": "or",
+          "text": "or"
+        },
+        {
+          "id": "nor",
+          "text": "nor"
+        },
+        {
+          "id": "than",
+          "text": "than"
+        },
+        {
+          "id": "when",
+          "text": "when"
+        }
+      ],
+      "explanation": "Neither pairs with nor."
+    },
+    {
+      "id": "conj-22",
+      "number": 22,
+      "kind": "choice",
+      "prompt": "No sooner had the show begun ___ the lights went out.",
+      "origin": "original",
+      "answer": "than",
+      "options": [
+        {
+          "id": "when",
+          "text": "when"
+        },
+        {
+          "id": "than",
+          "text": "than"
+        },
+        {
+          "id": "or",
+          "text": "or"
+        },
+        {
+          "id": "because",
+          "text": "because"
+        }
+      ],
+      "explanation": "No sooner pairs with than."
+    },
+    {
+      "id": "conj-23",
+      "number": 23,
+      "kind": "choice",
+      "prompt": "Hardly had I sat down ___ the telephone rang.",
+      "origin": "original",
+      "answer": "when",
+      "options": [
+        {
+          "id": "than",
+          "text": "than"
+        },
+        {
+          "id": "when",
+          "text": "when"
+        },
+        {
+          "id": "or",
+          "text": "or"
+        },
+        {
+          "id": "although",
+          "text": "although"
+        }
+      ],
+      "explanation": "Hardly pairs with when."
+    },
+    {
+      "id": "conj-24",
+      "number": 24,
+      "kind": "choice",
+      "prompt": "She is taller ___ her older sister.",
+      "origin": "original",
+      "answer": "than",
+      "options": [
+        {
+          "id": "then",
+          "text": "then"
+        },
+        {
+          "id": "than",
+          "text": "than"
+        },
+        {
+          "id": "whereas",
+          "text": "whereas"
+        },
+        {
+          "id": "because",
+          "text": "because"
+        }
+      ],
+      "explanation": "Than makes this comparison."
+    },
+    {
+      "id": "conj-25",
+      "number": 25,
+      "kind": "choice",
+      "prompt": "We could not go out ___ it was raining heavily.",
+      "origin": "original",
+      "answer": "because",
+      "options": [
+        {
+          "id": "because",
+          "text": "because"
+        },
+        {
+          "id": "because of",
+          "text": "because of"
+        },
+        {
+          "id": "although",
+          "text": "although"
+        },
+        {
+          "id": "unless",
+          "text": "unless"
+        }
+      ],
+      "explanation": "Because is followed by a clause."
+    },
+    {
+      "id": "conj-26",
+      "number": 26,
+      "kind": "choice",
+      "prompt": "We could not go out ___ the heavy rain.",
+      "origin": "original",
+      "answer": "because of",
+      "options": [
+        {
+          "id": "because",
+          "text": "because"
+        },
+        {
+          "id": "because of",
+          "text": "because of"
+        },
+        {
+          "id": "although",
+          "text": "although"
+        },
+        {
+          "id": "if",
+          "text": "if"
+        }
+      ],
+      "explanation": "Because of is followed by a noun phrase."
+    },
+    {
+      "id": "conj-27",
+      "number": 27,
+      "kind": "choice",
+      "prompt": "___ you leave now, you will catch the train.",
+      "origin": "original",
+      "answer": "If",
+      "options": [
+        {
+          "id": "Unless",
+          "text": "Unless"
+        },
+        {
+          "id": "If",
+          "text": "If"
+        },
+        {
+          "id": "Although",
+          "text": "Although"
+        },
+        {
+          "id": "Since",
+          "text": "Since"
+        }
+      ],
+      "explanation": "If introduces the condition."
+    },
+    {
+      "id": "conj-28",
+      "number": 28,
+      "kind": "choice",
+      "prompt": "We waited ___ the teacher returned.",
+      "origin": "original",
+      "answer": "until",
+      "options": [
+        {
+          "id": "although",
+          "text": "although"
+        },
+        {
+          "id": "until",
+          "text": "until"
+        },
+        {
+          "id": "because",
+          "text": "because"
+        },
+        {
+          "id": "wherever",
+          "text": "wherever"
+        }
+      ],
+      "explanation": "Until marks the end of waiting."
+    },
+    {
+      "id": "conj-29",
+      "number": 29,
+      "kind": "choice",
+      "prompt": "___ it was late, they continued studying.",
+      "origin": "original",
+      "answer": "Although",
+      "options": [
+        {
+          "id": "Because",
+          "text": "Because"
+        },
+        {
+          "id": "Although",
+          "text": "Although"
+        },
+        {
+          "id": "Unless",
+          "text": "Unless"
+        },
+        {
+          "id": "When",
+          "text": "When"
+        }
+      ],
+      "explanation": "Although shows unexpected contrast."
+    },
+    {
+      "id": "conj-30",
+      "number": 30,
+      "kind": "choice",
+      "prompt": "He took notes ___ he would remember the details.",
+      "origin": "original",
+      "answer": "so that",
+      "options": [
+        {
+          "id": "because",
+          "text": "because"
+        },
+        {
+          "id": "so that",
+          "text": "so that"
+        },
+        {
+          "id": "although",
+          "text": "although"
+        },
+        {
+          "id": "unless",
+          "text": "unless"
+        }
+      ],
+      "explanation": "So that introduces purpose."
+    },
+    {
+      "id": "conj-31",
+      "number": 31,
+      "kind": "choice",
+      "prompt": "I will read ___ you prepare dinner.",
+      "origin": "original",
+      "answer": "while",
+      "options": [
+        {
+          "id": "until",
+          "text": "until"
+        },
+        {
+          "id": "while",
+          "text": "while"
+        },
+        {
+          "id": "unless",
+          "text": "unless"
+        },
+        {
+          "id": "than",
+          "text": "than"
+        }
+      ],
+      "explanation": "While links simultaneous actions."
+    },
+    {
+      "id": "conj-32",
+      "number": 32,
+      "kind": "choice",
+      "prompt": "You may go ___ you wish.",
+      "origin": "original",
+      "answer": "wherever",
+      "options": [
+        {
+          "id": "whenever",
+          "text": "whenever"
+        },
+        {
+          "id": "wherever",
+          "text": "wherever"
+        },
+        {
+          "id": "although",
+          "text": "although"
+        },
+        {
+          "id": "because",
+          "text": "because"
+        }
+      ],
+      "explanation": "Wherever refers to place."
+    },
+    {
+      "id": "conj-33",
+      "number": 33,
+      "kind": "choice",
+      "prompt": "She opened the door ___ the bell rang.",
+      "origin": "original",
+      "answer": "as soon as",
+      "options": [
+        {
+          "id": "until",
+          "text": "until"
+        },
+        {
+          "id": "as soon as",
+          "text": "as soon as"
+        },
+        {
+          "id": "unless",
+          "text": "unless"
+        },
+        {
+          "id": "whereas",
+          "text": "whereas"
+        }
+      ],
+      "explanation": "As soon as shows an immediate action."
+    },
+    {
+      "id": "conj-34",
+      "number": 34,
+      "kind": "choice",
+      "prompt": "He remained calm ___ everyone else panicked.",
+      "origin": "original",
+      "answer": "whereas",
+      "options": [
+        {
+          "id": "whereas",
+          "text": "whereas"
+        },
+        {
+          "id": "because",
+          "text": "because"
+        },
+        {
+          "id": "unless",
+          "text": "unless"
+        },
+        {
+          "id": "until",
+          "text": "until"
+        }
+      ],
+      "explanation": "Whereas contrasts two situations."
+    },
+    {
+      "id": "conj-35",
+      "number": 35,
+      "kind": "choice",
+      "prompt": "___ you finish your work, you may leave.",
+      "origin": "original",
+      "answer": "Once",
+      "options": [
+        {
+          "id": "Unless",
+          "text": "Unless"
+        },
+        {
+          "id": "Once",
+          "text": "Once"
+        },
+        {
+          "id": "Although",
+          "text": "Although"
+        },
+        {
+          "id": "Whereas",
+          "text": "Whereas"
+        }
+      ],
+      "explanation": "Once means after something happens."
+    },
+    {
+      "id": "conj-36",
+      "number": 36,
+      "kind": "choice",
+      "prompt": "___ had we reached the station than the train arrived.",
+      "origin": "original",
+      "answer": "No sooner",
+      "options": [
+        {
+          "id": "Hardly",
+          "text": "Hardly"
+        },
+        {
+          "id": "No sooner",
+          "text": "No sooner"
+        },
+        {
+          "id": "Unless",
+          "text": "Unless"
+        },
+        {
+          "id": "Neither",
+          "text": "Neither"
+        }
+      ],
+      "explanation": "No sooner pairs with than."
+    },
+    {
+      "id": "conj-37",
+      "number": 37,
+      "kind": "choice",
+      "prompt": "___ had the rain stopped when the players returned.",
+      "origin": "original",
+      "answer": "Scarcely",
+      "options": [
+        {
+          "id": "No sooner",
+          "text": "No sooner"
+        },
+        {
+          "id": "Scarcely",
+          "text": "Scarcely"
+        },
+        {
+          "id": "Neither",
+          "text": "Neither"
+        },
+        {
+          "id": "Either",
+          "text": "Either"
+        }
+      ],
+      "explanation": "Scarcely pairs with when."
+    },
+    {
+      "id": "conj-38",
+      "number": 38,
+      "kind": "choice",
+      "prompt": "You can ___ revise now or practise tomorrow.",
+      "origin": "original",
+      "answer": "either",
+      "options": [
+        {
+          "id": "neither",
+          "text": "neither"
+        },
+        {
+          "id": "either",
+          "text": "either"
+        },
+        {
+          "id": "both",
+          "text": "both"
+        },
+        {
+          "id": "although",
+          "text": "although"
+        }
+      ],
+      "explanation": "Either pairs with or."
+    },
+    {
+      "id": "conj-39",
+      "number": 39,
+      "kind": "choice",
+      "prompt": "___ my brother nor my sister likes the film.",
+      "origin": "original",
+      "answer": "Neither",
+      "options": [
+        {
+          "id": "Either",
+          "text": "Either"
+        },
+        {
+          "id": "Neither",
+          "text": "Neither"
+        },
+        {
+          "id": "Both",
+          "text": "Both"
+        },
+        {
+          "id": "Because",
+          "text": "Because"
+        }
+      ],
+      "explanation": "Neither pairs with nor."
+    },
+    {
+      "id": "conj-40",
+      "number": 40,
+      "kind": "choice",
+      "prompt": "Wait here ___ I come back.",
+      "origin": "original",
+      "answer": "until",
+      "options": [
+        {
+          "id": "because",
+          "text": "because"
+        },
+        {
+          "id": "until",
+          "text": "until"
+        },
+        {
+          "id": "although",
+          "text": "although"
+        },
+        {
+          "id": "whereas",
+          "text": "whereas"
+        }
+      ],
+      "explanation": "Until marks the time when waiting ends."
+    }
+  ]
+}

@@ -1,0 +1,462 @@
+{
+  "slug": "question-tags",
+  "version": 1,
+  "subject": "English Language",
+  "grade": 6,
+  "title": "Question Tags",
+  "batchSize": 5,
+  "questions": [
+    {
+      "id": "qt-01",
+      "number": 1,
+      "kind": "tag",
+      "prompt": "The children are preparing for the annual concert, __________?",
+      "answer": "aren't they?",
+      "explanation": "Positive are; children → they.",
+      "origin": "worksheet"
+    },
+    {
+      "id": "qt-02",
+      "number": 2,
+      "kind": "tag",
+      "prompt": "You haven't seen this movie before, __________?",
+      "answer": "have you?",
+      "explanation": "Negative haven't takes a positive tag.",
+      "origin": "worksheet"
+    },
+    {
+      "id": "qt-03",
+      "number": 3,
+      "kind": "tag",
+      "prompt": "Arjun can solve this puzzle easily, __________?",
+      "answer": "can't he?",
+      "explanation": "Positive can; Arjun → he.",
+      "origin": "worksheet"
+    },
+    {
+      "id": "qt-04",
+      "number": 4,
+      "kind": "tag",
+      "prompt": "Let's take a short break, __________?",
+      "answer": "shall we?",
+      "explanation": "Let's takes shall we?",
+      "origin": "worksheet"
+    },
+    {
+      "id": "qt-05",
+      "number": 5,
+      "kind": "tag",
+      "prompt": "Nobody told you about the change, __________?",
+      "answer": "did they?",
+      "explanation": "Nobody is negative in meaning; use they.",
+      "origin": "worksheet"
+    },
+    {
+      "id": "qt-06",
+      "number": 6,
+      "kind": "tag",
+      "prompt": "Your sister will join us for lunch, __________?",
+      "answer": "won't she?",
+      "explanation": "Positive will; sister → she.",
+      "origin": "worksheet"
+    },
+    {
+      "id": "qt-07",
+      "number": 7,
+      "kind": "tag",
+      "prompt": "The boys were not making any noise, __________?",
+      "answer": "were they?",
+      "explanation": "Were not takes a positive tag.",
+      "origin": "worksheet"
+    },
+    {
+      "id": "qt-08",
+      "number": 8,
+      "kind": "tag",
+      "prompt": "She rarely visits her grandparents, __________?",
+      "answer": "does she?",
+      "explanation": "Rarely is negative in meaning; use does for simple present.",
+      "origin": "worksheet"
+    },
+    {
+      "id": "qt-09",
+      "number": 9,
+      "kind": "tag",
+      "prompt": "Open the window, __________?",
+      "answer": "will you?",
+      "accepted": ["won't you?", "would you?", "can you?", "could you?"],
+      "explanation": "Standard school answer for this command.",
+      "origin": "worksheet"
+    },
+    {
+      "id": "qt-10",
+      "number": 10,
+      "kind": "tag",
+      "prompt": "Everyone enjoyed the school function, __________?",
+      "answer": "didn't they?",
+      "explanation": "Everyone commonly takes they; simple past needs did.",
+      "origin": "worksheet"
+    },
+    {
+      "id": "qt-11",
+      "number": 11,
+      "kind": "tag",
+      "prompt": "Mr Rao waters these plants every day, __________?",
+      "answer": "doesn't he?",
+      "explanation": "Simple present with no helping verb; Mr Rao → he.",
+      "origin": "original"
+    },
+    {
+      "id": "qt-12",
+      "number": 12,
+      "kind": "tag",
+      "prompt": "The children did not finish the project, __________?",
+      "answer": "did they?",
+      "explanation": "Negative simple past takes positive did.",
+      "origin": "original"
+    },
+    {
+      "id": "qt-13",
+      "number": 13,
+      "kind": "tag",
+      "prompt": "Asha has packed her schoolbag, __________?",
+      "answer": "hasn't she?",
+      "explanation": "Echo the helping verb has.",
+      "origin": "original"
+    },
+    {
+      "id": "qt-14",
+      "number": 14,
+      "kind": "tag",
+      "prompt": "We were waiting outside the hall, __________?",
+      "answer": "weren't we?",
+      "explanation": "Echo were and reverse the positive statement.",
+      "origin": "original"
+    },
+    {
+      "id": "qt-15",
+      "number": 15,
+      "kind": "tag",
+      "prompt": "You can solve this without a calculator, __________?",
+      "answer": "can't you?",
+      "explanation": "Echo the modal can.",
+      "origin": "original"
+    },
+    {
+      "id": "qt-16",
+      "number": 16,
+      "kind": "tag",
+      "prompt": "The guests won't arrive before six, __________?",
+      "answer": "will they?",
+      "explanation": "Negative won't takes positive will.",
+      "origin": "original"
+    },
+    {
+      "id": "qt-17",
+      "number": 17,
+      "kind": "tag",
+      "prompt": "I am next in the queue, __________?",
+      "answer": "aren't I?",
+      "explanation": "Special tag for I am.",
+      "origin": "original"
+    },
+    {
+      "id": "qt-18",
+      "number": 18,
+      "kind": "tag",
+      "prompt": "I am not disturbing you, __________?",
+      "answer": "am I?",
+      "explanation": "Negative I am not takes am I?",
+      "origin": "original"
+    },
+    {
+      "id": "qt-19",
+      "number": 19,
+      "kind": "tag",
+      "prompt": "There is enough time to check our answers, __________?",
+      "answer": "isn't there?",
+      "explanation": "Keep there as the tag subject.",
+      "origin": "original"
+    },
+    {
+      "id": "qt-20",
+      "number": 20,
+      "kind": "tag",
+      "prompt": "There weren't any mistakes in the first paragraph, __________?",
+      "answer": "were there?",
+      "explanation": "Negative weren't; keep there.",
+      "origin": "original"
+    },
+    {
+      "id": "qt-21",
+      "number": 21,
+      "kind": "tag",
+      "prompt": "This is your umbrella, __________?",
+      "answer": "isn't it?",
+      "explanation": "This becomes it.",
+      "origin": "original"
+    },
+    {
+      "id": "qt-22",
+      "number": 22,
+      "kind": "tag",
+      "prompt": "Those books are yours, __________?",
+      "answer": "aren't they?",
+      "explanation": "Those books becomes they.",
+      "origin": "original"
+    },
+    {
+      "id": "qt-23",
+      "number": 23,
+      "kind": "tag",
+      "prompt": "No one answered the door, __________?",
+      "answer": "did they?",
+      "explanation": "No one is negative in meaning; use they.",
+      "origin": "original"
+    },
+    {
+      "id": "qt-24",
+      "number": 24,
+      "kind": "tag",
+      "prompt": "Nothing has changed since yesterday, __________?",
+      "answer": "has it?",
+      "explanation": "Nothing is negative in meaning and takes it.",
+      "origin": "original"
+    },
+    {
+      "id": "qt-25",
+      "number": 25,
+      "kind": "tag",
+      "prompt": "Somebody has taken my ruler, __________?",
+      "answer": "haven't they?",
+      "explanation": "Somebody commonly takes they; echo has as have to agree with they.",
+      "origin": "original"
+    },
+    {
+      "id": "qt-26",
+      "number": 26,
+      "kind": "tag",
+      "prompt": "He never misses football practice, __________?",
+      "answer": "does he?",
+      "explanation": "Never is negative in meaning; use simple-present does.",
+      "origin": "original"
+    },
+    {
+      "id": "qt-27",
+      "number": 27,
+      "kind": "tag",
+      "prompt": "We should read the instructions first, __________?",
+      "answer": "shouldn't we?",
+      "explanation": "Echo the modal should.",
+      "origin": "original"
+    },
+    {
+      "id": "qt-28",
+      "number": 28,
+      "kind": "tag",
+      "prompt": "The train will have left by then, __________?",
+      "answer": "won't it?",
+      "explanation": "Future perfect still uses will as its first helping verb.",
+      "origin": "original"
+    },
+    {
+      "id": "qt-29",
+      "number": 29,
+      "kind": "tag",
+      "prompt": "If Maya calls, you will tell her the news, __________?",
+      "answer": "won't you?",
+      "explanation": "The tag follows the main clause, you will tell her the news.",
+      "origin": "original"
+    },
+    {
+      "id": "qt-30",
+      "number": 30,
+      "kind": "tag",
+      "prompt": "Don't forget to write your name, __________?",
+      "answer": "will you?",
+      "accepted": ["would you?"],
+      "explanation": "Standard tag for a negative command.",
+      "origin": "original"
+    },
+    {
+      "id": "qt-31",
+      "number": 31,
+      "kind": "choice",
+      "prompt": "Let's check the final answer, __________?",
+      "answer": "b",
+      "explanation": "Let's takes shall we?",
+      "origin": "original",
+      "options": [
+        {
+          "id": "a",
+          "text": "will we?"
+        },
+        {
+          "id": "b",
+          "text": "shall we?"
+        },
+        {
+          "id": "c",
+          "text": "do we?"
+        },
+        {
+          "id": "d",
+          "text": "won't we?"
+        }
+      ]
+    },
+    {
+      "id": "qt-32",
+      "number": 32,
+      "kind": "choice",
+      "prompt": "Few people noticed the spelling mistake, __________?",
+      "answer": "b",
+      "explanation": "Few is negative in meaning; simple past needs did.",
+      "origin": "original",
+      "options": [
+        {
+          "id": "a",
+          "text": "didn't they?"
+        },
+        {
+          "id": "b",
+          "text": "did they?"
+        },
+        {
+          "id": "c",
+          "text": "weren't they?"
+        },
+        {
+          "id": "d",
+          "text": "were they?"
+        }
+      ]
+    },
+    {
+      "id": "qt-33",
+      "number": 33,
+      "kind": "choice",
+      "prompt": "Everyone is ready for the test, __________?",
+      "answer": "c",
+      "explanation": "Everyone commonly takes they; are agrees with they.",
+      "origin": "original",
+      "options": [
+        {
+          "id": "a",
+          "text": "isn't he?"
+        },
+        {
+          "id": "b",
+          "text": "is it?"
+        },
+        {
+          "id": "c",
+          "text": "aren't they?"
+        },
+        {
+          "id": "d",
+          "text": "are they?"
+        }
+      ]
+    },
+    {
+      "id": "qt-34",
+      "number": 34,
+      "kind": "choice",
+      "prompt": "The news isn't encouraging, __________?",
+      "answer": "b",
+      "explanation": "News is singular; isn't takes positive is.",
+      "origin": "original",
+      "options": [
+        {
+          "id": "a",
+          "text": "isn't it?"
+        },
+        {
+          "id": "b",
+          "text": "is it?"
+        },
+        {
+          "id": "c",
+          "text": "aren't they?"
+        },
+        {
+          "id": "d",
+          "text": "are they?"
+        }
+      ]
+    },
+    {
+      "id": "qt-35",
+      "number": 35,
+      "kind": "choice",
+      "prompt": "She seldom forgets her homework, __________?",
+      "answer": "b",
+      "explanation": "Seldom is negative in meaning; use simple-present does.",
+      "origin": "original",
+      "options": [
+        {
+          "id": "a",
+          "text": "doesn't she?"
+        },
+        {
+          "id": "b",
+          "text": "does she?"
+        },
+        {
+          "id": "c",
+          "text": "isn't she?"
+        },
+        {
+          "id": "d",
+          "text": "is she?"
+        }
+      ]
+    },
+    {
+      "id": "qt-36",
+      "number": 36,
+      "kind": "correction",
+      "prompt": "Your brother plays chess, don't he?",
+      "answer": "doesn't he?",
+      "explanation": "Third-person singular simple present needs does.",
+      "origin": "original"
+    },
+    {
+      "id": "qt-37",
+      "number": 37,
+      "kind": "correction",
+      "prompt": "The girls weren't singing, weren't they?",
+      "answer": "were they?",
+      "explanation": "Negative statement needs a positive tag.",
+      "origin": "original"
+    },
+    {
+      "id": "qt-38",
+      "number": 38,
+      "kind": "correction",
+      "prompt": "There are three tickets left, aren't they?",
+      "answer": "aren't there?",
+      "explanation": "Keep there as the tag subject.",
+      "origin": "original"
+    },
+    {
+      "id": "qt-39",
+      "number": 39,
+      "kind": "correction",
+      "prompt": "I am your partner, amn't I?",
+      "answer": "aren't I?",
+      "explanation": "Standard special tag for I am.",
+      "origin": "original"
+    },
+    {
+      "id": "qt-40",
+      "number": 40,
+      "kind": "correction",
+      "prompt": "Let's begin, will we?",
+      "answer": "shall we?",
+      "explanation": "Let's takes shall we?",
+      "origin": "original"
+    }
+  ]
+}

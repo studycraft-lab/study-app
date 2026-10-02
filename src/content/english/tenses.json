@@ -1,0 +1,590 @@
+{
+  "slug": "tenses",
+  "version": 1,
+  "grade": 6,
+  "subject": "English Language",
+  "title": "Tenses",
+  "batchSize": 5,
+  "introduction": "Choose the right time and verb form, then practise five questions at a time.",
+  "rules": [
+    {
+      "title": "Simple: facts, habits and finished actions",
+      "body": "Simple present describes habits and facts; simple past describes completed past events; simple future uses will + base verb. Check time clues such as every day, yesterday and tomorrow.",
+      "example": "She walks every day. · She walked yesterday. · She will walk tomorrow."
+    },
+    {
+      "title": "Continuous: action in progress",
+      "body": "Use am/is/are + -ing now, was/were + -ing at a past time, and will be + -ing at a future time. Match the helping verb to the subject.",
+      "example": "She is reading. · They were reading. · He will be reading."
+    },
+    {
+      "title": "Perfect: action completed by a point",
+      "body": "Present perfect uses has/have + past participle; past perfect uses had + participle for an earlier past action; future perfect uses will have + participle before a future deadline.",
+      "example": "She has finished. · She had finished before noon. · She will have finished by Friday."
+    },
+    {
+      "title": "Perfect continuous and time clues",
+      "body": "For an action continuing over time use has/have been, had been or will have been + -ing. Since marks a starting point; for marks a duration.",
+      "example": "He has been waiting since noon. · They had been playing for an hour."
+    }
+  ],
+  "worked": {
+    "prompt": "By Friday, they ___ the project. (finish; future perfect)",
+    "answer": "will have finished",
+    "explanation": "By Friday gives a future deadline, so use will have + finished."
+  },
+  "questions": [
+    {
+      "id": "tense-01",
+      "number": 1,
+      "kind": "rewrite",
+      "prompt": "1.The children are decorating the classroom for the competition.(Simple Past)",
+      "origin": "worksheet",
+      "answer": "The children decorated the classroom for the competition.",
+      "accepted": [],
+      "explanation": "Simple past uses the past form decorated."
+    },
+    {
+      "id": "tense-02",
+      "number": 2,
+      "kind": "rewrite",
+      "prompt": "The chef prepares fresh bread every morning.\n(Past Continuous)",
+      "origin": "worksheet",
+      "answer": "The chef was preparing fresh bread that morning.",
+      "accepted": [
+        "The chef was preparing fresh bread every morning."
+      ],
+      "explanation": "Past continuous uses was preparing. A specific past time sounds more natural than every morning."
+    },
+    {
+      "id": "tense-03",
+      "number": 3,
+      "kind": "rewrite",
+      "prompt": "The mechanic repaired the damaged bicycle.\n(Present Continuous)",
+      "origin": "worksheet",
+      "answer": "The mechanic is repairing the damaged bicycle.",
+      "accepted": [],
+      "explanation": "Present continuous uses is repairing."
+    },
+    {
+      "id": "tense-04",
+      "number": 4,
+      "kind": "rewrite",
+      "prompt": "The students have submitted their projects to the teacher.\n(Past Perfect)",
+      "origin": "worksheet",
+      "answer": "The students had submitted their projects to the teacher.",
+      "accepted": [],
+      "explanation": "Past perfect uses had submitted."
+    },
+    {
+      "id": "tense-05",
+      "number": 5,
+      "kind": "rewrite",
+      "prompt": "The farmer harvested the wheat from the field.\n(Present Perfect)",
+      "origin": "worksheet",
+      "answer": "The farmer has harvested the wheat from the field.",
+      "accepted": [],
+      "explanation": "Present perfect uses has harvested."
+    },
+    {
+      "id": "tense-06",
+      "number": 6,
+      "kind": "rewrite",
+      "prompt": "The workers have been painting the school building since Monday.(Simple Past)",
+      "origin": "worksheet",
+      "answer": "The workers painted the school building.",
+      "accepted": [],
+      "explanation": "Simple past uses painted."
+    },
+    {
+      "id": "tense-07",
+      "number": 7,
+      "kind": "rewrite",
+      "prompt": "The doctor examines every patient carefully.\n(Future Continuous)",
+      "origin": "worksheet",
+      "answer": "The doctor will be examining every patient carefully.",
+      "accepted": [],
+      "explanation": "Future continuous uses will be examining."
+    },
+    {
+      "id": "tense-08",
+      "number": 8,
+      "kind": "rewrite",
+      "prompt": "The train will leave the station at six o'clock tomorrow morning.(Future Perfect)",
+      "origin": "worksheet",
+      "answer": "The train will have left the station by six o'clock tomorrow morning.",
+      "accepted": [
+        "The train will have left the station at six o'clock tomorrow morning."
+      ],
+      "explanation": "Future perfect uses will have left. By states a deadline; the worksheet key changes at to by."
+    },
+    {
+      "id": "tense-09",
+      "number": 9,
+      "kind": "rewrite",
+      "prompt": "The musician was practising the piano when the lights went out. (Present Perfect Continuous)",
+      "origin": "worksheet",
+      "answer": "The musician has been practising the piano since morning.",
+      "accepted": [
+        "The musician has been practising the piano since the lights went out."
+      ],
+      "explanation": "Present perfect continuous uses has been practising. Since the lights went out can preserve the original time event."
+    },
+    {
+      "id": "tense-10",
+      "number": 10,
+      "kind": "choice",
+      "prompt": "1. She _____ to the market before it started raining.",
+      "origin": "past_paper",
+      "answer": "c",
+      "accepted": [
+        "b"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "(a) will go"
+        },
+        {
+          "id": "b",
+          "text": "(b) went"
+        },
+        {
+          "id": "c",
+          "text": "(c) had gone"
+        },
+        {
+          "id": "d",
+          "text": "(d) goes"
+        }
+      ],
+      "explanation": "Past perfect shows she had gone before the rain started; simple past is also grammatical here."
+    },
+    {
+      "id": "tense-11",
+      "number": 11,
+      "kind": "choice",
+      "prompt": "2. Which of the following sentences uses the simple present tense correctly?",
+      "origin": "past_paper",
+      "answer": "a",
+      "accepted": [],
+      "options": [
+        {
+          "id": "a",
+          "text": "(a) I conduct yoga classes every morning."
+        },
+        {
+          "id": "b",
+          "text": "(b) I conducted yoga classes every semester."
+        },
+        {
+          "id": "c",
+          "text": "(c) I will be conducting yoga classes in the new school."
+        },
+        {
+          "id": "d",
+          "text": "(d) I have conducted yoga classes."
+        }
+      ],
+      "explanation": "A habitual action uses the simple present."
+    },
+    {
+      "id": "tense-12",
+      "number": 12,
+      "kind": "choice",
+      "prompt": "3. They ____ football every Sunday.",
+      "origin": "past_paper",
+      "answer": "a",
+      "accepted": [],
+      "options": [
+        {
+          "id": "a",
+          "text": "(a) play"
+        },
+        {
+          "id": "b",
+          "text": "(b) will play"
+        },
+        {
+          "id": "c",
+          "text": "(c) have played"
+        },
+        {
+          "id": "d",
+          "text": "(d) were playing"
+        }
+      ],
+      "explanation": "Every Sunday signals a habit."
+    },
+    {
+      "id": "tense-13",
+      "number": 13,
+      "kind": "choice",
+      "prompt": "4. I cannot go out to play because I ______ my homework now.",
+      "origin": "past_paper",
+      "answer": "b",
+      "accepted": [],
+      "options": [
+        {
+          "id": "a",
+          "text": "(a) did"
+        },
+        {
+          "id": "b",
+          "text": "(b) am doing"
+        },
+        {
+          "id": "c",
+          "text": "(c) will do"
+        },
+        {
+          "id": "d",
+          "text": "(d) cannot do"
+        }
+      ],
+      "explanation": "Now signals an action in progress."
+    },
+    {
+      "id": "tense-14",
+      "number": 14,
+      "kind": "choice",
+      "prompt": "5.  Riti _____ to Paris next summer.",
+      "origin": "past_paper",
+      "answer": "c",
+      "accepted": [
+        "b"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "(a) has gone"
+        },
+        {
+          "id": "b",
+          "text": "(b) is going"
+        },
+        {
+          "id": "c",
+          "text": "(c) will go"
+        },
+        {
+          "id": "d",
+          "text": "(d) went"
+        }
+      ],
+      "explanation": "Both will go and is going can describe a future trip; is going often suggests an arrangement."
+    },
+    {
+      "id": "tense-15",
+      "number": 15,
+      "kind": "choice",
+      "prompt": "6. By next year, she ________ her degree.",
+      "origin": "past_paper",
+      "answer": "a",
+      "accepted": [],
+      "options": [
+        {
+          "id": "a",
+          "text": "(a) will have completed"
+        },
+        {
+          "id": "b",
+          "text": "(b) completed"
+        },
+        {
+          "id": "c",
+          "text": "(c) had completed"
+        },
+        {
+          "id": "d",
+          "text": "(d) completes"
+        }
+      ],
+      "explanation": "By next year points to completion before a future time."
+    },
+    {
+      "id": "tense-16",
+      "number": 16,
+      "kind": "choice",
+      "prompt": "11.Ram and Shyam ______ in the garden right now.",
+      "origin": "past_paper",
+      "answer": "b",
+      "accepted": [],
+      "options": [
+        {
+          "id": "a",
+          "text": "(a) will be working"
+        },
+        {
+          "id": "b",
+          "text": "(b) are working"
+        },
+        {
+          "id": "c",
+          "text": "(c) worked"
+        },
+        {
+          "id": "d",
+          "text": "(d) had worked"
+        }
+      ],
+      "explanation": "Right now calls for the present continuous."
+    },
+    {
+      "id": "tense-17",
+      "number": 17,
+      "kind": "fill",
+      "prompt": "(a) My friend _____ (dance) on stage yesterday. (simple past)",
+      "origin": "past_paper",
+      "answer": "danced",
+      "accepted": [],
+      "explanation": "Use the tense named in brackets and agree with the subject."
+    },
+    {
+      "id": "tense-18",
+      "number": 18,
+      "kind": "fill",
+      "prompt": "(b) The government _______ (impose) a fine on tax defaulters.\n         (future continuous)",
+      "origin": "past_paper",
+      "answer": "will be imposing",
+      "accepted": [],
+      "explanation": "Use the tense named in brackets and agree with the subject."
+    },
+    {
+      "id": "tense-19",
+      "number": 19,
+      "kind": "fill",
+      "prompt": "(c) Geography ____ (be) best understood with an atlas. (simple present)",
+      "origin": "past_paper",
+      "answer": "is",
+      "accepted": [],
+      "explanation": "Use the tense named in brackets and agree with the subject."
+    },
+    {
+      "id": "tense-20",
+      "number": 20,
+      "kind": "fill",
+      "prompt": "(d) We ______ (visit) the museum twice before it closed last year. (past perfect)",
+      "origin": "past_paper",
+      "answer": "had visited",
+      "accepted": [],
+      "explanation": "Use the tense named in brackets and agree with the subject."
+    },
+    {
+      "id": "tense-21",
+      "number": 21,
+      "kind": "fill",
+      "prompt": "(e) The company ________ (work) on the product launch. (simple future)",
+      "origin": "past_paper",
+      "answer": "will work",
+      "accepted": [],
+      "explanation": "Use the tense named in brackets and agree with the subject."
+    },
+    {
+      "id": "tense-22",
+      "number": 22,
+      "kind": "fill",
+      "prompt": "We … (1)… (reach) there early in the morning.",
+      "context": "Example: (0) went. Last weekend, I … (0)… (go) to the park with my family. We … (1)… (reach) there early in the morning. First, we …(2)… (sit) under a big tree. My brother...(3)...(made) some sandwiches while I … (4)… (arrange) the plates. After eating, we … (5)…(take) a long walk around the lake. We … (6)…(see) many ducks swimming in the water. Later, we … (7)…(play) some games like badminton and cricket. Everyone … (8)… (be) very happy and tired by the end of the day.",
+      "origin": "past_paper",
+      "answer": "reached",
+      "accepted": [],
+      "explanation": "Last weekend places this action in the past.",
+      "blankNumber": 1
+    },
+    {
+      "id": "tense-23",
+      "number": 23,
+      "kind": "fill",
+      "prompt": "First, we …(2)… (sit) under a big tree.",
+      "context": "Example: (0) went. Last weekend, I … (0)… (go) to the park with my family. We … (1)… (reach) there early in the morning. First, we …(2)… (sit) under a big tree. My brother...(3)...(made) some sandwiches while I … (4)… (arrange) the plates. After eating, we … (5)…(take) a long walk around the lake. We … (6)…(see) many ducks swimming in the water. Later, we … (7)…(play) some games like badminton and cricket. Everyone … (8)… (be) very happy and tired by the end of the day.",
+      "origin": "past_paper",
+      "answer": "sat",
+      "accepted": [],
+      "explanation": "Last weekend places this action in the past.",
+      "blankNumber": 2
+    },
+    {
+      "id": "tense-24",
+      "number": 24,
+      "kind": "fill",
+      "prompt": "My brother...(3)...(made) some sandwiches while I … (4)… (arrange) the plates.",
+      "context": "Example: (0) went. Last weekend, I … (0)… (go) to the park with my family. We … (1)… (reach) there early in the morning. First, we …(2)… (sit) under a big tree. My brother...(3)...(made) some sandwiches while I … (4)… (arrange) the plates. After eating, we … (5)…(take) a long walk around the lake. We … (6)…(see) many ducks swimming in the water. Later, we … (7)…(play) some games like badminton and cricket. Everyone … (8)… (be) very happy and tired by the end of the day.",
+      "origin": "past_paper",
+      "answer": "made",
+      "accepted": [],
+      "explanation": "Last weekend places this action in the past.",
+      "blankNumber": 3
+    },
+    {
+      "id": "tense-25",
+      "number": 25,
+      "kind": "fill",
+      "prompt": "My brother...(3)...(made) some sandwiches while I … (4)… (arrange) the plates.",
+      "context": "Example: (0) went. Last weekend, I … (0)… (go) to the park with my family. We … (1)… (reach) there early in the morning. First, we …(2)… (sit) under a big tree. My brother...(3)...(made) some sandwiches while I … (4)… (arrange) the plates. After eating, we … (5)…(take) a long walk around the lake. We … (6)…(see) many ducks swimming in the water. Later, we … (7)…(play) some games like badminton and cricket. Everyone … (8)… (be) very happy and tired by the end of the day.",
+      "origin": "past_paper",
+      "answer": "arranged",
+      "accepted": [],
+      "explanation": "Last weekend places this action in the past.",
+      "blankNumber": 4
+    },
+    {
+      "id": "tense-26",
+      "number": 26,
+      "kind": "fill",
+      "prompt": "After eating, we … (5)…(take) a long walk around the lake.",
+      "context": "Example: (0) went. Last weekend, I … (0)… (go) to the park with my family. We … (1)… (reach) there early in the morning. First, we …(2)… (sit) under a big tree. My brother...(3)...(made) some sandwiches while I … (4)… (arrange) the plates. After eating, we … (5)…(take) a long walk around the lake. We … (6)…(see) many ducks swimming in the water. Later, we … (7)…(play) some games like badminton and cricket. Everyone … (8)… (be) very happy and tired by the end of the day.",
+      "origin": "past_paper",
+      "answer": "took",
+      "accepted": [],
+      "explanation": "Last weekend places this action in the past.",
+      "blankNumber": 5
+    },
+    {
+      "id": "tense-27",
+      "number": 27,
+      "kind": "fill",
+      "prompt": "We … (6)…(see) many ducks swimming in the water.",
+      "context": "Example: (0) went. Last weekend, I … (0)… (go) to the park with my family. We … (1)… (reach) there early in the morning. First, we …(2)… (sit) under a big tree. My brother...(3)...(made) some sandwiches while I … (4)… (arrange) the plates. After eating, we … (5)…(take) a long walk around the lake. We … (6)…(see) many ducks swimming in the water. Later, we … (7)…(play) some games like badminton and cricket. Everyone … (8)… (be) very happy and tired by the end of the day.",
+      "origin": "past_paper",
+      "answer": "saw",
+      "accepted": [],
+      "explanation": "Last weekend places this action in the past.",
+      "blankNumber": 6
+    },
+    {
+      "id": "tense-28",
+      "number": 28,
+      "kind": "fill",
+      "prompt": "Later, we … (7)…(play) some games like badminton and cricket.",
+      "context": "Example: (0) went. Last weekend, I … (0)… (go) to the park with my family. We … (1)… (reach) there early in the morning. First, we …(2)… (sit) under a big tree. My brother...(3)...(made) some sandwiches while I … (4)… (arrange) the plates. After eating, we … (5)…(take) a long walk around the lake. We … (6)…(see) many ducks swimming in the water. Later, we … (7)…(play) some games like badminton and cricket. Everyone … (8)… (be) very happy and tired by the end of the day.",
+      "origin": "past_paper",
+      "answer": "played",
+      "accepted": [],
+      "explanation": "Last weekend places this action in the past.",
+      "blankNumber": 7
+    },
+    {
+      "id": "tense-29",
+      "number": 29,
+      "kind": "fill",
+      "prompt": "Everyone … (8)… (be) very happy and tired by the end of the day.",
+      "context": "Example: (0) went. Last weekend, I … (0)… (go) to the park with my family. We … (1)… (reach) there early in the morning. First, we …(2)… (sit) under a big tree. My brother...(3)...(made) some sandwiches while I … (4)… (arrange) the plates. After eating, we … (5)…(take) a long walk around the lake. We … (6)…(see) many ducks swimming in the water. Later, we … (7)…(play) some games like badminton and cricket. Everyone … (8)… (be) very happy and tired by the end of the day.",
+      "origin": "past_paper",
+      "answer": "was",
+      "accepted": [],
+      "explanation": "Last weekend places this action in the past.",
+      "blankNumber": 8
+    },
+    {
+      "id": "tense-30",
+      "number": 30,
+      "kind": "fill",
+      "prompt": "By the time we arrived, the play ___. (already begin; past perfect)",
+      "origin": "original",
+      "answer": "had already begun",
+      "accepted": [],
+      "explanation": "The earlier past action uses had + past participle."
+    },
+    {
+      "id": "tense-31",
+      "number": 31,
+      "kind": "fill",
+      "prompt": "She ___ for an hour when the rain began. (read; past perfect continuous)",
+      "origin": "original",
+      "answer": "had been reading",
+      "accepted": [],
+      "explanation": "An action continuing before a past event uses had been + -ing."
+    },
+    {
+      "id": "tense-32",
+      "number": 32,
+      "kind": "fill",
+      "prompt": "I ___ my homework when you called. (do; past continuous)",
+      "origin": "original",
+      "answer": "was doing",
+      "accepted": [],
+      "explanation": "An ongoing past action uses was or were + -ing."
+    },
+    {
+      "id": "tense-33",
+      "number": 33,
+      "kind": "fill",
+      "prompt": "By Friday, they ___ the project. (finish; future perfect)",
+      "origin": "original",
+      "answer": "will have finished",
+      "accepted": [],
+      "explanation": "Future perfect uses will have + past participle."
+    },
+    {
+      "id": "tense-34",
+      "number": 34,
+      "kind": "fill",
+      "prompt": "He ___ here since 2021. (live; present perfect continuous)",
+      "origin": "original",
+      "answer": "has been living",
+      "accepted": [],
+      "explanation": "Since marks the start of an action continuing now."
+    },
+    {
+      "id": "tense-35",
+      "number": 35,
+      "kind": "fill",
+      "prompt": "The train usually ___ at six. (leave; simple present)",
+      "origin": "original",
+      "answer": "leaves",
+      "accepted": [],
+      "explanation": "A timetable or habit uses simple present."
+    },
+    {
+      "id": "tense-36",
+      "number": 36,
+      "kind": "fill",
+      "prompt": "Listen! Someone ___ at the door. (knock; present continuous)",
+      "origin": "original",
+      "answer": "is knocking",
+      "accepted": [],
+      "explanation": "Listen signals something happening now."
+    },
+    {
+      "id": "tense-37",
+      "number": 37,
+      "kind": "fill",
+      "prompt": "They ___ the match before the storm began. (win; past perfect)",
+      "origin": "original",
+      "answer": "had won",
+      "accepted": [],
+      "explanation": "The win happened before another past event."
+    },
+    {
+      "id": "tense-38",
+      "number": 38,
+      "kind": "fill",
+      "prompt": "We ___ our cousins next weekend. (visit; simple future)",
+      "origin": "original",
+      "answer": "will visit",
+      "accepted": [],
+      "explanation": "Will + base verb forms the simple future."
+    },
+    {
+      "id": "tense-39",
+      "number": 39,
+      "kind": "fill",
+      "prompt": "The children ___ when the teacher entered. (talk; past continuous)",
+      "origin": "original",
+      "answer": "were talking",
+      "accepted": [],
+      "explanation": "A past action in progress uses were + -ing."
+    },
+    {
+      "id": "tense-40",
+      "number": 40,
+      "kind": "fill",
+      "prompt": "She ___ her keys, so she cannot open the door. (lose; present perfect)",
+      "origin": "original",
+      "answer": "has lost",
+      "accepted": [],
+      "explanation": "A past event with a present result uses present perfect."
+    }
+  ]
+}

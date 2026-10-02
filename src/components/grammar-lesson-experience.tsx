@@ -5,8 +5,8 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { AppHeader } from "./app-header";
 
-type Slug = "prepositions" | "conjunctions";
-type Question = { id: string; number: number; kind: "fill" | "join" | "choice"; prompt: string; origin: string; options?: { id: string; text: string }[] };
+type Slug = "prepositions" | "conjunctions" | "tenses" | "pronouns";
+type Question = { id: string; number: number; kind: "fill" | "join" | "choice" | "rewrite" | "identify"; prompt: string; origin: string; options?: { id: string; text: string }[]; context?: string; blankNumber?: number };
 type Result = { id: string; number: number; status: "correct" | "incorrect" | "review"; expectedAnswer: string; explanation: string };
 type Batch = { batchIndex: number; answers: string[]; results: Result[] };
 type Lesson = { title: string; batchSize: number; introduction: string; rules: { title: string; body: string; example: string }[]; worked: { prompt: string; answer: string; explanation: string } };
@@ -28,6 +28,7 @@ export function GrammarLessonExperience({ slug }: { slug: Slug }) {
   const saved = batches.find((batch) => batch.batchIndex === batchIndex);
   const checked = saved && !editing ? saved : null;
   const currentQuestions = lesson ? questions.slice(batchIndex * lesson.batchSize, (batchIndex + 1) * lesson.batchSize) : [];
+  const passage = currentQuestions.find((question) => question.context)?.context;
   const correctCount = batches.reduce((count, batch) => count + batch.results.filter((result) => result.status === "correct").length, 0);
   const reviewCount = batches.reduce((count, batch) => count + batch.results.filter((result) => result.status === "review").length, 0);
 
@@ -94,14 +95,15 @@ export function GrammarLessonExperience({ slug }: { slug: Slug }) {
       {phase === "practice" && lesson && <>
         <header className="grammar-heading"><p className="eyebrow">English Language · {lesson.title}</p><h1>Batch {batchIndex + 1} of {batchCount}</h1><p>Answer these five together, then check them in one step. You may leave an answer blank.</p></header>
         <div className="grammar-batch-nav" aria-label="Question batches">{Array.from({ length: batchCount }, (_, index) => <button key={index} type="button" aria-current={index === batchIndex ? "step" : undefined} className={index === batchIndex ? "is-current" : ""} onClick={() => openBatch(index)}>{index + 1}{batches.some((batch) => batch.batchIndex === index) ? " ✓" : ""}</button>)}</div>
+        {passage && <details className="grammar-worked" open><summary>Read the past-paper passage</summary><p>{passage}</p></details>}
         <div className="grammar-questions">{currentQuestions.map((question, index) => {
           const result = checked?.results[index];
           return <article className={`grammar-question${result?.status === "correct" ? " is-correct" : result?.status === "incorrect" ? " is-incorrect" : ""}`} key={question.id}>
             <p className="grammar-question-number">Question {question.number}{question.origin === "worksheet" ? " · School worksheet" : question.origin === "past_paper" ? " · Last year’s paper" : ""}</p>
             <h2>{question.prompt}</h2>
             {question.kind === "choice" ? <fieldset disabled={Boolean(checked) || busy}><legend>Choose the best answer</legend>{question.options?.map((option) => <label key={option.id}><input type="radio" name={question.id} value={option.id} checked={answers[index] === option.id} onChange={() => setAnswer(index, option.id)} />{option.text}</label>)}</fieldset>
-              : <label className={`grammar-answer${question.kind === "join" ? " grammar-answer-join" : ""}`}>{question.kind === "join" ? "Join the sentences without using and, but or so" : "Write the missing word or phrase"}
-                {question.kind === "join" ? <textarea disabled={Boolean(checked) || busy} value={answers[index] ?? ""} onChange={(event) => setAnswer(index, event.target.value)} maxLength={500} rows={3} />
+              : <label className={`grammar-answer${question.kind === "join" || question.kind === "rewrite" ? " grammar-answer-join" : ""}`}>{question.kind === "join" ? "Join the sentences without using and, but or so" : question.kind === "rewrite" ? "Rewrite the complete sentence" : question.kind === "identify" ? "Write the pronoun and its kind, e.g. that — relative" : question.blankNumber ? `Write the word for blank ${question.blankNumber}` : "Write the missing word or phrase"}
+                {question.kind === "join" || question.kind === "rewrite" ? <textarea disabled={Boolean(checked) || busy} value={answers[index] ?? ""} onChange={(event) => setAnswer(index, event.target.value)} maxLength={500} rows={3} />
                   : <input autoComplete="off" disabled={Boolean(checked) || busy} value={answers[index] ?? ""} onChange={(event) => setAnswer(index, event.target.value)} maxLength={100} />}</label>}
             {result && <div className="grammar-feedback" role="status"><strong>{result.status === "correct" ? "Correct" : result.status === "review" ? "Review this answer" : `Expected: ${result.expectedAnswer}`}</strong><p>{result.explanation}</p>{result.status === "review" && <p>Model answer: {result.expectedAnswer}</p>}</div>}
           </article>;

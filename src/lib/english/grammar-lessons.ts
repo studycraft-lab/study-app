@@ -1,19 +1,27 @@
 import prepositions from "@/content/english/prepositions.json";
 import conjunctions from "@/content/english/conjunctions.json";
+import tenses from "@/content/english/tenses.json";
+import pronouns from "@/content/english/pronouns.json";
 
-export const GRAMMAR_LESSONS = { prepositions, conjunctions };
+export const GRAMMAR_LESSONS = { prepositions, conjunctions, tenses, pronouns };
 export type GrammarSlug = keyof typeof GRAMMAR_LESSONS;
-export type GrammarQuestion = (typeof prepositions.questions)[number] | (typeof conjunctions.questions)[number];
+export type GrammarQuestion = (typeof prepositions.questions)[number] | (typeof conjunctions.questions)[number] | (typeof tenses.questions)[number] | (typeof pronouns.questions)[number];
 export type GrammarResult = { id: string; number: number; status: "correct" | "incorrect" | "review"; expectedAnswer: string; explanation: string };
 
-export function isGrammarSlug(value: string): value is GrammarSlug { return value === "prepositions" || value === "conjunctions"; }
+export function isGrammarSlug(value: string): value is GrammarSlug { return value === "prepositions" || value === "conjunctions" || value === "tenses" || value === "pronouns"; }
 export function publicGrammarQuestion(question: GrammarQuestion) {
   return { id: question.id, number: question.number, kind: question.kind, prompt: question.prompt, origin: question.origin,
-    options: "options" in question ? question.options : undefined };
+    options: "options" in question ? question.options : undefined,
+    context: "context" in question ? question.context : undefined,
+    blankNumber: "blankNumber" in question ? question.blankNumber : undefined };
 }
 export function normalizeGrammarAnswer(value: string): string {
   return value.normalize("NFKC").replace(/[\u2018\u2019\u02BC]/gu, "'").trim().replace(/[.,!?;:]+$/u, "")
     .replace(/\s+/gu, " ").toLocaleLowerCase("en");
+}
+function normalizeIdentification(value: string): string {
+  return normalizeGrammarAnswer(value).replace(/\bpronoun\b/gu, "")
+    .split(/[^\p{L}\p{N}]+/gu).filter(Boolean).sort().join(" ");
 }
 export function validateGrammarBatch(slug: GrammarSlug, batchIndex: number, answers: unknown): asserts answers is string[] {
   const lesson = GRAMMAR_LESSONS[slug];
@@ -28,7 +36,8 @@ export async function gradeGrammarBatch(slug: GrammarSlug, batchIndex: number, a
   return Promise.all(questions.map(async (question, index): Promise<GrammarResult> => {
     const answer = answers[index].trim();
     const accepted = [question.answer, ...("accepted" in question ? (question.accepted ?? []) : [])];
-    let status: GrammarResult["status"] = accepted.some((item) => normalizeGrammarAnswer(item) === normalizeGrammarAnswer(answer)) ? "correct" : "incorrect";
+    const normalize = question.kind === "identify" ? normalizeIdentification : normalizeGrammarAnswer;
+    let status: GrammarResult["status"] = accepted.some((item) => normalize(item) === normalize(answer)) ? "correct" : "incorrect";
     if (status === "incorrect" && answer) {
       if (question.kind === "join") {
         if (!/\b(and|but|so)\b/iu.test(answer)) {
@@ -44,7 +53,9 @@ export async function gradeGrammarBatch(slug: GrammarSlug, batchIndex: number, a
         }
       } else if ("reviewOnMismatch" in question && question.reviewOnMismatch) status = "review";
     }
-    return { id: question.id, number: question.number, status, expectedAnswer: question.answer,
+    const expectedAnswer = question.kind === "choice" && "options" in question
+      ? question.options?.find((option) => option.id === question.answer)?.text ?? question.answer : question.answer;
+    return { id: question.id, number: question.number, status, expectedAnswer,
       explanation: status === "review" ? "This answer needs a closer look. Compare it with the model answer; it has not been marked wrong." : question.explanation };
   }));
 }

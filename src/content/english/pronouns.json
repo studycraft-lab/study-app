@@ -1,0 +1,482 @@
+{
+  "slug": "pronouns",
+  "version": 1,
+  "grade": 6,
+  "subject": "English Language",
+  "title": "Pronouns",
+  "batchSize": 5,
+  "introduction": "Learn how pronouns work, then practise five questions at a time.",
+  "rules": [
+    {
+      "title": "Subject and object pronouns",
+      "body": "Use I, he, she, we and they as subjects. Use me, him, her, us and them after verbs and prepositions.",
+      "example": "My sister and I went. · The teacher spoke to her."
+    },
+    {
+      "title": "Possessive words",
+      "body": "Mine, yours, his, hers, ours and theirs stand alone. My, your, her, our and their come before a noun. Whose asks or tells who owns something.",
+      "example": "This bag is hers. · Her bag is blue. · Whose bag is this?"
+    },
+    {
+      "title": "Reflexive and emphatic",
+      "body": "Myself, yourself, himself, herself, itself, ourselves and themselves refer back to the subject. A reflexive pronoun is needed by the verb; an emphatic pronoun adds emphasis.",
+      "example": "She hurt herself. · She herself completed the work."
+    },
+    {
+      "title": "Relative, interrogative and indefinite",
+      "body": "Who, whom, whose, which and that can link a clause to a noun. Who and which can ask questions. Someone and nobody refer to unspecified people.",
+      "example": "The boy who won smiled. · Who won? · Nobody answered."
+    }
+  ],
+  "worked": {
+    "prompt": "The coach asked he to join the team.",
+    "answer": "The coach asked him to join the team.",
+    "explanation": "Asked needs an object pronoun, so use him."
+  },
+  "questions": [
+    {
+      "id": "pron-01",
+      "number": 1,
+      "kind": "rewrite",
+      "prompt": "The teacher spoke to she after the class.",
+      "origin": "worksheet",
+      "answer": "The teacher spoke to her after the class.",
+      "accepted": [],
+      "explanation": "Use the pronoun that fits its role in this sentence."
+    },
+    {
+      "id": "pron-02",
+      "number": 2,
+      "kind": "rewrite",
+      "prompt": "The coach asked he to join the team.",
+      "origin": "worksheet",
+      "answer": "The coach asked him to join the team.",
+      "accepted": [],
+      "explanation": "Use the pronoun that fits its role in this sentence."
+    },
+    {
+      "id": "pron-03",
+      "number": 3,
+      "kind": "rewrite",
+      "prompt": "My sister and me went to the park.",
+      "origin": "worksheet",
+      "answer": "My sister and I went to the park.",
+      "accepted": [],
+      "explanation": "Use the pronoun that fits its role in this sentence."
+    },
+    {
+      "id": "pron-04",
+      "number": 4,
+      "kind": "rewrite",
+      "prompt": "The teacher praised they for their excellent work.",
+      "origin": "worksheet",
+      "answer": "The teacher praised them for their excellent work.",
+      "accepted": [],
+      "explanation": "Use the pronoun that fits its role in this sentence."
+    },
+    {
+      "id": "pron-05",
+      "number": 5,
+      "kind": "rewrite",
+      "prompt": "The boy which won the race received a medal.",
+      "origin": "worksheet",
+      "answer": "The boy who won the race received a medal.",
+      "accepted": [
+        "The boy that won the race received a medal."
+      ],
+      "explanation": "Use the pronoun that fits its role in this sentence."
+    },
+    {
+      "id": "pron-06",
+      "number": 6,
+      "kind": "rewrite",
+      "prompt": "The students enjoyed theirselves during the school picnic.",
+      "origin": "worksheet",
+      "answer": "The students enjoyed themselves during the school picnic.",
+      "accepted": [],
+      "explanation": "Use the pronoun that fits its role in this sentence."
+    },
+    {
+      "id": "pron-07",
+      "number": 7,
+      "kind": "rewrite",
+      "prompt": "The author which wrote this famous novel lives in London.",
+      "origin": "worksheet",
+      "answer": "The author who wrote this famous novel lives in London.",
+      "accepted": [
+        "The author that wrote this famous novel lives in London."
+      ],
+      "explanation": "Use the pronoun that fits its role in this sentence."
+    },
+    {
+      "id": "pron-08",
+      "number": 8,
+      "kind": "rewrite",
+      "prompt": "The players congratulated himself after winning the match.",
+      "origin": "worksheet",
+      "answer": "The players congratulated themselves after winning the match.",
+      "accepted": [],
+      "explanation": "Use the pronoun that fits its role in this sentence."
+    },
+    {
+      "id": "pron-09",
+      "number": 9,
+      "kind": "rewrite",
+      "prompt": "The teacher spoke to she about the missing notebook.",
+      "origin": "worksheet",
+      "answer": "The teacher spoke to her about the missing notebook.",
+      "accepted": [],
+      "explanation": "Use the pronoun that fits its role in this sentence."
+    },
+    {
+      "id": "pron-10",
+      "number": 10,
+      "kind": "rewrite",
+      "prompt": "The girl who's bag was left in the classroom came back to collect it.",
+      "origin": "worksheet",
+      "answer": "The girl whose bag was left in the classroom came back to collect it.",
+      "accepted": [],
+      "explanation": "Use the pronoun that fits its role in this sentence."
+    },
+    {
+      "id": "pron-11",
+      "number": 11,
+      "kind": "choice",
+      "prompt": "7. Which of the following sentences uses the emphatic pronoun correctly?",
+      "origin": "past_paper",
+      "answer": "b",
+      "options": [
+        {
+          "id": "a",
+          "text": "(a) She hurt herself while hiking."
+        },
+        {
+          "id": "b",
+          "text": "(b) She herself completed the assignment."
+        },
+        {
+          "id": "c",
+          "text": "(c) She was hurt by the fall."
+        },
+        {
+          "id": "d",
+          "text": "(d) The assignment was completed by her."
+        }
+      ],
+      "explanation": "An emphatic pronoun adds emphasis to the noun or pronoun it refers to."
+    },
+    {
+      "id": "pron-12",
+      "number": 12,
+      "kind": "choice",
+      "prompt": "8. Which of the following sentences has a possessive pronoun?",
+      "origin": "past_paper",
+      "answer": "c",
+      "options": [
+        {
+          "id": "a",
+          "text": "(a) Everyone should submit the book on Monday."
+        },
+        {
+          "id": "b",
+          "text": "(b) Someone left a phone on the table."
+        },
+        {
+          "id": "c",
+          "text": "(c) These projects are theirs."
+        },
+        {
+          "id": "d",
+          "text": "(d) This is the pen I was looking for."
+        }
+      ],
+      "explanation": "Theirs stands alone and shows ownership."
+    },
+    {
+      "id": "pron-13",
+      "number": 13,
+      "kind": "identify",
+      "prompt": "(a) My friend baked a cake that was delicious.",
+      "origin": "past_paper",
+      "answer": "that — relative",
+      "accepted": [],
+      "explanation": "that — relative identifies the pronoun and its kind."
+    },
+    {
+      "id": "pron-14",
+      "number": 14,
+      "kind": "identify",
+      "prompt": "(b) Nobody could explain why the system failed during the test.",
+      "origin": "past_paper",
+      "answer": "Nobody — indefinite",
+      "accepted": [],
+      "explanation": "Nobody — indefinite identifies the pronoun and its kind."
+    },
+    {
+      "id": "pron-15",
+      "number": 15,
+      "kind": "identify",
+      "prompt": "(c) The coach praised himself for the team’s victory.",
+      "origin": "past_paper",
+      "answer": "himself — reflexive",
+      "accepted": [],
+      "explanation": "himself — reflexive identifies the pronoun and its kind."
+    },
+    {
+      "id": "pron-16",
+      "number": 16,
+      "kind": "identify",
+      "prompt": "(d) Which of these options do the girls prefer?",
+      "origin": "past_paper",
+      "answer": "Which — interrogative",
+      "accepted": [],
+      "explanation": "Which — interrogative identifies the pronoun and its kind."
+    },
+    {
+      "id": "pron-17",
+      "number": 17,
+      "kind": "identify",
+      "prompt": "(e) This cafe always plays the songs I like.",
+      "origin": "past_paper",
+      "answer": "I — personal",
+      "accepted": [],
+      "explanation": "I — personal identifies the pronoun and its kind."
+    },
+    {
+      "id": "pron-18",
+      "number": 18,
+      "kind": "fill",
+      "prompt": "Maya and ___ will present the project.",
+      "origin": "original",
+      "answer": "I",
+      "accepted": [],
+      "explanation": "Subject pronoun: I fits this sentence."
+    },
+    {
+      "id": "pron-19",
+      "number": 19,
+      "kind": "fill",
+      "prompt": "The librarian handed the books to Rohan and ___.",
+      "origin": "original",
+      "answer": "me",
+      "accepted": [],
+      "explanation": "Object pronoun: me fits this sentence."
+    },
+    {
+      "id": "pron-20",
+      "number": 20,
+      "kind": "fill",
+      "prompt": "This notebook belongs to me; that one belongs to you. That one is ___.",
+      "origin": "original",
+      "answer": "yours",
+      "accepted": [],
+      "explanation": "Possessive pronoun: yours fits this sentence."
+    },
+    {
+      "id": "pron-21",
+      "number": 21,
+      "kind": "fill",
+      "prompt": "The children packed their bags by ___.",
+      "origin": "original",
+      "answer": "themselves",
+      "accepted": [],
+      "explanation": "Reflexive pronoun: themselves fits this sentence."
+    },
+    {
+      "id": "pron-22",
+      "number": 22,
+      "kind": "fill",
+      "prompt": "The head girl ___ welcomed the visitors.",
+      "origin": "original",
+      "answer": "herself",
+      "accepted": [],
+      "explanation": "Emphatic pronoun: herself fits this sentence."
+    },
+    {
+      "id": "pron-23",
+      "number": 23,
+      "kind": "fill",
+      "prompt": "The scientist ___ discovered the medicine won an award.",
+      "origin": "original",
+      "answer": "who",
+      "accepted": [
+        "that"
+      ],
+      "explanation": "Relative pronoun: who fits this sentence."
+    },
+    {
+      "id": "pron-24",
+      "number": 24,
+      "kind": "fill",
+      "prompt": "___ left this umbrella in the hall?",
+      "origin": "original",
+      "answer": "Who",
+      "accepted": [],
+      "explanation": "Interrogative pronoun: Who fits this sentence."
+    },
+    {
+      "id": "pron-25",
+      "number": 25,
+      "kind": "fill",
+      "prompt": "___ of the two answers is correct; both are wrong.",
+      "origin": "original",
+      "answer": "Neither",
+      "accepted": [],
+      "explanation": "Distributive pronoun: Neither fits this sentence."
+    },
+    {
+      "id": "pron-26",
+      "number": 26,
+      "kind": "fill",
+      "prompt": "Mira owns the red scarf. The red scarf is ___.",
+      "origin": "original",
+      "answer": "hers",
+      "accepted": [],
+      "explanation": "Possessive pronoun: hers fits this sentence."
+    },
+    {
+      "id": "pron-27",
+      "number": 27,
+      "kind": "fill",
+      "prompt": "The boys blamed ___, accepting responsibility for their own error.",
+      "origin": "original",
+      "answer": "themselves",
+      "accepted": [],
+      "explanation": "Reflexive pronoun: themselves fits this sentence."
+    },
+    {
+      "id": "pron-28",
+      "number": 28,
+      "kind": "fill",
+      "prompt": "I found a pencil, but I do not know ___ it belongs to.",
+      "origin": "original",
+      "answer": "whom",
+      "accepted": [
+        "who"
+      ],
+      "explanation": "Object relative/interrogative pronoun: whom fits this sentence."
+    },
+    {
+      "id": "pron-29",
+      "number": 29,
+      "kind": "fill",
+      "prompt": "The woman ___ bag was stolen reported it.",
+      "origin": "original",
+      "answer": "whose",
+      "accepted": [],
+      "explanation": "Possessive relative pronoun: whose fits this sentence."
+    },
+    {
+      "id": "pron-30",
+      "number": 30,
+      "kind": "fill",
+      "prompt": "___ of the students has submitted the form; no one is missing.",
+      "origin": "original",
+      "answer": "Each",
+      "accepted": [],
+      "explanation": "Distributive pronoun: Each fits this sentence."
+    },
+    {
+      "id": "pron-31",
+      "number": 31,
+      "kind": "fill",
+      "prompt": "Please give the prize to ___ won the race.",
+      "origin": "original",
+      "answer": "whoever",
+      "accepted": [],
+      "explanation": "Free relative pronoun: whoever fits this sentence."
+    },
+    {
+      "id": "pron-32",
+      "number": 32,
+      "kind": "fill",
+      "prompt": "The two sisters helped ___ with their homework, taking turns explaining the problems.",
+      "origin": "original",
+      "answer": "each other",
+      "accepted": [],
+      "explanation": "Reciprocal pronoun: each other fits this sentence."
+    },
+    {
+      "id": "pron-33",
+      "number": 33,
+      "kind": "fill",
+      "prompt": "She ___ solved the difficult puzzle.",
+      "origin": "original",
+      "answer": "herself",
+      "accepted": [],
+      "explanation": "Emphatic pronoun: herself fits this sentence."
+    },
+    {
+      "id": "pron-34",
+      "number": 34,
+      "kind": "fill",
+      "prompt": "This is the house ___ we visited last summer.",
+      "origin": "original",
+      "answer": "that",
+      "accepted": [
+        "which"
+      ],
+      "explanation": "Relative pronoun: that fits this sentence."
+    },
+    {
+      "id": "pron-35",
+      "number": 35,
+      "kind": "fill",
+      "prompt": "___ is responsible for this decision?",
+      "origin": "original",
+      "answer": "Who",
+      "accepted": [],
+      "explanation": "Interrogative pronoun: Who fits this sentence."
+    },
+    {
+      "id": "pron-36",
+      "number": 36,
+      "kind": "fill",
+      "prompt": "Those pencils belong to us; these belong to them. These are ___.",
+      "origin": "original",
+      "answer": "theirs",
+      "accepted": [],
+      "explanation": "Possessive pronoun: theirs fits this sentence."
+    },
+    {
+      "id": "pron-37",
+      "number": 37,
+      "kind": "fill",
+      "prompt": "The puppy hurt ___ while jumping.",
+      "origin": "original",
+      "answer": "itself",
+      "accepted": [],
+      "explanation": "Reflexive pronoun: itself fits this sentence."
+    },
+    {
+      "id": "pron-38",
+      "number": 38,
+      "kind": "fill",
+      "prompt": "The principal called Anika and ___.",
+      "origin": "original",
+      "answer": "me",
+      "accepted": [],
+      "explanation": "Object pronoun: me fits this sentence."
+    },
+    {
+      "id": "pron-39",
+      "number": 39,
+      "kind": "fill",
+      "prompt": "One by one, ___ of the guests received a name card.",
+      "origin": "original",
+      "answer": "Each",
+      "accepted": [],
+      "explanation": "Distributive pronoun: Each fits this sentence."
+    },
+    {
+      "id": "pron-40",
+      "number": 40,
+      "kind": "fill",
+      "prompt": "The artist ___ paintings we admired spoke to us.",
+      "origin": "original",
+      "answer": "whose",
+      "accepted": [],
+      "explanation": "Possessive relative pronoun: whose fits this sentence."
+    }
+  ]
+}

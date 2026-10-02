@@ -1,0 +1,505 @@
+{
+  "slug": "adjectives",
+  "version": 1,
+  "grade": 6,
+  "subject": "English Language",
+  "title": "Adjectives",
+  "batchSize": 5,
+  "introduction": "Learn adjective kinds and degrees of comparison, then answer five questions at a time.",
+  "rules": [
+    {
+      "title": "What an adjective does",
+      "body": "An adjective describes or limits a noun. It can come before a noun or after a linking verb such as is, seems or tastes. An adverb describes a verb.",
+      "example": "a narrow lane · The lane is narrow. · The tea tastes sweet."
+    },
+    {
+      "title": "Kinds of adjectives",
+      "body": "Quality describes what something is like; number tells how many or which in order; quantity tells how much. Demonstrative points out, interrogative asks, and possessive shows ownership.",
+      "example": "vast syllabus · third row · much courage · these bats · which book · their country"
+    },
+    {
+      "title": "Degrees of comparison",
+      "body": "Use the positive form without comparison, the comparative for two, and the superlative for a group. Short adjectives often add -er/-est; longer ones use more/most.",
+      "example": "large · larger · largest; beautiful · more beautiful · most beautiful"
+    },
+    {
+      "title": "Irregular forms and common traps",
+      "body": "Good becomes better/best; bad becomes worse/worst. Do not combine more with -er or most with -est. Use fewer for countable things and less for amounts.",
+      "example": "better answer · the best answer · fewer books · less water"
+    }
+  ],
+  "worked": {
+    "prompt": "Of all the players on the team, Vikram is the _____ runner. (fast)",
+    "answer": "fastest",
+    "explanation": "Of all compares Vikram with the whole team, so use the superlative."
+  },
+  "questions": [
+    {
+      "id": "adj-01",
+      "number": 1,
+      "kind": "fill",
+      "prompt": "The blue whale is _____ than the elephant. (large)",
+      "origin": "worksheet",
+      "answer": "larger",
+      "accepted": [],
+      "explanation": "Use the degree of comparison that fits the sentence."
+    },
+    {
+      "id": "adj-02",
+      "number": 2,
+      "kind": "fill",
+      "prompt": "This is the _____ painting in the art exhibition. (beautiful)",
+      "origin": "worksheet",
+      "answer": "most beautiful",
+      "accepted": [],
+      "explanation": "Use the degree of comparison that fits the sentence."
+    },
+    {
+      "id": "adj-03",
+      "number": 3,
+      "kind": "fill",
+      "prompt": "My new school bag is _____ than my old one. (light)",
+      "origin": "worksheet",
+      "answer": "lighter",
+      "accepted": [],
+      "explanation": "Use the degree of comparison that fits the sentence."
+    },
+    {
+      "id": "adj-04",
+      "number": 4,
+      "kind": "fill",
+      "prompt": "Of all the players on the team, Vikram is the _____ runner. (fast)",
+      "origin": "worksheet",
+      "answer": "fastest",
+      "accepted": [],
+      "explanation": "Use the degree of comparison that fits the sentence."
+    },
+    {
+      "id": "adj-05",
+      "number": 5,
+      "kind": "fill",
+      "prompt": "Today's weather is _____ than yesterday's. (pleasant)",
+      "origin": "worksheet",
+      "answer": "more pleasant",
+      "accepted": [
+        "pleasanter"
+      ],
+      "explanation": "Use the degree of comparison that fits the sentence."
+    },
+    {
+      "id": "adj-06",
+      "number": 6,
+      "kind": "fill",
+      "prompt": "This road is _____ than the one we took yesterday. (narrow)",
+      "origin": "worksheet",
+      "answer": "narrower",
+      "accepted": [],
+      "explanation": "Use the degree of comparison that fits the sentence."
+    },
+    {
+      "id": "adj-07",
+      "number": 7,
+      "kind": "fill",
+      "prompt": "Mount Everest is one of the _____ mountains in the world. (high)",
+      "origin": "worksheet",
+      "answer": "highest",
+      "accepted": [],
+      "explanation": "Use the degree of comparison that fits the sentence."
+    },
+    {
+      "id": "adj-08",
+      "number": 8,
+      "kind": "fill",
+      "prompt": "The second chapter of the book was _____ than the first one. (exciting)",
+      "origin": "worksheet",
+      "answer": "more exciting",
+      "accepted": [],
+      "explanation": "Use the degree of comparison that fits the sentence."
+    },
+    {
+      "id": "adj-09",
+      "number": 9,
+      "kind": "fill",
+      "prompt": "This is the _____ meal I have ever tasted. (good)",
+      "origin": "worksheet",
+      "answer": "best",
+      "accepted": [],
+      "explanation": "Use the degree of comparison that fits the sentence."
+    },
+    {
+      "id": "adj-10",
+      "number": 10,
+      "kind": "choice",
+      "prompt": "9. Which of the following sentences uses degree of comparison incorrectly?",
+      "origin": "past_paper",
+      "answer": "a",
+      "options": [
+        {
+          "id": "a",
+          "text": "(a) This is the most quickest way home."
+        },
+        {
+          "id": "b",
+          "text": "(b) This is the best solution ever proposed."
+        },
+        {
+          "id": "c",
+          "text": "(c) He seems cleverer than his brother."
+        },
+        {
+          "id": "d",
+          "text": "(d) Manu is a kind boy."
+        }
+      ],
+      "explanation": "Most quickest wrongly combines two superlative forms."
+    },
+    {
+      "id": "adj-11",
+      "number": 11,
+      "kind": "choice",
+      "prompt": "10. Many buildings surround the park. In this sentence, ‘many’ is an adjective of:",
+      "origin": "past_paper",
+      "answer": "a",
+      "options": [
+        {
+          "id": "a",
+          "text": "(a) Number"
+        },
+        {
+          "id": "b",
+          "text": "(b) Quantity"
+        },
+        {
+          "id": "c",
+          "text": "(c) Interrogative"
+        },
+        {
+          "id": "d",
+          "text": "(d) Quality"
+        }
+      ],
+      "explanation": "Many counts buildings; in this school classification it is an adjective of number."
+    },
+    {
+      "id": "adj-12",
+      "number": 12,
+      "kind": "choice",
+      "prompt": "12. _______ apples are fresh and ripe. Fill in the blank with a demonstrative\n    adjective.",
+      "origin": "past_paper",
+      "answer": "d",
+      "options": [
+        {
+          "id": "a",
+          "text": "(a) That"
+        },
+        {
+          "id": "b",
+          "text": "(b) Many"
+        },
+        {
+          "id": "c",
+          "text": "(c) This"
+        },
+        {
+          "id": "d",
+          "text": "(d) These"
+        }
+      ],
+      "explanation": "These points to plural apples."
+    },
+    {
+      "id": "adj-13",
+      "number": 13,
+      "kind": "identify",
+      "prompt": "(a) The soldiers fought to protect their country.",
+      "origin": "past_paper",
+      "answer": "their — possessive",
+      "accepted": [
+        "their — possessive determiner"
+      ],
+      "explanation": "their — possessive names the adjective and its kind."
+    },
+    {
+      "id": "adj-14",
+      "number": 14,
+      "kind": "identify",
+      "prompt": "(b) He was seated in the third row.",
+      "origin": "past_paper",
+      "answer": "third — numeral",
+      "accepted": [
+        "third — number",
+        "third — ordinal",
+        "third — ordinal numeral"
+      ],
+      "explanation": "third — numeral names the adjective and its kind."
+    },
+    {
+      "id": "adj-15",
+      "number": 15,
+      "kind": "identify",
+      "prompt": "(c) The history syllabus is vast.",
+      "origin": "past_paper",
+      "answer": "vast — quality",
+      "accepted": [
+        "vast — descriptive"
+      ],
+      "explanation": "vast — quality names the adjective and its kind."
+    },
+    {
+      "id": "adj-16",
+      "number": 16,
+      "kind": "identify",
+      "prompt": "(d) These cricket bats are for sale.",
+      "origin": "past_paper",
+      "answer": "These — demonstrative",
+      "accepted": [
+        "These — demonstrative determiner"
+      ],
+      "explanation": "These — demonstrative names the adjective and its kind."
+    },
+    {
+      "id": "adj-17",
+      "number": 17,
+      "kind": "identify",
+      "prompt": "(e) Which book has been awarded the prize?",
+      "origin": "past_paper",
+      "answer": "Which — interrogative",
+      "accepted": [
+        "Which — interrogative determiner"
+      ],
+      "explanation": "Which — interrogative names the adjective and its kind."
+    },
+    {
+      "id": "adj-18",
+      "number": 18,
+      "kind": "fill",
+      "prompt": "(a) The final exam turned out to be ______ than the mid term. (challenging)",
+      "origin": "past_paper",
+      "answer": "more challenging",
+      "accepted": [],
+      "explanation": "Choose the positive, comparative or superlative form from the comparison in the sentence."
+    },
+    {
+      "id": "adj-19",
+      "number": 19,
+      "kind": "fill",
+      "prompt": "(b) This is the ______ decision I have ever had to make. (difficult)",
+      "origin": "past_paper",
+      "answer": "most difficult",
+      "accepted": [],
+      "explanation": "Choose the positive, comparative or superlative form from the comparison in the sentence."
+    },
+    {
+      "id": "adj-20",
+      "number": 20,
+      "kind": "fill",
+      "prompt": "(c) The novel we read last summer was ______. (engaging)",
+      "origin": "past_paper",
+      "answer": "engaging",
+      "accepted": [],
+      "explanation": "Choose the positive, comparative or superlative form from the comparison in the sentence."
+    },
+    {
+      "id": "adj-21",
+      "number": 21,
+      "kind": "fill",
+      "prompt": "(d) Of all the students, she is the ________. (smart)",
+      "origin": "past_paper",
+      "answer": "smartest",
+      "accepted": [],
+      "explanation": "Choose the positive, comparative or superlative form from the comparison in the sentence."
+    },
+    {
+      "id": "adj-22",
+      "number": 22,
+      "kind": "fill",
+      "prompt": "(e) The weather feels _________ than it felt yesterday. (unpredictable)",
+      "origin": "past_paper",
+      "answer": "more unpredictable",
+      "accepted": [],
+      "explanation": "Choose the positive, comparative or superlative form from the comparison in the sentence."
+    },
+    {
+      "id": "adj-23",
+      "number": 23,
+      "kind": "fill",
+      "prompt": "The tea tastes ___. (sweet)",
+      "origin": "original",
+      "answer": "sweet",
+      "accepted": [],
+      "explanation": "After tastes, use an adjective to describe the tea."
+    },
+    {
+      "id": "adj-24",
+      "number": 24,
+      "kind": "fill",
+      "prompt": "Of the two routes, this one is the ___. (short)",
+      "origin": "original",
+      "answer": "shorter",
+      "accepted": [],
+      "explanation": "The comparative is used when comparing two routes."
+    },
+    {
+      "id": "adj-25",
+      "number": 25,
+      "kind": "fill",
+      "prompt": "Of all the runners, Asha is the ___. (fast)",
+      "origin": "original",
+      "answer": "fastest",
+      "accepted": [],
+      "explanation": "Of all calls for the superlative."
+    },
+    {
+      "id": "adj-26",
+      "number": 26,
+      "kind": "fill",
+      "prompt": "This task is ___ than yesterday’s. (good)",
+      "origin": "original",
+      "answer": "better",
+      "accepted": [],
+      "explanation": "Better is the irregular comparative of good."
+    },
+    {
+      "id": "adj-27",
+      "number": 27,
+      "kind": "fill",
+      "prompt": "That was the ___ day of the trip. (bad)",
+      "origin": "original",
+      "answer": "worst",
+      "accepted": [],
+      "explanation": "Worst is the irregular superlative of bad."
+    },
+    {
+      "id": "adj-28",
+      "number": 28,
+      "kind": "fill",
+      "prompt": "I have ___ books than my brother. (few)",
+      "origin": "original",
+      "answer": "fewer",
+      "accepted": [],
+      "explanation": "Use fewer with countable books."
+    },
+    {
+      "id": "adj-29",
+      "number": 29,
+      "kind": "fill",
+      "prompt": "There is ___ water in this jar than in that one. (little)",
+      "origin": "original",
+      "answer": "less",
+      "accepted": [],
+      "explanation": "Use less with uncountable water."
+    },
+    {
+      "id": "adj-30",
+      "number": 30,
+      "kind": "fill",
+      "prompt": "She chose the ___ of the two paintings. (beautiful)",
+      "origin": "original",
+      "answer": "more beautiful",
+      "accepted": [],
+      "explanation": "The comparative describes the better choice of two."
+    },
+    {
+      "id": "adj-31",
+      "number": 31,
+      "kind": "fill",
+      "prompt": "The puppy seems ___ after its nap. (happy)",
+      "origin": "original",
+      "answer": "happy",
+      "accepted": [],
+      "explanation": "Seems takes an adjective describing the puppy."
+    },
+    {
+      "id": "adj-32",
+      "number": 32,
+      "kind": "fill",
+      "prompt": "This is the ___ solution we have found so far. (practical)",
+      "origin": "original",
+      "answer": "most practical",
+      "accepted": [],
+      "explanation": "The superlative compares all solutions found so far."
+    },
+    {
+      "id": "adj-33",
+      "number": 33,
+      "kind": "fill",
+      "prompt": "The crimson scarf belongs to Mira. Which adjective of quality describes the scarf?",
+      "origin": "original",
+      "answer": "crimson",
+      "accepted": [],
+      "explanation": "Crimson describes the colour of the scarf, so it is an adjective of quality."
+    },
+    {
+      "id": "adj-34",
+      "number": 34,
+      "kind": "fill",
+      "prompt": "___ answer is acceptable; you may choose one of the two. (distributive adjective)",
+      "origin": "original",
+      "answer": "Either",
+      "accepted": [],
+      "explanation": "Either singles out one of two alternatives."
+    },
+    {
+      "id": "adj-35",
+      "number": 35,
+      "kind": "fill",
+      "prompt": "This is ___ pen, not yours. (I)",
+      "origin": "original",
+      "answer": "my",
+      "accepted": [],
+      "explanation": "My is the possessive adjective before pen."
+    },
+    {
+      "id": "adj-36",
+      "number": 36,
+      "kind": "fill",
+      "prompt": "I need ___ information before deciding. (far)",
+      "origin": "original",
+      "answer": "further",
+      "accepted": [],
+      "explanation": "Further can mean additional."
+    },
+    {
+      "id": "adj-37",
+      "number": 37,
+      "kind": "fill",
+      "prompt": "The ___ chapter is more difficult than the first. (two)",
+      "origin": "original",
+      "answer": "second",
+      "accepted": [],
+      "explanation": "Second is an ordinal adjective."
+    },
+    {
+      "id": "adj-38",
+      "number": 38,
+      "kind": "fill",
+      "prompt": "Her explanation was ___ than mine. (clear)",
+      "origin": "original",
+      "answer": "clearer",
+      "accepted": [
+        "more clear"
+      ],
+      "explanation": "Clearer is the usual comparative; more clear is also grammatical."
+    },
+    {
+      "id": "adj-39",
+      "number": 39,
+      "kind": "fill",
+      "prompt": "The Himalayas are among the ___ mountain ranges in the world. (high)",
+      "origin": "original",
+      "answer": "highest",
+      "accepted": [],
+      "explanation": "Among the highest uses a superlative with a plural noun."
+    },
+    {
+      "id": "adj-40",
+      "number": 40,
+      "kind": "fill",
+      "prompt": "The captain showed ___ courage during the rescue. (much; adjective of quantity)",
+      "origin": "original",
+      "answer": "much",
+      "accepted": [],
+      "explanation": "Much expresses an amount of uncountable courage."
+    }
+  ]
+}

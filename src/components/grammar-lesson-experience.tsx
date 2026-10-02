@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { AppHeader } from "./app-header";
 
-type Slug = "prepositions" | "conjunctions" | "tenses" | "pronouns";
+type Slug = "prepositions" | "conjunctions" | "tenses" | "pronouns" | "adjectives";
 type Question = { id: string; number: number; kind: "fill" | "join" | "choice" | "rewrite" | "identify"; prompt: string; origin: string; options?: { id: string; text: string }[]; context?: string; blankNumber?: number };
 type Result = { id: string; number: number; status: "correct" | "incorrect" | "review"; expectedAnswer: string; explanation: string };
 type Batch = { batchIndex: number; answers: string[]; results: Result[] };
@@ -102,7 +102,7 @@ export function GrammarLessonExperience({ slug }: { slug: Slug }) {
             <p className="grammar-question-number">Question {question.number}{question.origin === "worksheet" ? " · School worksheet" : question.origin === "past_paper" ? " · Last year’s paper" : ""}</p>
             <h2>{question.prompt}</h2>
             {question.kind === "choice" ? <fieldset disabled={Boolean(checked) || busy}><legend>Choose the best answer</legend>{question.options?.map((option) => <label key={option.id}><input type="radio" name={question.id} value={option.id} checked={answers[index] === option.id} onChange={() => setAnswer(index, option.id)} />{option.text}</label>)}</fieldset>
-              : <label className={`grammar-answer${question.kind === "join" || question.kind === "rewrite" ? " grammar-answer-join" : ""}`}>{question.kind === "join" ? "Join the sentences without using and, but or so" : question.kind === "rewrite" ? "Rewrite the complete sentence" : question.kind === "identify" ? "Write the pronoun and its kind, e.g. that — relative" : question.blankNumber ? `Write the word for blank ${question.blankNumber}` : "Write the missing word or phrase"}
+              : <label className={`grammar-answer${question.kind === "join" || question.kind === "rewrite" ? " grammar-answer-join" : ""}`}>{question.kind === "join" ? "Join the sentences without using and, but or so" : question.kind === "rewrite" ? "Rewrite the complete sentence" : question.kind === "identify" ? slug === "adjectives" ? "Write the adjective and its kind, e.g. vast — quality" : "Write the pronoun and its kind, e.g. that — relative" : question.blankNumber ? `Write the word for blank ${question.blankNumber}` : "Write the missing word or phrase"}
                 {question.kind === "join" || question.kind === "rewrite" ? <textarea disabled={Boolean(checked) || busy} value={answers[index] ?? ""} onChange={(event) => setAnswer(index, event.target.value)} maxLength={500} rows={3} />
                   : <input autoComplete="off" disabled={Boolean(checked) || busy} value={answers[index] ?? ""} onChange={(event) => setAnswer(index, event.target.value)} maxLength={100} />}</label>}
             {result && <div className="grammar-feedback" role="status"><strong>{result.status === "correct" ? "Correct" : result.status === "review" ? "Review this answer" : `Expected: ${result.expectedAnswer}`}</strong><p>{result.explanation}</p>{result.status === "review" && <p>Model answer: {result.expectedAnswer}</p>}</div>}

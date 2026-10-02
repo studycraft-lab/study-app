@@ -3,6 +3,7 @@ import prepositions from "@/content/english/prepositions.json";
 import conjunctions from "@/content/english/conjunctions.json";
 import tenses from "@/content/english/tenses.json";
 import pronouns from "@/content/english/pronouns.json";
+import adjectives from "@/content/english/adjectives.json";
 import { gradeGrammarBatch, normalizeGrammarAnswer, publicGrammarQuestion, validateGrammarBatch } from "./grammar-lessons";
 
 describe("English grammar lesson banks", () => {
@@ -11,6 +12,7 @@ describe("English grammar lesson banks", () => {
     expect(conjunctions.questions).toHaveLength(40);
     expect(tenses.questions).toHaveLength(40);
     expect(pronouns.questions).toHaveLength(40);
+    expect(adjectives.questions).toHaveLength(40);
     expect(prepositions.questions.slice(0, 20).every((question) => question.origin === "worksheet")).toBe(true);
     expect(prepositions.questions.slice(20, 30).every((question) => question.origin === "past_paper")).toBe(true);
     expect(conjunctions.questions.slice(0, 10).every((question) => question.origin === "worksheet")).toBe(true);
@@ -18,10 +20,14 @@ describe("English grammar lesson banks", () => {
     expect(tenses.questions.slice(9, 29).every((question) => question.origin === "past_paper")).toBe(true);
     expect(pronouns.questions.slice(0, 10).every((question) => question.origin === "worksheet")).toBe(true);
     expect(pronouns.questions.slice(10, 17).every((question) => question.origin === "past_paper")).toBe(true);
+    expect(adjectives.questions.slice(0, 9).every((question) => question.origin === "worksheet")).toBe(true);
+    expect(adjectives.questions.slice(9, 22).every((question) => question.origin === "past_paper")).toBe(true);
     expect(prepositions.questions[20].prompt).toBe("(a) The book is lying __________ the table.");
     expect(conjunctions.questions[6].prompt).toBe("The athlete crossed the finish line. The crowd began cheering immediately.");
     expect(tenses.questions[0].prompt).toBe("1.The children are decorating the classroom for the competition.(Simple Past)");
     expect(pronouns.questions[9].prompt).toBe("The girl who's bag was left in the classroom came back to collect it.");
+    expect(adjectives.questions[0].prompt).toBe("The blue whale is _____ than the elephant. (large)");
+    expect(adjectives.questions[12].prompt).toBe("(a) The soldiers fought to protect their country.");
   });
   it("hides answers and explanations from question payloads", () => {
     const question = publicGrammarQuestion(prepositions.questions[0]);
@@ -62,6 +68,18 @@ describe("English grammar lesson banks", () => {
     third[3] = "b";
     expect((await gradeGrammarBatch("tenses", 2, third))[3].status).toBe("correct");
     expect(publicGrammarQuestion(tenses.questions[21]).context).toContain("Last weekend, I … (0)… (go)");
+  });
+  it("grades adjective comparisons, school categories and accepted category names", async () => {
+    const first = adjectives.questions.slice(0, 5).map((question) => question.answer);
+    first[4] = "pleasanter";
+    expect((await gradeGrammarBatch("adjectives", 0, first)).every((result) => result.status === "correct")).toBe(true);
+    const third = adjectives.questions.slice(10, 15).map((question) => question.answer);
+    third[2] = "possessive adjective: their";
+    expect((await gradeGrammarBatch("adjectives", 2, third))[2].status).toBe("correct");
+    expect((await gradeGrammarBatch("adjectives", 2, third))[0].expectedAnswer).toContain("Number");
+    const last = adjectives.questions.slice(35, 40).map((question) => question.answer);
+    last[2] = "MORE CLEAR";
+    expect((await gradeGrammarBatch("adjectives", 7, last))[2].status).toBe("correct");
   });
   it("rejects malformed batches", () => {
     expect(() => validateGrammarBatch("prepositions", 8, Array(5).fill("in"))).toThrow();

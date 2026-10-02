@@ -2,13 +2,14 @@ import prepositions from "@/content/english/prepositions.json";
 import conjunctions from "@/content/english/conjunctions.json";
 import tenses from "@/content/english/tenses.json";
 import pronouns from "@/content/english/pronouns.json";
+import adjectives from "@/content/english/adjectives.json";
 
-export const GRAMMAR_LESSONS = { prepositions, conjunctions, tenses, pronouns };
+export const GRAMMAR_LESSONS = { prepositions, conjunctions, tenses, pronouns, adjectives };
 export type GrammarSlug = keyof typeof GRAMMAR_LESSONS;
-export type GrammarQuestion = (typeof prepositions.questions)[number] | (typeof conjunctions.questions)[number] | (typeof tenses.questions)[number] | (typeof pronouns.questions)[number];
+export type GrammarQuestion = (typeof prepositions.questions)[number] | (typeof conjunctions.questions)[number] | (typeof tenses.questions)[number] | (typeof pronouns.questions)[number] | (typeof adjectives.questions)[number];
 export type GrammarResult = { id: string; number: number; status: "correct" | "incorrect" | "review"; expectedAnswer: string; explanation: string };
 
-export function isGrammarSlug(value: string): value is GrammarSlug { return value === "prepositions" || value === "conjunctions" || value === "tenses" || value === "pronouns"; }
+export function isGrammarSlug(value: string): value is GrammarSlug { return value === "prepositions" || value === "conjunctions" || value === "tenses" || value === "pronouns" || value === "adjectives"; }
 export function publicGrammarQuestion(question: GrammarQuestion) {
   return { id: question.id, number: question.number, kind: question.kind, prompt: question.prompt, origin: question.origin,
     options: "options" in question ? question.options : undefined,
@@ -20,7 +21,7 @@ export function normalizeGrammarAnswer(value: string): string {
     .replace(/\s+/gu, " ").toLocaleLowerCase("en");
 }
 function normalizeIdentification(value: string): string {
-  return normalizeGrammarAnswer(value).replace(/\bpronoun\b/gu, "")
+  return normalizeGrammarAnswer(value).replace(/\b(?:pronoun|adjective|of)\b/gu, "")
     .split(/[^\p{L}\p{N}]+/gu).filter(Boolean).sort().join(" ");
 }
 export function validateGrammarBatch(slug: GrammarSlug, batchIndex: number, answers: unknown): asserts answers is string[] {

@@ -373,8 +373,14 @@
 .grammar-actions > span { color:var(--muted); font-size:.86rem; }
 .grammar-actions > a { color:var(--navy); font-weight:800; padding:12px; }
 .grammar-batch-nav { display:flex; flex-wrap:wrap; gap:8px; margin:0 0 22px; }
-.grammar-batch-nav button { background:var(--card); border:1px solid var(--line); color:var(--navy); min-height:44px; min-width:48px; }
-.grammar-batch-nav button.is-current { background:var(--violet); color:white; }
+.grammar-batch-nav button { align-items:center; background:var(--card); border:1.5px solid var(--line); color:var(--navy); display:grid; font-weight:900; justify-items:center; min-height:54px; min-width:58px; padding:6px 8px; }
+.grammar-batch-nav button small { font-size:.68rem; font-weight:850; line-height:1; }
+.grammar-batch-nav button.is-perfect { background:var(--success-soft); border-color:var(--success); color:var(--success); }
+.grammar-batch-nav button.is-partial { background:var(--sun-soft); border-color:#a96516; color:#754607; }
+.grammar-batch-nav button.is-review { background:var(--violet-soft); border-color:var(--violet); color:#5943a4; }
+.grammar-batch-nav button.is-current { outline:3px solid var(--blue); outline-offset:2px; }
+.grammar-batch-nav button.is-current:not(.is-perfect):not(.is-partial):not(.is-review) { background:var(--blue-soft); }
+.grammar-batch-legend { color:var(--muted); flex-basis:100%; font-size:.76rem; margin:4px 0 0; }
 .grammar-questions { display:grid; gap:16px; }
 .grammar-question { border-left:5px solid var(--violet); }
 .grammar-question.is-correct { border-left-color:var(--success); }
@@ -394,5 +400,6 @@
 .grammar-feedback p { color:var(--ink-soft); line-height:1.5; margin:5px 0 0; }
 .grammar-complete { margin-top:34px; text-align:center; }
 .grammar-complete > strong { color:var(--violet); display:block; font-size:2rem; margin:20px 0; }
+.grammar-complete .grammar-batch-nav { justify-content:center; }
 .grammar-complete .grammar-actions { justify-content:center; }
 @media (max-width:640px) { .grammar-rule-grid { grid-template-columns:1fr; } .grammar-content { margin-top:18px; } .grammar-question { padding:18px; } }

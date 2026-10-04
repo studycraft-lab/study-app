@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { AppHeader } from "./app-header";
+import { GrammarBatchNavigation } from "./grammar-batch-navigation";
 
 type Question = { id: string; number: number; kind: string; prompt: string; options?: { id: string; text: string }[]; origin: string };
 type Result = { id: string; number: number; correct: boolean; expectedAnswer: string; explanation: string };
@@ -102,11 +103,12 @@ export function QuestionTagsExperience() {
         </div>
         <div className="grammar-worked"><strong>Try the steps:</strong> <em>Nobody has finished the puzzle, ____?</em> “Nobody” is negative in meaning; the tag is positive. “Nobody” becomes “they”, and “has” becomes “have”. <strong>Answer: have they?</strong></div>
         <div className="grammar-actions"><button onClick={() => openBatch(batchIndex)}>Start batch {batchIndex + 1} of {batchCount}</button><span>{batches.length} of {batchCount} batches checked</span></div>
+        {batches.length > 0 && <GrammarBatchNavigation batchCount={batchCount} batchSize={lesson?.batchSize ?? 5} batches={batches} currentIndex={-1} onOpen={openBatch} />}
       </>}
 
       {phase === "practice" && <>
         <header className="grammar-heading"><p className="eyebrow">English Language · Question Tags</p><h1>Batch {batchIndex + 1} of {batchCount}</h1><p>Answer these five together, then check them in one step. A blank answer is okay if you do not know it.</p></header>
-        <div className="grammar-batch-nav" aria-label="Question batches">{Array.from({ length: batchCount }, (_, index) => <button key={index} type="button" aria-current={index === batchIndex ? "step" : undefined} className={index === batchIndex ? "is-current" : ""} onClick={() => openBatch(index)}>{index + 1}{batches.some((batch) => batch.batchIndex === index) ? " ✓" : ""}</button>)}</div>
+        <GrammarBatchNavigation batchCount={batchCount} batchSize={lesson?.batchSize ?? 5} batches={batches} currentIndex={batchIndex} onOpen={openBatch} />
         <div className="grammar-questions">{currentQuestions.map((question, index) => {
           const result = checked?.results[index];
           return <article className={`grammar-question${result ? result.correct ? " is-correct" : " is-incorrect" : ""}`} key={question.id}>
@@ -119,7 +121,7 @@ export function QuestionTagsExperience() {
         <div className="grammar-actions">{checked ? <><strong>{checked.results.filter((result) => result.correct).length} of 5 correct</strong><button onClick={nextBatch}>{batches.length === batchCount ? "See results" : "Next five"}</button><button className="button-secondary" onClick={() => setEditing(true)}>Try this batch again</button></> : <button disabled={busy} onClick={() => void checkBatch()}>{busy ? "Checking…" : "Check five answers"}</button>}</div>
       </>}
 
-      {phase === "complete" && <section className="grammar-complete"><p className="eyebrow">English Language · Grammar</p><h1>Question Tags complete</h1><p>You checked all 40 questions in eight short batches.</p><strong>{correctCount} of 40 correct</strong><div className="grammar-actions"><button onClick={() => openBatch(0)}>Review answers</button><button className="button-secondary" disabled={busy} onClick={() => void restart()}>Start again</button><Link href="/study">Back to subjects</Link></div></section>}
+      {phase === "complete" && <section className="grammar-complete"><p className="eyebrow">English Language · Grammar</p><h1>Question Tags complete</h1><p>You checked all 40 questions in eight short batches.</p><strong>{correctCount} of 40 correct</strong><GrammarBatchNavigation batchCount={batchCount} batchSize={lesson?.batchSize ?? 5} batches={batches} currentIndex={-1} onOpen={openBatch} /><div className="grammar-actions"><button onClick={() => openBatch(0)}>Review answers</button><button className="button-secondary" disabled={busy} onClick={() => void restart()}>Start again</button><Link href="/study">Back to subjects</Link></div></section>}
     </section>
   </main>;
 }

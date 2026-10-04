@@ -25,7 +25,7 @@ describe("GrammarLessonExperience rewrite starters", () => {
     expect(boxes[1].value).toBe("The chef prepares fresh bread every morning.");
     fireEvent.change(boxes[0], { target: { value: "The children decorated the classroom for the competition." } });
     expect(boxes[0].value).toBe("The children decorated the classroom for the competition.");
-    fireEvent.click(screen.getByRole("button", { name: "2" }));
+    fireEvent.click(screen.getByRole("button", { name: "Batch 2: not checked" }));
     const next = screen.getAllByRole("textbox", { name: "Rewrite the complete sentence" }) as HTMLTextAreaElement[];
     expect(next[0].value).toBe("The workers have been painting the school building since Monday.");
   });
@@ -52,7 +52,7 @@ describe("GrammarLessonExperience rewrite starters", () => {
     mockLesson("pronouns", [{ batchIndex: 0, answers, results: [] }]);
     render(<GrammarLessonExperience slug="pronouns" />);
     fireEvent.click(await screen.findByRole("button", { name: "Start batch 2 of 8" }));
-    fireEvent.click(screen.getByRole("button", { name: /1 ✓/ }));
+    fireEvent.click(screen.getByRole("button", { name: "Batch 1: 0 of 5 correct" }));
     const boxes = screen.getAllByRole("textbox", { name: "Rewrite the complete sentence" }) as HTMLTextAreaElement[];
     expect(boxes[0].value).toBe("Custom answer one");
     expect(boxes[1].value).toBe("Custom answer two");

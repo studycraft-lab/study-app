@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { AppHeader } from "./app-header";
+import { GrammarBatchNavigation } from "./grammar-batch-navigation";
 
 type Slug = "prepositions" | "conjunctions" | "tenses" | "pronouns" | "adjectives";
 type Question = { id: string; number: number; kind: "fill" | "join" | "choice" | "rewrite" | "identify"; prompt: string; origin: string; options?: { id: string; text: string }[]; context?: string; blankNumber?: number; starter?: string };
@@ -96,10 +97,11 @@ export function GrammarLessonExperience({ slug }: { slug: Slug }) {
         <div className="grammar-rule-grid">{lesson.rules.map((rule, index) => <article key={rule.title}><span>{index + 1}</span><h2>{rule.title}</h2><p>{rule.body}</p><p><strong>{rule.example}</strong></p></article>)}</div>
         <div className="grammar-worked"><strong>Worked example:</strong> <em>{lesson.worked.prompt}</em> <strong>Answer: {lesson.worked.answer}</strong> {lesson.worked.explanation}</div>
         <div className="grammar-actions"><button onClick={() => openBatch(batchIndex)}>Start batch {batchIndex + 1} of {batchCount}</button><span>{batches.length} of {batchCount} batches checked</span></div>
+        {batches.length > 0 && <GrammarBatchNavigation batchCount={batchCount} batchSize={lesson.batchSize} batches={batches} currentIndex={-1} onOpen={openBatch} />}
       </>}
       {phase === "practice" && lesson && <>
         <header className="grammar-heading"><p className="eyebrow">English Language · {lesson.title}</p><h1>Batch {batchIndex + 1} of {batchCount}</h1><p>Answer these five together, then check them in one step. You may leave an answer blank.</p></header>
-        <div className="grammar-batch-nav" aria-label="Question batches">{Array.from({ length: batchCount }, (_, index) => <button key={index} type="button" aria-current={index === batchIndex ? "step" : undefined} className={index === batchIndex ? "is-current" : ""} onClick={() => openBatch(index)}>{index + 1}{batches.some((batch) => batch.batchIndex === index) ? " ✓" : ""}</button>)}</div>
+        <GrammarBatchNavigation batchCount={batchCount} batchSize={lesson.batchSize} batches={batches} currentIndex={batchIndex} onOpen={openBatch} />
         {passage && <details className="grammar-worked" open><summary>Read the past-paper passage</summary><p>{passage}</p></details>}
         <div className="grammar-questions">{currentQuestions.map((question, index) => {
           const result = checked?.results[index];
@@ -115,7 +117,7 @@ export function GrammarLessonExperience({ slug }: { slug: Slug }) {
         })}</div>
         <div className="grammar-actions">{checked ? <><strong>{checked.results.filter((result) => result.status === "correct").length} of 5 correct{checked.results.some((result) => result.status === "review") ? ` · ${checked.results.filter((result) => result.status === "review").length} for review` : ""}</strong><button onClick={nextBatch}>{batches.length === batchCount ? "See results" : "Next five"}</button><button className="button-secondary" onClick={() => setEditing(true)}>Try this batch again</button></> : <button disabled={busy} onClick={() => void checkBatch()}>{busy ? "Checking…" : "Check five answers"}</button>}</div>
       </>}
-      {phase === "complete" && lesson && <section className="grammar-complete"><p className="eyebrow">English Language · Grammar</p><h1>{lesson.title} complete</h1><p>You checked all {questions.length} questions in {batchCount} short batches.</p><strong>{correctCount} of {questions.length} correct{reviewCount ? ` · ${reviewCount} for review` : ""}</strong><div className="grammar-actions"><button onClick={() => openBatch(0)}>Review answers</button><button className="button-secondary" disabled={busy} onClick={() => void restart()}>Start again</button><Link href="/study">Back to subjects</Link></div></section>}
+      {phase === "complete" && lesson && <section className="grammar-complete"><p className="eyebrow">English Language · Grammar</p><h1>{lesson.title} complete</h1><p>You checked all {questions.length} questions in {batchCount} short batches.</p><strong>{correctCount} of {questions.length} correct{reviewCount ? ` · ${reviewCount} for review` : ""}</strong><GrammarBatchNavigation batchCount={batchCount} batchSize={lesson.batchSize} batches={batches} currentIndex={-1} onOpen={openBatch} /><div className="grammar-actions"><button onClick={() => openBatch(0)}>Review answers</button><button className="button-secondary" disabled={busy} onClick={() => void restart()}>Start again</button><Link href="/study">Back to subjects</Link></div></section>}
     </section>
   </main>;
 }

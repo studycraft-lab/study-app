@@ -5,16 +5,18 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { AppHeader } from "./app-header";
 import { GrammarBatchNavigation } from "./grammar-batch-navigation";
+import { GrammarAppeal } from "./grammar-appeal";
 
 type Slug = "prepositions" | "conjunctions" | "tenses" | "pronouns" | "adjectives";
-type Question = { id: string; number: number; kind: "fill" | "join" | "choice" | "rewrite" | "identify"; prompt: string; origin: string; options?: { id: string; text: string }[]; context?: string; blankNumber?: number; starter?: string };
+type Question = { id: string; number: number; kind: "fill" | "join" | "choice" | "rewrite" | "identify"; prompt: string; origin: string; options?: { id: string; text: string }[]; context?: string; blankNumber?: number; starter?: string; requiredConnector?: string };
+type Appeal = { question_id: string; answer: string; status: string; resolved_status: string | null; parent_comment: string | null };
 type Result = { id: string; number: number; status: "correct" | "incorrect" | "review"; expectedAnswer: string; explanation: string };
 type Batch = { batchIndex: number; answers: string[]; results: Result[] };
 type Lesson = { title: string; batchSize: number; introduction: string; rules: { title: string; body: string; example: string }[]; worked: { prompt: string; answer: string; explanation: string } };
 
 function startingAnswers(questions: Question[], batchIndex: number, batchSize: number): string[] {
   return questions.slice(batchIndex * batchSize, (batchIndex + 1) * batchSize).map((question) =>
-    question.kind === "rewrite" ? question.starter ?? question.prompt : question.kind === "join" ? question.prompt : "");
+    question.kind === "rewrite" || question.kind === "join" ? question.starter ?? question.prompt : "");
 }
 
 export function GrammarLessonExperience({ slug }: { slug: Slug }) {
@@ -24,6 +26,7 @@ export function GrammarLessonExperience({ slug }: { slug: Slug }) {
   const [lesson, setLesson] = useState<Lesson | null>(null);
   const [childName, setChildName] = useState("");
   const [batches, setBatches] = useState<Batch[]>([]);
+  const [appeals, setAppeals] = useState<Appeal[]>([]);
   const [batchIndex, setBatchIndex] = useState(0);
   const [answers, setAnswers] = useState<string[]>(Array(5).fill(""));
   const [phase, setPhase] = useState<"loading" | "rules" | "practice" | "complete">("loading");
@@ -48,7 +51,7 @@ export function GrammarLessonExperience({ slug }: { slug: Slug }) {
       const loaded = body.batches as Batch[];
       const size = Number(body.lesson.batchSize);
       const first = Array.from({ length: body.questions.length / size }, (_, index) => index).find((index) => !loaded.some((batch) => batch.batchIndex === index));
-      setLesson(body.lesson); setQuestions(body.questions); setBatches(loaded); setChildName(body.child?.displayName ?? "");
+      setLesson(body.lesson); setQuestions(body.questions); setBatches(loaded); setAppeals(body.appeals ?? []); setChildName(body.child?.displayName ?? "");
       setBatchIndex(first ?? 0); setAnswers(loaded.find((batch) => batch.batchIndex === (first ?? 0))?.answers ?? startingAnswers(body.questions, first ?? 0, size));
       setPhase(first === undefined ? "complete" : "rules");
     }).catch(() => { if (active) setError("Could not open lesson."); });
@@ -68,6 +71,7 @@ export function GrammarLessonExperience({ slug }: { slug: Slug }) {
       const body = await response.json();
       if (!response.ok) throw new Error(body.error ?? "Could not check these answers.");
       const batch = body.batch as Batch;
+      setAppeals((existing) => existing.filter((appeal) => !batch.results.some((result) => result.id === appeal.question_id)));
       setBatches((existing) => [...existing.filter((item) => item.batchIndex !== batchIndex), batch].sort((a, b) => a.batchIndex - b.batchIndex));
       setEditing(false);
     } catch (cause) { setError(cause instanceof Error ? cause.message : "Could not check these answers."); }
@@ -82,7 +86,7 @@ export function GrammarLessonExperience({ slug }: { slug: Slug }) {
     try {
       const response = await fetch(endpoint, { method: "DELETE" });
       if (!response.ok) throw new Error((await response.json()).error ?? "Could not restart lesson.");
-      setBatches([]); setBatchIndex(0); setAnswers(startingAnswers(questions, 0, lesson?.batchSize ?? 5)); setEditing(false); setPhase("rules");
+      setBatches([]); setAppeals([]); setBatchIndex(0); setAnswers(startingAnswers(questions, 0, lesson?.batchSize ?? 5)); setEditing(false); setPhase("rules");
     } catch (cause) { setError(cause instanceof Error ? cause.message : "Could not restart lesson."); }
     finally { setBusy(false); }
   }
@@ -96,12 +100,14 @@ export function GrammarLessonExperience({ slug }: { slug: Slug }) {
         <header className="grammar-heading"><p className="eyebrow">English Language · Grammar</p><h1>{lesson.title}</h1><p>{lesson.introduction}</p></header>
         <div className="grammar-rule-grid">{lesson.rules.map((rule, index) => <article key={rule.title}><span>{index + 1}</span><h2>{rule.title}</h2><p>{rule.body}</p><p><strong>{rule.example}</strong></p></article>)}</div>
         <div className="grammar-worked"><strong>Worked example:</strong> <em>{lesson.worked.prompt}</em> <strong>Answer: {lesson.worked.answer}</strong> {lesson.worked.explanation}</div>
+        {slug === "conjunctions" && <div className="grammar-instruction" role="note"><strong>Worksheet Questions 1–10: Do not use “and”, “but”, or “so”.</strong><p>Join both sentences into one sentence using another suitable connector. These three words must not appear anywhere in your answer. For Questions 41–60, use the conjunction printed in brackets instead.</p></div>}
         <div className="grammar-actions"><button onClick={() => openBatch(batchIndex)}>Start batch {batchIndex + 1} of {batchCount}</button><span>{batches.length} of {batchCount} batches checked</span></div>
         {batches.length > 0 && <GrammarBatchNavigation batchCount={batchCount} batchSize={lesson.batchSize} batches={batches} currentIndex={-1} onOpen={openBatch} />}
       </>}
       {phase === "practice" && lesson && <>
         <header className="grammar-heading"><p className="eyebrow">English Language · {lesson.title}</p><h1>Batch {batchIndex + 1} of {batchCount}</h1><p>Answer these five together, then check them in one step. You may leave an answer blank.</p></header>
         <GrammarBatchNavigation batchCount={batchCount} batchSize={lesson.batchSize} batches={batches} currentIndex={batchIndex} onOpen={openBatch} />
+        {slug === "conjunctions" && currentQuestions.some((question) => question.kind === "join") && <div className="grammar-instruction" role="note">{currentQuestions.some((question) => question.origin === "worksheet") ? <><strong>Important: Do not use “and”, “but”, or “so” in any answer in this batch.</strong><p>Join the two sentences into one. Choose another connector and keep the full meaning of both sentences. These are the school worksheet questions.</p></> : <><strong>Use the conjunction in brackets for each question.</strong><p>You may use “and”, “but”, or “so” when they are part of the specified conjunction. The worksheet restriction applies only to Questions 1–10.</p></>}</div>}
         {passage && <details className="grammar-worked" open><summary>Read the past-paper passage</summary><p>{passage}</p></details>}
         <div className="grammar-questions">{currentQuestions.map((question, index) => {
           const result = checked?.results[index];
@@ -109,10 +115,11 @@ export function GrammarLessonExperience({ slug }: { slug: Slug }) {
             <p className="grammar-question-number">Question {question.number}{question.origin === "worksheet" ? " · School worksheet" : question.origin === "past_paper" ? " · Last year’s paper" : ""}</p>
             <h2>{question.prompt}</h2>
             {question.kind === "choice" ? <fieldset disabled={Boolean(checked) || busy}><legend>Choose the best answer</legend>{question.options?.map((option) => <label key={option.id}><input type="radio" name={question.id} value={option.id} checked={answers[index] === option.id} onChange={() => setAnswer(index, option.id)} />{option.text}</label>)}</fieldset>
-              : <label className={`grammar-answer${question.kind === "join" || question.kind === "rewrite" ? " grammar-answer-join" : ""}`}>{question.kind === "join" ? "Join the sentences without using and, but or so" : question.kind === "rewrite" ? "Rewrite the complete sentence" : question.kind === "identify" ? slug === "adjectives" ? "Write the adjective and its kind, e.g. vast — quality" : "Write the pronoun and its kind, e.g. that — relative" : question.blankNumber ? `Write the word for blank ${question.blankNumber}` : "Write the missing word or phrase"}
+              : <label className={`grammar-answer${question.kind === "join" || question.kind === "rewrite" ? " grammar-answer-join" : ""}`}>{question.kind === "join" ? question.requiredConnector ? `Join the sentences using “${question.requiredConnector}”` : "Join the sentences. Do not use “and”, “but”, or “so” anywhere." : question.kind === "rewrite" ? "Rewrite the complete sentence" : question.kind === "identify" ? slug === "adjectives" ? "Write the adjective and its kind, e.g. vast — quality" : "Write the pronoun and its kind, e.g. that — relative" : question.blankNumber ? `Write the word for blank ${question.blankNumber}` : "Write the missing word or phrase"}
                 {question.kind === "join" || question.kind === "rewrite" ? <textarea disabled={Boolean(checked) || busy} value={answers[index] ?? ""} onChange={(event) => setAnswer(index, event.target.value)} maxLength={500} rows={3} />
                   : <input autoComplete="off" disabled={Boolean(checked) || busy} value={answers[index] ?? ""} onChange={(event) => setAnswer(index, event.target.value)} maxLength={100} />}</label>}
             {result && <div className="grammar-feedback" role="status"><strong>{result.status === "correct" ? "Correct" : result.status === "review" ? "Review this answer" : `Expected: ${result.expectedAnswer}`}</strong><p>{result.explanation}</p>{result.status === "review" && <p>Model answer: {result.expectedAnswer}</p>}</div>}
+            {result && result.status !== "correct" && <GrammarAppeal slug={slug} questionId={question.id} answer={checked?.answers[index] ?? ""} appeal={appeals.find((appeal) => appeal.question_id === question.id)} />}
           </article>;
         })}</div>
         <div className="grammar-actions">{checked ? <><strong>{checked.results.filter((result) => result.status === "correct").length} of 5 correct{checked.results.some((result) => result.status === "review") ? ` · ${checked.results.filter((result) => result.status === "review").length} for review` : ""}</strong><button onClick={nextBatch}>{batches.length === batchCount ? "See results" : "Next five"}</button><button className="button-secondary" onClick={() => setEditing(true)}>Try this batch again</button></> : <button disabled={busy} onClick={() => void checkBatch()}>{busy ? "Checking…" : "Check five answers"}</button>}</div>

@@ -42,9 +42,14 @@ describe("GrammarLessonExperience rewrite starters", () => {
   it("prefills conjunction sentence joins with the two original sentences", async () => {
     mockLesson("conjunctions");
     render(<GrammarLessonExperience slug="conjunctions" />);
-    fireEvent.click(await screen.findByRole("button", { name: "Start batch 1 of 8" }));
-    const boxes = screen.getAllByRole("textbox", { name: "Join the sentences without using and, but or so" }) as HTMLTextAreaElement[];
+    fireEvent.click(await screen.findByRole("button", { name: "Start batch 1 of 12" }));
+    const boxes = screen.getAllByRole("textbox", { name: "Join the sentences. Do not use “and”, “but”, or “so” anywhere." }) as HTMLTextAreaElement[];
     expect(boxes[0].value).toBe("The road was slippery. The driver managed to control the car.");
+    expect(screen.getByText(/Important: Do not use/)).toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", { name: "Batch 9: not checked" }));
+    expect(screen.getByText(/Use the conjunction in brackets for each question/)).toBeInTheDocument();
+    const newBoxes = screen.getAllByRole("textbox", { name: /Join the sentences using/ }) as HTMLTextAreaElement[];
+    expect(newBoxes[0].value).toBe("Mira revised the chapter. She explained it to her friends.");
   });
 
   it("keeps saved answers when revisiting a checked batch", async () => {

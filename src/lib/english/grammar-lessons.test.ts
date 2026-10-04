@@ -4,12 +4,13 @@ import conjunctions from "@/content/english/conjunctions.json";
 import tenses from "@/content/english/tenses.json";
 import pronouns from "@/content/english/pronouns.json";
 import adjectives from "@/content/english/adjectives.json";
-import { gradeGrammarBatch, normalizeGrammarAnswer, publicGrammarQuestion, validateGrammarBatch } from "./grammar-lessons";
+import { gradeGrammarBatch, normalizeGrammarAnswer, publicGrammarQuestion, usesRequiredConnector, validateGrammarBatch } from "./grammar-lessons";
 
 describe("English grammar lesson banks", () => {
-  it("keeps 40 questions per lesson in five-question batches with source questions in order", () => {
+  it("keeps source questions in order and four new conjunction batches", () => {
     expect(prepositions.questions).toHaveLength(40);
-    expect(conjunctions.questions).toHaveLength(40);
+    expect(conjunctions.questions).toHaveLength(60);
+    expect(conjunctions.questions.slice(40).every((question) => question.kind === "join" && "requiredConnector" in question)).toBe(true);
     expect(tenses.questions).toHaveLength(40);
     expect(pronouns.questions).toHaveLength(40);
     expect(adjectives.questions).toHaveLength(40);
@@ -61,6 +62,18 @@ describe("English grammar lesson banks", () => {
     const unchanged = (await gradeGrammarBatch("conjunctions", 0, answers))[0];
     expect(unchanged.status).toBe("incorrect");
     expect(unchanged.explanation).toContain("original sentence");
+  });
+  it("uses the requested connector in the new conjunction batches", async () => {
+    for (let batch = 8; batch < 12; batch++) {
+      const questions = conjunctions.questions.slice(batch * 5, batch * 5 + 5);
+      expect((await gradeGrammarBatch("conjunctions", batch, questions.map((question) => question.answer))).every((result) => result.status === "correct")).toBe(true);
+      expect(questions.every((question) => "requiredConnector" in question && Boolean(question.requiredConnector) && usesRequiredConnector(question.answer, question.requiredConnector!))).toBe(true);
+    }
+    const answers = conjunctions.questions.slice(40, 45).map((question) => question.answer);
+    answers[0] = "Mira revised the chapter and explained it to her friends.";
+    const result = (await gradeGrammarBatch("conjunctions", 8, answers))[0];
+    expect(result.status).toBe("incorrect");
+    expect(result.explanation).toContain("not only ... but also");
   });
   it("grades whole-sentence pronoun corrections and pronoun kinds", async () => {
     const first = pronouns.questions.slice(0, 5).map((question) => question.answer);

@@ -1,6 +1,7 @@
 import { childFromRequest } from "@/lib/family/request";
 import { GRAMMAR_LESSONS, isGrammarSlug, publicGrammarQuestion, validateGrammarBatch, type GrammarSlug } from "@/lib/english/grammar-lessons";
 import { clearGrammarProgress, loadGrammarProgress, saveGrammarProgress } from "@/lib/english/grammar-progress-store";
+import { applyGrammarAppeals, clearBatchGrammarAppeals, clearLessonGrammarAppeals, listChildGrammarAppeals } from "@/lib/english/grammar-appeals";
 
 type Context = { params: Promise<{ slug: string }> };
 async function identify(request: Request, context: Context) {
@@ -17,10 +18,12 @@ export async function GET(request: Request, context: Context) {
     if (match.error) return match.error;
     const { child, slug } = match as { child: NonNullable<typeof match.child>; slug: GrammarSlug };
     const lesson = GRAMMAR_LESSONS[slug];
+    const batches = applyGrammarAppeals(await loadGrammarProgress(child.id, slug), await listChildGrammarAppeals(child.id, slug));
     return Response.json({ child: { displayName: child.displayName },
       lesson: { slug, version: lesson.version, title: lesson.title, subject: lesson.subject, batchSize: lesson.batchSize,
         introduction: lesson.introduction, rules: lesson.rules, worked: lesson.worked },
-      questions: lesson.questions.map(publicGrammarQuestion), batches: await loadGrammarProgress(child.id, slug) },
+      questions: lesson.questions.map(publicGrammarQuestion), batches,
+      appeals: await listChildGrammarAppeals(child.id, slug) },
     { headers: { "Cache-Control": "no-store" } });
   } catch (error) { return unavailable(error); }
 }
@@ -32,7 +35,9 @@ export async function POST(request: Request, context: Context) {
     const body = await request.json();
     try { validateGrammarBatch(slug, body?.batchIndex, body?.answers); }
     catch { return Response.json({ error: "Invalid grammar batch." }, { status: 400 }); }
-    return Response.json({ batch: await saveGrammarProgress(child.id, slug, body.batchIndex, body.answers) },
+    const batch = await saveGrammarProgress(child.id, slug, body.batchIndex, body.answers);
+    await clearBatchGrammarAppeals(child.id, slug, body.batchIndex);
+    return Response.json({ batch },
       { headers: { "Cache-Control": "no-store" } });
   } catch (error) {
     if (error instanceof SyntaxError) return Response.json({ error: "Invalid JSON." }, { status: 400 });
@@ -45,6 +50,7 @@ export async function DELETE(request: Request, context: Context) {
     if (match.error) return match.error;
     const { child, slug } = match as { child: NonNullable<typeof match.child>; slug: GrammarSlug };
     await clearGrammarProgress(child.id, slug);
+    await clearLessonGrammarAppeals(child.id, slug);
     return Response.json({ cleared: true }, { headers: { "Cache-Control": "no-store" } });
   } catch (error) { return unavailable(error); }
 }

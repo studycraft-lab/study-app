@@ -16,6 +16,7 @@ describe("ParentSessionReview", () => {
         rubric: { points: [{ concept: "joins Asia and Africa" }, { concept: "separates the Mediterranean Sea and Red Sea" }] },
         originalEarnedMarks: 1, maxMarks: 2, sourcePages: [12], gradingMeta: { model: "deepseek/deepseek-v4-flash" }, childComment: "Both points are present.",
       }] }));
+      if (String(input) === "/api/parent/grammar-appeals") return new Response(JSON.stringify({ pending: [] }));
       throw new Error(`Unexpected request: ${String(input)}`);
     });
 
@@ -28,5 +29,18 @@ describe("ParentSessionReview", () => {
     fireEvent.change(screen.getByLabelText("Final marks"), { target: { value: "2" } });
     fireEvent.click(screen.getByRole("button", { name: /confirm final marks/i }));
     await waitFor(() => expect(fetchMock).toHaveBeenCalledWith("/api/parent/score-appeals", expect.objectContaining({ method: "PATCH", body: expect.stringContaining('"earnedMarks":2') })));
+  });
+  it("lets a parent accept a grammar appeal", async () => {
+    const fetchMock = vi.spyOn(globalThis, "fetch").mockImplementation(async (input, init) => {
+      if (String(input) === "/api/parent/score-appeals") return Response.json({ pending: [] });
+      if (String(input) === "/api/parent/grammar-appeals" && init?.method === "PATCH") return Response.json({ resolution: { status: "correct" } });
+      if (String(input) === "/api/parent/grammar-appeals") return Response.json({ pending: [{ id: "grammar-1", childName: "Easwar", lessonTitle: "Conjunctions", questionNumber: 1,
+        question: "Join these sentences.", answer: "Although it rained, we played.", expectedAnswer: "Although it rained, we played.", originalStatus: "incorrect", childComment: "This keeps both meanings." }] });
+      throw new Error(`Unexpected request: ${String(input)}`);
+    });
+    render(<ParentSessionReview />);
+    expect(await screen.findByText("Grammar appeals (1)")).toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", { name: "Accept answer · 1 mark" }));
+    await waitFor(() => expect(fetchMock).toHaveBeenCalledWith("/api/parent/grammar-appeals", expect.objectContaining({ method: "PATCH", body: expect.stringContaining('"correct":true') })));
   });
 });

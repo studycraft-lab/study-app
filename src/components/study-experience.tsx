@@ -27,7 +27,7 @@ const PYTHON_ACTIVITIES = [
 const ENGLISH_ACTIVITIES = [
   { href: "/study/english-language/question-tags", title: "Question Tags", description: "Four short rules and 40 questions in batches of five.", glyph: "?,", kind: "Grammar lesson" },
   { href: "/study/english-language/prepositions", title: "Prepositions", description: "Short tutorial and 40 questions in batches of five.", glyph: "↔", kind: "Grammar lesson" },
-  { href: "/study/english-language/conjunctions", title: "Conjunctions", description: "Short tutorial and 40 questions in batches of five.", glyph: "∩", kind: "Grammar lesson" },
+  { href: "/study/english-language/conjunctions", title: "Conjunctions", description: "Short tutorial and 60 questions in batches of five.", glyph: "∩", kind: "Grammar lesson" },
   { href: "/study/english-language/tenses", title: "Tenses", description: "Short tutorial and 40 questions in batches of five.", glyph: "⌛", kind: "Grammar lesson" },
   { href: "/study/english-language/pronouns", title: "Pronouns", description: "Short tutorial and 40 questions in batches of five.", glyph: "I / me", kind: "Grammar lesson" },
   { href: "/study/english-language/adjectives", title: "Adjectives", description: "Kinds and comparison, with 40 questions in batches of five.", glyph: "A+", kind: "Grammar lesson" },

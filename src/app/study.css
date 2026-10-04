@@ -369,6 +369,9 @@
 .grammar-rule-grid p,.grammar-worked { line-height:1.65; }
 .grammar-rule-grid p { color:var(--ink-soft); margin:0; }
 .grammar-worked { background:var(--blue-soft); margin-top:16px; }
+.grammar-instruction { background:#fff1d5; border:2px solid #bb6515; border-radius:18px; color:#5c2e08; margin:18px 0; padding:18px 22px; }
+.grammar-instruction strong { display:block; font-size:1.04rem; }
+.grammar-instruction p { line-height:1.55; margin:8px 0 0; }
 .grammar-actions { align-items:center; display:flex; flex-wrap:wrap; gap:12px; margin:28px 0; }
 .grammar-actions > span { color:var(--muted); font-size:.86rem; }
 .grammar-actions > a { color:var(--navy); font-weight:800; padding:12px; }

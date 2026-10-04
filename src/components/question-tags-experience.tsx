@@ -5,11 +5,13 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { AppHeader } from "./app-header";
 import { GrammarBatchNavigation } from "./grammar-batch-navigation";
+import { GrammarAppeal } from "./grammar-appeal";
 
 type Question = { id: string; number: number; kind: string; prompt: string; options?: { id: string; text: string }[]; origin: string };
 type Result = { id: string; number: number; correct: boolean; expectedAnswer: string; explanation: string };
 type Batch = { batchIndex: number; answers: string[]; results: Result[] };
 type Lesson = { title: string; subject: string; batchSize: number };
+type Appeal = { question_id: string; answer: string; status: string; resolved_status: string | null; parent_comment: string | null };
 
 const ENDPOINT = "/api/study/grammar/question-tags";
 
@@ -19,6 +21,7 @@ export function QuestionTagsExperience() {
   const [lesson, setLesson] = useState<Lesson | null>(null);
   const [childName, setChildName] = useState("");
   const [batches, setBatches] = useState<Batch[]>([]);
+  const [appeals, setAppeals] = useState<Appeal[]>([]);
   const [batchIndex, setBatchIndex] = useState(0);
   const [answers, setAnswers] = useState<string[]>(Array(5).fill(""));
   const [phase, setPhase] = useState<"loading" | "rules" | "practice" | "complete">("loading");
@@ -42,7 +45,7 @@ export function QuestionTagsExperience() {
       const loaded = body.batches as Batch[];
       const size = Number(body.lesson.batchSize);
       const firstUnfinished = Array.from({ length: Math.ceil(body.questions.length / size) }, (_, index) => index).find((index) => !loaded.some((batch) => batch.batchIndex === index));
-      setLesson(body.lesson); setQuestions(body.questions); setBatches(loaded); setChildName(body.child?.displayName ?? "");
+      setLesson(body.lesson); setQuestions(body.questions); setBatches(loaded); setAppeals(body.appeals ?? []); setChildName(body.child?.displayName ?? "");
       setBatchIndex(firstUnfinished ?? 0);
       setAnswers(loaded.find((batch) => batch.batchIndex === (firstUnfinished ?? 0))?.answers ?? Array(size).fill(""));
       setPhase(firstUnfinished === undefined ? "complete" : "rules");
@@ -63,6 +66,7 @@ export function QuestionTagsExperience() {
       const body = await response.json();
       if (!response.ok) throw new Error(body.error ?? "Could not check these answers.");
       const batch = body.batch as Batch;
+      setAppeals((existing) => existing.filter((appeal) => !batch.results.some((result) => result.id === appeal.question_id)));
       setBatches((existing) => [...existing.filter((item) => item.batchIndex !== batchIndex), batch].sort((a, b) => a.batchIndex - b.batchIndex));
       setEditing(false);
     } catch (cause) { setError(cause instanceof Error ? cause.message : "Could not check these answers."); }
@@ -81,7 +85,7 @@ export function QuestionTagsExperience() {
     try {
       const response = await fetch(ENDPOINT, { method: "DELETE" });
       if (!response.ok) throw new Error((await response.json()).error ?? "Could not restart Question Tags.");
-      setBatches([]); setBatchIndex(0); setAnswers(Array(lesson?.batchSize ?? 5).fill("")); setEditing(false); setPhase("rules");
+      setBatches([]); setAppeals([]); setBatchIndex(0); setAnswers(Array(lesson?.batchSize ?? 5).fill("")); setEditing(false); setPhase("rules");
     } catch (cause) { setError(cause instanceof Error ? cause.message : "Could not restart Question Tags."); }
     finally { setBusy(false); }
   }
@@ -116,6 +120,7 @@ export function QuestionTagsExperience() {
             <h2>{question.prompt}</h2>
             {question.kind === "choice" ? <fieldset disabled={Boolean(checked) || busy}><legend>Choose the best tag</legend>{question.options?.map((option) => <label key={option.id}><input type="radio" name={question.id} value={option.id} checked={answers[index] === option.id} onChange={() => setAnswers((existing) => existing.map((answer, position) => position === index ? option.id : answer))} />{option.text}</label>)}</fieldset> : <label className="grammar-answer">{question.kind === "correction" ? "Write the replacement tag" : "Write the missing tag"}<input autoComplete="off" disabled={Boolean(checked) || busy} value={answers[index] ?? ""} onChange={(event) => setAnswers((existing) => existing.map((answer, position) => position === index ? event.target.value : answer))} placeholder="e.g. aren't they" maxLength={100} /></label>}
             {result && <div className="grammar-feedback" role="status"><strong>{result.correct ? "Correct" : `Expected: ${result.expectedAnswer}`}</strong><p>{result.explanation}</p></div>}
+            {result && !result.correct && <GrammarAppeal slug="question-tags" questionId={question.id} answer={checked?.answers[index] ?? ""} appeal={appeals.find((appeal) => appeal.question_id === question.id)} />}
           </article>;
         })}</div>
         <div className="grammar-actions">{checked ? <><strong>{checked.results.filter((result) => result.correct).length} of 5 correct</strong><button onClick={nextBatch}>{batches.length === batchCount ? "See results" : "Next five"}</button><button className="button-secondary" onClick={() => setEditing(true)}>Try this batch again</button></> : <button disabled={busy} onClick={() => void checkBatch()}>{busy ? "Checking…" : "Check five answers"}</button>}</div>

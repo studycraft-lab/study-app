@@ -15,7 +15,19 @@ export function publicGrammarQuestion(question: GrammarQuestion) {
     options: "options" in question ? question.options : undefined,
     context: "context" in question ? question.context : undefined,
     blankNumber: "blankNumber" in question ? question.blankNumber : undefined,
-    starter: "starter" in question ? question.starter : undefined };
+    starter: "starter" in question ? question.starter : undefined,
+    requiredConnector: "requiredConnector" in question ? question.requiredConnector : undefined };
+}
+export function usesRequiredConnector(answer: string, connector: string): boolean {
+  const parts = connector.toLocaleLowerCase("en").split(/\s*\.\.\.\s*/u);
+  const words = answer.toLocaleLowerCase("en");
+  let offset = 0;
+  for (const part of parts) {
+    const match = new RegExp(`\\b${part.replace(/\s+/gu, "\\s+")}\\b`, "iu").exec(words.slice(offset));
+    if (!match) return false;
+    offset += match.index + match[0].length;
+  }
+  return true;
 }
 export function normalizeGrammarAnswer(value: string): string {
   return value.normalize("NFKC").replace(/[\u2018\u2019\u02BC]/gu, "'").trim().replace(/[.,!?;:]+$/u, "")
@@ -39,17 +51,20 @@ export async function gradeGrammarBatch(slug: GrammarSlug, batchIndex: number, a
     const answer = answers[index].trim();
     const accepted = [question.answer, ...("accepted" in question ? (question.accepted ?? []) : [])];
     const normalize = question.kind === "identify" ? normalizeIdentification : normalizeGrammarAnswer;
-    const original = question.kind === "rewrite" ? "starter" in question ? question.starter ?? question.prompt : question.prompt : question.kind === "join" ? question.prompt : null;
+    const original = question.kind === "rewrite" || question.kind === "join" ? "starter" in question ? question.starter ?? question.prompt : question.prompt : null;
     const unchanged = original !== null && normalizeGrammarAnswer(answer) === normalizeGrammarAnswer(original);
     let status: GrammarResult["status"] = accepted.some((item) => normalize(item) === normalize(answer)) ? "correct" : "incorrect";
     if (status === "incorrect" && answer) {
       if (question.kind === "join") {
-        if (!unchanged && !/\b(and|but|so)\b/iu.test(answer)) {
+        const required = "requiredConnector" in question ? question.requiredConnector : undefined;
+        const meetsConnectorRule = required ? usesRequiredConnector(answer, required) : !/\b(and|but|so)\b/iu.test(answer);
+        if (!unchanged && meetsConnectorRule) {
           try {
             const { classifyRubric } = await import("@/lib/ai/openrouter");
-            const grade = await classifyRubric({ question: `Join these sentences without using and, but or so: ${question.prompt}`,
+            const instruction = required ? `Use the specified conjunction (${required})` : "Do not use and, but or so";
+            const grade = await classifyRubric({ question: `Join these sentences. ${instruction}: ${question.prompt}`,
               childAnswer: answer, groundedEvidence: `Original sentences: ${question.prompt}\nModel answer: ${question.answer}\nOther joins can be correct if grammatical, retain the complete original meaning and obey the connector restriction.`,
-              points: [{ id: "meaning", concept: "The joined sentence keeps the full meaning of both original sentences, uses a suitable conjunction or relative connector, and does not add a contradictory meaning." }],
+              points: [{ id: "meaning", concept: `The joined sentence keeps the full meaning of both original sentences, obeys this instruction: ${instruction}, and does not add a contradictory meaning.` }],
               checkSpelling: false, checkGrammar: true });
             status = grade.confidence >= 0.85 && grade.points[0].confidence >= 0.85
               ? grade.points[0].coverage === "covered" && grade.grammarErrors.length === 0 ? "correct" : "incorrect" : "review";
@@ -61,6 +76,8 @@ export async function gradeGrammarBatch(slug: GrammarSlug, batchIndex: number, a
       ? question.options?.find((option) => option.id === question.answer)?.text ?? question.answer : question.answer;
     return { id: question.id, number: question.number, status, expectedAnswer,
       explanation: unchanged ? "This is still the original sentence. Edit it before checking." :
+        question.kind === "join" && "requiredConnector" in question && question.requiredConnector && !usesRequiredConnector(answer, question.requiredConnector) ? `Use the conjunction shown in brackets: ${question.requiredConnector}.` :
+        question.kind === "join" && !("requiredConnector" in question) && /\b(and|but|so)\b/iu.test(answer) ? 'For these worksheet joins, do not use the words “and”, “but”, or “so” anywhere in your answer.' :
         status === "review" ? "This answer needs a closer look. Compare it with the model answer; it has not been marked wrong." : question.explanation };
   }));
 }

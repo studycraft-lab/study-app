@@ -2,9 +2,11 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 import { GET, POST } from "./route";
 import { childFromRequest } from "@/lib/family/request";
 import { loadQuestionTagProgress, saveQuestionTagProgress } from "@/lib/english/progress-store";
+import { clearBatchGrammarAppeals, listChildGrammarAppeals } from "@/lib/english/grammar-appeals";
 
 vi.mock("@/lib/family/request", () => ({ childFromRequest: vi.fn() }));
 vi.mock("@/lib/english/progress-store", () => ({ loadQuestionTagProgress: vi.fn(), saveQuestionTagProgress: vi.fn(), clearQuestionTagProgress: vi.fn() }));
+vi.mock("@/lib/english/grammar-appeals", () => ({ applyGrammarAppeals: (batches: unknown[]) => batches, listChildGrammarAppeals: vi.fn(), clearBatchGrammarAppeals: vi.fn(), clearLessonGrammarAppeals: vi.fn() }));
 
 const url = "http://localhost/api/study/grammar/question-tags";
 
@@ -13,6 +15,7 @@ describe("Question Tags API", () => {
     vi.resetAllMocks();
     vi.mocked(childFromRequest).mockResolvedValue({ id: "child-one", grade: 6 } as never);
     vi.mocked(loadQuestionTagProgress).mockResolvedValue([]);
+    vi.mocked(listChildGrammarAppeals).mockResolvedValue([]);
   });
 
   it("requires a Class VI child", async () => {
@@ -41,5 +44,6 @@ describe("Question Tags API", () => {
     const response = await POST(new Request(url, { method: "POST", body: JSON.stringify({ batchIndex: 0, answers }) }));
     expect(response.status).toBe(200);
     expect(saveQuestionTagProgress).toHaveBeenCalledWith("child-one", 0, answers);
+    expect(clearBatchGrammarAppeals).toHaveBeenCalledWith("child-one", "question-tags", 0);
   });
 });

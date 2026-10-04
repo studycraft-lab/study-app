@@ -42,7 +42,8 @@
       "origin": "worksheet",
       "answer": "The children decorated the classroom for the competition.",
       "accepted": [],
-      "explanation": "Simple past uses the past form decorated."
+      "explanation": "Simple past uses the past form decorated.",
+      "starter": "The children are decorating the classroom for the competition."
     },
     {
       "id": "tense-02",
@@ -54,7 +55,8 @@
       "accepted": [
         "The chef was preparing fresh bread every morning."
       ],
-      "explanation": "Past continuous uses was preparing. A specific past time sounds more natural than every morning."
+      "explanation": "Past continuous uses was preparing. A specific past time sounds more natural than every morning.",
+      "starter": "The chef prepares fresh bread every morning."
     },
     {
       "id": "tense-03",
@@ -64,7 +66,8 @@
       "origin": "worksheet",
       "answer": "The mechanic is repairing the damaged bicycle.",
       "accepted": [],
-      "explanation": "Present continuous uses is repairing."
+      "explanation": "Present continuous uses is repairing.",
+      "starter": "The mechanic repaired the damaged bicycle."
     },
     {
       "id": "tense-04",
@@ -74,7 +77,8 @@
       "origin": "worksheet",
       "answer": "The students had submitted their projects to the teacher.",
       "accepted": [],
-      "explanation": "Past perfect uses had submitted."
+      "explanation": "Past perfect uses had submitted.",
+      "starter": "The students have submitted their projects to the teacher."
     },
     {
       "id": "tense-05",
@@ -84,7 +88,8 @@
       "origin": "worksheet",
       "answer": "The farmer has harvested the wheat from the field.",
       "accepted": [],
-      "explanation": "Present perfect uses has harvested."
+      "explanation": "Present perfect uses has harvested.",
+      "starter": "The farmer harvested the wheat from the field."
     },
     {
       "id": "tense-06",
@@ -94,7 +99,8 @@
       "origin": "worksheet",
       "answer": "The workers painted the school building.",
       "accepted": [],
-      "explanation": "Simple past uses painted."
+      "explanation": "Simple past uses painted.",
+      "starter": "The workers have been painting the school building since Monday."
     },
     {
       "id": "tense-07",
@@ -104,7 +110,8 @@
       "origin": "worksheet",
       "answer": "The doctor will be examining every patient carefully.",
       "accepted": [],
-      "explanation": "Future continuous uses will be examining."
+      "explanation": "Future continuous uses will be examining.",
+      "starter": "The doctor examines every patient carefully."
     },
     {
       "id": "tense-08",
@@ -116,7 +123,8 @@
       "accepted": [
         "The train will have left the station at six o'clock tomorrow morning."
       ],
-      "explanation": "Future perfect uses will have left. By states a deadline; the worksheet key changes at to by."
+      "explanation": "Future perfect uses will have left. By states a deadline; the worksheet key changes at to by.",
+      "starter": "The train will leave the station at six o'clock tomorrow morning."
     },
     {
       "id": "tense-09",
@@ -128,7 +136,8 @@
       "accepted": [
         "The musician has been practising the piano since the lights went out."
       ],
-      "explanation": "Present perfect continuous uses has been practising. Since the lights went out can preserve the original time event."
+      "explanation": "Present perfect continuous uses has been practising. Since the lights went out can preserve the original time event.",
+      "starter": "The musician was practising the piano when the lights went out."
     },
     {
       "id": "tense-10",

@@ -6,10 +6,15 @@ import { useEffect, useState } from "react";
 import { AppHeader } from "./app-header";
 
 type Slug = "prepositions" | "conjunctions" | "tenses" | "pronouns" | "adjectives";
-type Question = { id: string; number: number; kind: "fill" | "join" | "choice" | "rewrite" | "identify"; prompt: string; origin: string; options?: { id: string; text: string }[]; context?: string; blankNumber?: number };
+type Question = { id: string; number: number; kind: "fill" | "join" | "choice" | "rewrite" | "identify"; prompt: string; origin: string; options?: { id: string; text: string }[]; context?: string; blankNumber?: number; starter?: string };
 type Result = { id: string; number: number; status: "correct" | "incorrect" | "review"; expectedAnswer: string; explanation: string };
 type Batch = { batchIndex: number; answers: string[]; results: Result[] };
 type Lesson = { title: string; batchSize: number; introduction: string; rules: { title: string; body: string; example: string }[]; worked: { prompt: string; answer: string; explanation: string } };
+
+function startingAnswers(questions: Question[], batchIndex: number, batchSize: number): string[] {
+  return questions.slice(batchIndex * batchSize, (batchIndex + 1) * batchSize).map((question) =>
+    question.kind === "rewrite" ? question.starter ?? question.prompt : question.kind === "join" ? question.prompt : "");
+}
 
 export function GrammarLessonExperience({ slug }: { slug: Slug }) {
   const router = useRouter();
@@ -43,7 +48,7 @@ export function GrammarLessonExperience({ slug }: { slug: Slug }) {
       const size = Number(body.lesson.batchSize);
       const first = Array.from({ length: body.questions.length / size }, (_, index) => index).find((index) => !loaded.some((batch) => batch.batchIndex === index));
       setLesson(body.lesson); setQuestions(body.questions); setBatches(loaded); setChildName(body.child?.displayName ?? "");
-      setBatchIndex(first ?? 0); setAnswers(loaded.find((batch) => batch.batchIndex === (first ?? 0))?.answers ?? Array(size).fill(""));
+      setBatchIndex(first ?? 0); setAnswers(loaded.find((batch) => batch.batchIndex === (first ?? 0))?.answers ?? startingAnswers(body.questions, first ?? 0, size));
       setPhase(first === undefined ? "complete" : "rules");
     }).catch(() => { if (active) setError("Could not open lesson."); });
     return () => { active = false; };
@@ -51,7 +56,7 @@ export function GrammarLessonExperience({ slug }: { slug: Slug }) {
 
   function openBatch(index: number) {
     const previous = batches.find((batch) => batch.batchIndex === index);
-    setBatchIndex(index); setAnswers(previous?.answers ?? Array(lesson?.batchSize ?? 5).fill(""));
+    setBatchIndex(index); setAnswers(previous?.answers ?? startingAnswers(questions, index, lesson?.batchSize ?? 5));
     setEditing(false); setError(""); setPhase("practice");
   }
   function setAnswer(index: number, value: string) { setAnswers((existing) => existing.map((answer, position) => position === index ? value : answer)); }
@@ -76,7 +81,7 @@ export function GrammarLessonExperience({ slug }: { slug: Slug }) {
     try {
       const response = await fetch(endpoint, { method: "DELETE" });
       if (!response.ok) throw new Error((await response.json()).error ?? "Could not restart lesson.");
-      setBatches([]); setBatchIndex(0); setAnswers(Array(lesson?.batchSize ?? 5).fill("")); setEditing(false); setPhase("rules");
+      setBatches([]); setBatchIndex(0); setAnswers(startingAnswers(questions, 0, lesson?.batchSize ?? 5)); setEditing(false); setPhase("rules");
     } catch (cause) { setError(cause instanceof Error ? cause.message : "Could not restart lesson."); }
     finally { setBusy(false); }
   }

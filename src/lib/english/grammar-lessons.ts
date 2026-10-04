@@ -14,7 +14,8 @@ export function publicGrammarQuestion(question: GrammarQuestion) {
   return { id: question.id, number: question.number, kind: question.kind, prompt: question.prompt, origin: question.origin,
     options: "options" in question ? question.options : undefined,
     context: "context" in question ? question.context : undefined,
-    blankNumber: "blankNumber" in question ? question.blankNumber : undefined };
+    blankNumber: "blankNumber" in question ? question.blankNumber : undefined,
+    starter: "starter" in question ? question.starter : undefined };
 }
 export function normalizeGrammarAnswer(value: string): string {
   return value.normalize("NFKC").replace(/[\u2018\u2019\u02BC]/gu, "'").trim().replace(/[.,!?;:]+$/u, "")
@@ -38,10 +39,12 @@ export async function gradeGrammarBatch(slug: GrammarSlug, batchIndex: number, a
     const answer = answers[index].trim();
     const accepted = [question.answer, ...("accepted" in question ? (question.accepted ?? []) : [])];
     const normalize = question.kind === "identify" ? normalizeIdentification : normalizeGrammarAnswer;
+    const original = question.kind === "rewrite" ? "starter" in question ? question.starter ?? question.prompt : question.prompt : question.kind === "join" ? question.prompt : null;
+    const unchanged = original !== null && normalizeGrammarAnswer(answer) === normalizeGrammarAnswer(original);
     let status: GrammarResult["status"] = accepted.some((item) => normalize(item) === normalize(answer)) ? "correct" : "incorrect";
     if (status === "incorrect" && answer) {
       if (question.kind === "join") {
-        if (!/\b(and|but|so)\b/iu.test(answer)) {
+        if (!unchanged && !/\b(and|but|so)\b/iu.test(answer)) {
           try {
             const { classifyRubric } = await import("@/lib/ai/openrouter");
             const grade = await classifyRubric({ question: `Join these sentences without using and, but or so: ${question.prompt}`,
@@ -57,6 +60,7 @@ export async function gradeGrammarBatch(slug: GrammarSlug, batchIndex: number, a
     const expectedAnswer = question.kind === "choice" && "options" in question
       ? question.options?.find((option) => option.id === question.answer)?.text ?? question.answer : question.answer;
     return { id: question.id, number: question.number, status, expectedAnswer,
-      explanation: status === "review" ? "This answer needs a closer look. Compare it with the model answer; it has not been marked wrong." : question.explanation };
+      explanation: unchanged ? "This is still the original sentence. Edit it before checking." :
+        status === "review" ? "This answer needs a closer look. Compare it with the model answer; it has not been marked wrong." : question.explanation };
   }));
 }

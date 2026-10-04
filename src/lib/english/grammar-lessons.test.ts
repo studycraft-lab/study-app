@@ -34,6 +34,14 @@ describe("English grammar lesson banks", () => {
     expect(question).not.toHaveProperty("answer");
     expect(question).not.toHaveProperty("explanation");
     expect(question.prompt).toBe("The children are playing ___ the garden.");
+    expect(publicGrammarQuestion(tenses.questions[0]).starter).toBe("The children are decorating the classroom for the competition.");
+  });
+  it("keeps each tense rewrite starter free of question numbers and tense instructions", () => {
+    for (const question of tenses.questions.filter((item) => item.kind === "rewrite")) {
+      expect(question.starter).toMatch(/\.$/u);
+      expect(question.starter).not.toMatch(/^\d+\.|\([^()]+\)$/u);
+      expect(question.prompt).toContain(question.starter);
+    }
   });
   it("normalizes case, spaces and end punctuation", () => {
     expect(normalizeGrammarAnswer("  In. ")).toBe("in");
@@ -49,6 +57,10 @@ describe("English grammar lesson banks", () => {
     expect((await gradeGrammarBatch("conjunctions", 0, answers)).every((result) => result.status === "correct")).toBe(true);
     answers[0] = "The road was slippery but the driver controlled the car.";
     expect((await gradeGrammarBatch("conjunctions", 0, answers))[0].status).toBe("incorrect");
+    answers[0] = conjunctions.questions[0].prompt;
+    const unchanged = (await gradeGrammarBatch("conjunctions", 0, answers))[0];
+    expect(unchanged.status).toBe("incorrect");
+    expect(unchanged.explanation).toContain("original sentence");
   });
   it("grades whole-sentence pronoun corrections and pronoun kinds", async () => {
     const first = pronouns.questions.slice(0, 5).map((question) => question.answer);

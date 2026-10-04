@@ -84,10 +84,10 @@ export const LETTER_CASES: LetterCase[] = [
       explanation: "We know the result and the feeling, but not what happened during the race. The reader needs one clear event detail here.",
     },
     model: {
-      intro: "I hope you and Grandfather are well. I am fine here. I have exciting news from our school Sports Day to share with you.",
-      body1: "Last Friday, I took part in the 100-metre race. I was nervous when we lined up, but I ran as fast as I could after the whistle blew and crossed the finish line first. At assembly the next morning, the principal called my name and handed me a trophy in front of the school.",
-      body2: "The prize was special because I had practised in the park every morning, even when I wanted to stay in bed. For a moment, I could hardly believe that all that work had helped me win. I felt proud standing on the stage and could not wait to tell you.",
-      conclusion: "I wish you could have watched the race. I will show you the trophy when we meet next week.",
+      intro: "I hope you and Grandfather are keeping well. I am fine here, and I have some exciting news to share. I won a prize at our school Sports Day last Friday!",
+      body1: "I took part in the 100-metre race. At the starting line, I could hear my classmates cheering, but I was too nervous to look at them. When the whistle blew, I ran as fast as I could. Another runner was close beside me until the final few steps, so I pushed myself and crossed the finish line first. The next morning, the principal called my name at assembly and handed me a trophy while everyone applauded.",
+      body2: "This prize means a great deal to me because I had practised in the park every morning for several weeks. Some days I wanted to stay in bed, and on other days I felt I was not getting faster. I kept trying, and the race showed me what regular practice can do. I felt proud on the stage, but I wished you could have been there. You have always encouraged me to try my best, so you were one of the first people I wanted to tell.",
+      conclusion: "I have kept the trophy on my desk. When we meet next week, I will show it to you and tell you about the other Sports Day events too. Please give Grandfather my love.",
     },
   },
   {
@@ -149,10 +149,10 @@ export const LETTER_CASES: LetterCase[] = [
       explanation: "Describing the cover is not the same as saying what the writer plans to do with the gift.",
     },
     model: {
-      intro: "I hope you are doing well. I am fine here. Your parcel made my birthday even happier. Thank you for the beautiful sketchbook you sent me.",
-      body1: "I plan to take it to art class every Monday, where we are learning to paint with watercolours. Its thick pages will be perfect for trying them. My first drawing will be the mango tree outside our balcony, and I hope to sketch places we visit during the holidays too.",
-      body2: "I appreciate the gift because you remembered how much I enjoy drawing. You chose something I can use again and again, rather than something I would put away after a day. I felt touched when I opened the parcel and saw it inside.",
-      conclusion: "I will send you a photograph of my first drawing this weekend. Thank you once again for thinking of me.",
+      intro: "I hope you and your family are doing well. I am fine here. Your parcel arrived on my birthday, and opening it made the day even happier. Thank you for the beautiful sketchbook!",
+      body1: "I plan to take it to art class every Monday, where we have just started learning to paint with watercolours. The thick pages will let me try different colours without worrying about the paint soaking through. For my first drawing, I want to sketch the mango tree outside our balcony, with the little birds that visit it each morning. During the holidays, I will carry the sketchbook when we go out and draw the places we see instead of trying to remember them later.",
+      body2: "What makes your gift so special is that you remembered how much I enjoy drawing. You even chose a book that will help me practise and keep all my pictures together. I felt touched when I saw it inside the parcel, especially because we had talked about my drawings only once during your last visit. Each time I open it, I will think of your kindness and of the fun we had sketching together that afternoon.",
+      conclusion: "I will send you a photograph of the first page as soon as I finish it this weekend. When we meet again, perhaps we can fill a page together. Thank you once more for such a thoughtful gift.",
     },
   },
   {
@@ -214,10 +214,10 @@ export const LETTER_CASES: LetterCase[] = [
       explanation: "The reader sees only logistics here. The letter should also make the weekend worth looking forward to.",
     },
     model: {
-      intro: "I hope you are doing well. I am fine here. I have missed our long chats since the examinations began. Would you spend the weekend of 10th and 11th October with me?",
-      body1: "Our examinations finish on Friday, so we can finally relax. We could cycle in the park and finish the puzzle we left half-done. Mum has also offered to help us bake a chocolate cake on Sunday, and we could spend the afternoon catching up.",
-      body2: "Could you come on Saturday morning and stay until Sunday evening? My parents would be delighted to have you, and Dad can pick you up if travelling here is difficult. It would be wonderful to have a whole weekend together after weeks of studying.",
-      conclusion: "I still remember how much we laughed the last time you stayed over. Please ask your parents and let me know by Wednesday, so we can plan for your visit.",
+      intro: "I hope you and your family are doing well. I am fine here, though I have missed our long chats since the examinations began. Would you come and spend the weekend of 10th and 11th October with me?",
+      body1: "Our examinations finish on Friday, so we will finally have time to relax. On Saturday morning, we could cycle through the park before it gets too warm. I have kept the puzzle we left half-done during your last visit, and I think we can finish it this time. Mum has offered to help us bake a chocolate cake on Sunday. We could decorate it ourselves and spend the afternoon talking about everything that happened during the school term.",
+      body2: "It would be lovely if you could arrive on Saturday morning and stay until Sunday evening. My parents would be delighted to have you, and we have made room for you to sleep in my bedroom. If getting here is difficult, Dad can pick you up after breakfast. I know your parents may have plans, so please check with them first. I have been looking forward to a proper weekend together after so many weeks of studying.",
+      conclusion: "I still remember how much we laughed the last time you stayed over. Please let me know by Wednesday whether you can come, so we can plan our weekend. I hope your parents say yes!",
     },
   },
   {
@@ -279,10 +279,10 @@ export const LETTER_CASES: LetterCase[] = [
       explanation: "The body gives general chess facts instead of responding to this friend and this achievement.",
     },
     model: {
-      intro: "I hope you are doing well. I am fine here. I heard about your victory this morning and could hardly wait to write. Congratulations on winning the inter-school chess championship!",
-      body1: "I know how many months you spent solving chess puzzles after school. You even stayed calm during a difficult final game and found a clever move when everyone expected a draw. Winning the championship shows how your steady practice has paid off.",
-      body2: "I felt proud when our teacher announced your name at assembly. Your patience has encouraged me to keep working when something feels difficult instead of giving up too quickly. You truly earned this moment, and I hope you take time to enjoy it.",
-      conclusion: "Please give my regards to your parents. Let us meet soon so I can congratulate you in person.",
+      intro: "I hope you and your family are well. I am fine here. I heard your wonderful news this morning and could hardly wait to write. Congratulations on winning the inter-school chess championship!",
+      body1: "I know how much work went into this victory. For months, you solved chess puzzles after school and went over your games to see where you could improve. I still remember you practising even when a difficult puzzle took you several tries. Our teacher told us that the final game was close and that you stayed calm when everyone expected a draw. You studied the board carefully, found a clever move, and went on to win. What a wonderful reward for all that steady practice!",
+      body2: "When our teacher announced your name at assembly, I clapped so loudly that the children beside me laughed. I felt proud because I know the effort behind that trophy, and I was happy that everyone else could see it too. Your patience has encouraged me to keep working when I find something difficult instead of giving up after my first attempt. I hope you take some time to enjoy your success with your family before you begin preparing for another competition.",
+      conclusion: "Please give my regards to your parents and tell them how pleased I am for you. Let us meet soon; I want to hear about the final game from you and congratulate you in person.",
     },
   },
   {
@@ -344,10 +344,10 @@ export const LETTER_CASES: LetterCase[] = [
       explanation: "A letter to a disappointed brother should focus on him, not turn into a score report.",
     },
     model: {
-      intro: "I hope you are taking care of yourself. I know you felt upset after the cricket final, especially because the last over went for many runs. I wanted to write because I care about you and admire how hard you played.",
-      body1: "Bowling the last over was a difficult job. Earlier in the match, you took two important wickets that kept your team in the game. I also saw you practise your bowling every evening before the final. One hard over cannot erase those efforts.",
-      body2: "The batters played well in the last over, and the result belonged to the whole team. I am proud that you accepted the responsibility of bowling when everyone was nervous. When you feel ready, I would gladly practise with you and help you try a few new deliveries.",
-      conclusion: "Please give yourself some time without blaming yourself. I will be home on Sunday, and we can practise together if you would like to.",
+      intro: "I hope you are taking care of yourself. I know how disappointed you felt after the cricket final, especially because the last over went for many runs. I wanted to write because I know how much the match meant to you.",
+      body1: "Bowling the last over, with everyone watching, was a difficult job. I know you wish you could bowl it again, and it is all right to feel upset. Please also remember the rest of your match. You took two important wickets earlier, including one when the other team was gaining confidence. I saw you practise every evening before the final, working on your aim even after a tiring day at school. One hard over cannot erase that effort or the good balls you bowled.",
+      body2: "The batters played well at the end, and a cricket match depends on the whole team. I was proud that you accepted the responsibility of bowling when everyone was nervous. Once you feel ready, we can talk about what happened and practise together in the park. I can stand at the crease while you try different deliveries, and we can ask Coach for advice too. A difficult match can help you learn, but it does not decide what kind of bowler you are.",
+      conclusion: "Please be kind to yourself and rest after the tournament. I will be home on Sunday. We can go to the park then, or simply spend some time together if you prefer.",
     },
   },
   {
@@ -409,10 +409,10 @@ export const LETTER_CASES: LetterCase[] = [
       explanation: "The facts describe the school, but the friend does not learn how the move feels or how things are changing.",
     },
     model: {
-      intro: "I hope you are doing well. I am fine here. I miss our chats after school and wanted to tell you how life has been since we moved and I joined my new school.",
-      body1: "My new classroom is bright, and our teacher welcomed me on the first day. The school has a large library with a quiet reading corner where I like to spend lunch breaks. We have also started a science project that I think you would enjoy.",
-      body2: "At first, I felt lonely because I did not know anyone. Then a classmate named Aditi showed me around and invited me to the art club. I still miss you and our old friends, but I am beginning to feel at home here.",
-      conclusion: "Please tell me how everyone at our old school is doing. I hope you will write back soon, and perhaps you can visit during the holidays.",
+      intro: "I hope you and your family are doing well. I am fine here, though I miss our chats after school. I wanted to tell you how life has been since we moved and I joined my new school.",
+      body1: "The streets near our new home are busy, and I am still learning my way around. At school, my bright classroom looks out over a small garden. Our teacher welcomed me on the first day and helped me find my place. There is also a large library with a quiet reading corner where I like to spend part of my lunch break. We have started a science project about growing plants in different kinds of soil, which I think you would enjoy.",
+      body2: "At first, I felt lonely because everyone else seemed to know one another. Then a classmate named Aditi showed me around, introduced me to her friends, and invited me to the art club. I was nervous about going, but I enjoyed drawing with the group and now look forward to meeting them each Thursday. I still miss you and our old friends. Each day here feels a little more familiar, though, and I am beginning to feel at home.",
+      conclusion: "Please tell me how everyone at our old school is doing. I hope you will write back soon. Perhaps you can visit during the holidays, and I can show you my new school and our favourite places nearby.",
     },
   },
 ];

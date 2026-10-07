@@ -34,7 +34,9 @@ describe("PowerPoint 2016 mission lab", () => {
 
   it("lets a child complete all six practices and start final questions", () => {
     render(<PowerPoint2016Lesson />);
-    clickTab("Home"); clickButton("New Slide"); clickButton("Layout"); clickButton("Title and Content");
+    clickTab("Home"); clickButton("New Slide");
+    expect(screen.queryByRole("group", { name: "New Slide choices" })).not.toBeInTheDocument();
+    clickButton("Layout"); clickButton("Title and Content");
     answerCheck("B. Ctrl + M");
 
     clickTab("Insert"); clickButton("Pictures"); clickButton("Practice picture"); clickTab("Picture Tools → Format"); clickButton("Crop");

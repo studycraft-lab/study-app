@@ -1,6 +1,6 @@
 # MS Word 2016 lesson source notes
 
-This is an original StudyCraft lesson at `/study/computer-studies/ms-word-2016`. It does not copy paper questions into the app.
+This is an original StudyCraft lesson at `/study/icso/ms-word-2016`. It does not copy paper questions into the app.
 
 ## Core content
 
@@ -19,6 +19,7 @@ This is an original StudyCraft lesson at `/study/computer-studies/ms-word-2016`.
 - Six short missions plus five original final questions; expected time about 27–28 minutes. A Grade 6 child login is required; there is no timer.
 - The Word-like desk teaches command locations and visible outcomes. It is not a real document editor and does not save a `.docx` file.
 - Images and icons from the exam papers are not reproduced. The assessment uses text and the clickable practice Ribbon so the logic can be reviewed easily.
+- This compact lesson samples the synopsis. It does not teach every References, Mailings, Insert, or contextual-object command listed there; those need separate revision or a later lesson.
 
 ## Word 2016 navigation audit (2026-10-05)
 
@@ -37,3 +38,5 @@ The saved synopsis calls some contextual tabs “Table Design” and “Chart De
 | File management | File opens Backstage view, which includes Save and Print | [Microsoft Support, Office 2016–2019](https://support.microsoft.com/en-us/office/collab-files/start-backstage-with-the-file-tab) |
 
 Microsoft distinguishes the newer **Table Design** and **Table Layout** wording from the older **Table Tools → Design/Layout** wording: [Apply a table style](https://support.microsoft.com/en-gb/office/video-apply-a-table-style-f1b798e7-fa25-496c-a434-0c2a15bed09f). The practice desk shows a single representative choice in each insertion gallery or dialog, rather than every option in Word. The named tab, group, and command paths above are the teaching targets.
+
+The tiny practice table remains on one page. **Repeat Header Rows** therefore marks the selected first row for repetition only if a real table later flows to another page; the example cannot show a repeated row. [Microsoft Support](https://support.microsoft.com/en-us/word/repeat-table-header-on-subsequent-pages) says the repetition appears in Print Layout or print when a table spans pages.

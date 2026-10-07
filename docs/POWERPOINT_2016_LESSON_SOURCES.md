@@ -1,12 +1,13 @@
 # MS PowerPoint 2016 lesson source notes
 
-This is an original StudyCraft lesson at `/study/computer-studies/ms-powerpoint-2016`. It uses a simplified practice editor and original questions. It does not reproduce paper questions or make a real `.pptx` file.
+This is an original StudyCraft lesson at `/study/icso/ms-powerpoint-2016`. It uses a simplified practice editor and original questions. It does not reproduce paper questions or make a real `.pptx` file.
 
 ## Source coverage
 
 - Saved Grade 6 ICSO synopsis: `ingestion-artifacts/icso-grade6-synopses/06-ms-powerpoint-2016.html`. The lesson covers Home/New Slide/Layout, Insert/Pictures, Design/Themes, Transitions, Animations, Slide Show, View/Slide Sorter, File/Backstage, a picture contextual tab, and Ctrl+M/F5.
 - Recent previous papers were read from `/Users/aquaraga/Downloads`, newest first. The 2025 paper uses shape editing and status bar identification; 2024 focuses on animation categories, timing, and views; 2023 asks about animations and view controls; 2022 asks about transitions, entrance animations, and chart elements. Mock tests add command paths, icon identification, and statement-pair questions. The five final questions are original and favor the chapter's core concepts over obscure icon recognition.
 - The signed-in online PowerPoint chapter question bank was not available as a local source while building this lesson. The lesson is grounded in the saved synopsis and downloaded papers, with Microsoft sources used to audit navigation. The bank can be reviewed later to refine the question mix.
+- The 30-minute lesson samples the synopsis rather than covering all its tools. Audio, video, chart editing, Drawing Tools, and some View and Review commands are left for separate revision.
 
 ## PowerPoint 2016 navigation audit
 

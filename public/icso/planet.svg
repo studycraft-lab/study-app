@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title">
+  <title id="title">Planet Earth</title>
+  <defs><clipPath id="globe"><circle cx="80" cy="80" r="68"/></clipPath></defs>
+  <circle cx="80" cy="80" r="70" fill="#e9f8ff"/>
+  <circle cx="80" cy="80" r="68" fill="#2a88c9"/>
+  <g clip-path="url(#globe)" fill="#48ae74">
+    <path d="M13 48c14-12 24-11 36-5l8 12 18 1 8 11-14 10-11-6-6 12-20-4-9 11-14-11z"/>
+    <path d="M57 84l22 5 9 15-7 13-5 24-11 12-10-22-14-10 5-20z"/>
+    <path d="M92 28l25-4 11 12-7 13-25 6-7 20-17-8 8-18z"/>
+    <path d="M110 74l26-11 17 12-4 37-19 15-18-12-5-24z"/>
+  </g>
+  <path d="M45 30c23-14 60-14 82 8" fill="none" stroke="#b9efff" stroke-linecap="round" stroke-width="7" opacity=".55"/>
+</svg>

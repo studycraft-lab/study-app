@@ -18,11 +18,11 @@ describe("Word 2016 practice ribbon", () => {
 
     fireEvent.click(screen.getByRole("tab", { name: "Table Tools > Layout" }));
     fireEvent.click(screen.getByRole("button", { name: "Repeat Header Rows" }));
-    expect(screen.queryByText("Header row set to repeat on the next page.")).not.toBeInTheDocument();
+    expect(screen.queryByText("Header row set to repeat if this table continues onto another page.")).not.toBeInTheDocument();
 
     fireEvent.click(screen.getByRole("button", { name: "Select the first table row" }));
     fireEvent.click(screen.getByRole("button", { name: "Repeat Header Rows" }));
-    expect(screen.getByText("Header row set to repeat on the next page.")).toBeInTheDocument();
+    expect(screen.getByText("Header row set to repeat if this table continues onto another page.")).toBeInTheDocument();
   });
 
   it("uses the Word menus before applying a watermark or continuous line numbers", () => {

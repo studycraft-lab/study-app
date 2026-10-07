@@ -35,6 +35,7 @@
 .subject-card[data-subject*="science"] { background:linear-gradient(145deg,#123c43,#26785a); }
 .subject-card[data-subject*="geography"] { background:linear-gradient(145deg,#58392e,#a8553f); }
 .subject-card[data-subject*="english"] { background:linear-gradient(145deg,#33275d,#674fa5); }
+.subject-card[data-subject="icso"] { background:linear-gradient(145deg,#493070,#7852a2); }
 .subject-card:hover { box-shadow:var(--shadow-md); transform:translateY(-4px); }
 .subject-card-kicker { color:var(--sun); font-size:.7rem; font-weight:900; letter-spacing:.12em; text-transform:uppercase; }
 .subject-card h2 { color:white; font-size:2rem; margin:12px 0 0; }
@@ -180,6 +181,7 @@
 .chapter-card[data-subject*="science"] .chapter-card-art { background:radial-gradient(circle at 75% 22%,rgba(221,245,238,.25),transparent 27%),linear-gradient(145deg,#123c43,#26785a); }
 .chapter-card[data-subject*="geography"] .chapter-card-art { background:radial-gradient(circle at 76% 22%,rgba(255,229,223,.22),transparent 27%),linear-gradient(145deg,#58392e,#a8553f); }
 .chapter-card[data-subject*="english"] .chapter-card-art { background:radial-gradient(circle at 76% 22%,rgba(238,233,255,.24),transparent 27%),linear-gradient(145deg,#33275d,#674fa5); }
+.chapter-card[data-subject="icso"] .chapter-card-art { background:radial-gradient(circle at 76% 22%,rgba(255,237,255,.28),transparent 27%),linear-gradient(145deg,#493070,#7852a2); }
 .chapter-card-art::before { background-image:radial-gradient(circle,rgba(255,255,255,.55) 0 1px,transparent 1.5px); background-size:34px 29px; content:""; inset:0; opacity:.15; position:absolute; }
 .chapter-card-art .progress-visual { height:190px; margin:10px auto 0; position:relative; width:min(90%,310px); z-index:2; }
 .chapter-orbit { border:1px solid rgba(255,255,255,.12); border-radius:50%; height:240px; position:absolute; right:-105px; top:-90px; transform:rotate(22deg); width:310px; }

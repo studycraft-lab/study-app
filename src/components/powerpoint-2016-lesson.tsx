@@ -69,8 +69,8 @@ export function PowerPoint2016Lesson({ childName }: { childName?: string }) {
   function interact(id: string) {
     if (stage !== "missions") return;
     if (id.startsWith("tab:")) { setActiveTab(id.slice(4) as Tab); setMenu(null); }
-    if (["New Slide", "Layout", "Pictures", "Themes", "Duration", "Delay"].some(tool => id === `tool:${tool}`)) setMenu(id.slice(5));
-    if (id === "tool:New Slide") { setSlideCount(Math.max(slideCount, 2)); setLayout("Title and Content"); }
+    if (["Layout", "Pictures", "Themes", "Duration", "Delay"].some(tool => id === `tool:${tool}`)) setMenu(id.slice(5));
+    if (id === "tool:New Slide") { setSlideCount(Math.max(slideCount, 2)); setLayout("Title and Content"); setMenu(null); }
     if (id === "option:Title and Content") { setLayout("Title and Content"); setMenu(null); }
     if (id === "option:Practice picture") { setPicture(true); setPictureSelected(true); setMenu(null); }
     if (id === "select:Picture" && picture) setPictureSelected(true);
@@ -119,7 +119,7 @@ export function PowerPoint2016Lesson({ childName }: { childName?: string }) {
     <AppHeader role="child" childName={childName} />
     <div className={styles.shell}>
       <header className={styles.hero}>
-        <div><p className={styles.eyebrow}>STUDYCRAFT · GRADE 6 ICSO · COMPUTER STUDIES</p><h1>PowerPoint 2016 Mission Lab</h1><p>Make a small presentation in six short steps, then try questions shaped like recent Olympiad papers.</p><span className={styles.time}>About 27 minutes total · pause after any mission</span></div>
+        <div><p className={styles.eyebrow}>STUDYCRAFT · GRADE 6 ICSO · INTERACTIVE LESSON</p><h1>PowerPoint 2016 Mission Lab</h1><p>Make a small presentation in six short steps, then try questions shaped like recent Olympiad papers.</p><span className={styles.time}>About 27 minutes total · pause after any mission</span></div>
         <div className={styles.heroNumber}><strong>{stage === "complete" ? "✓" : stage === "challenge" ? "?" : `${missionIndex + 1}/6`}</strong><span>{stage === "challenge" ? "final questions" : "short missions"}</span></div>
       </header>
       <div className={styles.progress} aria-label="Lesson progress"><span style={{ width: `${progress}%` }} /></div>
@@ -144,7 +144,7 @@ export function PowerPoint2016Lesson({ childName }: { childName?: string }) {
           {done && <div className={styles.check}><strong>Quick check</strong><p>{mission.check.question}</p>{mission.check.choices.map((choice, i) => <button type="button" key={choice} aria-pressed={answer === i} className={answer === i ? styles.choiceSelected : ""} onClick={() => setAnswer(i)}>{String.fromCharCode(65 + i)}. {choice}</button>)}{answer !== null && <p className={answer === mission.check.answer ? styles.correct : styles.incorrect}>{answer === mission.check.answer ? "Correct. " : "Try again. "}{mission.check.why}</p>}{answer === mission.check.answer && <button className={styles.primary} type="button" onClick={nextMission}>{missionIndex === missions.length - 1 ? "Start final questions" : "Next mission →"}</button>}</div>}
         </aside>
       </div>}
-      {stage === "challenge" && <section className={styles.challenge}><p className={styles.eyebrow}>FINAL CHECK · {challengeIndex + 1} OF {finalChecks.length}</p><h2>Use what you learned</h2><p>{finalChecks[challengeIndex].question}</p>{finalChecks[challengeIndex].choices.map((choice, i) => <button type="button" aria-pressed={challengeAnswer === i} className={challengeAnswer === i ? styles.choiceSelected : ""} key={choice} onClick={() => setChallengeAnswer(i)}>{String.fromCharCode(65 + i)}. {choice}</button>)}{challengeAnswer !== null && <p className={challengeAnswer === finalChecks[challengeIndex].answer ? styles.correct : styles.incorrect}>{challengeAnswer === finalChecks[challengeIndex].answer ? "Correct. " : "The correct answer is " + String.fromCharCode(65 + finalChecks[challengeIndex].answer) + ". "}{finalChecks[challengeIndex].why}</p>}<button type="button" className={styles.primary} disabled={challengeAnswer === null} onClick={nextChallenge}>{challengeIndex === finalChecks.length - 1 ? "See my result" : "Next question →"}</button></section>}
+      {stage === "challenge" && <section className={styles.challenge}><p className={styles.eyebrow}>FINAL CHECK · {challengeIndex + 1} OF {finalChecks.length}</p><h2>Use what you learned</h2><p>{finalChecks[challengeIndex].question}</p>{finalChecks[challengeIndex].choices.map((choice, i) => <button type="button" aria-pressed={challengeAnswer === i} disabled={challengeAnswer !== null} className={challengeAnswer === i ? styles.choiceSelected : ""} key={choice} onClick={() => setChallengeAnswer(i)}>{String.fromCharCode(65 + i)}. {choice}</button>)}{challengeAnswer !== null && <p className={challengeAnswer === finalChecks[challengeIndex].answer ? styles.correct : styles.incorrect}>{challengeAnswer === finalChecks[challengeIndex].answer ? "Correct. " : "The correct answer is " + String.fromCharCode(65 + finalChecks[challengeIndex].answer) + ". "}{finalChecks[challengeIndex].why}</p>}<button type="button" className={styles.primary} disabled={challengeAnswer === null} onClick={nextChallenge}>{challengeIndex === finalChecks.length - 1 ? "See my result" : "Next question →"}</button></section>}
       {stage === "complete" && <section className={styles.challenge}><p className={styles.eyebrow}>MISSION COMPLETE</p><h2>You built and presented a slide deck.</h2><p>You answered {score} of {finalChecks.length} final questions correctly. Review transitions versus animations and try again whenever you like.</p><button type="button" className={styles.primary} onClick={restart}>Practise again</button></section>}
     </div>
   </main>;

@@ -28,5 +28,6 @@ describe("PowerPoint2016Page", () => {
     vi.mocked(childFromRequest).mockResolvedValue(child);
     render(await PowerPoint2016Page());
     expect(screen.getByText("PowerPoint lesson for Asha")).toBeInTheDocument();
+    expect(vi.mocked(childFromRequest).mock.calls[0][0].url).toContain("/study/icso/ms-powerpoint-2016");
   });
 });

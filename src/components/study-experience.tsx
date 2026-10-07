@@ -21,6 +21,8 @@ type PromptPart = { label: string; text: string };
 type MultipartPrompt = { stem: string; parts: PromptPart[] };
 
 const ICSO_ACTIVITIES = [
+  { href: "/study/icso/fundamentals-of-computers", kind: "ICSO lesson", title: "Computer Fundamentals", description: "Sort devices, software and code into their roles in six short parts.", action: "Open lesson", glyph: "⌨" },
+  { href: "/study/icso/memory-storage", kind: "ICSO lesson", title: "Memory & Storage Devices", description: "Test what survives power-off and sort storage types and sizes.", action: "Open lesson", glyph: "💾" },
   { href: "/study/icso/ms-word-2016", kind: "ICSO lesson", title: "MS Word 2016", description: "Explore the Ribbon, tables, page setup, proofing, and charts in six short missions.", action: "Open lesson", glyph: "W" },
   { href: "/study/icso/ms-powerpoint-2016", kind: "ICSO lesson", title: "MS PowerPoint 2016", description: "Build slides and practise themes, transitions, animations, and views in six short missions.", action: "Open lesson", glyph: "P" },
   { href: "/study/icso/html-css-scratch", kind: "ICSO lesson", title: "HTML, CSS & Scratch", description: "Build a tiny web page and make a Scratch sprite move in short interactive parts.", action: "Open lesson", glyph: "</>" },

@@ -24,6 +24,8 @@ const ICSO_ACTIVITIES = [
   { href: "/study/icso/ms-word-2016", kind: "ICSO lesson", title: "MS Word 2016", description: "Explore the Ribbon, tables, page setup, proofing, and charts in six short missions.", action: "Open lesson", glyph: "W" },
   { href: "/study/icso/ms-powerpoint-2016", kind: "ICSO lesson", title: "MS PowerPoint 2016", description: "Build slides and practise themes, transitions, animations, and views in six short missions.", action: "Open lesson", glyph: "P" },
   { href: "/study/icso/html-css-scratch", kind: "ICSO lesson", title: "HTML, CSS & Scratch", description: "Build a tiny web page and make a Scratch sprite move in short interactive parts.", action: "Open lesson", glyph: "</>" },
+  { href: "/study/icso/networking-cyber-safety", kind: "ICSO lesson", title: "Networking & Cyber Safety", description: "Explore network shapes and make safer choices online in six short parts.", action: "Open lesson", glyph: "◎" },
+  { href: "/study/icso/ai-robotics", kind: "ICSO lesson", title: "AI & Robotics", description: "Match AI domains, guide a robot, and check predictions in six short parts.", action: "Open lesson", glyph: "✦" },
 ] as const;
 const COMPUTER_ACTIVITIES = [
   { href: "/study/python", kind: "Python lesson", title: "Conditional Statements", description: "Learn if, if…else, and if…elif…else with examples and quick checks.", action: "Open lesson", glyph: "if / else" },

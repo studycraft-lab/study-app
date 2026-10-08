@@ -1,6 +1,8 @@
 # Grade 6 ICSO coaching review
 
-Reviewed 7 October 2026 and updated after adding two more chapters. This is a product and learning-design audit of the seven local ICSO lessons, not evidence that these lessons improve a child's exam score. The stated 27–30 minute durations are estimates; no child timing or learning-outcome study has been run.
+Reviewed 7 October 2026 and updated after adding two more chapters. This is a product and learning-design audit of the seven local ICSO lessons available on that date, not evidence that these lessons improve a child's exam score. The stated 27–30 minute durations are estimates; no child timing or learning-outcome study has been run.
+
+On 8 October 2026, History & Generations of Computers and Windows 11 were added, bringing the ICSO collection to nine lessons. History adds a clickable timeline and sorting tasks; Windows 11 adds a guided practice desktop. Their source and accuracy checks are recorded in [History lesson sources](HISTORY_ICSO_LESSON_SOURCES.md) and [Windows 11 lesson sources](WINDOWS_11_ICSO_LESSON_SOURCES.md). The recommendations below still apply to all nine lessons.
 
 ## Verdict
 

@@ -2,14 +2,15 @@ import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { afterEach, describe, expect, it } from "vitest";
 import { IcsoFoundationsLesson } from "./icso-foundations-lesson";
 import { fundamentalsLesson, memoryLesson } from "./icso-foundations-data";
+import { historyLesson } from "./icso-history-data";
 
 function click(name: string) { fireEvent.click(screen.getByRole("button", { name })); }
 
 describe("ICSO foundations workbenches", () => {
   afterEach(cleanup);
 
-  it("keeps both six-part lessons within the planned half hour and every answer in range", () => {
-    for (const lesson of [fundamentalsLesson, memoryLesson]) {
+  it("keeps each six-part lesson within the planned half hour and every answer in range", () => {
+    for (const lesson of [fundamentalsLesson, memoryLesson, historyLesson]) {
       expect(lesson.missions).toHaveLength(6);
       expect(lesson.challenge).toHaveLength(6);
       expect(lesson.missions.reduce((sum, mission) => sum + mission.minutes, 6)).toBeLessThanOrEqual(30);
@@ -25,6 +26,16 @@ describe("ICSO foundations workbenches", () => {
         expect(question.answer).toBeLessThan(question.options.length);
       }
     }
+  });
+
+  it("lets the child explore history labels before sorting generation clues", () => {
+    render(<IcsoFoundationsLesson lesson={historyLesson} />);
+    click("Show 2nd generation");
+    expect(screen.getByText("Transistors", { selector: "p" })).toBeInTheDocument();
+    click("Place in 2nd generation");
+    expect(screen.getByRole("button", { name: "Place next item →" })).toBeDisabled();
+    click("Place in 1st generation");
+    expect(screen.getByText(/First-generation electronic computers/)).toBeInTheDocument();
   });
 
   it("shows RAM being cleared by power-off while saved storage and startup code persist", () => {

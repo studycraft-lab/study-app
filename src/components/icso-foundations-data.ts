@@ -3,10 +3,10 @@ export type FoundationCase = { item: string; prompt: string; answer: number; exp
 export type FoundationMission = {
   title: string; idea: string; minutes: number; bins: [string, string, string];
   cases: [FoundationCase, FoundationCase, FoundationCase]; check: FoundationQuestion;
-  demo?: "power" | "access"; note?: string;
+  demo?: "power" | "access" | "timeline"; note?: string;
 };
 export type FoundationLesson = {
-  title: string; subtitle: string; theme: "fundamentals" | "memory"; sourceNote: string;
+  title: string; subtitle: string; theme: "fundamentals" | "memory" | "history"; sourceNote: string;
   missions: FoundationMission[];
   challenge: FoundationQuestion[];
 };

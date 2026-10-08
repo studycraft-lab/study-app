@@ -286,7 +286,7 @@ describe("StudyExperience", () => {
     const subject = await screen.findByRole("button", { name: /Computer Studies/i });
     expect(within(subject).getByText("0 chapters · 2 activities")).toBeInTheDocument();
     const icso = screen.getByRole("button", { name: /ICSO/i });
-    expect(within(icso).getByText("0 chapters · 7 lessons")).toBeInTheDocument();
+    expect(within(icso).getByText("0 chapters · 9 lessons")).toBeInTheDocument();
     fireEvent.click(subject);
     expect(screen.queryByRole("link", { name: "MS Word 2016" })).not.toBeInTheDocument();
     expect(screen.getByRole("link", { name: /Conditional Statements/i })).toHaveAttribute("href", "/study/python");
@@ -295,6 +295,8 @@ describe("StudyExperience", () => {
     fireEvent.click(screen.getByRole("button", { name: /ICSO/i }));
     expect(screen.getByRole("link", { name: "Computer Fundamentals" })).toHaveAttribute("href", "/study/icso/fundamentals-of-computers");
     expect(screen.getByRole("link", { name: "Memory & Storage Devices" })).toHaveAttribute("href", "/study/icso/memory-storage");
+    expect(screen.getByRole("link", { name: "History & Generations of Computers" })).toHaveAttribute("href", "/study/icso/history-generations");
+    expect(screen.getByRole("link", { name: "Windows 11" })).toHaveAttribute("href", "/study/icso/windows-11");
     expect(screen.getByRole("link", { name: "MS Word 2016" })).toHaveAttribute("href", "/study/icso/ms-word-2016");
     expect(screen.getByRole("link", { name: "MS PowerPoint 2016" })).toHaveAttribute("href", "/study/icso/ms-powerpoint-2016");
     expect(screen.getByRole("link", { name: "HTML, CSS & Scratch" })).toHaveAttribute("href", "/study/icso/html-css-scratch");

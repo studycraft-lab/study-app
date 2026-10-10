@@ -30,6 +30,7 @@ const ICSO_ACTIVITIES = [
   { href: "/study/icso/html-css-scratch", kind: "ICSO lesson", title: "HTML, CSS & Scratch", description: "Build a tiny web page and make a Scratch sprite move in short interactive parts.", action: "Open lesson", glyph: "</>" },
   { href: "/study/icso/networking-cyber-safety", kind: "ICSO lesson", title: "Networking & Cyber Safety", description: "Explore network shapes and make safer choices online in six short parts.", action: "Open lesson", glyph: "◎" },
   { href: "/study/icso/ai-robotics", kind: "ICSO lesson", title: "AI & Robotics", description: "Match AI domains, guide a robot, and check predictions in six short parts.", action: "Open lesson", glyph: "✦" },
+  { href: "/study/icso/latest-developments-it", kind: "ICSO lesson", title: "Latest Developments in IT", description: "Compare current software, assistants, cloud, VR and safer new ways to sign in.", action: "Open lesson", glyph: "↗" },
 ] as const;
 const COMPUTER_ACTIVITIES = [
   { href: "/study/python", kind: "Python lesson", title: "Conditional Statements", description: "Learn if, if…else, and if…elif…else with examples and quick checks.", action: "Open lesson", glyph: "if / else" },

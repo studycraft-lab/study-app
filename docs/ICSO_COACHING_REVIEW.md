@@ -4,6 +4,8 @@ Reviewed 7 October 2026 and updated after adding two more chapters. This is a pr
 
 On 8 October 2026, History & Generations of Computers and Windows 11 were added, bringing the ICSO collection to nine lessons. History adds a clickable timeline and sorting tasks; Windows 11 adds a guided practice desktop. Their source and accuracy checks are recorded in [History lesson sources](HISTORY_ICSO_LESSON_SOURCES.md) and [Windows 11 lesson sources](WINDOWS_11_ICSO_LESSON_SOURCES.md). The recommendations below still apply to all nine lessons.
 
+On 10 October 2026, Latest Developments in IT was added, bringing the synopsis-backed collection to ten lessons. Its dated release facts, exam-pattern rationale and future recheck points are in [Latest IT lesson sources](LATEST_IT_ICSO_LESSON_SOURCES.md). The recommendations below also apply to this lesson.
+
 ## Verdict
 
 The short mission → practice desk → quick check → final challenge format is a sound starting point. The Word, PowerPoint, and HTML/CSS/Scratch lessons let the child operate simplified interfaces. Computer Fundamentals and Memory/Storage use sorting workbenches and small power/access simulations. Networking/Cyber Safety and AI/Robotics use original scenarios and diagrams, but most of their practice is recognition from multiple-choice options. None of the seven yet provides a robust coaching loop across days. Therefore it would be inaccurate to call the current experience state of the art or a complete Olympiad preparation system.
